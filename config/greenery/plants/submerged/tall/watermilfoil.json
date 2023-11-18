@@ -1,0 +1,8 @@
+{
+    "worldGen": [
+        "0 | type:river | 1.0 | 32 | 64"
+    ],
+    "compatibleFluids": [
+        "water"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "resistance_modifier",
+  "target-item": "conarm:resist_mat",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 200,
+
+  "catalyst": "tconstruct:cast",
+
+  "input-types": {
+    "a": {
+      "id": "overloaded:compressed_obsidian",
+      "meta": 2
+    },
+    "b": {
+      "id": "enderio:block_alloy_endergy",
+      "meta": 3
+    },
+    "c": {
+      "id": "calculator:material",
+      "meta": 2
+    }
+  },
+
+  "shape": [
+    [
+      ["_","_","_"],
+      ["_","b","_"],
+      ["_","_","_"]
+    ],
+    [
+      ["_","a","_"],
+      ["a","c","a"],
+      ["_","a","_"]
+    ],
+    [
+      ["_","_","_"],
+      ["_","b","_"],
+      ["_","_","_"]
+    ]
+  ]
+}

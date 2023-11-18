@@ -1,0 +1,32 @@
+type = customizablemenus
+
+net.minecraft.client.gui.GuiMainMenu {
+}
+
+net.minecraft.client.gui.GuiIngameMenu {
+}
+
+com.feed_the_beast.ftblib.lib.gui.GuiWrapper {
+}
+
+net.minecraft.client.gui.inventory.GuiInventory {
+}
+
+com.replaymod.lib.de.johni0702.minecraft.gui.container.AbstractGuiOverlay$UserInputGuiScreen {
+}
+
+net.minecraft.client.gui.GuiWorldSelection {
+}
+
+net.minecraft.client.gui.GuiMultiplayer {
+}
+
+technicianlp.reauth.GuiLogin {
+}
+
+net.minecraft.client.gui.GuiScreenAddServer {
+}
+
+net.minecraftforge.fml.client.GuiModList {
+}
+

@@ -1,0 +1,3 @@
+title @p times 20 100 40
+title @p title {"text":"Final Chapter", "bold":true, "italic":false, "color":"red"}
+title @p subtitle {"text":"World of Bedrock", "italic":true, "color":"white"}

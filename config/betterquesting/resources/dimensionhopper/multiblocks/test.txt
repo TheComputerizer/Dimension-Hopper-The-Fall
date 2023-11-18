@@ -1,0 +1,14 @@
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*
+minecraft:dirt:*, wildcard, minecraft:chest:*, minecraft:dirt:*
+minecraft:dirt:*, wildcard, minecraft:crafting_table:*, minecraft:dirt:*
+minecraft:dirt:*, minecraft:wooden_door:*, minecraft:dirt:*, minecraft:dirt:*
+.
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*
+minecraft:dirt:*, minecraft:torch:*, wildcard, minecraft:dirt:*
+minecraft:dirt:*, wildcard, wildcard, minecraft:dirt:*
+minecraft:dirt:*, keyBlock, minecraft:dirt:*, minecraft:dirt:*
+.
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*
+minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*, minecraft:dirt:*

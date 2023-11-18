@@ -1,0 +1,274 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:rocket_t7",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "contenttweaker:heart_of_the_machine_god",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "     ",
+        "A B A",
+        "C B C",
+        "  B  ",
+        "     ",
+        "     ",
+        "     ",
+        "  D  ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        " CCC ",
+        "     ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " C@C ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        "  E  ",
+        "     ",
+        "     "
+      ],
+      [
+        " CBC ",
+        "B C B",
+        "BCCCB",
+        "BCFCB",
+        " CFC ",
+        " GFG ",
+        " CFC ",
+        "DCFCD",
+        " CFC ",
+        " CHC ",
+        " ECE ",
+        "  A  ",
+        "  A  "
+      ],
+      [
+        " CCC ",
+        "     ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " CIC ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        " CCC ",
+        "  E  ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "A B A",
+        "C B C",
+        "  B  ",
+        "     ",
+        "     ",
+        "     ",
+        "  D  ",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "immersiveengineering:metal_decoration1",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:rocket_t7",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:booster_block_2",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:rocket_block_7",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "galacticraftcore:spin_thruster",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "solarflux:solar_panel_7",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "bigreactors:reactorfuelrod",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "contenttweaker:divine_large_circuit",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "appliedenergistics2:controller",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "contenttweaker:heart_of_the_machine_god",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  }
+}

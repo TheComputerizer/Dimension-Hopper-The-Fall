@@ -1,0 +1,18 @@
+{
+  "parent": "builtin/panorama",
+  "image": "customloading:logo_x.png",
+  "position_type": "CENTER",
+  "offset_pos": "CENTER",
+  "position": {
+    "x": "0",
+    "y": "0",
+    "width": "SCREEN_WIDTH",
+    "height": "SCREEN_HEIGHT"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "1",
+    "height": "1"
+  }
+}

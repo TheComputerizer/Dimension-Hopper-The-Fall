@@ -1,0 +1,16 @@
+[
+  {
+    "timeout": 20,
+    "dimension": 20,
+    "biome": "Sludge Plains Clearing",
+    "gamestage": "sludgeon",
+    "potion": ["minecraft:wither,21,2", "minecraft:blindness,60,50", "minecraft:poison,40,50"]
+  },
+  {
+    "timeout": 20,
+    "dimension": 20,
+    "helditem": "thebetweenlands:shockwave_sword",
+    "gamestage": "wight",
+    "potion": ["minecraft:poison,40,50", "minecraft:wither,20,50", "minecraft:blindness,60,50", "minecraft:slowness,40,500", "minecraft:jump_boost,20,500"]
+  }
+]

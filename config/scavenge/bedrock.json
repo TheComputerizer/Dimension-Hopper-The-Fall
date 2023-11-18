@@ -1,0 +1,80 @@
+{
+	"block_pools": [
+		{
+			"name": "bedrockpick",
+			"type": {
+				"type": "block",
+				"name": "minecraft:bedrock"
+			},
+			"clicktype": "leftclick",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "bedrockcraft:bedrock_pickaxe"
+				},
+				{
+					"type": "consume_block",
+					"amount": 1
+				},
+				{
+					"type": "spawn_particles",
+					"name": "dragonbreath",
+					"amount": 90,
+					"xOffset": 0.2,
+					"yOffset": 0.2,
+					"zOffset": 0.2,
+					"disableJEI": true
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:bedrock",
+					"amount": 1
+				}
+			]
+		},
+		{
+			"name": "pickupvoidbeacon",
+			"type": {
+				"type": "block",
+				"name": "bedrockcraft:voidbeacon"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "contenttweaker:final_singularity"
+				},
+				{
+					"type": "consume_item",
+					"amount": 1
+				},
+				{
+					"type": "consume_block",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "block.end_portal.spawn"
+				},
+				{
+					"type": "spawn_particles",
+					"name": "dragonbreath",
+					"amount": 90,
+					"xOffset": 0.2,
+					"yOffset": 0.2,
+					"zOffset": 0.2,
+					"disableJEI": true
+				}
+			],
+			"drops": [
+				{ 
+					"name": "bedrockcraft:voidbeacon",
+					"amount": 1
+				}
+			]
+		}
+	]
+}
+
+

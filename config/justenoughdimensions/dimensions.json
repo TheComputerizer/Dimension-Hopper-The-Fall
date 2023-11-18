@@ -1,0 +1,49 @@
+{ "dimensions": [{ 
+		"dim": 684, 
+		"override": true,
+		"worldinfo": {
+			"GameRules": {
+				"keepInventory": "true"
+            },
+			"JED": {
+				"CanRespawnHere ": "true"
+            }
+		} 
+	},
+	{ 
+		"dim": 685, 
+		"override": true,
+		"worldinfo": {
+			"GameRules": {
+				"keepInventory": "true"
+            }
+		}  
+	},
+	{ 
+		"dim": 686, 
+		"override": true,
+		"worldinfo": {
+			"GameRules": {
+				"keepInventory": "true"
+            }
+		}  
+	},
+	{ 
+		"dim": 687, 
+		"override": true,
+		"worldinfo": {
+			"GameRules": {
+				"keepInventory": "true"
+            }
+		}  
+	},
+	{ 
+		"dim": 688, 
+		"override": true,
+		"worldinfo": {
+			"GameRules": {
+				"keepInventory": "true"
+            }
+		} 
+	}] 
+}

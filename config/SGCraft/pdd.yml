@@ -1,0 +1,4 @@
+addresses:
+    ABCD-EFG-HI:
+        name: Descriptive Name Here
+        locked: false

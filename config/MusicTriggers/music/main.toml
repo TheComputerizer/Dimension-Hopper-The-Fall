@@ -1,0 +1,448 @@
+# Please refer to the wiki page located at https://github.com/TheComputerizer/Music-Triggers/wiki
+# or the discord server located at https://discord.gg/FZHXFYp8fc
+# for any specific questions you might have regarding the main config file
+
+[triggers]
+	[triggers.universal]
+		fade_out = "100"
+		persistence = "0"
+		trigger_delay = "0"
+		song_delay = "200:600"
+		start_delay = "0"
+		fade_in = "100"
+	[triggers.menu]
+	[[triggers.mob]]
+		identifier = "aoa_bosses"
+		priority = 1500
+		level = 1
+		resource_name = [ "Shadowlord" "Smash" "Nethengeic Wither" "King BamBamBam" "Hive King" "Baroness" "CREEP" "Kror" "Graw" "Tyrosaur" "Skeletron" "MechBot" "Silverfoot" "Elusive" "Cotton Candor" "Vinocorne" "Gyro" "Rockrider" "Blue Guardian" "Green Guardian" "Red Guardian" "Yellow Guardian" "Crystocore" "King Shroomus" "Voxxulon" "Coniferon" "Horon" "Goldorth" "Penumbra" "Klobber" "Proshield" "Mirage" "Flash" "Bane" "Kajaros" "Harkos" "Okazor" "Miskel" "Raxxan" "Hydrolisk" "Dracyon" "Visualent" "Clunkhead" "Creaexxeus" ]
+		persistence = 20
+	[[triggers.time]]
+		priority = 200
+		time_bundle = "day"
+		identifier = "day"
+	[[triggers.time]]
+		priority = 300
+		time_bundle = "night"
+		identifier = "night"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "0" ]
+		identifier = "overworld"
+	[triggers.raining]
+		priority = 400
+		persistence = 50
+	[triggers.storming]
+		priority = 500
+		persistence = 50
+	[triggers.biome]
+		priority = 525
+		identifier = "no_rain"
+		rain_type = "none"
+		resource_name = [ ":" ]
+		persistence = 100
+		start_delay = 100
+	[triggers.harvestmoon]
+		priority = 550
+	[triggers.bloodmoon]
+		priority = 600
+	[[triggers.height]]
+		identifier = "underground"
+		priority = 700
+		level = 55
+		persistence = 100
+		start_delay = 100
+	[[triggers.height]]
+		identifier = "deepUnder"
+		priority = 800
+		level = 20
+		persistence = 100
+		start_delay = 100
+	[[triggers.height]]
+		identifier = "inVoid"
+		priority = 1200
+		level = -1
+		persistence = 100
+		start_delay = 100
+	[triggers.lowhp]
+		priority = 900
+		start_delay = 50
+		persistence = 100
+	[[triggers.dimension]]
+		identifier = "creativeWhitelist"
+		priority = 50
+		resource_name = [ "-60" "-59" "-58" "-57" "-56" "-55" "-54" "-50" "-9" "-8" "-1" "0" "1" "800" "801" "802" "803" "804" "805" "806" "807" "809" "810" "811" "812" "813" "814" "815" "816" "817" "818" "819" "820" "821" "1024" "28885" ]
+	[triggers.creative]
+		priority = 350
+		song_delay = "400:1200"
+	[triggers.spectator]
+		priority = 375
+		song_delay = "400:1200"
+	[[triggers.mob]]
+		identifier = "crazy_mobs"
+		priority = 1600
+		level = 1
+		resource_name = [ "Crazy Creeper" "Crazy Skeleton" "Crazy Spider" "Crazy Zombie" ]
+		persistence = 60
+		start_delay = 40
+	[[triggers.mob]]
+		identifier = "ender_dragon"
+		priority = 1700
+		level = 1
+		resource_name = [ "BOSS" "Ender Dragon" ]
+	[[triggers.mob]]
+		identifier = "chaos_dragon"
+		priority = 1800
+		level = 1
+		detection_range = "200"
+		mob_targeting = false
+		resource_name = [ "BOSS" "Chaos Guardian" ]
+	[[triggers.dimension]]
+		priority = 2000
+		resource_name = [ "-11325" ]
+		identifier = "deepdark"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-60" ]
+		identifier = "skyland"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-59" ]
+		identifier = "crown_cliffs"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-58" ]
+		identifier = "dark_forest"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-57" ]
+		identifier = "the_void"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-56" ]
+		identifier = "wide_desert"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-55" ]
+		identifier = "frost_mountains"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-54" ]
+		identifier = "cavenia"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-50" ]
+		identifier = "cavern"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-9" ]
+		identifier = "underworld"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-6" ]
+		identifier = "mining_dimension"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-1" ]
+		identifier = "nether"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "1" ]
+		identifier = "end"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "800" "801" "802" "803" "804" "805" "806" "807" "809" "810" "811" "812" "813" "814" "815" "816" "817" "818" "819" "820" "821" ]
+		identifier = "aoa"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "1024" ]
+		identifier = "labyrinth"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "28885" ]
+		identifier = "hunting_dimension"
+
+[songs]
+	[songs.menu1]
+		play_once = 1
+		triggers = [ "menu" ]
+	[songs.menu2]
+		play_once = 1
+		triggers = [ "menu" ]
+	[songs.menu3]
+		play_once = 1
+		triggers = [ "menu" ]
+	[songs.menu4]
+		play_once = 1
+		triggers = [ "menu" ]
+	[songs.silence]
+		triggers = [ "mob-aoa_bosses" ]
+	[songs.genericday1]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday2]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday3]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday4]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday5]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday6]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday7]
+		play_once = 1
+		volume = "0.5"
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.genericday8]
+		play_once = 1
+		triggers = [ "time-day" "dimension-overworld" ]
+	[songs.nighttime1]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime2]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime3]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime4]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime5]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime6]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime7]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.raining1]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" ]
+	[songs.raining2]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" ]
+	[songs.raining3]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" ]
+	[[songs.thunder1]]
+		play_once = 1
+		triggers = [ "storming" "dimension-overworld" ]
+	[songs.thunder2]
+		play_once = 1
+		triggers = [ "storming" "dimension-overworld" ]
+	[[songs.thunder3]]
+		play_once = 1
+		triggers = [ "storming" "dimension-overworld" ]
+	[[songs.deep1]]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" "biome-no_rain" ]
+	[[songs.aoa3]]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" "biome-no_rain" ]
+	[[songs.deepdark1]]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" "biome-no_rain" ]
+	[[songs.frost]]
+		play_once = 1
+		triggers = [ "raining" "dimension-overworld" "biome-no_rain" ]
+	[songs.harvestmoon]
+		triggers = [ "harvestmoon" "dimension-overworld" ]
+	[songs.bloodmoon]
+		triggers = [ "bloodmoon" "dimension-overworld" ]
+	[[songs.underground1]]
+		play_once = 1
+		triggers = [ "height-underground" "dimension-overworld" ]
+	[[songs.underground2]]
+		play_once = 1
+		triggers = [ "height-underground" "dimension-overworld" ]
+	[[songs.underground3]]
+		play_once = 1
+		triggers = [ "height-underground" "dimension-overworld" ]
+	[songs.underground4]
+		play_once = 1
+		triggers = [ "height-underground" "dimension-overworld" ]
+	[[songs.deep1]]
+		play_once = 1
+		triggers = [ "height-deepUnder" "dimension-overworld" ]
+	[songs.deep2]
+		play_once = 1
+		triggers = [ "height-deepUnder" "dimension-overworld" ]
+	[songs.deep3]
+		play_once = 1
+		triggers = [ "height-deepUnder" "dimension-overworld" ]
+	[songs.deep4]
+		play_once = 1
+		triggers = [ "height-deepUnder" "dimension-overworld" ]
+	[songs.dying]
+		triggers = [ "lowhp" ]
+	[songs.credits]
+		play_once = 1
+		volume = 0.75
+		triggers = [ "creative" "dimension-creativeWhitelist" ]
+	[songs.sheming_weasel]
+		play_once = 1
+		triggers = [ "creative" "dimension-creativeWhitelist" ]
+	[songs.spectator]
+		play_once = 1
+		volume = 0.75
+		triggers = [ "spectator" "dimension-creativeWhitelist" ]
+	[songs.the_builder]
+		play_once = 1
+		triggers = [ "spectator" "dimension-creativeWhitelist" ]
+	[songs.nothingness]
+		triggers = [ "height-inVoid" ]
+	[[songs.bosscrazy]]
+		triggers = [ "mob-crazy_mobs" ]
+	[songs.dragon]
+		triggers = [ "mob-ender_dragon" ]
+	[songs.chaos_dragon]
+		triggers = [ "mob-chaos_dragon" ]
+	[[songs.mistyambient]]
+		triggers = [ "dimension-skyland" ]
+	[songs.cliffs]
+		triggers = [ "dimension-crown_cliffs" ]
+	[songs.forest]
+		triggers = [ "dimension-dark_forest" ]
+	[songs.void]
+		triggers = [ "dimension-the_void" ]
+	[songs.desert]
+		triggers = [ "dimension-wide_desert" ]
+	[[songs.frost]]
+		triggers = [ "dimension-frost_mountains" ]
+	[[songs.cavenia1]]
+		play_once = 1
+		triggers = [ "dimension-cavenia" ]
+	[songs.cavenia2]
+		play_once = 1
+		triggers = [ "dimension-cavenia" ]
+	[songs.cavenia3]
+		play_once = 1
+		triggers = [ "dimension-cavenia" ]
+	[songs.cavenia4]
+		play_once = 1
+		triggers = [ "dimension-cavenia" ]
+	[songs.cavenia5]
+		play_once = 1
+		triggers = [ "dimension-cavenia" ]
+	[songs.cavenia6]
+		play_once = 1
+		volume = 0.75
+		triggers = [ "dimension-cavenia" ]
+	[[songs.underground1]]
+		play_once = 1
+		triggers = [ "dimension-cavern" ]
+	[[songs.underground2]]
+		play_once = 1
+		triggers = [ "dimension-cavern" ]
+	[[songs.underground3]]
+		play_once = 1
+		triggers = [ "dimension-cavern" ]
+	[songs.spooky]
+		play_once = 1
+		triggers = [ "dimension-underworld" ]
+	[songs.spooky2]
+		play_once = 1
+		triggers = [ "dimension-underworld" ]
+	[songs.spooky3]
+		play_once = 1
+		triggers = [ "dimension-underworld" ]
+	[[songs.mistyambient]]
+		triggers = [ "dimension-mining_dimension" ]
+	[songs.nether1]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether2]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether3]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether4]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether5]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether6]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.nether7]
+		play_once = 1
+		triggers = [ "dimension-nether" ]
+	[songs.end]
+		triggers = [ "dimension-end" ]
+	[songs.aoa1]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa2]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[[songs.aoa3]]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa4]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa5]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa6]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa7]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[songs.aoa8]
+		play_once = 1
+		triggers = [ "dimension-aoa" ]
+	[[songs.battle3]]
+		triggers = [ "dimension-aoa" ]
+	[[songs.thunder1]]
+		play_once = 1
+		triggers = [ "dimension-labyrinth" ]
+	[songs.midnight]
+		play_once = 1
+		triggers = [ "dimension-labyrinth" ]
+	[songs.labyrinth]
+		play_once = 1
+		triggers = [ "dimension-labyrinth" ]
+	[songs.labyrinth2]
+		play_once = 1
+		triggers = [ "dimension-labyrinth" ]
+	[songs.battle1]
+		play_once = 1
+		triggers = [ "dimension-hunting_dimension" ]
+	[songs.battle2]
+		play_once = 1
+		triggers = [ "dimension-hunting_dimension" ]
+	[[songs.battle3]]
+		play_once = 1
+		triggers = [ "dimension-hunting_dimension" ]
+	[[songs.cavenia1]]
+		play_once = 1
+		volume = 0.4
+		triggers = [ "dimension-hunting_dimension" ]
+	[[songs.underground2]]
+		play_once = 1
+		triggers = [ "dimension-hunting_dimension" ]
+	[[songs.deepdark1]]
+		play_once = 1
+		triggers = [ "dimension-deepdark" ]
+	[songs.crazy]
+		play_once = 1
+		volume = 0.75
+		triggers = [ "dimension-deepdark" ]
+	[[songs.thunder3]]
+		play_once = 1
+		triggers = [ "dimension-deepdark" ]
+	[[songs.bosscrazy]]
+		play_once = 1
+		triggers = [ "dimension-deepdark" ]

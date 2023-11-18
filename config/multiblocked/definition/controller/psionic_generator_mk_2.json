@@ -1,0 +1,183 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:psionic_generator_mk_2",
+  "traits": {
+    "forge_energy": {
+      "cIO": 0,
+      "gIO": 2,
+      "x": 14,
+      "y": 11,
+      "width": 150,
+      "height": 25,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 100000,
+      "maxReceive": 20000,
+      "maxExtract": 20000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "contenttweaker:heart_of_the_machine_god",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "ABA",
+        "HEH",
+        "ABA"
+      ],
+      [
+        "BCB",
+        "GD@",
+        "BCB"
+      ],
+      [
+        "ABA",
+        "HFH",
+        "ABA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:divine_large_circuit",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:psionic_generator_mk_2",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:divine_mek_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:industrial_ventilation",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:psionic_core_two",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "pylon": {
+        "states": [
+          {
+            "id": "botania:pylon",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "item_in"
+      ],
+      "F": [
+        "item_out"
+      ],
+      "G": [
+        "fluid_in"
+      ],
+      "H": [
+        "pylon"
+      ]
+    }
+  }
+}

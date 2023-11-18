@@ -1,0 +1,179 @@
+{
+  "name": "compactmachines3:chamberempowerer",
+  "target-item": "chambers:empowerer_chamber",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "actuallyadditions:item_battery_quadruple",
+
+
+  "input-types": {
+    "a": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 4
+    },
+    "b": {
+      "id": "actuallyadditions:block_display_stand",
+      "meta": 0
+    },
+    "c": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 5
+    },
+    "d": {
+      "id": "actuallyadditions:block_empowerer",
+      "meta": 0
+    },
+    "e": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 3
+    },
+    "f": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 2
+    },
+    "g": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 1
+    },
+    "h": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "_",
+        "_",
+        "b",
+        "_",
+        "_",
+        "a"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "d",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "_",
+        "_",
+        "b",
+        "_",
+        "_",
+        "a"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "e",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "f",
+        "_",
+        "_",
+        "h"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "g",
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  ]
+
+}

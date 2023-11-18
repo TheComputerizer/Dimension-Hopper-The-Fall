@@ -1,0 +1,9 @@
+{
+    "worldGen": [
+        "0 | type:ocean | 0.5 | 14 | 64",
+        "0 | type:beach | 0.5 | 14 | 64"
+    ],
+    "compatibleFluids": [
+        "water"
+    ]
+}

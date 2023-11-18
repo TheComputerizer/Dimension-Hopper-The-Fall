@@ -1,0 +1,39 @@
+{
+  "name": "reinforcement_modifier",
+  "target-item": "tconstruct:materials",
+  "target-meta": 14,
+  "target-count": 1,
+
+  "duration": 200,
+
+  "catalyst": "tconstruct:cast",
+
+  "input-types": {
+    "a": {
+      "id": "overloaded:compressed_obsidian",
+      "meta": 1
+    },
+    "b": {
+      "id": "calculator:material",
+      "meta": 2
+    }
+  },
+
+  "shape": [
+    [
+      ["_","_","_"],
+      ["_","a","_"],
+      ["_","_", "_"]
+    ],
+    [
+      ["_","a","_"],
+      ["a","b","a"],
+      ["_","a","_"]
+    ],
+    [
+      ["_","_","_"],
+      ["_","a","_"],
+      ["_","_","_"]
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+{
+	"block_pools": [
+		{
+			"name": "lightclay",
+			"type": {
+				"type": "block",
+				"name": "minecraft:clay"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "minecraft:flint_and_steel"
+				},
+				{
+					"type": "consume_block",
+					"amount": 1
+				},
+				{
+					"type": "spawn_particles",
+					"name": "dragonbreath",
+					"amount": 90,
+					"xOffset": 0.2,
+					"yOffset": 0.2,
+					"zOffset": 0.2,
+					"disableJEI": true
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:brick",
+					"amount": 2
+				}
+			]
+		}
+	]
+}
+
+

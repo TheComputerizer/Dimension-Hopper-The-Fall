@@ -1,0 +1,75 @@
+{
+  "name": "compactmachines3:chambercomposter",
+  "target-item": "chambers:compost_chamber",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "actuallyadditions:item_battery_double",
+
+
+  "input-types": {
+    "a": {
+      "id": "actuallyadditions:block_compost",
+      "meta": 0
+    },
+    "b": {
+      "id": "compactmachines3:wallbreakable",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+}

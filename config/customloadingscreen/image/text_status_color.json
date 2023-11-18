@@ -1,0 +1,7 @@
+{
+  "parent": "config/text_status",
+  "position": {
+    "y": "80"
+  },
+  "colour": "0xFFB500D1"
+}

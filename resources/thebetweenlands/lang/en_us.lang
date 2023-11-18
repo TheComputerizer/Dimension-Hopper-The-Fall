@@ -1,0 +1,14 @@
+entity.thebetweenlands.fortress_boss.name=Stupid Sphere Thing
+entity.thebetweenlands.fortress_boss_turret.name=Stupid Sphere Thing Turret
+entity.thebetweenlands.fortress_boss_projectile.name=Stupid Sphere Thing Projectile
+entity.thebetweenlands.fortress_boss_blockade.name=Stupid Sphere Thing Blockade
+entity.thebetweenlands.fortress_boss_spawner.name=Stupid Sphere Thing Spawner
+entity.thebetweenlands.fortress_boss_teleporter.name=Stupid Sphere Thing Teleporter
+location.wight_tower_boss.name=80:Stupid Sphere Thing
+advancements.thebetweenlands.fighter.staring_contest.description=Defeat the Stupid Sphere Thing
+blsubtitles.entity.fortress_boss.teleport=Stupid Sphere Thing teleports
+blsubtitles.entity.fortress_boss.projectiles=Stupid Sphere Thing summons projectiles
+blsubtitles.entity.fortress_boss.hurt=Stupid Sphere Thing hurts
+blsubtitles.entity.fortress_boss.death=Stupid Sphere Thing dies
+blsubtitles.entity.fortress_boss.nope=Stupid Sphere Thing is protected
+blsubtitles.entity.fortress_boss.shield_down=Stupid Sphere Thing loses a shield

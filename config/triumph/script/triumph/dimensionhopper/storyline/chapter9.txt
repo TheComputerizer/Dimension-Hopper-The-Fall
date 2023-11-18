@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+
+setTitle("Chapter 9")
+
+setDescription("More Space! Great...")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+addParent("triumph:dimensionhopper/storyline/chapter8")
+
+drawDirectLines(true)
+
+setPos(330,1)
+
+criteria = addCriteria("entered_pluto", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("planet.Pluto")
+
+addRewardFunction("triumph:finalfrontierStage")
+addRewardFunction("triumph:announceChapterNine")

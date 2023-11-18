@@ -1,0 +1,18 @@
+{
+  "parent": "builtin/image",
+  "image": "customloading:load_border.png",
+  "position_type": "CENTER",
+  "offset_pos": "CENTER",
+  "position": {
+    "x": "(-SCREEN_WIDTH/2)*percentage*0.995",
+    "y": "60",
+    "width": "8",
+    "height": "150"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "1",
+    "height": "1"
+  }
+}

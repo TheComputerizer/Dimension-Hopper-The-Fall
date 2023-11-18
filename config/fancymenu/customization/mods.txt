@@ -1,0 +1,43 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraftforge.fml.client.GuiModList
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=1010%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=480962%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=10951%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=11210%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=10973%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=6110%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+

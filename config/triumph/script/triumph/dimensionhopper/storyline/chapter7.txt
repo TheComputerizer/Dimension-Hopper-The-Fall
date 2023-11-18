@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+
+setTitle("Chapter 7")
+
+setDescription("Deeper in Space!")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+addParent("triumph:dimensionhopper/storyline/chapter6")
+
+drawDirectLines(true)
+
+setPos(264,1)
+
+criteria = addCriteria("entered_jupiter", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("planet.Jupiter")
+
+addRewardFunction("triumph:deepspaceStage")
+addRewardFunction("triumph:announceChapterSeven")

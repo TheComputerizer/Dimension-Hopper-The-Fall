@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"particle": "contenttweaker:blocks/booster_block_1_top",
+		"top": "contenttweaker:blocks/booster_block_1_top",
+		"bottom": "contenttweaker:blocks/booster_block_1_bottom",
+		"sides": "contenttweaker:blocks/booster_block_1_sides"
+	},
+	"elements": [
+		{
+			"from": [3.2, 0, 3.2],
+			"to": [12.8, 16, 12.8],
+			"faces": {
+				"north": {"uv": [3, 0, 13.125, 16], "texture": "#sides"},
+				"east": {"uv": [3, 0, 13.125, 16], "texture": "#sides"},
+				"south": {"uv": [3, 0, 13.125, 16], "texture": "#sides"},
+				"west": {"uv": [3, 0, 13.125, 16], "texture": "#sides"},
+				"up": {"uv": [0, 0, 0.6, 0.6], "texture": "#top"},
+				"down": {"uv": [0, 0, 0.6, 0.6], "texture": "#bottom"}
+			}
+		}
+	]
+}

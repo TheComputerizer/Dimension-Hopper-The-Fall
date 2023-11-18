@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "lightLevel": 0,
+  "harvestLevel": 1,
+  "hardness": 5,
+  "minY": 5,
+  "maxY": 60,
+  "size": 4,
+  "numberToGenerate": 4
+}

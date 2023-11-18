@@ -1,0 +1,583 @@
+1.4.4 [PERFORMANCE & BALANCING]
+
+Added Mods
+- Aether II: Phosphor Not Included
+- Alfheim Lighting Engine
+- Crafting Tweaks Unofficial
+- Mekanism Community Edition
+- Mekanism Community Edition: GENERATORS
+- Mekanism Community Edition: TOOLS
+- Mouse Tweaks Unofficial
+- Pillar Patched
+- Red Core
+- Roughly Enough IDs
+
+Removed Mods
+- Aether II
+- Crafting Tweaks
+- Hesperus
+- FastFurnace
+- Just Enough IDs
+- Mekanism
+- Mekanism Generators
+- Mekanism Tools
+- Mouse Tweaks
+- Pillar
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- CensoredASM
+- CraftTweaker
+- Dimension Hopper Tweaks
+- Ore Stages
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Zen Utils
+
+General Changes
+- Removed log spam regarding advancements, recipes and textures that could not be loaded
+- Removed log spam regarding version checks and some other misc things that throw unimportant errors
+- Fixed errors sometimes being thrown when damaging an Aechor Plant in the Aether
+- Crazy mobs will now spawn 3x less particles
+- Made particles cause less lag in general
+- Stargates no longer generate in nether fortresses and other vanilla structure they were not supposed to generate in
+- Removed cacscading worldgen log messages since they are generally just a byproduct of low tps
+- Enabled chunk generation limits to decrease the size and scale of tps drops while exploring
+- Stopped some important dimensions from being forcefully unloaded so chunkloading can be utilized
+- Fixed a crash from the silent gems guidebook
+- Fixed tool progression support for ore stages
+- Fixed staged blocks not rendering correctly
+- Fixed the stargateOverworld stage being rewarded later than makes sense
+- Tile entities now inherit game stages from the players or other tile entities who placed them down allowing them to properly access staged items, blocks, and recipes
+- The XU2 mechanical miner can now correctly mine anything that an iron pickaxe can
+- Removed more unecessary JEI categories
+- Optimized a bunch of recipe registration stuff related to the custom enchantment system
+- Removed a bunch unnecessary JEI spam from soul vials, syringes, creeping moss, and various tinkers parts that seemed to facilitate a memory leak
+
+
+1.4.3 [HOTFIX]
+
+Updated Mods
+- Specified Spawning
+
+General Changes
+- Did not forget to include the changelog file in the exported build this time
+- Fixed a sledgehammeer compatability issue causing servers to crash while in The Betweenlands
+- Fixed some issues with the mob spawning system that caused things to spawn at the wrong times in the wrong places (specifically the nether)
+- Fixed a bunch of the stargate addressor recipes from ancient stargates having broken dimension requirements
+
+
+1.4.2 [MISC FIXES]
+
+Removed Mods
+- SpawnTableTweaker
+
+Updated Mods
+- Dimension Hopper Tweaks
+- ExtraPlanets
+- Multiblocked
+- VintageFix
+- Zen Utils
+
+General Changes
+- Fixed the grave dust duplicator recipe with normal infusion crystals not working if the crystals were damaged
+- Added lunar Sapphire Ore to T3+ void ore miners
+- Fixed the quest for signalum seeds requiring gold seeds instead
+- Fixed the oredict for aquamarine ore
+- Added names for most if not all dimensions in JER ore distribution graphs
+- Fixed some crashes from events that needed null checks
+- Fixed some issues regarding break speed that made blocks reappear after mining them too fast and nibobium pickaxes not work as intended
+- Fixed the custom loading screen
+- Potentially slightly increased loading times
+- Potentially fixed a memory leak
+- Fixed a crash after attempting to "wake up" from the good dream or nightmare dimensions
+- Fixed the time in a bottle decreasing while holding it in non dream dimensions
+- Made wind shrines 2.5x more uncommon since they were generating way too frequently
+- Set the max RF capacity, input, and output of the controller for the Assembler multiblock to 1666667 so black hole tanks can be made
+- Fixed all the ancient stargate addressor recipes
+- All ancient stargates are now required to have a stone block from whatever dimension they are in as the 4 corners instead of heavy-duty blocks with the exception of venus which needs volcanic rock and lunalus which needs lunar blocks
+
+1.4.1 [HOTFIX]
+
+General Changes
+- Fixed the magnite pickaxe being staged making the pack impossible to start without cheats enabled
+
+
+1.4.0 [BALANCING, FIXES, PROGRESS, & PERFORMANCE]
+
+Added Mods
+- ConfigAnytime
+- JourneyMapStages Continuation
+- Specified Spawning
+- VintageFix
+
+Removed Mods
+- Caliper
+- DupeFixProject
+- FoamFix
+- InControl
+- JourneyMapStages
+- Mixin 0.7-0.8 Compatability
+- MixinBoostrap
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Athenaeum
+- BDLib
+- CensoredASM
+- CraftTweaker
+- Dimension Hopper Tweaks
+- EnderCore
+- Ender IO
+- Ender IO Endergy
+- Exchangers
+- FancyMenu
+- Galacticraft Legacy
+- Had Enough Items
+- Hammer Lib
+- Hesperus
+- JourneyMap
+- MixinBooter
+- Music Triggers
+- Nothirium
+- OpenComputers
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Placebo
+- RenderLib
+- StorageDrawers
+- The Impossible Library
+- Tool Progression
+- UniversalTweaks
+- Wanion Lib
+- xXx_MoreToolMats_xXx
+- Zen Utils
+
+General Changes
+- Redid the entire custom mob spawning system with Specified Spawning instead of InControl for better performance and easier manipulation of spawns
+- All custom spawns that need specific game stages now require ALL players in the spawning dimension to have the necessary stage(s) with the exception of spawn removals which will happen if ANY player in the dimension has the necessary stage(s)
+- AoA spawns are now gated via the new mob spawning system rather than via Mob Stages
+- Disabled the satchel from thermal expansion and since it could crash lock worlds
+- Fixed items and blocks that can hold LE power not being able to max out
+- The LE to RF Export bus can now extract up to twice the RF to LE conversion rate per tick
+- Reworked the RF Lightning generator so that it can input the RF to LE conversion rate amount of RF and generate lightning every tick
+- Cut the cooldown time of lightning terminals in half
+- Dimensional door gateways will definitely not spawn in dimensions they are not supposed to anymore
+- Did some minor volume rebalancing for some of the custom music
+- Aoptheosis bosses will now only spawn in cavenia and huge caverns rather than any cavern dimension
+- Increased the auto save interval from 45 seconds to 5 minutes
+- Enabled shield parrying from Universal Tweaks
+- Disabled various unused mod integrations for mods that are not in the pack
+- Fixed the coke oven outputting the wrong amount of creosete
+- Fixed some weird and/or unrequired prologue quest progression
+- Fixed Zollern Galaxy zinc being prioritized in recipe outputs instead of Extra Planets zinc
+- Replaced Zollern Galaxy zinc recipe inputs with an oredict
+- Fixed some space suits not having recipes
+- Crazy mobs will now only show boss bars in cavenia
+- Removed the sight check for crazy mob boss bars so they don't flash as much
+- Decreased the total number of boss bars that can be rendered on the screen at once
+- Cleaned up some log spam related to skill registration
+- Redid blight fire rendering in a more optimized way so it isn't as laggy when there are a lot of blighted mobs in the same area
+- You will now "wake up" after spending 15 minutes in the dream or nightmare dimensions unless you are holding a time in a bottle in your main or offhand that is not empty
+- Fixed being able to convert between the 2 different aquamarine types in chapter 3 making it easy to skip intended progression and get softlocked
+- Chaos essence shards are now needed to craft a device frame and by extension a factorizer
+- Fixed the cavenic orb quest being skippable
+- Fixed The End quest being locked by the Cavenia quest
+- Removed the missing niter ore from void ore miners
+- Replaced missing graphite ore in T3+ void ore miners with graphite dust
+- The quest for the daedalus block now correct lists 2 blocks instead of 1
+- Potentially fixed staging issues with some crafting containers
+- Nerfed various methods of getting a lot more chaos essence out of chaos ore than intended
+- Removed some unused JEI categories
+- Fixed Europa stargates not generating
+- Redid the staging for the stargate system so that each dimension where stargates can spawn has a unique stage to prevent potential softlocks and the need to remove stages of the same tier
+- All quests that give a gamestage required to address a stargate now have autoclaim enabled
+- The flint dimension now generates the correct type of flint blocks
+- Flint blocks can now be broken down into flint and vice versa
+- Almost all dimensional specific custom ore generation will now generates veins that are twice as big twice as frequently to decrease the number of mining trips to various dimensions needed
+- Fixed amazing armor cores not being craftable
+- Removed the unused phantom and cloud dimensions from the Dimensions for Sale questline as well as their respective stages
+- Alternate blocks are now given alongside the alternate igniter in the Alternate Reality quest
+- Added a recipe for the artisan worktables toolbox
+- Proven Frames are now craftable so that Oblivion frames can be made
+- End Clusters for End Seeds are now craftable
+- Enabled the AoA wind shrines in the overworld
+- All AoA staves that deal direct damage now have a base damage increase of 5x
+- The mechanic of spawners spawning slower overtime and eventually breaking is now incremented by mobs that are killed rather than spawned
+- Replaced the energy input of the Assembler multiblock with a 2nd fluid input and gave the controller the necessary energy capability for all Assembler recipes
+- Fixed the Limbonic Energy Hatch
+- Increased the max energy capacity, receive, and extract values of the Ectoplasmic Generator Controller so its endgame recipes are actually functional
+- Undersand is now automateable before unlocking the T5 void ore miner
+- Draconium ore is now available in the T5 void ore miner in addition to T6
+- Quadrupled draconium vein size and doubled draconium vein frequency in the deep dark
+- Added an earlier method of duplicating grave dust using a normal infusion crystal
+- Made the Master Infusion Crystal a bit easier to craft
+- Added Cerulean Ore and Geode Ore to T3+ void ore miners
+- Added a recipe for the Creative Lightning Cell so the Infinity Infuser multiblock is usable
+- The Last Stand enchantment now uses up 4x as much XP and has a short cooldown depending on its level
+- The Dice of Fate from botania can now give duplicate relics
+- Fixed the creative Mana Tablet recipe
+- Eternal Fabric now tries to teleport you back to your respawn position
+- Reran JER scans in most dimensions for updated ore distribution graphs
+
+
+1.3.0 [MISC FIXES, BALANCE CHANGES, & PERFORMANCE]
+
+Updated Mods
+- CensoredASM
+- Dimension Hopper Tweaks
+- Exchangers
+- Had Enough Items
+- Multiblocked
+- Zen Utils
+
+General Changes
+- Improved memory caches via CensoredASM now allow the pack to laod faster and for memory leaks to take longer to freeze the game
+- Fixed some Universal Tweaks config options that were reset to their default values
+- Reenabled animated textures
+- Fixed the block breaking animation
+- Fixed occasionally respawning thousands of blocks away in the prologue
+- Partially reimplemented/enhanced the final boss
+- Made the 100% and 101% quests both visible and readable
+- Capped empowering time at 50 seconds dramatically decreasing the amount of "AFK crafting" needed for things like capacitors
+- Cut the power scaling of capacitor empowering in half with the exception of stellar capacitors and fixed some of them being annoying to automate
+- Decreased the crafting time and scaling for custom ritual of the forest recipes
+- Fixed the Tier 4 Thermal Padding quest being required
+- Added magnite ore to the orechid ignem
+- Added skyroot logs (T1+) palm logs (T1+), cherry logs (T2+), and weedwood Logs (T3+) to the void botanic miner separately from the generic log output
+- Fixed the redstone max storage drawer upgrade not being craftable
+- Added a method for automating gold leaves
+- Added cycle recipes between thick glitter blocks and agate logs so they can be automated
+- Added recipes to recycle neptunium tools and aromor in an arc furnace
+- Enabled the basic package crafter
+- Replaced Immersive Engineering coke inputs/outputs used in recipes with the Thermal Foundation version
+- Cut the molten superium needed to craft nether star blocks down to 8 ingots worth
+- Fixed copper gears not being crafting in the beginning of ch 1
+- Added fallen meteors to T3+ void ore miners
+- Added undersand to T5+ void resource miners
+- All void controller quests now ignore NBT data
+- Fixed the space station quests not detecting
+- Fixed the lightning infuser multibocks quests listing the wrong number of blocks
+- Fixed morganite not generating on triton
+- Fixed a bunch of incorrect quest gating
+
+
+1.2.2 [HOT FIX]
+
+Removed Mods
+- Avaritia's Complement
+
+Added Mods
+- Avaritia Tweaks
+
+Updated Mods
+- Konkrete
+- Open Computers
+- Universal Tweaks
+
+General Changes
+- Added shortcut recipes for inferium and prudentium ingots
+- Fixed crazy mobs not being able to spawn in cavenia
+- Fixed demon soldiers and little bam spawns being hard capped in dimensions that are not the nether
+
+
+1.2.1 [MISC FIXES & BALANCE CHANGES]
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Dimension Hopper Tweaks
+- FancyMenu
+- Had Enough Items
+- Music Triggers
+- SledgeHammer
+- Zen Utils
+
+General Changes
+- Added a changelog.txt file with all changes since the release of 1.0.0
+- Dramatically increased the amount of XP needed to use waystones to travel across dimensions
+- Lowered the maximum health cap back down to 32678
+- Elite Circuits can now be made at the Enginner's Workstation
+- All storage drawer upgrades now use menril saplings for more consistency and less pointless gating
+- Enabled autoclaim on more quests
+- Removed the quests for Trappist1c, Trappist1d, and Trappist1e as they were from a mod no longer present in the pack
+- Updated the infromational quests and improved the formatting
+- Fixed the T7 rocket recipe requiring specific metadata for the thrusters
+- The sticky piston to piston recipe now accepts a knife with any damage value which will lose 25 of its durability per craft
+- Added arkenium ore to all tiers of void ore miners
+- Dramatically scaled up the compressed resource outputs for void resource miners so getting highly compressed materials is much less grindy
+- All crazy mobs can spawn in the overworld again with a maximum of 50 at a time
+- Made more quests ignore NBT.
+- Blight deaths are no longer broadcast in chat to make mob farms in masochist mode less annoying
+- Tanner Jimmy Fans and Inter-Dimensional Swords are now masochist mode only
+- Fixed RFTools redstone transmitters and receivers needing the wrong block
+- Removed bedrock fog
+- The LE cells for all tiers of the lightning infuser multiblock now protrude out so the tops are uncovered
+- Fixed a freeze/crash from attempting to mine a stargate controller
+- Stargate ring components and controllers can no longer be mined (They can still be blown up if its really necessary)
+- Added a way to manually spawn pixons
+- Limited the number of vanilla mobs that are allowed to spawn in the nether once chapter 6 is reached
+- Increased Little Bam and demon soldier spawn rates
+
+
+1.2.0 [RECIPE FIXES & MISC CHANGES]
+
+Removed Mods
+- TinkersOreDictCache (now included in UniversalTweaks)
+- Toast Control (now included in UniversalTweaks)
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Better Questing - Multiblock and Structure Integration
+- Controlling
+- Corail Tombstone
+- CraftTweaker
+- Dimension Hopper Tweaks
+- ExtraPlanets
+- FancyMenu
+- Fixeroo (previously XP Crb Clumps)
+- Had Enough Items
+- JAOPCA
+- MixinBooter
+- More Planets
+- Multiblocked
+- Music Triggers
+- Nothirium
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Particle Culling
+- ReAuth
+- RenderLib
+- SteveKunG's Lib
+- TheBetweenlands
+- The Impossible Library
+- Universal Tweaks
+- Zen Utils
+
+General Changes
+- Erroring entities are now removed by default to guard against certain crashes
+- The nether stage is now granted when the nether dimension quest is completed allowing blazes to spawn as intended
+- Fixed the broken chapter 7 advancement
+- Removed the particle collision check, massively decreasing particle lag
+- Enabled various config options for sledgehammer allowing it fix and improve more things
+- Enabled various config options for universal tweaks allowing it fix and improve more things
+- Xp orbs now give the correct amount of XP again
+- There is now a 10-30 second delay between songs in the same area/of the same type
+- The informational quests are no longer repeatable
+- Fixed The Factory & Psionic Generator Mk1 & Mk2 using their respective Mk3 recipes
+- Fixed the diamatine armor quest needing restonia armor
+- Fixed the decoctive diffuser quest needing to consume the item
+- Switched the prestige token 7 and 8 recipes to make more sense in terms of progression
+- Fixed the Crafter Tier 2 using nonexistent materials making it impossible to craft
+- Added a recipe for the Crafter Tier 3
+- Added recipes for a few useful RFTools machines
+- Added a recipe for the block update detector from dark utilities
+- Added a recipe for forestry spectacles
+- Fixed the respawn obelisk recipe
+- Added a recipe for turning litherite blocks back into crystals
+- Added a recipe for turning sticky pistons into normal pistons
+- The correct flint blocks are now obtainable and properly implemented
+- Fixed enderium seeds needing way too many of the wrong block type
+- Added a recipe for gravitite plates
+- Added recipes for duplicating rocket schematics
+- Fixed the recipe outputs for the plant fertilizer and plant sower giving animal growers
+- Fixed the recipe for the artisan speed upgrade
+- Made it more obvious which quests are needed to advance to chapter 7
+- Removed the NBT check on some quests
+- Fixed some additional quest requirements and unlocks
+- Fixed the rocket T1 recipe needing a type of slab that does not exist
+- Fixed some respawn position issues in the prologue
+- Temporarily removed crazy mob spawns from the overworld
+
+Skill Changes
+- When a block with a harvest level of 0 is mined, there is now a random chance based on the players mining level that it will count as harvest level 1 in terms of SP gained
+- Coal ore now counts as having a harvest level of 1 in terms of mining SP gained (bypassing the random chance formula entirely)
+
+
+1.1.0 [MAJOR PERFORMANCE IMPROVEMENTS]
+
+Removed Mods
+- AI Improvements
+- BetterFPS
+- Clumps
+- Diet Hopper
+- Duplicate Entity UUID Fix
+- Quick Leaf Decay
+- Phosphor
+- Surge
+- SwingThroughGrass
+- TickCentral
+
+Added Mods
+- DupeFix Project
+- Dynamic View
+- Hesperus
+- Nothirium
+- Sledgehammer
+- Universal Tweaks
+- XP Orb Clump
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Corail Tombstone
+- CraftTweaker
+- Dimension Hopper Tweaks
+- ForgeEndertech
+- Galacticraft Legacy
+- JAOPCA
+- PackagedAuto
+- Zen Utils
+
+General Changes
+- The celestial map no longer shows duplicate planets
+- Beds now work again in the twilight forest
+- Moved all crafttweaker events to the tweaks mod and improved the performance of some problematic checks
+- Dramatically improved server performance
+- Decreased or possibly removed the lag spike from killing mobs
+- Removed some unnecessary command punishments
+- The Coke Oven quest will now ignore NBT data
+- Turned on autoclaim for some key progression quests
+- Fixed the Obsidian Skip not being masochist mode only
+- Fixed a missing requirement on a masochist mode quest
+- The resonator recipe now accepts any block of charcoal
+- Fixed a zollern galaxy crash related to the AoA heart stone block
+- Added some informational quests regarding skills, health, XP, and difficulty
+- The Void Cheater trait no longer works in Caligro so chapter 10 can actually be reached
+- Added a recipe for the ME conduit
+- The T2 storage drawer upgrade now uses a spectre sapling instead of dark blue wisproot
+- Added a quest explaining where to get dark matter essence
+- Fixed the artisan workshop needing an unobtainable table
+- Made it more obvious which materials in chapter 2 matter for immediate progression
+- Added a note in the opal quests indicating that they are biome specific
+- Fixed the charoite ore quest
+- The dull mirror has returned, but at what cost?
+- Fixed missing plates in various solar panel and void miner recipes
+
+Skill Changes
+- Fixed a desync issue resulting in the need to relog in order for skill requirements to get updated
+- The mining skill now runs a calculation based on the hardness and mining level of the block mined. The harvest level must be at least 1 (iron) in order to gain SP
+- The attack skill now guarantees at least 1 SP per hit if the research skill is at least level 32
+- Defense SP can now be gained based on a damage reduction formula based on mobs that are killed
+- Defense SP can now gained from successfully blocking with a shield. By default, half of the damage blocked will be gained with a minimum of 1 SP
+- Nerfed Defense SP gained by damage reduction from damage taken. It is now a 4th of the reduction with a maximum of 5 SP gained
+- The gathering skill now has a 5 second cooldown per item type picked up
+- The gathering skill now runs a calculation based on the stack size of the item picked up
+- An additional 1 agility point is now gained for every level of jump boost when jumping
+- An additional 1 agility point is now gained for every level of speed per second when sprinting
+- The agility skill now takes twice as many points per level to increase
+- Fixed the farming skill gaining SP whenever a hoe was used rather than if a hoe was used successfully
+- The magic skill now runs a calculation based on the amount of XP picked up
+
+
+1.0.2 [CHEESE REMOVAL]
+
+Removed Mods
+- Fermion
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- CraftTweaker
+- Dimension Hopper Tweaks
+- ExtraPlanets
+- JOAPCA
+- JOAPCASingularities
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- The Betweenlands
+- ZenUtils
+
+General Changes
+- Structures can no longer place down furnaces, anvils, enchanting tables, or brewing stands :SmileW:
+- Definitely fixed the random startup crash this time
+- Fixed the statistics screen fix not getting implemented properly
+- Changed some recipes involving JAOCPA materials to reflect its new format
+- Removed crafting recipes for all JAOPCA blocks
+- Removed the dull mirror
+- Added a gateway stage for the overworld dimension so you cant cheese chapter 1 items into twilight
+- Made glass hard
+- The removed gold, lapis, diamond, and emerald blocks from the questing ram rewards
+- The PSI collapse block trick now uses the staged block replacement instead of the original
+- Removed the PSI smelt item and smelt block tricks
+- Changed most of the multiblock recipes so that the energy inputs are tick based with the exception of the lightning infuser
+- Removed gold ingots from all loot tables and staged them to chapter 1
+- Removed engineer villagers and their houses from villages
+- All structures now have a 1% chance for normal chests to be replaced with a small storage crate that has no loot
+- Fixed some recipes that used the old enderio glowstone nano-particles
+- You want cheese? I'll give you some cheese
+- Fixed some minor quest stuff
+- Dropping villagers into a smeltery now gives a much more interesting liquid than molten emerald
+
+
+1.0.1 [SMALL BUGFIXES]
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Dimension Hopper Tweaks
+- FancyMenu
+
+General Changes
+- The mining skill now accepts the use of more tool types when breaking blocks
+- The defense skill now uses the damage reduction from armor rather than the amount of damage taken
+- Fixed stargates not converting rocket schematics into stargate addressers properly
+- Probably fixed the CMod crash that occasionally happened when starting up
+- Lowered the injector tier needed for the staff of power
+- Added recipes for the missing immersive engineering blueprints
+- Added a recipe for the blank design pattern and designer's workshop
+- Added a midgame recipe for the multiblock builder for automatic multiblock placement
+- Added quests for elite and ultimate circuits
+- Fixed all of the enderio alloy smelter recipes
+- Fixed the T4 mystical agriculture essences not having the correct crafting output
+- Fixed some artisan recipes that needed uneven amounts of molten metal
+- Removed the virtually unused basic workstation since you cant automate artisan stuff until you get a basic workshop anyways
+- Gave some goal quests the dramatic completion sound
+
+
+1.0.0 [OFFICIAL RELEASE]
+
+Removed Mods
+- Modular Machinery
+- RFTools Dimensions
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Censored ASM
+- Corail Tombstone
+- Craft Tweaker
+- Dimension Hopper Tweaks
+- Dynamic Darkness
+- Ender IO
+- Ender IO Endergy
+- Ender Tweaker
+- FancyMenu
+- Had Enough Items
+- Konkrete
+- Mixin Booter
+- More Planets
+- Multiblocked
+- Packaged Auto
+- ReAuth
+- Zen Utils
+- The Betweenlands
+
+General Changes
+- Added the epilogue
+- Added quests for the rest of the extra planets bosses
+- Fixed all of recipes that still depended on items from modular machinery
+- Fixed aquamarine ore generation for newly generated chunks
+- Fixed the statistics screen soft crashing and not being able to open
+- Fixed a few memory leaks
+- Fixed a rare ConcurrentModificationException from the skill token GUI
+- Fixed all of the quest descriptions for planets, moons, and space stations to reflect the stargate system
+- Fixed some hard to read quest text coloring
+- Fixed various quest typos
+- Fixed some multiblock quests and had more of them ignore NBT
+- Fixed chapter 7 and 9 advancements being obtained whenever the dimension changed
+- Tier 5 thermal padding is now an optional quest
+- Removed the rest of the AoA daily/nightly events
+- Hid and/or removed a bunch of unused stuff from JEI
+- Added more information to the Multiblock'd quest to better explain how to properly input/output materials
+- The rune of earth from botania is no longer gated to chapter 3
+- The T2 storage drawer upgrade now uses a dark blue wisproot sapling

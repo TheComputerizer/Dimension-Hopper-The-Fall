@@ -1,0 +1,183 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:psionic_generator_mk_3",
+  "traits": {
+    "forge_energy": {
+      "cIO": 0,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 150,
+      "height": 25,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 1000000,
+      "maxReceive": 1000000,
+      "maxExtract": 1000000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "appliedenergistics2:controller",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "CBC",
+        "IGI",
+        "CBC"
+      ],
+      [
+        "BDB",
+        "EF@",
+        "BDB"
+      ],
+      [
+        "CBC",
+        "IHI",
+        "CBC"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "pylon": {
+        "states": [
+          {
+            "id": "botania:pylon",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:psionic_generator_mk_3",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "contenttweaker:divine_mek_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:divine_large_circuit",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:industrial_ventilation",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "contenttweaker:psionic_core_three",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "fluid_in"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "item_in"
+      ],
+      "H": [
+        "item_out"
+      ],
+      "I": [
+        "pylon"
+      ]
+    }
+  }
+}

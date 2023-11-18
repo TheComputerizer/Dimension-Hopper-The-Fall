@@ -1,0 +1,238 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:ectoplasmic_generator",
+  "traits": {
+    "forge_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 14,
+      "y": 9,
+      "width": 150,
+      "height": 25,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 100000000,
+      "maxReceive": 50000000,
+      "maxExtract": 50000000
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "contenttweaker:mek_wall",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAABBAAAAAA",
+        "C            D"
+      ],
+      [
+        "AAAAAABBAAAAAA",
+        "E            @"
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ],
+      [
+        "AAAAAAAAAAAAAA",
+        "              "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "randomthings:spectreblock",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:ectoplasmic_generator",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "randomthings:spectrecore",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "fluid_in"
+      ],
+      "D": [
+        "item_in"
+      ],
+      "E": [
+        "item_out"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiIngameMenu
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=902302%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=902350%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=902326%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376330%
+  action = hidebutton
+}
+

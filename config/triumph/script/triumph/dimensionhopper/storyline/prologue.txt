@@ -1,0 +1,23 @@
+setIcon(<twilightforest:miniature_structure:14>)
+
+setTitle("Prologue")
+
+setDescription("This isnt the overworld...?")
+
+addParent("triumph:dimensionhopper/storyline/root")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(33,1)
+
+setFrameType("GOAL")
+
+criteria = addCriteria("entered_twilight", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("twilight_forest")
+
+addRewardFunction("triumph:announcePrologue")

@@ -1,0 +1,24 @@
+setIcon(<galacticraftcore:rocket_t1>)
+
+setTitle("Chapter 5")
+
+setDescription("Your first journey into space.")
+
+setShowToast(False)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+addParent("triumph:dimensionhopper/storyline/chapter4")
+
+drawDirectLines(true)
+
+setPos(200,1)
+
+criteria = addCriteria("entered_moon", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("moon.moon")
+
+addRewardFunction("triumph:planetsStage")
+addRewardFunction("triumph:announceChapterFive")

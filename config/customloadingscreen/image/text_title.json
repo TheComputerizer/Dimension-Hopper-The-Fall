@@ -1,0 +1,14 @@
+{
+  "parent": "builtin/text",
+  "image": "textures/font/ascii.png",
+  "position_type": "CENTER",
+  "offset_pos": "CENTER",
+  "text": "'Dimension Hopper'",
+  "position": {
+    "x": "0",
+    "y": "0",
+    "width": "100",
+    "height": "10"
+  },
+  "colour":"0xFFB500D1"
+}

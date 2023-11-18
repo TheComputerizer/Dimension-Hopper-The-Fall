@@ -1,0 +1,41 @@
+{
+	"block_pools": [
+		{
+			"name": "Daedalus TP",
+			"type": {
+				"type": "block",
+				"name": "labyrinth:daedalus"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "labyrinth:daedalus"
+				},
+				{
+					"type": "consume_item",
+					"amount": 1
+				},
+				{
+					"type": "use_command",
+					"name": "pillar-spawn",
+					"arguments": "daedalus_portal ~ ~ ~"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.end_portal.spawn"
+				},
+				{
+					"type": "spawn_particles",
+					"name": "dragonbreath",
+					"amount": 90,
+					"xOffset": 0.2,
+					"yOffset": 0.2,
+					"zOffset": 0.2,
+					"disableJEI": true
+				}
+			],
+			"drops": []
+		}
+	]
+}

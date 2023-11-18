@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+
+setTitle("Chapter 1")
+
+setDescription("Found the Overworld!")
+
+addParent("triumph:dimensionhopper/storyline/prologue")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(66,1)
+
+setFrameType("GOAL")
+
+criteria = addCriteria("entered_overworld", "minecraft:changed_dimension")
+criteria.setDimensionDestination("overworld")
+
+addRewardFunction("triumph:removeTwilightStage")
+addRewardFunction("triumph:overworldStage")
+addRewardFunction("triumph:announceChapterOne")

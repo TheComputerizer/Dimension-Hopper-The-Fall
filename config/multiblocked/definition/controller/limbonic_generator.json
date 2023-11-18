@@ -1,0 +1,789 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:limbonic_generator",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "dimensionhopper:limbonic_fluid_hatch",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABBBBBBBBBBBBBCBBBBBBBBBBBBBA",
+        "ADDDDDDDDDDDDDNDDDDDDDDDDDDDA",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " ABBBBBBBBBBBBCBBBBBBBBBBBBA ",
+        " AFFFFFFFFFFFFFFFFFFFFFFFFFA ",
+        " ABBBBBBBBBBBBCBBBBBBBBBBBBA ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  AGGGGGGGGGGGCGGGGGGGGGGGA  ",
+        "  AGGGGGGGGGGGCGGGGGGGGGGGA  ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B           HHH           B ",
+        "  G          HIH          G  ",
+        "  G          HHH          G  ",
+        "   AJJJJJJJJJJCJJJJJJJJJJA   ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    AJJJJJJJJJCJJJJJJJJJA    ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     AJJJJJJJJCJJJJJJJJA     ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      ADDDDDDDCDDDDDDDA      ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DADDDDDDCDDDDDDAD      ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        AGGGGGCGGGGGA        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B           HHH           B ",
+        "  G          HHH          G  ",
+        "  G          HHH          G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GAGGGGCGGGGAG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F          HHHHH          F ",
+        " B          HHHHH          B ",
+        "  G         HHHHH         G  ",
+        "  G         HHHHH         G  ",
+        "   J        HHHHH        J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GGAGGGCGGGAGG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B          HHHHH          B ",
+        " F         HHHHHHH         F ",
+        " B         HHHHHHH         B ",
+        "  G        HHHHHHH        G  ",
+        "  G        HHHHHHH        G  ",
+        "   J       HHHHHHH       J   ",
+        "    J       HHHHH       J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GGGAGGCGGAGGG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D           HHHHH           D",
+        " B         HHHHHHH         B ",
+        " F        HHHHHHHHH        F ",
+        " B        HHHHHHHHH        B ",
+        "  G       HHHHHHHHH       G  ",
+        "  G       HHHHHHHHH       G  ",
+        "   J      HHHHHHHHH      J   ",
+        "    J      HHHHHHH      J    ",
+        "     J      HHHHH      J     ",
+        "      DD             DD      ",
+        "        GGGG     GGGG        ",
+        "            AFFFA            "
+      ],
+      [
+        "B            HHH            B",
+        "D           HHHHH           D",
+        " B         HHHHHHH         B ",
+        " F        HHHHHHHHH        F ",
+        " B H     HHHHHHHHHHH     H B ",
+        "  GH     HHHHHHHHHHH     HG  ",
+        "  GH     HHHHHHHHHHH     HG  ",
+        "   J      HHHHHHHHH      J   ",
+        "    J      HHHHHHH      J    ",
+        "     J      HHHHH      J     ",
+        "      DD     HHH     DD      ",
+        "        GGGG     GGGG        ",
+        "            FKKKF            "
+      ],
+      [
+        "C            HHH            C",
+        "@           HHHHH           E",
+        " C         HHHHHHH         C ",
+        " F        HHHHHHHHH        F ",
+        " C H     HHHHHHHHHHH     H C ",
+        "  CI     HHHHHLHHHHH     IC  ",
+        "  CH     HHHHHHHHHHH     HC  ",
+        "   C      HHHHHHHHH      C   ",
+        "    C      HHHHHHH      C    ",
+        "     C      HHHHH      C     ",
+        "      CC     HHH     CC      ",
+        "        CCCC     CCCC        ",
+        "            FKMKF            "
+      ],
+      [
+        "B            HHH            B",
+        "D           HHHHH           D",
+        " B         HHHHHHH         B ",
+        " F        HHHHHHHHH        F ",
+        " B H     HHHHHHHHHHH     H B ",
+        "  GH     HHHHHHHHHHH     HG  ",
+        "  GH     HHHHHHHHHHH     HG  ",
+        "   J      HHHHHHHHH      J   ",
+        "    J      HHHHHHH      J    ",
+        "     J      HHHHH      J     ",
+        "      DD     HHH     DD      ",
+        "        GGGG     GGGG        ",
+        "            FKKKF            "
+      ],
+      [
+        "B                           B",
+        "D           HHHHH           D",
+        " B         HHHHHHH         B ",
+        " F        HHHHHHHHH        F ",
+        " B        HHHHHHHHH        B ",
+        "  G       HHHHHHHHH       G  ",
+        "  G       HHHHHHHHH       G  ",
+        "   J      HHHHHHHHH      J   ",
+        "    J      HHHHHHH      J    ",
+        "     J      HHHHH      J     ",
+        "      DD             DD      ",
+        "        GGGG     GGGG        ",
+        "            AFFFA            "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B          HHHHH          B ",
+        " F         HHHHHHH         F ",
+        " B         HHHHHHH         B ",
+        "  G        HHHHHHH        G  ",
+        "  G        HHHHHHH        G  ",
+        "   J       HHHHHHH       J   ",
+        "    J       HHHHH       J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GGGAGGCGGAGGG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F          HHHHH          F ",
+        " B          HHHHH          B ",
+        "  G         HHHHH         G  ",
+        "  G         HHHHH         G  ",
+        "   J        HHHHH        J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GGAGGGCGGGAGG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B           HHH           B ",
+        "  G          HHH          G  ",
+        "  G          HHH          G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        GAGGGGCGGGGAG        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DD             DD      ",
+        "        AGGGGGCGGGGGA        ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      DADDDDDDCDDDDDDAD      ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     J                 J     ",
+        "      ADDDDDDDCDDDDDDDA      ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    J                   J    ",
+        "     AJJJJJJJJCJJJJJJJJA     ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  G                       G  ",
+        "  G                       G  ",
+        "   J                     J   ",
+        "    AJJJJJJJJJCJJJJJJJJJA    ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B           HHH           B ",
+        "  G          HIH          G  ",
+        "  G          HHH          G  ",
+        "   AJJJJJJJJJJCJJJJJJJJJJA   ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " B                         B ",
+        " F                         F ",
+        " B                         B ",
+        "  AGGGGGGGGGGGCGGGGGGGGGGGA  ",
+        "  AGGGGGGGGGGGCGGGGGGGGGGGA  ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "B                           B",
+        "D                           D",
+        " ABBBBBBBBBBBBCBBBBBBBBBBBBA ",
+        " AFFFFFFFFFFFFFFFFFFFFFFFFFA ",
+        " ABBBBBBBBBBBBCBBBBBBBBBBBBA ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ],
+      [
+        "ABBBBBBBBBBBBBCBBBBBBBBBBBBBA",
+        "ADDDDDDDDDDDDDNDDDDDDDDDDDDDA",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             ",
+        "                             "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "energy_out": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "A": {
+        "states": [
+          {
+            "id": "psi:psi_decorative",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:limbonic_generator",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "rpsideas:dark_plate",
+            "meta": 14
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "extendedcrafting:trimmed",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "contenttweaker:heart_of_the_machine_god",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "dimensionhopper:limbonic_energy_hatch",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "psicosts:material_glassy",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "contenttweaker:affixed_machine_parts",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "draconicevolution:invis_e_core_block",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "I": {
+        "states": [
+          {
+            "id": "draconicevolution:particle_generator",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "J": {
+        "states": [
+          {
+            "id": "zollerngalaxy:caligrostonebricks",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "K": {
+        "states": [
+          {
+            "id": "dimensionhopper:limbonic_fluid_hatch",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "L": {
+        "states": [
+          {
+            "id": "draconicevolution:energy_storage_core",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "fluid_out": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "energy_out",
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K",
+        "fluid_in"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [
+        "item_in"
+      ],
+      "N": [
+        "K",
+        "fluid_out"
+      ]
+    }
+  }
+}

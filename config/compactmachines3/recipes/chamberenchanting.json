@@ -1,0 +1,84 @@
+{
+  "name": "compactmachines3:chamberenchanting",
+  "target-item": "chambers:enchant_chamber",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "extrautils2:ingredients",
+  "catalyst-meta": 10,
+
+
+  
+  "input-types": {
+    "a": {
+      "id": "extrautils2:simpledecorative",
+      "meta": 0
+    },
+    "b": {
+      "id": "extrautils2:decorativesolidwood",
+      "meta": 1
+    },
+    "c": {
+      "id": "extrautils2:simpledecorative",
+      "meta": 2
+    },
+    "d": {
+      "id": "contenttweaker:bloq"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "b",
+        "c"
+      ]
+    ],
+    [
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d",
+        "c"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ]
+    ],
+    [
+      [
+        "c",
+        "b",
+        "c"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+}

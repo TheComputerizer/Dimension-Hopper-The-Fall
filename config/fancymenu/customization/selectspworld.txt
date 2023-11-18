@@ -1,0 +1,43 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiWorldSelection
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=346948%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=504948%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=582972%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=346972%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=424972%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=504972%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+

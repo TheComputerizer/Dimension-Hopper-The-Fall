@@ -1,0 +1,3 @@
+title @p times 20 100 40
+title @p title {"text":"Chapter Two", "bold":true, "italic":false, "color":"red"}
+title @p subtitle {"text":"The Labyrinth", "italic":true, "color":"white"}

@@ -1,0 +1,57 @@
+# Additional Spawns
+
+# Labyrinth Cavenic Creepers
+[[spawn]]
+	return_immediately = true
+	dimension = 1024
+	group = "progression_mobs"
+	[spawn.entity]
+		entity = "cavern:cavenic_creeper"
+		min_group_size = 1
+		max_group_size = 2
+		weight = 100
+	[spawn.gamestage]
+		all_players = true
+		gamestage = "cavern"
+
+# Overworld Crazy Mobs
+[[spawn]]
+	return_immediately = true
+	dimension = 0
+	group = "crazy_generic"
+	[spawn.entity]
+		matcher = "cavern:crazy"
+		min_group_size = 1
+		max_group_size = 3
+		weight = 500
+	[spawn.gamestage]
+		all_players = true
+		gamestage = "swamp"
+
+# Nether Ghast Queens
+[[spawn]]
+	return_immediately = true
+	dimension = -1
+	group = "progression_mobs"
+	[spawn.biome]
+		biome = "minecraft:hell"
+		matcher = "nether"
+	[spawn.entity]
+		entity = "netherex:ghast_queen"
+		min_group_size = 1
+		max_group_size = 1
+		weight = 10
+	[spawn.gamestage]
+		all_players = true
+		gamestage = "labyrinth"
+
+# Deep Dark Crazy mobs
+[[spawn]]
+	return_immediately = true
+	dimension = -11325
+	group = "crazy_deepdark"
+	[spawn.entity]
+		matcher = "cavern:crazy"
+		min_group_size = 2
+		max_group_size = 5
+		weight = 100

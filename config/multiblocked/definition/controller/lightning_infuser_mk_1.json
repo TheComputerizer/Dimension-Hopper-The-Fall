@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:lightning_infuser_mk_1",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "lightningcraft:stone_block",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "     ",
+        "  E  ",
+        "     "
+      ],
+      [
+        " B@B ",
+        " BBB ",
+        " BBB "
+      ],
+      [
+        " BCB ",
+        "EBDBE",
+        " BFB "
+      ],
+      [
+        " BBB ",
+        " BBB ",
+        " BBB "
+      ],
+      [
+        "     ",
+        "  E  ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "dimensionhopper:lightning_infuser_mk_1",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "lightningcraft:stone_block",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "lightningcraft:metal_block",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "LE": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
+      },
+      "ITEM_OUT": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      },
+      "ITEM_IN": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "ITEM_OUT"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "LE"
+      ],
+      "F": [
+        "ITEM_IN"
+      ]
+    }
+  }
+}

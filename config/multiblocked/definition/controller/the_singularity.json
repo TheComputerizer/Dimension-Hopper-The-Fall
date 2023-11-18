@@ -1,0 +1,239 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:the_singularity",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "mekanism:basicblock",
+          "meta": 14
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "     ",
+        "     ",
+        " AAA ",
+        "ABJBA",
+        "ABCBA",
+        "ABJBA",
+        "ABBBA",
+        " AAA "
+      ],
+      [
+        " AAA ",
+        " BBB ",
+        "ADDDA",
+        "B   B",
+        "B   B",
+        "B   B",
+        "B   B",
+        "ADDDA"
+      ],
+      [
+        " AGA ",
+        " BEB ",
+        "ADFDA",
+        "H   J",
+        "@   C",
+        "B   J",
+        "B   B",
+        "ADIDA"
+      ],
+      [
+        " AAA ",
+        " BBB ",
+        "ADDDA",
+        "B   B",
+        "B   B",
+        "B   B",
+        "B   B",
+        "ADDDA"
+      ],
+      [
+        "     ",
+        "     ",
+        " AAA ",
+        "ABJBA",
+        "ABCBA",
+        "ABJBA",
+        "ABBBA",
+        " AAA "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:heart_of_the_machine_god",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:the_singularity",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "mekanismgenerators:reactorglass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "extendedcrafting:storage",
+            "meta": 4
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "extendedcrafting:trimmed",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "draconicevolution:item_dislocation_inhibitor",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "moreplanets:black_hole_storage",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "item_out"
+      ],
+      "H": [
+        "fluid_in"
+      ],
+      "I": [
+        "item_in"
+      ],
+      "J": [
+        "energy_in"
+      ]
+    }
+  }
+}

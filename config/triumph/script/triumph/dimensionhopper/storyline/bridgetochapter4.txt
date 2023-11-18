@@ -1,0 +1,17 @@
+setIcon(<contenttweaker:swamp_key>)
+
+setTitle("Swamp Key")
+
+setDescription("Acquire the Swamp Key")
+
+addParent("triumph:dimensionhopper/root")
+
+setPos(80,65)
+
+hideLines()
+
+criteria = addCriteria("hasSwampKey", "minecraft:inventory_changed")
+
+criteria.addItem(<contenttweaker:swamp_key>)
+
+addRewardFunction("triumph:swampBridge")

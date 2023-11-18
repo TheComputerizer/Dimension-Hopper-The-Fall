@@ -1,0 +1,31 @@
+{
+    "renders": [
+		"config/background",
+		"config/tip_bar",
+		"config/title_bar",
+		"config/load_bar",
+		"config/bar_border",
+		"config/bar_border_2",
+		"config/text_title",
+        "config/text_status_color",
+        "config/text_sub_status_color",
+        "config/text_percentage_color",
+		"config/tips"
+    ],
+    "functions":[
+        
+    ],
+    "factories":[
+        
+    ],
+    "actions":[
+        
+    ],
+	"constants": {
+      "tip_interval": 32.0,
+      "tip_seed": "generate_seed()"
+	},
+    "variables":{
+        "tip_text": "(has_tips() & tip_interval > 0) ? tip(random_int(tip_seed, floor(time / tip_interval), tip_count())) : ''"
+    }
+}

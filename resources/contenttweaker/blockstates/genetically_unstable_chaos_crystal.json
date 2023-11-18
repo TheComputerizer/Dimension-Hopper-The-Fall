@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "contenttweaker:genetically_unstable_chaos_crystal.obj",
+    "transform": "forge:default-item"
+  },
+  "variants": {
+    "type": {
+      "fragmedium": {
+        "transform": {
+          "scale": 0.5
+        }
+      }
+    }
+  }
+}

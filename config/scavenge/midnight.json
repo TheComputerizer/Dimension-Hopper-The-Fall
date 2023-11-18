@@ -1,0 +1,35 @@
+{
+	"block_pools": [
+		{
+			"name": "SummonRift",
+			"type": {
+				"type": "block",
+				"name": "minecraft:obsidian"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{
+					"type": "require_item",
+					"name": "midnight:dark_pearl"
+				},
+				{
+					"type": "use_command",
+					"name": "summon",
+					"arguments": "midnight:rift ~ ~ ~"
+				},
+				{
+					"type": "spawn_particles",
+					"name": "dragonbreath",
+					"amount": 90,
+					"xOffset": 0.2,
+					"yOffset": 0.2,
+					"zOffset": 0.2,
+					"disableJEI": true
+				}
+			],
+			"drops": []
+		}
+	]
+}
+
+

@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+
+setTitle("Chapter 8")
+
+setDescription("The Deepest Dimensions")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+addParent("triumph:dimensionhopper/storyline/chapter7")
+
+drawDirectLines(true)
+
+setPos(297,1)
+
+criteria = addCriteria("entered_deepdark", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("Deep Dark")
+
+addRewardFunction("triumph:deepdownStage")
+addRewardFunction("triumph:announceChapterEight")

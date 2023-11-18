@@ -1,0 +1,2551 @@
+{
+	"block_pools": [
+		{
+			"name": "Orange Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 1
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 14
+				}
+			]
+		},
+        {
+			"name": "Magenta Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 2
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 13
+				}
+			]
+		},
+        {
+			"name": "Light Blue Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 3
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 12
+				}
+			]
+		},
+        {
+			"name": "Yellow Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 4
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 11
+				}
+			]
+		},
+        {
+			"name": "Lime Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 5
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 10
+				}
+			]
+		},
+        {
+			"name": "Pink Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 6
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 9
+				}
+			]
+		},
+        {
+			"name": "Gray Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 7
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 8
+				}
+			]
+		},
+        {
+			"name": "Light Gray Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 8
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 7
+				}
+			]
+		},
+        {
+			"name": "Cyan Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 9
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 6
+				}
+			]
+		},
+        {
+			"name": "Purple Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 10
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 5
+				}
+			]
+		},
+        {
+			"name": "Blue Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 11
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "biomesoplenty:blue_dye",
+					"amount": 1
+				}
+			]
+		},
+        {
+			"name": "Brown Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 12
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "biomesoplenty:brown_dye",
+					"amount": 1
+				}
+			]
+		},
+        {
+			"name": "Green Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 13
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "biomesoplenty:green_dye",
+					"amount": 1
+				}
+			]
+		},
+        {
+			"name": "Red Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 14
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "minecraft:dye",
+					"amount": 1,
+                    "meta": 1
+				}
+			]
+		},
+        {
+			"name": "Black Wool",
+			"type": {
+				"type": "block",
+				"name": "minecraft:wool",
+                "meta": 15
+			},
+			"clicktype": "rightclick",
+			"properties": [
+                {
+                    "type": "change_meta",
+                    "meta": 0
+                },
+				{
+					"type": "require_item_list",
+					"items": [
+						{
+							"name": "minecraft:shears"
+						},
+						{
+							"name": "aether:arkenium_shears"
+						},
+						{
+							"name": "boptools:shears_topaz"
+						},
+						{
+							"name": "boptools:shears_ruby"
+						},
+						{
+							"name": "boptools:shears_sapphire"
+						},
+						{
+							"name": "boptools:shears_peridot"
+						},
+						{
+							"name": "boptools:shears_tanzanite"
+						},
+						{
+							"name": "boptools:shears_malachite"
+						},
+						{
+							"name": "boptools:shears_amber"
+						},
+						{
+							"name": "blue_skies:ventium_shears"
+						},
+						{
+							"name": "botania:manasteelshears"
+						},
+						{
+							"name": "botania:elementiumshears"
+						},
+						{
+							"name": "ceramics:clay_shears"
+						},
+						{
+							"name": "enderio:item_dark_steel_shears"
+						},
+						{
+							"name": "mysticalagriculture:inferium_shears"
+						},
+						{
+							"name": "mysticalagriculture:prudentium_shears"
+						},
+						{
+							"name": "mysticalagriculture:intermedium_shears"
+						},
+						{
+							"name": "mysticalagriculture:superium_shears"
+						},
+						{
+							"name": "mysticalagriculture:supremium_shears"
+						},
+						{
+							"name": "projecte:item.pe_dm_shears"
+						},
+						{
+							"name": "projecte:item.pe_rm_shears"
+						},
+						{
+							"name": "rpsideas:ebony_shears"
+						},
+						{
+							"name": "rpsideas:ivory_shears"
+						},
+						{
+							"name": "rpsideas:psimetal_shears"
+						},
+						{
+							"name": "xreliquary:shears_of_winter"
+						},
+						{
+							"name": "thebetweenlands:syrmorite_shears"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_copper"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_tin"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_silver"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_lead"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_aluminum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_nickel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_platinum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_steel"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_electrum"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_invar"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_bronze"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_constantan"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_diamond"
+						},
+						{
+							"name": "thermalfoundation:tool.shears_gold"
+						},
+						{
+							"name": "tp:flint_shears"
+						},
+						{
+							"name": "tp:emerald_shears"
+						},
+						{
+							"name": "tp:stone_shears"
+						},
+						{
+							"name": "tp:diamond_shears"
+						},
+						{
+							"name": "tp:golden_shears"
+						}
+					]
+				},
+				{
+					"type": "damage_item",
+					"amount": 1
+				},
+				{
+					"type": "play_sound",
+					"name": "entity.sheep.shear"
+				}
+			],
+			"drops": [
+				{ 
+					"name": "actuallyadditions:item_misc",
+					"amount": 1,
+                    "meta": 17
+				}
+			]
+		}
+	]
+}

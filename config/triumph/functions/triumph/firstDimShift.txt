@@ -1,0 +1,12 @@
+gamestage silentremove @p bridgeone
+gamestage silentremove @p overworld
+gamestage silentremove @p labyrinth
+gamestage silentremove @p cavern
+gamestage silentadd @p wight
+gamestage silentadd @p sludgeon
+effect @p 2 20 50
+effect @p 4 20 50
+effect @p 9 20 50
+effect @p 15 20 50
+effect @p 25 20 50
+effect @p 11 25 50

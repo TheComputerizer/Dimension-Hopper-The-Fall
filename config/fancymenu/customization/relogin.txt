@@ -1,0 +1,31 @@
+type = menu
+
+customization-meta {
+  identifier = technicianlp.reauth.GuiLogin
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=502550%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=920975%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=345550%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=345530%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+

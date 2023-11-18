@@ -1,0 +1,330 @@
+{
+  "block_pools": [
+    {
+      "name": "Ancient Stargate Ganymede",
+      "disableJEI": true,
+      "type": {
+        "type": "block",
+        "name": "sgcraft:stargatering",
+        "meta": "1",
+        "properties": [
+          {
+            "type": "require_dimension",
+            "dimension": {
+              "dim": -1506,
+              "required": true
+            }
+          }
+        ]
+      },
+      "clicktype": "rightclick",
+      "properties": [
+        {
+          "type": "consume_block"
+        },
+        {
+          "type": "require_item",
+          "name": "extraplanets:schematic_tier5",
+          "meta": "0"
+        },
+        {
+          "type": "require_stage",
+          "name": "stargateGanymede",
+          "required": true
+        },
+        {
+          "type": "consume_item",
+          "amount": "1"
+        },
+        {
+          "type": "swing_hand"
+        },
+        {
+          "type": "drop_items"
+        },
+        {
+          "type": "spawn_particles",
+          "name": "dragonbreath",
+          "amount": 90,
+          "xOffset": 0.2,
+          "yOffset": 0.2,
+          "zOffset": 0.2,
+          "disableJEI": true
+        },
+        {
+          "type": "play_sound",
+          "name": "dimdoors:crack",
+          "category": "master",
+          "pitch": 1.0,
+          "disableJEI": true
+        },
+        {
+          "type": "has_block_structure",
+          "blocks": [
+            {
+              "name": "sgcraft:stargatering",
+              "meta": "1",
+              "positions": [
+                {
+                  "x": -2, "y": 0, "z": 0
+                },
+                {
+                  "x": 2, "y": 0, "z": 0
+                },
+                {
+                  "x": -2, "y": -2, "z": 0
+                },
+                {
+                  "x": 2, "y": -2, "z": 0
+                },
+                {
+                  "x": -2, "y": -4, "z": 0
+                },
+                {
+                  "x": 2, "y": -4, "z": 0
+                }
+              ]
+            },
+            {
+              "name": "sgcraft:stargatering",
+              "meta": "0",
+              "positions": [
+                {
+                  "x": -1, "y": 0, "z": 0
+                },
+                {
+                  "x": 1, "y": 0, "z": 0
+                },
+                {
+                  "x": -2, "y": -1, "z": 0
+                },
+                {
+                  "x": 2, "y": -1, "z": 0
+                },
+                {
+                  "x": -2, "y": -3, "z": 0
+                },
+                {
+                  "x": 2, "y": -3, "z": 0
+                },
+                {
+                  "x": -1, "y": -4, "z": 0
+                },
+                {
+                  "x": 1, "y": -4, "z": 0
+                }
+              ]
+            },
+            {
+              "name": "sgcraft:stargatebase",
+              "positions": [
+                {
+                  "x": 0, "y": -4, "z": 0
+                }
+              ]
+            },
+            {
+              "name": "minecraft:bedrock",
+              "positions": [
+                {
+                  "x": 0, "y": -5, "z": 0
+                }
+              ]
+            },
+            {
+              "name": "extraplanets:ganymede",
+              "meta": 2,
+              "positions": [
+                {
+                  "x": -3, "y": -5, "z": -3
+                },
+                {
+                  "x": 3, "y": -5, "z": -3
+                },
+                {
+                  "x": -3, "y": -5, "z": 3
+                },
+                {
+                  "x": 3, "y": -5, "z": 3
+                }
+              ]
+            },
+            {
+              "name": "contenttweaker:rocket_block_5",
+              "positions": [
+                {
+                  "x": -2, "y": -5, "z": -3
+                },
+                {
+                  "x": -1, "y": -5, "z": -3
+                },
+                {
+                  "x": 0, "y": -5, "z": -3
+                },
+                {
+                  "x": 1, "y": -5, "z": -3
+                },
+                {
+                  "x": 2, "y": -5, "z": -3
+                },
+                {
+                  "x": -3, "y": -5, "z": -2
+                },
+                {
+                  "x": -2, "y": -5, "z": -2
+                },
+                {
+                  "x": -1, "y": -5, "z": -2
+                },
+                {
+                  "x": 0, "y": -5, "z": -2
+                },
+                {
+                  "x": 1, "y": -5, "z": -2
+                },
+                {
+                  "x": 2, "y": -5, "z": -2
+                },
+                {
+                  "x": 3, "y": -5, "z": -2
+                },
+                {
+                  "x": -3, "y": -5, "z": -1
+                },
+                {
+                  "x": -2, "y": -5, "z": -1
+                },
+                {
+                  "x": -1, "y": -5, "z": -1
+                },
+                {
+                  "x": 0, "y": -5, "z": -1
+                },
+                {
+                  "x": 1, "y": -5, "z": -1
+                },
+                {
+                  "x": 2, "y": -5, "z": -1
+                },
+                {
+                  "x": 3, "y": -5, "z": -1
+                },
+                {
+                  "x": -3, "y": -5, "z": 0
+                },
+                {
+                  "x": -2, "y": -5, "z": 0
+                },
+                {
+                  "x": -1, "y": -5, "z": 0
+                },
+                {
+                  "x": 1, "y": -5, "z": 0
+                },
+                {
+                  "x": 2, "y": -5, "z": 0
+                },
+                {
+                  "x": 3, "y": -5, "z": 0
+                },
+                {
+                  "x": -3, "y": -5, "z": 1
+                },
+                {
+                  "x": -2, "y": -5, "z": 1
+                },
+                {
+                  "x": -1, "y": -5, "z": 1
+                },
+                {
+                  "x": 0, "y": -5, "z": 1
+                },
+                {
+                  "x": 1, "y": -5, "z": 1
+                },
+                {
+                  "x": 2, "y": -5, "z": 1
+                },
+                {
+                  "x": 3, "y": -5, "z": 1
+                },
+                {
+                  "x": -3, "y": -5, "z": 2
+                },
+                {
+                  "x": -2, "y": -5, "z": 2
+                },
+                {
+                  "x": -1, "y": -5, "z": 2
+                },
+                {
+                  "x": 0, "y": -5, "z": 2
+                },
+                {
+                  "x": 1, "y": -5, "z": 2
+                },
+                {
+                  "x": 2, "y": -5, "z": 2
+                },
+                {
+                  "x": 3, "y": -5, "z": 2
+                },
+                {
+                  "x": -2, "y": -5, "z": 3
+                },
+                {
+                  "x": -1, "y": -5, "z": 3
+                },
+                {
+                  "x": 0, "y": -5, "z": 3
+                },
+                {
+                  "x": 1, "y": -5, "z": 3
+                },
+                {
+                  "x": 2, "y": -5, "z": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "place_block_structure",
+          "blocks": [
+            {
+              "name": "minecraft:air",
+              "positions": [
+                {
+                  "x": 0, "y": -5, "z": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "require_sneak"
+        }
+      ],
+      "messages": [
+        {
+          "id": "success",
+          "message": "The ancient gate has infused the schematic with the power of the foundation!"
+        }
+      ],
+      "drops": [
+        {
+          "name": "dimhoppertweaks:stargate_addresser",
+          "amount": "1",
+          "properties": [
+            {
+              "type": "add_tag",
+              "key": "activeDimension",
+              "value_type": "int",
+              "value": 1506
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "config/text_percentage",
+  "position": {
+    "y": "60"
+  },
+  "colour": "0xFFB500D1"
+}

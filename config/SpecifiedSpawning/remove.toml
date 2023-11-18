@@ -1,0 +1,17 @@
+# Removals
+
+# Labyrinth Concussion Creeper removal
+[[remove]]
+	dimension = 1024
+	[remove.entity]
+		matcher = "concussioncreeper"
+
+# Labyrinth staged hostile removal
+[[remove]]
+	dimension = 1024
+	[remove.gamestage]
+		gamestage = "cavern"
+
+[[remove]]
+	group = "all"
+	dimension = -11325

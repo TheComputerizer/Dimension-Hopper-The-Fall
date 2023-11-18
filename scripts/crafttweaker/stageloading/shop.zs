@@ -1,0 +1,141 @@
+import scripts.crafttweaker.gamestagesinit.redSandstone;
+import scripts.crafttweaker.gamestagesinit.sandstone;
+import scripts.crafttweaker.gamestagesinit.wool;
+import scripts.crafttweaker.gamestagesinit.wood;
+import scripts.crafttweaker.gamestagesinit.tnt;
+import scripts.crafttweaker.gamestagesinit.stoneBrick;
+import scripts.crafttweaker.gamestagesinit.stone;
+import scripts.crafttweaker.gamestagesinit.stickyPiston;
+import scripts.crafttweaker.gamestagesinit.sponge;
+import scripts.crafttweaker.gamestagesinit.soulSand;
+import scripts.crafttweaker.gamestagesinit.snow;
+import scripts.crafttweaker.gamestagesinit.alternateReality;
+import scripts.crafttweaker.gamestagesinit.beacon;
+import scripts.crafttweaker.gamestagesinit.bedrock;
+import scripts.crafttweaker.gamestagesinit.bone;
+import scripts.crafttweaker.gamestagesinit.bookshelf;
+import scripts.crafttweaker.gamestagesinit.melon;
+import scripts.crafttweaker.gamestagesinit.interDimensional;
+import scripts.crafttweaker.gamestagesinit.coal;
+import scripts.crafttweaker.gamestagesinit.concrete;
+import scripts.crafttweaker.gamestagesinit.clay;
+import scripts.crafttweaker.gamestagesinit.greenery;
+import scripts.crafttweaker.gamestagesinit.endStone;
+import scripts.crafttweaker.gamestagesinit.prismarine;
+import scripts.crafttweaker.gamestagesinit.netherwart;
+import scripts.crafttweaker.gamestagesinit.hayBale;
+import scripts.crafttweaker.gamestagesinit.seaLantern;
+import scripts.crafttweaker.gamestagesinit.flint;
+import scripts.crafttweaker.gamestagesinit.netherBrick;
+import scripts.crafttweaker.gamestagesinit.purpur;
+import scripts.crafttweaker.gamestagesinit.redNetherBrick;
+import scripts.crafttweaker.gamestagesinit.slime;
+import scripts.crafttweaker.gamestagesinit.redstoneLamp;
+import scripts.crafttweaker.gamestagesinit.normalClay;
+import scripts.crafttweaker.gamestagesinit.glass;
+import scripts.crafttweaker.gamestagesinit.jackOLantern;
+import scripts.crafttweaker.gamestagesinit.pumpkin;
+import scripts.crafttweaker.gamestagesinit.endStoneBricks;
+import scripts.crafttweaker.gamestagesinit.cobblestone;
+import scripts.crafttweaker.gamestagesinit.craftingTable;
+import scripts.crafttweaker.gamestagesinit.furnace;
+import scripts.crafttweaker.gamestagesinit.quartz;
+import scripts.crafttweaker.gamestagesinit.magma;
+import scripts.crafttweaker.gamestagesinit.noteBlock;
+import scripts.crafttweaker.gamestagesinit.couldron;
+import scripts.crafttweaker.gamestagesinit.enchantmentTable;
+import scripts.crafttweaker.gamestagesinit.endPortal;
+import scripts.crafttweaker.gamestagesinit.shulkerBox;
+import scripts.crafttweaker.gamestagesinit.glazedTerracotta;
+import scripts.crafttweaker.gamestagesinit.dispenser;
+import scripts.crafttweaker.gamestagesinit.jukebox;
+import scripts.crafttweaker.gamestagesinit.piston;
+import scripts.crafttweaker.gamestagesinit.hopper;
+import scripts.crafttweaker.gamestagesinit.dropper;
+import scripts.crafttweaker.gamestagesinit.observer;
+import scripts.crafttweaker.gamestagesinit.enderChest;
+import scripts.crafttweaker.gamestagesinit.fence;
+import scripts.crafttweaker.gamestagesinit.ironBars;
+import scripts.crafttweaker.gamestagesinit.glassPane;
+import scripts.crafttweaker.gamestagesinit.cobblestoneWall;
+import scripts.crafttweaker.gamestagesinit.diamond;
+import scripts.crafttweaker.gamestagesinit.emerald;
+import scripts.crafttweaker.gamestagesinit.glowstone;
+import scripts.crafttweaker.gamestagesinit.gold;
+import scripts.crafttweaker.gamestagesinit.iron;
+import scripts.crafttweaker.gamestagesinit.lapis;
+import scripts.crafttweaker.gamestagesinit.obsidian;
+import scripts.crafttweaker.gamestagesinit.redstone;
+import scripts.crafttweaker.gamestagesinit.ice;
+import scripts.crafttweaker.gamestagesinit.brick;
+import scripts.crafttweaker.gamestagesinit.brewingStand;
+
+function load() {
+	redSandstone.addDimension(9901);		//1
+	sandstone.addDimension(9902);			//1
+	wool.addDimension(9903);				//1
+	wood.addDimension(9904);				//1
+	tnt.addDimension(9905);					//3
+	stoneBrick.addDimension(9906);			//1
+	stone.addDimension(9907);				//1
+	stickyPiston.addDimension(9908);		//3
+	sponge.addDimension(9909);				//4
+	soulSand.addDimension(9910);			//2
+	snow.addDimension(9911);				//1
+	alternateReality.addDimension(9912);	//2
+	beacon.addDimension(9913);				//5
+	bedrock.addDimension(9914);				//???
+	bone.addDimension(9915);				//1
+	bookshelf.addDimension(9916);			//4
+	melon.addDimension(9918);				//2
+	interDimensional.addDimension(9920);	//6
+	coal.addDimension(9921);				//2
+	concrete.addDimension(9922);			//2
+	clay.addDimension(9923);				//1
+	greenery.addDimension(9924);			//1
+	endStone.addDimension(9928);			//3
+	prismarine.addDimension(9929);			//3
+	netherwart.addDimension(9930);			//2
+	hayBale.addDimension(9931);				//1
+	seaLantern.addDimension(9932);			//3
+	flint.addDimension(9933);				//1
+	netherBrick.addDimension(9934);			//2
+	purpur.addDimension(9937);				//3
+	redNetherBrick.addDimension(9938);		//2
+	slime.addDimension(9940);				//2
+	redstoneLamp.addDimension(9941);		//3
+	normalClay.addDimension(9942);			//1
+	glass.addDimension(9944);				//1
+	jackOLantern.addDimension(9946);		//2
+	pumpkin.addDimension(9947);				//2
+	endStoneBricks.addDimension(9948);		//3
+	cobblestone.addDimension(9949);			//1
+	craftingTable.addDimension(9954);		//1
+	quartz.addDimension(9957);				//2
+	magma.addDimension(9959);				//1
+	noteBlock.addDimension(9961);			//4
+	couldron.addDimension(9962);			//3
+	shulkerBox.addDimension(9965);			//4
+	glazedTerracotta.addDimension(9966);	//2
+	dispenser.addDimension(9967);			//3
+	jukebox.addDimension(9968);				//4
+	piston.addDimension(9970);				//3
+	hopper.addDimension(9972);				//3
+	dropper.addDimension(9973);				//3
+	observer.addDimension(9974);			//4
+	fence.addDimension(9977);				//1
+	ironBars.addDimension(9978);			//2
+	glassPane.addDimension(9979);			//1
+	cobblestoneWall.addDimension(9980);		//1
+	diamond.addDimension(9993);				//5
+	emerald.addDimension(9994);				//5
+	glowstone.addDimension(9995);			//2
+	gold.addDimension(9996);				//4
+	iron.addDimension(9997);				//3
+	lapis.addDimension(9998);				//3
+	obsidian.addDimension(9999);			//5
+	redstone.addDimension(99911);			//3
+	ice.addDimension(99914);				//1
+	brick.addDimension(99917);				//2
+	brewingStand.addDimension(999199);		//4
+}

@@ -1,0 +1,115 @@
+{
+	"populate": {
+		"aquamarine": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "silentgems:gemore",
+					"properties": {
+						"gem": "aquamarine"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 12
+			},
+			"cluster-count": 32,
+			"min-height": 2,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-52
+				]
+			}
+		},
+		"green_sapphire": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "silentgems:gemore",
+					"properties": {
+						"gem": "beryl"
+					}
+				},
+				"material": "minecraft:dirt",
+				"cluster-size": 12
+			},
+			"cluster-count": 32,
+			"min-height": 2,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-53
+				]
+			}
+		},
+		"onyx": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "dimensional_ores:mercury_onyx_ore"
+				},
+				"material": "extraplanets:mercury",
+				"cluster-size": 12
+			},
+			"cluster-count": 12,
+			"min-height": 2,
+			"max-height": 40,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-13
+				]
+			}
+		},
+		"morganite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "dimensional_ores:triton_morganite_ore"
+				},
+				"material": "extraplanets:triton",
+				"cluster-size": 12
+			},
+			"cluster-count": 12,
+			"min-height": 2,
+			"max-height": 40,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1504
+				]
+			}
+		},
+		"amber": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "dimensional_ores:xantheonstone_amber_ore"
+				},
+				"material": "zollerngalaxy:xantheonstone",
+				"cluster-size": 12
+			},
+			"cluster-count": 12,
+			"min-height": 2,
+			"max-height": 40,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-7984
+				]
+			}
+		},
+	}
+}

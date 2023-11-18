@@ -1,0 +1,14 @@
+{
+  "parent": "builtin/text",
+  "image": "textures/font/ascii.png",
+  "position_type": "CENTER",
+  "offset_pos": "CENTER",
+  "text": "tip_text",
+  "position": {
+    "x": "0",
+    "y": "120",
+    "width": "0",
+    "height": "0"
+  },
+  "colour":"0xFFB500D1"
+}

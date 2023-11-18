@@ -1,0 +1,232 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:grass|0",
+      "emc": 0
+    },
+    {
+      "item": "zollerngalaxy:caligrogravel|0",
+      "emc": 2
+    },
+    {
+      "item": "zollerngalaxy:caligrodirt|0",
+      "emc": 2
+    },
+    {
+      "item": "zollerngalaxy:caligrosurfacerock|0",
+      "emc": 2
+    },
+    {
+      "item": "zollerngalaxy:caligrocobblestone|0",
+      "emc": 2
+    },
+    {
+      "item": "zollerngalaxy:caligrorock|0",
+      "emc": 3
+    },
+    {
+      "item": "zollerngalaxy:caligrocobblemossy|0",
+      "emc": 5
+    },
+    {
+      "item": "zollerngalaxy:caligrostone|0",
+      "emc": 4
+    },
+    {
+      "item": "zollerngalaxy:caligrostonebricks|0",
+      "emc": 6
+    },
+    {
+      "item": "zollerngalaxy:creepstone|0",
+      "emc": 10
+    },
+    {
+      "item": "zollerngalaxy:creepdirt|0",
+      "emc": 6
+    },
+    {
+      "item": "zollerngalaxy:caligroironore|0",
+      "emc": 20
+    },
+    {
+      "item": "zollerngalaxy:caligrocopperore|0",
+      "emc": 20
+    },
+    {
+      "item": "zollerngalaxy:caligrogoldore|0",
+      "emc": 20
+    },
+    {
+      "item": "zollerngalaxy:caligroredstoneore|0",
+      "emc": 25
+    },
+    {
+      "item": "zollerngalaxy:caligrotinore|0",
+      "emc": 30
+    },
+    {
+      "item": "zollerngalaxy:caligroleadore|0",
+      "emc": 30
+    },
+    {
+      "item": "zollerngalaxy:caligronickelore|0",
+      "emc": 30
+    },
+    {
+      "item": "zollerngalaxy:caligrosilverore|0",
+      "emc": 40
+    },
+    {
+      "item": "zollerngalaxy:caligrozincore|0",
+      "emc": 50
+    },
+    {
+      "item": "zollerngalaxy:caligroamaranthore|0",
+      "emc": 50
+    },
+    {
+      "item": "zollerngalaxy:caligroshiniumore|0",
+      "emc": 75
+    },
+    {
+      "item": "zollerngalaxy:caligroamberore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligrotopazore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligroopalore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligrogarnetore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligroaquaore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligrorubyore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligrodiamondore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligroemeraldore|0",
+      "emc": 100
+    },
+    {
+      "item": "zollerngalaxy:caligrolapisore|0",
+      "emc": 30
+    },
+    {
+      "item": "zollerngalaxy:caligrosuperchargedcoalore|0",
+      "emc": 50
+    },
+    {
+      "item": "zollerngalaxy:caligrofueltoniumore|0",
+      "emc": 125
+    },
+    {
+      "item": "zollerngalaxy:caligrozollerniumore|0",
+      "emc": 150
+    },
+    {
+      "item": "zollerngalaxy:caligroradiumore|0",
+      "emc": 150
+    },
+    {
+      "item": "projectex:collector|0",
+      "emc": 1000000
+    },
+    {
+      "item": "projecte:item.pe_matter|0",
+      "emc": 10000
+    },
+    {
+      "item": "projecte:item.pe_matter|1",
+      "emc": 40000
+    },
+    {
+      "item": "projectex:matter|0",
+      "emc": 32000
+    },
+    {
+      "item": "projectex:matter|1",
+      "emc": 128000
+    },
+    {
+      "item": "projectex:matter|2",
+      "emc": 512000
+    },
+    {
+      "item": "projectex:matter|3",
+      "emc": 2048000
+    },
+    {
+      "item": "projectex:matter|4",
+      "emc": 8192000
+    },
+    {
+      "item": "projectex:matter|5",
+      "emc": 32768000
+    },
+    {
+      "item": "projectex:matter|6",
+      "emc": 131072000
+    },
+    {
+      "item": "projectex:matter|7",
+      "emc": 524288000
+    },
+    {
+      "item": "projectex:matter|8",
+      "emc": 2097152000
+    },
+    {
+      "item": "projectex:matter|9",
+      "emc": 8388608000
+    },
+    {
+      "item": "projectex:matter|10",
+      "emc": 33554432000
+    },
+    {
+      "item": "projectex:matter|11",
+      "emc": 134217728000
+    },
+    {
+      "item": "projecte:item.pe_klein_star|0",
+      "emc": 1000
+    },
+    {
+      "item": "projecte:item.pe_klein_star|5",
+      "emc": 2500000
+    },
+    {
+      "item": "projectex:magnum_star_omega|0",
+      "emc": 10000000000
+    },
+    {
+      "item": "projectex:colossal_star_omega|0",
+      "emc": 100000000000000
+    },
+    {
+      "item": "projectex:final_star_shard|0",
+      "emc": 9223372000000000000
+    },
+    {
+      "item": "projectex:final_star|0",
+      "emc": 0
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|2",
+      "emc": 1000
+    }
+  ]
+}

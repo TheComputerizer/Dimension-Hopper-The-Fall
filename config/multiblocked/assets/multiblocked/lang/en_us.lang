@@ -1,0 +1,70 @@
+//recipe maps
+multiblocked.recipe_map.assembler_recipes=Assembler
+multiblocked.recipe_map.oil_cracker_mk_1_recipes=Oil Cracker Mk 1
+multiblocked.recipe_map.oil_cracker_mk_2_recipes=Oil Cracker Mk 2
+multiblocked.recipe_map.oil_cracker_mk_3_recipes=Oil Cracker Mk 3
+multiblocked.recipe_map.the_factory_mk_1_recipes=The Factory Mk 1
+multiblocked.recipe_map.the_factory_mk_2_recipes=The Factory Mk 2
+multiblocked.recipe_map.the_factory_mk_3_recipes=The Factory Mk 3
+multiblocked.recipe_map.psionic_generator_mk_1_recipes=Psionic Generator Mk 1
+multiblocked.recipe_map.psionic_generator_mk_2_recipes=Psionic Generator Mk 2
+multiblocked.recipe_map.psionic_generator_mk_3_recipes=Psionic Generator Mk 3
+multiblocked.recipe_map.ectoplasmic_generator_recipes=Ectoplasmic Generator
+multiblocked.recipe_map.singularity_recipes=The Singularity
+multiblocked.recipe_map.limbonic_generator_recipes=Limbonic Generator
+multiblocked.recipe_map.lightning_infuser_mk_1_recipes=Lightning Infuser Mk 1
+multiblocked.recipe_map.lightning_infuser_mk_2_recipes=Lightning Infuser Mk 2
+multiblocked.recipe_map.lightning_infuser_mk_3_recipes=Lightning Infuser Mk 3
+multiblocked.recipe_map.lightning_infuser_mk_4_recipes=Lightning Infuser Mk 4
+multiblocked.recipe_map.infinity_infuser_recipes=Infinity Infuser
+
+//controllers
+assembler.name=Assembler
+the_factory_mk_1.name=The Factory Mk 1
+the_factory_mk_2.name=The Factory Mk 2
+the_factory_mk_3.name=The Factory Mk 3
+oil_cracker_mk_1.name=Oil Cracker Mk 1
+oil_cracker_mk_2.name=Oil Cracker Mk 2
+oil_cracker_mk_3.name=Oil Cracker Mk 3
+psionic_generator_mk_1.name=Psionic Generator Mk 1
+psionic_generator_mk_2.name=Psionic Generator Mk 2
+psionic_generator_mk_3.name=Psionic Generator Mk 3
+ectoplasmic_generator.name=Ectoplasmic Generator
+limbonic_generator.name=Limbonic Generator
+the_singularity.name=The Singularity
+rocket_t1.name=Rocket T1
+rocket_t7.name=Rocket T7
+rocket_t10.name=Rocket T10
+lightning_infuser_mk_1.name=Lightning Infuser Mk 1
+lightning_infuser_mk_2.name=Lightning Infuser Mk 2
+lightning_infuser_mk_3.name=Lightning Infuser Mk 3
+lightning_infuser_mk_4.name=Lightning Infuser Mk 4
+infinity_infuser.name=Infinity Infuser
+
+
+//controller blocks
+tile.dimensionhopper.assembler.name=Assembler Controller
+tile.dimensionhopper.the_factory_mk_1.name=The Factory Mk 1 Controller
+tile.dimensionhopper.the_factory_mk_2.name=The Factory Mk 2 Controller
+tile.dimensionhopper.the_factory_mk_3.name=The Factory Mk 3 Controller
+tile.dimensionhopper.oil_cracker_mk_1.name=Oil Cracker Mk 1 Controller
+tile.dimensionhopper.oil_cracker_mk_2.name=Oil Cracker Mk 2 Controller
+tile.dimensionhopper.oil_cracker_mk_3.name=Oil Cracker Mk 3 Controller
+tile.dimensionhopper.psionic_generator_mk_1.name=Psionic Generator Mk 1 Controller
+tile.dimensionhopper.psionic_generator_mk_2.name=Psionic Generator Mk 2 Controller
+tile.dimensionhopper.psionic_generator_mk_3.name=Psionic Generator Mk 3 Controller
+tile.dimensionhopper.ectoplasmic_generator.name=Ectoplasmic Generator Controller
+tile.dimensionhopper.limbonic_generator.name=Limbonic Generator Controller
+tile.dimensionhopper.the_singularity.name=The Singularity Controller
+tile.dimensionhopper.rocket_t1.name=Rocket T1 Controller
+tile.dimensionhopper.rocket_t7.name=Rocket T7 Controller
+tile.dimensionhopper.rocket_t10.name=Rocket T10 Controller
+tile.dimensionhopper.lightning_infuser_mk_1.name=Lightning Infuser Mk 1 Controller
+tile.dimensionhopper.lightning_infuser_mk_2.name=Lightning Infuser Mk 2 Controller
+tile.dimensionhopper.lightning_infuser_mk_3.name=Lightning Infuser Mk 3 Controller
+tile.dimensionhopper.lightning_infuser_mk_4.name=Lightning Infuser Mk 4 Controller
+tile.dimensionhopper.infinity_infuser.name=Infinity Infuser Controller
+
+//parts
+tile.dimensionhopper.limbonic_fluid_hatch.name=Limbonic Fluid Hatch
+tile.dimensionhopper.limbonic_energy_hatch.name=Limbonic Energy Hatch

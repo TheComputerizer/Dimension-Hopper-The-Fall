@@ -1,0 +1,25 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiScreenAddServer
+  renderorder = foreground
+}
+
+customization {
+  identifier = %id=400388%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=400322%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=400364%
+  path = assets/Click2.wav
+  action = setbuttonclicksound
+}
+

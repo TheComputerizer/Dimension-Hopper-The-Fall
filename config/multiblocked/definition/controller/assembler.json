@@ -1,0 +1,250 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:assembler",
+  "traits": {
+    "forge_energy": {
+      "cIO": 0,
+      "gIO": 2,
+      "x": 5,
+      "y": 5,
+      "width": 150,
+      "height": 25,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 1666667,
+      "maxReceive": 1666667,
+      "maxExtract": 1666667
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "contenttweaker:large_circuit",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "assembler",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "     ",
+        "  A  ",
+        "  B  ",
+        "  C  ",
+        "  B  ",
+        "  A  ",
+        "     "
+      ],
+      [
+        "  A  ",
+        " ADA ",
+        " BEB ",
+        "JCFCH",
+        " BEB ",
+        " ADA ",
+        "  A  "
+      ],
+      [
+        " AAA ",
+        "ADDDA",
+        "BEDEB",
+        "CFGF@",
+        "BEDEB",
+        "ADDDA",
+        " ACA "
+      ],
+      [
+        "  A  ",
+        " ADA ",
+        " BEB ",
+        "JCFCI",
+        " BEB ",
+        " ADA ",
+        "  A  "
+      ],
+      [
+        "     ",
+        "  A  ",
+        "  B  ",
+        "  C  ",
+        "  B  ",
+        "  A  ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "contenttweaker:mek_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:assembler",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "enderio:block_fused_quartz",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "contenttweaker:large_circuit",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "compactmachines3:wallbreakable",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "opencomputers:assembler",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "enderio:block_dark_iron_bars",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "calculator:reassemblychamber"
+          }
+        ],
+        "type": "blocks"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "energy_in": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "item_in"
+      ],
+      "I": [
+        "item_out"
+      ],
+      "J": [
+        "fluid_in"
+      ]
+    }
+  }
+}

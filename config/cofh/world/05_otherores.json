@@ -1,0 +1,352 @@
+{
+	"populate": {
+		"certus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_end_modded_1",
+					"properties": {
+						"blocks": "certus_quartz_ore"
+					}
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 12,
+			"min-height": 20,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		},
+		"osmium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "dimensional_ores:pitstone_osmium_ore"
+				},
+				"material": "thebetweenlands:pitstone",
+				"cluster-size": 12
+			},
+			"cluster-count": 20,
+			"min-height": 2,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					20
+				]
+			}
+		},
+		"jade": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:jade_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 55,
+			"max-height": 65,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"sapphire": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:sapphire_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 45,
+			"max-height": 55,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"amethyst": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:amethyst_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 35,
+			"max-height": 45,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"rosite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:rosite_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 25,
+			"max-height": 35,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"limonite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:limonite_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 3,
+			"min-height": 15,
+			"max-height": 25,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"ancientrock": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:ancient_rock"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 4,
+			"min-height": 5,
+			"max-height": 15,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"runium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "aoa3:runium_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 2,
+			"min-height": 2,
+			"max-height": 5,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"uranium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "immersiveengineering:ore",
+					"properties": {
+						"type": "uranium"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 7
+			},
+			"cluster-count": 3,
+			"min-height": 2,
+			"max-height": 30,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-6
+				]
+			}
+		},
+		"draconium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "draconicevolution:draconium_ore"
+					"properties": {
+						"type": "normal"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 34,
+			"min-height": 2,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+		"tenebrum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "midnight:tenebrum_ore"
+				},
+				"material": "midnight:nightstone",
+				"cluster-size": 10
+			},
+			"cluster-count": 20,
+			"min-height": 10,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-23
+				]
+			}
+		},
+		"nagrilite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "midnight:nagrilite_ore"
+				},
+				"material": "midnight:nightstone",
+				"cluster-size": 10
+			},
+			"cluster-count": 20,
+			"min-height": 10,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-23
+				]
+			}
+		},
+		"ebonite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "midnight:ebonys_ore"
+				},
+				"material": "midnight:nightstone",
+				"cluster-size": 10
+			},
+			"cluster-count": 20,
+			"min-height": 10,
+			"max-height": 50,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-23
+				]
+			}
+		},
+		"dimensional_shard": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "rftools:dimensional_shard_ore"
+					"properties": {
+						"oretype": "end"
+					}
+				},
+				"material": "minecraft:diamond_block",
+				"cluster-size": 2
+			},
+			"cluster-count": 10,
+			"min-height": 1,
+			"max-height": 100,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					9920
+				]
+			}
+		},
+		"interdimensionalblock": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "lockyzextradimensionsmod:interdimensionalblock"
+				},
+				"material": "minecraft:obsidian",
+				"cluster-size": 2
+			},
+			"cluster-count": 40,
+			"min-height": 1,
+			"max-height": 120,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					9999
+				]
+			}
+		}
+	}
+}

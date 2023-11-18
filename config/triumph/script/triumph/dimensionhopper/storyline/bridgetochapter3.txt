@@ -1,0 +1,17 @@
+setIcon(<minecraft:emerald>)
+
+setTitle("Finally!")
+
+setDescription("Acquire an Emerald")
+
+addParent("triumph:dimensionhopper/root")
+
+setPos(80,65)
+
+hideLines()
+
+criteria = addCriteria("hasEmerald", "minecraft:inventory_changed")
+
+criteria.addItem(<minecraft:emerald>)
+
+addRewardFunction("triumph:cavernBridge")

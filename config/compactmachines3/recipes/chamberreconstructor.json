@@ -1,0 +1,90 @@
+{
+  "name": "compactmachines3:chamberreconstructor",
+  "target-item": "chambers:atom_chamber",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "actuallyadditions:item_battery_triple",
+
+  "input-types": {
+    "a": {
+      "id": "compactmachines3:wallbreakable",
+      "meta": 0
+    },
+    "b": {
+      "id": "actuallyadditions:block_crystal",
+      "meta": 5
+    },
+    "c": {
+      "id": "actuallyadditions:block_crystal",
+      "meta": 2
+    },
+    "d": {
+      "id": "actuallyadditions:block_dropper",
+      "meta": 0
+    },
+    "e": {
+      "id": "actuallyadditions:block_atomic_reconstructor",
+      "meta": 4
+    },
+    "f": {
+      "id": "actuallyadditions:block_ranged_collector",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "d",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "c",
+        "_",
+        "e"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "f",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+}

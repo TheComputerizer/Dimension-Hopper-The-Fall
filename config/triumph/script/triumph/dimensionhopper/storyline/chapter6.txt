@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+
+setTitle("Chapter 6")
+
+setDescription("A challenger appoaches. Yes, you")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+addParent("triumph:dimensionhopper/storyline/chapter5")
+
+drawDirectLines(true)
+
+setPos(231,1)
+
+criteria = addCriteria("entered_miningdimension", "minecraft:changed_dimension")
+
+criteria.setDimensionDestination("MINING_WORLD")
+
+addRewardFunction("triumph:adventStage")
+addRewardFunction("triumph:announceChapterSix")

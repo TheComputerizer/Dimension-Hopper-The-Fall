@@ -1,0 +1,56 @@
+{
+  "questcommon": {
+    "sounds": [
+      {
+        "name": "contenttweaker:questcommon",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.questcommon"
+  },
+  "questdramatic": {
+    "sounds": [
+      {
+        "name": "contenttweaker:questdramatic",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.questdramatic"
+  },
+  "dimensionalshift": {
+    "sounds": [
+      {
+        "name": "contenttweaker:dimensionalshift",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.dimensionalshift"
+  },
+  "dimensionalshiftalt": {
+    "sounds": [
+      {
+        "name": "contenttweaker:dimensionalshiftalt",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.dimensionalshiftalt"
+  },
+  "questepic": {
+    "sounds": [
+      {
+        "name": "contenttweaker:questepic",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.questepic"
+  },
+  "bee": {
+    "sounds": [
+      {
+        "name": "contenttweaker:bee",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitle.contenttweaker.bee"
+  }
+}

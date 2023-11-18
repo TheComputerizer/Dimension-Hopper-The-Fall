@@ -1,0 +1,1 @@
+leggings.json: Unknown item extraplanets:tier0_space_suit_leggings

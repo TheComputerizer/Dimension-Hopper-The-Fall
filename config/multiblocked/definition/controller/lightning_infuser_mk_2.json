@@ -1,0 +1,170 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:lightning_infuser_mk_2",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "lightningcraft:stone_block",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "     ",
+        "  A  ",
+        "     "
+      ],
+      [
+        " B@B ",
+        " CBC ",
+        " BCB "
+      ],
+      [
+        " CFC ",
+        "ABEBA",
+        " CDC "
+      ],
+      [
+        " BCB ",
+        " CBC ",
+        " BCB "
+      ],
+      [
+        "     ",
+        "  A  ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "dimensionhopper:lightning_infuser_mk_2",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "lightningcraft:stone_block",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "lightningcraft:stone_block",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "lightningcraft:metal_block",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "LE": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
+      },
+      "ITEM_OUT": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      },
+      "ITEM_IN": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "LE"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "ITEM_IN"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "ITEM_OUT"
+      ]
+    }
+  }
+}

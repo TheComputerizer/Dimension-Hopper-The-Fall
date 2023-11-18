@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "contenttweaker:booster_block_2" }
+        ],
+        "inventory": { "model": "contenttweaker:booster_block_2" }
+    }
+}
