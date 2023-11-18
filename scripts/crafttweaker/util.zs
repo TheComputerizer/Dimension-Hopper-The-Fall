@@ -60,12 +60,12 @@ function bigRing(outer as IIngredient, inner as IIngredient[][]) as IIngredient[
     for i in 0 .. inner.length {
         top+=outer;
     }
-    bigRing as IIngredient[][] = [top] as IIngredient[][];
+    var ret as IIngredient[][] = [top] as IIngredient[][];
     for row in inner {
-        bigRing+=addOuter(outer,row);
+        ret+=addOuter(outer,row);
     }
-    bigRing+=top;
-    return bigRing;
+    ret+=top;
+    return ret;
 }
 
 function bigRingAlt(corner as IIngredient, otherOuter as IIngredient, inner as IIngredient[][]) as IIngredient[][] {
@@ -82,19 +82,19 @@ function bigRingAlt(corner as IIngredient, otherOuter as IIngredient, inner as I
         }
     }
     alt = true;
-    bigRing as IIngredient[][] = [top] as IIngredient[][];
+    var ret as IIngredient[][] = [top] as IIngredient[][];
     for row in inner {
         if(alt) {
-            bigRing+=addOuter(otherOuter,row);
+            ret+=addOuter(otherOuter,row);
             alt = false as bool;
         }
         else {
-            bigRing+=addOuter(corner,row);
+            ret+=addOuter(corner,row);
             alt = true as bool;
         }
     }
-    bigRing+=top;
-    return bigRing;
+    ret+=top;
+    return ret;
 }
 
 function addOuter(outer as IIngredient, inner as IIngredient[]) as IIngredient[] {

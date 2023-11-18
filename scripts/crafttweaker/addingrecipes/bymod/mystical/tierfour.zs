@@ -1,3 +1,4 @@
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.aoa3.InfusionTable;
 import mods.forestry.Carpenter;

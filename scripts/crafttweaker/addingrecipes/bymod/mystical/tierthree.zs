@@ -1,6 +1,7 @@
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.aoa3.InfusionTable;
-mods.forestry.Carpenter;
+import mods.forestry.Carpenter;
 
 //seeds
 val seeds = [

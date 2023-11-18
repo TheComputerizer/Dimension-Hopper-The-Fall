@@ -1,5 +1,6 @@
 #reloadable
 
+import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Centrifuge;
 
 //fruit press alternatives

@@ -1,5 +1,7 @@
 #reloadable
 
+import crafttweaker.item.IIngredient;
+
 //prestige tokens chapter 1
 recipes.addShapeless("prestige token 1", <dimhoppertweaks:prestige_token_1>, [<minecraft:paper>, <thermalfoundation:storage>]);
 recipes.addShapeless("prestige token 2", <dimhoppertweaks:prestige_token_2>, [<dimhoppertweaks:prestige_token_1>, <minecraft:nether_star>]);

@@ -1,7 +1,3 @@
-import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IIngredient;
 import mods.aoa3.InfusionTable;
 
 InfusionTable.addInfusionRecipe("neptunedimensionalstone", <contenttweaker:neptune_dimensional_stone>, <contenttweaker:neptunic_key>, [

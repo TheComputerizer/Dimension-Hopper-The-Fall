@@ -1,5 +1,7 @@
 #reloadable
 
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.util as Util;
 
@@ -16,16 +18,23 @@ table(<minecraft:dye:4>,<immersiveengineering:stone_decoration:2>,<ore:plankWood
 table(<ore:artisansCuttingBoard>,<minecraft:nether_brick>,<minecraft:crafting_table>,<artisanworktables:worktable:11>,10,<minecraft:stone_slab>);
 table(<minecraft:glass_bottle>,<tconstruct:seared:3>,<apotheosis:hellshelf>,<artisanworktables:worktable:9>,20,<thermalfoundation:storage_alloy>);
 
-function table(top as IIngredient, bottomCorner as IIngredient, side as IIngredient, output as IItemStack, durability as int, topCorner as IIngredient = side) {
+function table(top as IIngredient, bottomCorner as IIngredient, side as IIngredient, output as IItemStack, durability as int, topCorner as IIngredient = null) {
+  var inputs as IIngredient[][];
+  if(isNull(topCorner)) {
+    inputs = Util.table(<artisanworktables:worktable:5>,top,bottomCorner,side);
+  } 
+  else {
+    inputs = Util.tableExtra(<artisanworktables:worktable:5>,top,bottomCorner,side,topCorner);
+  }
   RecipeBuilder.get("basic")
-  .setShaped(Util.tableExtra(<artisanworktables:worktable:5>,top,bottomCorner,side,topCorner))
-  .addTool(<ore:artisansHammer>,durability)
-  .addOutput(output)
-  .create();
+    .setShaped(inputs)
+    .addTool(<ore:artisansHammer>,durability)
+    .addOutput(output)
+    .create();
 }
 
 RecipeBuilder.get("basic")
-  .setShaped(Util.corners(<artisanworktables:worktable:5>,<thebetweenlands:life_crystal>,thebetweenlands:valonite_block>))
+  .setShaped(Util.corners(<artisanworktables:worktable:5>,<thebetweenlands:life_crystal>,<thebetweenlands:valonite_block>))
   .setFluid(<liquid:stellar_alloy> * 3888)
   .addTool(<ore:artisansFramingHammer>, 1000)
   .addOutput(<artisanworktables:workshop:5>)
@@ -36,7 +45,7 @@ dust(<ore:oreIron>,<thermalfoundation:material>,2);
 dust(<ore:oreNetherCopper>,<thermalfoundation:material:64>,2);
 dust(<ore:oreCopper>,<thermalfoundation:material:64>,2);
 dust(<ore:oreGold>,<thermalfoundation:material:1>,1);
-dust(<ore:oreNetherGold>,<thermalfoundation:materia:1>,1);
+dust(<ore:oreNetherGold>,<thermalfoundation:material:1>,1);
 dust(<ore:oreTin>,<thermalfoundation:material:65>,3);
 dust(<ore:oreSilver>,<thermalfoundation:material:66>,3);
 dust(<ore:oreLead>,<thermalfoundation:material:67>,3);
@@ -146,7 +155,6 @@ upgrade(<artisanautomation:upgrade_tool_repair>.withTag({ArtisanWorktables: {Too
   <tp:repair_tablet>);
 
 function upgrade(output as IItemStack, center as IIngredient, innerSide as IIngredient, innerCorner as IIngredient) {
-  Util.bigRing(<moreplates:dark_steel_plate>,inner)
   RecipeBuilder.get("basic")
   .setShaped(Util.bigRing(<moreplates:dark_steel_plate>,Util.corners(center,innerSide,innerCorner)))
   .setFluid(<liquid:latex>*16000)

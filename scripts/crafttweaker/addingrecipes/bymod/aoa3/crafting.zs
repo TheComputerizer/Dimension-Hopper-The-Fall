@@ -1,5 +1,7 @@
 #reloadable
 
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import scripts.crafttweaker.util as Util;
 
 recipes.addShapeless("pixietopixon", <enderio:item_soul_vial:1>, [<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})],
@@ -27,5 +29,5 @@ rune("aoatravelrune",<aoa3:carved_rune_travel>,<minecraft:ender_eye>);
 rune("aoadirectionrune",<aoa3:carved_rune_direction>,<integrateddynamics:part_connector_omni_directional_item>);
 
 function rune(name as string, output as IItemStack, top as IIngredient) {
-	recipes.addShaped(name,output,Util.u(<aoa3:ancient_rock>,top,<aoa3:unpowered_rune>))
+	recipes.addShaped(name,output,Util.u(<aoa3:ancient_rock>,top,<aoa3:unpowered_rune>));
 }
