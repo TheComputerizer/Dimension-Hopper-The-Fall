@@ -1,20 +1,10 @@
-#reloadable
-
 import mods.thermalexpansion.Factorizer;
 
-Factorizer.removeRecipeCombine(<actuallyadditions:block_compost>*9);
-//neutronium
-Factorizer.removeRecipeCombine(<avaritia:resource:2>*9);
-Factorizer.removeRecipeCombine(<avaritia:resource:3>*9);
-Factorizer.removeRecipeCombine(<avaritia:resource:4>*9);
-Factorizer.removeRecipeSplit(<avaritia:resource:3>);
-Factorizer.removeRecipeSplit(<avaritia:resource:4>);
-Factorizer.removeRecipeSplit(<avaritia:block_resource>);
-//charcoal
-Factorizer.removeRecipeCombine(<minecraft:coal:1>*9);
-//infinity
-Factorizer.removeRecipeCombine(<avaritia:resource:6>*9);
-Factorizer.removeRecipeSplit(<avaritia:block_resource:1>);
+//avaritia resources
+Factorizer.removeRecipeCombine(<avaritia:block_resource:*>);
+Factorizer.removeRecipeCombine(<avaritia:resource:*>);
+Factorizer.removeRecipeSplit(<avaritia:resource:*>);
+Factorizer.removeRecipeSplit(<avaritia:block_resource:*>);
 
 //dry rubber
 Factorizer.addRecipeCombine(<industrialforegoing:tinydryrubber>*9, <industrialforegoing:dryrubber>);
@@ -130,7 +120,6 @@ Factorizer.removeRecipeSplit(<zollerngalaxy:zincblock>);
 Factorizer.addRecipeBoth(<extraplanets:neptune:7>, <extraplanets:tier8_items:5>*9);
 
 //aquamarine
-Factorizer.removeRecipeSplit(<silentgems:gemshard:8>*9);
 Factorizer.addRecipeBoth(<silentgems:gem:8> ,<silentgems:gemshard:8>*9);
 Factorizer.addRecipeBoth(<cavern:cave_block:1>, <cavern:cave_item>*9);
 Factorizer.addRecipeBoth(<zollerngalaxy:aquamarineblock>, <zollerngalaxy:aquamarine>*9);
@@ -146,7 +135,3 @@ Factorizer.addRecipeBoth(<jaopca:block.certus_quartz>, <appliedenergistics2:mate
 
 //charged certus quartz
 Factorizer.addRecipeBoth(<jaopca:block.charged_certus_quartz>, <appliedenergistics2:material:1>*9);
-
-//crystal matrix
-Factorizer.removeRecipeCombine(<avaritia:resource:1>*9);
-Factorizer.removeRecipeSplit(<avaritia:block_resource:2>);

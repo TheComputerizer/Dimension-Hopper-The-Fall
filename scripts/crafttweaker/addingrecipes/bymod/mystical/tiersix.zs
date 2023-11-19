@@ -1,5 +1,3 @@
-#reloadable
-
 import crafttweaker.item.IItemStack;
 import mods.extendedcrafting.CombinationCrafting;
 

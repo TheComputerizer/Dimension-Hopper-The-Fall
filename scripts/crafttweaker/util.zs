@@ -31,15 +31,7 @@ function u(center as IIngredient, top as IIngredient, u as IIngredient) as IIngr
     ];
 }
 
-function table(table as IIngredient, top as IIngredient, bottomCorner as IIngredient, sides as IIngredient) as IIngredient[][] {
-    return [
-        [sides,top,sides],
-        [sides,table,sides],
-        [bottomCorner,null,bottomCorner]
-    ];
-}
-
-function tableExtra(table as IIngredient, top as IIngredient, bottomCorner as IIngredient, sides as IIngredient, topCorner) as IIngredient[][] {
+function table(table as IIngredient, top as IIngredient, bottomCorner as IIngredient, sides as IIngredient, topCorner) as IIngredient[][] {
     return [
         [topCorner,top,topCorner],
         [sides,table,sides],

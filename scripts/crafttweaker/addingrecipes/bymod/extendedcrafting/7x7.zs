@@ -2,7 +2,6 @@
 
 import mods.extendedcrafting.TableCrafting;
 
-TableCrafting.remove(<extendedcrafting:material:24>);
 //me controller
 TableCrafting.addShaped(3, <appliedenergistics2:controller>, [
 	[<extendedcrafting:trimmed:2>, <extendedcrafting:trimmed:2>, <ore:compressedMeteoricIron>, <appliedenergistics2:part:76>, <ore:compressedMeteoricIron>, <extendedcrafting:trimmed:2>, <extendedcrafting:trimmed:2>], 

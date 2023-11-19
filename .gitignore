@@ -1,6 +1,7 @@
 
 # File Extensions
 *.bak
+*.csv
 *.curseclient
 *.dat
 *.dll
@@ -24,6 +25,7 @@ dumps
 fancymenu_data
 fancymenu_setups
 fonts
+generated
 impossible_data
 journeymap
 local

@@ -50,13 +50,13 @@
 		identifier = "underground"
 		priority = 700
 		level = 55
-		persistence = 100
+		persistence = "0"
 		start_delay = 100
 	[[triggers.height]]
 		identifier = "deepUnder"
 		priority = 800
 		level = 20
-		persistence = 100
+		persistence = "0"
 		start_delay = 100
 	[[triggers.height]]
 		identifier = "inVoid"

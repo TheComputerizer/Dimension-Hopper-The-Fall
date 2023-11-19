@@ -1,13 +1,11 @@
-#reloadable
-
 import mods.thermalexpansion.InductionSmelter;
 
-InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
-InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
-InductionSmelter.removeRecipe(<thermalfoundation:material:866>, <thermalfoundation:ore:5>);
-InductionSmelter.removeRecipe(<thermalfoundation:material:866>, <thermalfoundation:ore:2>);
-InductionSmelter.removeRecipe(<thermalfoundation:material:866>, <minecraft:iron_ore>);
-InductionSmelter.removeRecipe(<thermalfoundation:material:866>, <thermalfoundation:ore:6>);
+InductionSmelter.removeRecipe(<enderio:item_material>,<enderio:item_material:51>);
+InductionSmelter.removeRecipe(<enderio:item_material>,<enderio:item_material:52>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:866>,<thermalfoundation:ore:5>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:866>,<thermalfoundation:ore:2>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:866>,<minecraft:iron_ore>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:866>,<thermalfoundation:ore:6>);
 
 //soulium
 InductionSmelter.addRecipe(<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:33>, <mysticalagriculture:crafting:29>, 15000, <mysticalagriculture:crafting:28>, 33);

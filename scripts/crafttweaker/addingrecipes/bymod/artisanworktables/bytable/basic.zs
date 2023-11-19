@@ -6,28 +6,24 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.util as Util;
 
 //tables
-table(<minecraft:leather>,<ore:logWood>,<minecraft:leather>,<artisanworktables:worktable:13>,5);
-table(<tconstruct:pattern>,<ore:logWood>,<ore:plankWood>,<artisanworktables:worktable:1>,5);
-table(<minecraft:stone_slab>,<minecraft:nether_brick>,<minecraft:brick_block>,<artisanworktables:worktable:2>,10);
-table(<thermalfoundation:material:32>,<tconstruct:seared:3>,<minecraft:iron_block>,<artisanworktables:worktable:3>,15);
-table(<minecraft:diamond>,<minecraft:obsidian>,<minecraft:wool:15>,<artisanworktables:worktable:4>,25,<minecraft:wool:14>);
-table(<naturesaura:ender_crate>,<botania:quartztypedark>,<psi:psi_decorative:1>,<artisanworktables:worktable:7>,7,<botania:dye:11>);
-table(<thermalfoundation:material:320>,<minecraft:nether_brick>,<immersiveengineering:metal_decoration0:4>,<artisanworktables:worktable:6>,10,<thermalfoundation:material:32>);
-table(<tconstruct:pattern>,<ore:logWood>,<ore:bookshelf>,<artisanworktables:worktable:8>,5,<ore:plankWood>);
-table(<minecraft:dye:4>,<immersiveengineering:stone_decoration:2>,<ore:plankWood>,<artisanworktables:worktable:12>,7,<minecraft:lapis_block>);
-table(<ore:artisansCuttingBoard>,<minecraft:nether_brick>,<minecraft:crafting_table>,<artisanworktables:worktable:11>,10,<minecraft:stone_slab>);
-table(<minecraft:glass_bottle>,<tconstruct:seared:3>,<apotheosis:hellshelf>,<artisanworktables:worktable:9>,20,<thermalfoundation:storage_alloy>);
+table(<minecraft:leather>,<ore:logWood>,<minecraft:leather>,<minecraft:leather>,<artisanworktables:worktable:13>,5);
+table(<tconstruct:pattern>,<ore:logWood>,<ore:plankWood>,<ore:plankWood>,<artisanworktables:worktable:1>,5);
+table(<minecraft:stone_slab>,<minecraft:nether_brick>,<minecraft:brick_block>,<minecraft:brick_block>,<artisanworktables:worktable:2>,10);
+table(<thermalfoundation:material:32>,<tconstruct:seared:3>,<minecraft:iron_block>,<minecraft:iron_block>,<artisanworktables:worktable:3>,15);
+table(<minecraft:diamond>,<minecraft:obsidian>,<minecraft:wool:15>,<minecraft:wool:14>,<artisanworktables:worktable:4>,25);
+table(<naturesaura:ender_crate>,<botania:quartztypedark>,<psi:psi_decorative:1>,<botania:dye:11>,<artisanworktables:worktable:7>,7);
+table(<thermalfoundation:material:320>,<minecraft:nether_brick>,<immersiveengineering:metal_decoration0:4>,<thermalfoundation:material:32>,<artisanworktables:worktable:6>,10);
+table(<tconstruct:pattern>,<ore:logWood>,<ore:bookshelf>,<ore:plankWood>,<artisanworktables:worktable:8>,5);
+table(<minecraft:dye:4>,<immersiveengineering:stone_decoration:2>,<ore:plankWood>,<minecraft:lapis_block>,<artisanworktables:worktable:12>,7);
+table(<ore:artisansCuttingBoard>,<minecraft:nether_brick>,<minecraft:crafting_table>,<minecraft:stone_slab>,<artisanworktables:worktable:11>,10);
+table(<minecraft:glass_bottle>,<tconstruct:seared:3>,<apotheosis:hellshelf>,<thermalfoundation:storage_alloy>,<artisanworktables:worktable:9>,20);
 
-function table(top as IIngredient, bottomCorner as IIngredient, side as IIngredient, output as IItemStack, durability as int, topCorner as IIngredient = null) {
-  var inputs as IIngredient[][];
-  if(isNull(topCorner)) {
-    inputs = Util.table(<artisanworktables:worktable:5>,top,bottomCorner,side);
-  } 
-  else {
-    inputs = Util.tableExtra(<artisanworktables:worktable:5>,top,bottomCorner,side,topCorner);
-  }
+function table(top as IIngredient, bottomCorner as IIngredient, side as IIngredient, topCorner as IIngredient, output as IItemStack, durability as int) {
   RecipeBuilder.get("basic")
-    .setShaped(inputs)
+    .setShaped([
+        [topCorner,top,topCorner],
+        [side,<artisanworktables:worktable:5>,side],
+        [bottomCorner,null,bottomCorner]])
     .addTool(<ore:artisansHammer>,durability)
     .addOutput(output)
     .create();

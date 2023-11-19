@@ -2,8 +2,6 @@
 
 import mods.extendedcrafting.TableCrafting;
 
-TableCrafting.remove(<extendedcrafting:singularity_ultimate>);
-
 //elite enrichment factory
 TableCrafting.addShaped(4, <mekanism:machineblock:7>.withTag({recipeType: 1}), [
 	[<ore:plateOsmium>, <ore:plateOsmium>, <ore:plateOsmium>, <ore:plateDraconium>, <ore:alloyUltimate>, <ore:plateDraconium>, <ore:plateOsmium>, <ore:plateOsmium>, <ore:plateOsmium>], 
