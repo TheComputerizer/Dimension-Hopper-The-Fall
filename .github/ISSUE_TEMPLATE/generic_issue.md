@@ -11,7 +11,7 @@ assignees: 'TheComputerizer'
 [The version number of the pack you are using. This can be found at the top of the changelog.txt file if you don't know where else to look. Keep in mind an issue you are having may have already been solved if you are not using the latest version of pack]
 
 **Log**
-[The latest.log from your logs folder, uploaded to [mclo.gs](https://mclo.gs/) or another pasting site of your choice. Do not dump your entire log here or the issue will be closed]
+[The latest.log from your logs folder, uploaded to https://mclo.gs/ or another pasting site of your choice. Do not dump your entire log here or the issue will be closed]
 
 **Describe the issue**
 [A clear and concise description of what the issue is. Give as much detail as possible preferrably without a wall of text]
