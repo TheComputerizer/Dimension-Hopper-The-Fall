@@ -17431,7 +17431,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     Boss type illager at the top of an Everbright dungeon tower. Very skilled in trickery and potion effects, so do not come unprepared.",
+          "desc:8": "     Boss type illager at the top of an Everdawn dungeon tower. Very skilled in trickery and potion effects, so do not come unprepared.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -46372,7 +46372,7 @@
       "rewards:9": {
         "0:10": {
           "asScript:1": 1,
-          "command:8": "#Script Comment\ngamestage silentadd @s couldron",
+          "command:8": "#Script Comment\ngamestage silentadd @s cauldron",
           "description:8": "Run a command script",
           "hideBlockIcon:1": 1,
           "index:3": 0,
