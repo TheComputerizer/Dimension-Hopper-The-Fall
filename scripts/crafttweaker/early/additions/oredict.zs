@@ -1,31 +1,21 @@
-#priority 500
+#priority 550
 #reloadable
 
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
+import scripts.crafttweaker.early.util.globals as Global;
 
 //generic
 oreDict.oreCobalt.addItems([<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>]);
 
 //enchantables
-addEnchantableOredict("enchantableHelmets",scripts.crafttweaker.early.util.globals.helmets);
-addEnchantableOredict("enchantableChestplates",scripts.crafttweaker.early.util.globals.chestplates);
-addEnchantableOredict("enchantableLeggings",scripts.crafttweaker.early.util.globals.leggings);
-addEnchantableOredict("enchantableBoots",scripts.crafttweaker.early.util.globals.boots);
-addEnchantableOredict("enchantableBows",scripts.crafttweaker.early.util.globals.bows);
-addEnchantableOredict("enchantableSwords",scripts.crafttweaker.early.util.globals.swords);
-addEnchantableOredict("enchantableAxes",scripts.crafttweaker.early.util.globals.axes);
-addEnchantableOredict("enchantableShovels",scripts.crafttweaker.early.util.globals.shovels);
-addEnchantableOredict("enchantableHoes",scripts.crafttweaker.early.util.globals.hoes);
-addEnchantableOredict("enchantableFishingRods",scripts.crafttweaker.early.util.globals.fishingrods);
-addEnchantableOredict("enchantableShears",scripts.crafttweaker.early.util.globals.shears);
-
-function addEnchantableOredict(name as string, items as IItemStack[]) {
-    val od as IOreDictEntry = oreDict.get(name);
-    od.addItems(items);
-    od.removeItems(scripts.crafttweaker.early.util.globals.disenchant);
-}
-
-//blocks for facades
-var blocks as IItemStack[] = [] as IItemStack[];
+Global.enchant["axe"].addItems(Global.axes);
+Global.enchant["boots"].addItems(Global.boots);
+Global.enchant["bow"].addItems(Global.bows);
+Global.enchant["chest"].addItems(Global.chestplates);
+Global.enchant["fishing"].addItems(Global.fishingrods);
+Global.enchant["helm"].addItems(Global.helmets);
+Global.enchant["hoe"].addItems(Global.hoes);
+Global.enchant["legs"].addItems(Global.leggings);
+Global.enchant["shears"].addItems(Global.shears);
+Global.enchant["shovel"].addItems(Global.shovels);
+Global.enchant["sword"].addItems(Global.swords);

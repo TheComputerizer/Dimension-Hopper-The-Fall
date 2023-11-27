@@ -1,7 +1,8 @@
-#priority 600
+#priority 2000
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 
 static helmets as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*helmet.*") as IItemStack[];
 static chestplates as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*chestplate.*") as IItemStack[];
@@ -17,6 +18,20 @@ static shears as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*shears.
 static conduits as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*conduit.*") as IItemStack[];
 static joapcaBlocks as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*jaopca:block.*") as IItemStack[];
 static aoaAll as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*aoa3:.*") as IItemStack[];
+
+static enchant as IOreDictEntry[string] = {
+    "axe": oreDict.get("enchantableAxes"),
+    "boots": oreDict.get("enchantableBoots"),
+    "bow": oreDict.get("enchantableBows"),
+    "chest": oreDict.get("enchantableChestplates"),
+    "fishing": oreDict.get("enchantableFishingRods"),
+    "helm": oreDict.get("enchantableHelmets"),
+    "hoe": oreDict.get("enchantableHoes"),
+    "legs": oreDict.get("enchantableLeggings"),
+    "shears": oreDict.get("enchantableShears"),
+    "shovel": oreDict.get("enchantableShovels"),
+    "sword": oreDict.get("enchantableSwords")
+} as IOreDictEntry[string];
 
 static disenchant as IItemStack[] = [
     <aether:burrukai_pelt_helmet>,

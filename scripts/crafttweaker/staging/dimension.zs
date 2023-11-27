@@ -121,7 +121,7 @@ static shop as int[string] = {
 	"flint": 9933,				//1
 	"netherbrick": 9934,		//2
 	"purpur": 9937,				//3
-	"redretherbrick": 9938,		//2
+	"rednetherbrick": 9938,		//2
 	"slime": 9940,				//2
 	"redstonelamp": 9941,		//3
 	"normalclay": 9942,			//1

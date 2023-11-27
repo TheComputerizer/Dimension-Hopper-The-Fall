@@ -3,37 +3,37 @@ import scripts.crafttweaker.staging.init as Stages;
 
 static modStages as IIngredient[][string][string] = {
 	"overworld": {
-		"aether": [<minecraft:dirt>] as IIngredient[],
-		"artisanworktables": [<minecraft:dirt>] as IIngredient[],
-		"huntingdim": [<minecraft:dirt>] as IIngredient[],
-		"midnight": [<minecraft:dirt>] as IIngredient[],
-		"mist": [<minecraft:dirt>] as IIngredient[]
+		"aether": [<minecraft:dirt>],
+		"artisanworktables": [<minecraft:dirt>],
+		"huntingdim": [<minecraft:dirt>],
+		"midnight": [<minecraft:dirt>],
+		"mist": [<minecraft:dirt>]
 	},
 	"labyrinth": {
-		"atum": [<minecraft:dirt>] as IIngredient[],
-		"blue_skies": [<minecraft:dirt>] as IIngredient[],
-		"glacidus": [<minecraft:dirt>] as IIngredient[],
-		"goodnightsleep": [<minecraft:dirt>] as IIngredient[],
-		"theaurorian": [<minecraft:dirt>] as IIngredient[]
+		"atum": [<minecraft:dirt>],
+		"blue_skies": [<minecraft:dirt>],
+		"glacidus": [<minecraft:dirt>],
+		"goodnightsleep": [<minecraft:dirt>],
+		"theaurorian": [<minecraft:dirt>]
 	},
 	"cavern": {
 		"cavern": [
 			<cavern:magnite_pickaxe>
-		] as IIngredient[]
+		]
 	},
 	"swamp": {
-		"galacticraftcore": [<minecraft:dirt>] as IIngredient[]
+		"galacticraftcore": [<minecraft:dirt>]
 	},
 	"planets": {
-		"aroma1997sdimension": [<minecraft:dirt>] as IIngredient[],
+		"aroma1997sdimension": [<minecraft:dirt>],
 		"galacticraftplanets": [
 			<galacticraftplanets:item_basic_asteroids:7>,
 			<galacticraftplanets:thermal_padding>,
 			<galacticraftplanets:thermal_padding:1>,
 			<galacticraftplanets:thermal_padding:2>,
 			<galacticraftplanets:thermal_padding:3>
-		] as IIngredient[],
-		"lightningcraft": [<minecraft:dirt>] as IIngredient[]
+		],
+		"lightningcraft": [<minecraft:dirt>]
 	},
 	"advent": {
 		"extraplanets": [
@@ -56,36 +56,36 @@ static modStages as IIngredient[][string][string] = {
 			<extraplanets:tier3_thermal_padding:3>,
 			<extraplanets:cloth>,
 			<extraplanets:tier1_radiation_layer>
-		] as IIngredient[]
+		]
 	},
 	"deepspace": {
 		"moreplanets": [
 			<moreplanets:space_warper_core>
-		] as IIngredient[],
+		],
 		"zollerngalaxy": [
 			<zollerngalaxy:diamonddust>,
 			<zollerngalaxy:radium>
-		] as IIngredient[]
+		]
 	},
 	"deepdown": {
-		"erebus": [<minecraft:dirt>] as IIngredient[]
+		"erebus": [<minecraft:dirt>]
 	},
 	"finalfrontier": {
 		"avaritia": [
 			<avaritia:compressed_crafting_table>, 
 			<avaritia:double_compressed_crafting_table>
-		] as IIngredient[],
-		"avaritiaio": [<minecraft:dirt>] as IIngredient[]
+		],
+		"avaritiaio": [<minecraft:dirt>]
 	},
 	"emc": {
-		"projecte": [<minecraft:dirt>] as IIngredient[],
-		"projectex": [<minecraft:dirt>] as IIngredient[]
+		"projecte": [<minecraft:dirt>],
+		"projectex": [<minecraft:dirt>]
 	},
 	"shopper": {
-		"lockyzextradimensionsmod": [<minecraft:dirt>] as IIngredient[]
+		"lockyzextradimensionsmod": [<minecraft:dirt>]
 	},
 	"bedrockfinal": {
-		"bedrockcraft": [<minecraft:dirt>] as IIngredient[]
+		"bedrockcraft": [<minecraft:dirt>]
 	}
 };
 

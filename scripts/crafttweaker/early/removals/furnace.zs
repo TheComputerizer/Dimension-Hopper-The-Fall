@@ -1,4 +1,6 @@
 #priority 500
 #reloadable
 
-furnace.removeAll();
+function run() {
+    furnace.removeAll();
+}
