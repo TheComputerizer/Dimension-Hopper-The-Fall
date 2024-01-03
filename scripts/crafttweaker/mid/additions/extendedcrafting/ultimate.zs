@@ -1,6 +1,7 @@
 #reloadable
 
 import mods.extendedcrafting.TableCrafting;
+import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
 
 static recipeHolders as Holder[] = [
 ] as Holder[];

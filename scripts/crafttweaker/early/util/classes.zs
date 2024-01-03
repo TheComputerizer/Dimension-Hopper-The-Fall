@@ -139,4 +139,11 @@ zenClass recipeHolder {
         }
         return markedInputs;
     }
+    function printContents() {
+        print("output = "+this.output.name);
+        val isShaped as bool = this.shapedInputs.length>0;
+        if(isShaped) {
+            print("shaped size = "+this.shapedInputs[0].length+"x"+this.shapedInputs.length);
+        }
+    }
 }

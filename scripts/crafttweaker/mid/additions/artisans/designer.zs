@@ -1,9 +1,8 @@
 #reloadable
 
-import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
 import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.tables.artisans.universal as Artisans;
+import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
 
 static recipeHolders as Holder[] = [
   //galacticraftcore

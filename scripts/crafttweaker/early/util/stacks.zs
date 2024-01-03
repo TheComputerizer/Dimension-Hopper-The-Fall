@@ -1,6 +1,7 @@
 #priority 1250
 #reloadable
 
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 
@@ -12,7 +13,7 @@ function metas(item as IItemStack, vals as int[]) as IItemStack[] {
     return ret;
 }
 
-function mappedMetas(metaMap as int[IItemStack]) as IItemStack {
+function mappedMetas(metaMap as int[][IItemStack]) as IItemStack[] {
     var ret as IItemStack[] = [] as IItemStack[];
     for item, metas in metaMap {
         for meta in metas {
@@ -61,7 +62,7 @@ function commonMetas(type as string, modMetas as int[][string], modReplacers as 
 function withExtras(base as IItemStack[], extras as IIngredient[] = [] as IIngredient) as IIngredient[] {
     var ret as IIngredient[] = [] as IIngredient[];
     for item in base {
-        ret+=(base as IIngredient);
+        ret+=item;
     }
     for extra in extras {
         ret+=extra;

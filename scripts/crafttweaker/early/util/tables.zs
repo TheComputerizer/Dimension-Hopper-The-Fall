@@ -2,6 +2,7 @@
 #reloadable
 
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
@@ -71,6 +72,7 @@ function getArmorCore(tier as int) as IIngredient {
 }
 
 function armor(output as IItemStack, type as string, material as IIngredient, coreTier as int) as Holder {
+    var ret as Holder;
     if(coreTier<6) {
         return simpleShaped(output,type,[material,getArmorCore(coreTier)]).addTools(armorTools[type][coreTier]);
     }
@@ -94,14 +96,14 @@ function dust(ore as IIngredient, meta as int, durability as int) as Holder {
 }
 
 function plate(material as IIngredient, plate as IItemStack, durability as int) as Holder {
-    return singleton(material,plate,<ore:artisansHammer>,durability);
+    return shapeless(plate,[material,material,material]).addTools({<ore:artisansHammer>:durability});
 }
 
 function singleton(input as IIngredient, output as IItemStack, tool as IIngredient, durability as int) as Holder {
     return shapeless(output,[input]).addTools({tool as IIngredient:durability});
 }
 
-function schematicDuper(schematic as IItemStack, fluid as ILiquidStack, tier as int) {
+function schematicDuper(schematic as IItemStack, fluid as ILiquidStack, tier as int) as Holder {
     return simpleShaped(schematic*2, "line", [schematic as IIngredient, <multiblocked:multiblock_builder>])
         .addTools({<ore:artisansPencil>:111*tier,<ore:artisansCutters>:111*tier,<ore:artisansFramingHammer>:111*tier})
         .addFluids([fluid*720]);
@@ -122,15 +124,15 @@ function compressed(uncompressed as IItemStack, compressed as IItemStack, baseLa
 }
 
 function device(meta as int, top as IIngredient, side as IIngredient, bottom as IIngredient) as Holder {
-    val output as IItemStack = <thermalexpansion:dynamo>.definition.makeStack(meta);
-    return simpleShaped(output,  "spatial", [<thermalexpansion:frame:64>, top, side, side, bottom, <ore:blockConstructionAlloy>]);
+    val output as IItemStack = <thermalexpansion:device>.definition.makeStack(meta);
+    return simpleShaped(output, "spatial", [<thermalexpansion:frame:64>, top, side, side, bottom, <ore:blockConstructionAlloy>]);
 }
 
 function bigShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.simple5x5(type,inputs));
 }
 
-function bigMetaShaped(output as IItemStack, type as string, itemMetas as int[IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
+function bigMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.simple5x5(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
 }
 
@@ -138,7 +140,7 @@ function simpleShaped(output as IItemStack, type as string, inputs as IIngredien
     return mappedShaped(output,Shaper.simple3x3(type,inputs));
 }
 
-function simpleMetaShaped(output as IItemStack, type as string, itemMetas as int[IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
+function simpleMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.simple3x3(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
 }
 

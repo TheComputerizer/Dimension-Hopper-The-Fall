@@ -41,7 +41,7 @@ static shapedHolders as Holder[] = [
 		<ore:plateBronze>, <ore:craftingPiston>]), //biogas engine
 
 	//gaiadimension
-	Util.simpleShaped(<gaiadimension:daedmega_storage_cratealus>, "plus", [<immersiveengineering:wooden_device0:5>, <ore:planksAgate>, 
+	Util.simpleShaped(<gaiadimension:mega_storage_crate>, "plus", [<immersiveengineering:wooden_device0:5>, <ore:planksAgate>, 
 		<gaiadimension:thick_glitter_block>]), //mega storage crate
 		
 	Util.simpleShaped(<gaiadimension:restructurer_idle>, "ring", [<enderio:block_simple_furnace>, <gaiadimension:reinforced_bricks>]), //gaia restructurer
@@ -66,7 +66,7 @@ static shapedHolders as Holder[] = [
 	Util.simpleShaped(<mist:portal_base:1>, "portalbottom", [<dimdoors:stable_fabric>, <minecraft:gold_ingot>, <minecraft:stone>]), //misty portal bottom
 
 	//thermalexpansion
-	Util.simpleShaped(<thermalexpansion:dynamo>, "table", [<ore:gearCopper>, <thermalfoundation:material:514>, <ore:plateCopper>, <ore:plateIron>
+	Util.simpleShaped(<thermalexpansion:dynamo>, "table", [<ore:gearCopper>, <thermalfoundation:material:514>, <ore:plateCopper>, <ore:plateIron>,
 		<ore:ingotRedstoneAlloy>, <ore:ingotRedstoneAlloy>]), //steam dynamo
 
 	Util.simpleShaped(<thermalexpansion:device:10>, "unique", [<ore:gearGold>, <ore:gearTin>, <ore:gearCopper>, <ore:gearIron>, 
@@ -91,6 +91,7 @@ static shapelessHolders as Holder[] = [
 
 function build() {
     for holder in shapedHolders {
+		print(holder.getOutput().name);
 		TableCrafting.addShaped(1, holder.getOutput(), holder.getShaped());
 	}
     for holder in shapelessHolders {

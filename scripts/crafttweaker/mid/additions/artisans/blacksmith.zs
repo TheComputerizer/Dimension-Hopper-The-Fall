@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
 import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.tables.artisans.universal as Artisans;
+import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
 
 static armorSets as Holder[][] = [
 	//tier 1
@@ -29,10 +29,10 @@ static armorSets as Holder[][] = [
 	Util.tieredArmorSet("aether:arkenium_", <aether:arkenium>, 3), //arkenium armor
 	Util.tieredArmorSet("aether:gravitite_", <aether:gravitite_plate>, 3), //gravitite armor
 	Util.tieredArmorSet("tp:obsidian_", <tp:reinforced_obsidian_ingot>, 3), //obsidian armor
-	Util.tieredArmorSet("gaiadimension:chalcedony_", <gaiadimension:chalcedony>, 3), //chalcedony armor
+	Util.tieredArmorSet("gaiadimension:chalcedony_", <gaiadimension:chalcedony>, 3, ["helmet", "chestplate", "legs", "boots"]), //chalcedony armor
 	Util.tieredArmorSet("actuallyadditions:item_", <moreplates:empowered_diamatine_plate>, 3, ["helm", "chest", "pants", "boots"], 0, "_crystal_light_blue"), //diamtine armor
 	Util.tieredArmorSet("actuallyadditions:item_", <moreplates:empowered_emeradic_plate>, 3, ["helm", "chest", "pants", "boots"], 0, "_crystal_green"), //emeradic armor
-	Util.tieredArmorSet("botania:terrastee", <moreplates:terrasteel_plate>, 3, ["helm", "chest", "legs", "boots"]), //terrasteel armor
+	Util.tieredArmorSet("botania:terrasteel", <moreplates:terrasteel_plate>, 3, ["helm", "chest", "legs", "boots"]), //terrasteel armor
 
 	//tier 5
 	Util.tieredArmorSet("galacticraftplanets:desh_", <galacticraftplanets:item_basic_mars:5>, 5), //desh armor
@@ -52,11 +52,13 @@ static shapedHolders as Holder[] = [
 	Util.simpleShaped(<artisanworktables:workstation:3>, "table", [
 		<artisanworktables:worktable:3>, 
 		<extendedcrafting:material:2>,
+		<contenttweaker:mek_wall>,
 		<enderio:block_alloy:8>,
 		<enderio:block_alloy:8>,null])
 		.addTools({<ore:artisansHammer>:100})
-		.addFluids([<liquid:emerald>*4000]), //blacksmith worktable
-	Util.simpleShaped(<artisanworktables:workstation:3>, "table", [
+		.addFluids([<liquid:emerald>*4000]), //blacksmith workstation
+	Util.simpleShaped(<artisanworktables:workshop:3>, "table", [
+		<artisanworktables:workstation:3>,
 		<environmentaltech:pladium_crystal>, 
 		<aoa3:stranglewood_log>,
 		<environmentaltech:pladium_crystal>,

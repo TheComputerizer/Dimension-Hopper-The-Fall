@@ -5,7 +5,7 @@ import crafttweaker.recipes.IRecipeFunction;
 import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
 import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.tables.artisans.universal as Artisans;
+import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
 
 static shapedHolders as Holder[] = [
   //artisanworktables
@@ -125,9 +125,9 @@ static shapedHolders as Holder[] = [
     .addFluids([<liquid:terrasteel>*288]), //invisibility cloak
 
   Util.bigMetaShaped(<botania:speedupbelt>, "sash", {
-    [0]:<botania:travelbelt>,
-    [0]:<minecraft:map>,
-    [0,5,3,6,4,8,7]:<botania:grassseeds>}, 
+    <botania:travelbelt>:([0] as int[]),
+    <minecraft:map>:([0] as int[]),
+    <botania:grassseeds>:[0,5,3,6,4,8,7]}, 
     [<darkutils:material:3>])
     .addTools({<ore:artisansGrimoire>:127,<ore:artisansAthame>:127,<ore:artisansPliers>:127})
     .addFluids([<liquid:terrasteel>*720]), //planetstriders sash

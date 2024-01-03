@@ -162,7 +162,7 @@ static recipeHolders as Holder[] = [
 	Util.customShaped(<solarflux:solar_panel_neutronium>, [
 		<avaritia:resource:5>, <avaritia:resource:2>, <ore:nuggetCosmicNeutronium>,
 		<solarflux:solar_panel_chaotic>, <ore:ingotCrystalMatrix>, <ore:ingotUltimate>,
-		<ore:circuitUltimate>, <ore:circuitUltimate>], shapes["solar"]), //neutronium solar panel
+		<ore:ingotCosmicNeutronium>, <ore:circuitUltimate>, <ore:circuitUltimate>], shapes["solar"]), //neutronium solar panel
 
 	Util.customShaped(<solarflux:solar_panel_infinity>, [
 		<ore:blockInfinity>, <ore:nuggetUltimate>, <avaritiatweaks:enhancement_crystal>,

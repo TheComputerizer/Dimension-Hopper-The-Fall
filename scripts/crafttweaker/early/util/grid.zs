@@ -5,16 +5,16 @@ import crafttweaker.item.IIngredient;
 
 static common2x2 as int[][][string] = {
     "alt": [
-        [ 0, 1],
-        [ 1, 0]
+        [ 0, 1 ],
+        [ 1, 0 ]
     ],
     "block": [
-        [ 0, 0],
-        [ 0, 0]
+        [ 0, 0 ],
+        [ 0, 0 ]
     ],
     "unique": [
-        [ 0, 1],
-        [ 2, 3]
+        [ 0, 1 ],
+        [ 2, 3 ]
     ]
 };
 

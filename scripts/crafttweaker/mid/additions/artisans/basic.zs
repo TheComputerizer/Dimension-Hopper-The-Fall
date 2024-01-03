@@ -2,7 +2,7 @@
 
 import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
 import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.tables.artisans.universal as Artisans;
+import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
 
 static shapedHolders as Holder[] = [
     //artisanautomation
