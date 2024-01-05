@@ -12,11 +12,13 @@
   "input-types": {
     "a": {
       "id": "actuallyadditions:block_compost",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "compactmachines3:wallbreakable",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     }
   },
   "shape": [

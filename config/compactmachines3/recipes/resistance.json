@@ -11,15 +11,18 @@
   "input-types": {
     "a": {
       "id": "overloaded:compressed_obsidian",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "enderio:block_alloy_endergy",
-      "meta": 3
+      "meta": 3,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "calculator:material",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     }
   },
 

@@ -13,42 +13,42 @@
     "a": {
       "id": "contenttweaker:booster_block_1",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "b": {
       "id": "contenttweaker:rocket_block_1",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "c": {
       "id": "immersiveengineering:metal_decoration1",
       "meta": 0,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "d": {
       "id": "immersiveengineering:metal_decoration1_slab",
       "meta": 1,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "e": {
       "id": "contenttweaker:large_circuit",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "f": {
       "id": "randomthings:advancedredstonetorch_on",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "g": {
       "id": "openblocks:tank",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "h": {
       "id": "dimensionhopper:rocket_t1",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     }
   },
   "shape": [

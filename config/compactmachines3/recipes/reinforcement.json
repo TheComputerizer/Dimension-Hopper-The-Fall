@@ -11,11 +11,13 @@
   "input-types": {
     "a": {
       "id": "overloaded:compressed_obsidian",
-      "meta": 1
+      "meta": 1,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "calculator:material",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     }
   },
 

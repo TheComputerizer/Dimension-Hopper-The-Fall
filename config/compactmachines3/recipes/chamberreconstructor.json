@@ -11,27 +11,33 @@
   "input-types": {
     "a": {
       "id": "compactmachines3:wallbreakable",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "actuallyadditions:block_crystal",
-      "meta": 5
+      "meta": 5,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "actuallyadditions:block_crystal",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     },
     "d": {
       "id": "actuallyadditions:block_dropper",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "e": {
       "id": "actuallyadditions:block_atomic_reconstructor",
-      "meta": 4
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "f": {
       "id": "actuallyadditions:block_ranged_collector",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     }
   },
   "shape": [

@@ -31,3 +31,7 @@ other_configs = [ "modify", "remove", "spawn" ]
 [[group]]
 	name = "progression_mobs"
 	count = 50
+
+[[group]]
+	name = "boss_spawns"
+	count = 2

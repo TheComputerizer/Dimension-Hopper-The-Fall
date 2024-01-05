@@ -32,8 +32,8 @@
 [[spawn]]
 	return_immediately = true
 	dimension = -1
-	group = "progression_mobs"
-	[spawn.biome]
+	group = "boss_spawns"
+	[modify.biome]
 		biome = "minecraft:hell"
 		matcher = "nether"
 	[spawn.entity]

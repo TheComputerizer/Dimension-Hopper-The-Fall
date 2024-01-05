@@ -14,18 +14,23 @@
   "input-types": {
     "a": {
       "id": "extrautils2:simpledecorative",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "extrautils2:decorativesolidwood",
-      "meta": 1
+      "meta": 1,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "extrautils2:simpledecorative",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     },
     "d": {
-      "id": "contenttweaker:bloq"
+      "id": "contenttweaker:bloq",
+      "ignore-meta": true,
+	    "ignore-nbt": true
     }
   },
   "shape": [

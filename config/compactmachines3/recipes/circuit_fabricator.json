@@ -12,19 +12,23 @@
   "input-types": {
     "a": {
       "id": "enderio:block_alloy",
-      "meta": 6
+      "meta": 6,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "contenttweaker:divine_mek_wall",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "thebetweenlands:valonite_block",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "d": {
       "id": "mekanism:basicblock",
-      "meta": 8
+      "meta": 8,
+	    "ignore-nbt": true
     }
   },
   "shape": [

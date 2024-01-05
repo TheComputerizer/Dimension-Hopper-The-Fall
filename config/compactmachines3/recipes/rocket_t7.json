@@ -18,52 +18,52 @@
     "a": {
       "id": "galacticraftcore:spin_thruster",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "b": {
       "id": "contenttweaker:booster_block_2",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "c": {
       "id": "contenttweaker:rocket_block_7",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "d": {
       "id": "immersiveengineering:metal_decoration1",
       "meta": 0,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "e": {
       "id": "solarflux:solar_panel_7",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "f": {
       "id": "contenttweaker:divine_large_circuit",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "g": {
       "id": "appliedenergistics2:controller",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "h": {
       "id": "bigreactors:reactorfuelrod",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "i": {
       "id": "contenttweaker:heart_of_the_machine_god",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     },
     "j": {
       "id": "dimensionhopper:rocket_t7",
       "ignore-meta": true,
-	  "ignore-nbt": true
+	    "ignore-nbt": true
     }
   },
   "shape": [

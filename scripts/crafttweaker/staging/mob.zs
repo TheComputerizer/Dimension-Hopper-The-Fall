@@ -17,7 +17,6 @@ static mobStages as string[][string] = {
 		"minecraft:blaze"
 	],
 	"deepdown": [
-		"lightningcraft:demon_soldier",
 		"erebus:erebus.black_widow"
 	],
 	"disabled": [

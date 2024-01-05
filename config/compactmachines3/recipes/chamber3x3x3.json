@@ -11,27 +11,33 @@
   "input-types": {
     "a": {
       "id": "compactmachines3:fieldprojector",
-      "meta": 3
+      "meta": 3,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "compactmachines3:wallbreakable",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "compactmachines3:fieldprojector",
-      "meta": 4
+      "meta": 4,
+	    "ignore-nbt": true
     },
     "d": {
       "id": "compactmachines3:machine",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     },
     "e": {
       "id": "compactmachines3:fieldprojector",
-      "meta": 5
+      "meta": 5,
+	    "ignore-nbt": true
     },
     "f": {
       "id": "compactmachines3:fieldprojector",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     }
   },
   "shape": [

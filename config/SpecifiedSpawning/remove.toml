@@ -2,9 +2,10 @@
 
 # Labyrinth Concussion Creeper removal
 [[remove]]
+	return_immediately = true
 	dimension = 1024
 	[remove.entity]
-		matcher = "concussioncreeper"
+		matcher = "concussion"
 
 # Labyrinth staged hostile removal
 [[remove]]

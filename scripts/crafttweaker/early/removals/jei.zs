@@ -47,8 +47,9 @@ static arrayRemovals as IItemStack[][] = [
     Stack.metas(<extraplanets:item_tier10_electric_rocket>, [1,2,3]),
     Stack.incrementals("extraplanets:tier", [4,5,6,7,8,9,10], 1, "_items"),
 
-    //extrautils2
+	//extrautils2
     Stack.append("extrautils2:compressed", ["cobblestone", "dirt", "gravel", "netherrack", "sand"], 32767),
+	Stack.append("extrautils2:quarry", ["", "proxy"]),
 
     //forestry
     Stack.metas(<forestry:resource_storage>, [1,3]),
@@ -293,7 +294,22 @@ static itemRemovals as IItemStack[] = [
     <zollerngalaxy:lapisingot>
 ] as IItemStack[];
 
+//category removals
+static categories as string[] = [
+    "atum.kiln",
+    "Avatitia.Compressor",
+    "extendedcrafting:compressor",
+    "extraplanets.rocketT4","extraplanets.rocketT5","extraplanets.rocketT6","extraplanets.rocketT7","extraplanets.rocketT8","extraplanets.rocketT9","extraplanets.rocketT10","extraplanets.rocketT10Electric",
+    "ORE_WASHER","ORE_FERMENTER",
+    "jeresources.enchantment",
+    "lightningcraft.crusher_recipe_category","lightningcraft.infusion_recipe_category",
+    "tinker_io:fuel_input_machine","tinker_io:smart_output",
+] as string[];
+
 function run() {
+    for category in categories {
+        JEI.hideCategory(category);
+    }
     for items in arrayRemovals {
 		for item in items {
 			JEI.removeAndHide(item);

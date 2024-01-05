@@ -11,11 +11,16 @@
   "catalyst": "minecraft:ender_eye",
 
   "input-types": {
-    "w": { "id": "compactmachines3:wallbreakable" },
+    "w": { 
+      "id": "compactmachines3:wallbreakable",
+      "ignore-meta": true,
+	    "ignore-nbt": true
+    },
     "t": { 
-	"id": "compactmachines3:machine",
-	"meta": 1
-     }	
+      "id": "compactmachines3:machine",
+      "meta": 1,
+	    "ignore-nbt": true
+     }
   },
 
   "symmetrical": true,

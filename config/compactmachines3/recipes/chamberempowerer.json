@@ -12,35 +12,43 @@
   "input-types": {
     "a": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 4
+      "meta": 4,
+	    "ignore-nbt": true
     },
     "b": {
       "id": "actuallyadditions:block_display_stand",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "c": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 5
+      "meta": 5,
+	    "ignore-nbt": true
     },
     "d": {
       "id": "actuallyadditions:block_empowerer",
-      "meta": 0
+      "ignore-meta": true,
+	    "ignore-nbt": true
     },
     "e": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 3
+      "meta": 3,
+	    "ignore-nbt": true
     },
     "f": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 2
+      "meta": 2,
+	    "ignore-nbt": true
     },
     "g": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 1
+      "meta": 1,
+	    "ignore-nbt": true
     },
     "h": {
       "id": "actuallyadditions:block_crystal_empowered",
-      "meta": 0
+      "meta": 0,
+	    "ignore-nbt": true
     }
   },
   "shape": [

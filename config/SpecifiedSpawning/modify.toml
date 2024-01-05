@@ -4,11 +4,9 @@
 [[modify]]
 	return_immediately = true
 	new_group = "progression_mobs"
-	[modify.biome]
-		biome = "minecraft:hell"
-		matcher = "nether"
 	[modify.entity]
 		entity = "lightningcraft:demon_soldier"
+		ignoreSpawnConditions = true
 		weight = 100
 	[modify.gamestage]
 		all_players = true
@@ -23,6 +21,7 @@
 		matcher = "nether"
 	[modify.entity]
 		entity = "aoa3:little_bam"
+		ignoreSpawnConditions = true
 		weight = 75
 	[modify.gamestage]
 		all_players = true

@@ -21,7 +21,7 @@
     },
     "c": {
       "id": "extendedcrafting:storage",
-	  "ignore-nbt": true,
+	    "ignore-nbt": true,
       "meta": 0
     },
     "d": {
@@ -34,7 +34,7 @@
     },
     "f": {
       "id": "mekanism:basicblock",
-	  "ignore-nbt": true,
+	    "ignore-nbt": true,
       "meta": 14
     },
     "g": {

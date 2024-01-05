@@ -7,7 +7,9 @@ import mods.avaritia.ExtremeCrafting;
 static itemRemovals as IItemStack[] = [
 	<avaritia:neutron_collector>,
 	<avaritia:neutronium_compressor>,
-	<avaritia:resource:*>,
+	//<avaritia:resource:*>,
+	<avaritia:resource:5>,
+	<avaritia:resource:6>,
 	<solarflux:solar_panel_neutronium>,
 	<solarflux:solar_panel_infinity>,
 	<rftools:powercell_creative>,
