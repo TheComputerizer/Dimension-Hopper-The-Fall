@@ -63,7 +63,7 @@ static recipeMap as IIngredient[IItemStack][int] = {
     }
 } as IItemStack[IItemStack][int];
 
-function build() {
+function run() {
     for rf, recipe in recipeMap {
         for output, input in recipe {
             AtomicReconstructor.addRecipe(output,input,rf);

@@ -3,7 +3,7 @@
 
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 
 function buildNested(type as string, shapedHolderList as Holder[][], shapelessHolderList as Holder[][] = [] as Holder[][]) {
     for holders in shapedHolderList {

@@ -1,7 +1,7 @@
 #reloadable
 
 import mods.extendedcrafting.TableCrafting;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 
 static recipeHolders as Holder[] = [
 ] as Holder[];
@@ -116,15 +116,15 @@ TableCrafting.addShaped(4, <extendedcrafting:material:24>, [
 ]);
 //caligro teleporter
 TableCrafting.addShaped(4, <zollerngalaxy:stargate_tier10>, [
-	[<zollerngalaxy:compressedrhodiumblock>, <zollerngalaxy:shadowessence>, <zollerngalaxy:perdrock>, <zollerngalaxy:compressedheartium>, <zollerngalaxy:compressedevenium>, <zollerngalaxy:compressedpromethean>, <zollerngalaxy:perdrock>, <zollerngalaxy:shadowessence>, <zollerngalaxy:compressedrhodiumblock>], 
-	[<zollerngalaxy:shadowessence>, <ore:gemRedDiamond>, <ore:gemRedDiamond>, <extraplanets:tier10_items:4>, <ore:gemPurpleDiamond>, <extraplanets:tier10_items:4>, <ore:gemBlueDiamond>, <ore:gemBlueDiamond>, <zollerngalaxy:shadowessence>], 
+	[<zollerngalaxy:compressedrhodiumblock>, <contenttweaker:empowered_essence>, <zollerngalaxy:perdrock>, <zollerngalaxy:compressedheartium>, <zollerngalaxy:compressedevenium>, <zollerngalaxy:compressedpromethean>, <zollerngalaxy:perdrock>, <contenttweaker:empowered_essence>, <zollerngalaxy:compressedrhodiumblock>], 
+	[<contenttweaker:empowered_essence>, <ore:gemRedDiamond>, <ore:gemRedDiamond>, <extraplanets:tier10_items:4>, <ore:gemPurpleDiamond>, <extraplanets:tier10_items:4>, <ore:gemBlueDiamond>, <ore:gemBlueDiamond>, <contenttweaker:empowered_essence>], 
 	[<zollerngalaxy:perdrock>, <ore:gemRedDiamond>, <ore:gemGreenDiamond>, <ore:gemGreenDiamond>, <ore:gemPurpleDiamond>, <ore:gemYellowDiamond>, <ore:gemYellowDiamond>, <ore:gemBlueDiamond>, <zollerngalaxy:perdrock>], 
 	[<zollerngalaxy:compressedkriffonium>, <extraplanets:tier10_items:4>, <ore:gemGreenDiamond>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <ore:gemYellowDiamond>, <extraplanets:tier10_items:4>, <zollerngalaxy:compressedsuperchargedcoal>], 
 	[<zollerngalaxy:compressedvirinium>, <ore:gemPurpleDiamond>, <ore:gemPurpleDiamond>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <ore:gemPurpleDiamond>, <ore:gemPurpleDiamond>, <zollerngalaxy:compressedriven>], 
 	[<zollerngalaxy:compressedvyrex>, <extraplanets:tier10_items:4>, <ore:gemYellowDiamond>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedascendantamaranth>, <ore:gemGreenDiamond>, <extraplanets:tier10_items:4>, <zollerngalaxy:compressedzollernium>], 
 	[<zollerngalaxy:perdrock>, <ore:gemBlueDiamond>, <ore:gemYellowDiamond>, <ore:gemYellowDiamond>, <ore:gemPurpleDiamond>, <ore:gemGreenDiamond>, <ore:gemGreenDiamond>, <ore:gemRedDiamond>, <zollerngalaxy:perdrock>], 
-	[<zollerngalaxy:shadowessence>, <ore:gemBlueDiamond>, <ore:gemBlueDiamond>, <extraplanets:tier10_items:4>, <ore:gemPurpleDiamond>, <extraplanets:tier10_items:4>, <ore:gemRedDiamond>, <ore:gemRedDiamond>, <zollerngalaxy:shadowessence>], 
-	[<zollerngalaxy:compressedrhodiumblock>, <zollerngalaxy:shadowessence>, <zollerngalaxy:perdrock>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedrhodium>, <zollerngalaxy:compressedzucrite>, <zollerngalaxy:perdrock>, <zollerngalaxy:shadowessence>, <zollerngalaxy:compressedrhodiumblock>]
+	[<contenttweaker:empowered_essence>, <ore:gemBlueDiamond>, <ore:gemBlueDiamond>, <extraplanets:tier10_items:4>, <ore:gemPurpleDiamond>, <extraplanets:tier10_items:4>, <ore:gemRedDiamond>, <ore:gemRedDiamond>, <contenttweaker:empowered_essence>], 
+	[<zollerngalaxy:compressedrhodiumblock>, <contenttweaker:empowered_essence>, <zollerngalaxy:perdrock>, <zollerngalaxy:compressedascendantamaranth>, <zollerngalaxy:compressedrhodium>, <zollerngalaxy:compressedzucrite>, <zollerngalaxy:perdrock>, <contenttweaker:empowered_essence>, <zollerngalaxy:compressedrhodiumblock>]
 ]);
 //void ore miner T5
 TableCrafting.addShaped(4, <environmentaltech:void_ore_miner_cont_5>, [
@@ -259,7 +259,7 @@ TableCrafting.addShaped(4, <galacticraftcore:rocket_workbench>, [
 	[null, null, null, <ore:blockDarkSteel>, <ore:blockDarkSteel>, <ore:blockDarkSteel>, null, null, null]
 ]);
 
-function build() {
+function run() {
     for holder in recipeHolders {
 		TableCrafting.addShaped(4, holder.getOutput(), holder.getShaped());
 	}

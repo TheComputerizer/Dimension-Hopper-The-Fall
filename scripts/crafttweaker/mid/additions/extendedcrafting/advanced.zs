@@ -1,7 +1,7 @@
 #reloadable
 
 import mods.extendedcrafting.TableCrafting;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 
 static recipeHolders as Holder[] = [
 ] as Holder[];
@@ -601,17 +601,17 @@ TableCrafting.addShaped(2, <genetics:machine:2>, [
 //oxygen decompressor
 TableCrafting.addShaped(2, <galacticraftcore:oxygen_compressor:4>, [
 	[<overloaded:compressed_obsidian:1>, <ore:compressedSteel>, <openblocks:tank>, <ore:compressedSteel>, <overloaded:compressed_obsidian:1>], 
-	[<ore:compressedSteel>, <ore:compressedAluminium>, <galacticraftcore:fluid_pipe>, <ore:compressedAluminium>, <ore:compressedSteel>], 
+	[<ore:compressedSteel>, <galacticraftcore:basic_item:8>, <galacticraftcore:fluid_pipe>, <galacticraftcore:basic_item:8>, <ore:compressedSteel>], 
 	[<openblocks:tank>, <galacticraftcore:fluid_pipe>, <ore:waferAdvanced>, <galacticraftcore:fluid_pipe>, <openblocks:tank>], 
-	[<ore:compressedSteel>, <ore:compressedAluminium>, <galacticraftcore:fluid_pipe>, <ore:compressedAluminium>, <ore:compressedSteel>], 
+	[<ore:compressedSteel>, <galacticraftcore:basic_item:8>, <galacticraftcore:fluid_pipe>, <galacticraftcore:basic_item:8>, <ore:compressedSteel>], 
 	[<overloaded:compressed_obsidian:1>, <ore:compressedSteel>, <openblocks:tank>, <ore:compressedSteel>, <overloaded:compressed_obsidian:1>]
 ]);
 //electric furnace
 TableCrafting.addShaped(2, <galacticraftcore:machine_tiered:4>, [
 	[<overloaded:compressed_obsidian:1>, <ore:compressedSteel>, <tp:hardened_stone_smallbricks>, <ore:compressedSteel>, <overloaded:compressed_obsidian:1>], 
-	[<ore:compressedSteel>, <ore:compressedAluminium>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <ore:compressedAluminium>, <ore:compressedSteel>], 
+	[<ore:compressedSteel>, <galacticraftcore:basic_item:8>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <galacticraftcore:basic_item:8>, <ore:compressedSteel>], 
 	[<tp:hardened_stone_smallbricks>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <thermalexpansion:machine>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <tp:hardened_stone_smallbricks>], 
-	[<ore:compressedSteel>, <ore:compressedAluminium>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <ore:compressedAluminium>, <ore:compressedSteel>], 
+	[<ore:compressedSteel>, <galacticraftcore:basic_item:8>, <thermalexpansion:florb:1>.withTag({Fluid: "lava"}), <galacticraftcore:basic_item:8>, <ore:compressedSteel>], 
 	[<overloaded:compressed_obsidian:1>, <ore:compressedSteel>, <tp:hardened_stone_smallbricks>, <ore:compressedSteel>, <overloaded:compressed_obsidian:1>]
 ]);
 //resistive heater
@@ -631,7 +631,7 @@ TableCrafting.addShaped(2, <mekanism:machineblock2:13>, [
 	[<ore:plateOsmium>, <ore:plateDarkSteel>, <ore:circuitUltimate>, <ore:plateDarkSteel>, <ore:plateOsmium>]
 ]);
 
-function build() {
+function run() {
     for holder in recipeHolders {
 		TableCrafting.addShaped(2, holder.getOutput(), holder.getShaped());
 	}

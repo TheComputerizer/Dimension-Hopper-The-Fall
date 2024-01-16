@@ -2,6 +2,7 @@
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 
 //ordered by xp and then alphabetically by the output
 static recipeMap as double[IIngredient][IItemStack] = {
@@ -113,10 +114,19 @@ static recipeMap as double[IIngredient][IItemStack] = {
     <tconstruct:materials:11>:{<tconstruct:soil:5>:10.0} //magma slime crystal
 };
 
-function build() {
+static metaMaps as double[IItemStack[IItemStack]] = {
+	Stack.mapCommonMetas(<botany:ceramic>,<botany:clay>,80):0.1
+ } as double[IItemStack[IItemStack]];
+
+function run() {
     for output, inputMap in recipeMap {
         for input, xp in inputMap {
             furnace.addRecipe(output,input,xp);
         }
     }
+	for map, xp in metaMaps {
+		for output, input in map {
+			furnace.addRecipe(output,input,xp);
+		}
+	}
 }

@@ -2,9 +2,9 @@
 
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static armorSets as Holder[][] = [
 	//tier 1
@@ -125,7 +125,7 @@ static shapelessHolders as Holder[] = [
 ] as Holder[];
 
 
-function build() {
+function run() {
 	Artisans.build("blacksmith", shapedHolders, shapelessHolders);
 	Artisans.buildNested("blacksmith", armorSets);
 }

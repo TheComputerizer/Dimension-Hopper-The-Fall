@@ -3,8 +3,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.avaritia.ExtremeCrafting;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
 
 static shapes as int[][][string] = {
 	"break": [
@@ -170,7 +170,7 @@ static recipeHolders as Holder[] = [
 		<ore:plateInfinity>, <ore:blockUltimate>, <ore:gearInfinity>], shapes["solar"]), //infinity solar panel
 ] as Holder[];
 
-function build() {
+function run() {
 	for holder in recipeHolders {
 		ExtremeCrafting.addShaped(holder.getName("extreme."),holder.getOutput(),holder.getShaped());
 	}

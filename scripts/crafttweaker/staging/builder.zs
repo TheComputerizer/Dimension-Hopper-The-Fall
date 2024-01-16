@@ -2,14 +2,15 @@
 
 import mods.recipestages.Recipes;
 import mods.zenstages.ZenStager as Stager;
-import scripts.crafttweaker.staging.init as Stages;
+import scripts.crafttweaker.staging;
+import scripts.crafttweaker.staging.Init as Stages;
 
-scripts.crafttweaker.staging.mod.load();
-scripts.crafttweaker.staging.dimension.load();
-scripts.crafttweaker.staging.mob.load();
-scripts.crafttweaker.staging.ore.load();
-scripts.crafttweaker.staging.journeymap.load();
-scripts.crafttweaker.staging.items.load();
+staging.Dimension.load();
+staging.Items.load();
+staging.Journeymap.load();
+staging.Mob.load();
+staging.Mod.load();
+staging.Ore.load();
 
 Recipes.setPackageStage("appeng", Stages.stageMap.keys);
 

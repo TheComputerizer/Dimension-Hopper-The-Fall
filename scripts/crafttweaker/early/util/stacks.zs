@@ -13,6 +13,16 @@ function metas(item as IItemStack, vals as int[]) as IItemStack[] {
     return ret;
 }
 
+function mapCommonMetas(key as IItemStack, value as IItemStack, max as int) as IItemStack[IItemStack] {
+    val keyDef as IItemDefinition = key.definition;
+    val valDef as IItemDefinition = value.definition;
+    var map as IItemStack[IItemStack] = {};
+    for meta in 0 .. max {
+        map[keyDef.makeStack(meta)] = valDef.makeStack(meta);
+    }
+    return map;
+}
+
 function mappedMetas(metaMap as int[][IItemStack]) as IItemStack[] {
     var ret as IItemStack[] = [] as IItemStack[];
     for item, metas in metaMap {

@@ -1,5 +1,5 @@
 import crafttweaker.item.IIngredient;
-import scripts.crafttweaker.staging.init as Stages;
+import scripts.crafttweaker.staging.Init as Stages;
 
 static modStages as IIngredient[][string][string] = {
 	"overworld": {

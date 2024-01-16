@@ -1,7 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.aoa3.InfusionTable;
-import mods.forestry.Carpenter;
 
 //seeds
 val seeds = [
@@ -47,14 +46,13 @@ val materials = [
 	<enderio:block_alloy:6>,
 	<minecraft:lapis_block>,
 	<mysticalagriculture:crafting:9>
-] as IItemStack[];	
+] as IItemStack[];
 
 for i, seed in seeds {
-	Carpenter.addRecipe(seed,
-	[[<zollerngalaxy:edenrock>, materials[i]*4, <zollerngalaxy:edenrock>],
-	[materials[i]*4, <mysticalagriculture:crafting:20>, materials[i]*4],
-	[<zollerngalaxy:edenrock>, materials[i]*4, <zollerngalaxy:edenrock>]],
-	60, <liquid:mana> * 10000);
+	InfusionTable.addInfusionRecipe("infusion.t4."+seed.definition.id, seed, <lightningcraft:material:11>, 
+		[<zollerngalaxy:edenrock>, materials[i]*4, <zollerngalaxy:edenrock>, materials[i]*4,
+		<mysticalagriculture:crafting:20>, materials[i]*4, <zollerngalaxy:edenrock>, materials[i]*4,
+		<zollerngalaxy:edenrock>], 100);
 }
 
 //essences basic recipes

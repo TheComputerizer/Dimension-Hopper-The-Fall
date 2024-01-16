@@ -2,8 +2,8 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
-import mods.jei.JEI;
-import scripts.crafttweaker.early.util.stacks as Stack;
+import scripts.crafttweaker.early.util.Lambdas as Caller;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 
 static arrayRemovals as IItemStack[][] = [
     //materials
@@ -142,11 +142,9 @@ static itemRemovals as IItemStack[] = [
 
     //botania
     <botania:craftinghalo>,
-    <botania:craftpattern:*>,
     <botania:flighttiara:*>,
     <botania:goddesscharm>,
     <botania:knockbackbelt>,
-    <botania:manaresource:11>,
     <botania:miningring>,
     <botania:quartz>,
     <botania:waterring>,
@@ -163,6 +161,9 @@ static itemRemovals as IItemStack[] = [
     //enderio
     <enderio:item_dark_steel_sword>,
 
+    //erebuc
+    <erebus:umber_furnace>,
+
     //extendedcrafting
     <extendedcrafting:storage:2>,
 
@@ -173,8 +174,9 @@ static itemRemovals as IItemStack[] = [
     <extrautils2:analogcrafter>,
     <extrautils2:chickenring:1>,
     <extrautils2:crafter>,
-
-    //<extrautils2:machine>,
+    <extrautils2:terraformer:*>,
+    <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator"}),
     <extrautils2:rainbowgenerator:*>,
 
     //forestry
@@ -201,6 +203,7 @@ static itemRemovals as IItemStack[] = [
 
     //industrialforegoing
     <industrialforegoing:pitiful_fuel_generator>,
+    <industrialforegoing:resourceful_furnace>,
 
     //integrateddynamics
     <integrateddynamics:coal_generator>,
@@ -209,6 +212,8 @@ static itemRemovals as IItemStack[] = [
     <lightningcraft:golf_club_gold>,
     <lightningcraft:lightning_infuser>,
     <lightningcraft:plate>,
+    <lightningcraft:lightning_furnace>,
+    <lightningcraft:lightning_crusher>,
 
     //lockyzextradimensionsmod
     <lockyzextradimensionsmod:flintblock>,
@@ -227,6 +232,7 @@ static itemRemovals as IItemStack[] = [
 
     //mist
     <mist:furnace>,
+
     //mob_grinding_utils
     <mob_grinding_utils:dark_oak_stone>,
     <mob_grinding_utils:mob_swab>,
@@ -234,6 +240,7 @@ static itemRemovals as IItemStack[] = [
     <mob_grinding_utils:saw_upgrade:*>,
 
     //moreplanets
+    <moreplanets:infected_furnace>,
     <moreplanets:terrastone_furnace>,
 
     //moreavaritia
@@ -294,6 +301,14 @@ static itemRemovals as IItemStack[] = [
     <zollerngalaxy:lapisingot>
 ] as IItemStack[];
 
+static itemHiders as IItemStack[] = [
+    //erebus
+    <erebus:umber_furnace_active>,
+
+    //tconstruct
+    <tconstruct:clay_cast>
+] as IItemStack[];
+
 //category removals
 static categories as string[] = [
     "atum.kiln",
@@ -307,15 +322,8 @@ static categories as string[] = [
 ] as string[];
 
 function run() {
-    for category in categories {
-        JEI.hideCategory(category);
-    }
-    for items in arrayRemovals {
-		for item in items {
-			JEI.removeAndHide(item);
-		}
-	}
-	for item in itemRemovals {
-		JEI.removeAndHide(item);
-	}
+    Caller.callString("jei",categories);
+    Caller.callArray("jei",arrayRemovals);
+    Caller.call("jei",itemRemovals);
+    Caller.call("jei",itemHiders,1);
 }

@@ -1,8 +1,8 @@
 #reloadable
 
 import crafttweaker.recipes.IRecipeFunction;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
 
 static shapedBuilders as Holder[] = [
     //actuallyadditions
@@ -64,6 +64,16 @@ static shapedBuilders as Holder[] = [
                 return output.withTag({BaseBlock: {id: map.mark.definition.id as string, Count: 1 as byte, Damage: map.mark.metadata as short}});
             } as IRecipeFunction), //hunting dimension portal frame
 
+    //sgcraft
+    Util.simpleShaped(<sgcraft:stargatecontroller>, "table", [
+        <portalgun:item_miniature_black_hole>,
+        <sgcraft:sgcontrollercrystal>,
+        <tp:reinforced_obsidian>,
+        <tp:reinforced_obsidian>,
+        <opencomputers:keyboard>,
+        <botania:starsword>
+    ]), //stargate controller
+
     //zollerngalaxy
     Util.simpleShaped(<zollerngalaxy:staticamber>, "star", [
         <ore:blockAmber>, 
@@ -80,6 +90,9 @@ static shapedBuilders as Holder[] = [
 static shapelessBuilders as Holder[] = [
     //avaritia
     Util.shapeless(<avaritia:extreme_crafting_table>,[<extendedcrafting:table_ultimate>,<avaritia:resource:5>]), //extreme crafting table
+
+    //botania
+    Util.shapeless(<botania:manaresource:11>,[<avaritia:compressed_crafting_table>,<botania:shimmerrock>]), //crafting placeholder
 
     //enderio
     Util.shapeless(<enderio:item_soul_vial:1>,[<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})]).setMarkIndex(0)
@@ -100,10 +113,14 @@ static shapelessBuilders as Holder[] = [
     Util.shapeless(<randomthings:timeinabottle>, [<randomthings:timeinabottle>, <environmentaltech:lonsdaleite_crystal>]).setMarkIndex(0)
         .addFunction(function (output, map, info) {
             return output.withTag({timeData: {storedTime: map.mark.tag.timeData.storedTime+1200}});
-        }) //time in a bottle
+        }), //time in a bottle
+    Util.shapeless(<sgcraft:sgcorecrystal>, [<galacticraftcore:item_basic_moon:2>, <sgcraft:naquadahingot>]), //stargate core crystal
+    Util.shapeless(<sgcraft:sgcontrollercrystal>, [<sgcraft:sgcorecrystal>, <draconicevolution:dragon_heart>]) //stargate controller crystal
+    //sgcraft
+
 ] as Holder[];
 
-function build() {
+function run() {
     for holder in shapedBuilders {
         recipes.addShaped(holder.getName("crafting."), holder.getOutput(),
             holder.getShaped(), holder.getFunction(), holder.getAction());

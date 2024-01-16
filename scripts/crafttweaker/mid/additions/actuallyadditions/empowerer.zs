@@ -68,7 +68,7 @@ static recipeHolder as int[][IItemStack[]] = {
         [1000000,1000] //reforged station
 } as int[][IItemStack[]];
 
-function build() {
+function run() {
     for items, numbers in recipeHolder {
         Empowerer.addRecipe(items[0],items[1],items[2],items[3],items[4],items[5],numbers[0],numbers[1]);
     }

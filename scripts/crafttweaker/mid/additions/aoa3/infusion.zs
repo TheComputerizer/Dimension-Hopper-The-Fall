@@ -1,6 +1,6 @@
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.grid as Shaper;
-import scripts.crafttweaker.early.util.tables as Util;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Grid as Shaper;
+import scripts.crafttweaker.early.util.Tables as Util;
 import mods.aoa3.InfusionTable;
 
 static recipeHolders as Holder[] = [
@@ -20,7 +20,7 @@ static recipeHolders as Holder[] = [
 		.addNumbers([42, 150, 300]) //digital miner
  ] as Holder[];
 
-function build() {
+function run() {
 	for holder in recipeHolders {
 		InfusionTable.addInfusionRecipe(holder.getName("infusion."), holder.getExtras()[0], 
 			holder.getOutput(), Shaper.flatten(holder.getShaped()), holder.getNumbers()[0] as long, 

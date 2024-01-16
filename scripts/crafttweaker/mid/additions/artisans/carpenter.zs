@@ -1,8 +1,8 @@
 #reloadable
 
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static recipeHolders as Holder[] = [
   //immersiveengineering
@@ -16,6 +16,6 @@ static recipeHolders as Holder[] = [
     .addTools({<ore:artisansHammer>:2}) //treated sticks
 ] as Holder[];
 
-function build() {
+function run() {
   Artisans.build("carpenter", recipeHolders);
 }

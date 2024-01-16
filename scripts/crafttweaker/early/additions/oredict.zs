@@ -2,7 +2,7 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
-import scripts.crafttweaker.early.util.globals as Global;
+import scripts.crafttweaker.early.util.Globals as Global;
 
 //generic
 oreDict.oreCobalt.addItems([<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>]);

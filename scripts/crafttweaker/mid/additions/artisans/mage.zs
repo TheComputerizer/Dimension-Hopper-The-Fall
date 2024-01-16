@@ -3,9 +3,9 @@
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.artisanworktables.builder.RecipeBuilder;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static shapedHolders as Holder[] = [
   //artisanworktables
@@ -214,6 +214,6 @@ static shapelessHolders as Holder[] = [
     .addFluids([<liquid:blood>*16000]) //powered spawner
 ] as Holder[];
 
-function build() {
+function run() {
 	Artisans.build("mage", shapedHolders, shapelessHolders);
 }

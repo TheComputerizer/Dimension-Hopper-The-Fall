@@ -12,55 +12,10 @@
 		all_players = true
 		gamestage = "deepdown"
 
-# Little Bam override
+# Artifical AoA staging
 [[modify]]
-	return_immediately = true
+	group = "all"
 	new_group = "progression_mobs"
-	[modify.biome]
-		biome = "minecraft:hell"
-		matcher = "nether"
-	[modify.entity]
-		entity = "aoa3:little_bam"
-		ignoreSpawnConditions = true
-		weight = 75
-	[modify.gamestage]
-		all_players = true
-		gamestage = "advent"
-
-# Artifical AoA staging
-[[modify]]
-	return_immediately = true
-	group = "ambient"
-	[modify.entity]
-		mod = "aoa3"
-	[modify.gamestage]
-		all_players = true
-		gamestage = "advent"
-
-# Artifical AoA staging
-[[modify]]
-	return_immediately = true
-	group = "aquatic"
-	[modify.entity]
-		mod = "aoa3"
-	[modify.gamestage]
-		all_players = true
-		gamestage = "advent"
-
-# Artifical AoA staging & AoA specific hostile spawn group
-[[modify]]
-	return_immediately = true
-	new_group = "aoa_hostile"
-	[modify.entity]
-		mod = "aoa3"
-	[modify.gamestage]
-		all_players = true
-		gamestage = "advent"
-		
-# Artifical AoA staging
-[[modify]]
-	return_immediately = true
-	group = "passive"
 	[modify.entity]
 		mod = "aoa3"
 	[modify.gamestage]

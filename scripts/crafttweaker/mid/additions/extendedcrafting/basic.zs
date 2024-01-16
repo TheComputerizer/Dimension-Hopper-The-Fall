@@ -1,8 +1,8 @@
 #reloadable
 
 import mods.extendedcrafting.TableCrafting;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
 
 static shapedHolders as Holder[] = [
 	//actuallyadditions
@@ -89,7 +89,7 @@ static shapelessHolders as Holder[] = [
 ] as Holder[];
 
 
-function build() {
+function run() {
     for holder in shapedHolders {
 		print(holder.getOutput().name);
 		TableCrafting.addShaped(1, holder.getOutput(), holder.getShaped());

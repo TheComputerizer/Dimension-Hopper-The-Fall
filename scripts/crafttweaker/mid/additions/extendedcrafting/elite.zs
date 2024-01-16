@@ -1,7 +1,7 @@
 #reloadable
 
 import mods.extendedcrafting.TableCrafting;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 
 static recipeHolders as Holder[] = [
 ] as Holder[];
@@ -527,7 +527,7 @@ TableCrafting.addShaped(3, <rftools:crafter3>, [
 	[<ore:blockDraconium>, <extraplanets:module_items:2>, <extrabees:misc>, <ore:gearDraconium>, <extrabees:misc>, <extraplanets:module_items:2>, <ore:blockDraconium>]
 ]);
 
-function build() {
+function run() {
     for holder in recipeHolders {
 		TableCrafting.addShaped(3, holder.getOutput(), holder.getShaped());
 	}

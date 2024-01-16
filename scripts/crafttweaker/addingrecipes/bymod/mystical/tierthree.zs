@@ -1,7 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.aoa3.InfusionTable;
-import mods.forestry.Carpenter;
 
 //seeds
 val seeds = [
@@ -50,11 +49,10 @@ val materials = [
 ] as IItemStack[];	
 
 for i, seed in seeds {
-	Carpenter.addRecipe(seed,
-	[[<aoa3:divine_enhancer>, materials[i]*3, <aoa3:divine_enhancer>],
-	[materials[i]*3, <mysticalagriculture:crafting:19>, materials[i]*3],
-	[<aoa3:divine_enhancer>, materials[i]*3, <aoa3:divine_enhancer>]],
-	60, <liquid:mana> * 10000);
+	InfusionTable.addInfusionRecipe("infusion.t3."+seed.definition.id, seed, <aoa3:blank_realmstone>, 
+		[<aoa3:divine_enhancer>, materials[i]*3, <aoa3:divine_enhancer>, materials[i]*3,
+		<mysticalagriculture:crafting:19>, materials[i]*3, <aoa3:divine_enhancer>, materials[i]*3,
+		<aoa3:divine_enhancer>], 50);
 }
 
 //essences basic recipes

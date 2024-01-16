@@ -1,17 +1,20 @@
-import scripts.crafttweaker.staging.init as Stages;
+import scripts.crafttweaker.staging.Init as Stages;
 
 static mobStages as string[][string] = {
 	"overworld": [
-		"enderzoo:concussioncreeper",
-		"enderzoo:direslime",
-		"enderzoo:direwolf",
-		"enderzoo:enderminy",
-		"enderzoo:entityowlegg",
-		"enderzoo:entityprimedcharge",
-		"enderzoo:fallenknight",
-		"enderzoo:fallenmount",
-		"enderzoo:withercat",
-		"enderzoo:witherwitch"
+		"enderio:owl_egg",
+		"enderiozoo:concussioncreeper",
+		"enderiozoo:direslime",
+		"enderiozoo:direwolf",
+		"enderiozoo:enderminy",
+		"enderiozoo:epicsquid",
+		"enderiozoo:fallenknight",
+		"enderiozoo:fallenmount",
+		"enderiozoo:lovechild",
+		"enderiozoo:owl",
+		"enderiozoo:voidslime",
+		"enderiozoo:withercat",
+		"enderiozoo:witherwitch"
 	],
 	"nether": [
 		"minecraft:blaze"

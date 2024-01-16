@@ -1,4 +1,4 @@
-#priority 1500
+#priority 1750
 #reloadable
 
 import crafttweaker.data.IData;
@@ -9,7 +9,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
 
-zenClass recipeHolder {
+zenClass RecipeHolder {
     val name as string;
     val output as IItemStack;
     var shapelessInputs as IIngredient[];
@@ -34,39 +34,39 @@ zenClass recipeHolder {
         this.func = null;
         this.action = null;
     }
-    function addShapeless(inputs as IIngredient[]) as recipeHolder {
+    function addShapeless(inputs as IIngredient[]) as RecipeHolder {
         this.shapelessInputs = inputs;
         return this;
     }
-    function addShaped(inputs as IIngredient[][]) as recipeHolder {
+    function addShaped(inputs as IIngredient[][]) as RecipeHolder {
         this.shapedInputs = inputs;
         return this;
     }
-    function addFunction(func as IRecipeFunction) as recipeHolder {
+    function addFunction(func as IRecipeFunction) as RecipeHolder {
         this.func = func;
         return this;
     }
-    function addAction(action as IRecipeAction) as recipeHolder {
+    function addAction(action as IRecipeAction) as RecipeHolder {
         this.action = action;
         return this;
     }
-    function addTools(toolsMap as int[IIngredient]) as recipeHolder {
+    function addTools(toolsMap as int[IIngredient]) as RecipeHolder {
         this.tools = toolsMap;
         return this;
     }
-    function addFluids(fluids as ILiquidStack[]) as recipeHolder {
+    function addFluids(fluids as ILiquidStack[]) as RecipeHolder {
         this.fluids = fluids;
         return this;
     }
-    function addExtras(extras as IItemStack[]) as recipeHolder {
+    function addExtras(extras as IItemStack[]) as RecipeHolder {
         this.extras = extras;
         return this;
     }
-    function addNumbers(numbers as int[]) as recipeHolder {
+    function addNumbers(numbers as int[]) as RecipeHolder {
         this.numbers = numbers;
         return this;
     }
-    function setMarkIndex(index as int) as recipeHolder {
+    function setMarkIndex(index as int) as RecipeHolder {
         this.markIndex = index;
         return this;
     }

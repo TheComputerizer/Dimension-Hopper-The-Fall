@@ -3,7 +3,7 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-import scripts.crafttweaker.early.util.globals as Global;
+import scripts.crafttweaker.early.util.Globals as Global;
 
 static oredictRemovals as IItemStack[][IOreDictEntry] = {
     oreDict.blockAquamarine: [<cavern:cave_block:1>, <zollerngalaxy:aquamarineblock>],

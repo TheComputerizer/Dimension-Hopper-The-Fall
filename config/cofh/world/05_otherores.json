@@ -220,7 +220,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "draconicevolution:draconium_ore"
+					"name": "draconicevolution:draconium_ore",
 					"properties": {
 						"type": "normal"
 					}
@@ -307,7 +307,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "rftools:dimensional_shard_ore"
+					"name": "rftools:dimensional_shard_ore",
 					"properties": {
 						"oretype": "end"
 					}

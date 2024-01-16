@@ -5,9 +5,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.grid as Shaper;
-import scripts.crafttweaker.early.util.stacks as Stack;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Grid as Shaper;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 
 static armorTools as int[IIngredient][int][string] = {
     "boots": {

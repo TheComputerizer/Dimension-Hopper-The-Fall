@@ -1,4 +1,4 @@
-import scripts.crafttweaker.staging.init as Stages;
+import scripts.crafttweaker.staging.Init as Stages;
 
 //progression dimensions
 static progression as int[][string] = {

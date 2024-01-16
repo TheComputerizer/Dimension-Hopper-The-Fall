@@ -1,4 +1,4 @@
-#priority 2000
+#priority 2250
 #reloadable
 
 import crafttweaker.item.IItemStack;
@@ -32,6 +32,18 @@ static enchant as IOreDictEntry[string] = {
     "shovel": oreDict.get("enchantableShovels"),
     "sword": oreDict.get("enchantableSwords")
 } as IOreDictEntry[string];
+
+function getAllEnchants() as IOreDictEntry[] {
+    return enchant.values;
+}
+
+function getArmorEnchants() as IOreDictEntry[] {
+    return [enchant["helm"], enchant["chest"], enchant["legs"], enchant["boots"]] as IOreDictEntry[];
+}
+
+function getToolEnchants() as IOreDictEntry[] {
+    return [enchant["axe"], enchant["shovel"]] as IOreDictEntry[];
+}
 
 static disenchant as IItemStack[] = [
     <aether:burrukai_pelt_helmet>,
@@ -651,7 +663,6 @@ static disenchant as IItemStack[] = [
     <aoa3:wither_bow>,
     <atum:short_bow>,
     <botania:waterbowl>,
-    <enderzoo:guardiansbow>,
     <erebus:max_speed_bow>,
     <extrautils2:rainbowgenerator>,
     <goodnightsleep:rainbow_berries>,

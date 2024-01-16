@@ -1,9 +1,9 @@
 #reloadable
 
 import mods.artisanworktables.builder.RecipeBuilder;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static recipeHolders as Holder[] = [
   //aeadditions
@@ -379,6 +379,6 @@ static recipeHolders as Holder[] = [
     .addFluids([<liquid:purpleslime>*500]), //t3 microchip purple slime
 ] as Holder[];
 
-function build() {
+function run() {
 	Artisans.build("engineer", recipeHolders);
 }

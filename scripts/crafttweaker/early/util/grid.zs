@@ -1,4 +1,4 @@
-#priority 1750
+#priority 2000
 #reloadable
 
 import crafttweaker.item.IIngredient;

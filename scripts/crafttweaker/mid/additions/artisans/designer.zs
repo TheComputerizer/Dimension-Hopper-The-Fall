@@ -1,8 +1,8 @@
 #reloadable
 
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static recipeHolders as Holder[] = [
   //galacticraftcore
@@ -22,6 +22,6 @@ static recipeHolders as Holder[] = [
     .addFluids([<liquid:stellar_alloy>*144]), //multiblock builder
 ] as Holder[];
 
-function build() {
+function run() {
 	Artisans.build("designer", recipeHolders);
 }

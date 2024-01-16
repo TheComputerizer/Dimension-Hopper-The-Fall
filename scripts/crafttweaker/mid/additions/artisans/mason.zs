@@ -1,9 +1,9 @@
 #reloadable
 
 import mods.artisanworktables.builder.RecipeBuilder;
-import scripts.crafttweaker.early.util.classes.recipeHolder as Holder;
-import scripts.crafttweaker.early.util.tables as Util;
-import scripts.crafttweaker.mid.additions.artisans.universal as Artisans;
+import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Tables as Util;
+import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
 static compressionLists as Holder[][] = [
   Util.compressed(<minecraft:stone>, <overloaded:compressed_stone>, 125, 12), //compressed stone
@@ -14,6 +14,6 @@ static compressionLists as Holder[][] = [
   Util.compressed(<minecraft:netherrack>, <overloaded:compressed_netherrack>, 75, 7), //compressed netherrack
 ] as Holder[][];
 
-function build() {
+function run() {
 	Artisans.buildNested("mason", compressionLists);
 }
