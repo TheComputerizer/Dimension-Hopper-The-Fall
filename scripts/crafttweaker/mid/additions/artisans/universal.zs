@@ -27,6 +27,19 @@ function build(type as string, shapedHolders as Holder[], shapelessHolders as Ho
     }
 }
 
+function buildDuper(type as string, shapedHolders as Holder[], shapelessHolders as Holder[] = []) {
+    for holder in shapedHolders {
+        holder.addExtras([holder.getOutput()]);
+        holder.addNumbers([100]);
+        addExtras(holder,buildShapedInner(type,holder)).create();
+    }
+    for holder in shapelessHolders {
+        holder.addExtras([holder.getOutput()]);
+        holder.addNumbers([100]);
+        addExtras(holder,buildShapelessInner(type,holder)).create();
+    }
+}
+
 function buildShapedInner(type as string, holder as Holder) as RecipeBuilder {
     return addMaps(holder,RecipeBuilder.get(type).setShaped(holder.getShaped()).addOutput(holder.getOutput()));
 }

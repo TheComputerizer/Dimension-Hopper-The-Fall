@@ -9,7 +9,7 @@ static shapedHolders as Holder[] = [
 	Util.simpleShaped(<actuallyadditions:block_heat_collector>, "spatial", [<actuallyadditions:block_crystal:5>, <randomthings:advancedredstonerepeater>, 
 		<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <ore:barsIron>]), //heat collector
 
-	Util.simpleShaped(<actuallyadditions:block_heat_collector>, "spatial", [<ore:treeLeaves>, <actuallyadditions:block_misc:9>, <ore:gemPositite>,
+	Util.simpleShaped(<actuallyadditions:block_leaf_generator>, "spatial", [<ore:treeLeaves>, <actuallyadditions:block_misc:9>, <ore:gemPositite>,
 		<ore:gemNegatite>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal:5>]), //leaf-eating generator
 
 	//appliedenergistics2
@@ -64,6 +64,15 @@ static shapedHolders as Holder[] = [
 	//mist
 	Util.simpleShaped(<mist:portal_base>, "portaltop", [<dimdoors:stable_fabric>, <minecraft:gold_ingot>, <minecraft:stone>]), //misty portal top
 	Util.simpleShaped(<mist:portal_base:1>, "portalbottom", [<dimdoors:stable_fabric>, <minecraft:gold_ingot>, <minecraft:stone>]), //misty portal bottom
+	
+	//silentgems
+	Util.simpleShaped(<silentgems:chaospylon:1>, "table", [
+		<silentgems:chaospylon>,
+		<silentgems:craftingmaterial:14>,
+		<overloaded:compressed_obsidian>,
+		<calculator:material:9>,
+		null,
+		<enderio:block_stirling_generator>]), //burner chaos pylon
 
 	//thermalexpansion
 	Util.simpleShaped(<thermalexpansion:dynamo>, "table", [<ore:gearCopper>, <thermalfoundation:material:514>, <ore:plateCopper>, <ore:plateIron>,
@@ -72,18 +81,22 @@ static shapedHolders as Holder[] = [
 	Util.simpleShaped(<thermalexpansion:device:10>, "unique", [<ore:gearGold>, <ore:gearTin>, <ore:gearCopper>, <ore:gearIron>, 
 		<thermalexpansion:frame:64>, <ore:gearInvar>, <ore:gearEmerald>, <ore:gearSteel>, <ore:gearDiamond>]), //factorizer
 
-	Util.device(0, <cookingforblockheads:sink>, <minecraft:bucket>, <enderio:block_tank:1>), //aqueous accumulator
-	Util.device(3, <thermaldynamics:servo:2>, <thermaldynamics:servo:2>, <enderio:block_tank:1>), //arboreal extractor
+	Util.device(0, <cookingforblockheads:sink>, <minecraft:bucket>, <ore:pressurizedTank>), //aqueous accumulator
+	Util.device(3, <thermaldynamics:servo:2>, <thermaldynamics:servo:2>, <ore:pressurizedTank>), //arboreal extractor
 	Util.device(12, <thermaldynamics:duct_32:2>.withTag({DenseType: 2 as byte}), <ore:electronTube>, <actuallyadditions:block_giant_chest_large>), //vaccumulator
-	Util.device(8, <enderio:item_liquid_conduit:2>, <ore:electronTube>, <enderio:block_tank:1>), //insightful condenser
+	Util.device(8, <enderio:item_liquid_conduit:2>, <ore:electronTube>, <ore:pressurizedTank>), //insightful condenser
 	Util.device(11, <thermalexpansion:device:8>, <chisel:ironpane:3>, <thermalexpansion:device:12>), //creature encaptulator
 	Util.device(5, <enderio:item_item_conduit>, <actuallyadditions:block_laser_relay_item_whitelist>, <actuallyadditions:block_giant_chest_large>), //item allocator
-	Util.device(6, <enderio:item_liquid_conduit:1>, <actuallyadditions:block_laser_relay_fluids>, <enderio:block_tank:1>), //fluid allocator
+	Util.device(6, <enderio:item_liquid_conduit:1>, <actuallyadditions:block_laser_relay_fluids>, <ore:pressurizedTank>), //fluid allocator
 	Util.device(9, <minecraft:lingering_potion>, <minecraft:lingering_potion>, <minecraft:dispenser>), //decoctive diffuser
 	Util.device(2, <thermalexpansion:augment:128>, <teslacorelib:speed_tier2>, <thermalexpansion:augment:128>), //thermal mediator
 ] as Holder[];
 
 static shapelessHolders as Holder[] = [
+	//dimhoppertweaks
+	Util.shapeless(<dimhoppertweaks:skill_credit>.withTag({amount: 1, skill: "research"}), [
+		<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 2}), <mist:sponge:13>]), //1 SP research skill credit
+
 	//mekansim
 	Util.shapeless(<mekanism:machineblock2:15>, [<mekanism:machineblock2:14>,<appliedenergistics2:controller>]) //laser tractor beam
 ] as Holder[];

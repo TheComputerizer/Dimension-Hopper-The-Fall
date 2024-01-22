@@ -415,6 +415,7 @@ static itemRemovals as IItemStack[] = [
 	<randomthings:timeinabottle>,
 
 	//silentgems
+	<silentgems:chaospylon:1>,
 	<silentgems:glowrosefertilizer>,
 	<silentgems:miscblock:*>,
 
@@ -439,6 +440,9 @@ static itemRemovals as IItemStack[] = [
 	<thermalexpansion:augment:337>,
 	<thermalexpansion:device:*>,
 	<thermalexpansion:dynamo:*>,
+
+	//tinker_io
+	<tinker_io:upg>,
 
 	//tp
 	<tp:chainmail_part>,

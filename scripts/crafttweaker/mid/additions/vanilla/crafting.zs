@@ -74,6 +74,13 @@ static shapedBuilders as Holder[] = [
         <botania:starsword>
     ]), //stargate controller
 
+    //tinker_io
+    Util.simpleShaped(<tinker_io:upg>, "sandwich", [
+        <thebetweenlands:items_misc:32>,
+        <tconstruct:ingots:5>,
+        <industrialforegoing:artificial_dye:11>
+    ]), //base upgrade
+
     //zollerngalaxy
     Util.simpleShaped(<zollerngalaxy:staticamber>, "star", [
         <ore:blockAmber>, 

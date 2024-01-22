@@ -89,7 +89,7 @@ TableCrafting.addShaped(2, <enderio:block_sag_mill>, [
 TableCrafting.addShaped(2, <enderio:block_vat>, [
 	[<extendedcrafting:material:9>, <moreplates:electrical_steel_plate>, <ore:dustBedrock>, <moreplates:electrical_steel_plate>, <extendedcrafting:material:9>], 
 	[<moreplates:electrical_steel_plate>, <ore:gearDark>, <minecraft:cauldron>, <ore:gearDark>, <moreplates:electrical_steel_plate>], 
-	[<ore:dustBedrock>, <enderio:block_tank:1>, <ore:itemMachineChassi>, <enderio:block_tank:1>, <ore:dustBedrock>], 
+	[<ore:dustBedrock>, <ore:pressurizedTank>, <ore:itemMachineChassi>, <ore:pressurizedTank>, <ore:dustBedrock>], 
 	[<moreplates:dark_steel_plate>, <ore:gearDark>, <minecraft:cauldron>, <ore:gearDark>, <moreplates:dark_steel_plate>], 
 	[<extendedcrafting:material:9>, <moreplates:dark_steel_plate>, <ore:dustBedrock>, <moreplates:dark_steel_plate>, <extendedcrafting:material:9>]
 ]);
@@ -144,7 +144,7 @@ TableCrafting.addShaped(2, <thermalexpansion:machine:3>, [
 //fluid transposer
 TableCrafting.addShaped(2, <thermalexpansion:machine:8>, [
 	[<overloaded:compressed_stone:2>, <ore:blockGlassColorless>, <minecraft:bucket>, <ore:blockGlassColorless>, <overloaded:compressed_stone:2>], 
-	[<ore:blockGlassHardened>, <enderio:block_tank:1>, <enderio:block_tank:1>, <enderio:block_tank:1>, <ore:blockGlassHardened>], 
+	[<ore:blockGlassHardened>, <ore:pressurizedTank>, <ore:pressurizedTank>, <ore:pressurizedTank>, <ore:blockGlassHardened>], 
 	[<overloaded:compressed_stone:2>, <thermalfoundation:material:513>, <thermalexpansion:frame>, <thermalfoundation:material:513>, <overloaded:compressed_stone:2>], 
 	[<ore:blockGlassHardened>, <ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>, <ore:blockGlassHardened>], 
 	[<overloaded:compressed_stone:2>, <ore:blockGlassHardened>, <ore:gearCopper>, <ore:blockGlassHardened>, <overloaded:compressed_stone:2>]
@@ -152,7 +152,7 @@ TableCrafting.addShaped(2, <thermalexpansion:machine:8>, [
 //igneous extruder
 TableCrafting.addShaped(2, <thermalexpansion:machine:15>, [
 	[<overloaded:compressed_stone:2>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>, <overloaded:compressed_stone:2>], 
-	[<ore:plateInvar>, <enderio:block_tank:1>, <ore:gearInvar>, <enderio:block_tank:1>, <ore:plateInvar>], 
+	[<ore:plateInvar>, <ore:pressurizedTank>, <ore:gearInvar>, <ore:pressurizedTank>, <ore:plateInvar>], 
 	[<overloaded:compressed_stone:2>, <thermalfoundation:material:513>, <thermalexpansion:frame>, <thermalfoundation:material:513>, <overloaded:compressed_stone:2>], 
 	[<ore:plateInvar>, <ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>, <ore:plateInvar>], 
 	[<overloaded:compressed_stone:2>, <ore:plateInvar>, <ore:gearCopper>, <ore:plateInvar>, <overloaded:compressed_stone:2>]
@@ -218,7 +218,7 @@ TableCrafting.addShaped(2, <enderio:block_stirling_generator>, [
 TableCrafting.addShaped(2, <enderio:block_combustion_generator>, [
 	[<extendedcrafting:material:9>, <moreplates:electrical_steel_plate>, <ore:dustBedrock>, <moreplates:electrical_steel_plate>, <extendedcrafting:material:9>], 
 	[<moreplates:electrical_steel_plate>, <ore:gearDark>, <ore:craftingPiston>, <ore:gearDark>, <moreplates:electrical_steel_plate>], 
-	[<ore:dustBedrock>, <enderio:block_tank:1>, <ore:itemMachineChassi>, <enderio:block_tank:1>, <ore:dustBedrock>], 
+	[<ore:dustBedrock>, <ore:pressurizedTank>, <ore:itemMachineChassi>, <ore:pressurizedTank>, <ore:dustBedrock>], 
 	[<moreplates:dark_steel_plate>, <ore:gearDark>, <ore:craftingPiston>, <ore:gearDark>, <moreplates:dark_steel_plate>], 
 	[<extendedcrafting:material:9>, <moreplates:dark_steel_plate>, <ore:dustBedrock>, <moreplates:dark_steel_plate>, <extendedcrafting:material:9>]
 ]);
@@ -553,7 +553,7 @@ TableCrafting.addShaped(2, <gendustry:transposer>, [
 //fractionating still
 TableCrafting.addShaped(2, <thermalexpansion:machine:7>, [
 	[<overloaded:compressed_stone:2>, <ore:plateElvenElementium>, <overloaded:compressed_stone:2>, <ore:plateElvenElementium>, <overloaded:compressed_stone:2>], 
-	[<ore:plateElvenElementium>, <enderio:block_tank:1>, <enderio:block_tank:1>, <enderio:block_tank:1>, <ore:plateElvenElementium>], 
+	[<ore:plateElvenElementium>, <ore:pressurizedTank>, <ore:pressurizedTank>, <ore:pressurizedTank>, <ore:plateElvenElementium>], 
 	[<overloaded:compressed_stone:2>, <thermalfoundation:material:513>, <thermalexpansion:frame>, <thermalfoundation:material:513>, <overloaded:compressed_stone:2>], 
 	[<ore:plateElvenElementium>, <ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>, <ore:plateElvenElementium>], 
 	[<overloaded:compressed_stone:2>, <ore:plateElvenElementium>, <ore:gearCopper>, <ore:plateElvenElementium>, <overloaded:compressed_stone:2>]

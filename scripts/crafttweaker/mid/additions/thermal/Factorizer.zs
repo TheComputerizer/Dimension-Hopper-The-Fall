@@ -1,58 +1,19 @@
 #reloadable
 
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Factorizer;
 
 //dry rubber
 Factorizer.addRecipeCombine(<industrialforegoing:tinydryrubber>*9, <industrialforegoing:dryrubber>);
 
-//compressed obsidian
-Factorizer.addRecipeCombine(<minecraft:obsidian>*9, <overloaded:compressed_obsidian>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_obsidian>.definition.makeStack(meta);
-	val output = <overloaded:compressed_obsidian>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed cobble
-Factorizer.addRecipeCombine(<minecraft:cobblestone>*9, <overloaded:compressed_cobblestone>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_cobblestone>.definition.makeStack(meta);
-	val output = <overloaded:compressed_cobblestone>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed stone
-Factorizer.addRecipeCombine(<minecraft:stone>*9, <overloaded:compressed_stone>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_stone>.definition.makeStack(meta);
-	val output = <overloaded:compressed_stone>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed netherrack
-Factorizer.addRecipeCombine(<minecraft:netherrack>*9, <overloaded:compressed_netherrack>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_netherrack>.definition.makeStack(meta);
-	val output = <overloaded:compressed_netherrack>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed gravel
-Factorizer.addRecipeCombine(<minecraft:gravel>*9, <overloaded:compressed_gravel>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_gravel>.definition.makeStack(meta);
-	val output = <overloaded:compressed_gravel>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed sand
-Factorizer.addRecipeCombine(<minecraft:sand>*9, <overloaded:compressed_sand>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_sand>.definition.makeStack(meta);
-	val output = <overloaded:compressed_sand>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
-}
-//compressed dirt
-Factorizer.addRecipeCombine(<minecraft:dirt>*9, <overloaded:compressed_dirt>);
-for meta in 0 .. 15 {
-	val input = <overloaded:compressed_dirt>.definition.makeStack(meta);
-	val output = <overloaded:compressed_dirt>.definition.makeStack(meta+1);
-	Factorizer.addRecipeBoth(output, input*9);
+//compression shortcuts
+for name in ["obsidian", "cobblestone", "stone", "netherrack", "gravel", "sand", "dirt"] as string[] {
+	val compressed as IItemDefinition = itemUtils.getItem("overloaded:compressed_"+name).definition;
+	Factorizer.addRecipeCombine(itemUtils.getItem("minecraft:"+name)*9, compressed.makeStack(0));
+	for meta in 0 .. 15 {
+		Factorizer.addRecipeBoth(compressed.makeStack(meta+1), compressed.makeStack(meta)*9);
+	}
 }
 
 //lapis
@@ -63,9 +24,6 @@ Factorizer.addRecipeBoth(<goodnightsleep:zitrite_block>, <goodnightsleep:zitrite
 
 //hexcite
 Factorizer.addRecipeBoth(<cavern:cave_block:6>, <cavern:cave_item:2>*9);
-
-//aquamarine
-Factorizer.addRecipeBoth(<silentgems:gemblock:8>, <silentgems:gem:8>*9);
 
 //green sapphire
 Factorizer.addRecipeBoth(<silentgems:gemblock:6>, <silentgems:gem:6>*9);
@@ -113,6 +71,7 @@ Factorizer.addRecipeSplit(<rftools:machine_frame>, <rftools:machine_base>*2);
 Factorizer.addRecipeBoth(<extraplanets:neptune:7>, <extraplanets:tier8_items:5>*9);
 
 //aquamarine
+Factorizer.addRecipeBoth(<silentgems:gemblock:8>, <silentgems:gem:8>*9);
 Factorizer.addRecipeBoth(<silentgems:gem:8> ,<silentgems:gemshard:8>*9);
 Factorizer.addRecipeBoth(<cavern:cave_block:1>, <cavern:cave_item>*9);
 Factorizer.addRecipeBoth(<zollerngalaxy:aquamarineblock>, <zollerngalaxy:aquamarine>*9);

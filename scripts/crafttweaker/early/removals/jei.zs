@@ -187,8 +187,9 @@ static itemRemovals as IItemStack[] = [
     //gaiadimension
     <gaiadimension:restructurer_lit>,
 
-    //galacticraftcore
+    //galacitraftcore
     <galacticraftcore:basic_block_core:9>,
+    <galacticraftcore:emergency_kit>,
     <galacticraftcore:engine:1>,
     <galacticraftcore:machine:12>,
     <galacticraftcore:rocket_workbench>,
@@ -290,6 +291,7 @@ static itemRemovals as IItemStack[] = [
     //twilightforest
     <twilightforest:cinder_furnace>,
     <twilightforest:steeleaf_pickaxe>,
+    <twilightforest:fiery_pickaxe>,
 
     //xreliquary
     <xreliquary:alkahestry_tome:*>,

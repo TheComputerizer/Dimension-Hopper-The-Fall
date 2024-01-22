@@ -22,14 +22,20 @@ JEI.addDescription(<botany:pigment:*>,
     "Due to how the color data processing for the flowers are handled these will not show up as recipes.",
     "Some colors may only be obtained by cross-breeding hybrid flowers"]);
 
+//dimhoppertweaks----------------------------------------------------------------------------------
+JEI.addDescription(<dimhoppertweaks:recipe_function>, 
+    "This is an indicator that the output item may not be displayed correctly due to some calculations that need to happen during crafting.",
+    "Generally the input item type used for an oredict will be the actual item output");
+
 //enderio------------------------------------------------------------------------------------------
 JEI.addDescription(<enderio:item_soul_vial:1>, 
-"Most entities can be captured, but only the ones directly used in non generic recipes are shown");
+    "Most entities can be captured, but only the ones directly used in non generic recipes are shown");
 
 //forestry-----------------------------------------------------------------------------------------
 replaceDescriptions([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
     "Extra inventory that automatically picks up specialized items.",
-    "Currently, the items that can be picked upare as follows:", CTPassthrough.getAdventuringBackpackItems()]);
+    "Currently, the items that can be picked up are as follows:",
+    CTPassthrough.getAdventuringBackpackItems()]);
 
 //huntingdim---------------------------------------------------------------------------------------
 JEI.addDescription(<huntingdim:biome_changer>, "Example recipe.", "Most biomes are supported");
@@ -37,6 +43,8 @@ JEI.addDescription(<huntingdim:frame>, "Example recipe.", "Most wood types will 
 
 //minecraft----------------------------------------------------------------------------------------
 handleEnchantedBooks();
+JEI.addDescription(<minecraft:piston>, "If you are in the Twilight Forest, pistons can not yet be crafted.",
+    "Pistons can be found near the top of Ur-Ghast towers and rarely in the basements of druid houses.");
 //-------------------------------------------------------------------------------------------------
 
 function handleMetas(item as IItemDefinition, min as int, max as int, descriptions as string[]) {

@@ -8,7 +8,6 @@ static queuedRemovals as IItemStack[][int] = {
 	0: [
 		<avaritia:neutron_collector>, //neutronium collector
 		<avaritia:neutronium_compressor>, //neutronium compressor
-		//<avaritia:resource:*>, //misc avaritia resources?
 		<avaritia:resource:5>, //infinity catalyst
 		<avaritia:resource:6>, //infinity ingot
 		<solarflux:solar_panel_neutronium>, //neutronium solar panel

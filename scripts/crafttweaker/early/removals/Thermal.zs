@@ -13,7 +13,8 @@ static queuedRemovals as IItemStack[][int] = {
 		<avaritia:block_resource:*>*9, // avaritia blocks
         <avaritia:resource:*>*9, //avaritia resources
         <zollerngalaxy:zincingot>*9, // zinc ingots
-        <minecraft:obsidian>*9 //obsidian
+        <minecraft:obsidian>*9, //obsidian
+		<minecraft:sand>*4 //sandstone
 	] as IItemStack[],
     2: [ //factorizer split
 		<avaritia:block_resource:*>, // avaritia blocks

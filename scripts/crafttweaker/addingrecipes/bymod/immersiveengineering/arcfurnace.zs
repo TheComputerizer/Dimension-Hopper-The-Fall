@@ -16,6 +16,7 @@ ArcFurnace.addRecipe(<aquaculture:loot:1>*2, <aquaculture:neptunium_helmet>, <mi
 ArcFurnace.addRecipe(<aquaculture:loot:1>*4, <aquaculture:neptunium_chestplate>, <minecraft:string>, 800, 2048);
 ArcFurnace.addRecipe(<aquaculture:loot:1>*3, <aquaculture:neptunium_leggings>, <minecraft:string>, 600, 2048);
 ArcFurnace.addRecipe(<aquaculture:loot:1>*2, <aquaculture:neptunium_boots>, <minecraft:string>, 400, 2048);
+ArcFurnace.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1}), <immersiveengineering:graphite_electrode>, <minecraft:obsidian>, 1200, 2048, [<tconstruct:materials:14>*5]);
 
 // Zinc
 ArcFurnace.removeRecipe(<zollerngalaxy:zincingot>);

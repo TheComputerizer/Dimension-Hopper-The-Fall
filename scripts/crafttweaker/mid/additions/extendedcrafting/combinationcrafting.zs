@@ -44,6 +44,9 @@ CombinationCrafting.addRecipe(<mysticalagradditions:special:4>, 1000000000, 5000
 //neutronium crux
 CombinationCrafting.addRecipe(<mysticalagradditions:special:5>, 1000000000, 50000000, <extrautils2:opinium:8>, [<extendedcrafting:storage:4>, <projectex:final_star_shard>, <projectex:final_star_shard>, <projectex:final_star_shard>, <projectex:final_star_shard>, <tp:growth_upgrade_two>, <tp:growth_upgrade_two>, <tp:growth_upgrade_two>, <tp:growth_upgrade_two>, <xreliquary:fertile_lilypad>]);
 
+//40 SP research skill credit
+CombinationCrafting.addRecipe(<dimhoppertweaks:skill_credit>.withTag({amount: 50, skill: "research"}), 1000000000, 50000000, <dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 24}), [<contenttweaker:bloq>]);
+
 function run() {
     
 }

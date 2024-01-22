@@ -321,7 +321,7 @@ assemblerRP.start()
 	.perTick(true)
 	.inputFE(10000)
 	.perTick(false)
-    .inputItems(<galacticraftcore:refinery>,<extrabees:honey_comb:3>,<thermalfoundation:material:1024>,<thermalfoundation:material:833>,<mist:filter_coal_block>)
+    .inputItems(<galacticraftcore:refinery>,<thermalfoundation:material:1024>,<thermalfoundation:material:833>,<mist:filter_coal_block>)
     .inputFluids(<liquid:superhot_magma>*8000)
     .outputItems(<contenttweaker:oil_core_one>)
     .buildAndRegister();
@@ -652,6 +652,16 @@ assemblerRP.start()
 	.perTick(false)
     .inputItems(<industrialforegoing:plastic>*2,<industrialforegoing:range_addon:3>,<actuallyadditions:item_drill_upgrade_fortune_ii>,<moreplates:empowered_emeradic_gear>)
     .outputItems(<industrialforegoing:fortune_addon>)
+    .buildAndRegister();
+
+//5 research skill credit 
+assemblerRP.start()
+	.duration(1200)
+	.perTick(true)
+	.inputFE(10000)
+	.perTick(false)
+    .inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 8}),<contenttweaker:mek_wall>)
+    .outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 5, skill: "research"}))
     .buildAndRegister();
 
 var assembler = definition as ControllerDefinition;

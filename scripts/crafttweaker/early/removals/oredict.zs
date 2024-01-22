@@ -9,7 +9,8 @@ static oredictRemovals as IItemStack[][IOreDictEntry] = {
     oreDict.blockAquamarine: [<cavern:cave_block:1>, <zollerngalaxy:aquamarineblock>],
     oreDict.gemAquamarine: [<cavern:cave_item>, <zollerngalaxy:aquamarine>],
     oreDict.oreCobalt: [<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>],
-    oreDict.oreAquamarine: [<zollerngalaxy:caligroaquaore>, <zollerngalaxy:harranaquamarineore>, <cavern:cave_block>]
+    oreDict.oreAquamarine: [<zollerngalaxy:caligroaquaore>, <zollerngalaxy:harranaquamarineore>, <cavern:cave_block>],
+    oreDict.blockBone: [<tp:bone_block>]
 };
 
 function run() {

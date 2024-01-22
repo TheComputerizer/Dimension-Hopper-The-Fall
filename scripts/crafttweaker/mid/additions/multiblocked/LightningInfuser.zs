@@ -314,6 +314,13 @@ lightningRPF.start()
 	.outputItems(<contenttweaker:neptunic_key>)
 	.buildAndRegister();
 
+lightningRPF.start()
+	.duration(600)
+	.inputLE(10000)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
+
 lightningRPS.start()
 	.duration(300)
 	.inputLE(20)
@@ -599,6 +606,13 @@ lightningRPS.start()
 	.inputLE(10000)
 	.inputItems(<contenttweaker:swamp_key>,<extraplanets:neptune:10>*4)
 	.outputItems(<contenttweaker:neptunic_key>)
+	.buildAndRegister();
+	
+lightningRPS.start()
+	.duration(300)
+	.inputLE(20000)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
 	.buildAndRegister();
 
 lightningRPT.start()
@@ -894,8 +908,15 @@ lightningRPT.start()
 	.inputItems(<lightningcraft:ingot:1>,<lightningcraft:material:5>,<minecraft:emerald>)
 	.outputItems(<lightningcraft:material:11>)
 	.buildAndRegister();
-
+	
 lightningRPT.start()
+	.duration(200)
+	.inputLE(30000)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
+
+lightningRPO.start()
 	.duration(50)
 	.inputLE(50)
 	.inputItems(<ore:sand>,<lightningcraft:material:12>)
@@ -1195,6 +1216,13 @@ lightningRPO.start()
 	.inputItems(<lightningcraft:lightning_cell:2>,<lightningcraft:lightning_cell:2>,<lightningcraft:lightning_cell:2>,<lightningcraft:lightning_cell:2>,<lightningcraft:lightning_cell:2>,<avaritia:block_resource:1>)
 	.outputItems(<lightningcraft:lightning_cell:3>)
 	.buildAndRegister();
+	
+lightningRPO.start()
+	.duration(50)
+	.inputLE(50000)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
 
 lightningRPI.start()
 	.duration(5)
@@ -1488,6 +1516,13 @@ lightningRPI.start()
 	.inputLE(12500)
 	.inputItems(<lightningcraft:ingot:1>,<lightningcraft:material:5>,<minecraft:emerald>)
 	.outputItems(<lightningcraft:material:11>)
+	.buildAndRegister();
+	
+lightningRPI.start()
+	.duration(5)
+	.inputLE(250000)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
 	.buildAndRegister();
 
 var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_1");

@@ -8,7 +8,7 @@ static helmets as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*helmet
 static chestplates as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*chestplate.*") as IItemStack[];
 static leggings as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*leggings.*") as IItemStack[];
 static boots as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*boots.*") as IItemStack[];
-static bows as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*bow.*") as IItemStack[];
+static bows as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*bow(l{0}).*") as IItemStack[];
 static swords as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*sword.*") as IItemStack[];
 static axes as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*axe.*") as IItemStack[];
 static shovels as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*shovel.*") as IItemStack[];
@@ -924,7 +924,8 @@ static disenchant as IItemStack[] = [
     <tp:wooden_shears>,
     <avaritia:infinity_helmet>,
     <avaritia:infinity_chestplate>,
-    <avaritia:infinity_boots>
+    <avaritia:infinity_boots>,
+    <twilightforest:fiery_pickaxe>
 ] as IItemStack[];
 
 static tinkermaterials as string[] = [

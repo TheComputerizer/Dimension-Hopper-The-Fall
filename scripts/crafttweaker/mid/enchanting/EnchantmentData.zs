@@ -8,70 +8,75 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.util.Math;
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.botania.RuneAltar;
+import mods.dimhoppertweaks.CTPassthrough;
 
 zenClass Data {
-    val enchantmentDef as IEnchantmentDefinition;
+    val enchantmentName as string;
     val levelFactor as int;
-    val ingredientMap as int[IIngredient[]];
-    zenConstructor(enchDef as IEnchantmentDefinition, factor as int, ingredientMap as int[IIngredient[]]) {
-        this.enchantmentDef = enchDef;
+    val ingredientMap as int[IIngredient[][int]];
+    zenConstructor(enchName as string, factor as int, ingredientMap as int[IIngredient[][int]]) {
+        this.enchantmentName = enchName;
         this.levelFactor = factor;
         this.ingredientMap = ingredientMap;
 	}
-    function getIngredientMap() as int[IIngredient[]] {
+    function getIngredientMap() as int[IIngredient[][int]] {
         return this.ingredientMap;
     }
-    function getEnchantment() as IEnchantmentDefinition {
-        return this.enchantmentDef;
+    function getEnchantment() as string {
+        return this.enchantmentName;
     }
     function getLevelFactor() as int {
         return this.levelFactor;
     }
 }
 
-function create(enchDef as IEnchantmentDefinition, factor as int, ingredientMap as int[IIngredient[]]) as Data {
-    return Data(enchDef,factor,ingredientMap);
+function create(enchName as string, factor as int, ingredientMap as int[IIngredient[][int]]) as Data {
+    return Data(enchName,factor,ingredientMap);
 }
 
 function makeRecipes(data as Data, oredict as IOreDictEntry) {
-    val ench as IEnchantmentDefinition = data.getEnchantment();
-    print("Attempting to register oredict recipes '"+oredict.name+"'for enchantment "+ench.registryName);
-    var level as int = 1;
-    for ingredients, minTier in data.getIngredientMap() {
-        if(minTier<=2) {
-            val levelFactor as int = data.getLevelFactor();
-            makeT2Recipe(ench,oredict,ingredients,level,levelFactor);
-            if(minTier<=1) {
-                makeT1Recipes(ench,oredict,ingredients,level,levelFactor*level*1000);
+    val ench as string = data.getEnchantment();
+    print("Attempting to register oredict recipes '"+oredict.name+"'for enchantment "+ench);
+    for ingredientMap, minTier in data.getIngredientMap() {
+        for level, ingredients in ingredientMap {
+            if(minTier<=2) {
+                val levelFactor as int = data.getLevelFactor();
+                makeT2Recipe(ench,oredict,ingredients,level,levelFactor);
+                if(minTier<=1) {
+                    makeT1Recipes(ench,oredict,ingredients,level,levelFactor*level*1000);
+                }
             }
         }
-        level = level+1;
     }
 }
 
-function makeT1Recipes(def as IEnchantmentDefinition, oredict as IOreDictEntry, ingredients as IIngredient[], level as int, mana as int) {
-    for item in oredict.items {
-        val enchantedItem = item.withTag({ench: [{lvl: level as short, id: def.id}]});
-        RuneAltar.addRecipe(enchantedItem, ingredients+item, mana);
-    }
+function makeT1Recipes(def as string, dict as IOreDictEntry, ingredients as IIngredient[], level as int, mana as int) {
+    val enchantedItem = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 1,delayedEnch: [{level: level, name: def}]}});
+    RuneAltar.addRecipe(enchantedItem, ingredients+dict, mana);
 }
 
-function makeT2Recipe(def as IEnchantmentDefinition, oredict as IOreDictEntry, ingredients as IIngredient[], level as int, levelFactor as int) {
-    var output as IItemStack = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: level as short, id: def.id}]});
-    for i, item in oredict.items {
-        output = item.withTag({ench: [{lvl: level as short, id: def.id}]});
-        break;
-    }
+function makeT2Recipe(def as string, dict as IOreDictEntry, ingredients as IIngredient[], level as int, levelFactor as int) {
+    val output = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 1,delayedEnch: [{level: level, name: def}]}});
     RecipeBuilder.get("mage")
-        .setShapeless(ingredients+oredict.marked("enchant"))
+        .setShapeless(ingredients+dict.marked("enchant"))
         .setRecipeFunction(function (out, ins, cInfo) {
-            if(!ins.enchant.hasTag) return ins.enchant.withTag({ench: [{lvl: level as short, id: def.id}]});
+            val actualID as int = CTPassthrough.getActualEnchantmentID(def);
+            if(!ins.enchant.hasTag) {
+                return ins.enchant.withTag({ench: [{lvl: level as short, id: actualID}]});
+            }
 	    	var tag = ins.enchant.tag;
-	    	if(!(tag has "ench")) return ins.enchant.withTag({ench: [{lvl: level as short, id: def.id}]});
+	    	if(!(tag has "ench")) {
+                return ins.enchant.withTag({ench: [{lvl: level as short, id: actualID}]});
+            }
+            if(tag.ench.asList().length>=5) {
+                return null;
+            }
 	    	for enchantmentTag in tag.ench.asList()  {
-	    		if(enchantmentTag.id == def.id || tag.ench.asList().length>=5) return null;
+	    		if(enchantmentTag.id == actualID) {
+                    return null;
+                }
 	    	}
-	    	return ins.enchant.withTag(ins.enchant.tag + {ench: [{lvl: level as short, id: def.id}]} as IData);
+	    	return ins.enchant.withTag(ins.enchant.tag + {ench: [{lvl: level as short, id: actualID}]} as IData);
 	    })
         .setFluid(<liquid:xpjuice>*Math.min(16000,levelFactor*100))
         .addTool(<ore:artisansAthame>, levelFactor)

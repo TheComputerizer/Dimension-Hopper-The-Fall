@@ -3,7 +3,7 @@
 recipes.addShapeless("extcraftingbetterenderingot", <extendedcrafting:material:36>, [<minecraft:ender_eye>, <naturesaura:infused_iron>]);
 
 recipes.addShaped("luminessence", <extendedcrafting:material:7>, [
-[<minecraft:glowstone_dust>, <thermalfoundation:material:771>], 
+[<minecraft:glowstone_dust>, <ore:dustSulfur>], 
 [<enderio:item_material:20>, <minecraft:gunpowder>]
 ]);
 

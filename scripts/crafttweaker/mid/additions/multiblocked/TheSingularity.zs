@@ -175,6 +175,7 @@ for i, stuff in singularities {
 	.buildAndRegister();
 }
 
+//endest pearl
 singularityRP.start()
 	.duration(100)
 	.perTick(true)
@@ -185,6 +186,7 @@ singularityRP.start()
 	.outputItems(<avaritia:endest_pearl>)
 	.buildAndRegister();
 
+//cosmic meatballs
 singularityRP.start()
 	.duration(100)
 	.perTick(true)
@@ -195,6 +197,7 @@ singularityRP.start()
 	.outputItems(<avaritia:cosmic_meatballs>)
 	.buildAndRegister();
 
+//infinity catalyst
 singularityRP.start()
 	.duration(1000)
 	.perTick(true)
@@ -205,9 +208,10 @@ singularityRP.start()
 	.outputItems(<avaritia:resource:5>)
 	.buildAndRegister();
 
+//final singularity
 singularityRP.start()
 	.duration(2000)
-	.perTick(false)
+	.perTick(true)
 	.inputFE(2000000000)
 	.perTick(false)
 	.inputItems(<contenttweaker:dimensional_singularity>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>)
@@ -215,6 +219,7 @@ singularityRP.start()
 	.outputItems(<contenttweaker:final_singularity>)
 	.buildAndRegister();
 
+//dimensional singularity
 singularityRP.start()
 	.duration(1500)
 	.perTick(true)
@@ -223,6 +228,17 @@ singularityRP.start()
 	.inputItems(<avaritia:block_resource:1>*10,<overloaded:compressed_cobblestone:15>*10,<overloaded:compressed_sand:15>*10,<overloaded:compressed_stone:15>*10,<overloaded:compressed_obsidian:15>*10,<overloaded:compressed_netherrack:15>*10,<overloaded:compressed_dirt:15>*10,<overloaded:compressed_gravel:15>*10)
 	.inputFluids(<liquid:genetic_chaos_fluid>*100000)
 	.outputItems(<contenttweaker:dimensional_singularity>)
+	.buildAndRegister();
+
+//100 SP research skill credit
+singularityRP.start()
+	.duration(2000)
+	.perTick(true)
+	.inputFE(2000000000)
+	.perTick(false)
+	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 30}), <avaritia:resource:5>)
+	.inputFluids(<liquid:genetic_chaos_fluid>*50000)
+	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 100, skill: "research"}))
 	.buildAndRegister();
 
 var definition as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:the_singularity");

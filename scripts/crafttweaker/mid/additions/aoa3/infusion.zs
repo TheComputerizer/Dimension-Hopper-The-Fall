@@ -3,7 +3,7 @@ import scripts.crafttweaker.early.util.Grid as Shaper;
 import scripts.crafttweaker.early.util.Tables as Util;
 import mods.aoa3.InfusionTable;
 
-static recipeHolders as Holder[] = [
+static shapedHolders as Holder[] = [
 	//contenttweaker
 	Util.simpleShaped(<contenttweaker:neptune_dimensional_stone>, "block", [<extraplanets:neptune:2>])
 		.addExtras([<contenttweaker:neptunic_key>])
@@ -20,10 +20,21 @@ static recipeHolders as Holder[] = [
 		.addNumbers([42, 150, 300]) //digital miner
  ] as Holder[];
 
+ static shapelessHolders as Holder[] = [
+	Util.shapeless(<dimhoppertweaks:skill_credit>.withTag({amount: 25, skill: "research"}), [<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 24})])
+		.addExtras([<contenttweaker:heart_of_the_machine_god>])
+		.addNumbers([100, 100, 500]) //25 SP research skill credit
+ ] as Holder[];
+
 function run() {
-	for holder in recipeHolders {
-		InfusionTable.addInfusionRecipe(holder.getName("infusion."), holder.getExtras()[0], 
-			holder.getOutput(), Shaper.flatten(holder.getShaped()), holder.getNumbers()[0] as long, 
+	for holder in shapedHolders {
+		InfusionTable.addInfusionRecipe(holder.getName("infusion."), holder.getOutput(), 
+			holder.getExtras()[0], Shaper.flatten(holder.getShaped()), holder.getNumbers()[0] as long, 
+			holder.getNumbers()[1], holder.getNumbers()[2]);
+	}
+	for holder in shapelessHolders {
+		InfusionTable.addInfusionRecipe(holder.getName("infusion."), holder.getOutput(), 
+		holder.getExtras()[0], holder.getShapeless(), holder.getNumbers()[0] as long, 
 			holder.getNumbers()[1], holder.getNumbers()[2]);
 	}
 }

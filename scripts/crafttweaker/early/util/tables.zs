@@ -104,7 +104,7 @@ function singleton(input as IIngredient, output as IItemStack, tool as IIngredie
 }
 
 function schematicDuper(schematic as IItemStack, fluid as ILiquidStack, tier as int) as Holder {
-    return simpleShaped(schematic*2, "line", [schematic as IIngredient, <multiblocked:multiblock_builder>])
+    return simpleShaped(schematic, "line", [schematic as IIngredient, <multiblocked:multiblock_builder>])
         .addTools({<ore:artisansPencil>:111*tier,<ore:artisansCutters>:111*tier,<ore:artisansFramingHammer>:111*tier})
         .addFluids([fluid*720]);
 }

@@ -6,6 +6,7 @@ import scripts.crafttweaker.early.util.Globals as Global;
 
 //generic
 oreDict.oreCobalt.addItems([<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>]);
+oreDict.pressurizedTank.addItems([<enderio:block_tank:1>]);
 
 //enchantables
 Global.enchant["axe"].addItems(Global.axes);
