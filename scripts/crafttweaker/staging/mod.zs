@@ -11,7 +11,9 @@ static modStages as IIngredient[][string][string] = {
 	},
 	"labyrinth": {
 		"atum": [<minecraft:dirt>],
-		"blue_skies": [<minecraft:dirt>],
+		"blue_skies": [
+			<blue_skies:horizonite_pickaxe>
+		],
 		"glacidus": [<minecraft:dirt>],
 		"goodnightsleep": [<minecraft:dirt>],
 		"theaurorian": [<minecraft:dirt>]

@@ -369,6 +369,10 @@ static itemRemovals as IItemStack[] = [
 	<minecraft:end_portal_frame>,
 	<minecraft:piston>,
 
+	//mist
+	<mist:filter_coal>,
+	<mist:filter_coal_block>,
+
 	//moreplanets
 	<moreplanets:tinted_glass>,
 
@@ -440,6 +444,7 @@ static itemRemovals as IItemStack[] = [
 	<thermalexpansion:augment:337>,
 	<thermalexpansion:device:*>,
 	<thermalexpansion:dynamo:*>,
+	<thermalexpansion:machine:*>,
 
 	//tinker_io
 	<tinker_io:upg>,
@@ -449,6 +454,9 @@ static itemRemovals as IItemStack[] = [
 	<tp:flint_block>,
 	<tp:pouch>,
 	<tp:reinforced_obsidian>,
+
+	//xlfoodmod
+	<xlfoodmod:cheese>,
 
 	//xreliquary
 	<xreliquary:midas_touchstone>,

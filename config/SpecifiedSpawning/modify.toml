@@ -14,8 +14,9 @@
 
 # Artifical AoA staging
 [[modify]]
+	return_immediately = true
 	group = "all"
-	new_group = "progression_mobs"
+	new_group = "aoa_hostile"
 	[modify.entity]
 		mod = "aoa3"
 	[modify.gamestage]

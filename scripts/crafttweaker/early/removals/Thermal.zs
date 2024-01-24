@@ -3,22 +3,38 @@
 
 import crafttweaker.item.IItemStack;
 import scripts.crafttweaker.early.util.Lambdas as Caller;
+import scripts.crafttweaker.early.util.Stacks as Stack;
+
+static queuedArrayRemovals as IItemStack[][][int] = {
+	0: [ //centrifuge
+		Stack.metaRanges(<extratrees:food>.definition, [
+			[0, 1], [3, 6], [8], [10, 13], [16, 19], [21, 22], [34]
+		]) //extratrees fruits
+	] as IItemStack[][],
+	1: [ //factorizer combine
+		Stack.amountMap({
+			9: Stack.metaRangesMap({
+				<avaritia:resource>.definition: [[1,3,4,6]],
+			})
+		})
+	] as IItemStack[][],
+	2: [ //factorizer split
+		Stack.metaRange(<avaritia:block_resource>.definition, [0,2]) //avaritia blocks
+	] as IItemStack[][]
+};
 
 static queuedRemovals as IItemStack[][int] = {
 	0: [ //centrifuge
-		<minecraft:apple>, //apple
-        <extratrees:food:*> //extratrees fruits
+		<minecraft:apple>
 	] as IItemStack[],
     1: [ //factorizer combine
-		<avaritia:block_resource:*>*9, // avaritia blocks
-        <avaritia:resource:*>*9, //avaritia resources
         <zollerngalaxy:zincingot>*9, // zinc ingots
         <minecraft:obsidian>*9, //obsidian
-		<minecraft:sand>*4 //sandstone
+		<minecraft:sand>*4, //sandstone
+		<twilightforest:steeleaf_ingot>*9 //sandstone
 	] as IItemStack[],
     2: [ //factorizer split
-		<avaritia:block_resource:*>, // avaritia blocks
-        <avaritia:resource:*>, //avaritia resources
+        <avaritia:resource:4>, //avaritia resources
         <zollerngalaxy:zincblock> //zinc block
 	] as IItemStack[],
     2: [ //compactor gear
@@ -27,5 +43,6 @@ static queuedRemovals as IItemStack[][int] = {
 };
 
 function run() {
+	Caller.callMapArray("thermal",queuedArrayRemovals);
 	Caller.callMap("thermal",queuedRemovals);
 }

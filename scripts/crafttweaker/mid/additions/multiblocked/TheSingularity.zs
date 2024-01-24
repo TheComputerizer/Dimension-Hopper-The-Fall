@@ -214,7 +214,7 @@ singularityRP.start()
 	.perTick(true)
 	.inputFE(2000000000)
 	.perTick(false)
-	.inputItems(<contenttweaker:dimensional_singularity>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>,<projectex:final_star>)
+	.inputItems(<contenttweaker:dimensional_singularity>,<projectex:final_star>,<bedrockcraft:origin_pearl>,<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 31}),<bedrockcraft:bedrock_rose>)
 	.inputFluids(<liquid:genetic_chaos_fluid>*250000)
 	.outputItems(<contenttweaker:final_singularity>)
 	.buildAndRegister();

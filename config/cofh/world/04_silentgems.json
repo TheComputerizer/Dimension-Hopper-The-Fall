@@ -110,6 +110,54 @@
 					-7984
 				]
 			}
+		},
+		"zircon": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "silentgems:gemorelight",
+					"properties": {
+						"gem": "heliodor"
+					}
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 16,
+			"min-height": 2,
+			"max-height": 40,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		},
+		"agate": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "silentgems:gemore",
+					"properties": {
+						"gem": "agate"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 24,
+			"min-height": 2,
+			"max-height": 60,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-58
+				]
+			}
 		}
 	}
 }

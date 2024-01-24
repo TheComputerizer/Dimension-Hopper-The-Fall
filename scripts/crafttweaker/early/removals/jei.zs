@@ -49,7 +49,6 @@ static arrayRemovals as IItemStack[][] = [
 
 	//extrautils2
     Stack.append("extrautils2:compressed", ["cobblestone", "dirt", "gravel", "netherrack", "sand"], 32767),
-	Stack.append("extrautils2:quarry", ["", "proxy"]),
 
     //forestry
     Stack.metas(<forestry:resource_storage>, [1,3]),
@@ -140,6 +139,9 @@ static itemRemovals as IItemStack[] = [
     <avaritia:neutron_collector>,
     <avaritia:neutronium_compressor>,
 
+    //blue_skies
+    <blue_skies:horizonite_pickaxe>,
+
     //botania
     <botania:craftinghalo>,
     <botania:flighttiara:*>,
@@ -177,7 +179,6 @@ static itemRemovals as IItemStack[] = [
     <extrautils2:terraformer:*>,
     <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}),
     <extrautils2:machine>.withTag({Type: "extrautils2:generator"}),
-    <extrautils2:rainbowgenerator:*>,
 
     //forestry
     <forestry:centrifuge>,
@@ -289,6 +290,7 @@ static itemRemovals as IItemStack[] = [
     <tp:wub_ingot>,
 
     //twilightforest
+    <twilightforest:block_storage:2>,
     <twilightforest:cinder_furnace>,
     <twilightforest:steeleaf_pickaxe>,
     <twilightforest:fiery_pickaxe>,

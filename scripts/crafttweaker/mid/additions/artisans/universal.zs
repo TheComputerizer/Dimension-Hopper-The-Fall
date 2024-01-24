@@ -2,6 +2,8 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.IRecipeAction;
+import crafttweaker.recipes.IRecipeFunction;
 import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 
@@ -50,6 +52,14 @@ function buildShapelessInner(type as string, holder as Holder) as RecipeBuilder 
 
 function addMaps(holder as Holder, builder as RecipeBuilder) as RecipeBuilder {
     var builderVar as RecipeBuilder = builder;
+    val func as IRecipeFunction = holder.getFunction();
+    if(!isNull(func)) {
+        builderVar = builderVar.setRecipeFunction(func);
+    }
+    val action as IRecipeAction = holder.getAction();
+    if(!isNull(action)) {
+        builderVar = builderVar.setRecipeAction(action);
+    }
     for tool, durability in holder.getTools() {
         builderVar = builderVar.addTool(tool,durability);
     }

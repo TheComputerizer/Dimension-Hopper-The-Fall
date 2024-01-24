@@ -11,6 +11,9 @@ import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Conditions;
 import loottweaker.vanilla.loot.Functions;
 
+//botania
+LootTweaker.getTable("botania:fel_blaze").getPool("main").addItemEntry(<xlfoodmod:cheese>, 1);
+
 //cavern
 <entity:cavern:crazy_creeper>.addPlayerOnlyDrop(<contenttweaker:crazy_creeper_essence> %100, 1, 1);
 <entity:cavern:crazy_zombie>.addPlayerOnlyDrop(<contenttweaker:crazy_zombie_essence> %100, 1, 1);

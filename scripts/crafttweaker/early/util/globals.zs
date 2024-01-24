@@ -664,7 +664,6 @@ static disenchant as IItemStack[] = [
     <atum:short_bow>,
     <botania:waterbowl>,
     <erebus:max_speed_bow>,
-    <extrautils2:rainbowgenerator>,
     <goodnightsleep:rainbow_berries>,
     <goodnightsleep:rainbow_boots>,
     <goodnightsleep:rainbow_chestplate>,

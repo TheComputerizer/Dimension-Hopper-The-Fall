@@ -1,5 +1,6 @@
 #reloadable
 
+import crafttweaker.data.IData;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.artisanworktables.builder.RecipeBuilder;
@@ -195,15 +196,14 @@ static shapedHolders as Holder[] = [
 
 static shapelessHolders as Holder[] = [
   //enderio
-  Util.shapeless(<enderio:block_powered_spawner>, [<enderio:item_broken_spawner>]).setMarkIndex(0)
+  Util.shapeless(<enderio:block_powered_spawner>, [<enderio:block_powered_spawner>, <enderio:item_broken_spawner>]).setMarkIndex(1)
     .addFunction(function(output, map, info) {
       val xp = info.player.xp as int;
       if(xp>=16) {
-        return output.withTag({entityId: map.marked.tag.entityId});
+        val outputTag as IData = {entityId: map.mark.tag.entityId};
+        return output.withTag(outputTag);
       }
-      else {
-        return map.marked;
-      }
+      return output;
     } as IRecipeFunction)
     .addAction(function(out, map, player) {
       if(player.xp>=16) {

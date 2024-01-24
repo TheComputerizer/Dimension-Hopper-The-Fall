@@ -5,10 +5,70 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 
+function amountMap(amountMap as IItemStack[][int]) as IItemStack[] {
+    var ret as IItemStack[] = [] as IItemStack[];
+    for amount, items in amountMap {
+        for item in items {
+            ret+=(item*amount);
+        }
+    }
+    return ret;
+}
+
 function metas(item as IItemStack, vals as int[]) as IItemStack[] {
     var ret as IItemStack[] = [] as IItemStack[];
     for meta in vals {
         ret+=item.definition.makeStack(meta);
+    }
+    return ret;
+}
+
+function metaRange(def as IItemDefinition, range as int[]) as IItemStack[] {
+    var ret as IItemStack[] = [] as IItemStack[];
+    if(range.length==1) {
+        ret+=def.makeStack(range[0]);
+    }
+    else if(range.length==2) {
+        for meta in range[0] .. range[1]+1 {
+            ret+=def.makeStack(meta);
+        }
+    }
+    else if(range.length>2) {
+        for meta in range {
+            ret+=def.makeStack(meta);
+        }
+    }
+    return ret;
+}
+
+function metaRanges(def as IItemDefinition, ranges as int[][]) as IItemStack[] {
+    var ret as IItemStack[] = [] as IItemStack[];
+    for range in ranges {
+        for item in metaRange(def,range) {
+            ret+=item;
+        }
+    }
+    return ret;
+}
+
+function metaRangeMap(rangeMap as int[][IItemDefinition]) as IItemStack[] {
+    var ret as IItemStack[] = [] as IItemStack[];
+    for def, range in rangeMap {
+        for item in metaRange(def,range) {
+            ret+=item;
+        }
+    }
+    return ret;
+}
+
+function metaRangesMap(rangeMap as int[][][IItemDefinition]) as IItemStack[] {
+    var ret as IItemStack[] = [] as IItemStack[];
+    for def, ranges in rangeMap {
+        for range in ranges {
+            for item in metaRange(def,range) {
+                ret+=item;
+            }
+        }
     }
     return ret;
 }

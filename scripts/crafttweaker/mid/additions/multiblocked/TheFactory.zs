@@ -205,6 +205,7 @@ var ingots = [
 <tp:flint_ingot>*9,
 <appliedenergistics2:material>*9,
 <appliedenergistics2:material:1>*9,
+<avaritia:resource:6>*9,
 <avaritia:resource:1>*9
 ] as IItemStack[];
 for meta in 0 .. 15 {
@@ -411,6 +412,7 @@ var blocks = [
 <tp:flint_block>,
 <jaopca:block.certus_quartz>,
 <jaopca:block.charged_certus_quartz>,
+<avaritia:block_resource:1>,
 <avaritia:block_resource:2>
 ] as IItemStack[];
 for meta in 1 .. 16 {

@@ -1,5 +1,6 @@
 #reloadable
 
+import crafttweaker.data.IData;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 import scripts.crafttweaker.early.util.Tables as Util;
@@ -119,7 +120,8 @@ static shapelessBuilders as Holder[] = [
     //randomthings
     Util.shapeless(<randomthings:timeinabottle>, [<randomthings:timeinabottle>, <environmentaltech:lonsdaleite_crystal>]).setMarkIndex(0)
         .addFunction(function (output, map, info) {
-            return output.withTag({timeData: {storedTime: map.mark.tag.timeData.storedTime+1200}});
+            val outputTag as IData = {timeData: {storedTime: map.mark.tag.timeData.storedTime+1200}};
+            return output.withTag(outputTag);
         }), //time in a bottle
     Util.shapeless(<sgcraft:sgcorecrystal>, [<galacticraftcore:item_basic_moon:2>, <sgcraft:naquadahingot>]), //stargate core crystal
     Util.shapeless(<sgcraft:sgcontrollercrystal>, [<sgcraft:sgcorecrystal>, <draconicevolution:dragon_heart>]) //stargate controller crystal

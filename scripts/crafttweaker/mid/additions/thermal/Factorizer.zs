@@ -87,3 +87,6 @@ Factorizer.addRecipeBoth(<jaopca:block.certus_quartz>, <appliedenergistics2:mate
 
 //charged certus quartz
 Factorizer.addRecipeBoth(<jaopca:block.charged_certus_quartz>, <appliedenergistics2:material:1>*9);
+
+//filter coal
+Factorizer.addRecipeBoth(<mist:filter_coal_block>, <mist:filter_coal>*9);

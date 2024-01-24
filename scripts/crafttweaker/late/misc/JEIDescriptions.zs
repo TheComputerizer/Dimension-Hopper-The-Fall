@@ -44,7 +44,8 @@ JEI.addDescription(<huntingdim:frame>, "Example recipe.", "Most wood types will 
 //minecraft----------------------------------------------------------------------------------------
 handleEnchantedBooks();
 JEI.addDescription(<minecraft:piston>, "If you are in the Twilight Forest, pistons can not yet be crafted.",
-    "Pistons can be found near the top of Ur-Ghast towers and rarely in the basements of druid houses.");
+    "Pistons can be found near the top of Ur-Ghast towers and rarely in the basements of druid houses.",
+    "Only the trapped wither skeleton skull varient of the basement can have a piston");
 //-------------------------------------------------------------------------------------------------
 
 function handleMetas(item as IItemDefinition, min as int, max as int, descriptions as string[]) {

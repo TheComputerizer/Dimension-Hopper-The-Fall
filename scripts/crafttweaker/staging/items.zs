@@ -55,17 +55,18 @@ static itemStages as IIngredient[][string] = {
 		<minecraft:bedrock>
 	],
 	"disabled": [
+		<blue_skies:horizonite_pickaxe>,
+		<enderio:item_dark_steel_sword>,
+		<enderio:item_end_steel_sword>,
+		<extrautils2:chickenring:1>,
 		<minecraft:anvil>,
 		<minecraft:anvil:1>,
 		<minecraft:anvil:2>,
-		<minecraft:furnace>,
+		<minecraft:diamond_chestplate>,
 		<minecraft:enchanting_table>,
+		<minecraft:furnace>,
 		<twilightforest:uncrafting_table>,
-		<extrautils2:chickenring:1>,
-		<xreliquary:twilight_cloak>,
-		<enderio:item_dark_steel_sword>,
-		<enderio:item_end_steel_sword>,
-		<minecraft:diamond_chestplate>
+		<xreliquary:twilight_cloak>
 	],
 	"hardcore": [
 		<lockyzextradimensionsmod:interdimensionalsword>,
