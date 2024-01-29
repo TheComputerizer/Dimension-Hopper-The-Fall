@@ -1,0 +1,23 @@
+setIcon(<bedrockcraft:voidbeacon>)
+
+setTitle("???")
+
+setDescription("Acquire... what even is that??")
+
+addParent("triumph:dimensionhopper/storyline/finalchapter")
+
+setShowToast(true)
+
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(true)
+
+setPos(891,1)
+
+criteria = addCriteria("hasVoidBeacon", "minecraft:inventory_changed")
+
+criteria.addItem(<bedrockcraft:voidbeacon>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/finalchapter")

@@ -4,17 +4,17 @@ setTitle("Chapter 4")
 
 setDescription("Knowledge comes with a price.")
 
-setShowToast(false)
+addParent("triumph:dimensionhopper/storyline/swampkey")
+
+setShowToast(true)
 
 setAnnounceToChat(true)
 
-setFrameType("GOAL")
-
-addParent("triumph:dimensionhopper/storyline/chapter3")
+setFrameType("CHALLENGE")
 
 drawDirectLines(true)
 
-setPos(165,1)
+setPos(297,1)
 
 criteria = addCriteria("entered_betweenlands", "minecraft:changed_dimension")
 
@@ -23,3 +23,5 @@ criteria.setDimensionDestination("betweenlands")
 addRewardFunction("triumph:swampStage")
 addRewardFunction("triumph:firstDimShift")
 addRewardFunction("triumph:announceChapterFour")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter4")

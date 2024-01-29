@@ -1,0 +1,21 @@
+setIcon(<mist:sponge:13>)
+
+setTitle("Toxic")
+
+setDescription("Acquire a Foggy Sponge")
+
+addParent("triumph:dimensionhopper/storyline/chapter1")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(132,1)
+
+criteria = addCriteria("hasDaedalusBlock", "minecraft:inventory_changed")
+
+criteria.addItem(<mist:sponge:13>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter1")

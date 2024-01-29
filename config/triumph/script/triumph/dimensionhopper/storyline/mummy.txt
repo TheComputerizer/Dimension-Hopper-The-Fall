@@ -1,0 +1,21 @@
+setIcon(<thebetweenlands:mummy_bait>)
+
+setTitle("Mummy Slayer")
+
+setDescription("Kill a Dreadful Peat Mummy")
+
+addParent("triumph:dimensionhopper/storyline/chapter4")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(330,1)
+
+criteria = addCriteria("killedMummy", "minecraft:player_killed_entity")
+
+criteria.setEntityType("thebetweenlands:dreadful_mummy")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter4")

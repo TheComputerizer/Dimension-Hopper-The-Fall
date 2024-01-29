@@ -1,0 +1,23 @@
+setIcon(<contenttweaker:swamp_key>)
+
+setTitle("Crazy")
+
+setDescription("Acquire a Swamp Key")
+
+addParent("triumph:dimensionhopper/storyline/chapter3")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(264,1)
+
+criteria = addCriteria("hasSwampKey", "minecraft:inventory_changed")
+
+criteria.addItem(<contenttweaker:swamp_key>)
+
+addRewardFunction("triumph:swampBridge")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter3")

@@ -1,0 +1,25 @@
+setIcon(<minecraft:emerald>)
+
+setTitle("Finally")
+
+setDescription("Acquire an Emerald")
+
+addParent("triumph:dimensionhopper/storyline/chapter2")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+drawDirectLines(true)
+
+setPos(198,1)
+
+criteria = addCriteria("hasEmerald", "minecraft:inventory_changed")
+
+criteria.addItem(<minecraft:emerald>)
+
+addRewardFunction("triumph:cavernBridge")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter2")

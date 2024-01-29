@@ -1,4 +1,4 @@
-setIcon(<minecraft:grass>)
+setIcon(<minecraft:bedrock>)
 
 setTitle("Final Chapter")
 
@@ -8,13 +8,13 @@ setShowToast(true)
 
 setAnnounceToChat(true)
 
-setFrameType("GOAL")
+setFrameType("CHALLENGE")
 
-addParent("triumph:dimensionhopper/storyline/chapter9")
+addParent("triumph:dimensionhopper/storyline/totem")
 
 drawDirectLines(true)
 
-setPos(363,1)
+setPos(858,1)
 
 criteria = addCriteria("entered_bedrock", "minecraft:changed_dimension")
 
@@ -22,3 +22,5 @@ criteria.setDimensionDestination("bedrockcraftvoid")
 
 addRewardFunction("triumph:bedrockFinalStage")
 addRewardFunction("triumph:announceChapterFinal")
+
+hiddenUnless("triumph:dimensionhopper/storyline/finalchapter")

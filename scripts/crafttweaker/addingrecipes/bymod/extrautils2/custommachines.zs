@@ -14,8 +14,8 @@ val hf = extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
 	20000000, 
 	[input], 
 	[output], 
-	"natura:nether_heat_sand",
-	"natura:nether_glass:1",
+	"natura:blocks/sand/heat_sand",
+	"natura:blocks/glass/glass_heat",
 	13396779
 );
 
@@ -29,8 +29,8 @@ val bhr = extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
 	20000000,
 	[inputb,fluid],
 	[outputb],
-	"moreplanets:black_hole_fragments",
-	"moreplanets:black_hole_fragments",
+	"moreplanets:items/black_hole_fragments",
+	"moreplanets:items/black_hole_fragments",
 	0
 );
 

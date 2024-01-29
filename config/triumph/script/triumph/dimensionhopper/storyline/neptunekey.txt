@@ -1,0 +1,21 @@
+setIcon(<contenttweaker:neptunic_key>)
+
+setTitle("Why is it so heavy?")
+
+setDescription("Acquire a Neptunic Key")
+
+addParent("triumph:dimensionhopper/storyline/chapter7")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(627,1)
+
+criteria = addCriteria("hasNeptuneKey", "minecraft:inventory_changed")
+
+criteria.addItem(<contenttweaker:neptunic_key>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter7")

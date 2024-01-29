@@ -1,0 +1,21 @@
+setIcon(<aroma1997sdimension:miningmultitool>)
+
+setTitle("Imaginary")
+
+setDescription("Acquire a tool that doesn't exist??")
+
+addParent("triumph:dimensionhopper/storyline/chapter5")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(462,1)
+
+criteria = addCriteria("hasMiningTool", "minecraft:inventory_changed")
+
+criteria.addItem(<aroma1997sdimension:miningmultitool>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter5")

@@ -21,3 +21,5 @@ criteria = addCriteria("entered_twilight", "minecraft:changed_dimension")
 criteria.setDimensionDestination("twilight_forest")
 
 addRewardFunction("triumph:announcePrologue")
+
+hiddenUnless("triumph:dimensionhopper/storyline/prologue")

@@ -1,0 +1,21 @@
+setIcon(<dimhoppertweaks:reality_slasher>)
+
+setTitle("§4§l§oF O O L")
+
+setDescription("Why did you have to do that?")
+
+addParent("triumph:dimensionhopper/storyline/finalboss")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setFrameType("GOAL")
+
+drawDirectLines(true)
+
+setPos(957,1)
+
+criteria = addCriteria("impossible", "minecraft:impossible")
+
+hiddenUnless("triumph:dimensionhopper/storyline/oops")

@@ -38,6 +38,16 @@ rules.add(Dropt.rule()
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));
 
+//stage cavern drops
+rules.add(Dropt.rule()
+    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["cavern"]))
+    .matchDrops([
+        <minecraft:diamond>,
+        <minecraft:emerald>
+    ])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop()));
+
 //stage planets drops
 rules.add(Dropt.rule()
     .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["planets"]))
@@ -47,7 +57,11 @@ rules.add(Dropt.rule()
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));
 
-var adventDrops as IItemStack[] = scripts.crafttweaker.early.util.Globals.aoaAll;
+var adventDrops as IItemStack[]  = [] as IItemStack[];
+
+for item in scripts.crafttweaker.early.util.Globals.aoaAll {
+    adventDrops+=item.withEmptyTag();
+}
 
 //stage advent drops
 rules.add(Dropt.rule()

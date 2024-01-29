@@ -5,6 +5,8 @@ import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.avaritia.ExtremeCrafting;
+import mods.botania.Orechid;
+import mods.botania.OrechidIgnem;
 import mods.dimhoppertweaks.IItemConsumer;
 import mods.dimhoppertweaks.IStringConsumer;
 import mods.extendedcrafting.TableCrafting;
@@ -41,6 +43,14 @@ static itemsRemovalCalls as IItemConsumer[int][string] = {
 };
 
 static stringRemovalCalls as IStringConsumer[int][string] = {
+    "botania": {
+        0: function(dict as string) {
+            Orechid.removeOre(oreDict.get(dict));
+        },
+        1: function(dict as string) {
+            OrechidIgnem.removeOre(oreDict.get(dict));
+        }
+    },
     "jei": {
         0: function(category as string) {
             JEI.hideCategory(category);
@@ -90,4 +100,10 @@ function callStringInner(consumer as IStringConsumer, strings as string[]) {
 
 function callString(mod as string, strings as string[], funcID as int = 0) {
     callStringInner(stringRemovalCalls[mod][funcID],strings);
+}
+
+function callStringMap(mod as string, map as string[][int]) {
+    for funcID, strings in map {
+        callString(mod,strings,funcID);
+    }
 }

@@ -1,0 +1,23 @@
+setIcon(<avaritia:infinity_sword>)
+
+setTitle("Dimension Hopper")
+
+setDescription("Defeat §5§l§kThe OverSeer")
+
+addParent("triumph:dimensionhopper/storyline/voidbeacon")
+
+setShowToast(true)
+
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(true)
+
+setPos(924,1)
+
+criteria = addCriteria("killedFinalBoss", "minecraft:player_killed_entity")
+
+criteria.setEntityType("dimhoppertweaks:dimension_hopper_final_boss")
+
+hiddenUnless("triumph:dimensionhopper/storyline/voidbeacon")

@@ -1,0 +1,23 @@
+setIcon(<thebetweenlands:sludge_ball>)
+
+setTitle("Menacing Tentacle")
+
+setDescription("Kill the Sludge Menace")
+
+addParent("triumph:dimensionhopper/storyline/sphere")
+
+setShowToast(true)
+
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(true)
+
+setPos(396,1)
+
+criteria = addCriteria("killedMenace", "minecraft:player_killed_entity")
+
+criteria.setEntityType("thebetweenlands:sludge_menace")
+
+hiddenUnless("triumph:dimensionhopper/storyline/sphere")

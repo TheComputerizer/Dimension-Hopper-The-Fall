@@ -4,17 +4,17 @@ setTitle("Chapter 3")
 
 setDescription("The wonders of endless caving")
 
+addParent("triumph:dimensionhopper/storyline/emerald")
+
 setShowToast(false)
 
 setAnnounceToChat(true)
 
 setFrameType("GOAL")
 
-addParent("triumph:dimensionhopper/storyline/chapter2")
-
 drawDirectLines(true)
 
-setPos(132,1)
+setPos(231,1)
 
 criteria = addCriteria("entered_cavern", "minecraft:changed_dimension")
 
@@ -22,3 +22,5 @@ criteria.setDimensionDestination("cavern")
 
 addRewardFunction("triumph:cavernStage")
 addRewardFunction("triumph:announceChapterThree")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter3")

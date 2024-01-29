@@ -5,7 +5,9 @@ import crafttweaker.item.IItemStack;
 import scripts.crafttweaker.early.util.Globals as Global;
 
 //generic
+oreDict.netherGrass.addItems([<biomesoplenty:grass:6>]);
 oreDict.oreCobalt.addItems([<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>]);
+oreDict.overgrownStone.addItems([<biomesoplenty:grass:1>]);
 oreDict.pressurizedTank.addItems([<enderio:block_tank:1>]);
 
 //enchantables

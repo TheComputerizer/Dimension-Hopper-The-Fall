@@ -1,4 +1,4 @@
-setIcon(<minecraft:grass>)
+setIcon(<extraplanets:item_tier7_rocket>)
 
 setTitle("Chapter 7")
 
@@ -10,11 +10,11 @@ setAnnounceToChat(true)
 
 setFrameType("GOAL")
 
-addParent("triumph:dimensionhopper/storyline/chapter6")
+addParent("triumph:dimensionhopper/storyline/plate4")
 
 drawDirectLines(true)
 
-setPos(264,1)
+setPos(594,1)
 
 criteria = addCriteria("entered_jupiter", "minecraft:changed_dimension")
 
@@ -22,3 +22,5 @@ criteria.setDimensionDestination("planet.Jupiter")
 
 addRewardFunction("triumph:deepspaceStage")
 addRewardFunction("triumph:announceChapterSeven")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter7")

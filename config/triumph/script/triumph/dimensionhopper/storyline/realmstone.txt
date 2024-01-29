@@ -1,0 +1,21 @@
+setIcon(<aoa3:blank_realmstone>)
+
+setTitle("Realmstoned")
+
+setDescription("Acquire a Realmstone")
+
+addParent("triumph:dimensionhopper/storyline/chapter6")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(528,1)
+
+criteria = addCriteria("hasRealmstone", "minecraft:inventory_changed")
+
+criteria.addItem(<aoa3:blank_realmstone>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter6")

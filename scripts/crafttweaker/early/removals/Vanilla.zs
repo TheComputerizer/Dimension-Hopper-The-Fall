@@ -188,6 +188,7 @@ static itemRemovals as IItemStack[] = [
 
 	//aeadditions
 	<aeadditions:storage.component:*>,
+	<aeadditions:vibrantchamberfluid>,
 
 	//aether
 	<aether:aether_teleporter>,
@@ -203,6 +204,7 @@ static itemRemovals as IItemStack[] = [
 	<appliedenergistics2:grindstone>,
 	<appliedenergistics2:molecular_assembler>,
 	<appliedenergistics2:spatial_pylon>,
+	<appliedenergistics2:vibration_chamber>,
 
 	//aroma1997sdimension
 	<aroma1997sdimension:miningmultitool>,
@@ -249,6 +251,9 @@ static itemRemovals as IItemStack[] = [
 	//conarm
 	<conarm:resist_mat>,
 
+	//cookingforblockheads
+	<cookingforblockheads:oven>,
+
 	//darkutils
 	<darkutils:trap_tile:*>,
 
@@ -256,6 +261,7 @@ static itemRemovals as IItemStack[] = [
 	<draconicevolution:draconium_block>,
 	<draconicevolution:fusion_crafting_core>,
 	<draconicevolution:generator>,
+	<draconicevolution:grinder>,
 
 	//enderio
 	<enderio:item_stellar_alloy_pickaxe>,
@@ -342,6 +348,9 @@ static itemRemovals as IItemStack[] = [
 	<industrialforegoing:petrified_fuel_generator>,
 	<industrialforegoing:pitiful_fuel_generator>,
 
+	//integrateddynamics
+	<integrateddynamics:part_machine_reader_item>,
+
 	//lightningcraft
 	<lightningcraft:ingot>,
 	<lightningcraft:metal_block:*>,
@@ -397,6 +406,9 @@ static itemRemovals as IItemStack[] = [
 	<overloaded:linking_card>,
 	<overloaded:nether_star_block>,
 	<overloaded:settings_editor>,
+
+	//plustic
+	<plustic:centrifuge:*>,
 
 	//projecte
 	<projecte:item.pe_covalence_dust:2>,

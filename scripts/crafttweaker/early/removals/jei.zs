@@ -170,6 +170,7 @@ static itemRemovals as IItemStack[] = [
     <extendedcrafting:storage:2>,
 
     //extraplanets
+    <extraplanets:basic_decontamination_unit_fake_block>,
     <extraplanets:ingot_lead>,
 
     //extrautils2
@@ -192,6 +193,7 @@ static itemRemovals as IItemStack[] = [
     <galacticraftcore:basic_block_core:9>,
     <galacticraftcore:emergency_kit>,
     <galacticraftcore:engine:1>,
+    <galacticraftcore:machine2:12>,
     <galacticraftcore:machine:12>,
     <galacticraftcore:rocket_workbench>,
 
@@ -209,6 +211,7 @@ static itemRemovals as IItemStack[] = [
 
     //integrateddynamics
     <integrateddynamics:coal_generator>,
+    <integrateddynamics:part_machine_writer_item>,
 
     //lightningcraft
     <lightningcraft:golf_club_gold>,
@@ -267,6 +270,7 @@ static itemRemovals as IItemStack[] = [
 
     //randomthings
     <randomthings:blazeandsteel>,
+	<randomthings:potionvaporizer>,
 
     //rftools
     <rftools:syringe>,

@@ -46,11 +46,11 @@ static shapedHolders as Holder[] = [
     .addTools({<ore:artisansGrimoire>:65,<ore:artisansAthame>:65})
     .addFluids([<liquid:mana>*144]), //soujourners sash
 
-  Util.simpleShaped(<botania:icependant>, "corners", [null, <natura:materials:16>, <botania:rune:7>, null, <cavern:slippery_ice>, <botania:rune>])
+  Util.simpleShaped(<botania:icependant>, "corners", [null, <botania:manaresource:16>, <botania:rune:7>, null, <cavern:slippery_ice>, <botania:rune>])
     .addTools({<ore:artisansGrimoire>:57,<ore:artisansAthame>:57})
     .addFluids([<liquid:mana>*720]), //snowflake pendant
 
-  Util.simpleShaped(<botania:lavapendant>, "corners", [null, <natura:materials:16>, <botania:rune:5>, null, <thebetweenlands:items_misc:18>, <botania:rune:1>])
+  Util.simpleShaped(<botania:lavapendant>, "corners", [null, <botania:manaresource:16>, <botania:rune:5>, null, <thebetweenlands:items_misc:18>, <botania:rune:1>])
     .addTools({<ore:artisansGrimoire>:59,<ore:artisansAthame>:59})
     .addFluids([<liquid:mana>*864]), //pyroclast pendant
 

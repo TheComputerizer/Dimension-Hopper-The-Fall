@@ -2941,24 +2941,24 @@
     },
     "34:10": {
       "preRequisites:11": [
-        7
+        1055
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A creeper themed dimension",
+          "desc:8": "     Can be summoned by using a§5 §oVile Stone§r on a §d§oVoxxulon Altar§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "aoa3:creeponia_bricks"
+            "id:8": "aoa3:ornate_voxxulon_statue"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Creeponia",
+          "name:8": "Voxxulon",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -2970,74 +2970,248 @@
         }
       },
       "questID:3": 34,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 40,
+          "index:3": 0,
+          "isLevels:1": 1,
+          "rewardID:8": "bq_standard:xp"
+        }
+      },
       "tasks:9": {
         "0:10": {
-          "biome:8": "",
-          "dimension:3": 805,
-          "hideInfo:1": 0,
+          "damageType:8": "",
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "invert:1": 0,
-          "name:8": "Creeponia",
-          "posX:3": 0,
-          "posY:3": 0,
-          "posZ:3": 0,
-          "range:3": -1,
-          "structure:8": "",
-          "taskID:8": "bq_standard:location",
-          "taxiCabDist:1": 0,
-          "visible:1": 0
+          "required:3": 1,
+          "subtypes:1": 1,
+          "target:8": "aoa3:voxxulon",
+          "targetNBT:10": {
+            "AABB:9": {
+              "0:6": -1.0,
+              "1:6": 0.0,
+              "2:6": -1.0,
+              "3:6": 1.0,
+              "4:6": 2.375,
+              "5:6": 1.0
+            },
+            "AbsorptionAmount:5": 0.0,
+            "Air:2": 300,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.projectileDamage"
+              },
+              "1:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.magicDamage"
+              },
+              "2:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.jumpHeight"
+              },
+              "3:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.damageResistance"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "potioncore.magicShielding"
+              },
+              "5:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.slash"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.pierce"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.impact"
+              },
+              "8:10": {
+                "Base:6": 2000.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "9:10": {
+                "Base:6": 0.8,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "10:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.movementSpeed"
+              },
+              "11:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armor"
+              },
+              "12:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "13:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "14:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              },
+              "15:10": {
+                "Base:6": 30.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "CanPickUpLoot:1": 0,
+            "DeathTime:2": 0,
+            "Dimension:3": 1,
+            "FallDistance:5": 0.0,
+            "FallFlying:1": 0,
+            "Fire:2": -1,
+            "ForgeCaps:10": {
+              "aether:entityinfo:10": {
+                "hasSpawnArea:1": 0
+              },
+              "aether:statuseffects:10": {
+                "statusEffects:9": {}
+              },
+              "cavern:portal_cache:10": {
+                "LastDim:9": {},
+                "LastPos:9": {}
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "dsurround:entityfx:10": {},
+              "dsurround:speech:10": {},
+              "thebetweenlands:custom_step_sound:10": {},
+              "thebetweenlands:entity_gems:10": {
+                "gems:9": {}
+              },
+              "thebetweenlands:equipment:10": {
+                "amuletSlots:3": 1
+              },
+              "thebetweenlands:puppet:10": {
+                "guard:1": 0,
+                "recruitmentCost:3": 0,
+                "stay:1": 0,
+                "ticks:3": 0
+              },
+              "tinkertoolleveling:entityxp:9": {},
+              "twilightforest:cap_shield:10": {
+                "permshields:3": 0,
+                "tempshields:3": 0
+              }
+            },
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "Health:5": 2000.0,
+            "HurtByTimestamp:3": 0,
+            "HurtTime:2": 0,
+            "Invulnerable:1": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "OnGround:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Rotation:9": {
+              "0:5": 1.505676,
+              "1:5": 0.0
+            },
+            "UUIDLeast:4": -7673935475291045733,
+            "UUIDMost:4": -3285862998230809240,
+            "UpdateBlocked:1": 0,
+            "id:8": "aoa3:voxxulon"
+          },
+          "taskID:8": "bq_standard:hunt"
         }
       }
     },
     "35:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
       "preRequisites:11": [
-        7
+        1467,
+        1340
       ],
       "properties:10": {
         "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "The upside-down",
+          "autoclaim:1": 1,
+          "desc:8": "§3§o     You completed the questbook in masochist mode?! That is beyond impressive! Please let me know how long this pack took to complete for you, I am super curious, especially since you did it in masochist mode!\n\n§r§3§lHall of Fame - Verifired Masochiost Mode Completionists:\n\n- No one has completed masochist mode yet! Be the first and let me know so I can add you here!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "aoa3:lelyetia_stone"
+            "id:8": "contenttweaker:final_singularity"
           },
           "ignoresview:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Lelyetia",
+          "name:8": "Dimension Hopper 101%",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
-          "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questdramatic",
+          "snd_update:8": "contenttweaker:questdramatic",
           "tasklogic:8": "AND",
-          "visibility:8": "UNLOCKED"
+          "visibility:8": "ALWAYS"
         }
       },
       "questID:3": 35,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "asScript:1": 1,
+          "command:8": "gamestage silentadd @s disabled",
+          "description:8": "Unlock disabled stuff",
+          "hideBlockIcon:1": 1,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
+        }
+      },
       "tasks:9": {
         "0:10": {
-          "biome:8": "",
-          "dimension:3": 815,
-          "hideInfo:1": 0,
           "index:3": 0,
-          "invert:1": 0,
-          "name:8": "Lelyetia",
-          "posX:3": 0,
-          "posY:3": 0,
-          "posZ:3": 0,
-          "range:3": -1,
-          "structure:8": "",
-          "taskID:8": "bq_standard:location",
-          "taxiCabDist:1": 0,
-          "visible:1": 0
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
@@ -5666,7 +5840,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     Well, have you gotten nice and settled in yet? Either way it does not matter because it is time for you to investigate other realms. The closest ones from this one happen to be the§4§o Nether§r and the §e§o§r§9§oAether§r, so that is where we will start! \n\n     Although do take caution, because it seems normal §d§oportal§r structures will be more difficult to activate due to the §l§o§6§l§oDimensional Shift§r. Luckily, the §4§oNether§r happens to be right below this realm, so that can be worked around by digging down to bedrock and throwing an enderpearl through. There are some §o§r§oweird factors§r at play here regarding that, but its best that you dont worry about it too much (§c§oright click bedrock with enderpearl§r). §rGetting back to the overworld should work in the same way (§c§oexcept you left click the bedrock with an enderpearl instead§r), although where you will end up is not quite an exact science at this point. \n\n     As for the §e§o§9§oAether§r, I think the original inhabitants were able to create some sort of §2§oteleporter§r after the portals stopped functioning. You should be able to do the same.\n\n§3§lNOTE: §oInfernal (named) mobs have a high chance of dropping 1 or more ender pearls, so you will not get stuck in the nether.",
+          "desc:8": "     Well, have you gotten nice and settled in yet? Either way it does not matter because it is time for you to investigate other realms. The closest ones from this one happen to be the§4§o Nether§r and the §e§o§r§9§oAether§r, so that is where we will start! \n\n     Although do take caution, because it seems normal §d§oportal§r structures will be more difficult to activate due to the §l§o§6§l§oDimensional Shift§r. Luckily, the §4§oNether§r happens to be right below this realm, so that can be worked around by digging down to bedrock and throwing an enderpearl through. There are some §o§r§oweird factors§r at play here regarding that, but its best that you dont worry about it too much (§c§oright click bedrock with enderpearl§r). §rGetting back to the overworld should work in the same way (§c§oexcept you left click the bedrock with an enderpearl instead§r), although where you will end up is not quite an exact science at this point. \n\n     As for the §e§o§9§oAether§r, I think the original inhabitants were able to create some sort of §2§oteleporter§r after the portals stopped functioning. You should be able to do the same.\n\n§3§lNOTE: §oInfernal (named) mobs have a high chance of dropping 1 or more ender pearls, so you will not get stuck in the nether.\n\n§r§3§lADDITIONAL NOTE: §oNether portals can still be made, but they require compressed obsidian of any level or refined obsidian blocks instead of normal obsidian. Portals can have multiple types of obsidian in the frame",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5952,7 +6126,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     A §6§l§kdivine creature§r able to utilize the power of §6§l§kChaos§r to §6§l§kbypass§r most §6§l§karmor§r. Normal this is something to be avoided at all costs, but we require its §6§l§kchaos power§r in order to access the foundation",
+          "desc:8": "     A §6§l§kdivine creature§r able to utilize the power of §6§l§kChaos§r to §6§l§kbypass§r most §6§l§karmor§r. Normally this is something to be avoided at all costs, but we require its §6§l§kchaos power§r in order to access the foundation",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -10001,6 +10175,9 @@
       }
     },
     "144:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
         1340
       ],
@@ -10161,6 +10338,10 @@
       }
     },
     "147:10": {
+      "preRequisiteTypes:7": [
+        1,
+        0
+      ],
       "preRequisites:11": [
         1340,
         1467
@@ -10168,19 +10349,19 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 1,
-          "desc:8": "§3§o     You completed the questbook in masochist mode?! That is beyond impressive! Please let me know how long this pack took to complete for you, I am super curious, especially since you did it in masochist mode!\n\n§r§3§lHall of Fame - Verifired Masochiost Mode Completionists:\n\n- No one has completed masochist mode yet! Be the first and let me know so I can add you here!",
+          "desc:8": "§3§o     Ok wtf\n\n§r§3§lHall of Fame - Verifired Ultimate Masochiost Completionists:\n\n- No one has completed the Ultimate Masochiost challenge and there may never be anyone who does",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 8,
             "OreDict:8": "",
-            "id:8": "contenttweaker:final_singularity"
+            "id:8": "magicbees:resource"
           },
           "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Dimension Hopper 101%",
+          "name:8": "Dimension Hopper 102%",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -56017,7 +56198,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "autoclaim:1": 0,
+          "autoclaim:1": 1,
           "desc:8": "§4§l§oFINALLY I\u0027M FREE!\n\nYOU ARE AN EVEN BIGGER FOOL THAN I GAVE YOU CREDIT FOR.\n\nI TRY TO HAVE A LITTLE BIT OF FUN AND THAT PESKY OVERSEER SHOVES ME IN THAT INFERNAL BOOK AND TRAPS ME IN LIMBO!\n\nI WOULDN\u0027T HAVE BEEN ABLE TO ESCAPE WITHOUT YOU, SO THANKS A BUNCH FOR THAT \u003c3\n\n\"BUT WHY\" YOU ASK? HA! YOU WERE TOO BLINDED BY MY GOODWILL TO SEE THAT I WAS THE ONE CAUSING THOSE §r§6§l§oDIMENSIONAL SHIFTS§r§4§l§o!\n\nI COULDN\u0027T DO MUCH WITH THE FRACTION OF MY POWER LEAKING OUT FROM THE BOOK, BUT PULLING AN UNSUSPECTING \"PLAYER\" INTO LIMBO WAS A TRIVIAL TASK.\n\nNOW THEN, YOU WERE A USEFUL TOOL TO ME AND I AM A BENEVOLENT GOD, SO INSTEAD OF KILLING YOU, I WILL JUST BANISH TO LIMBO FOR ALL ETERNITY!\n\nIRONIC ISN\u0027T IT? YOU TRIED TO SAVE THE MULTIVERSE BUT ENDED UP BEING THE CATALYST FOR IT\u0027S DESTRUCTION INSTEAD. NO WORRIES THOUGH, AS I WILL BE REMAKING IT HOW I SEE FIT.\n\nAH, AND I WILL BE TAKING THOSE ITEMS YOU SO GRACIOUSLY COLLECTED FOR ME.\n\nIT\u0027S TIME TO HAVE SOME FUN...\n\n§3§oThis is as far as the story goes, so according to the lore, you are now banished to and stuck in Limbo for the forseeable future and §lThe Entity§r§3§o that was trapped in the book has now escaped and is in the process of destroying all creation. However, since I don\u0027t want to softlock people out of their world, that part will not actually be enacted so you can still explore and show off your world and complete any missing quests that you want to.\n\nI might add some completionist quests for creative items in the future, but for now, this is it",
           "globalshare:1": 0,
           "icon:10": {
@@ -56042,7 +56223,18 @@
         }
       },
       "questID:3": 883,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "asScript:1": 1,
+          "command:8": "advancement grant @s only triumph:dimensionhopper/storyline/oops",
+          "description:8": "oops",
+          "hideBlockIcon:1": 1,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
+        }
+      },
       "tasks:9": {
         "0:10": {
           "index:3": 0,
@@ -63872,7 +64064,9 @@
                 "tempshields:3": 0
               }
             },
-            "ForgeData:10": {},
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
             "HandDropChances:9": {
               "0:5": 0.085,
               "1:5": 0.085
@@ -70062,7 +70256,9 @@
       }
     },
     "1060:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        34
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -70119,7 +70315,9 @@
       }
     },
     "1061:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        34
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -81828,7 +82026,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -82359,7 +82557,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 1,
-          "desc:8": "     §fHold on, what do you think you are doing here? Why would you want to make the pack even harder than it already is? You will §onot§r be able to beat it like this...\n\n     §4§l§oBut what does this mode do?§r\n\n- You get an additional 100 levels of looting applied to everything you manage to kill, if you can even kill anything\n- You gain a lot more xp from mob kills.\n- You start at max difficulty (yes, all the way at 5000).\n- If you somehow §ostill§r manage to end up progressing, the end of chapter quests will give you an extra 90 difficulty decreasing hearts (for a total of 100)\n- You will get a special trophy for beating chapter 10 after having this active for your entire playthrough\n- §l§o§oDo NOT activate this on a normal playthrough\n§\n- You have to clai§rm the command reward for it§r to actually activate\n- This will only work if it is the first quest you claim!\n- Good luck",
+          "desc:8": "§3§oAre you a masochist? \n\nDo you like figuring out how to deal with mobs that are way stronger than you? \n\nIs this pack just not hard enough for you, or maybe you want to challene yourself on a replay? \n\nMaybe you like the idea of getting a lot of extra loot and XP?§r\n\n\n§6§lIf you answered §r§4§lYES§r §6§lto any of the above questions than might want to give §r§4§lMASOCHIST MODE§r §6§la try.\n\nHowever, if you are §r§2§lBAD AT PVE§r§6§l, §r§2§lNEW TO MODDED MINECRAFT§r§6§l, §r§2§lAVERSE TO EXTRA GRINDING§r§6§l, or just want the §r§2§lNORMAL EXPERIENCE§r§6§l than you should §r§2§l§nNOT§r§6§l claim this quest.\n\nAssuming you still want to proceed (note this can only be claimed as the first quest), here is what happens when §r§4§lMASOCHIST MODE§r §6§lis enabled:§r\n\n\n§d§o- You get an additional §n100§r§d§o levels of §nlooting§r§d§o applied to everything you manage to kill, if you can even kill anything\n\n- You gain a lot more §nXP§r§d§o from mob kills.\n\n- You start at §o§nmaximum§r§d§o difficulty which is §n5000§r§d§o\n\n- You gain access to an §nexclusive questline§r§d§o and §nexclusive advancements§r§d§o\n\n- A few minor skips and powerful tools become available\n\n- The Final Boss will be much more difficult than normal\n\n- Completing §nall§r§d§o Prologue and Twilight Forest boss quests §nbefore§r§d§o entering the Overworld will grant you the right to be crowned as a §r§l[§5§lCertified Masochist§r§l]§r\n\n§d§o- Completing 100% of the quests will earn you a place on the special 101% leaderboard\n\n\n§6§6§lAnd for the few that seem to enjoy going out of their way to make things as difficult as possible, I have 1 final challenge for you (good luck)\n\n\n§d§o§l- Anyone wishing to obtain the title of §[§l[§r§0§lUltimate Masochist§r§l]§r§d§l§o must complete all requirements to become a §r§l[§r§5§lCertified Masochist§r§l]§r§d§l§o while in hardcore without the usage of life charms, steeleaf equipment, or PSI unless it is directly related to progression. At least 1 wither is also required to be defeated without being trapped and before entering the Overworld. The use of any unintended skips that break progression are prohibited. If you also manage to complete 100% of the quests after this without ever enabling cheats you can earn a spot on the secret 102% leaderboard",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -82386,7 +82584,7 @@
       "rewards:9": {
         "0:10": {
           "asScript:1": 1,
-          "command:8": "gamestage silentadd @s hardcore\nscalinghealth difficulty set 5000 @s\nsay You feel your sanity start to slip away...",
+          "command:8": "gamestage silentadd @s hardcore\nscalinghealth difficulty set 5000 @s\nadvancement grant @s only triumph:dimensionhopper/masochist/root\nsay You feel your sanity start to slip away...",
           "description:8": "Run a command script",
           "hideBlockIcon:1": 1,
           "index:3": 0,
@@ -101502,20 +101700,7 @@
         }
       },
       "questID:3": 1449,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1450:10": {
@@ -101526,7 +101711,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     Defeat the wither in masochist mode",
+          "desc:8": "     I bet you just trapped it didn\u0027t you",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -101561,7 +101746,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     Complete your first chapter of masochist mode",
+          "desc:8": "     Completed your first chapter of masochist mode? Only 9 more to go :)",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -101585,20 +101770,7 @@
         }
       },
       "questID:3": 1451,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1452:10": {
@@ -101668,20 +101840,7 @@
         }
       },
       "questID:3": 1453,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1454:10": {
@@ -101756,20 +101915,7 @@
         }
       },
       "questID:3": 1455,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1456:10": {
@@ -101839,20 +101985,7 @@
         }
       },
       "questID:3": 1457,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1458:10": {
@@ -101926,20 +102059,7 @@
         }
       },
       "questID:3": 1459,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1460:10": {
@@ -102009,26 +102129,13 @@
         }
       },
       "questID:3": 1461,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1462:10": {
       "preRequisites:11": [
         1224,
-        1211
+        87
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -102092,20 +102199,7 @@
         }
       },
       "questID:3": 1463,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1464:10": {
@@ -102175,20 +102269,7 @@
         }
       },
       "questID:3": 1465,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1466:10": {
@@ -102263,20 +102344,7 @@
         }
       },
       "questID:3": 1467,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 100,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1468:10": {
@@ -102311,20 +102379,7 @@
         }
       },
       "questID:3": 1468,
-      "rewards:9": {
-        "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
-            "0:10": {
-              "Count:3": 90,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
-            }
-          }
-        }
-      },
+      "rewards:9": {},
       "tasks:9": {}
     },
     "1469:10": {
@@ -102336,7 +102391,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     That was not really necessary",
+          "desc:8": "     That really was not necessary",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -107242,6 +107297,81 @@
           "taskID:8": "bq_standard:hunt"
         }
       }
+    },
+    "1530:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "     Did you §oreally§r manage to get through the final boss on your first try?",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "minecraft:spawn_egg",
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "dimhoppertweaks:dimension_hopper_final_boss"
+              }
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Ultimate masochist",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "contenttweaker:questdramatic",
+          "snd_update:8": "contenttweaker:questdramatic",
+          "tasklogic:8": "AND",
+          "visibility:8": "COMPLETED"
+        }
+      },
+      "questID:3": 1530,
+      "rewards:9": {},
+      "tasks:9": {}
+    },
+    "1531:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "     hardcore",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 31,
+            "OreDict:8": "",
+            "id:8": "botania:cosmetic"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Hardcore",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "contenttweaker:questdramatic",
+          "snd_update:8": "contenttweaker:questdramatic",
+          "tasklogic:8": "AND",
+          "visibility:8": "COMPLETED"
+        }
+      },
+      "questID:3": 1531,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requirements:9": {},
+          "taskID:8": "compatskills:req_task_factory"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -108994,482 +109124,489 @@
           "y:3": -96
         },
         "4:10": {
+          "id:3": 34,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
+          "y:3": -240
+        },
+        "5:10": {
           "id:3": 39,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -96
         },
-        "5:10": {
+        "6:10": {
           "id:3": 40,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -96
         },
-        "6:10": {
+        "7:10": {
           "id:3": 41,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -132
         },
-        "7:10": {
+        "8:10": {
           "id:3": 42,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -60
         },
-        "8:10": {
+        "9:10": {
           "id:3": 43,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -60
         },
-        "9:10": {
+        "10:10": {
           "id:3": 44,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -132
         },
-        "10:10": {
+        "11:10": {
           "id:3": 45,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -96
         },
-        "11:10": {
+        "12:10": {
           "id:3": 87,
           "sizeX:3": 60,
           "sizeY:3": 60,
           "x:3": 348,
           "y:3": -60
         },
-        "12:10": {
+        "13:10": {
           "id:3": 110,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": -96
         },
-        "13:10": {
+        "14:10": {
           "id:3": 111,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -96
         },
-        "14:10": {
+        "15:10": {
           "id:3": 112,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -132
         },
-        "15:10": {
+        "16:10": {
           "id:3": 273,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -60
         },
-        "16:10": {
+        "17:10": {
           "id:3": 275,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -24
         },
-        "17:10": {
+        "18:10": {
           "id:3": 278,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -132
         },
-        "18:10": {
+        "19:10": {
           "id:3": 280,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -168
         },
-        "19:10": {
+        "20:10": {
           "id:3": 301,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -132
         },
-        "20:10": {
+        "21:10": {
           "id:3": 302,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -168
         },
-        "21:10": {
+        "22:10": {
           "id:3": 303,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -60
         },
-        "22:10": {
+        "23:10": {
           "id:3": 304,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -24
         },
-        "23:10": {
+        "24:10": {
           "id:3": 407,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -24
         },
-        "24:10": {
+        "25:10": {
           "id:3": 458,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 240,
           "y:3": -96
         },
-        "25:10": {
+        "26:10": {
           "id:3": 642,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -96
         },
-        "26:10": {
+        "27:10": {
           "id:3": 643,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -96
         },
-        "27:10": {
+        "28:10": {
           "id:3": 644,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -96
         },
-        "28:10": {
+        "29:10": {
           "id:3": 869,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -60
         },
-        "29:10": {
+        "30:10": {
           "id:3": 950,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -168
         },
-        "30:10": {
+        "31:10": {
           "id:3": 956,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -168
         },
-        "31:10": {
+        "32:10": {
           "id:3": 962,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -204
         },
-        "32:10": {
+        "33:10": {
           "id:3": 963,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -204
         },
-        "33:10": {
+        "34:10": {
           "id:3": 974,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -204
         },
-        "34:10": {
+        "35:10": {
           "id:3": 975,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -204
         },
-        "35:10": {
+        "36:10": {
           "id:3": 983,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -240
         },
-        "36:10": {
+        "37:10": {
           "id:3": 984,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -240
         },
-        "37:10": {
+        "38:10": {
           "id:3": 993,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": -204
         },
-        "38:10": {
+        "39:10": {
           "id:3": 997,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -204
         },
-        "39:10": {
+        "40:10": {
           "id:3": 1001,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -204
         },
-        "40:10": {
+        "41:10": {
           "id:3": 1005,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -204
         },
-        "41:10": {
+        "42:10": {
           "id:3": 1006,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -204
         },
-        "42:10": {
+        "43:10": {
           "id:3": 1012,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -240
         },
-        "43:10": {
+        "44:10": {
           "id:3": 1013,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -240
         },
-        "44:10": {
+        "45:10": {
           "id:3": 1020,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": -240
         },
-        "45:10": {
+        "46:10": {
           "id:3": 1021,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -240
         },
-        "46:10": {
+        "47:10": {
           "id:3": 1031,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -240
         },
-        "47:10": {
+        "48:10": {
           "id:3": 1032,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -240
         },
-        "48:10": {
+        "49:10": {
           "id:3": 1033,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -240
         },
-        "49:10": {
+        "50:10": {
           "id:3": 1049,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -240
         },
-        "50:10": {
+        "51:10": {
           "id:3": 1056,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": -240
         },
-        "51:10": {
+        "52:10": {
           "id:3": 1057,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 348,
           "y:3": -204
         },
-        "52:10": {
+        "53:10": {
           "id:3": 1062,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -276
         },
-        "53:10": {
+        "54:10": {
           "id:3": 1063,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -276
         },
-        "54:10": {
+        "55:10": {
           "id:3": 1064,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -276
         },
-        "55:10": {
+        "56:10": {
           "id:3": 1065,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -276
         },
-        "56:10": {
+        "57:10": {
           "id:3": 1080,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": -276
         },
-        "57:10": {
+        "58:10": {
           "id:3": 1081,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -276
         },
-        "58:10": {
+        "59:10": {
           "id:3": 1082,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -276
         },
-        "59:10": {
+        "60:10": {
           "id:3": 1083,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -276
         },
-        "60:10": {
+        "61:10": {
           "id:3": 1087,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -276
         },
-        "61:10": {
+        "62:10": {
           "id:3": 1088,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -276
         },
-        "62:10": {
+        "63:10": {
           "id:3": 1097,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": -276
         },
-        "63:10": {
+        "64:10": {
           "id:3": 1098,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -276
         },
-        "64:10": {
+        "65:10": {
           "id:3": 1106,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 240,
           "y:3": -276
         },
-        "65:10": {
+        "66:10": {
           "id:3": 1107,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 276,
           "y:3": -276
         },
-        "66:10": {
+        "67:10": {
           "id:3": 1115,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -312
         },
-        "67:10": {
+        "68:10": {
           "id:3": 1470,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 276,
           "y:3": -96
         },
-        "68:10": {
+        "69:10": {
           "id:3": 1508,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 312,
           "y:3": -96
         },
-        "69:10": {
+        "70:10": {
           "id:3": 1509,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 348,
           "y:3": -96
         },
-        "70:10": {
+        "71:10": {
           "id:3": 1510,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 384,
           "y:3": -96
         },
-        "71:10": {
+        "72:10": {
           "id:3": 1528,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 348,
           "y:3": -132
         },
-        "72:10": {
+        "73:10": {
           "id:3": 1529,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -118626,6 +118763,20 @@
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -108
+        },
+        "22:10": {
+          "id:3": 1530,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 732,
+          "y:3": -612
+        },
+        "23:10": {
+          "id:3": 1531,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 696,
+          "y:3": -612
         }
       }
     },
@@ -118649,34 +118800,41 @@
       },
       "quests:9": {
         "0:10": {
+          "id:3": 35,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -24
+        },
+        "1:10": {
           "id:3": 144,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
-          "y:3": -48
+          "y:3": -60
         },
-        "1:10": {
+        "2:10": {
           "id:3": 147,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
-          "y:3": 0
+          "y:3": 12
         },
-        "2:10": {
+        "3:10": {
           "id:3": 879,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": -24
         },
-        "3:10": {
+        "4:10": {
           "id:3": 883,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": -24
         },
-        "4:10": {
+        "5:10": {
           "id:3": 1340,
           "sizeX:3": 24,
           "sizeY:3": 24,

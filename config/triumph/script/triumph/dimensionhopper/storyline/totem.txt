@@ -1,0 +1,21 @@
+setIcon(<bedrockcraft:black_totem>)
+
+setTitle("Foundational")
+
+setDescription("Acquire access to The Foundation")
+
+addParent("triumph:dimensionhopper/storyline/infinity")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(825,1)
+
+criteria = addCriteria("hasBlackTotem", "minecraft:inventory_changed")
+
+criteria.addItem(<bedrockcraft:black_totem>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/infinity")

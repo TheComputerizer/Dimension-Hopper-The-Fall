@@ -614,6 +614,13 @@ lightningRPS.start()
 	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
 	.buildAndRegister();
+	
+lightningRPS.start()
+	.duration(300)
+	.inputLE(20000)
+	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
+	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
 
 lightningRPT.start()
 	.duration(200)
@@ -914,6 +921,13 @@ lightningRPT.start()
 	.inputLE(30000)
 	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
+	
+lightningRPT.start()
+	.duration(200)
+	.inputLE(30000)
+	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
+	.outputItems(<draconicevolution:grinder>)
 	.buildAndRegister();
 
 lightningRPO.start()
@@ -1223,6 +1237,13 @@ lightningRPO.start()
 	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
 	.buildAndRegister();
+	
+lightningRPO.start()
+	.duration(50)
+	.inputLE(50000)
+	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
+	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
 
 lightningRPI.start()
 	.duration(5)
@@ -1523,6 +1544,13 @@ lightningRPI.start()
 	.inputLE(250000)
 	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
+	
+lightningRPI.start()
+	.duration(5)
+	.inputLE(250000)
+	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
+	.outputItems(<draconicevolution:grinder>)
 	.buildAndRegister();
 
 var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_1");

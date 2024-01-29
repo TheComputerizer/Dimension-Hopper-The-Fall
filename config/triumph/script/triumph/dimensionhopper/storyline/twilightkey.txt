@@ -1,0 +1,21 @@
+setIcon(<contenttweaker:twilight_key>)
+
+setTitle("Twilight Extraction")
+
+setDescription("Acquire a Twilight Dimensional Key")
+
+addParent("triumph:dimensionhopper/storyline/prologue")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(66,1)
+
+criteria = addCriteria("hasTwilightKey", "minecraft:inventory_changed")
+
+criteria.addItem(<contenttweaker:twilight_key>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/prologue")

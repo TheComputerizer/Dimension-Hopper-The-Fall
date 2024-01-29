@@ -4,17 +4,17 @@ setTitle("Chapter 2")
 
 setDescription("Winding Mazes...")
 
+addParent("triumph:dimensionhopper/storyline/sponge")
+
 setShowToast(false)
 
 setAnnounceToChat(true)
 
 setFrameType("GOAL")
 
-addParent("triumph:dimensionhopper/storyline/chapter1")
-
 drawDirectLines(true)
 
-setPos(99,1)
+setPos(165,1)
 
 criteria = addCriteria("entered_labyrinth", "minecraft:changed_dimension")
 
@@ -22,3 +22,5 @@ criteria.setDimensionDestination("labyrinth")
 
 addRewardFunction("triumph:labyrinthStage")
 addRewardFunction("triumph:announceChapterTwo")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter2")

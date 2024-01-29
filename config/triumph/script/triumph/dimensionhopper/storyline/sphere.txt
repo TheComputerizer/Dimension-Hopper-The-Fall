@@ -1,0 +1,21 @@
+setIcon(<thebetweenlands:lore_scrap:9>)
+
+setTitle("Stupid Sphere Thing")
+
+setDescription("Kill the Primordial Malevolence")
+
+addParent("triumph:dimensionhopper/storyline/mummy")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(363,1)
+
+criteria = addCriteria("killedSphere", "minecraft:player_killed_entity")
+
+criteria.setEntityType("thebetweenlands:fortress_boss")
+
+hiddenUnless("triumph:dimensionhopper/storyline/mummy")

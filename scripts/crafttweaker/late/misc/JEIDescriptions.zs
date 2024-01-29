@@ -32,7 +32,7 @@ JEI.addDescription(<enderio:item_soul_vial:1>,
     "Most entities can be captured, but only the ones directly used in non generic recipes are shown");
 
 //forestry-----------------------------------------------------------------------------------------
-replaceDescriptions([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
+JEI.addDescription([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
     "Extra inventory that automatically picks up specialized items.",
     "Currently, the items that can be picked up are as follows:",
     CTPassthrough.getAdventuringBackpackItems()]);
@@ -46,6 +46,10 @@ handleEnchantedBooks();
 JEI.addDescription(<minecraft:piston>, "If you are in the Twilight Forest, pistons can not yet be crafted.",
     "Pistons can be found near the top of Ur-Ghast towers and rarely in the basements of druid houses.",
     "Only the trapped wither skeleton skull varient of the basement can have a piston");
+
+//xlfoodmod----------------------------------------------------------------------------------------
+JEI.addDescription(<xlfoodmod:cheese>, "§kFel§r blazes can be summoned with a Fel P§kumpkin§r on top of §kiron§r bars.",
+    "Wait this is the description for chee-");
 //-------------------------------------------------------------------------------------------------
 
 function handleMetas(item as IItemDefinition, min as int, max as int, descriptions as string[]) {

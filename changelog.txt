@@ -1,18 +1,28 @@
-1.5.0 [Skills, CLEANUP, & QOL]
+Released V1.5.0 [BASICALLY EVERYTHING]
+
+*I thought this was just a skill update?*
 
 Added Mods
 - Aqua Acrobatics
 - Extended Crafting: Nomifactory Edition
 - Greenery
 - Fluidlogged API
-- Inventory Bogo Sorter (CLIENT)
-- Modular UI (CLIENT)
+- Inventory Bogo Sorter
+- Modular UI
 - ZenRecipeReload
 
 Removed Mods
+- Armor Curve
+- Broken Wings
+- Clumps
 - Extended Crafting
+- Eyes in the Darkness
 - Ido
-- Inventory Tweaks
+- Inventory tweaks
+- Nothirium
+- Particle Culling
+- RenderLib
+- WorldGen Block Replacer
 
 Updated Mods
 - AE2 Unofficial Extended Life
@@ -21,13 +31,16 @@ Updated Mods
 - Aroma1997s Dimensional World
 - CensoredASM
 - CraftTweaker
-- Dimension Hopper Tweaks (NEEDS TO BE PUSHED TO CF)
+- Dimension Hopper Tweaks
 - EnchantingPlus
 - Enchantment Descriptions
 - Had Enough Items
 - HammerLib
 - Hunting Dimension
 - Item Stages
+- JAOPCA
+- JourneyMap
+- JourneyMapStages Continuation
 - Just Enough Resources
 - LootTableTweaker
 - Mekanism Community Edition
@@ -40,13 +53,19 @@ Updated Mods
 - PackagedAvaritia
 - PackagedExCrafting
 - Red Core
+- Roughly Enough IDs
 - SledgeHammer
 - Specified Spawning
+- The Aurorian
+- Universal Tweaks
 - VintageFix
 - Zen Utils
 
 General Changes
-- Health bars for entities will now only be shown when looking at the entity to decrease the frequency of in game GUI text darkening
+- Decreased the frequency and severity of the memory leak(s) especially when travelling between dimensions often
+- Decreased the stealeaf repair factor by 2x, removed the steeleaf block recipe, and made any already existing blocks repair at the same rate as normal steeleaf
+- Changed the x/z range of the initial Twilight Forest telportation to (-20000,20000) instead of (0,100000)
+- Health bars for entities will now only be shown when looking at the entity to decrease visual clutter
 - Fixed in game GUI text getting darker when a health bar is visible and TOP info is not
 - Disabled copper, osmium, salt, and tin ore generation from Mekanism Community Edition
 - Fixed grass not spreading
@@ -70,7 +89,7 @@ General Changes
 - Players will now only drop their head when killed by a charged creeper or another player
 - Removed a bunch of unused silent gems things
 - Chaos nodes and glow roses will now only generate in specific dimensions
-- Increased the drop change for silent gems weapons to drop for mobs that spawn with them
+- Increased the drop chance for silent gems weapons to drop for mobs that spawn with them
 - Decreased the chance for skeletons to spawn with swords instead of bows
 - Fixed some issues with blight fire rendering
 - Fixed various issues with blight fire particles and replaced the crazy mob particles with them
@@ -85,11 +104,10 @@ General Changes
 - Unstaged most of AoA to account for all of the infusion recipes being broken
 - Fixed the loading bar not reaching the edge of the screen at 100%
 - Fixed some white pixels around the outside of the skill token texture
-- Replaced irradiated holystone, irradiated grass, and irradiated dust generation in the aether with holystone, enchanted grass, and thera dirt respectively
 - Lowered the spawn cap of crazy mobs to 30 (from 100) in the overworld and 100 (from 300) in the deep dark
 - Decreased the chance for a bloodmoon to happen to 33% every time there is a full moon (from 50%)
 - Bloodmoons can no longer happen 2 full moons in a row
-- Fixed some of the info quests and added a new one for the new prestige factors
+- Fixed some of the info quests and added 2 new ones for the new prestige factors & skill credit
 - Difficuly now scales faster the further you are in progression with additional small multiplier on the shopper and emc gamestages
 - Added a quest for electrum
 - Added quests for draconic reactors and fusion reactors
@@ -98,17 +116,18 @@ General Changes
 - Fixed the alchemy table recipe
 - Added more slots to the Multiblock Miniaturization in JEI so the recipes with more than 6 input types can display correctly
 - Fixed the rocket recipes not using the rocket multiblock controllers
-- Fixed the trophy and quest entity renders that Mo'Bends changes vibrating instead of being properly animated
+- Fixed the trophy, quest, and armor station entity renders that Mo'Bends changes vibrating instead of being properly animated
+- Fixed Tinker's and infinity armor not properly following MoBends animations
 - Added recipes for all the IF upgrade cards and 2 quests regarding the range addons
 - Added recipes for more IF machines
-- Replaced the infinity armor recipes with ones that actually made use of extraordinary armor cores
+- Replaced the infinity armor recipes with ones that actually make use of extraordinary armor cores
 - Made the crystal matrix ingot and diamond lattice recipes more fun
 - Tinker's, infinity, draconic, wyvern, and space suit armor sets can no longer have qualities
 - Fixed infernal mobs with the choke trait being able to increase your air past the max value when you hit them fast enough
-- Fixed healing for tamed wolves (and any mob extending wolves) getting capped at 20 as well as the health getting forcefully set to 20 upon getting tamed
+- Fixed healing for tamed wolves (and any mob extending wolves) getting capped at 20 as well as the health getting forcefully set to 20 upon any entity getting tamed
 - Fixed The Factory Mk 2 having The Factory Mk 3 recipes and The Factory Mk 3 not having any
 - Fixed and/or added missing/confusing quest descriptions in various places
-- Fixed some loot table removals like blaze poweder not getting applied correctly
+- Fixed some loot table removals like blaze powder not getting applied correctly
 - Removed all thermal foundation materials from loot tables
 - Made AoA remember whether the skills GUI has been opened across restarts
 - Ancient stargates can no longer give stargate addressers for the wrong dimension
@@ -118,7 +137,90 @@ General Changes
 - Made all of the stargate ring blocks unbreakable
 - Plate recipes in the basic artisan table are now shapeless
 - Cleaned up, improved upon, and/or condensed of most of the script files
-- Cleaned up a bunch of JEI spam like with facades so only 1 recipe is shown as a reference
+- Cleaned up a bunch of redundant JEI entries for facades, tinkers stuff, buckets, tanks, soul vials, hunting dimension frames, biome changers, and a bunch of other stuff.
+- Cleaned up some more errors in the log
+- Crafting a powered spawner from a broken spawner at a mage workshop will now fail while still consuming durability and blood when the player does not have at least 16 xp levels
+- Fixed the enchantment system being mostly mapped to the wrong enchantment IDs
+- Standardized some enchantment recipe values and applications
+- Enchantment system recipes are now oredicted
+- Cavenic mobs, crazy mobs, and cavemen will now always be infernal
+- Fixed some spawning issues that prevented ghast queens, little bams, and demon soldiers from spawning and allowed for entities like concussion creepers to spawn in places where they were not supposed to
+- Removed quantum quarries
+- Mobs will no longer be infernal in a few important dimensions
+- Replaced the beta image on the main screen of the quest book
+- All compacting recipes will now ignore metadata and nbt data when appplicable (fixes certain recipes needing blocks rotated in certain ways)
+- The black totem will now automatically activate when you are below y 0 in caligro
+- Increased the login timeout
+- Blacklisted the chapter advancements from being synced via togetherforever to prevent potential softlocks and cheesing
+- Added recipes for Binnie's Botany ceramic blocks
+- Added JEI information pages for Binnie's Botany colored pigments and ceramic tiles to clarify how to get them
+- Added a JEI information page for the forestry adventuring backpack to clarify what it can carry
+- Added a JEI information page to pistons explaining how they can be obtained in the prologue
+- Fixed some plates still having crafting recipes with the immersive engineering hammer
+- Gaia dimension portals will no longer place entities underground
+- Gaia dimension portals now have a built in delay and will teleport you back to the labyrinth instead of the overworld
+- Added the nether to the JER profile and removed some unobtainable/useless ores/drops
+- The peacock feather fan now uses durability and has an increased durability in the air but can gain more height with an active jump boost effect. The durability usages increase the more times it is used before landing
+- Staged and skill gated items can now be inserted into storage drawers
+- Twilight Forest bosses can no longer be infernal
+- Solidified XP now gets turned into XP orbs when used to prevent conflicts and provide synergy with the magic skill
+- T3 & T4 MA seed recipes now use the infusion table rather than the carpenter
+- The caligro teleporter recipe now requires empowered essence instead of dark matter essence
+- Fixed dimensional shard ore generating in the mining dimension
+- Cleaned up the rest of the AoA mobs spawning before they were supposed to
+- Fixed the Summoner and Alchemist bosses resetting back to a hardcoded 500 health instead of max health when no players are around
+- Botania crafting patterns are now craftable
+- Shockwave swords now ignore durability
+- Removed radiation from irridated aether blocks
+- Moved most block replacements to the tweaks mod for slight chunk generation speed improvements
+- Fixed particles always being black
+- Disabled dynamic darkness in the end and a few other dimensions it doesn't make sense in
+- Fixed visibility issues when logging into certain dimensions
+- Removed engineering room types from abandoned bases in the asteroids dimension
+- All generated chests now have a 2% chance of being replaced with a small storage crate
+- Disbled the ore generation effect from nature's aura
+- Added backup advancement command rewards to the twilight boss quests that were missing them in case of detection issues
+- Removed the fiery pickaxe
+- Removed the Auto-Smelt enchantment
+- Fixed an issue with the avaritia shader that caused infinity armor and tools to be red when the world time was greater than 65536
+- Removed the XP rewards from the Points of Interest quests so there is more room to read the descriptions
+- The shield quest now gives skill credit for 50 defense SP as a reward instead of XP levels
+- Removed the oily comb from the Oil Core Mk 1 recipe
+- Added Ventium Ore to the mining dimension
+- Added Agate Ore to the dark forest
+- Added Zircon Ore to the end
+- Fixed some required quests in Chapter 1 being skippable
+- Improved the format and/or visibity of some questlines
+- Unbreakable graphite electrodes can now be made in an Arc Furnace
+- The sulfur for crafting luminessence can now be oredicted
+- When an infernal mobs drops an enchanted item now the enchantment will always be shimmer 1
+- Fixed undersand not having a Lightning Infuser Mk 4 recipe
+- Removed the tiny progressions bone block from the blockBone oredict
+- Fixed factorized sand outputting sandstone instead of compressed sand
+- Fixed extended crafting recipes sometimes not detecting pressurized tanks
+- Fixed the Tinker I/O Base Upgrade recipe
+- Removed the Space Emergency Kit
+- Fixed some recipes that required furnaces such as the Burner Chaos Pylon, Vibration Chamber, Fluid Vibration Chamber, Oven, Machine Reader, and Mob Grinder
+- Fixed the inconsistent Zinc oredict
+- Fixed the schematic duper recipes in the designer workshop not actually duplicating the rocket schematics
+- Fixed the fel blaze loot table
+- Removed the XL Food Mod cheese recipe since there are more interesting ways to get it now
+- Fixed a crash when right clicking a void miner controller
+- Increased the packet size limit by 8x which should make it much more difficult for calculators from Just Enough Calculation to overload their NBT data
+- Redid the damage reduction formula for armor to account for the new defense skill passive benefit. The new caps are 200 armor and 50 toughness
+- Fixed fake deaths sometimes occuring when max health gets changed
+- Fixed the filter coal block recipe
+- Fixed the Final Singularity recipe 
+- Added bosses quests for the chaos guardian, erebus bosses, and ghast queen
+- Improved the rendering for the Aspectrus Fruit Pestle and Mortar recipe preview in HEI
+- Fixed multiblock controllers crashing the game when used in a Crafting Calculator
+- Added a quest for the Limbonic Generator
+- The crafting grid from the Crafting Grid keybind from translocators can now inherit the stage of the player who placed it
+- Fixed backpacks not being able to craft staged items that the player wearing them could
+- Added a recipe for the orechid which can now output any type of stone including overgrown stone
+- The orechid ignem now has a 50% chance of placing down Overgrown Netherrack instead of Netherrack
+- Nether portals are now made with any type and mix of compressed obsidian or refined obsidian instead of normal obsidian
+- Fixed the current lunar event not getting synced to the client after changing dimensions
 
 Music Changes
 - Fixed a music related memory leak that was especially prevelant while fighting the ender dragon and chaos guardian
@@ -127,7 +229,7 @@ Music Changes
 - In the case of multiple songs being able to play under certain conditions, a song will no longer be able to repeat until all songs have been played or the conditions change
 - Fixed some volume issues
 - Biomes that can't be rained in now have a different song set than normal when its raining
-- Replaced the chaos dragon song with a more fitting song
+- Replaced the chaos dragon song with a more fitting song	
 - Added a new song for harvest moons
 - Added a new nighttime song
 - Added a new raining song
@@ -135,7 +237,7 @@ Music Changes
 - Added a new cavenia song
 - Added a new song for both the Hunting Dimension and AoA dimensions
 - Added 4 songs (1 new song) to the deep dark
-- Added a new creative mode song'
+- Added a new creative mode song
 - Added a new spectator mode song
 
 Skill Changes
@@ -146,36 +248,43 @@ Skill Changes
 - Disabled skill requirement checks for fake players
 - Fixed some broken trait requirements
 - Lowered the shield requirement to defense 3
+- Lowered the ender pearl requirement to magic 8
 - Fixed hoes giving farming SP regardless of whether they were used correctly
+- Successfully planting a crop now gives 1 farming SP
 - Lowered the SP level factors for defense, agility, farming, mining, and building
-- Added prestige based SP factors, where you get more SP for doing actions (1x, 2x, 4x, 6x, etc) and less SP from XP conversions (1x, 0.75x, 0.333x, 0.222x, etc) as your prestige level increases. These are applied after passive benefits and specific skill factors
+- Added prestige based SP factors, where you get more SP for doing actions (1x, 2x, 4x, 6x, etc) and less SP from XP conversions (1x, 0.667x, 0.333x, 0.222x, etc) as your prestige level increases. These are applied after passive benefits and specific skill factors
 - Gaining action based SP can no longer break prestige level caps
+- Any action based SP gained (other than skill credit) that goes over the current level cap for that skill will now be recycled into small amounts of XP
+- Research SP can now be gained from crafting (and using) Skill Credit items
+- Prestige tokens are now NBT data based instead of being registered as 31 different items
 - Level 1 prestige tokens now require copper blocks instead of gold blocks
 - Prestige tokens now indicate the maximum level they allow for rather than the minimum
 - The maximum skill level for the current prestige level is now indicated on the skill token
+- Added a different level up sound when the current level cap for a skill is reached
 - Fixed the skill token using the italics text formatting code for bold formatting
 - Decreased agility SP gained from jumping
 - Defense SP can no longer be gained from taking damage
 - Definitely doubled and potentially quintupled the defense SP gained from killing mobs that are wearing armor
 - Doubled magic SP gained from picking up XP orbs
 - Doubled building SP gained from placing blocks
-- Added a passive benefit for the void skill that multiplies the duration of the applied trait effects by 1+(32/current level) and adds an additional amplifier to the effect for every 128 skill levels
-- Changed the Lucky Aura magic trait to increase looting levels by 1 for every 16 gathering levels instead of giving a flat 2 looting levels
+- Added a passive benefit for the void skill that multiplies the duration of the applied trait effects by 1+(32/current level) and adds an additional amplifier to the effect every 128 skill levels
+- Changed the Lucky Aura magic trait to increase looting levels by 1 every 16 gathering levels instead of giving a flat 2 looting levels
 - Improved the Super Pets attack trait so it works for more tameable entities and the attack damage scales with the attack passive benefit
 - Improved the Expert Miner mining trait
-- Added a passive benefit for the Resistive Builder building trait that multiplies the duration of the applied trait effects by 1+(32/current level) and adds an additional amplifier to the effect for every 256 skill levels
+- Added a passive benefit for the Resistive Builder building trait that multiplies the duration of the applied trait effects by 1+(32/current level) and adds an additional amplifier to the effect every 256 skill levels
 - Added a No Cooldowns attack trait that removes the minimum attack and knockback thresholds when the attack bar is recharging
 - Added a Living Battery magic trait that can refill held psi cells and mana tablets with XP
-- Added a Nature's Aura magic trait that can balance the aura (+ and speed up natures aura devices) in current and adjacent chunks
+- Added a Nature's Aura magic trait that can balance the aura and speed up natures aura devices in current and adjacent chunks
 - Replaced and improved upon the Hungry Farmer farming trait
 - The Mk2+ Lightning Infusers and Limbonic Generator multiblocks are now gated behind research traits
-- Added a Token Gamble research trait to increase SP gained from actions at the cost of XP to SP conversion rates
-- Added a Potion Master farming trait that enables automatic potion drinking
-- Reworked the passive benefit for defense so it makes armor 10% more effective and armor toughness 5% more effective every 32 levels
+- Added a Token Gamble research trait to increase SP gained from actions at the cost of XP to SP conversion rates. This is applied after prestige based SP factors
+- Added a Potion Master farming trait that enables automatic potion and betweenlands elixir drinking
+- Reworked the passive benefit for defense so it makes both armor and armor toughness 10% more effective every 32 levels
 - Added a passive benefit for agility that increases the minimum fall height before damage is taken by 1 block every 32 levels
 - The Green Thumb farming trait now ignores grass
-- Added a passive benefit for farming that decreases the chance for bonemeal where level 1024 is a 0% chance
+- Added a passive benefit for farming that decreases the chance for bonemeal to be used where level 1024 is a 0% chance
 - Added a Look At Me! attack trait that casues mobs who try to target a tamed entity to target you instead
+- The Lucky Fisherman gathering trait now decreases luck when a fishing rod of misadventure is used and adds an additional amplifier to the luck effect every 32 skill levels
 
 
 1.4.4 [PERFORMANCE & BALANCING]

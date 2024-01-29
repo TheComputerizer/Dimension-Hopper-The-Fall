@@ -25,6 +25,12 @@ static shapedBuilders as Holder[] = [
         <actuallyadditions:item_misc:8>, 
         <thermalfoundation:glass:3>]), //lens
 
+    //aeadditions
+    Util.simpleShaped(<aeadditions:vibrantchamberfluid>, "hat", [
+        <aeadditions:certustank>,
+        <moreplates:reinforced_iron_plate>,
+        <appliedenergistics2:vibration_chamber>]), //fluid vibration chamber
+
     //aether
     Util.simpleShaped(<aether:aether_teleporter>, "plus", [
         <minecraft:lava_bucket>, 
@@ -52,11 +58,22 @@ static shapedBuilders as Holder[] = [
         <silentgems:gemblocksuper:14>,
         <thermalfoundation:storage:7>,
         null]), //multi mining tool
+    Util.simpleShaped(<appliedenergistics2:vibration_chamber>, "hat", [
+        <tconstruct:seared_furnace_controller>,
+        <moreplates:reinforced_iron_plate>,
+        <appliedenergistics2:energy_acceptor>]), //vibration chamber
 
     //artisanworktables
     Util.simpleShaped(<artisanworktables:worktable:5>, "ring", [
         <ore:workbench>, 
         <ore:logWood>]), //basic worktable
+
+    //cookingforblockheads
+    Util.simpleShaped(<cookingforblockheads:oven>, "portalbottom", [
+        <immersiveengineering:metal_device1>,
+        <tconstruct:clear_stained_glass:15>,
+        <thermalfoundation:material:32>
+    ]),
 
     //hunting dimension
     Util.simpleShaped(<huntingdim:frame>, "plus", [<ore:arrow>, <ore:logWood>, <thermalfoundation:material:128>]).setMarkIndex(0)
@@ -64,6 +81,28 @@ static shapedBuilders as Holder[] = [
             function(output, map, info) {
                 return output.withTag({BaseBlock: {id: map.mark.definition.id as string, Count: 1 as byte, Damage: map.mark.metadata as short}});
             } as IRecipeFunction), //hunting dimension portal frame
+
+    //integrateddynamics
+	Util.simpleShaped(<integrateddynamics:part_machine_reader_item>, "part", [
+        <enderio:block_simple_furnace>,
+        <integrateddynamics:variable_transformer:1>,
+        <moreplates:pulsating_iron_gear>,
+        <avaritia:compressed_crafting_table>
+    ]), //machine reader
+
+    //plustic
+    Util.simpleShaped(<plustic:centrifuge>, "plus", [
+        <openblocks:tank>,
+        <calculator:flawlessglass>,
+        <enderio:item_alloy_ball:9>
+    ]), //centrifuge tank
+
+    Util.simpleShaped(<plustic:centrifuge:1>, "tank", [
+        <calculator:stoneseparator>,
+        <enderio:item_alloy_ball:3>,
+        <calculator:flawlessglass>,
+        <enderio:item_alloy_ball:9>
+    ]), //centrifuge core
 
     //sgcraft
     Util.simpleShaped(<sgcraft:stargatecontroller>, "table", [

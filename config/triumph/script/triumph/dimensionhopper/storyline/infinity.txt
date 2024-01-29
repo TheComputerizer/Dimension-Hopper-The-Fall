@@ -1,0 +1,23 @@
+setIcon(<avaritia:resource:6>)
+
+setTitle("Taste of Infinity")
+
+setDescription("Acquire an Infinity Ingot")
+
+addParent("triumph:dimensionhopper/storyline/stargate")
+
+setShowToast(true)
+
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(true)
+
+setPos(792,1)
+
+criteria = addCriteria("hasInfinity", "minecraft:inventory_changed")
+
+criteria.addItem(<avaritia:resource:6>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/stargate")

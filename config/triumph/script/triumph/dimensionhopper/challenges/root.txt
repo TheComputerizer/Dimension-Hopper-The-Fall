@@ -1,0 +1,18 @@
+
+setIcon(<calculator:obsidiankey>)
+
+setTitle("Challenge Hopper")
+
+setDescription("A new challenger approaches...")
+
+setBackground("custombackground:textures/endPortalBlock.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setPos(-4,1)
+
+addCriteria("location", "minecraft:location")
+
+visibleAlways()

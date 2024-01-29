@@ -1,8 +1,10 @@
-setIcon(<minecraft:grass>)
+setIcon(<extendedcrafting:singularity_ultimate>)
 
 setTitle("Chapter 9")
 
 setDescription("More Space! Great...")
+
+addParent("triumph:dimensionhopper/storyline/insane")
 
 setShowToast(false)
 
@@ -10,11 +12,9 @@ setAnnounceToChat(true)
 
 setFrameType("GOAL")
 
-addParent("triumph:dimensionhopper/storyline/chapter8")
-
 drawDirectLines(true)
 
-setPos(330,1)
+setPos(726,1)
 
 criteria = addCriteria("entered_pluto", "minecraft:changed_dimension")
 
@@ -22,3 +22,5 @@ criteria.setDimensionDestination("planet.Pluto")
 
 addRewardFunction("triumph:finalfrontierStage")
 addRewardFunction("triumph:announceChapterNine")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter9")

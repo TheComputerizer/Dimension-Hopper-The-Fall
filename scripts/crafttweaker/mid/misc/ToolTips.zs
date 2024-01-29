@@ -44,3 +44,5 @@
 <labyrinth:daedalus>.addTooltip("\u00A7o\u00A74Chapter 2 is my favorite chapter");
 <mekanism:basicblock:14>.addTooltip("\u00A7o\u00A74Why in the world is this so difficult to craft?!");
 <contenttweaker:bloq>.addTooltip("\u00A7o\u00A74You can place this down, I guess");
+<botania:rune:10>.addTooltip("\u00A7o\u00A74Hunry for cheese... Where's the cheese??");
+<xlfoodmod:cheese>.addTooltip("\u00A7o\u00A74A fel blaze's favorite food");

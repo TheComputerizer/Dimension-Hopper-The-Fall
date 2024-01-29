@@ -46,6 +46,7 @@ static itemStages as IIngredient[][string] = {
 		<extraplanets:tier1_radiation_layer>
 	],
 	"advent": [
+		<aoa3:extraction_device>,
 		<moreplanets:space_warper_core>
 	],
 	"finalfrontier": [

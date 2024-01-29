@@ -1,0 +1,16 @@
+
+setIcon(<scalinghealth:difficultychanger:1>)
+
+setTitle("Masochist")
+
+setDescription("You might regret that...")
+
+setBackground("custombackground:textures/endPortalBlock.png")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setPos(-4,1)
+
+criteria = addCriteria("impossible", "minecraft:impossible")

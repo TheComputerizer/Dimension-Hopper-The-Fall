@@ -1,0 +1,21 @@
+setIcon(<extraplanets:tier4_items:3>)
+
+setTitle("Ascended")
+
+setDescription("Acquire a Tier 4 Heavy-Duty Plate")
+
+addParent("triumph:dimensionhopper/storyline/realmstone")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(561,1)
+
+criteria = addCriteria("hasPlate4", "minecraft:inventory_changed")
+
+criteria.addItem(<extraplanets:tier4_items:3>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter6")

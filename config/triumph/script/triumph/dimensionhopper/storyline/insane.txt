@@ -1,0 +1,21 @@
+setIcon(<mysticalagradditions:insanium:2>)
+
+setTitle("Insane")
+
+setDescription("Acquire an Insanium Ingot")
+
+addParent("triumph:dimensionhopper/storyline/chapter8")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+drawDirectLines(true)
+
+setPos(693,1)
+
+criteria = addCriteria("isInsane", "minecraft:inventory_changed")
+
+criteria.addItem(<mysticalagradditions:insanium:2>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter8")
