@@ -1,0 +1,22 @@
+setIcon(<galacticraftcore:basic_item:14>)
+
+setTitle("Eris Space Station")
+
+setDescription("Create and visit a space station above eris")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(231,-32)
+
+criteria = addCriteria("entered_eris_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Eris Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter9")

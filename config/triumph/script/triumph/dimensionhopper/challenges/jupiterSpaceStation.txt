@@ -1,0 +1,22 @@
+setIcon(<extraplanets:wafer:3>)
+
+setTitle("Jupiter Space Station")
+
+setDescription("Create and visit a space station above jupiter")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(165,1)
+
+criteria = addCriteria("entered_jupiter_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Jupiter Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter7")

@@ -1,0 +1,22 @@
+setIcon(<galacticraftcore:basic_item:14>)
+
+setTitle("Venus Space Station")
+
+setDescription("Create and visit a space station above venus")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(99,67)
+
+criteria = addCriteria("entered_venus_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Venus Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter5")

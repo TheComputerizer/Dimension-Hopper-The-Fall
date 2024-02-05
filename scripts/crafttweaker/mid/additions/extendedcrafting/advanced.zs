@@ -497,9 +497,9 @@ TableCrafting.addShaped(2, <thermalexpansion:machine:9>, [
 //carpenter
 TableCrafting.addShaped(2, <forestry:carpenter>, [
 	[<actuallyadditions:block_misc:4>, <packagedauto:package_component>, <forestry:thermionic_tubes:12>, <packagedauto:package_component>, <actuallyadditions:block_misc:4>], 
-	[<packagedauto:package_component>, <ore:circuitAdvanced>, <forestry:sturdy_machine>, <ore:circuitAdvanced>, <packagedauto:package_component>], 
+	[<packagedauto:package_component>, <contenttweaker:large_circuit>, <forestry:sturdy_machine>, <contenttweaker:large_circuit>, <packagedauto:package_component>], 
 	[<forestry:thermionic_tubes:12>, <forestry:sturdy_machine>, <rftools:machine_frame>, <forestry:sturdy_machine>, <forestry:thermionic_tubes:12>], 
-	[<packagedauto:package_component>, <ore:circuitAdvanced>, <forestry:sturdy_machine>, <ore:circuitAdvanced>, <packagedauto:package_component>], 
+	[<packagedauto:package_component>, <contenttweaker:large_circuit>, <forestry:sturdy_machine>, <contenttweaker:large_circuit>, <packagedauto:package_component>], 
 	[<actuallyadditions:block_misc:4>, <packagedauto:package_component>, <forestry:thermionic_tubes:12>, <packagedauto:package_component>, <actuallyadditions:block_misc:4>]
 ]);
 //squeezer

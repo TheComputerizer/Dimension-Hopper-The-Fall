@@ -40,7 +40,7 @@ S:customgameintroskiptext = 'A Modpack by The_Computerizer';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'Dimension Hopper: The Fall V1.5.0_DEV';
+S:customwindowtitle = 'Dimension Hopper: The Fall V1.5.0';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'true';
 

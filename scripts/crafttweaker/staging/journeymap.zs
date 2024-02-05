@@ -1,8 +1,8 @@
+#sideonly client
+
 import mods.jmapstages.JMapStages as JMap;
 
-function load() {
-	JMap.setWaypointStage("overworld");
-	JMap.setDeathpointStage("overworld");
-	JMap.setMinimapStage("overworld");
-	JMap.setFullscreenStage("overworld");
-}
+JMap.setWaypointStage("overworld");
+JMap.setDeathpointStage("overworld");
+JMap.setMinimapStage("overworld");
+JMap.setFullscreenStage("overworld");

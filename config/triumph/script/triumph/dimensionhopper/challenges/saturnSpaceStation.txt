@@ -1,0 +1,22 @@
+setIcon(<galacticraftcore:basic_item:14>)
+
+setTitle("Saturn Space Station")
+
+setDescription("Create and visit a space station above saturn")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(165,34)
+
+criteria = addCriteria("entered_saturn_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Saturn Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter7")

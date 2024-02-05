@@ -4,14 +4,34 @@ import scripts.crafttweaker.staging.Init as Stages;
 static itemStages as IIngredient[][string] = {
 	"overworld": [
 		<minecraft:brewing_stand>,
-		<minecraft:gold_ingot>
+		<minecraft:gold_ingot>,
+		<quark:glass_shards:*>,
+		<minecraft:glass>,
+		<minecraft:stained_glass>,
+		<xreliquary:mob_ingredient:7>,
+        <minecraft:blaze_rod>,
+        <minecraft:blaze_powder>
+	],
+	"bridgetwo": [
+		<minecraft:emerald>
 	],
 	"cavern": [
 		<avaritia:compressed_crafting_table>,
 		<avaritia:double_compressed_crafting_table>,
 		<zollerngalaxy:diamonddust>,
-		<minecraft:diamond>,
-		<minecraft:emerald>
+		<minecraft:diamond>
+	],
+	"bees": [
+		<forestry:bee_house>,
+		<forestry:apiary>,
+		<forestry:bee_queen_ge>,
+		<forestry:bee_princess_ge>,
+		<forestry:bee_drone_ge>,
+		<forestry:bee_combs:*>,
+		<forestry:scoop>,
+		<forestry:carpenter>,
+		<forestry:bee_combs_0:*>,
+		<forestry:bee_combs_1>
 	],
 	"swamp": [
 		<galacticraftplanets:item_basic_asteroids:7>,
@@ -43,7 +63,7 @@ static itemStages as IIngredient[][string] = {
 		<extraplanets:tier3_thermal_padding:2>,
 		<extraplanets:tier3_thermal_padding:3>,
 		<extraplanets:cloth>,
-		<extraplanets:tier1_radiation_layer>
+		<extraplanets:tier1_radiation_layer>,
 	],
 	"advent": [
 		<aoa3:extraction_device>,
@@ -63,7 +83,10 @@ static itemStages as IIngredient[][string] = {
 		<minecraft:anvil>,
 		<minecraft:anvil:1>,
 		<minecraft:anvil:2>,
+		<minecraft:diamond_helmet>,
 		<minecraft:diamond_chestplate>,
+		<minecraft:diamond_leggings>,
+		<minecraft:diamond_boots>,
 		<minecraft:enchanting_table>,
 		<minecraft:furnace>,
 		<twilightforest:uncrafting_table>,

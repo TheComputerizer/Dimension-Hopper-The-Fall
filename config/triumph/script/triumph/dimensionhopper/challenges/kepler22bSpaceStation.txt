@@ -1,0 +1,22 @@
+setIcon(<extraplanets:tier11_items:2>)
+
+setTitle("Kepler22b Space Station")
+
+setDescription("Create and visit a space station above kepler22b")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(231,34)
+
+criteria = addCriteria("entered_kepler22b_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Kepler22b Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter9")

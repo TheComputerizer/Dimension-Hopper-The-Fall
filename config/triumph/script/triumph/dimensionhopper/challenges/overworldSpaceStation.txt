@@ -1,0 +1,22 @@
+setIcon(<galacticraftcore:basic_item:14>)
+
+setTitle("Overworld Space Station")
+
+setDescription("Create and visit a space station above the overworld")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(99,1)
+
+criteria = addCriteria("entered_overworld_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter5")

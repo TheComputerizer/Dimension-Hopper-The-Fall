@@ -8,7 +8,7 @@ recipes.addShaped("powercube", <calculator:powercube>, [
 
 recipes.addShaped("algorithmseparator", <calculator:algorithmseparator>, [
 [<calculator:material:3>, <calculator:advancedpowercube>, <calculator:material:3>],
-[<calculator:stoneseparator>, <calculator:flawlessdiamond>, <calculator:stoneseparator>],
+[<calculator:stoneseparator>, <calculator:weakeneddiamond>, <calculator:stoneseparator>],
 [<calculator:material:3>, <calculator:advancedpowercube>, <calculator:material:3>]
 ]);
 

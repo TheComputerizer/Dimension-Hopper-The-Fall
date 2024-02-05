@@ -38,6 +38,28 @@ rules.add(Dropt.rule()
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));
 
+//stage overworld drops
+rules.add(Dropt.rule()
+    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["overworld"]))
+    .matchDrops([
+        <minecraft:glass>,
+        <minecraft:stained_glass>,
+        <xreliquary:mob_ingredient:7>,
+        <minecraft:blaze_rod>,
+        <minecraft:blaze_powder>
+    ])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop()));
+
+//stage overworld or masochist drops
+rules.add(Dropt.rule()
+    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ANY", ["hardcore", "overworld"]))
+    .matchDrops([
+        <quark:glass_shards:*>
+    ])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop()));
+
 //stage cavern drops
 rules.add(Dropt.rule()
     .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["cavern"]))
@@ -57,19 +79,6 @@ rules.add(Dropt.rule()
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));
 
-var adventDrops as IItemStack[]  = [] as IItemStack[];
-
-for item in scripts.crafttweaker.early.util.Globals.aoaAll {
-    adventDrops+=item.withEmptyTag();
-}
-
-//stage advent drops
-rules.add(Dropt.rule()
-    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["advent"]))
-    .matchDrops(adventDrops)
-    .replaceStrategy("REPLACE_ITEMS")
-    .addDrop(Dropt.drop()));
-
 //stage disabled drops
 rules.add(Dropt.rule()
     .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["disabled"]))
@@ -78,7 +87,11 @@ rules.add(Dropt.rule()
         <minecraft:furnace:*>,
         <minecraft:enchanting_table>,
         <lockyzextradimensionsmod:interdimensionalnugget>,
-        <twilightforest:magic_beans>
+        <twilightforest:magic_beans>,
+        <minecraft:diamond_helmet>,
+		<minecraft:diamond_chestplate>,
+		<minecraft:diamond_leggings>,
+		<minecraft:diamond_boots>
     ])
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));

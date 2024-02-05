@@ -17,7 +17,6 @@ static fishingrods as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*fi
 static shears as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*shears.*") as IItemStack[];
 static conduits as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*conduit.*") as IItemStack[];
 static joapcaBlocks as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*jaopca:block.*") as IItemStack[];
-static aoaAll as IItemStack[] = itemUtils.getItemsByRegexRegistryName(".*aoa3:.*") as IItemStack[];
 
 static enchant as IOreDictEntry[string] = {
     "axe": oreDict.get("enchantableAxes"),

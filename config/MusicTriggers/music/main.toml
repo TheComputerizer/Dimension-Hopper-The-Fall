@@ -97,6 +97,13 @@
 		detection_range = "200"
 		mob_targeting = false
 		resource_name = [ "BOSS" "Chaos Guardian" ]
+	[[triggers.mob]]
+		identifier = "finalboss"
+		priority = 1000000
+		detection_range = "200"
+		mob_targeting = false
+		resource_name = [ "BOSS" "dimension_hopper_final_boss" ]
+		persistence = 100
 	[[triggers.dimension]]
 		priority = 2000
 		resource_name = [ "-11325" ]
@@ -446,3 +453,9 @@
 	[[songs.bosscrazy]]
 		play_once = 1
 		triggers = [ "dimension-deepdark" ]
+	[songs.cosmicgarou]
+		[songs.cosmicgarou.loop]
+			to = "139000"
+			num_loops = "999999"
+			from = "292000"
+		triggers = [ "mob-finalboss" ]

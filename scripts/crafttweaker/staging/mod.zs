@@ -23,6 +23,10 @@ static modStages as IIngredient[][string][string] = {
 			<cavern:magnite_pickaxe>
 		]
 	},
+	"bees": {
+		"extrabees": [<minecraft:dirt>],
+		"gendustry": [<minecraft:dirt>]
+	},
 	"swamp": {
 		"galacticraftcore": [<minecraft:dirt>]
 	},
@@ -84,7 +88,7 @@ static modStages as IIngredient[][string][string] = {
 		"projectex": [<minecraft:dirt>]
 	},
 	"shopper": {
-		"lockyzextradimensionsmod": [<minecraft:dirt>]
+		"lockyzextradimensionsmod": [<lockyzextradimensionsmod:interdimensionalsword>]
 	},
 	"bedrockfinal": {
 		"bedrockcraft": [<minecraft:dirt>]

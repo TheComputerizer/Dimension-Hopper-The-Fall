@@ -1,0 +1,22 @@
+setIcon(<galacticraftcore:basic_item:14>)
+
+setTitle("Mercury Space Station")
+
+setDescription("Create and visit a space station above mars")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(99,-32)
+
+criteria = addCriteria("entered_mercury_space_station", "minecraft:changed_dimension")
+criteria.setDimensionDestination("Mercury Space Station")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter5")

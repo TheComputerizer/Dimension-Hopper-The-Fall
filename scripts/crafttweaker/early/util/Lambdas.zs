@@ -51,11 +51,6 @@ static stringRemovalCalls as IStringConsumer[int][string] = {
             OrechidIgnem.removeOre(oreDict.get(dict));
         }
     },
-    "jei": {
-        0: function(category as string) {
-            JEI.hideCategory(category);
-        }
-    },
     "vanilla": {
         0: function(mod as string) {
             recipes.removeByMod(mod);

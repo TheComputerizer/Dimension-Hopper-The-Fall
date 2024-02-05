@@ -11,6 +11,7 @@ static stageMap as Stage[string] = {
     "labyrinth": Stager.initStage("labyrinth"),
     "bridgetwo": Stager.initStage("bridgetwo"),
     "cavern": Stager.initStage("cavern"),
+    "bees": Stager.initStage("bees"),
     "bridgethree": Stager.initStage("bridgethree"),
     "swamp": Stager.initStage("swamp"),
     "wight": Stager.initStage("wight"),

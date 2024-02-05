@@ -279,7 +279,6 @@ static itemRemovals as IItemStack[] = [
 	<exchangers:eio_endergy_exchanger_core_tier2>,
 
 	//extendedcrafting
-	<extendedcrafting:compressor>,
 	<extendedcrafting:crafting_core>,
 	<extendedcrafting:interface>,
 	<extendedcrafting:storage:*>,

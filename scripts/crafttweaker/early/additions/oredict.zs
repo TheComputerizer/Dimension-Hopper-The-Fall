@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import scripts.crafttweaker.early.util.Globals as Global;
 
 //generic
+oreDict.beeCombBlock.addItems([<forestry:bee_combs_0:*>, <forestry:bee_combs_1>, <biomesoplenty:hive:3>]);
 oreDict.netherGrass.addItems([<biomesoplenty:grass:6>]);
 oreDict.oreCobalt.addItems([<zollerngalaxy:edencobaltore>, <zollerngalaxy:purgcobaltore>, <zollerngalaxy:kriffcobaltore>]);
 oreDict.overgrownStone.addItems([<biomesoplenty:grass:1>]);

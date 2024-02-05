@@ -7,7 +7,6 @@ import scripts.crafttweaker.staging.Init as Stages;
 
 staging.Dimension.load();
 staging.Items.load();
-staging.Journeymap.load();
 staging.Mob.load();
 staging.Mod.load();
 staging.Ore.load();

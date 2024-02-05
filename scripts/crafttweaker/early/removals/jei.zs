@@ -317,20 +317,7 @@ static itemHiders as IItemStack[] = [
     <tconstruct:clay_cast>
 ] as IItemStack[];
 
-//category removals
-static categories as string[] = [
-    "atum.kiln",
-    "Avatitia.Compressor",
-    "extendedcrafting:compressor",
-    "extraplanets.rocketT4","extraplanets.rocketT5","extraplanets.rocketT6","extraplanets.rocketT7","extraplanets.rocketT8","extraplanets.rocketT9","extraplanets.rocketT10","extraplanets.rocketT10Electric",
-    "ORE_WASHER","ORE_FERMENTER",
-    "jeresources.enchantment",
-    "lightningcraft.crusher_recipe_category","lightningcraft.infusion_recipe_category",
-    "tinker_io:fuel_input_machine","tinker_io:smart_output",
-] as string[];
-
 function run() {
-    Caller.callString("jei",categories);
     Caller.callArray("jei",arrayRemovals);
     Caller.call("jei",itemRemovals);
     Caller.call("jei",itemHiders,1);
