@@ -5,7 +5,6 @@ static itemStages as IIngredient[][string] = {
 	"overworld": [
 		<minecraft:brewing_stand>,
 		<minecraft:gold_ingot>,
-		<quark:glass_shards:*>,
 		<minecraft:glass>,
 		<minecraft:stained_glass>,
 		<xreliquary:mob_ingredient:7>,
@@ -94,7 +93,8 @@ static itemStages as IIngredient[][string] = {
 	],
 	"hardcore": [
 		<lockyzextradimensionsmod:interdimensionalsword>,
-		<twilightforest:knightmetal_pickaxe>
+		<twilightforest:knightmetal_pickaxe>,
+		<quark:glass_shards:*>
 	],
 	"oilone": [
 		<contenttweaker:oil_core_one>

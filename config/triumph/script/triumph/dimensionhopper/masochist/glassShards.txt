@@ -1,0 +1,22 @@
+setIcon(<quark:glass_shards>)
+
+setTitle("Glass Shards")
+
+setDescription("Half of a Glass Skip?")
+
+addParent("triumph:dimensionhopper/masochist/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(33,34)
+
+criteria = addCriteria("hasGlassShards", "minecraft:inventory_changed")
+criteria.addItem(<quark:glass_shards>)
+
+hiddenUnless("triumph:dimensionhopper/masochist/root")

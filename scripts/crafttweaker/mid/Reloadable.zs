@@ -12,7 +12,6 @@ mid.additions.artisans.Designer.run();
 mid.additions.artisans.Engineer.run();
 mid.additions.artisans.Mage.run();
 mid.additions.artisans.Mason.run();
-mid.additions.artisans.Tailor.run();
 mid.additions.avaritia.Extreme.run();
 mid.additions.botania.Orechid.run();
 mid.additions.extendedcrafting.Advanced.run();

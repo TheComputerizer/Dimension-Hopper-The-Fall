@@ -11,6 +11,6 @@ setShowToast(false)
 
 setAnnounceToChat(true)
 
-setPos(-4,1)
+setPos(0,1)
 
 criteria = addCriteria("impossible", "minecraft:impossible")

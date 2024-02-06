@@ -1,0 +1,22 @@
+setIcon(<lockyzextradimensionsmod:interdimensionalsword>)
+
+setTitle("Lucky")
+
+setDescription("Find a pretty strong sword")
+
+addParent("triumph:dimensionhopper/masochist/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(66,1)
+
+criteria = addCriteria("hasInterDimensionalSword", "minecraft:inventory_changed")
+criteria.addItem(<lockyzextradimensionsmod:interdimensionalsword>)
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter1")

@@ -1,0 +1,24 @@
+setIcon(<botany:ceramicpattern, meta:16387, nbt:{meta:271057172}>)
+
+setTitle("Obscure Decoration Meta")
+
+setDescription("Don't even try it you won't get this one")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(0,67)
+
+criteria = addCriteria("hasCeramicPattern", "minecraft:inventory_changed")
+criteria.addItem(<botany:ceramicpattern, meta:16387, nbt:{meta:271057172}>)
+
+addRewardFunction("triumph:ceramic")
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

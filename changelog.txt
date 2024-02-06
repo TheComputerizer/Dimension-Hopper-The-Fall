@@ -4,9 +4,10 @@ Released V1.5.0 [BASICALLY EVERYTHING]
 
 Added Mods
 - Aqua Acrobatics
+- EnderIO Zoo
 - Extended Crafting: Nomifactory Edition
-- Greenery
 - Fluidlogged API
+- Greenery
 - Inventory Bogo Sorter
 - Modular UI
 - ZenRecipeReload
@@ -14,11 +15,13 @@ Added Mods
 Removed Mods
 - Armor Curve
 - Broken Wings
+- CensoredASM
 - Clumps
+- EnderZoo
 - Extended Crafting
 - Eyes in the Darkness
 - Ido
-- Inventory tweaks
+- Inventory Tweaks
 - Nothirium
 - Particle Culling
 - RenderLib
@@ -29,7 +32,7 @@ Updated Mods
 - Alfheim Lighting Engine
 - ArmoryExpansion
 - Aroma1997s Dimensional World
-- CensoredASM
+- ConfigAnytime
 - CraftTweaker
 - Dimension Hopper Tweaks
 - EnchantingPlus
@@ -48,6 +51,8 @@ Updated Mods
 - Mekanism Community Edition: TOOLS
 - MixinBooter
 - Mob Stages
+- MorePlanets
+- Multiblocked
 - Music Triggers
 - PackagedAuto
 - PackagedAvaritia
@@ -56,6 +61,7 @@ Updated Mods
 - Roughly Enough IDs
 - SledgeHammer
 - Specified Spawning
+- SteveKunG's Lib
 - The Aurorian
 - Universal Tweaks
 - VintageFix
@@ -98,7 +104,7 @@ General Changes
 - Fixed some high tier ME storage component recipes being swapped or missing
 - Fixed the digital miner recipe
 - Fixed the finalfrontier stage being given from going to any dimension instead of just pluto
-- Fixed how mod staging and item staging is loaded to make blacklisting items easier in the future and fixed some blacklisting issue like the space warper core and tier 1 space suits
+- Fixed how mod staging and item staging is loaded to make blacklisting items easier in the future and fixed some blacklisting issue like the space warper core, tier 1 space suits, and interdimensional swords
 - Staged items now show up in JEI even when you don't have the stage yet
 - Staged items will no longer be dropped when held
 - Unstaged most of AoA to account for all of the infusion recipes being broken
@@ -138,6 +144,7 @@ General Changes
 - Plate recipes in the basic artisan table are now shapeless
 - Cleaned up, improved upon, and/or condensed of most of the script files
 - Cleaned up a bunch of redundant JEI entries for facades, tinkers stuff, buckets, tanks, soul vials, hunting dimension frames, biome changers, and a bunch of other stuff.
+- Removed the previously hidden JEI categories and a few other unused categories
 - Cleaned up some more errors in the log
 - Crafting a powered spawner from a broken spawner at a mage workshop will now fail while still consuming durability and blood when the player does not have at least 16 xp levels
 - Fixed the enchantment system being mostly mapped to the wrong enchantment IDs
@@ -150,7 +157,7 @@ General Changes
 - Replaced the beta image on the main screen of the quest book
 - All compacting recipes will now ignore metadata and nbt data when appplicable (fixes certain recipes needing blocks rotated in certain ways)
 - The black totem will now automatically activate when you are below y 0 in caligro
-- Increased the login timeout
+- Increased the login timeout and fixed it not being applied on the server side
 - Blacklisted the chapter advancements from being synced via togetherforever to prevent potential softlocks and cheesing
 - Added recipes for Binnie's Botany ceramic blocks
 - Added JEI information pages for Binnie's Botany colored pigments and ceramic tiles to clarify how to get them
@@ -221,6 +228,22 @@ General Changes
 - The orechid ignem now has a 50% chance of placing down Overgrown Netherrack instead of Netherrack
 - Nether portals are now made with any type and mix of compressed obsidian or refined obsidian instead of normal obsidian
 - Fixed the current lunar event not getting synced to the client after changing dimensions
+- Redid the storyline advancements, added 2 more advancement (WIP) categories for challenges and masochist mode, and trimmed some unecessary or unobtainable advancements
+- Fixed the heat furnace and black heart replicator textures not getting set correctly
+- Rewrote the Masochist Mode quest with some interesting new information and removed the extra difficulty decreasing hearts at the end of each chapter
+- Staged glass, molten cores, blaze rods, and blaze powder to the overworld
+- Glass shards are now exclusive to masochist mode
+- Charms of life will now only protect from fall damage when masochist mode is active
+- Skelton druids will now give wither instead of poison when masochist mode is active
+- Most bee stuff is now has a special bees stage which is rewarded by the thermionic fabricator quest
+- Sturdy casings can now be crafted with any type of forestry comb block or a Filled Honeycomb Block
+- Fixed being able to duplicate some materials by turning them into lightningcraft rods and melting them down
+- Replaced the awful sound that played when claiming the rewards for 2nd swamp key quest
+- Fixed the carpenter recipe so it can be crafted in chapter 3
+- Fixed the tp command incorrectly assuming players are not in the same dimension
+- XP lost upon death is now 10% normally or 50% if mashochist mode is active
+- The algorithm separator is now crafted with a weakened diamond rather than a flawless diamond
+- Fixed quest detection issues for queen bee and space station quests
 
 Music Changes
 - Fixed a music related memory leak that was especially prevelant while fighting the ender dragon and chaos guardian

@@ -1,5 +1,4 @@
 {
-  "build:8": "0.6-Dev-1",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -6668,172 +6667,58 @@
             "4:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": "artisansCuttingBoard",
-              "id:8": "artisanworktables:artisans_cutting_board_stone"
-            },
-            "5:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansPan",
-              "id:8": "artisanworktables:artisans_pan_stone"
-            },
-            "6:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
               "OreDict:8": "artisansBeaker",
               "id:8": "artisanworktables:artisans_beaker_stone"
             },
-            "7:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansBurner",
-              "id:8": "artisanworktables:artisans_burner_stone"
-            },
-            "8:10": {
+            "5:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansPencil",
               "id:8": "artisanworktables:artisans_pencil_stone"
             },
-            "9:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansTSquare",
-              "id:8": "artisanworktables:artisans_tsquare_stone"
-            },
-            "10:10": {
+            "6:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansDriver",
               "id:8": "artisanworktables:artisans_driver_stone"
             },
-            "11:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansSpanner",
-              "id:8": "artisanworktables:artisans_spanner_stone"
-            },
-            "12:10": {
+            "7:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansLens",
               "id:8": "artisanworktables:artisans_lens_stone"
             },
-            "13:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansSifter",
-              "id:8": "artisanworktables:artisans_sifter_stone"
-            },
-            "14:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansGemCutter",
-              "id:8": "artisanworktables:artisans_gemcutter_stone"
-            },
-            "15:10": {
+            "8:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansPliers",
               "id:8": "artisanworktables:artisans_pliers_stone"
             },
-            "16:10": {
+            "9:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansAthame",
               "id:8": "artisanworktables:artisans_athame_stone"
             },
-            "17:10": {
+            "10:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansGrimoire",
               "id:8": "artisanworktables:artisans_grimoire_stone"
             },
-            "18:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansChisel",
-              "id:8": "artisanworktables:artisans_chisel_stone"
-            },
-            "19:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansTrowel",
-              "id:8": "artisanworktables:artisans_trowel_stone"
-            },
-            "20:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansCarver",
-              "id:8": "artisanworktables:artisans_carver_stone"
-            },
-            "21:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansRazor",
-              "id:8": "artisanworktables:artisans_razor_stone"
-            },
-            "22:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansCompass",
-              "id:8": "artisanworktables:artisans_compass_stone"
-            },
-            "23:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansQuill",
-              "id:8": "artisanworktables:artisans_quill_stone"
-            },
-            "24:10": {
+            "11:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansNeedle",
               "id:8": "artisanworktables:artisans_needle_stone"
             },
-            "25:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansShears",
-              "id:8": "artisanworktables:artisans_shears_stone"
-            },
-            "26:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansPunch",
-              "id:8": "artisanworktables:artisans_punch_stone"
-            },
-            "27:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansGroover",
-              "id:8": "artisanworktables:artisans_groover_stone"
-            },
-            "28:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansMortar",
-              "id:8": "artisanworktables:artisans_mortar_stone"
-            },
-            "29:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansKnife",
-              "id:8": "artisanworktables:artisans_knife_stone"
-            },
-            "30:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "artisansHatchet",
-              "id:8": "artisanworktables:artisans_hatchet_stone"
-            },
-            "31:10": {
+            "12:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansFile",
               "id:8": "artisanworktables:artisans_file_stone"
             },
-            "32:10": {
+            "13:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "artisansSolderer",
@@ -82448,7 +82333,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 1,
-          "desc:8": "§3§oAre you a masochist? \n\nDo you like figuring out how to deal with mobs that are way stronger than you? \n\nIs this pack just not hard enough for you, or maybe you want to challene yourself on a replay? \n\nMaybe you like the idea of getting a lot of extra loot and XP?§r\n\n\n§6§lIf you answered §r§4§lYES§r §6§lto any of the above questions than might want to give §r§4§lMASOCHIST MODE§r §6§la try.\n\nHowever, if you are §r§2§lBAD AT PVE§r§6§l, §r§2§lNEW TO MODDED MINECRAFT§r§6§l, §r§2§lAVERSE TO EXTRA GRINDING§r§6§l, or just want the §r§2§lNORMAL EXPERIENCE§r§6§l than you should §r§2§l§nNOT§r§6§l claim this quest.\n\nAssuming you still want to proceed (note this can only be claimed as the first quest), here is what happens when §r§4§lMASOCHIST MODE§r §6§lis enabled:§r\n\n\n§d§o- You get an additional §n100§r§d§o levels of §nlooting§r§d§o applied to everything you manage to kill, if you can even kill anything\n\n- You gain a lot more §nXP§r§d§o from mob kills.\n\n- You start at §o§nmaximum§r§d§o difficulty which is §n5000§r§d§o\n\n- Charms of Life will only be effective against §nfall damage§r§d§o\n\n- Skeleton Druids will inflict §nwither§r§d§o instead of poison\n\n- When you die you lose §n50%§r§d§o of your §ntotal XP§r§d§o instead of the normal 10%\n\n- You gain access to an §nexclusive questline§r§d§o and §nexclusive advancements§r§d§o\n\n- A few minor §nskips§r§d§o and §npowerful tools§r§d§o become available\n\n- The §nFinal Boss§r§d§o will be much more difficult than normal\n\n- Completing §nall§r§d§o Prologue and Twilight Forest boss quests §nbefore§r§d§o entering the Overworld will grant you the right to be crowned as a §r§l[§5§lCertified Masochist§r§l]§r\n\n§d§o- Completing §n100%§r§d§o of the quests will earn you a place on the special §n101%§r§d§o leaderboard\n\n\n§6§6§lAnd for the few that seem to enjoy going out of their way to make things as difficult as possible, I have 1 final challenge for you (good luck)\n\n\n§d§o§l- Anyone wishing to obtain the title of §[§l[§r§0§lUltimate Masochist§r§l]§r§d§l§o must complete all requirements to become a §r§l[§r§5§lCertified Masochist§r§l]§r§d§l§o while in hardcore without the usage of (Tinker\u0027s) steeleaf equipment, or (PSI unless it is directly related to progression). At least 1 wither is also required to be defeated without being trapped - before entering the Overworld. The use of any unintended skips that break progression are prohibited while in the prologue. If you also manage to complete 100% of the quests after this without ever enabling cheats you can earn a spot on the secret §n102%§r§d§l§o leaderboard",
+          "desc:8": "§3§oAre you a masochist? \n\nDo you like figuring out how to deal with mobs that are way stronger than you? \n\nIs this pack just not hard enough for you, or maybe you want to challenge yourself on a replay? \n\nMaybe you like the idea of getting a lot of extra loot and XP?§r\n\n\n§6§lIf you answered §r§4§lYES§r §6§lto any of the above questions than might want to give §r§4§lMASOCHIST MODE§r §6§la try.\n\nHowever, if you are §r§2§lBAD AT PVE§r§6§l, §r§2§lNEW TO MODDED MINECRAFT§r§6§l, §r§2§lAVERSE TO EXTRA GRINDING§r§6§l, or just want the §r§2§lNORMAL EXPERIENCE§r§6§l than you should §r§2§l§nNOT§r§6§l claim this quest.\n\nAssuming you still want to proceed (note that this can only be claimed as the first quest), here is what happens when §r§4§lMASOCHIST MODE§r §6§lis enabled:§r\n\n\n§d§o- You get an additional §n100§r§d§o levels of §nlooting§r§d§o applied to everything you manage to kill, if you can even kill anything\n\n- You gain a lot more §nXP§r§d§o from mob kills.\n\n- You start at §o§nmaximum§r§d§o difficulty which is §n5000§r§d§o\n\n- §nCharms of Life§r§d§o will only be effective against §nfall damage§r§d§o\n\n- §nSkeleton Druids§r§d§o will inflict §nwither§r§d§o instead of poison\n\n- When you die you lose §n50%§r§d§o of your §ntotal XP§r§d§o instead of the normal 10%\n\n- You gain access to an §nexclusive questline§r§d§o and §nexclusive advancements§r§d§o\n\n- A few minor §nskips§r§d§o and §npowerful tools§r§d§o become available\n\n- The §nFinal Boss§r§d§o will be much more difficult than normal\n\n- Completing §nall§r§d§o Prologue and Twilight Forest boss quests §nbefore§r§d§o entering the Overworld will grant you the right to be crowned as a §r§l[§5§lCertified Masochist§r§l]§r\n\n§d§o- Completing §n100%§r§d§o of the quests will earn you a place on the special §n101%§r§d§o leaderboard\n\n\n§6§6§lAnd for the few that seem to enjoy going out of their way to make things as difficult as possible, I have 1 final challenge for you (good luck)\n\n\n§d§o§l- Anyone wishing to obtain the title of §[§l[§r§0§lUltimate Masochist§r§l]§r§d§l§o must complete all requirements to become a §r§l[§r§5§lCertified Masochist§r§l]§r§d§l§o while in hardcore without the usage of (Tinker\u0027s) steeleaf equipment, or (PSI unless it is directly related to progression). At least 1 wither is also required to be defeated without being trapped - before entering the Overworld. The use of any unintended skips that break progression are prohibited while in the prologue. If you also manage to complete 100% of the quests after this without ever enabling cheats you can earn a spot on the secret §n102%§r§d§l§o leaderboard",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

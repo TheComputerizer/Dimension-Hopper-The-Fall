@@ -1,0 +1,22 @@
+setIcon(<xlfoodmod:cheese>)
+
+setTitle("Cheese")
+
+setDescription("Is it just me or does this cheese seem a bit spicy")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-66,1)
+
+criteria = addCriteria("hasCheese", "minecraft:inventory_changed")
+criteria.addItem(<xlfoodmod:cheese>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

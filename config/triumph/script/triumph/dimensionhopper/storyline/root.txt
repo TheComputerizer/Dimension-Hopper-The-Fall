@@ -14,5 +14,3 @@ setAnnounceToChat(false)
 setPos(-4,1)
 
 addCriteria("location", "minecraft:location")
-
-visibleAlways()

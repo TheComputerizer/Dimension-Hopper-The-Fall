@@ -1,0 +1,22 @@
+setIcon(<tp:octuple_compressed_sugar_cane>)
+
+setTitle("I L8VE SUGARCANE")
+
+setDescription("I L8VE SUGARCANE")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-198,1)
+
+criteria = addCriteria("hasSugarCane", "minecraft:inventory_changed")
+criteria.addItem(<tp:octuple_compressed_sugar_cane>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

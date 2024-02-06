@@ -39,6 +39,9 @@ static shapedHolders as Holder[] = [
     .addTools({<ore:artisansGrimoire>:77,<ore:artisansAthame>:77})
     .addFluids([<liquid:terrasteel>*72]), //gaia ingot
 
+  Util.smallShaped(<botania:manaresource:22>, "block", [<botania:manaresource:16>])
+    .addTools({<ore:artisansNeedle>:7}), //manaweave cloth
+
   Util.simpleShaped(<botania:manaring>, "band", [<botania:manatablet>, <moreplates:manasteel_plate>, <botania:manaresource:1>])
     .addTools({<ore:artisansGrimoire>:33,<ore:artisansAthame>:33}), //band of mana
 

@@ -1,0 +1,22 @@
+setIcon(<extratrees:drink, meta:0, nbt:{glassware:12,Fluid:{FluidName:"binnie.vodka",Amount:480}}>)
+
+setTitle("Alcoholic")
+
+setDescription("Aren't you supposed to be saving the multiverse?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-198,-65)
+
+criteria = addCriteria("hasVodkaShot", "minecraft:inventory_changed")
+criteria.addItem(<extratrees:drink, meta:0, nbt:{glassware:12,Fluid:{FluidName:"binnie.vodka",Amount:480}}>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

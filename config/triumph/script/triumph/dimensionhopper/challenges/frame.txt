@@ -1,0 +1,22 @@
+setIcon(<extrabees:hive_frame.debug>)
+
+setTitle("Nova")
+
+setDescription("Was that really worth it?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-330,1)
+
+criteria = addCriteria("hasCeramicPattern", "minecraft:inventory_changed")
+criteria.addItem(<extrabees:hive_frame.debug>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

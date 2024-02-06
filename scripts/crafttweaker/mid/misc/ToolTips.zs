@@ -46,3 +46,5 @@
 <contenttweaker:bloq>.addTooltip("\u00A7o\u00A74You can place this down, I guess");
 <botania:rune:10>.addTooltip("\u00A7o\u00A74Hunry for cheese... Where's the cheese??");
 <xlfoodmod:cheese>.addTooltip("\u00A7o\u00A74A fel blaze's favorite food");
+<extrabees:hive_frame.debug>.addTooltip("\u00A7o\u00A74Not worth it");
+<twilightforest:giant_obsidian>.addTooltip("\u00A7o\u00A74Yes this is actually 4 quintillion obsidian. Is that advancement really worth it?");

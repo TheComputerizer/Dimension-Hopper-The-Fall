@@ -1,0 +1,22 @@
+setIcon(<twilightforest:knightmetal_pickaxe>)
+
+setTitle("Obsidian Skip")
+
+setDescription("That doesn't look like obsidian though?")
+
+addParent("triumph:dimensionhopper/masochist/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(33,-32)
+
+criteria = addCriteria("hasKnightMetal", "minecraft:inventory_changed")
+criteria.addItem(<twilightforest:knightmetal_pickaxe>)
+
+hiddenUnless("triumph:dimensionhopper/masochist/root")

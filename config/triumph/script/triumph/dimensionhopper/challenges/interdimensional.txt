@@ -1,0 +1,22 @@
+setIcon(<lockyzextradimensionsmod:interdimensionalball>)
+
+setTitle("Interdimensional")
+
+setDescription("Make an interdimensional purchase?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(330,1)
+
+criteria = addCriteria("entered_interdimensional_dimension", "minecraft:changed_dimension")
+criteria.setDimensionDestination("dimensionInterDimensional")
+
+hiddenUnless("triumph:dimensionhopper/storyline/chapter8")

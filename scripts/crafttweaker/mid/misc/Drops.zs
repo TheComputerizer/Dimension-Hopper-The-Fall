@@ -51,9 +51,9 @@ rules.add(Dropt.rule()
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop()));
 
-//stage overworld or masochist drops
+//stage masochist drops
 rules.add(Dropt.rule()
-    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ANY", ["hardcore", "overworld"]))
+    .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["hardcore"]))
     .matchDrops([
         <quark:glass_shards:*>
     ])

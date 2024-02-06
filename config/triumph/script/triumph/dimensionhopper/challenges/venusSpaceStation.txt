@@ -14,7 +14,7 @@ setFrameType("CHALLENGE")
 
 drawDirectLines(false)
 
-setPos(99,67)
+setPos(132,34)
 
 criteria = addCriteria("entered_venus_space_station", "minecraft:changed_dimension")
 criteria.setDimensionDestination("Venus Space Station")

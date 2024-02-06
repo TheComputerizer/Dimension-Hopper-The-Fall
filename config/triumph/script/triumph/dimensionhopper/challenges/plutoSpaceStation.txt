@@ -14,7 +14,7 @@ setFrameType("CHALLENGE")
 
 drawDirectLines(false)
 
-setPos(231,1)
+setPos(264,34)
 
 criteria = addCriteria("entered_pluto_space_station", "minecraft:changed_dimension")
 criteria.setDimensionDestination("Pluto Space Station")

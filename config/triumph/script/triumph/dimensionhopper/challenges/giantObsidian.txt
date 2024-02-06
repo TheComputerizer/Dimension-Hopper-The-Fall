@@ -1,0 +1,22 @@
+setIcon(<twilightforest:giant_obsidian>)
+
+setTitle("Giant Obsidian")
+
+setDescription("More like a giant waste of time. Did you really want to grind for that?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(0,-65)
+
+criteria = addCriteria("hasGiantObsidian", "minecraft:inventory_changed")
+criteria.addItem(<twilightforest:giant_obsidian>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

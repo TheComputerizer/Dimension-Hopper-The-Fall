@@ -1,0 +1,22 @@
+setIcon(<silentgems:chaosorb, meta:3, nbt:{ChaosCharge:10000000}>)
+
+setTitle("Perfection")
+
+setDescription("Sometimes perfection lies in an orb of chaos")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-198,67)
+
+criteria = addCriteria("hasVodkaShot", "minecraft:inventory_changed")
+criteria.addItem(<silentgems:chaosorb, meta:3, nbt:{ChaosCharge:10000000}>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")
