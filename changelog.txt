@@ -1,4 +1,39 @@
-Released V1.5.1 [hotfix]
+Released V1.5.2[PERFORMANCE & BUGFIXES]
+
+*Here have your performance back*
+
+Removed Mods
+- OreStages
+
+Added Mods
+- FermiumASM
+- FermiumBooter
+
+Updated Mods
+- AE2 Unofficial Extended Life
+- Red Core
+
+General Changes
+- Dynamic view distance is now set to a maximum of 12 chunks and a minimum of 6 chunks with less frequent changes and a lower time threshold. This should fix most of the serverside lag issues
+- Enabled vintage fix dynamic resources which should significantly improve memory usage and slightly decrease startup times
+- Removed draconium and some vanilla ores from dimensions they were not supposed to spawn in.
+- Some materials gated by dimensions or chapters previously hidden by ore stages now have stricted staging
+- Fixed the giant obsidian recipe requiring the wrong level of compressed obsidian
+- Added more challenge advancements
+- Most challenge advancements will now be visible from the start
+- Fixed the max health cap getting set back to 65536 instead of 32768
+- Fixed AoA drops not getting staged
+- Reenabled the Nature's Aura advancements so the guide book is usable
+- Fixed some important recipes being missing such as for dreamwood twigs, livingwood twigs, mana tablets, basic components, ruby & topaz glowrose, and the tier 1 space suit
+- Fixed Greenery nettles not giving i-frames
+- Straightened out the space questlines and fixed some stupid quest gating
+- Fixed the passive benefit for the research skill not getting applied correctly
+- Fixed XP draining from the skill token still draining levels even after a level cap was reached
+- Fixed a rare crash from the Ancient Stargate Visualizer category in JEI
+- Tweaked a bunch of waystone related stuff
+
+
+Released V1.5.1 [HOTFIX]
 
 *Is this fix still hot?*
 
@@ -15,6 +50,7 @@ General Changes
 - Fixed the manaweave cloth recipe trying to use a worktable that doesnt exist
 - Switched the staging method for AoA drops to include entities in addition to blocks
 - Add a recipe for Giant Obsidian
+
 
 Released V1.5.0 [BASICALLY EVERYTHING]
 
