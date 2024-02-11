@@ -38,9 +38,9 @@ static recipeMap as IIngredient[IItemStack][int] = {
         <botania:flower:15>:<silentgems:glowrose:14>
     },
     5000: {
-        <silentgems:glowrose>:<ore:dyeRed:>*2,
+        <silentgems:glowrose>:<ore:dyeRed>*2,
         <silentgems:glowrose:1>:<ore:dyeBrown>*2,
-        <silentgems:glowrose:2>:<ore:dyeOrange:>*2,
+        <silentgems:glowrose:2>:<ore:dyeOrange>*2,
         <silentgems:glowrose:3>:<ore:dyeGray>*2,
         <silentgems:glowrose:4>:<ore:dyeYellow>*2,
         <silentgems:glowrose:5>:<ore:dyeLime>*2,

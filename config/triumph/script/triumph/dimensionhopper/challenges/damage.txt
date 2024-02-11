@@ -1,0 +1,23 @@
+setIcon(<avaritia:infinity_sword>)
+
+setTitle("It's Over 9000!")
+
+setDescription("Vegeta, what does the scouter say about his power level?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-198,34)
+
+criteria = addCriteria("doALotOfDamage", "minecraft:player_hurt_entity")
+damage = criteria.getDamageData()
+damage.setDealtMin(9001)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

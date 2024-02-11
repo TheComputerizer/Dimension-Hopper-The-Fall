@@ -68,12 +68,49 @@ static shapedBuilders as Holder[] = [
         <ore:workbench>, 
         <ore:logWood>]), //basic worktable
 
+    //botania
+    Util.stick(<botania:manaresource:13>,<botania:dreamwood>), //dreamwood twig
+    Util.stick(<botania:manaresource:3>,<botania:livingwood>), //livingwood twig
+
     //cookingforblockheads
     Util.simpleShaped(<cookingforblockheads:oven>, "portalbottom", [
         <immersiveengineering:metal_device1>,
         <tconstruct:clear_stained_glass:15>,
         <thermalfoundation:material:32>
     ]),
+
+    //extendedcrafting
+    Util.smallShaped(<extendedcrafting:material:14>, "component", [
+        <extendedcrafting:material:2>,
+        <extendedcrafting:material:7>,
+        <minecraft:iron_ingot>
+    ]), //basic component
+
+    //extraplanets
+    Util.simpleShaped(<extraplanets:tier1_space_suit_helmet:100>, "space", [
+        <extraplanets:tier1_un_prepared_space_suit_helmet>,
+        <extraplanets:tier1_radiation_layer>,
+        <extraplanets:tier1_armor_layer>,
+        <extraplanets:tier1_pressure_layer>
+    ]), //t1 space suit helmet
+    Util.simpleShaped(<extraplanets:tier1_space_suit_chest:100>, "space", [
+        <extraplanets:tier1_un_prepared_space_suit_chest>,
+        <extraplanets:tier1_radiation_layer>,
+        <extraplanets:tier1_armor_layer>,
+        <extraplanets:tier1_pressure_layer>
+    ]), //t1 space suit chestplate
+    Util.simpleShaped(<extraplanets:tier1_space_suit_legings:100>, "space", [
+        <extraplanets:tier1_un_prepared_space_suit_legings>,
+        <extraplanets:tier1_radiation_layer>,
+        <extraplanets:tier1_armor_layer>,
+        <extraplanets:tier1_pressure_layer>
+    ]), //t1 space suit leggings
+    Util.simpleShaped(<extraplanets:tier1_space_suit_boots:100>, "space", [
+        <extraplanets:tier1_un_prepared_space_suit_boots>,
+        <extraplanets:tier1_radiation_layer>,
+        <extraplanets:tier1_armor_layer>,
+        <extraplanets:tier1_pressure_layer>
+    ]), //t1 space suit boots
 
     //hunting dimension
     Util.simpleShaped(<huntingdim:frame>, "plus", [<ore:arrow>, <ore:logWood>, <thermalfoundation:material:128>]).setMarkIndex(0)

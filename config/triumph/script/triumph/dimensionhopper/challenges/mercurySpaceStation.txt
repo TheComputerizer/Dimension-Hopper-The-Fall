@@ -19,4 +19,4 @@ setPos(132,-32)
 criteria = addCriteria("entered_mercury_space_station", "minecraft:changed_dimension")
 criteria.setDimensionDestination("Mercury Space Station")
 
-hiddenUnless("triumph:dimensionhopper/storyline/chapter5")
+hiddenUnless("triumph:dimensionhopper/challenges/root")

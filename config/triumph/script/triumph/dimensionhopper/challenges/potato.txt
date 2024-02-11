@@ -1,0 +1,22 @@
+setIcon(<botania_tweaks:compressed_tiny_potato_8>)
+
+setTitle("#1 Potato Farmer")
+
+setDescription("Fufill his legacy")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-132,1)
+
+criteria = addCriteria("hasPotato", "minecraft:inventory_changed")
+criteria.addItem(<botania_tweaks:compressed_tiny_potato_8>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

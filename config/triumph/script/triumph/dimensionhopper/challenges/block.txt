@@ -1,0 +1,22 @@
+setIcon(<overloaded:nether_star_block>)
+
+setTitle("First Of Many")
+
+setDescription("Why is it so expensive tho")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-264,-32)
+
+criteria = addCriteria("hasBlock", "minecraft:inventory_changed")
+criteria.addItem(<overloaded:nether_star_block>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

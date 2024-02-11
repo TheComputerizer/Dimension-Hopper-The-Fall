@@ -225,6 +225,8 @@ static itemRemovals as IItemStack[] = [
 
     //mekanism
     <mekanism:basicblock:3>,
+    <mekanism:oreblock:1>,
+    <mekanism:oreblock:2>,
 
     //midnight
     <midnight:midnight_furnace>,
@@ -280,6 +282,9 @@ static itemRemovals as IItemStack[] = [
 
     //tconstruct
     <tconstruct:slime_boots>,
+
+    //thebetweenlands
+    <thebetweenlands:druid_altar>,
 
     //thermalfoundation
     <thermalfoundation:rockwool:*>,

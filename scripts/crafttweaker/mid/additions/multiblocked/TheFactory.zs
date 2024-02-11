@@ -206,7 +206,15 @@ var ingots = [
 <appliedenergistics2:material>*9,
 <appliedenergistics2:material:1>*9,
 <avaritia:resource:6>*9,
-<avaritia:resource:1>*9
+<avaritia:resource:1>*9,
+<botania:tinypotato>*9,
+<botania_tweaks:compressed_tiny_potato_1>*9,
+<botania_tweaks:compressed_tiny_potato_2>*9,
+<botania_tweaks:compressed_tiny_potato_3>*9,
+<botania_tweaks:compressed_tiny_potato_4>*9,
+<botania_tweaks:compressed_tiny_potato_5>*9,
+<botania_tweaks:compressed_tiny_potato_6>*9,
+<botania_tweaks:compressed_tiny_potato_7>*9
 ] as IItemStack[];
 for meta in 0 .. 15 {
 	ingots += <overloaded:compressed_obsidian>.definition.makeStack(meta)*9;
@@ -413,7 +421,15 @@ var blocks = [
 <jaopca:block.certus_quartz>,
 <jaopca:block.charged_certus_quartz>,
 <avaritia:block_resource:1>,
-<avaritia:block_resource:2>
+<avaritia:block_resource:2>,
+<botania_tweaks:compressed_tiny_potato_1>,
+<botania_tweaks:compressed_tiny_potato_2>,
+<botania_tweaks:compressed_tiny_potato_3>,
+<botania_tweaks:compressed_tiny_potato_4>,
+<botania_tweaks:compressed_tiny_potato_5>,
+<botania_tweaks:compressed_tiny_potato_6>,
+<botania_tweaks:compressed_tiny_potato_7>,
+<botania_tweaks:compressed_tiny_potato_8>
 ] as IItemStack[];
 for meta in 1 .. 16 {
 	blocks += <overloaded:compressed_obsidian>.definition.makeStack(meta);

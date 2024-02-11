@@ -1,0 +1,22 @@
+setIcon(<lightningcraft:under_tnt, meta:2>)
+
+setTitle("Unnecessarily Power Explosive")
+
+setDescription("What exactly are you planning to do with that...?")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-264,34)
+
+criteria = addCriteria("hasTNT", "minecraft:inventory_changed")
+criteria.addItem(<lightningcraft:under_tnt, meta:2>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

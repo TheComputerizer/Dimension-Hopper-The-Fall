@@ -9,7 +9,6 @@ staging.Dimension.load();
 staging.Items.load();
 staging.Mob.load();
 staging.Mod.load();
-staging.Ore.load();
 
 Recipes.setPackageStage("appeng", Stages.stageMap.keys);
 

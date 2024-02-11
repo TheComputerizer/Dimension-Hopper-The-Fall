@@ -1,0 +1,22 @@
+setIcon(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
+
+setTitle("Easily Disctractable")
+
+setDescription("That really wasn't the right time to be recording music")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(0,-329)
+
+criteria = addCriteria("hasDisc", "minecraft:inventory_changed")
+criteria.addItem(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

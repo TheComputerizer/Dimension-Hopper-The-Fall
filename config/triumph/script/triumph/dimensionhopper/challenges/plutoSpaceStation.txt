@@ -19,4 +19,4 @@ setPos(264,34)
 criteria = addCriteria("entered_pluto_space_station", "minecraft:changed_dimension")
 criteria.setDimensionDestination("Pluto Space Station")
 
-hiddenUnless("triumph:dimensionhopper/storyline/chapter9")
+hiddenUnless("triumph:dimensionhopper/challenges/root")

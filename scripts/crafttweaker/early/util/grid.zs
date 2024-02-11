@@ -12,6 +12,10 @@ static common2x2 as int[][][string] = {
         [ 0, 0 ],
         [ 0, 0 ]
     ],
+    "component": [
+        [ 0, 1 ],
+        [ 2, 2 ]
+    ],
     "unique": [
         [ 0, 1 ],
         [ 2, 3 ]
@@ -117,6 +121,11 @@ static common3x3 as int[][][string] = {
         [ 2, 2, 2 ],
         [ 1, 0, 1 ],
         [ 2, 2, 2 ]
+    ],
+    "space": [
+        [ 1, 2, 3 ],
+        [ 1, 0, 3 ],
+        [ 1, 2, 3 ]
     ],
     "spatial": [
         [ 5, 1, 5 ],

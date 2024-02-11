@@ -148,6 +148,10 @@ function smallShaped(output as IItemStack, type as string, inputs as IIngredient
     return mappedShaped(output,Shaper.simple2x2(type,inputs));
 }
 
+function stick(output as IItemStack, input as IIngredient) as Holder {
+    return Holder(makeRecipeName("stick",output),output).addShaped([[input],[input]]);
+}
+
 function rotatedShaped(output as IItemStack, type as string, rotations as int, inputs as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.rotated3x3(type,rotations,inputs));
 }

@@ -12,7 +12,7 @@
     "input-types": {
       "w": { 
         "id": "overloaded:compressed_obsidian",
-        "meta": 1,
+        "meta": 15,
         "ignore-nbt": true
       }
     },

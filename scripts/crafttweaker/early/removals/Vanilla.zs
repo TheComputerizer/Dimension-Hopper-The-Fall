@@ -62,6 +62,9 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.append("botania:", ["cloud", "ice", "lava", "supercloud", "superlava"], 0, "pendant"),
 	Stack.append("botania:terrasteel", ["boots", "chest", "helm", "helmreveal", "legs"]),
 
+	//botania_tweaks
+	Stack.incrementals("botania_tweaks:compressed_tiny_potato_", [1, 2, 3, 4, 5, 6, 7, 8]),
+
 	//dimdoors
 	Stack.append("dimdoors:rift_", ["remover", "signature"]),
 

@@ -1,0 +1,21 @@
+setIcon(<scalinghealth:difficultychanger:1>)
+
+setTitle("Ultimate Masochist")
+
+setDescription("Seriously?")
+
+addParent("triumph:dimensionhopper/masochist/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-66,1)
+
+criteria = addCriteria("impossible", "minecraft:impossible")
+
+hiddenUnless("triumph:dimensionhopper/masochist/root")

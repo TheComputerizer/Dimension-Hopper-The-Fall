@@ -1,3 +1,21 @@
+Released V1.5.1 [hotfix]
+
+*Is this fix still hot?*
+
+Added Mods
+- The Betweenlands: Eternal Melodies
+
+Updated Mods
+- Dimension Hopper Tweaks
+
+General Changes
+- Fixed a broken entity patch causing a bunch of weird issues like tinker tools not being able to level up and mobs not dropping anything
+- Fixed chest replacements getting run for chunks that were already generated
+- Fixed a few speling issues
+- Fixed the manaweave cloth recipe trying to use a worktable that doesnt exist
+- Switched the staging method for AoA drops to include entities in addition to blocks
+- Add a recipe for Giant Obsidian
+
 Released V1.5.0 [BASICALLY EVERYTHING]
 
 *I thought this was just a skill update?*

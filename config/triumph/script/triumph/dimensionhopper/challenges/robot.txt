@@ -1,0 +1,22 @@
+setIcon(<opencomputers:robot>)
+
+setTitle("Robot!")
+
+setDescription("Robot!")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-132,34)
+
+criteria = addCriteria("hasRobot", "minecraft:inventory_changed")
+criteria.addItem(<opencomputers:robot>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

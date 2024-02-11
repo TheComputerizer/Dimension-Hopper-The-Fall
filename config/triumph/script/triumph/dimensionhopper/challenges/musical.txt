@@ -1,0 +1,22 @@
+setIcon(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"menu2",triggerID:"menu",channelFrom:"music"}>)
+
+setTitle("Trailer Music")
+
+setDescription("How did you even record that??")
+
+addParent("triumph:dimensionhopper/challenges/root")
+
+setShowToast(true)
+ 
+setAnnounceToChat(true)
+
+setFrameType("CHALLENGE")
+
+drawDirectLines(false)
+
+setPos(-264,1)
+
+criteria = addCriteria("hasDisc", "minecraft:inventory_changed")
+criteria.addItem(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"menu2",triggerID:"menu",channelFrom:"music"}>)
+
+hiddenUnless("triumph:dimensionhopper/challenges/root")

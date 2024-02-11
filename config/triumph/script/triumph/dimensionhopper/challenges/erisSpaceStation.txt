@@ -19,4 +19,4 @@ setPos(264,-32)
 criteria = addCriteria("entered_eris_space_station", "minecraft:changed_dimension")
 criteria.setDimensionDestination("Eris Space Station")
 
-hiddenUnless("triumph:dimensionhopper/storyline/chapter9")
+hiddenUnless("triumph:dimensionhopper/challenges/root")

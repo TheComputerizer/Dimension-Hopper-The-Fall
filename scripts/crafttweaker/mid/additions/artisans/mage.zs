@@ -28,7 +28,7 @@ static shapedHolders as Holder[] = [
   Util.simpleShaped(<botania:lens>, "plus", [<psicosts:material_glassy>, <moreplates:manasteel_plate>, null])
     .addTools({<ore:artisansGrimoire>:13}), //mana lens
 
-  Util.simpleShaped(<botania:lens>, "plus", [<botania:manaresource:2>, <botania:livingrock0slab>, <botania:livingrock>])
+  Util.simpleShaped(<botania:manatablet>, "plus", [<botania:manaresource:2>, <botania:livingrock0slab>, <botania:livingrock>])
     .addTools({<ore:artisansGrimoire>:37})
     .addFluids([<liquid:mana>*2000]), //mana tablet
 
