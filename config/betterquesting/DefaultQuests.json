@@ -48781,7 +48781,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:3": -28
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -49101,7 +49104,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": -29
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -77376,7 +77382,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": 816
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -77436,7 +77445,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": -15
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -77556,7 +77568,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": -16
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -83220,7 +83235,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": 66
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -83481,7 +83499,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "dimhoppertweaks:stargate_addresser"
+              "id:8": "dimhoppertweaks:stargate_addresser",
+              "tag:10": {
+                "activeDimension:4": -19
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -103821,7 +103842,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     I noticed a lot of strong entities in this dimension. From what I can tell, it seems the 3 strongest ones are the keepers of the realm. Defeating them will be our first goal, so lets get you geared up!\n\n     §3§oYeah, I bet you noticed the ore generation is pretty weird here, right? Since the only natural ore you can find in the dimenison is coal, you will have to find another way to get the iron ingot you need. You could always try breaking a spawner...",
+          "desc:8": "     I noticed a lot of strong entities in this dimension. From what I can tell, it seems the 3 strongest ones are the keepers of the realm. Defeating them will be our first goal, so lets get you geared up!\n\n     §3§oI bet you noticed the ore generation is pretty weird here, right? Most ores other than coal do not drop anything in this dimension, so you will have to find another way to get the iron ingot you need. You could always try breaking a spawner...",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -103833,7 +103854,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "But I can\u0027t find any iron...",
+          "name:8": "I can\u0027t mine the iron...?",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -104754,6 +104775,43 @@
           "advancement_id:8": "triumph:dimensionhopper/challenges/ceresspacestation",
           "index:3": 0,
           "taskID:8": "bq_standard:advancement"
+        }
+      }
+    },
+    "1533:10": {
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "     If you are someone who is familiar with some or most of the mods in this pack, this pack changes and/or tweaks a lot of such base features. There will be things you would normally expect to work one way that work completely differently here. To help with potential confusion regarding that, here are some of the more important changes you should know about:\n\n\n§a- The simple powered furnace is the first actual furnace that is obtainable\n\n- Ore excavation is enabled, but it required both XP and hunger to use\n\n- The Last Stand enchantment has a cooldown based on the combined level of your armor\n\n- Most Tinker\u0027s materials have skill level requirements, but vanilla tools/armor do not\n\n- Pistons are not craftable in the Twilight Forest\n\n- Ores will not always drop when you mine them. This typically means you do not have the required stage for the ore and it will be obtainable later on\n\n- Most of the progressional stages are granted from storyline advancements\n\n- Attacks will not work if they are less than 75% charged. If you try spamming attacks using a slow weapon it will not work. This can be bypassed with the No Cooldowns skill trait",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "extendedcrafting:singularity_ultimate"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Dimension Hopper 101",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": 10,
+          "simultaneous:1": 0,
+          "snd_complete:8": "contenttweaker:questcommon",
+          "snd_update:8": "contenttweaker:questcommon",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 1533,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     }
@@ -115233,7 +115291,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
-          "y:3": -12
+          "y:3": -48
         },
         "2:10": {
           "id:3": 1235,
@@ -115290,6 +115348,13 @@
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": 24
+        },
+        "10:10": {
+          "id:3": 1533,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": -12
         }
       }
     },

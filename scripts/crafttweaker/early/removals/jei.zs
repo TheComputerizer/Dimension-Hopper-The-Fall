@@ -315,8 +315,15 @@ static itemRemovals as IItemStack[] = [
 ] as IItemStack[];
 
 static itemHiders as IItemStack[] = [
+    //environmentaltech
+    <environmentaltech:modifier_creative_flight>,
+    <environmentaltech:modifier_flight_speed>,
+    
     //erebus
     <erebus:umber_furnace_active>,
+
+    //silentgems
+	<silentgems:chaosrune>.withTag({chaos_buff: "silentgems:flight"}),
 
     //tconstruct
     <tconstruct:clay_cast>

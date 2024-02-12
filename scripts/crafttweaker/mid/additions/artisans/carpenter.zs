@@ -12,7 +12,7 @@ static recipeHolders as Holder[] = [
   Util.simpleShaped(<immersiveengineering:wooden_device0:2>, "bench", [<ore:plankTreatedWood>, <minecraft:crafting_table>, <immersiveengineering:wooden_decoration>])
     .addTools({<ore:artisansHammer>:4}), //engineers workbench
 
-  Util.simpleShaped(<immersiveengineering:material>*2, "stick", [<ore:plankTreatedWood>])
+  Util.dynamicShaped(<immersiveengineering:material>*2, {<ore:plankTreatedWood>:[0,1]}, 1, 2)
     .addTools({<ore:artisansHammer>:2}) //treated sticks
 ] as Holder[];
 

@@ -42,9 +42,19 @@ scripts_old
 shaderpacks
 vintagefix
 
-# Specific files
+# Specific Files
 .ReAuth.cfg
 config.json
+config/Aether/analytics.json.gz
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/AppliedEnergistics2/items.csv
+config/brandon3055/contributors.json
+config/customloadingscreen_timings.nbt
+config/jei/worldSettings.cfg
+config/SGCraft/general.yml
+config/spark/activity.json
+config/splash.properties
+CustomRecipes.cfg
 knownkeys.txt
 manifest.json
 minecraftinstance.json
@@ -53,5 +63,6 @@ optionsof.txt
 optionsshaders.txt
 patchouli_data.json
 planets.txt
+splash.properties
 usercache.json
 usernamecache.json

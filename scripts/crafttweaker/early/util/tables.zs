@@ -68,7 +68,11 @@ function upgrade(output as IItemStack, inputs as IIngredient[]) as Holder {
 }
 
 function getArmorCore(tier as int) as IIngredient {
-    return itemUtils.getItem("contenttweaker:armor_core_"+tier);
+    var actualTier as int = tier;
+    if(actualTier>4){
+        actualTier-=1;
+    }
+    return itemUtils.getItem("contenttweaker:armor_core_"+actualTier);
 }
 
 function armor(output as IItemStack, type as string, material as IIngredient, coreTier as int) as Holder {
@@ -158,6 +162,10 @@ function rotatedShaped(output as IItemStack, type as string, rotations as int, i
 
 function customShaped(output as IItemStack, inputs as IIngredient[], inputMap as int[][]) as Holder {
     return mappedShaped(output,Shaper.mapGrid(inputs,inputMap));
+}
+
+function dynamicShaped(output as IItemStack, inputs as int[][IIngredient], width as int = 3, height as int = 3) as Holder {
+    return mappedShaped(output,Shaper.mapDynamicGrid(inputs,width,height));
 }
 
 function mappedShaped(output as IItemStack, inputs as IIngredient[][]) as Holder {

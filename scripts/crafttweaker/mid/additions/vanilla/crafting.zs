@@ -69,8 +69,8 @@ static shapedBuilders as Holder[] = [
         <ore:logWood>]), //basic worktable
 
     //botania
-    Util.stick(<botania:manaresource:13>,<botania:dreamwood>), //dreamwood twig
-    Util.stick(<botania:manaresource:3>,<botania:livingwood>), //livingwood twig
+    Util.dynamicShaped(<botania:manaresource:13>, {<botania:dreamwood>:[0,1]}, 1, 2), //dreamwood twig
+    Util.dynamicShaped(<botania:manaresource:3>, {<botania:livingwood>:[0,1]}, 1, 2), //livingwood twig
 
     //cookingforblockheads
     Util.simpleShaped(<cookingforblockheads:oven>, "portalbottom", [
@@ -141,6 +141,12 @@ static shapedBuilders as Holder[] = [
         <enderio:item_alloy_ball:9>
     ]), //centrifuge core
 
+    //scanner
+    Util.dynamicShaped(<scanner:battery>, {
+        <ore:dustRedstone>:[0,2],
+        <twilightforest:carminite>:[1],
+    },1), //battery
+
     //sgcraft
     Util.simpleShaped(<sgcraft:stargatecontroller>, "table", [
         <portalgun:item_miniature_black_hole>,
@@ -192,6 +198,9 @@ static shapelessBuilders as Holder[] = [
 	        else if(dim==817) return output.withTag({entityId: "aoa3:blooming_pixon"});
 	        return output;
         } as IRecipeFunction), //pixon soul vial
+
+    //minecraft
+    Util.shapeless(<minecraft:dye:2>, [<botania:pestleandmortar>, <minecraft:cactus>, <biomesoplenty:blue_dye>, <xlfoodmod:cheese>]), //cactus green
 
     //randomthings
     Util.shapeless(<randomthings:timeinabottle>, [<randomthings:timeinabottle>, <environmentaltech:lonsdaleite_crystal>]).setMarkIndex(0)

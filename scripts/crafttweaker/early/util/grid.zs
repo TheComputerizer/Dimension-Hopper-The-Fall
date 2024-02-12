@@ -137,10 +137,6 @@ static common3x3 as int[][][string] = {
         [ 3, 0, 3 ],
         [ 2, 1, 2 ]
     ],
-    "stick": [
-        [ 0 ],
-        [ 0 ]
-    ],
     "table": [
         [ 4, 1, 4 ],
         [ 3, 0, 3 ],
@@ -375,6 +371,33 @@ function rotate(original as int[][], rotations as int) as int[][] {
 
 function rotateCommon(type as string, size as int, rotations as int) as int[][] {
     return rotate(getCommon(type,size),rotations);
+}
+
+function matchInputSlot(inputs as int[][IIngredient], index as int) as IIngredient {
+    for input, slots in inputs {
+        for slot in slots {
+            if(slot==index) {
+                return input;
+            }
+        }
+    }
+    return null;
+}
+
+function mapDynamicRow(inputs as int[IIngredient], y as int, width as int) as IIngredient[] {
+    var mapped as IIngredient[] = [] as IIngredient[];
+    for x in 0 .. width {
+        mapped+=matchInputSlot(inputs,x+(width*y));
+    }
+    return mapped;
+}
+
+function mapDynamicGrid(inputs as int[IIngredient], width as int, height as int) as IIngredient[][] {
+    var mapped as IIngredient[][] = [] as IIngredient[][];
+    for y in 0 .. height {
+        mapped+=mapDynamicRow(inputs,y,width);
+    }
+    return mapped;
 }
 
 function mapRow(inputs as IIngredient[], row as int[]) as IIngredient[] {
