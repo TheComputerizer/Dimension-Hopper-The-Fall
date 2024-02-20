@@ -126,6 +126,7 @@ static itemRemovals as IItemStack[] = [
 
     //aether
     <aether:holystone_furnace>,
+    <aether:scatterglass_wall>,
 
     //aroma1997sdimension
     <aroma1997sdimension:dimensionchanger>,
@@ -151,6 +152,9 @@ static itemRemovals as IItemStack[] = [
     <botania:quartz>,
     <botania:waterring>,
 
+    //calculator
+    <calculator:atomicmultiplier>,
+
     //cavern
     <cavern:cave_block:1>,
 
@@ -162,6 +166,10 @@ static itemRemovals as IItemStack[] = [
 
     //enderio
     <enderio:item_dark_steel_sword>,
+
+    //environmentaltech
+    <environmentaltech:modifier_creative_flight>,
+    <environmentaltech:modifier_flight_speed>,
 
     //erebuc
     <erebus:umber_furnace>,
@@ -278,6 +286,7 @@ static itemRemovals as IItemStack[] = [
     <rftools:syringe>,
 
     //silentgems
+    <silentgems:chaosrune>.withTag({chaos_buff: "silentgems:flight"}),
     <silentgems:food>,
 
     //tconstruct
@@ -315,15 +324,8 @@ static itemRemovals as IItemStack[] = [
 ] as IItemStack[];
 
 static itemHiders as IItemStack[] = [
-    //environmentaltech
-    <environmentaltech:modifier_creative_flight>,
-    <environmentaltech:modifier_flight_speed>,
-    
     //erebus
     <erebus:umber_furnace_active>,
-
-    //silentgems
-	<silentgems:chaosrune>.withTag({chaos_buff: "silentgems:flight"}),
 
     //tconstruct
     <tconstruct:clay_cast>

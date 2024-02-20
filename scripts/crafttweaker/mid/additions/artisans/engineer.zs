@@ -82,7 +82,7 @@ static recipeHolders as Holder[] = [
     <appliedenergistics2:material:23>,
     <appliedenergistics2:material:24>,
     <moreplates:awakened_draconium_plate>,
-    <mekanism:controlcircuit:4>,
+    <mekanism:controlcircuit:2>,
     <moreplates:awakened_draconium_plate>])
     .addTools({<ore:artisansDriver>:104,<ore:artisansSolderer>:104,<ore:artisansCutters>:104})
     .addFluids([<liquid:charger>*8000]), //1024k me storage component
@@ -94,7 +94,7 @@ static recipeHolders as Holder[] = [
     <appliedenergistics2:material:23>,
     <appliedenergistics2:material:24>,
     <moreplates:awakened_draconium_plate>,
-    <mekanism:controlcircuit:4>,
+    <mekanism:controlcircuit:2>,
     <moreplates:awakened_draconium_plate>])
     .addTools({<ore:artisansDriver>:104,<ore:artisansSolderer>:104,<ore:artisansCutters>:104})
     .addFluids([<liquid:charger>*8000]), //1024k me fluid storage component

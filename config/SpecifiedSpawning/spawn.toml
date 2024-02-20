@@ -33,9 +33,6 @@
 	return_immediately = true
 	dimension = -1
 	group = "boss_spawns"
-	[modify.biome]
-		biome = "minecraft:hell"
-		matcher = "nether"
 	[spawn.entity]
 		entity = "netherex:ghast_queen"
 		min_group_size = 1

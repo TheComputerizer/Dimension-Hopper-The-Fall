@@ -17,7 +17,4 @@ function run() {
     for entry, items in oredictRemovals {
         entry.removeItems(items);
     }
-    for name, entry in Global.enchant {
-        entry.removeItems(Global.disenchant);
-    }
 }

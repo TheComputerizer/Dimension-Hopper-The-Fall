@@ -2,7 +2,7 @@ setIcon(<aquaculture:fish, meta:38>)
 
 setTitle("Legendary Fisherman")
 
-setDescription("Gotta catch ema all")
+setDescription("Gotta catch em all")
 
 addParent("triumph:dimensionhopper/challenges/root")
 

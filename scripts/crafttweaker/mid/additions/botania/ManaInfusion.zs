@@ -39,3 +39,15 @@ for i in 0 .. 8 {
 
 //enchanted book recycling
 ManaInfusion.addInfusion(<minecraft:book>, <minecraft:enchanted_book>, -25000);
+
+//oredict grass
+ManaInfusion.addAlchemy(<minecraft:tallgrass:2>, <ore:grassPlant>, 1000);
+ManaInfusion.addConjuration(<minecraft:tallgrass:1>*2, <ore:grassPlant>, 1000);
+ManaInfusion.addInfusion(<botania:grassseeds>, <ore:grassPlant>, 5000);
+
+//oredict fern
+ManaInfusion.addAlchemy(<minecraft:deadbush>, <ore:fernPlant>, 1000);
+
+//oredict bush
+ManaInfusion.addAlchemy(<minecraft:tallgrass:1>, <ore:bushPlant>, 1000); 
+ManaInfusion.addInfusion(<botania:grassseeds:1>, <ore:bushPlant>, 5000); 

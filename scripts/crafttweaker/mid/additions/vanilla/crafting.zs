@@ -127,6 +127,13 @@ static shapedBuilders as Holder[] = [
         <avaritia:compressed_crafting_table>
     ]), //machine reader
 
+    //naturesaura
+    Util.dynamicShaped(<naturesaura:gold_fiber>, {
+        <ore:grassPlant>:[4],
+        <ore:treeLeaves>:[0,2,6,8],
+        <ore:nuggetGold>:[1,3,5,7]
+    }), //brilliant fiber
+
     //plustic
     Util.simpleShaped(<plustic:centrifuge>, "plus", [
         <openblocks:tank>,
@@ -140,6 +147,11 @@ static shapedBuilders as Holder[] = [
         <calculator:flawlessglass>,
         <enderio:item_alloy_ball:9>
     ]), //centrifuge core
+
+    //quark 
+    Util.dynamicShaped(<quark:turf>, {
+        <ore:grassPlant>:[0,1,2,3]
+    },2,2), //turf block
 
     //scanner
     Util.dynamicShaped(<scanner:battery>, {
@@ -164,6 +176,19 @@ static shapedBuilders as Holder[] = [
         <industrialforegoing:artificial_dye:11>
     ]), //base upgrade
 
+    //tombstone
+    Util.dynamicShaped(<tombstone:fishing_rod_of_misadventure>, {
+        <ore:bushPlant>:[2,4,6],
+        <ore:dustGrave>:[5,8]
+    }), //fishing rod of misadventure
+    Util.dynamicShaped(<tombstone:voodoo_poppet>, {
+        <ore:bushPlant>:[4],
+        <ore:dustGrave>:[0,2,6,8],
+        <ore:clay>:[1,7],
+        <ore:leather>:[3],
+        <ore:string>:[5]
+    }), //voodoo poppet
+
     //zollerngalaxy
     Util.simpleShaped(<zollerngalaxy:staticamber>, "star", [
         <ore:blockAmber>, 
@@ -179,13 +204,18 @@ static shapedBuilders as Holder[] = [
 
 static shapelessBuilders as Holder[] = [
     //avaritia
-    Util.shapeless(<avaritia:extreme_crafting_table>,[<extendedcrafting:table_ultimate>,<avaritia:resource:5>]), //extreme crafting table
+    Util.shapeless(<avaritia:extreme_crafting_table>, [<extendedcrafting:table_ultimate>, <avaritia:resource:5>]), //extreme crafting table
+
+    //biomesoplenty
+    Util.shapeless(<biomesoplenty:terrarium:9>, [<ore:grass>, <ore:bushPlant>, <biomesoplenty:jar_empty>]), //dead terrarium
+    Util.shapeless(<biomesoplenty:terrarium>, [<ore:grass>, <ore:fernPlant>, <biomesoplenty:jar_empty>]), //fern terrarium
 
     //botania
-    Util.shapeless(<botania:manaresource:11>,[<avaritia:compressed_crafting_table>,<botania:shimmerrock>]), //crafting placeholder
+    Util.shapeless(<botania:manaresource:11>, [<avaritia:compressed_crafting_table>, <botania:shimmerrock>]), //crafting placeholder
+    Util.shapeless(<botania:grassseeds:3>, [<botania:grassseeds>, <ore:bushPlant>]), //dry pasture seeds
 
     //enderio
-    Util.shapeless(<enderio:item_soul_vial:1>,[<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})]).setMarkIndex(0)
+    Util.shapeless(<enderio:item_soul_vial:1>, [<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})]).setMarkIndex(0)
         .addFunction(function(output, map, info) {
             var dim = info.player.dimension as int;
 	        if(dim==0) return output.withTag({entityId: "aoa3:glistening_pixon"});

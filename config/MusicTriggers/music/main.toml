@@ -230,6 +230,9 @@
 	[songs.nighttime7]
 		play_once = 1
 		triggers = [ "time-night" "dimension-overworld" ]
+	[songs.nighttime8]
+		play_once = 1
+		triggers = [ "time-night" "dimension-overworld" ]
 	[songs.raining1]
 		play_once = 1
 		triggers = [ "raining" "dimension-overworld" ]

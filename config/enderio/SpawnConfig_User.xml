@@ -35,5 +35,15 @@
     <dimensionExclude name="Twilight Forest"/>
   </entry>
 -->
+<entry id="ConcussionCreeper" mobName="enderiozoo:concussioncreeper" rate="40" minGroupSize="1" maxGroupSize="3" remove="true">
+    <biomeFilter type="any">
+      <biome type="BASE_LAND_TYPES" />
+      <biome type="NETHER" exclude="true" />
+      <biome type="END" exclude="true" />
+      <biome type="MUSHROOM" exclude="true" />
+    </biomeFilter>   
+    <dimensionExclude name="twilight_forest"/>
+    <dimensionExclude name="Dungeon"/>
+  </entry>
 
 </SpawnConfig>

@@ -1,6 +1,6 @@
 setIcon(<lightningcraft:under_tnt, meta:2>)
 
-setTitle("Unnecessarily Power Explosive")
+setTitle("Unnecessarily Explosive")
 
 setDescription("What exactly are you planning to do with that...?")
 

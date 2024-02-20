@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.avaritia.ExtremeCrafting;
+import mods.botania.ManaInfusion;
 import mods.botania.Orechid;
 import mods.botania.OrechidIgnem;
 import mods.dimhoppertweaks.IItemConsumer;
@@ -23,6 +24,9 @@ static itemsRemovalCalls as IItemConsumer[int][string] = {
     },
     "avaritia": {
         0: function(item as IItemStack) { ExtremeCrafting.remove(item); }
+    },
+    "botania": {
+        0: function(item as IItemStack) { ManaInfusion.removeRecipe(item); }
     },
     "extendedcrafting": {
         0: function(item as IItemStack) { TableCrafting.remove(item); }

@@ -2,6 +2,8 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+
+import scripts.crafttweaker.early.util.GlobalHelper as Helper;
 import scripts.crafttweaker.early.util.Globals as Global;
 import scripts.crafttweaker.early.util.Lambdas as Caller;
 import scripts.crafttweaker.early.util.Stacks as Stack;
@@ -19,12 +21,11 @@ static modRemovals as string[] = [
 
 static arrayRemovals as IItemStack[][] = [
 	//globals
-	Global.boots,
-	Global.conduits,
-	Global.chestplates,
-	Global.helmets,
-	Global.joapcaBlocks,
-	Global.leggings,
+	Helper.getRemovalItems("boots",Global.boots),
+	Helper.getRemovalItems("chest",Global.chestplates),
+	Helper.getRemovalItems("conduit",Global.conduits),
+	Helper.getRemovalItems("helm",Global.helmets),
+	Helper.getRemovalItems("jaopca:block",Global.joapcaBlocks),
 
 	//oredict
 	<ore:blockConstructionAlloy>.itemArray,
@@ -227,6 +228,10 @@ static itemRemovals as IItemStack[] = [
 	//bedrockcraft
 	<bedrockcraft:bedrock_breaker>,
 
+	//biomesoplenty
+	<biomesoplenty:terrarium>,
+	<biomesoplenty:terrarium:9>,
+
 	//bonsaitrees
 	<bonsaitrees:bonsaipot:*>,
 
@@ -234,6 +239,7 @@ static itemRemovals as IItemStack[] = [
 	<botania:divacharm>,
 	<botania:fertilizer>,
 	<botania:grasshorn>,
+	<botania:grassseeds:3>,
 	<botania:itemfinder>,
 	<botania:lens>,
 	<botania:manaresource:*>,
@@ -394,6 +400,7 @@ static itemRemovals as IItemStack[] = [
 	<natura:respawn_obelisk>,
 
 	//naturesaura
+	<naturesaura:gold_fiber>,
 	<naturesaura:gold_powder>,
 	<naturesaura:infused_iron_block>,
 
@@ -428,6 +435,7 @@ static itemRemovals as IItemStack[] = [
 
 	//quark
 	<quark:reed_block>,
+	<quark:turf>,
 
 	//randomthings
 	<randomthings:timeinabottle>,
@@ -462,6 +470,10 @@ static itemRemovals as IItemStack[] = [
 
 	//tinker_io
 	<tinker_io:upg>,
+
+	//tombstone
+	<tombstone:fishing_rod_of_misadventure>,
+	<tombstone:voodoo_poppet>,
 
 	//tp
 	<tp:chainmail_part>,

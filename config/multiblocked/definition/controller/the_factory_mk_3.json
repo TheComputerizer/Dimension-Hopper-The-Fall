@@ -60,7 +60,7 @@
         "CBC"
       ],
       [
-        "BDB",
+        "BIB",
         "EF@",
         "BDB"
       ],
@@ -106,6 +106,11 @@
           }
         ],
         "type": "states"
+      },
+      "LE": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
       },
       "item_in": {
         "capability": "item",
@@ -169,6 +174,9 @@
       ],
       "H": [
         "item_out"
+      ],
+      "I": [
+        "LE"
       ]
     }
   }

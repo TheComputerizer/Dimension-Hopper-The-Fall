@@ -60,7 +60,7 @@
         "ABA"
       ],
       [
-        "BCB",
+        "BGB",
         "AD@",
         "BCB"
       ],
@@ -121,6 +121,11 @@
         "type": "capability",
         "io": "IN"
       },
+      "LE": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
+      },
       "D": {
         "states": [
           {
@@ -157,6 +162,9 @@
       ],
       "F": [
         "item_out"
+      ],
+      "G": [
+        "LE"
       ]
     }
   }

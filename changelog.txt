@@ -1,3 +1,25 @@
+Released V1.5.3[BUGFIXES]
+
+*The softlocks are inevitable*
+
+Added Mods
+- Spark Unforged
+
+Updated Mods
+- Dimension Hopper Tweaks
+
+General Changes
+- Removed the Handheld Crafting Table since the Crafting Table On A Stick already exists
+- Fixed stargate addressers not working on dedicated servers
+- Fixed the stargate addresser quests not being updated to match the new dimension specific NBT data
+- Fixed the passive benefit for the reseach skill not applying to skill credit
+- Added alternative methods of crafting scanner batteries and cactus greeen in the prologue
+- Removed early creative flight
+- Added an info quest regarding some important changes the pack makes
+- Fixed the impressive, superior, and excellent tiers of armor requiring the the wrong cores
+- All armor cores can now stack up to 4
+- Enabled a few more sledgehammer tweaks
+
 Released V1.5.2[PERFORMANCE & BUGFIXES]
 
 *Here have your performance back*

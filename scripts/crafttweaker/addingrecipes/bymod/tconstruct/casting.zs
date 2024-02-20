@@ -28,3 +28,8 @@ Casting.removeTableRecipe(<silentgems:gemshard:8>);
 
 //nova frame
 Casting.addTableRecipe(<extrabees:hive_frame.debug>, <magicbees:frames.oblivion>, <liquid:binnie.dna.raw>, 729000, true);
+
+//genetic waste duping
+Casting.addTableRecipe(<gendustry:waste>, <forestry:bee_drone_ge>, <liquid:genetic_chaos_fluid>, 60, true);
+Casting.addTableRecipe(<gendustry:waste>, <forestry:bee_princess_ge>, <liquid:genetic_chaos_fluid>, 55, true);
+Casting.addTableRecipe(<gendustry:waste>, <forestry:bee_queen_ge>, <liquid:genetic_chaos_fluid>, 50, true);

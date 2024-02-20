@@ -2,7 +2,7 @@ setIcon(<galacticraftcore:basic_item:14>)
 
 setTitle("Mercury Space Station")
 
-setDescription("Create and visit a space station above mars")
+setDescription("Create and visit a space station above mercury")
 
 addParent("triumph:dimensionhopper/challenges/root")
 

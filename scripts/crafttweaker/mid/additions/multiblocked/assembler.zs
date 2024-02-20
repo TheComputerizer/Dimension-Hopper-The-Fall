@@ -101,7 +101,7 @@ assemblerRP.start()
 	.perTick(true)
 	.inputFE(150)
 	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<minecraft:wheat>,<minecraft:carrot>,<minecraft:beef>,<actuallyadditions:item_growth_ring>)
+    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<minecraft:wheat>,<minecraft:carrot>,<actuallyadditions:item_growth_ring>)
     .inputFluids(<liquid:latex>*1000)
     .outputItems(<industrialforegoing:animal_growth_increaser>)
     .buildAndRegister();
