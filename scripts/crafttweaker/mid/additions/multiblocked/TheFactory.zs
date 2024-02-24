@@ -23,8 +23,7 @@ RecipeMap.register(factoryRPS);
 
 val factoryRPT = RecipeMap("the_factory_mk_3_recipes") as RecipeMap;
 RecipeMap.register(factoryRPT);
-    i
-    
+
 var blockMap as IItemStack[IItemStack] = {
     <draconicevolution:draconium_ingot>*9:              <draconicevolution:draconium_block>,
     <draconicevolution:draconic_ingot>*9:               <draconicevolution:draconic_block>,
@@ -55,8 +54,6 @@ var blockMap as IItemStack[IItemStack] = {
     <aoa3:shyrestone_ingot>*9:                          <aoa3:shyrestone_block>,
     <aoa3:skeletal_ingot>*9:                            <aoa3:skeletal_ingot_block>,
     <aoa3:varsium_ingot>*9:                             <aoa3:varsium_block>,
-    <avaritia:resource:1>*9:                            <avaritia:block_resource:2>,
-    <avaritia:resource:6>*9:                            <avaritia:block_resource:1>,
     <blue_skies:horizonite_ingot>*9:                    <blue_skies:horizonite_block>,
     <calculator:enrichedgoldingot>*9:                   <calculator:material:2>,
     <calculator:reinforcedironingot>*9:                 <calculator:material:3>,
@@ -234,7 +231,10 @@ function compressed(map as IItemStack[IItemStack], def as IItemDefinition) {
 }
 
 for ingot, block in blockMap {
+    val compressName as string = "compressTo"+block.definition.id+block.metadata;
+    val splitName as string = "splitTo"+ingot.definition.id+ingot.metadata;
     factoryRPF.start()
+        .name(compressName)
         .duration(10)
         .perTick(true)
         .inputFE(1000)
@@ -243,6 +243,7 @@ for ingot, block in blockMap {
         .outputItems(block)
         .buildAndRegister();
     factoryRPS.start()
+        .name(compressName)
         .duration(5)
         .perTick(true)
         .inputFE(50000)
@@ -251,6 +252,7 @@ for ingot, block in blockMap {
         .outputItems(block)
         .buildAndRegister();
     factoryRPT.start()
+        .name(compressName)
         .duration(1)
         .inputFE(1000000)
         .inputItems(ingot)
@@ -258,6 +260,7 @@ for ingot, block in blockMap {
         .buildAndRegister();
 
     factoryRPF.start()
+        .name(splitName)
         .duration(10)
         .perTick(true)
         .inputLE(10)
@@ -266,6 +269,7 @@ for ingot, block in blockMap {
         .outputItems(ingot)
         .buildAndRegister();
     factoryRPS.start()
+        .name(splitName)
         .duration(5)
         .perTick(true)
         .inputLE(50)
@@ -273,7 +277,8 @@ for ingot, block in blockMap {
         .inputItems(block)
         .outputItems(ingot)
         .buildAndRegister();
-        factoryRPT.start()
+    factoryRPT.start()
+        .name(splitName)
         .duration(1)
         .inputLE(1000)
         .inputItems(block)
@@ -282,6 +287,7 @@ for ingot, block in blockMap {
 }
 
 factoryRPS.start()
+    .name("compressTo"+<contenttweaker:affixed_machine_parts>.definition.id+"0")
     .duration(100)
     .perTick(true)
     .inputFE(10000)
@@ -291,6 +297,7 @@ factoryRPS.start()
     .buildAndRegister();
 
 factoryRPT.start()
+    .name("compressTo"+<contenttweaker:affixed_machine_parts>.definition.id+"0")
     .duration(20)
     .perTick(true)
     .inputFE(500000)

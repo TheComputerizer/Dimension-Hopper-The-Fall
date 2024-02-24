@@ -33,7 +33,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "singularities",
   "basePattern": {
     "structureDir": [
       "BACK",

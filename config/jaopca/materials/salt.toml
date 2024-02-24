@@ -13,14 +13,6 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "dust"
-	#The color of this material.
-	color = 14408924
-
-[avaritia]
-	#The base amount of blocks required to create one singularity.
-	inputAmount = 300
-	#Should the singularity be added to the Infinity Catalyst recipe.
-	addToCatalyst = true
 
 [enderio]
 	#The default byproduct material to output in Ender IO's sagmill.

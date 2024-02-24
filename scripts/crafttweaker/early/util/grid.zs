@@ -384,7 +384,7 @@ function matchInputSlot(inputs as int[][IIngredient], index as int) as IIngredie
     return null;
 }
 
-function mapDynamicRow(inputs as int[IIngredient], y as int, width as int) as IIngredient[] {
+function mapDynamicRow(inputs as int[][IIngredient], y as int, width as int) as IIngredient[] {
     var mapped as IIngredient[] = [] as IIngredient[];
     for x in 0 .. width {
         mapped+=matchInputSlot(inputs,x+(width*y));
@@ -392,7 +392,7 @@ function mapDynamicRow(inputs as int[IIngredient], y as int, width as int) as II
     return mapped;
 }
 
-function mapDynamicGrid(inputs as int[IIngredient], width as int, height as int) as IIngredient[][] {
+function mapDynamicGrid(inputs as int[][IIngredient], width as int, height as int) as IIngredient[][] {
     var mapped as IIngredient[][] = [] as IIngredient[][];
     for y in 0 .. height {
         mapped+=mapDynamicRow(inputs,y,width);

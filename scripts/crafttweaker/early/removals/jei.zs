@@ -324,6 +324,23 @@ static itemRemovals as IItemStack[] = [
 ] as IItemStack[];
 
 static itemHiders as IItemStack[] = [
+    //avaritia
+    <avaritia:singularity>, //fluxed singlularity is 12
+    <avaritia:singularity:1>,
+    <avaritia:singularity:2>,
+    <avaritia:singularity:3>,
+    <avaritia:singularity:4>,
+    <avaritia:singularity:5>,
+    <avaritia:singularity:6>,
+    <avaritia:singularity:7>,
+    <avaritia:singularity:8>,
+    <avaritia:singularity:9>,
+    <avaritia:singularity:10>,
+    <avaritia:singularity:11>,
+
+    //avaritiatweaks
+    <avaritiatweaks:infinitato>,
+
     //erebus
     <erebus:umber_furnace_active>,
 

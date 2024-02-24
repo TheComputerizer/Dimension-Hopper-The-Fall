@@ -13,14 +13,6 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "crystal"
-	#The color of this material.
-	color = 6664110
-
-[avaritia]
-	#The base amount of blocks required to create one singularity.
-	inputAmount = 300
-	#Should the singularity be added to the Infinity Catalyst recipe.
-	addToCatalyst = true
 
 [molten]
 	#The temperature of this molten fluid.
