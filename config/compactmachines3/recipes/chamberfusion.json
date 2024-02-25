@@ -1,0 +1,93 @@
+{
+  "name": "compactmachines3:chamberfusion",
+  "target-item": "chambers:fusion_chamber",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "draconicevolution:chaotic_core",
+  "catalyst-meta": 0,
+
+  "input-types": {
+    "a": {
+      "id": "draconicevolution:energy_crystal",
+      "meta": 8,
+      "ignore-nbt": true
+    },
+    "b": {
+      "id": "silentgems:miscblock",
+      "meta": 4,  
+      "ignore-nbt": true
+    },
+    "c": {
+      "id": "compactmachines3:wallbreakable",
+      "ignore-meta": true,  
+      "ignore-nbt": true
+    },
+    "d": {
+      "id": "contenttweaker:bloq",
+      "ignore-meta": true,  
+      "ignore-nbt": true
+    },
+    "e": {
+      "id": "draconicevolution:fusion_crafting_core",
+      "ignore-meta": true,  
+      "ignore-nbt": true
+    }
+  },
+
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "d",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "c",
+        "d",
+        "c"
+      ],
+      [
+        "d",
+        "e",
+        "d"
+      ],
+      [
+        "c",
+        "d",
+        "c"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "d",
+        "b"
+      ],
+      [
+        "a:A",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+}

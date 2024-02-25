@@ -75,7 +75,7 @@ static arrayRemovals as IItemStack[][] = [
 
 	//enderio
 	Stack.append("enderio:block_", ["alloy", "alloy_endergy", "tank"], 32767),
-	Stack.append("enderio:block_", ["alloy_smelter", "enchanter", "powered_spawner", "reinforced_obsidian", "sag_mill", 
+	Stack.append("enderio:block_", ["alloy_smelter", "powered_spawner", "reinforced_obsidian", "sag_mill", 
 		"slice_and_splice", "soul_binder", "vat", "wired_charger"]),
 	Stack.append("enderio:block_", ["combustion", "ender", "franken_zombie", "lava", "stirling", "zombie"], 0, "_generator"),
 	Stack.append("enderio:block_enhanced_", ["alloy_smelter", "combustion_generator", "sag_mill", "vat", "wired_charger"]),
@@ -228,6 +228,9 @@ static itemRemovals as IItemStack[] = [
 	//bedrockcraft
 	<bedrockcraft:bedrock_breaker>,
 
+	//bigreactors
+	<bigreactors:blocksteel>,
+
 	//biomesoplenty
 	<biomesoplenty:terrarium>,
 	<biomesoplenty:terrarium:9>,
@@ -267,6 +270,7 @@ static itemRemovals as IItemStack[] = [
 	<darkutils:trap_tile:*>,
 
 	//draconicevolution
+	<draconicevolution:chaos_shard:*>,
 	<draconicevolution:draconium_block>,
 	<draconicevolution:fusion_crafting_core>,
 	<draconicevolution:generator>,
@@ -293,8 +297,10 @@ static itemRemovals as IItemStack[] = [
 	<extendedcrafting:storage:*>,
 
 	//extraplanets
-	<extraplanets:oxygen_tank_extremely_heavy_full:*>,
+	<extraplanets:jupiter:13>,
+	<extraplanets:kepler22b:14>,
 	<extraplanets:neptune:7>,
+	<extraplanets:oxygen_tank_extremely_heavy_full:*>,
 	<extraplanets:thermal_cloth:*>,
 	<extraplanets:tier8_items:5>,
 
@@ -327,6 +333,8 @@ static itemRemovals as IItemStack[] = [
 	<gaiadimension:restructurer_idle>,
 
 	//galacticraftcore
+	<galacticraftcore:basic_block_core:10>,
+	<galacticraftcore:basic_block_core:11>,
 	<galacticraftcore:basic_block_core:12>,
 	<galacticraftcore:collector>,
 	<galacticraftcore:fuel_loader>,
@@ -336,6 +344,7 @@ static itemRemovals as IItemStack[] = [
 
 	//galacticraftplanets
 	<galacticraftplanets:asteroids_block:7>,
+	<galacticraftplanets:venus:12>,
 
 	//genetics
 	<genetics:lab_machine:*>,
@@ -350,6 +359,8 @@ static itemRemovals as IItemStack[] = [
 
 	//immersiveengineering
 	<immersiveengineering:blueprint>.withTag({blueprint: "components"}),
+	<thermalfoundation:material:802>,
+	<immersiveengineering:storage:*>,
 	<immersiveengineering:tool>,
 
 	//industrialforegoing
@@ -418,6 +429,7 @@ static itemRemovals as IItemStack[] = [
 
 	//plustic
 	<plustic:centrifuge:*>,
+	<plustic:invarblock>,
 
 	//projecte
 	<projecte:item.pe_covalence_dust:2>,
@@ -480,6 +492,10 @@ static itemRemovals as IItemStack[] = [
 	<tp:flint_block>,
 	<tp:pouch>,
 	<tp:reinforced_obsidian>,
+	<tp:steel_block>,
+
+	//travelersbackpack
+	<travelersbackpack:travelers_backpack>,
 
 	//xlfoodmod
 	<xlfoodmod:cheese>,

@@ -11,41 +11,42 @@ val singularityRP = RecipeMap("singularity_recipes") as RecipeMap;
 RecipeMap.register(singularityRP);
 
 val singlarityMap as IIngredient[IItemStack] = {
-	<extendedcrafting:singularity>:          <minecraft:coal_block>*10,
-	<extendedcrafting:singularity:1>:        <minecraft:iron_block>*10,
-	<extendedcrafting:singularity:2>:        <minecraft:lapis_block>*10,
-	<extendedcrafting:singularity:3>:        <minecraft:redstone_block>*10,
-	<extendedcrafting:singularity:4>:        <minecraft:glowstone>*10,
-	<extendedcrafting:singularity:5>:        <minecraft:gold_block>*10,
-	<extendedcrafting:singularity:6>:        <minecraft:diamond_block>*10,
-	<extendedcrafting:singularity:7>:        <minecraft:emerald_block>*10,
-	<extendedcrafting:singularity:16>:       <thermalfoundation:storage:4>*10,
-	<extendedcrafting:singularity:17>:       <thermalfoundation:storage>*10,
-	<extendedcrafting:singularity:18>:       <thermalfoundation:storage:1>*10,
-	<extendedcrafting:singularity:19>:       <thermalfoundation:storage_alloy:3>*10,
-	<extendedcrafting:singularity:20>:       <zollerngalaxy:zincblock>*10,
-	<extendedcrafting:singularity:21>:       <tconstruct:metal:5>*10,
-	<extendedcrafting:singularity:22>:       <thermalfoundation:storage:2>*10,
-	<extendedcrafting:singularity:23>:       <thermalfoundation:storage:3>*10,
-	<extendedcrafting:singularity:24>:       <thermalfoundation:storage_alloy>*10,
-	<extendedcrafting:singularity:25>:       <thermalfoundation:storage:5>*10,
-	<extendedcrafting:singularity:26>:       <thermalfoundation:storage_alloy:4>*10,
-	<extendedcrafting:singularity:27>:       <thermalfoundation:storage_alloy:1>*10,
-	<extendedcrafting:singularity:28>:       <thermalfoundation:storage_alloy:2>*10,
-	<extendedcrafting:singularity:29>:       <thermalfoundation:storage:8>*10,
-	<extendedcrafting:singularity:30>:       <extraplanets:pluto:7>*10,
-	<extendedcrafting:singularity:31>:       <galacticraftplanets:asteroids_block:7>*10,
-	<extendedcrafting:singularity:32>:       <immersiveengineering:storage:5>*10,
-	<extendedcrafting:singularity:33>:       <ceramics:clay_hard:7>*10,
-	<extendedcrafting:singularity:34>:       <thermalfoundation:storage:6>*10,
-	<extendedcrafting:singularity:35>:       <thermalfoundation:storage:7>*10,
-	<extendedcrafting:singularity:48>:       <thermalfoundation:storage_alloy:5>*10,
-	<extendedcrafting:singularity:49>:       <thermalfoundation:storage_alloy:6>*10,
-	<extendedcrafting:singularity:50>:       <thermalfoundation:storage_alloy:7>*10,
-	<extendedcrafting:singularity:64>:       <tconstruct:metal:1>*10,
-	<extendedcrafting:singularity:65>:       <tconstruct:metal>*10,
-	<extendedcrafting:singularity:66>:       <tconstruct:metal:2>*10,
-	<extendedcrafting:singularity_ultimate>: <extendedcrafting:storage:4>*10
+	<avaritia:singularity:12>:               <thermaldynamics:duct_0:5>*64,
+	<extendedcrafting:singularity>:          <minecraft:coal_block>*16,
+	<extendedcrafting:singularity:1>:        <minecraft:iron_block>*16,
+	<extendedcrafting:singularity:2>:        <minecraft:lapis_block>*16,
+	<extendedcrafting:singularity:3>:        <minecraft:redstone_block>*16,
+	<extendedcrafting:singularity:4>:        <minecraft:glowstone>*16,
+	<extendedcrafting:singularity:5>:        <minecraft:gold_block>*16,
+	<extendedcrafting:singularity:6>:        <minecraft:diamond_block>*16,
+	<extendedcrafting:singularity:7>:        <minecraft:emerald_block>*16,
+	<extendedcrafting:singularity:16>:       <thermalfoundation:storage:4>*16,
+	<extendedcrafting:singularity:17>:       <thermalfoundation:storage>*16,
+	<extendedcrafting:singularity:18>:       <thermalfoundation:storage:1>*16,
+	<extendedcrafting:singularity:19>:       <thermalfoundation:storage_alloy:3>*16,
+	<extendedcrafting:singularity:20>:       <zollerngalaxy:zincblock>*16,
+	<extendedcrafting:singularity:21>:       <tconstruct:metal:5>*16,
+	<extendedcrafting:singularity:22>:       <thermalfoundation:storage:2>*16,
+	<extendedcrafting:singularity:23>:       <thermalfoundation:storage:3>*16,
+	<extendedcrafting:singularity:24>:       <thermalfoundation:storage_alloy>*16,
+	<extendedcrafting:singularity:25>:       <thermalfoundation:storage:5>*16,
+	<extendedcrafting:singularity:26>:       <thermalfoundation:storage_alloy:4>*16,
+	<extendedcrafting:singularity:27>:       <thermalfoundation:storage_alloy:1>*16,
+	<extendedcrafting:singularity:28>:       <thermalfoundation:storage_alloy:2>*16,
+	<extendedcrafting:singularity:29>:       <thermalfoundation:storage:8>*16,
+	<extendedcrafting:singularity:30>:       <extraplanets:pluto:7>*16,
+	<extendedcrafting:singularity:31>:       <galacticraftplanets:asteroids_block:7>*16,
+	<extendedcrafting:singularity:32>:       <immersiveengineering:storage:5>*16,
+	<extendedcrafting:singularity:33>:       <ceramics:clay_hard:7>*16,
+	<extendedcrafting:singularity:34>:       <thermalfoundation:storage:6>*16,
+	<extendedcrafting:singularity:35>:       <thermalfoundation:storage:7>*16,
+	<extendedcrafting:singularity:48>:       <thermalfoundation:storage_alloy:5>*16,
+	<extendedcrafting:singularity:49>:       <thermalfoundation:storage_alloy:6>*16,
+	<extendedcrafting:singularity:50>:       <thermalfoundation:storage_alloy:7>*16,
+	<extendedcrafting:singularity:64>:       <tconstruct:metal:1>*16,
+	<extendedcrafting:singularity:65>:       <tconstruct:metal>*16,
+	<extendedcrafting:singularity:66>:       <tconstruct:metal:2>*16,
+	<extendedcrafting:singularity_ultimate>: <extendedcrafting:storage:4>*16
 };
 
 //singularities
@@ -56,11 +57,23 @@ for singlarity, block in singlarityMap {
 		.perTick(true)
 		.inputFE(50000000)
 		.perTick(false)
-		.inputItems(block,<moreplanets:black_hole_fragments>)
+		.inputItems(block, <moreplanets:black_hole_fragments>)
 		.inputFluids(<liquid:dark_water>*32000)
 		.outputItems(singlarity)
 		.buildAndRegister();
 }
+
+//fluxed singularity
+singularityRP.start()
+	.name("singularity"+<avaritia:singularity:12>.definition.id+12)
+	.duration(200)
+	.perTick(true)
+	.inputFE(66666666)
+	.perTick(false)
+	.inputItems(<thermaldynamics:duct_0:5>*64, <extendedcrafting:singularity:3>, <extendedcrafting:singularity:27>)
+	.inputFluids(<liquid:dark_water>*32000)
+	.outputItems(<avaritia:singularity:12>)
+	.buildAndRegister();
 
 //endest pearl
 singularityRP.start()
@@ -96,8 +109,7 @@ singularityRP.start()
 	.perTick(false)
 	.inputItems(<moreplanets:black_hole_fragments>*64, <enderio:block_infinity:2>*5,
 		<appliedenergistics2:material:48>*5, <avaritia:resource:7>, <avaritia:cosmic_meatballs>,
-		<avaritia:ultimate_stew>, <avaritia:endest_pearl>,
-		//<jaopca:avaritia_singularity.radium>, <jaopca:avaritia_singularity.dimensional_shard>,
+		<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <avaritia:singularity:12>,
 		<extendedcrafting:singularity_ultimate>)
 	.inputFluids(<liquid:genetic_chaos_fluid>*50000)
 	.outputItems(<avaritia:resource:5>)

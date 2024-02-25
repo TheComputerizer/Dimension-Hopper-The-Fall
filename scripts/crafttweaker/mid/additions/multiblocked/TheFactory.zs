@@ -87,13 +87,11 @@ var blockMap as IItemStack[IItemStack] = {
     <extraplanets:tier4_items:5>*9:                     <extraplanets:mercury:11>,
     <extraplanets:ingot_uranium>*9:                     <extraplanets:ceres:7>,
     <extraplanets:tier5_items:5>*9:                     <extraplanets:jupiter:8>,
-    <extraplanets:tier5_items:7>*9:                     <extraplanets:jupiter:13>,
     <extraplanets:tier6_items:5>*9:                     <extraplanets:saturn:7>,
     <extraplanets:tier7_items:5>*9:                     <extraplanets:uranus:4>,
     <extraplanets:tier8_items:5>*9:                     <extraplanets:neptune:7>,
     <extraplanets:tier9_items:5>*9:                     <extraplanets:pluto:7>,
     <extraplanets:tier10_items:5>*9:                    <extraplanets:eris:7>,
-    <extraplanets:tier11_items:5>*9:                    <extraplanets:kepler22b:14>,
     <extrautils2:ingredients:11>*9:                     <extrautils2:simpledecorative:1>,
     <plustic:mirioningot>*9:                            <plustic:mirionblock>,
     <psi:material:1>*9:                                 <psi:psi_decorative:1>,
@@ -213,7 +211,17 @@ var blockMap as IItemStack[IItemStack] = {
     <botania_tweaks:compressed_tiny_potato_4>*9:        <botania_tweaks:compressed_tiny_potato_5>,
     <botania_tweaks:compressed_tiny_potato_5>*9:        <botania_tweaks:compressed_tiny_potato_6>,
     <botania_tweaks:compressed_tiny_potato_6>*9:        <botania_tweaks:compressed_tiny_potato_7>,
-    <botania_tweaks:compressed_tiny_potato_7>*9:        <botania_tweaks:compressed_tiny_potato_8>
+    <botania_tweaks:compressed_tiny_potato_7>*9:        <botania_tweaks:compressed_tiny_potato_8>,
+    <extendedcrafting:material:40>*9:                   <extendedcrafting:storage:6>,
+    <draconicevolution:chaos_shard:3>*9:                <draconicevolution:chaos_shard:2>,
+    <draconicevolution:chaos_shard:2>*9:                <draconicevolution:chaos_shard:1>,
+    <draconicevolution:chaos_shard:1>*9:                <draconicevolution:chaos_shard>,
+    <minecraft:cobblestone>*9:                          <overloaded:compressed_cobblestone>,
+    <minecraft:sand>*9:                                 <overloaded:compressed_sand>,
+    <minecraft:dirt>*9:                                 <overloaded:compressed_dirt>,
+    <minecraft:gravel>*9:                               <overloaded:compressed_gravel>,
+    <minecraft:stone>*9:                                <overloaded:compressed_stone>,
+    <minecraft:netherrack>*9:                           <overloaded:compressed_netherrack>
 };
 
 compressed(blockMap, <overloaded:compressed_obsidian>.definition);

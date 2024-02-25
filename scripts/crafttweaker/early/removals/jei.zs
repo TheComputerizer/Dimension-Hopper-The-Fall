@@ -29,10 +29,10 @@ static arrayRemovals as IItemStack[][] = [
     Stack.append("botania:manasteel", ["boots", "chest", "helm", "helmreveal", "legs"]),
 
     //chambers
-    Stack.append("chambers:", ["anvil", "fluid", "soul_anvil"], 0, "_chamber"),
+    Stack.append("chambers:", ["alchemy", "anvil", "fluid", "soul_anvil"], 0, "_chamber"),
 
     //enderio
-    Stack.append("enderio:block_", ["crafter", "farm_station", "simple_crafter"]),
+    Stack.append("enderio:block_", ["crafter", "enchanter", "farm_station", "simple_crafter"]),
     Stack.append("enderio:block_dark_", ["paper_anvil", "steel_anvil"], 32767),
     Stack.append("enderio:item_end_steel_", ["pickaxe", "sword"]),
 
@@ -46,9 +46,6 @@ static arrayRemovals as IItemStack[][] = [
     Stack.metas(<extraplanets:item_tier7_rocket>, [1,2,3]),
     Stack.metas(<extraplanets:item_tier10_electric_rocket>, [1,2,3]),
     Stack.incrementals("extraplanets:tier", [4,5,6,7,8,9,10], 1, "_items"),
-
-	//extrautils2
-    Stack.append("extrautils2:compressed", ["cobblestone", "dirt", "gravel", "netherrack", "sand"], 32767),
 
     //forestry
     Stack.metas(<forestry:resource_storage>, [1,3]),
@@ -145,6 +142,7 @@ static itemRemovals as IItemStack[] = [
 
     //botania
     <botania:craftinghalo>,
+    <botania:enchanter>,
     <botania:flighttiara:*>,
     <botania:goddesscharm>,
     <botania:knockbackbelt>,
@@ -162,6 +160,7 @@ static itemRemovals as IItemStack[] = [
     <chisel:block_charcoal>,
 
     //draconicevolution
+    <draconicevolution:diss_enchanter>,
     <draconicevolution:draconium_chest>,
 
     //enderio
@@ -180,9 +179,10 @@ static itemRemovals as IItemStack[] = [
     //extraplanets
     <extraplanets:basic_decontamination_unit_fake_block>,
     <extraplanets:ingot_lead>,
+    <extraplanets:tier5_items:7>,
+    <extraplanets:tier11_items:5>,
 
     //extrautils2
-    <extrautils2:analogcrafter>,
     <extrautils2:chickenring:1>,
     <extrautils2:crafter>,
     <extrautils2:terraformer:*>,
@@ -211,7 +211,9 @@ static itemRemovals as IItemStack[] = [
     <galacticraftplanets:titanium_pickaxe>,
 
     //immersiveengineering
-    <immersiveengineering:storage>,
+    <immersiveengineering:material:6>,
+    <immersiveengineering:stone_decoration:3>,
+    <immersiveengineering:storage_slab:*>,
 
     //industrialforegoing
     <industrialforegoing:pitiful_fuel_generator>,
@@ -304,6 +306,7 @@ static itemRemovals as IItemStack[] = [
     <tinker_io:upg:6>,
 
     //tp
+    <tp:steel_ingot>,
     <tp:wooden_shears>,
     <tp:wub_ingot>,
 
@@ -314,7 +317,6 @@ static itemRemovals as IItemStack[] = [
     <twilightforest:fiery_pickaxe>,
 
     //xreliquary
-    <xreliquary:alkahestry_tome:*>,
     <xreliquary:twilight_cloak>,
     
     //zollerngalaxy
@@ -325,7 +327,7 @@ static itemRemovals as IItemStack[] = [
 
 static itemHiders as IItemStack[] = [
     //avaritia
-    <avaritia:singularity>, //fluxed singlularity is 12
+    <avaritia:singularity>,
     <avaritia:singularity:1>,
     <avaritia:singularity:2>,
     <avaritia:singularity:3>,
@@ -336,13 +338,34 @@ static itemHiders as IItemStack[] = [
     <avaritia:singularity:8>,
     <avaritia:singularity:9>,
     <avaritia:singularity:10>,
-    <avaritia:singularity:11>,
+    <avaritia:singularity:11>, 
+    //fluxed singlularity is 12
+    <avaritia:singularity:13>,
+    <avaritia:singularity:14>,
 
     //avaritiatweaks
     <avaritiatweaks:infinitato>,
 
     //erebus
     <erebus:umber_furnace_active>,
+
+    //extrautils2
+    <extrautils2:machine>.withTag({Type: "extrautils2:crusher"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_death"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_dragonsbreath"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_ender"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_ice"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_pink"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_potion"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_redstone"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"}),
+    <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}),
 
     //tconstruct
     <tconstruct:clay_cast>

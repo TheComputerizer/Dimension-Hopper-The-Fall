@@ -17,7 +17,7 @@ drawDirectLines(false)
 setPos(0,133)
 
 c0 = addCriteria("Aquamarine", "minecraft:inventory_changed")
-c0.addItem(<botany:ceramic>)
+c0.addItem(<botany:ceramic, meta:0>)
 c1 = addCriteria("Black", "minecraft:inventory_changed")
 c1.addItem(<botany:ceramic, meta:1>)
 c2 = addCriteria("Deep_Blue", "minecraft:inventory_changed")

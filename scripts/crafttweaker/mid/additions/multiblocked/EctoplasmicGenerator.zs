@@ -20,7 +20,7 @@ RecipeMap.register(ectoplasmicRP);
 ectoplasmicRP.start()
 	.duration(20)
 	.perTick(true)
-	.outputFE(100)
+	.outputFE(10000)
 	.perTick(false)
 	.inputItems(<randomthings:ingredient:2>)
 	.outputItems(<randomthings:runedust>)

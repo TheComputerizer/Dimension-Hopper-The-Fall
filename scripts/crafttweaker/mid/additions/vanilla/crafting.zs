@@ -189,6 +189,15 @@ static shapedBuilders as Holder[] = [
         <ore:string>:[5]
     }), //voodoo poppet
 
+    //travelersbackpack
+    Util.dynamicShaped(<travelersbackpack:travelers_backpack>, {
+        <ore:leather>:[0,2,6,8],
+        <ore:ingotGold>:[1],
+        <travelersbackpack:backpack_tank>:[3,5],
+        <ore:chest>:[4],
+        <travelersbackpack:sleeping_bag_bottom>:[7]
+    }), //standard backpack
+
     //zollerngalaxy
     Util.simpleShaped(<zollerngalaxy:staticamber>, "star", [
         <ore:blockAmber>, 
@@ -228,6 +237,9 @@ static shapelessBuilders as Holder[] = [
 	        else if(dim==817) return output.withTag({entityId: "aoa3:blooming_pixon"});
 	        return output;
         } as IRecipeFunction), //pixon soul vial
+
+    //galacticraftplanets
+    Util.shapeless(<galacticraftplanets:schematic>, [<galacticraftplanets:schematic:1>]), //cargo rocket to t3 rocket schematic
 
     //minecraft
     Util.shapeless(<minecraft:dye:2>, [<botania:pestleandmortar>, <minecraft:cactus>, <biomesoplenty:blue_dye>, <xlfoodmod:cheese>]), //cactus green

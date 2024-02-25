@@ -549,11 +549,10 @@
         "energy":200000000,
         "tier": 2,
         "ingredients": [
-			"moreplanets:infected_furnace",
 			"tconstruct:seared_furnace_controller",
 			"enderio:block_enhanced_alloy_smelter",
 			"thebetweenlands:sulfur_furnace_dual",
-			"erebus:umber_furnace"
+			"thermalexpansion:machine"
         ]
     },
 	{
