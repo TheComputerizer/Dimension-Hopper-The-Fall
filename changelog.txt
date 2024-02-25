@@ -1,3 +1,62 @@
+Released V1.5.4
+
+*...*
+
+Removed Mods
+- JAOPCA Singularities
+
+Updated Mods
+- Better Questing Unofficial
+- Chunk-Pregenerator
+- Dimension Hopper Tweaks
+- FermiumASM
+- Greenery
+- HammerLib
+- Inventory Bogo Sorter
+- JAOPCA
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Zen Utils
+
+General Changes
+- Fixed the Tier 3 Rocket schematic not having a duplication recipe
+- Reworked some global script functionality for better handling of mass removals/additions
+- Due to input conflicts, The Factory now requires LE for instead of FE for all splitting recipes
+- Extreme reactors now produce 25x more power and use up fuel twice as fast
+- Adjusted the scaling of high tier solar panels to make it more consistent and encourage other forms of power generation
+- Increased the base damage of the end diamond sword
+- Removed the atomic multiplier
+- Decreased the RF storage, generation rate, and transfer rate of the conductor mast and calculator locator
+- Fixed the 1024k ME Storage and ME Fluid Storage Component recipes
+- Fixed the Animal Grower recipe conflicting with the Animal Feeder
+- Removed Scatterglass Walls
+- The Worktable from Forestry will now inherit the stages of the player that placed it
+- Genetic waste can now be duplicated
+- Readded an old overworld nighttime song
+- Improved upon holystone furnaces
+- Added oredicts for grass, ferns, and bushes
+- The standard travellers backpack recipe now uses oredicted ingredients
+- Concussion Creepers will no longer spawn
+- Fixed some other misc spawning issues
+- Fixed a crash/freeze from using a fishing rod while the Lucky Fisherman trait is active
+- Temporarily removed all unintentially implemented creative items
+- Fixed multiple metatdata issues with multiblocked recipes that caused recipes like the infinity block to be missing
+- Consolidated singularities and removed most of the currently unused ones
+- Improved the Conglomerate Crystal recipe
+- Fixed the Extraordinary Armor Core being uncraftable
+- Disabled Caches since drawers exist
+- Added a recipe for the Fusion Chamber
+- The Ectoplasmic Generator now produces 100x more RF per ectoplasm
+- Fixed some minor grammar & spelling issues in multiple quests
+- Fixed more stupid quest gating
+- Cleaned up a bunch more unused/redundant JEI entries & categories
+- Basic worktables/workstations/workshops are now the only artisan tables capable of vanilla crafting table recipes
+- Automatic Cargo Rocket schematics can now be crafted into Tier 3 Rocket schematics
+- Removed all of the tinted glass varients from their respective oredicts
+- Fixed the Heat Furnace requiring 2 furnace types that don't exist anymore
+
+
 Released V1.5.3[BUGFIXES]
 
 *The softlocks are inevitable*
