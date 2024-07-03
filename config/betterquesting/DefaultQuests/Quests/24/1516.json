@@ -1,0 +1,39 @@
+{
+  "preRequisites:11": [
+    1515
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Here are the XP bonus mapped out. The left side is the level you need and the right side is the additional health gained.\n\n10    +2\n20    +4\n30    +6\n40    +8\n50    +10\n75    +12\n100   +14\n125   +16\n150   +18\n175   +20\n200   +22\n250   +24\n300   +26\n350   +28\n400   +30\n450   +32\n500   +34\n600   +36\n700   +38\n800   +40\n900   +42\n1000  +44\n1250  +46\n1500  +48\n1750  +50\n2000  +52\n2500  +54\n3000  +56\n3500  +58\n4000  +60\n4500  +62\n5000  +64\n6000  +66\n7000  +68\n8000  +70\n9000  +72\n10000 +74\n12500 +76\n15000 +78\n20000 +80\n21863 +130",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "scalinghealth:heartcontainer"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "XP Benefits",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

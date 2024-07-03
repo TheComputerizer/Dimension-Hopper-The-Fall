@@ -411,6 +411,7 @@ static itemRemovals as IItemStack[] = [
 	<natura:respawn_obelisk>,
 
 	//naturesaura
+	<naturesaura:ender_crate>,
 	<naturesaura:gold_fiber>,
 	<naturesaura:gold_powder>,
 	<naturesaura:infused_iron_block>,

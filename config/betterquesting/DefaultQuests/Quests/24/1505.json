@@ -1,0 +1,59 @@
+{
+  "preRequisites:11": [
+    1235
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     By default the levels for each skill is capped at 32, but this can be increased by using §aprestige tokens§r. Each level of prestige token has a number next to it\u0027s name which indicates the new maximum level cap for a skill after it is prestiged. The level cap for the current prestige level of each skill is also listed on the skill token. The skill that will be prestiged when using a prestige token is the one selected via the skill conversion gui visible when shift right clicking a skill token. It should also be highlighted red in the tooltip for the token. You do not have to prestige your skills in order, which means you can theoretically prestige straight from level 1 to level 31!\n\n§cNote: The maximum prestige level is 31 which sets the skill cap to level 1024!",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "dimhoppertweaks:prestige_token",
+        "tag:10": {
+          "prestigeLevel:4": 1
+        }
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Prestige Tokens",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "dimhoppertweaks:prestige_token",
+          "tag:10": {
+            "prestigeLevel:4": 1
+          }
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

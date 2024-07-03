@@ -1,0 +1,59 @@
+{
+  "preRequisites:11": [
+    6
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Well, have you gotten nice and settled in yet? Either way it does not matter because it is time for you to investigate other realms. The closest ones from this one happen to be the§4§o Nether§r and the §e§o§r§9§oAether§r, so that is where we will start! \n\n     Although do take caution, because it seems normal §d§oportal§r structures will be more difficult to activate due to the §l§o§6§l§oDimensional Shift§r. Luckily, the §4§oNether§r happens to be right below this realm, so that can be worked around by digging down to bedrock and throwing an enderpearl through. There are some §o§r§oweird factors§r at play here regarding that, but its best that you dont worry about it too much (§c§oright click bedrock with enderpearl§r). §rGetting back to the overworld should work in the same way (§c§oexcept you left click the bedrock with an enderpearl instead§r), although where you will end up is not quite an exact science at this point. \n\n     As for the §e§o§9§oAether§r, I think the original inhabitants were able to create some sort of §2§oteleporter§r after the portals stopped functioning. You should be able to do the same.\n\n§3§lNOTE: §oInfernal (named) mobs have a high chance of dropping 1 or more ender pearls, so you will not get stuck in the nether.\n\n§r§3§lADDITIONAL NOTE: §oNether portals can still be made, but they require compressed obsidian of any level or refined obsidian blocks instead of normal obsidian. Portals can have multiple types of obsidian in the frame",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "minecraft:lava_bucket"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Prepping for an Excursion",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 32767,
+          "OreDict:8": "",
+          "id:8": "minecraft:lava_bucket"
+        },
+        "1:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "enderpearl",
+          "id:8": "minecraft:ender_pearl"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

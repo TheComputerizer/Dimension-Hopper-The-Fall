@@ -1,0 +1,80 @@
+{
+  "preRequisites:11": [
+    103
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Now that you have steel and seared bricks, you can start processing those ingots you have into plates. To begin, you should make a rudimentary §8§oMetal Press§r. To create and form the structure, aquire these materials, place them as you see in the §3§oEngineer\u0027s Manual§r, and activate the multiblock with that hammer you just got.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 3,
+        "OreDict:8": "",
+        "id:8": "immersiveengineering:metal_decoration0"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Squishing Metal Together",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 3,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:metal_decoration0"
+        },
+        "1:10": {
+          "Count:3": 1,
+          "Damage:2": 5,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:metal_decoration0"
+        },
+        "2:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "minecraft:piston"
+        },
+        "3:10": {
+          "Count:3": 2,
+          "Damage:2": 1,
+          "OreDict:8": "scaffoldingSteel",
+          "id:8": "immersiveengineering:metal_decoration1"
+        },
+        "4:10": {
+          "Count:3": 2,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:conveyor",
+          "tag:10": {
+            "conveyorType:8": "immersiveengineering:conveyor"
+          }
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "preRequisites:11": [],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "     §lThere are some key changes related to health and XP that you may be confused about without prior knowledge. Here are some of the most important changes to take note of.§r\n\n\n- When you die, your maximum health decreases by 1, with a minimum of §c10 health§r§r and you lose §c2%§r of your total XP every time.\n\n- Holding onto XP levels is beneficial, as that will increase your maximum health. The XP bonus is also caclulated after the minimum and maximum health, so it those restrictions are entirely separate.\n\n- You can use a §cHeart Container§r to increase your maximum health, but they cost 30 XP levels to use. It may be better to stick with the XP bonus for health early on. Note that these are strictly 30 full levels and not 30 levels worth of XP.\n\n- §cHeart Containers§r are crafted with 9 §4Heart Crystal Shards§r.\n\n- §4Heart Crystal Shards§r are dropped from bosses and §5blighted mobs§r. Bosses will drop 0-5 shards and §5blighted mobs§r will drop 0-3\n\n- Ore excavation §ois§r in the pack, but it costs XP in addition to the usual hunger points to use. Try not to use it too much if you want to keep your extra health.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "scalinghealth:heartcontainer"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Health \u0026 XP",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

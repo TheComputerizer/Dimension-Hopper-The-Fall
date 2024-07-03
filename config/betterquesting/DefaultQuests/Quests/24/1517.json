@@ -1,0 +1,39 @@
+{
+  "preRequisites:11": [
+    1515
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "§l     Wondering what that difficulty bar that occasionally pops up means? Here is some information regarding that!§r\n\n\n§nGaining difficulty§r\n\n+1 for sleeping\n\n+1 for every boss killed\n\n+0.5 for every blight killed\n\n+0.02 for every hostile mob killed\n\n+0.004 for every passive mob killed\n\n\n§nLunar multipliers§r\n\nNew moon: 1.1\n\nWaxing crescent: 1.3\n\nFirst quarter: 1.5\n\nWaxing gibbous: 1.7\n\nFull moon: 2.0\n\nWaning gibbous: 1.7\n\nLast quarter: 1.5\n\nWaning crescent: 1.3\n\n\n§nGamestage Multipliers§r\n\nAs you progress through the chapters, the actual amount of difficulty gained gets multiplied based on what chapter you are in as well as a few other non central gamestages. The multiplier is double your current chapter in addition to the following:\n\n[gamestage] shopper: x1.5 after the chapter multipliers have been applied\n\n[gamestage] emc: x1.5 after the chapter and shopper multipliers have been applied\n\n\n§nMultiplayer Difficulty§r\n\nOn servers, difficulty is scaled by §lWEIGHTED_AVERAGE§r which means that the total difficulty is the average of all nearby players with closer players having more of an impact on the calculation\n\n\n§nHealth \u0026 XP§r\n\n- You lose 1 max health every time you die with a minimum boundary of 10 HP or 5 hearts not including XP bonuses\n\n- You lose 2% of your total XP every time you die\n\n- The health cap for player not including XP bonuses is 350\n\n- The health cap for mobs is 32768\n\n\n§nDifficulty Scaling (per level)§r\n\nNon-Player Entity Attack Strength Multiplier: +0.01\n\nHostile Entity Health Multiplier: +0.1\n\nPassive Entity Health Multiplier: +0.01\n\nXP Multiplier for Killing Entities: +0.005\n\nBlight Chance Multiplier: +0.25 [The formula is multiplier*(difficulty/max_dfficulty)]\n\n\n§nBlighted Mobs§r\n\nAttack Strength Amplifier: 3\n\nSpeed Amplifier: 3\n\nDifficulty Multiplier: 2\n\nXP Multiplier: 20\n\nArmor Chance +0.5\n\nItem Chance +0.5\n\nDefault Equipment Tier Iron\n\nEquipment Tier Up Chance 0.1",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "scalinghealth:difficultychanger"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Difficulty",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

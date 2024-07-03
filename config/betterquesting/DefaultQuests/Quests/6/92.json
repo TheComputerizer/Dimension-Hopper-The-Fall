@@ -1,0 +1,138 @@
+{
+  "preRequisites:11": [
+    91
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     This are some useful tools you are going to want for crafting",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "artisanworktables:artisans_hammer_stone"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Artisan Tools",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "amount:3": 10,
+      "index:3": 0,
+      "isLevels:1": 1,
+      "rewardID:8": "bq_standard:xp"
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 1,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansCutters",
+          "id:8": "artisanworktables:artisans_cutters_stone"
+        },
+        "1:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansHammer",
+          "id:8": "artisanworktables:artisans_hammer_stone"
+        },
+        "2:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansFramingHammer",
+          "id:8": "artisanworktables:artisans_framing_hammer_stone"
+        },
+        "3:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansHandsaw",
+          "id:8": "artisanworktables:artisans_handsaw_stone"
+        },
+        "4:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansBeaker",
+          "id:8": "artisanworktables:artisans_beaker_stone"
+        },
+        "5:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansPencil",
+          "id:8": "artisanworktables:artisans_pencil_stone"
+        },
+        "6:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansDriver",
+          "id:8": "artisanworktables:artisans_driver_stone"
+        },
+        "7:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansLens",
+          "id:8": "artisanworktables:artisans_lens_stone"
+        },
+        "8:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansPliers",
+          "id:8": "artisanworktables:artisans_pliers_stone"
+        },
+        "9:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansAthame",
+          "id:8": "artisanworktables:artisans_athame_stone"
+        },
+        "10:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansGrimoire",
+          "id:8": "artisanworktables:artisans_grimoire_stone"
+        },
+        "11:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansNeedle",
+          "id:8": "artisanworktables:artisans_needle_stone"
+        },
+        "12:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansFile",
+          "id:8": "artisanworktables:artisans_file_stone"
+        },
+        "13:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "artisansSolderer",
+          "id:8": "artisanworktables:artisans_solderer_stone"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

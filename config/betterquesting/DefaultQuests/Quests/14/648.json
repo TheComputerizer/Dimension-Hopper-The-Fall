@@ -1,0 +1,77 @@
+{
+  "preRequisites:11": [
+    647,
+    643
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     It dropped a §2§oSwamp Key§r?! So does that mean this smaller §6§l§oDimensional Shift§r was artificially induced by... us?? If that is the case then I can start to put the pieces together regarding the big picture here... For there to be such a large §6§l§oShift§r to occur as it did earlier and for it to somehow be§o artificially induced§r, there is only one place where it could have been done in. §6§lThe Foundation§r. \n\n     I had thought it to be just a rumor, but now the evidence clearly points towards its existence. From the stories that are told, it acts quite literally as a foundation for all other realms and the secret as to why §8§obedrock§r is so consistently found in so many of them. The stories also go on to say that you can only gain access to it from a certain planet in a distant realm.\n\n     Well, now that we have a more solid idea of our destination, we can begin to plan a route. As for right now, give me that §a§2§oswamp key§r and I should be able reverse the apparent consequences of unlocking this swamp realm.",
+      "frame:8": "GATE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "contenttweaker:swamp_key"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 1,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Swamp Key?!",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "asScript:1": 1,
+      "command:8": "#Script Comment\ngamestage silentadd @s bridgeone\ngamestage silentadd @s overworld\ngamestage silentadd @s labyrinth\ngamestage silentadd @s cavern\nplaysound dimhoppertweaks:reversebell master @s\neffect @s 15 5\neffect @s 9 5 5\neffect @s 25 5",
+      "description:8": "Run a command script",
+      "hideBlockIcon:1": 1,
+      "index:3": 0,
+      "rewardID:8": "bq_standard:command",
+      "title:8": "bq_standard.reward.command",
+      "viaPlayer:1": 0
+    },
+    "1:10": {
+      "index:3": 1,
+      "rewardID:8": "bq_standard:item",
+      "rewards:9": {
+        "0:10": {
+          "Count:3": 10,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "scalinghealth:difficultychanger"
+        }
+      }
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 1,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "contenttweaker:swamp_key"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

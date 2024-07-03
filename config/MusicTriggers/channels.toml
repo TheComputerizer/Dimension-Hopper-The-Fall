@@ -3,6 +3,12 @@
 # Note that you can nest config files in folders by specifying the folder before it like folder/filename.
 
 [music]
+	commands = "music/commands"
+	jukebox = "music/jukebox"
+	main = "music/main"
+	redirect = "music/redirect"
+	toggles = "music/toggles"
+	transitions = "music/transitions"
 	songs_folder = "config/MusicTriggers/music/songs"
 	pause_overrides = false
 	explicit_overrides = false

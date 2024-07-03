@@ -1,0 +1,55 @@
+{
+  "preRequisiteTypes:7": [
+    0,
+    1
+  ],
+  "preRequisites:11": [
+    1467,
+    1340
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "§3§o     You completed the questbook in masochist mode?! That is beyond impressive! Please let me know how long this pack took to complete for you, I am super curious, especially since you did it in masochist mode!\n\n§r§3§lHall of Fame - Verifired Masochiost Mode Completionists:\n\n- No one has completed masochist mode yet! Be the first and let me know so I can add you here!",
+      "frame:8": "GATE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "contenttweaker:final_singularity"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 1,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Dimension Hopper 101%",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questdramatic",
+      "snd_update:8": "contenttweaker:questdramatic",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "asScript:1": 1,
+      "command:8": "gamestage silentadd @s disabled",
+      "description:8": "Unlock disabled stuff",
+      "hideBlockIcon:1": 1,
+      "index:3": 0,
+      "rewardID:8": "bq_standard:command",
+      "title:8": "bq_standard.reward.command",
+      "viaPlayer:1": 0
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

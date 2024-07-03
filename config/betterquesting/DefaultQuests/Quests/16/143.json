@@ -1,0 +1,56 @@
+{
+  "preRequisites:11": [
+    868
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Can\u0027t seem to get any §5§oPixons§r to spawn? Well luckily for you, it seems like §d§oPixies§r are a lower form of these §5§oPixons§r and can be specially transumuted into them! The type of §5§oPixon§r that spawns is dependent on which realm you perform the transmutation in, but be warned that performing the transmutation in a realm that does not naturally house any §5§oPixon§r varients will result in a failure and a waste of a §d§oPixie§r.\n\n§4§lNote: The only way to get a pixie to spawn is by dealing 50 or more damage with an Elementium Sword. Good luck ;)",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 1,
+        "OreDict:8": "",
+        "id:8": "enderio:item_soul_vial",
+        "tag:10": {
+          "entityId:8": "botania:pixie"
+        }
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Pixies to Pixons?",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 1,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "enderio:item_soul_vial"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

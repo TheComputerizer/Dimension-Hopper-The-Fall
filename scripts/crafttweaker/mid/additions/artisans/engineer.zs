@@ -90,7 +90,7 @@ static recipeHolders as Holder[] = [
   Util.bigShaped(<aeadditions:storage.component:5>, "component", [
     <appliedenergistics2:material:22>,
     <appliedenergistics2:material:48>,
-    <aeadditions:storage.component:11>,
+    <aeadditions:storage.component:4>,
     <appliedenergistics2:material:23>,
     <appliedenergistics2:material:24>,
     <moreplates:awakened_draconium_plate>,
@@ -243,7 +243,7 @@ static recipeHolders as Holder[] = [
     .addTools({<ore:artisansDriver>:104,<ore:artisansSolderer>:104,<ore:artisansCutters>:104})
     .addFluids([<liquid:charger>*8000]), //16^3 spatial component
     
-  Util.bigShaped(<appliedenergistics2:material:33>, "spatial", [
+  Util.bigShaped(<appliedenergistics2:material:34>, "spatial", [
     <appliedenergistics2:material:33>,
     <appliedenergistics2:material:48>,
     <aeadditions:storage.component:2>,

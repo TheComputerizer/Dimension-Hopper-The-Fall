@@ -1,0 +1,89 @@
+{
+  "preRequisites:11": [
+    1232
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     This is a multiblock structure that houses a minature black hole in the middle which will allow you to compress materials at a super high rate. Black holes take a lot of power to maintain and stabilize...",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "dimensionhopper:the_singularity"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "The Singularity",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "dimensionhopper:the_singularity"
+        },
+        "1:10": {
+          "Count:3": 48,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "contenttweaker:heart_of_the_machine_god"
+        },
+        "2:10": {
+          "Count:3": 45,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "mekanismgenerators:reactorglass"
+        },
+        "3:10": {
+          "Count:3": 16,
+          "Damage:2": 5,
+          "OreDict:8": "",
+          "id:8": "extendedcrafting:trimmed"
+        },
+        "4:10": {
+          "Count:3": 3,
+          "Damage:2": 4,
+          "OreDict:8": "",
+          "id:8": "extendedcrafting:storage"
+        },
+        "5:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "draconicevolution:item_dislocation_inhibitor"
+        },
+        "6:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "moreplanets:black_hole_storage"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

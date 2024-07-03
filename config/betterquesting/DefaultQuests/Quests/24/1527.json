@@ -1,0 +1,60 @@
+{
+  "preRequisites:11": [
+    1518
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "     If you read through the previous quest, you saw some information about skill credit in regards to the research skill. Normally, skill credit is only obtainable as a quest reward such as from this quest, but since gaining research SP from advancements is not renewable, you can begin to craft it once you reach chapter 1. \n\nOptions for automation and higher SP yields are unlocked as you progress further into the pack which are outlined below:\n\n§3§lNote: Skill credit has a 1 minute cooldown no matter what skill it is used on. Also, skill credit cannot break prestige level caps and will be partially applied when necessary§r\n\nkey [§r§b§lChapter: §r§r§a§lMax Craftable Research Skill Credit §c§l(Crafting Category)§r§r§l]\n\n§bChapter 1:§r §a1 SP §c(Basic Crafting)\n\n§bChapter 3:§r §a5 SP §c(Assembler)\n\n§bChapter 5:§r §a10 SP §c(Lightning Infuser)\n\n§bChapter 7:§r §a25 SP §c(Infusion)\n\n§bChapter 8:§r §a50 SP §c(Combination Crafting)\n\n§bChapter 9:§r §a100 SP §c(The Singularity)\n\n§bChapter 10:§r §a1000 SP §c(Bedrock Ritual)",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "dimhoppertweaks:skill_credit",
+        "tag:10": {
+          "amount:3": 50,
+          "skill:8": "defense"
+        }
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Skill Credit",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "index:3": 0,
+      "rewardID:8": "bq_standard:item",
+      "rewards:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "dimhoppertweaks:skill_credit",
+          "tag:10": {
+            "amount:3": 5,
+            "skill:8": "research"
+          }
+        }
+      }
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

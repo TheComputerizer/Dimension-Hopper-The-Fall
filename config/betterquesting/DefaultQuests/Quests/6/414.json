@@ -1,0 +1,101 @@
+{
+  "preRequisites:11": [
+    410
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     This is a special furnace that can smelt ores directly, multiply your ore production by x2, and given enough power, it can smelt multiple items at once and quickly. To see the multiblock structure, check the §3§oEngineer\u0027s Manual§r.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 5,
+        "Damage:2": 5,
+        "OreDict:8": "",
+        "id:8": "immersiveengineering:metal_decoration0"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Arc Furnace",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 27,
+          "Damage:2": 2,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:stone_decoration"
+        },
+        "1:10": {
+          "Count:3": 14,
+          "Damage:2": 8,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:sheetmetal_slab"
+        },
+        "2:10": {
+          "Count:3": 10,
+          "Damage:2": 4,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:metal_decoration0"
+        },
+        "3:10": {
+          "Count:3": 8,
+          "Damage:2": 8,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:sheetmetal"
+        },
+        "4:10": {
+          "Count:3": 6,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "thermalfoundation:storage_alloy"
+        },
+        "5:10": {
+          "Count:3": 5,
+          "Damage:2": 1,
+          "OreDict:8": "scaffoldingSteel",
+          "id:8": "immersiveengineering:metal_decoration1"
+        },
+        "6:10": {
+          "Count:3": 5,
+          "Damage:2": 5,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:metal_decoration0"
+        },
+        "7:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "minecraft:cauldron"
+        },
+        "8:10": {
+          "Count:3": 1,
+          "Damage:2": 3,
+          "OreDict:8": "",
+          "id:8": "immersiveengineering:metal_decoration0"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

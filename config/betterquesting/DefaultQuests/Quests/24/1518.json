@@ -1,0 +1,39 @@
+{
+  "preRequisites:11": [
+    1235
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "     In addition to the normal things that can be found in the inventory, the skill here provide some additional benefits. Here is some information on how to level them up and some passive benefits they provide. Note that converting XP into SP is almost always less efficient than actually doing stuff, unless your magic skill is over-leveled.\n\n\n§nSP Gained from doing stuff§r\n\n§lAttack§r: + half of the damage dealt to living entities rounded down to the nearest whole number. At least 1 SP is guarunteed if the research skill is at least level 32\n\n§lAgility§r: +1 from jumping or +1 for every second sprinting. Having jump boost or speed effects applied will respectively increase increease the value gained for each of those\n\n§lBuilding§r: +2 for every block placed\n\n§lDefense§r: Can be siphoned from the armor value of mobs that are killed or gained from successfully using a shield\n\n§lFarming§r: +3 every time a hoe is used successfully.\n\n§lGathering§r: +1 for every item picked up, with an additional calculation run for the stack size of the picked up item. Picking up an item type less than 5 seconds after the same type has already been picked up will not give any SP\n\n§lMagic§r: +1 or greater for every XP orb picked up. The amount of XP in the orb is used to calculate the actual amount\n\n§lMining§r: +1 for or greater every block broken with at least a harvest level of 1 while using a tool. The harvest level and hardness value of the block broken affects how much SP is actually gained. Blocks with a harvest level of 0 have a small chance of counting as harvest level 1, which increases as the mining skill is leveled up. Coal ore always counts as harvest level 1 to make leveling up easier in the prologue\n\n§lResearch§r: +5 for every advancement completed. Research skill credit is also craftable with better options unlocking as you advance further in the pack.\n\n§lVoid§r: +5 for changing dimensions\n\n\n§nPassive Benefits§r\n\n§l§oNote that these benefits are incremental, meaning that increasing a skill by 1 level will increase the benefits and the 32 level increments are just to show how the calculation works§r\n\n§lAgility§r: +1 minimum fall height (where the damage calculation begins for taking fall damage) every 32 levels\n\n§lAttack§r: +3 damage when attacking (including tamed entities when the Super Pets trait is active) every 32 levels\n\n§lBuilding§r: +100% duration on the Resistive Builder trait every 32 levels and +1 amplifier every 256 levels\n\n§lDefense§r: +10% armor effectiveness and +5% armor toughness every 32 levels\n\n§lFarming§r: Decreases the chance for bonemeal to be consumed when getting applied where level 1024 is equivalent to a 0% chance of consumption\n\n§lGathering§r: Increases the effect of the Lucky Aura and Lucky Fisherman traits\n\n§lMagic§r: x2 multiplier on SP conversion with the skill token every 32 levels\n\n§lMining§r: Approximately 1 level of haste every 32 levels\n\n§lResearch§r: x2 multiplier on SP gained from actions every 32 levels\n\n§lVoid:§r +100% duration on the effects given by traits every 32 levels and +1 amplifier on the effects given by traits every 128 levels",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "betterquesting:placeholder"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Who cares about skills?",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "ALWAYS"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

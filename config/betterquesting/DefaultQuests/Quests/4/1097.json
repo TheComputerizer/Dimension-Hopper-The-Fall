@@ -1,0 +1,208 @@
+{
+  "preRequisites:11": [
+    1096
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Can be summoned by using a §5§oPure Water Stone§r on a §d§oHydro Table§r.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "aoa3:ornate_hydrolisk_statue"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Hydrolisk",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "amount:3": 50,
+      "index:3": 0,
+      "isLevels:1": 1,
+      "rewardID:8": "bq_standard:xp"
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "damageType:8": "",
+      "ignoreNBT:1": 1,
+      "index:3": 0,
+      "required:3": 1,
+      "subtypes:1": 1,
+      "target:8": "aoa3:hydrolisk",
+      "targetNBT:10": {
+        "AbsorptionAmount:5": 0.0,
+        "Air:2": 300,
+        "ArmorDropChances:9": {
+          "0:5": 0.085,
+          "1:5": 0.085,
+          "2:5": 0.085,
+          "3:5": 0.085
+        },
+        "ArmorItems:9": {
+          "0:10": {},
+          "1:10": {},
+          "2:10": {},
+          "3:10": {}
+        },
+        "Attributes:9": {
+          "0:10": {
+            "Base:6": 0.0,
+            "Name:8": "attribute.name.aether.slash"
+          },
+          "1:10": {
+            "Base:6": 0.0,
+            "Name:8": "attribute.name.aether.pierce"
+          },
+          "2:10": {
+            "Base:6": 0.0,
+            "Name:8": "attribute.name.aether.impact"
+          },
+          "3:10": {
+            "Base:6": 609.0,
+            "Name:8": "generic.maxHealth"
+          },
+          "4:10": {
+            "Base:6": 0.8,
+            "Name:8": "generic.knockbackResistance"
+          },
+          "5:10": {
+            "Base:6": 0.2875,
+            "Name:8": "generic.movementSpeed"
+          },
+          "6:10": {
+            "Base:6": 0.0,
+            "Name:8": "generic.armor"
+          },
+          "7:10": {
+            "Base:6": 0.0,
+            "Name:8": "generic.armorToughness"
+          },
+          "8:10": {
+            "Base:6": 1.0,
+            "Name:8": "forge.swimSpeed"
+          },
+          "9:10": {
+            "Base:6": 16.0,
+            "Name:8": "generic.followRange"
+          },
+          "10:10": {
+            "Base:6": 12.0,
+            "Name:8": "generic.attackDamage"
+          }
+        },
+        "CanPickUpLoot:1": 0,
+        "DeathTime:2": 0,
+        "Dimension:3": 0,
+        "FallDistance:5": 0.0,
+        "FallFlying:1": 0,
+        "Fire:2": -1,
+        "ForgeCaps:10": {
+          "aether:entityinfo:10": {
+            "hasSpawnArea:1": 0
+          },
+          "aether:statuseffects:10": {},
+          "cavern:portal_cache:10": {
+            "LastDim:9": {},
+            "LastPos:9": {}
+          },
+          "dsurround:data:10": {
+            "a:1": 0,
+            "f:1": 0
+          },
+          "dsurround:entityfx:10": {},
+          "dsurround:speech:10": {},
+          "enderutilities:entity_portal_cooldown:10": {
+            "LastInPortal:4": 0
+          },
+          "thebetweenlands:custom_step_sound:10": {},
+          "thebetweenlands:entity_gems:10": {
+            "gems:9": {}
+          },
+          "thebetweenlands:equipment:10": {
+            "amuletSlots:3": 1
+          },
+          "thebetweenlands:puppet:10": {
+            "guard:1": 0,
+            "recruitmentCost:3": 0,
+            "stay:1": 0,
+            "ticks:3": 0
+          },
+          "tinkertoolleveling:entityxp:9": {},
+          "twilightforest:cap_shield:10": {
+            "permshields:3": 0,
+            "tempshields:3": 0
+          }
+        },
+        "ForgeData:10": {},
+        "HandDropChances:9": {
+          "0:5": 0.085,
+          "1:5": 0.085
+        },
+        "HandItems:9": {
+          "0:10": {},
+          "1:10": {}
+        },
+        "Health:5": 609.0,
+        "HurtByTimestamp:3": 0,
+        "HurtTime:2": 0,
+        "Invulnerable:1": 0,
+        "Leashed:1": 0,
+        "LeftHanded:1": 0,
+        "Motion:9": {
+          "0:6": 0.0,
+          "1:6": 0.0,
+          "2:6": 0.0
+        },
+        "OnGround:1": 0,
+        "PersistenceRequired:1": 0,
+        "PortalCooldown:3": 0,
+        "Pos:9": {
+          "0:6": 0.0,
+          "1:6": 0.0,
+          "2:6": 0.0
+        },
+        "RelativeAABB:9": {
+          "0:6": -0.30000001192092896,
+          "1:6": 0.0,
+          "2:6": -0.30000001192092896,
+          "3:6": 1.5999999642372131,
+          "4:6": 3.0,
+          "5:6": 1.5999999642372131
+        },
+        "Rotation:9": {
+          "0:5": 4.2673855,
+          "1:5": 0.0
+        },
+        "SurgeAABB:9": {
+          "0:6": -0.30000001192092896,
+          "1:6": 0.0,
+          "2:6": -0.30000001192092896,
+          "3:6": 1.5999999642372131,
+          "4:6": 3.0,
+          "5:6": 1.5999999642372131
+        },
+        "UUIDLeast:4": -5350512526573070234,
+        "UUIDMost:4": 5243181655659791740,
+        "UpdateBlocked:1": 0,
+        "id:8": "aoa3:hydrolisk"
+      },
+      "taskID:8": "bq_standard:hunt"
+    }
+  }
+}

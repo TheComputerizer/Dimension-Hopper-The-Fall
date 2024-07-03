@@ -1,0 +1,53 @@
+{
+  "preRequisites:11": [
+    390
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     It is no simple matter to obtain §a§oterrasteel§r. The process can often be a lengthy one that is very time and mana consuming. The highest level of efficiency you will be able to obtain in crafting such a substance at the moment will be through the §9§oterrestrial agglomeration plate§r. This allows for a §9§b§omanasteel ingot§r§b§o§r, §b§omana diamond§r, §b§o§rand §b§omana pearl§r to be combined on top of it with the catalyst of approximately half a mana pool. See the §a§oLexica Botania§r for more information.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "botania:terraplate"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Terrasteel?",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "botania:terraplate"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

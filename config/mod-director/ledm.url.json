@@ -1,0 +1,11 @@
+{
+    "url": "https://cdn.modrinth.com/data/m9drBu6U/versions/AtXj3hz2/LEDM%2BV.2.4.0%2BPart%2BOne.jar",
+    "fileName": "LEDM-2.4.0.jar",
+    "installationPolicy": {
+       "continueOnFailedDownload": false,
+       "selectedByDefault": true,
+       "name": "Lockys Extra Dimensions Mod",
+       "description": "Required mod! File will be downloaded from Modrinth",
+       "supersede": "LEDM V.2.4.0 Part One.jar"
+    }
+}

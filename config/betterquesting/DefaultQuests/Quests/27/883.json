@@ -1,0 +1,50 @@
+{
+  "preRequisites:11": [
+    879
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 1,
+      "desc:8": "§4§l§oFINALLY I\u0027M FREE!\n\nYOU ARE AN EVEN BIGGER FOOL THAN I GAVE YOU CREDIT FOR.\n\nI TRY TO HAVE A LITTLE BIT OF FUN AND THAT PESKY OVERSEER SHOVES ME IN THAT INFERNAL BOOK AND TRAPS ME IN LIMBO!\n\nI WOULDN\u0027T HAVE BEEN ABLE TO ESCAPE WITHOUT YOU, SO THANKS A BUNCH FOR THAT \u003c3\n\n\"BUT WHY\" YOU ASK? HA! YOU WERE TOO BLINDED BY MY GOODWILL TO SEE THAT I WAS THE ONE CAUSING THOSE §r§6§l§oDIMENSIONAL SHIFTS§r§4§l§o!\n\nI COULDN\u0027T DO MUCH WITH THE FRACTION OF MY POWER LEAKING OUT FROM THE BOOK, BUT PULLING AN UNSUSPECTING \"PLAYER\" INTO LIMBO WAS A TRIVIAL TASK.\n\nNOW THEN, YOU WERE A USEFUL TOOL TO ME AND I AM A BENEVOLENT GOD, SO INSTEAD OF KILLING YOU, I WILL JUST BANISH TO LIMBO FOR ALL ETERNITY!\n\nIRONIC ISN\u0027T IT? YOU TRIED TO SAVE THE MULTIVERSE BUT ENDED UP BEING THE CATALYST FOR IT\u0027S DESTRUCTION INSTEAD. NO WORRIES THOUGH, AS I WILL BE REMAKING IT HOW I SEE FIT.\n\nAH, AND I WILL BE TAKING THOSE ITEMS YOU SO GRACIOUSLY COLLECTED FOR ME.\n\nIT\u0027S TIME TO HAVE SOME FUN...\n\n§3§oThis is as far as the story goes, so according to the lore, you are now banished to and stuck in Limbo for the forseeable future and §lThe Entity§r§3§o that was trapped in the book has now escaped and is in the process of destroying all creation. However, since I don\u0027t want to softlock people out of their world, that part will not actually be enacted so you can still explore and show off your world and complete any missing quests that you want to.\n\nI might add some completionist quests for creative items in the future, but for now, this is it",
+      "frame:8": "GATE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 1,
+        "OreDict:8": "",
+        "id:8": "betterquesting:extra_life"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 1,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "The Fall",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questdramatic",
+      "snd_update:8": "contenttweaker:questdramatic",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {
+    "0:10": {
+      "asScript:1": 1,
+      "command:8": "advancement grant @s only triumph:dimensionhopper/storyline/oops",
+      "description:8": "oops",
+      "hideBlockIcon:1": 1,
+      "index:3": 0,
+      "rewardID:8": "bq_standard:command",
+      "title:8": "bq_standard.reward.command",
+      "viaPlayer:1": 0
+    }
+  },
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "taskID:8": "bq_standard:checkbox"
+    }
+  }
+}

@@ -307,7 +307,7 @@
 	[songs.the_builder]
 		play_once = 1
 		triggers = [ "spectator" "dimension-creativeWhitelist" ]
-	[songs.nothingness]
+	[[songs.nothingness]]
 		triggers = [ "height-inVoid" ]
 	[[songs.bosscrazy]]
 		triggers = [ "mob-crazy_mobs" ]
@@ -321,7 +321,7 @@
 		triggers = [ "dimension-crown_cliffs" ]
 	[songs.forest]
 		triggers = [ "dimension-dark_forest" ]
-	[songs.void]
+	[[songs.nothingness]]
 		triggers = [ "dimension-the_void" ]
 	[songs.desert]
 		triggers = [ "dimension-wide_desert" ]
@@ -457,8 +457,8 @@
 		play_once = 1
 		triggers = [ "dimension-deepdark" ]
 	[songs.cosmicgarou]
+		triggers = [ "mob-finalboss" ]
 		[songs.cosmicgarou.loop]
 			to = "139000"
 			num_loops = "999999"
 			from = "292000"
-		triggers = [ "mob-finalboss" ]

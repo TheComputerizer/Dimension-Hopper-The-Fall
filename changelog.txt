@@ -1,4 +1,64 @@
-Released V1.5.4
+Released V1.5.5[PERFORMANCE & SOFTLOCKS]
+
+*Back at it?*
+
+Removed Mods
+- Binnie's Mods
+
+Added Mods
+- Binnie's Mods Patched
+- Carbon Config
+- File Director
+- RLMixins
+
+Updated Mods
+- AE Unofficial Extended Life
+- Alfheim Lighting Engine
+- Aqua Acrobatics
+- Better Questing Unofficial
+- Chunk-Pregenerator
+- ConfigAnytime
+- Controlling
+- Corail Tombstone
+- Crafttweaker
+- DimensionalDoors
+- Dropt
+- ExtraPlanets
+- FermiumASM
+- FermiumBooter
+- Forgelin-Continuous
+- Had Enough Items
+- HammerLib
+- Inventory Bogo Sorter
+- JAOPCA
+- JourneyMap
+- LootTweaker
+- Mekanism Community Edition
+- Mekanism Community Edition: GENERATORS
+- Mekanism Community Edition: TOOLS
+- ModularUI
+- OpenComputers
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Red Core
+- Roughly Enough IDs
+- Sledgehammer
+- Spark Unforged
+- Universal Tweaks
+- VintageFix
+- ZenRecipeReloading
+- Zen Utils
+
+General Changes
+- Enabled various tweaks from RLMixins related to performance enhancements & memory leaks
+- Fixed the 1024k ME Fluid Storage Component & 128^3 Spatial Component recipes
+- Fixed the Coolmar Spider being required for the Dreadful Peat Mummy quest
+- Questlines below the storyline are now listed alphabetically
+- Fixed the Ganymede Stargate Addresser
+- Fixed the Ender Crate requiring a vanilla Ender Chest
+
+Released V1.5.4[CLEANUP & BUGFIXES]
 
 *...*
 

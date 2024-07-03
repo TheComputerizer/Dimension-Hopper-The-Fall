@@ -134,6 +134,13 @@ static shapedBuilders as Holder[] = [
         <ore:nuggetGold>:[1,3,5,7]
     }), //brilliant fiber
 
+    Util.dynamicShaped(<naturesaura:ender_crate>, {
+        <enderstorage:ender_storage>:[4],
+        <calculator:purifiedobsidian>:[0,2,6,8],
+        <xreliquary:salamander_eye>:[1],
+        <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end"}):[3,5,7]
+    }), //ender crate
+
     //plustic
     Util.simpleShaped(<plustic:centrifuge>, "plus", [
         <openblocks:tank>,

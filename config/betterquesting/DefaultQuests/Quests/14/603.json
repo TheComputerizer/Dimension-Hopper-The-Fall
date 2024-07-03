@@ -1,0 +1,53 @@
+{
+  "preRequisites:11": [
+    74
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     Well this is §onot§r good. It seems as soon as you stepped through that portal there was another §6§l§oDimensional Shift§r. Of all places to get stuck in during such a major event, §othis§r is one of the worst. It seems that the very air of this realm brings along with it the corruption that brought it to this state in the first place. Normal tools will not work here, food will decay, normal torches will go out, and worst of all, you will decay yourself if you do not find some way to stop it.\n\n     I suppose the first thing you should do is start gathering some basic materials native to this realm.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "thebetweenlands:log_weedwood"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Fate of the Stranded",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 32767,
+          "OreDict:8": "",
+          "id:8": "thebetweenlands:log_weedwood"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

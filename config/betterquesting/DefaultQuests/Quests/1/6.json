@@ -1,0 +1,53 @@
+{
+  "preRequisites:11": [
+    78
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     It appears the §6§l§oDimension Shift§r is causing more problems than anticipated. That portal gateway behind you leading to the twilight realm will most likely not work anymore. Other realms and methods of travel to them may also be affected, so be wary.\n\n     Anyways, now that we are in the realm you are used to, we can finally start branching out and looking for the root of the issue. But first, some §a§r§fway of processing the materials you find is in order, as the method you may be familiar with has been lost between dimensions.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 5,
+        "OreDict:8": "",
+        "id:8": "artisanworktables:worktable"
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "The Overworld!",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 5,
+          "OreDict:8": "",
+          "id:8": "artisanworktables:worktable"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}

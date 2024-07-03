@@ -320,7 +320,7 @@
               "type": "add_tag",
               "key": "activeDimension",
               "value_type": "int",
-              "value": 1506
+              "value": -1506
             }
           ]
         }

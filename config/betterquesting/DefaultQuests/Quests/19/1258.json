@@ -1,0 +1,56 @@
+{
+  "preRequisites:11": [
+    1252,
+    1249
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "autoclaim:1": 0,
+      "desc:8": "     There is no easy way to break in to the §8§oFoundation§r. The only saving factor is that this realm is closest to it, making it minutely possible to break through the barrier.\n\n     As the §8§oFoundation§r is the root of all creation, we need something that can hold its potential. The only material capable of this is one talked about in legends of old that is said to house infinite potential. In fact, I have been building you up to this very point. You have almost all the resources you need. You have the infrastructure. Most importantly, you have the will that has carried you this far. \n\n     This last step will not be easy, but gather what you need and you will be able to turn the power of this realm into your own.",
+      "frame:8": "ROUNDED_SQUARE",
+      "globalshare:1": 0,
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 0,
+        "OreDict:8": "",
+        "id:8": "projecte:item.pe_philosophers_stone",
+        "tag:10": {}
+      },
+      "ignoresview:1": 0,
+      "ismain:1": 0,
+      "issilent:1": 0,
+      "lockedprogress:1": 0,
+      "name:8": "Caligro Matters",
+      "questlogic:8": "AND",
+      "repeat_relative:1": 1,
+      "repeattime:3": -1,
+      "simultaneous:1": 0,
+      "snd_complete:8": "contenttweaker:questcommon",
+      "snd_update:8": "contenttweaker:questcommon",
+      "tasklogic:8": "AND",
+      "visibility:8": "UNLOCKED"
+    }
+  },
+  "rewards:9": {},
+  "tasks:9": {
+    "0:10": {
+      "autoConsume:1": 0,
+      "consume:1": 0,
+      "entryLogic:8": "AND",
+      "groupDetect:1": 0,
+      "ignoreNBT:1": 0,
+      "index:3": 0,
+      "partialMatch:1": 1,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": "",
+          "id:8": "projecte:item.pe_philosophers_stone",
+          "tag:10": {}
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}
