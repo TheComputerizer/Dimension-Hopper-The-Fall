@@ -138,6 +138,18 @@
 		identifier = "cavenia"
 	[[triggers.dimension]]
 		priority = 100
+		resource_name = [ "-53" ]
+		identifier = "caveland"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-52" ]
+		identifier = "aqua_cavern"
+	[[triggers.dimension]]
+		priority = 100
+		resource_name = [ "-51" ]
+		identifier = "huge_cavern"
+	[[triggers.dimension]]
+		priority = 100
 		resource_name = [ "-50" ]
 		identifier = "cavern"
 	[[triggers.dimension]]
@@ -245,7 +257,7 @@
 	[[songs.thunder1]]
 		play_once = 1
 		triggers = [ "storming" "dimension-overworld" ]
-	[songs.thunder2]
+	[[songs.thunder2]]
 		play_once = 1
 		triggers = [ "storming" "dimension-overworld" ]
 	[[songs.thunder3]]
@@ -316,6 +328,10 @@
 	[songs.chaos_dragon]
 		triggers = [ "mob-chaos_dragon" ]
 	[[songs.mistyambient]]
+		play_once = 1
+		triggers = [ "dimension-skyland" ]
+	[[songs.divine_ascension]]
+		play_once = 1
 		triggers = [ "dimension-skyland" ]
 	[songs.cliffs]
 		triggers = [ "dimension-crown_cliffs" ]
@@ -384,7 +400,7 @@
 	[songs.nether6]
 		play_once = 1
 		triggers = [ "dimension-nether" ]
-	[songs.nether7]
+	[[songs.nether7]]
 		play_once = 1
 		triggers = [ "dimension-nether" ]
 	[songs.end]
@@ -462,3 +478,27 @@
 			to = "139000"
 			num_loops = "999999"
 			from = "292000"
+	[songs.solar_savior]
+		play_once = 1
+		triggers = [ "dimension-huge_cavern" ]
+	[songs.scene_of_the_crime]
+		triggers = [ "dimension-huge_cavern" ]
+		play_once = 1
+	[[songs.battle3]]
+		play_once = 1
+		triggers = [ "dimension-huge_cavern" ]
+	[songs.witness_testimony]
+		play_once = 1
+		triggers = [ "dimension-caveland" ]
+	[[songs.nether7]]
+		play_once = 1
+		triggers = [ "dimension-caveland" ]
+	[songs.galaxys_endless_expanse]
+		play_once = 1
+		triggers = [ "dimension-aqua_cavern" ]
+	[songs.serenity]
+		play_once = 1
+		triggers = [ "dimension-aqua_cavern" ]
+	[[songs.thunder2]]
+		play_once = 1
+		triggers = [ "dimension-aqua_cavern" ]

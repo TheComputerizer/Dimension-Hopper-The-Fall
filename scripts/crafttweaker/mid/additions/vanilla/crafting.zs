@@ -258,9 +258,13 @@ static shapelessBuilders as Holder[] = [
             return output.withTag(outputTag);
         }), //time in a bottle
     Util.shapeless(<sgcraft:sgcorecrystal>, [<galacticraftcore:item_basic_moon:2>, <sgcraft:naquadahingot>]), //stargate core crystal
-    Util.shapeless(<sgcraft:sgcontrollercrystal>, [<sgcraft:sgcorecrystal>, <draconicevolution:dragon_heart>]) //stargate controller crystal
-    //sgcraft
-
+    Util.shapeless(<sgcraft:sgcontrollercrystal>, [<sgcraft:sgcorecrystal>, <draconicevolution:dragon_heart>]), //stargate controller crystal
+    
+    //scalinghealth
+    Util.shapeless(<scalinghealth:difficultychanger:1>, [<scalinghealth:difficultychanger>, <extrautils2:ingredients:10>]), //cursed heart
+    Util.namedShapeless("heart",<scalinghealth:difficultychanger>, [<scalinghealth:heartcontainer>, <minecraft:nether_star>]), //enchanted heart
+    Util.namedShapeless("wight",<scalinghealth:difficultychanger>*8, [<thebetweenlands:wight_heart>, <xreliquary:witherless_rose>]), //enchanted heartx8
+    Util.namedShapeless("heartforce",<scalinghealth:difficultychanger>*64, [<zollerngalaxy:heartforce>, <overloaded:nether_star_block>]) //enchanted heartx64
 ] as Holder[];
 
 function run() {

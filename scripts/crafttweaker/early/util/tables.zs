@@ -176,6 +176,10 @@ function shapeless(output as IItemStack, inputs as IIngredient[]) as Holder {
     return Holder(makeRecipeName("shapeless",output),output).addShapeless(inputs);
 }
 
+function namedShapeless(name as string, output as IItemStack, inputs as IIngredient[]) as Holder {
+    return Holder(makeRecipeName("shapeless."+name,output),output).addShapeless(inputs);
+}
+
 function makeRecipeName(type as string, output as IItemStack) as string {
     return type+"."+output.definition.id.replaceAll(":",".")+"."+output.metadata;
 }

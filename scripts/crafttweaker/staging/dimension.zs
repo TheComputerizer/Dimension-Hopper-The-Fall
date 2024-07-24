@@ -9,6 +9,7 @@ static progression as int[][string] = {
 		0
 	],
 	"overworld": [
+		-343800852,
 		-127,
 		-23,
 		-1,
@@ -18,6 +19,7 @@ static progression as int[][string] = {
 		686,
 		687,
 		688,
+		1024,
 		28885
 	],
 	"labyrinth": [

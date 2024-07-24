@@ -1,4 +1,5 @@
 #priority -1000
+#reloadable
 
 import crafttweaker.entity.IEntityDropFunction;
 import crafttweaker.item.IItemStack;
@@ -10,10 +11,6 @@ import loottweaker.LootTweaker;
 LootTweaker.getTable("botania:fel_blaze").getPool("main").addItemEntry(<xlfoodmod:cheese>, 1);
 
 //cavern
-<entity:cavern:crazy_creeper>.addPlayerOnlyDrop(<contenttweaker:crazy_creeper_essence> %100, 1, 1);
-<entity:cavern:crazy_zombie>.addPlayerOnlyDrop(<contenttweaker:crazy_zombie_essence> %100, 1, 1);
-<entity:cavern:crazy_skeleton>.addPlayerOnlyDrop(<contenttweaker:crazy_skeleton_essence> %100, 1, 1);
-<entity:cavern:crazy_spider>.addPlayerOnlyDrop(<contenttweaker:crazy_spider_essence> %100, 1, 1);
 LootTweaker.getTable("cavern:chests/tower_dungeon").getPool("tower_dungeon_3").addItemEntry(<randomthings:spectrecoil_number>, 1);
 
 //customizeddungeonloot
@@ -28,7 +25,7 @@ GalacticraftTweaker.addDungeonLoot(1, <contenttweaker:crazy_zombie_essence>);
 
 //minecraft
 <entity:minecraft:wither>.addPlayerOnlyDrop(<psicosts:psi_cell> %100, 1, 1);
-LootTweaker.getTable("minecraft:chests/end_city_treasure").addPool("custom", 0,1,0,0).addItemEntry(<portalgun:item_miniature_black_hole>, 1);
+LootTweaker.getTable("minecraft:chests/end_city_treasure").addPool("custom", 0, 1, 0, 0).addItemEntry(<portalgun:item_miniature_black_hole>, 1);
 
 //thebetweenlands
 LootTweaker.getTable("thebetweenlands:entities/sludge_menace").addPool("key", 1, 1, 0, 0).addItemEntry(<contenttweaker:swamp_key>, 1);
