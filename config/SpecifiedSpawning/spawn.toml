@@ -11,7 +11,6 @@
 		max_group_size = 2
 		weight = 100
 	[spawn.gamestage]
-		all_players = true
 		gamestage = "cavern"
 
 # Overworld Crazy Mobs
@@ -25,7 +24,6 @@
 		max_group_size = 3
 		weight = 500
 	[spawn.gamestage]
-		all_players = true
 		gamestage = "swamp"
 
 # Nether Ghast Queens
@@ -39,7 +37,6 @@
 		max_group_size = 1
 		weight = 10
 	[spawn.gamestage]
-		all_players = true
 		gamestage = "labyrinth"
 
 # Deep Dark Crazy mobs

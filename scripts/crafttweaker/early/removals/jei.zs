@@ -367,8 +367,16 @@ static itemHiders as IItemStack[] = [
     <extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"}),
     <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}),
 
+    //moreavaritia
+    <moreavaritia:infinitymhoe>,
+    <moreavaritia:infinitympick>,
+    <moreavaritia:infinitymsword>,
+
     //tconstruct
-    <tconstruct:clay_cast>
+    <tconstruct:clay_cast>,
+
+	//twilightforest
+	<patchouli:guide_book>.withTag({"patchouli:book": "twilightforest:guide"})
 ] as IItemStack[];
 
 function run() {

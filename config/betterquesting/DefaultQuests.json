@@ -820,7 +820,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "     A rather easy boss, the gaurdian of the End",
+          "desc:8": "     A rather easy boss, the guardian of the End",
           "frame:8": "ROUNDED_SQUARE",
           "globalshare:1": 0,
           "icon:10": {
@@ -109141,7 +109141,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:skull"
           },
-          "name:8": "Bosses \u0026 Challeges",
+          "name:8": "Bosses \u0026 Challenges",
           "visibility:8": "UNLOCKED"
         }
       },

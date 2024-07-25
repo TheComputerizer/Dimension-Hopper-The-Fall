@@ -89,21 +89,24 @@
 		identifier = "ender_dragon"
 		priority = 1700
 		level = 1
-		resource_name = [ "BOSS" "Ender Dragon" ]
+		mob_targeting = false
+		persistence = 100
+		resource_name = [ "Ender Dragon" ]
 	[[triggers.mob]]
 		identifier = "chaos_dragon"
 		priority = 1800
 		level = 1
 		detection_range = "200"
 		mob_targeting = false
-		resource_name = [ "BOSS" "Chaos Guardian" ]
+		persistence = 100
+		resource_name = [ "Chaos Guardian" ]
 	[[triggers.mob]]
 		identifier = "finalboss"
 		priority = 1000000
 		detection_range = "200"
 		mob_targeting = false
-		resource_name = [ "BOSS" "dimension_hopper_final_boss" ]
 		persistence = 100
+		resource_name = [ "dimension_hopper_final_boss" ]
 	[[triggers.dimension]]
 		priority = 2000
 		resource_name = [ "-11325" ]
