@@ -48,3 +48,5 @@
 <xlfoodmod:cheese>.addTooltip("\u00A7o\u00A74A fel blaze's favorite food");
 <extrabees:hive_frame.debug>.addTooltip("\u00A7o\u00A74Not worth it");
 <twilightforest:giant_obsidian>.addTooltip("\u00A7o\u00A74Yes this is actually 36 quintillion obsidian. Is that advancement really worth it?");
+<forestry:wood_pile>.addTooltip("\u00A7o\u00A74See the JEI Description page for how to build a Charcoal Pile");
+<dimdoors:rift_blade>.addTooltip("\u00A7o\u00A74Right click a rift to go through it");

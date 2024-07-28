@@ -1,3 +1,99 @@
+Released V1.5.6[PERFORMANCE & STUFF]
+
+*Did someone say improved difficulty*
+
+Removed Mods
+- Collective
+- Forgelin
+- LibrarianLib
+- RandomPatches
+- Realistic Item Drops
+
+Added Mods
+- CreativeCore
+- Item Physic Full
+- LibrarianLib-Continuous
+
+Updated Mods
+- Carbon Config
+- Chunk-Pregenerator
+- Corail Tombstone
+- Dimension Hopper Tweaks
+- Dimensional Doors
+- Forgelin Continuous
+- JAOPCA
+- Multiblocked
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Roughly Enough IDs
+- Universal Tweaks
+- VintageFix
+
+General Changes
+- Removed all of the memory leaks
+- Massively decreased the memory footprint
+- Dimensional doors should no longer cause desync issues
+- Fixed item entities having a chance to be deleted when combining
+- Vanilla overworld spawn chunks will no longer always be loaded
+- Changed the enderpearl-on-bedrock teleportation so that going both to and from the nether via the overworld requires a right click but is restricted by dimension
+- Fixed enderpearl-on-bedrock teleportation consuming 2 pearls
+- Withers can now be spawned with non-air blocks in the bottom corners of the soul sand structure
+- Fixed a crash when loading a world multiple times in the same session
+- Fixed a crash blaming incurable potions that sometimes happened for slower PCs
+- Fixed the unexpected file name LEDM+V.2.4.0+Part+One.jar causing a crash
+- Unstable ingots will no longer try ticking in binnies core compartments and crash the game
+- Fixed a crash when rendering certain pages of the Silent Gems manual
+- Fixed a crash when the industrial foregoing guide tries to render empty recipes
+- Fixed a crash when putting 2 redstone torches in the same block space
+- Removed the Twilight Forest logbook due to multiple crashes
+- Lightning no longer destroys items by default
+- Crazy mob essence drops are now hardcoded and no longer require a player kill
+- Removed the waystone scroll from the inventory
+- Dimensional doors and waystones now properly reject players that do not have the required stage for the target dimension
+- The betweenlands now rejects doors and waystones
+- Reduced the cost of using interdimensional waystones to 50 levels
+- Fixed the questlines not being ordered correctly & some misc typos
+- Increased the efficiency and damage of bedrock tools by 250 as well as the damage of the bedrock sword by 1000
+- Mined blocks will now attempt to go directly in the inventory of the player who mined them
+- Fixed the mostly unreadable Infinity & Bedrock mining level names
+- Fixed the spawn rates of AoA mobs being 30% of what they should have been
+- Loosened the gamestage checks on mob spawns so that any player in the dimension can have the required stage rather than all players
+- Fixed enchantments for blight equipment always being the same until the server is restarted
+- Disabled the choke trait for infernal mobs
+- Added a JEI description page for Wood Piles explaining how to building and use a Charcoal Pile
+- Added an additional Rift Blade tooltip
+- Black paper now requires an Engineer Worktable
+- Realmstones can now be converted back into blank realmstones
+- Ender Crates no longer require Calculator progression to craft
+- Replaced all end of chapter quest rewards with more interesting and relevant options
+- Replaced rewards for some challenge and/or dead end quests
+- Added some alternative recipes for tier 1-7 solar panels
+
+Difficulty Changes
+- Added recipes for enchanted and cursed hearts
+- Difficulty is now capped based on the multiplier gain where the maximum difficulty is multiplier*50
+- Enchanted hearts are now capped on how much difficulty they can remove where the minimum difficulty is multiplier*25
+- Enchanted and cursed hearts now have a 2 second cooldown
+
+Music Changes
+- Added 3 huge cavern songs (2 new songs)
+- Added 2 caveland songs (1 new song)
+- Added 3 aqua cavern songs (2 new songs)
+- Added a new skyland song
+- Ender Dragon & Chaos Guardian music may be slightly less accurate as a result of patching a massive performance issue with boss music
+- Increased the delay for low hp music to 5 seconds so it activates less often while changing dimensions
+
+Skill Changes
+- Fixed animated trait icons not rendering properly
+- Removed the Hill Walker agility trait since it did not work in most cases
+- Added an UNSTOPPABLE agility trait that can ignore environmental inconveniences
+- Added a Swimming Lessons agility trait that increases swimming speed and decreases water resistance
+- Added a Difficult Gamble void trait that adds potential value to high difficulty levels
+- Added a Block For Block building trait for blocking infernal mob effects
+- Added a Really Thick Skin defense trait for blocking/reducing certain (mostly environmental) damage types
+- Added an Arbitrary Upgrade mining trait which despite what it says is not a troll
+
 Released V1.5.5[PERFORMANCE & SOFTLOCKS]
 
 *Back at it?*

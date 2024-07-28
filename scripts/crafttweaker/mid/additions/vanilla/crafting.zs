@@ -136,7 +136,7 @@ static shapedBuilders as Holder[] = [
 
     Util.dynamicShaped(<naturesaura:ender_crate>, {
         <enderstorage:ender_storage>:[4],
-        <calculator:purifiedobsidian>:[0,2,6,8],
+        <darkutils:sneaky_obsidian>:[0,2,6,8],
         <xreliquary:salamander_eye>:[1],
         <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end"}):[3,5,7]
     }), //ender crate

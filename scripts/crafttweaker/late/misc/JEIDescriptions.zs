@@ -34,8 +34,15 @@ JEI.addDescription(<enderio:item_soul_vial:1>,
 //forestry-----------------------------------------------------------------------------------------
 JEI.addDescription([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
     "Extra inventory that automatically picks up specialized items.",
-    "Currently, the items that can be picked up are as follows:",
-    CTPassthrough.getAdventuringBackpackItems()]);
+    "Currently, the items that can be picked up are as follows:", CTPassthrough.getAdventuringBackpackItems()]);
+JEI.addDescription(<forestry:wood_pile>, "To build a Charcoal Pile, first place 1 or more adjacent Wood Pile.",
+    "2x2x2 is generally a good starting size, but even a single Wood Pile will work.", 
+    "Next, make sure all sides of all wood piles are covered by either another wood pile or a valid Charcoal Pile block.",
+    "See the Charcoal Pile recipes for the valid blocks and how they affect charcoal rates.",
+    "Just before you finish covering the last Wood Pile, make sure to light it on fire.",
+    "If successful, the Charcoal Pile should start emitting smoke particles out of the top and playing a burning sound.",
+    "The burning process takes a few minutes and is finished when the smoke and buring sounds are gone.",
+    "Charcoal and Ash drop rates are affected by the Fortune enchantment");
 
 //huntingdim---------------------------------------------------------------------------------------
 JEI.addDescription(<huntingdim:biome_changer>, "Example recipe.", "Most biomes are supported");

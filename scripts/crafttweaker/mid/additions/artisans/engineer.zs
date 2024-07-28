@@ -5,7 +5,7 @@ import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 import scripts.crafttweaker.early.util.Tables as Util;
 import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
-static recipeHolders as Holder[] = [
+static shapedHolders as Holder[] = [
   //aeadditions
   Util.simpleShaped(<aeadditions:storage.component:7>, "me", [
     <appliedenergistics2:material:22>,
@@ -379,6 +379,11 @@ static recipeHolders as Holder[] = [
     .addFluids([<liquid:purpleslime>*500]), //t3 microchip purple slime
 ] as Holder[];
 
+static shapelessHolders as Holder[] = [
+  //enderio
+  Util.shapeless(<enderio:item_material:77>, [<ore:paper>, <ore:dyeBlack>])
+] as Holder[];
+
 function run() {
-	Artisans.build("engineer", recipeHolders);
+	Artisans.build("engineer", shapedHolders, shapelessHolders);
 }

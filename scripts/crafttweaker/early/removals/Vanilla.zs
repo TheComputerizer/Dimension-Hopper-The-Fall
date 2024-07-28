@@ -277,6 +277,7 @@ static itemRemovals as IItemStack[] = [
 	<draconicevolution:grinder>,
 
 	//enderio
+	<enderio:item_material:77>,
 	<enderio:item_stellar_alloy_pickaxe>,
 
 	//environmentaltech

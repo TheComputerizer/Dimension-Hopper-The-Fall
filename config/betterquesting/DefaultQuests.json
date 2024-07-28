@@ -15468,16 +15468,22 @@
       "questID:3": 233,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 50,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "1:10": {
+              "Count:3": 50,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "scalinghealth:difficultychanger"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -18841,16 +18847,28 @@
       "questID:3": 281,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 100,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "1:10": {
+              "Count:3": 100,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 50,
+              "OreDict:8": "",
+              "id:8": "tconstruct:materials"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         },
         "1:10": {
           "asScript:1": 1,
@@ -39270,16 +39288,28 @@
       "questID:3": 602,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 250,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "1:10": {
+              "Count:3": 250,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 2,
+              "Damage:2": 50,
+              "OreDict:8": "",
+              "id:8": "tconstruct:materials"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -42340,16 +42370,22 @@
           "viaPlayer:1": 0
         },
         "1:10": {
-          "index:3": 1,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 500,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "1:10": {
+              "Count:3": 500,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "scalinghealth:difficultychanger"
             }
-          }
+          },
+          "index:3": 1,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -56560,16 +56596,28 @@
       "questID:3": 867,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 1000,
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "1:10": {
+              "Count:3": 1000,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 3,
+              "Damage:2": 50,
+              "OreDict:8": "",
+              "id:8": "tconstruct:materials"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -63562,7 +63610,9 @@
                 "tempshields:3": 0
               }
             },
-            "ForgeData:10": {},
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
             "HandDropChances:9": {
               "0:5": 0.085,
               "1:5": 0.085
@@ -73512,7 +73562,7 @@
       "questID:3": 1074,
       "rewards:9": {
         "0:10": {
-          "amount:3": 69,
+          "amount:3": 6900,
           "index:3": 0,
           "isLevels:1": 1,
           "rewardID:8": "bq_standard:xp"
@@ -73525,7 +73575,10 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
+              "id:8": "bedrockcraft:bedrock_shovel",
+              "tag:10": {
+                "Quality:10": {}
+              }
             }
           }
         }
@@ -73817,7 +73870,20 @@
         }
       },
       "questID:3": 1079,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 100,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "environmentaltech:pladium_crystal"
+            }
+          }
+        }
+      },
       "tasks:9": {
         "0:10": {
           "autoConsume:1": 0,
@@ -78658,16 +78724,58 @@
       "questID:3": 1118,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 1,
+              "Damage:2": 11,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_obsidian"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 14,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_stone"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 14,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_cobblestone"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 14,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_netherrack"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_sand"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_dirt"
+            },
+            "6:10": {
+              "Count:3": 1,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_gravel"
+            },
+            "7:10": {
+              "Count:3": 100,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
+              "id:8": "environmentaltech:lonsdaleite_crystal"
             }
-          }
+          },
+          "index:3": 1,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -84465,16 +84573,28 @@
       "questID:3": 1221,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 8,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_obsidian"
+            },
+            "1:10": {
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
+              "id:8": "contenttweaker:bloq"
+            },
+            "2:10": {
+              "Count:3": 10,
+              "Damage:2": 69,
+              "OreDict:8": "",
+              "id:8": "mysticalagradditions:stuff"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -84532,16 +84652,40 @@
       "questID:3": 1222,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_obsidian"
+            },
+            "1:10": {
+              "Count:3": 9,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_stone"
+            },
+            "2:10": {
+              "Count:3": 9,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_cobblestone"
+            },
+            "3:10": {
+              "Count:3": 9,
+              "Damage:2": 15,
+              "OreDict:8": "",
+              "id:8": "overloaded:compressed_netherrack"
+            },
+            "4:10": {
+              "Count:3": 1000,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "scalinghealth:difficultychanger"
+              "id:8": "environmentaltech:lonsdaleite_crystal"
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -86551,6 +86695,33 @@
           "rewardID:8": "bq_standard:command",
           "title:8": "bq_standard.reward.command",
           "viaPlayer:1": 0
+        },
+        "1:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "psicosts:creative_cell"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 11,
+              "OreDict:8": "",
+              "id:8": "mekanism:machineblock2",
+              "tag:10": {
+                "tier:3": 4
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "draconicevolution:draconium_capacitor"
+            }
+          },
+          "index:3": 1,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -99485,7 +99656,20 @@
         }
       },
       "questID:3": 1421,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:stone"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
       "tasks:9": {
         "0:10": {
           "autoConsume:1": 0,

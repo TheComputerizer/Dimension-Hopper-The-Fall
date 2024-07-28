@@ -9,22 +9,26 @@
 			"clicktype": "rightclick",
 			"properties": [
 				{
-					"type": "require_item",
-					"name": "minecraft:ender_pearl"
+					"type": "require_dimension",
+					"dimensions": [
+						{
+							"dim": 0,
+							"required": true
+						},
+						{
+							"dim": -1,
+							"required": true
+						}
+					]
 				},
 				{
-					"type": "consume_item",
-					"amount": 1
+					"type": "require_item",
+					"name": "minecraft:ender_pearl"
 				},
 				{
 					"type": "use_command",
 					"name": "effect",
 					"arguments": "@s 11 10 5"
-				},
-				{
-					"type": "use_command",
-					"name": "tpx",
-					"arguments": "@s -1"
 				},
 				{
 					"type": "spawn_particles",
@@ -34,6 +38,45 @@
 					"yOffset": 0.2,
 					"zOffset": 0.2,
 					"disableJEI": true
+				},
+				{
+					"type": "conditional_Effect",
+					"condition": {
+						"type": "invert_Condition",
+						"value": {
+							"type": "require_item",
+							"name": "minecraft:ender_pearl",
+							"amount": 2
+						}
+					},
+					"effects": [
+						{
+							"type": "consume_item",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"type": "if_else_effect",
+					"check": {
+						"type": "require_dimension",
+						"dimensions": [
+							{
+								"dim": 0,
+								"required": true
+							}
+						]
+					},
+					"true_effect": {
+						"type": "use_command",
+						"name": "tpx",
+						"arguments": "@s -1"
+					},
+					"false_effect": {
+						"type": "use_command",
+						"name": "tpx",
+						"arguments": "@s 0"
+					}
 				}
 			],
 			"drops": []
