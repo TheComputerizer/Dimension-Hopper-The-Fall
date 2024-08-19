@@ -51,12 +51,12 @@ function makeRecipes(data as Data, oredict as IOreDictEntry) {
 }
 
 function makeT1Recipes(def as string, dict as IOreDictEntry, ingredients as IIngredient[], level as int, mana as int) {
-    val enchantedItem = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 1,delayedEnch: [{level: level, name: def}]}});
+    val enchantedItem = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 3,delayedEnch: [{level: level, name: def}]}});
     RuneAltar.addRecipe(enchantedItem, ingredients+dict, mana);
 }
 
 function makeT2Recipe(def as string, dict as IOreDictEntry, ingredients as IIngredient[], level as int, levelFactor as int) {
-    val output = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 1,delayedEnch: [{level: level, name: def}]}});
+    val output = <dimhoppertweaks:recipe_function>.withTag({type: "oredict",oredict: dict.name,itemTag: {maxEnchants: 5,delayedEnch: [{level: level, name: def}]}});
     RecipeBuilder.get("mage")
         .setShapeless(ingredients+dict.marked("enchant"))
         .setRecipeFunction(function (out, ins, cInfo) {

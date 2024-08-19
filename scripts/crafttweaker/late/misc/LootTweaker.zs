@@ -1,5 +1,4 @@
 #priority -1000
-#reloadable
 
 import crafttweaker.entity.IEntityDropFunction;
 import crafttweaker.item.IItemStack;
@@ -17,8 +16,6 @@ LootTweaker.getTable("cavern:chests/tower_dungeon").getPool("tower_dungeon_3").a
 LootTweaker.getTable("customizeddungeonloot:loot_table_basic").getPool("main").addItemEntry(<enderio:item_material:10>, 1);
 LootTweaker.getTable("customizeddungeonloot:loot_table_basic").getPool("main").addItemEntry(<enderio:item_material:20>, 1);
 LootTweaker.getTable("customizeddungeonloot:loot_table_advanced").getPool("main").addItemEntry(<enderio:item_material:11>, 1);
-
-//dimdoors
 
 //galacticraft
 GalacticraftTweaker.addDungeonLoot(1, <contenttweaker:crazy_zombie_essence>);
