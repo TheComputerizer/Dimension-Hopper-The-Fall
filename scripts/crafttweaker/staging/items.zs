@@ -159,6 +159,7 @@ static itemStages as IIngredient[][string] = {
         <draconicevolution:draconium_ingot>,
         <immersiveengineering:metal:5>,
         <immersiveengineering:metal:14>,
+		<minecraft:enchanting_table>,
 		<moreplanets:space_warper_core>
 	],
 	"finalfrontier": [
@@ -177,7 +178,6 @@ static itemStages as IIngredient[][string] = {
 		<minecraft:diamond_chestplate>,
 		<minecraft:diamond_leggings>,
 		<minecraft:diamond_boots>,
-		<minecraft:enchanting_table>,
 		<minecraft:furnace:*>,
 		<twilightforest:uncrafting_table>,
 		<xreliquary:twilight_cloak>

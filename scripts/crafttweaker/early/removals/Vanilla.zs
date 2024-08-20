@@ -280,6 +280,7 @@ static itemRemovals as IItemStack[] = [
 	<draconicevolution:grinder>,
 
 	//enderio---------------------------------------------------------------------------------------------------------------
+	<enderio:block_dark_steel_anvil>,
 	<enderio:item_material:77>,
 	<enderio:item_stellar_alloy_pickaxe>,
 
@@ -397,6 +398,7 @@ static itemRemovals as IItemStack[] = [
 	<minecraft:clock>, //Clock
 	<minecraft:dye:4>,
 	<minecraft:emerald>, //Emerald
+    <minecraft:enchanting_table:*>, //Enchanting Table
 	<minecraft:ender_eye>,
 	<minecraft:end_portal_frame>,
 	<minecraft:piston>, //Piston

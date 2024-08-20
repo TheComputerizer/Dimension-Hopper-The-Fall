@@ -81,7 +81,6 @@ function makeT2Recipe(def as string, dict as IOreDictEntry, ingredients as IIngr
         .setFluid(<liquid:xpjuice>*Math.min(16000,levelFactor*100))
         .addTool(<ore:artisansAthame>, levelFactor)
         .addTool(<ore:artisansGrimoire>, levelFactor)
-        .addTool(<ore:artisansHammer>, levelFactor)
         .addOutput(output)
         .create();
 }

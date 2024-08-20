@@ -18,6 +18,7 @@ JEI.addDescription(<appliedenergistics2:facade>, "Example recipe.",
 
 //botany--------------------------------------------------------------------------------------------------------------------
 JEI.addDescription(<botany:ceramicbrick>, "Ceramic bricks can be made in a Tileworker");
+
 JEI.addDescription(<botany:pigment:*>, 
     ["Colored pigments can be obtained from putting a single flower in a crafting grid.",
     "The resulting color will be inherited from the primary color trait of the flower used.",
@@ -37,6 +38,7 @@ JEI.addDescription(<enderio:item_soul_vial:1>,
 JEI.addDescription([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
     "Extra inventory that automatically picks up specialized items.",
     "Currently, the items that can be picked up are as follows:", CTPassthrough.getAdventuringBackpackItems()]);
+
 JEI.addDescription(<forestry:wood_pile>, "To build a Charcoal Pile, first place 1 or more adjacent Wood Pile.",
     "2x2x2 is generally a good starting size, but even a single Wood Pile will work.", 
     "Next, make sure all sides of all wood piles are covered by either another wood pile or a valid Charcoal Pile block.",
@@ -48,24 +50,30 @@ JEI.addDescription(<forestry:wood_pile>, "To build a Charcoal Pile, first place 
 
 //huntingdim----------------------------------------------------------------------------------------------------------------
 JEI.addDescription(<huntingdim:biome_changer>, "Example recipe.", "Most biomes are supported");
+
 JEI.addDescription(<huntingdim:frame>, "Example recipe.", "Most wood types will work");
 
 //minecraft-----------------------------------------------------------------------------------------------------------------
 handleEnchantedBooks();
+
 JEI.addDescription(<minecraft:piston>, "If you are in the Twilight Forest, pistons can not yet be crafted.",
     "Pistons can be found near the top of Ur-Ghast towers and rarely in the basements of druid houses.",
     "Only the trapped wither skeleton skull varient of the basement can have a piston");
+
+JEI.addDescription(<minecraft:enchanting_table>, "If you are in the Twilight Forest, pistons can not yet be crafted.");
 
 //projecte------------------------------------------------------------------------------------------------------------------
 JEI.addDescription([<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_matter>, <projecte:item.pe_matter:1>], EMC_ONLY);
 
 //projectex-----------------------------------------------------------------------------------------------------------------
 handleMetas(<projectex:matter>.definition, 0, 11, EMC_ONLY);
+
 JEI.addDescription([<projectex:collector>, <projecte:item.pe_klein_star>], EMC_ONLY);
 
 //xlfoodmod-----------------------------------------------------------------------------------------------------------------
 JEI.addDescription(<xlfoodmod:cheese>, "§kFel§r blazes can be summoned with a Fel P§kumpkin§r on top of §kiron§r bars.",
     "Wait this is the description for chee-");
+
 //--------------------------------------------------------------------------------------------------------------------------
 
 function handleMeta(item as IItemDefinition, meta as int, description as string) {

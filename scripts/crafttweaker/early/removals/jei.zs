@@ -33,7 +33,6 @@ static arrayRemovals as IItemStack[][] = [
 
     //enderio
     Stack.append("enderio:block_", ["crafter", "enchanter", "farm_station", "simple_crafter"]),
-    Stack.append("enderio:block_dark_", ["paper_anvil", "steel_anvil"], 32767),
     Stack.append("enderio:item_end_steel_", ["pickaxe", "sword"]),
 
     //environmentaltech
@@ -164,6 +163,7 @@ static itemRemovals as IItemStack[] = [
     <draconicevolution:draconium_chest>,
 
     //enderio
+    <enderio:block_dark_paper_anvil>,
     <enderio:item_dark_steel_sword>,
 
     //environmentaltech
@@ -243,7 +243,6 @@ static itemRemovals as IItemStack[] = [
 
     //minecraft
     <minecraft:anvil:*>,
-    <minecraft:enchanting_table:*>,
     <minecraft:furnace:*>,
     <minecraft:furnace_minecart>,
 
