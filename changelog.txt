@@ -1,3 +1,82 @@
+Released V1.5.7[SOFTLOCKS & CATCHING UP]
+
+*V1.6 when*
+
+Removed Mods
+- Baubles
+- Misty World
+- Patchouli
+- Psi
+- The One Probe
+- The Twilight Forest
+- XNet
+
+Added Mods
+- Bubbles
+- Misty World Unofficial
+- Patchouli ROFL Edition
+- Psi Unofficial
+- The Twilight Forest - Deforestation Edition
+- TTweaker
+- YNet [XNet Fork]
+
+Updated Mods
+- Alfheim Lighting Engine
+- Better Questing Unofficial
+- Chunk-Pregenerator
+- Corail Tombstone
+- Custom Loading Screen
+- Dimension Hopper Tweaks
+- Extended Crafting: Nomifactory Edition
+- FermiumASM
+- FermiumBooter
+- Fixeroo
+- Fluidlogged API
+- Forestry
+- Forgelin-Continuous
+- Greenery
+- Had Enough Items
+- HammerLib
+- Inventory Bogo Sorter
+- JAOPCA
+- LibrarianLib-Continuous
+- MixinBooter
+- Mouse Tweaks Unofficial
+- Multiblocked
+- OpenComputers
+- PackagedAuto
+- PackagedAvaritia
+- PackagedExCrafting
+- Red Core
+- RLMixins
+- Storage Drawers
+- Universal Tweaks
+- Zen Utils
+- ZenRecipeReload
+
+General Changes
+- Lightning can once again destroy items
+- Mined items will no longer try to be directly inserted into the inventory
+- Fluidlogged API will now downloaded be from Modrinth via File Director when the game is launched
+- Removed bedrock and elevation based fog
+- Disabled some biome specific fog density and coloring for increased performance
+- Morning fog now has a 1/6 chance of occurring each day instead of being guaranteed
+- Removed Dynamic Surroundings biome specific sounds from most non vanilla dimensions
+- Added JEI description pages for items only obtainable via EMC
+- Made the Alchemical Retort augment and by extension the Mage Workstation craftable during chapter 3
+- Logic Chips for airship parts now require a Circuit Board instead of a Basic Control Circuit
+- Moved calculator and circuit related quests to a new questline
+- Cleaned up all of the void ore miner output (thanks to Johanniklas)
+- Removed some unnecessary mod update checks
+- Fixed some quests not ignoring NBT data
+- Added a recipe to recipe NBT data for quantum entangled singularities
+
+Enchanting Changes
+- Raised the maximum enchantments able to be applied via tier 1 enchanting to 3
+- Removed the hammer from tier 2 enchanting recipes making them craftable in a Mage Workstation
+- The Advanced Enchantment Table is now craftable during chapter 6
+- The vanilla Enchanting Table is now craftable during chapter 8
+
 Released V1.5.6[PERFORMANCE & STUFF]
 
 *Did someone say improved difficulty*

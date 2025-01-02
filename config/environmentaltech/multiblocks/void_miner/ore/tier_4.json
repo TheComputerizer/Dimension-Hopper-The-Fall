@@ -261,11 +261,6 @@
       "id": "OD:oreUranium"
     },
     {
-      "target": "green",
-      "weight": 250,
-      "id": "OD:oreUranium"
-    },
-    {
       "target": "light_blue",
       "weight": 50,
       "id": "OD:oreIridium"

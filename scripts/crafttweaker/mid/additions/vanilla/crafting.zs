@@ -283,11 +283,11 @@ static shapedBuilders as Holder[] = [
     //translocators---------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<translocators:translocator_part:1>*2, { <enderio:item_alloy_ingot:3>:[0,2,6,8], 
         <minecraft:ender_eye>:[1], <enderio:item_alloy_ingot:9>:[3,5], <minecraft:sticky_piston>:[4],
-        <minecraft:lapis_block>:[7] }) //Fluid Translocator
+        <minecraft:lapis_block>:[7] }), //Fluid Translocator
 
     Util.dynamicShaped(<translocators:translocator_part>*2, { <enderio:item_alloy_ingot:3>:[0,2,6,8], 
         <minecraft:ender_eye>:[1], <enderio:item_alloy_ingot:9>:[3,5], <minecraft:sticky_piston>:[4],
-        <minecraft:gold_block>:[7] }) //Item Translocator
+        <minecraft:gold_block>:[7] }), //Item Translocator
 
     //travelersbackpack-----------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<travelersbackpack:travelers_backpack>, {
@@ -328,6 +328,9 @@ static shapedBuilders as Holder[] = [
 ] as Holder[];
 
 static shapelessBuilders as Holder[] = [
+    //appliedenergistics2---------------------------------------------------------------------------------------------------
+    Util.shapeless(<appliedenergistics2:material:48>, [<appliedenergistics2:material:48>]), //Quantum Entangled Singularity
+
     //avaritia--------------------------------------------------------------------------------------------------------------
     Util.shapeless(<avaritia:extreme_crafting_table>, [<extendedcrafting:table_ultimate>, 
         <avaritia:resource:5>]), //Extreme Crafting Table

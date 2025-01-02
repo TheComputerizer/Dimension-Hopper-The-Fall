@@ -1,17 +1,17 @@
 {
+    "player": {
+        "recipes": {},
+        "last": ""
+    },
     "craft": {
         "inventory": 0b,
         "amount": "",
         "recents": []
     },
-    "player": {
-        "last": "",
-        "recipes": {}
-    },
     "math": {
+        "state": 0,
         "current": "",
-        "last": "0",
         "operator": 0,
-        "state": 0
+        "last": "0"
     }
 }

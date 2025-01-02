@@ -101,11 +101,6 @@
       "id": "OD:oreSulfur"
     },
     {
-      "target": "red",
-      "weight": 113,
-      "id": "OD:oreFirestone"
-    },
-    {
       "target": "light_blue",
       "weight": 200,
       "id": "OD:oreApatite"
