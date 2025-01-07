@@ -347,13 +347,8 @@
     },
 	{
       "target": "green",
-      "weight": 4,
-      "id": "quark:variant_sapling:0"
-    },
-	{
-      "target": "pink",
-      "weight": 4,
-      "id": "quark:variant_sapling:1"
+      "weight": 28,
+      "id": "forestry:sapling"
     },
 	{
       "target": "crystal",
@@ -894,6 +889,11 @@
       "target": "blue",
       "weight": 28,
       "id": "randomthings:ingredient:2"
+    },
+	{
+      "target": "blue",
+      "weight": 28,
+      "id": "randomthings:glowingmushroom"
     },
     {
       "target": "red",
