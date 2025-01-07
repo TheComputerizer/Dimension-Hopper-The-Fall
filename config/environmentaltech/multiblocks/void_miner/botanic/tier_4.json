@@ -831,7 +831,7 @@
       "id": "randomthings:ingredient:2"
     },
 	{
-      "target": "blue",
+      "target": "light_blue",
       "weight": 14,
       "id": "randomthings:glowingmushroom"
     },
