@@ -10,9 +10,9 @@
       "width": 150,
       "height": 25,
       "texture": "multiblocked:textures/gui/energy_bar.png",
-      "capacity": 100000,
-      "maxReceive": 20000,
-      "maxExtract": 20000
+      "capacity": 250000,
+      "maxReceive": 50000,
+      "maxExtract": 50000
     }
   },
   "properties": {
@@ -60,9 +60,9 @@
         "ABA"
       ],
       [
-        "BGB",
+        "BCB",
         "AD@",
-        "BCB"
+        "BGB"
       ],
       [
         "ABA",

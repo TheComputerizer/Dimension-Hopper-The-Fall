@@ -227,13 +227,8 @@
     },
 	{
       "target": "green",
-      "weight": 4,
-      "id": "quark:variant_sapling:0"
-    },
-	{
-      "target": "pink",
-      "weight": 4,
-      "id": "quark:variant_sapling:1"
+      "weight": 8,
+      "id": "forestry:sapling"
     },
 	{
       "target": "green",
@@ -579,6 +574,11 @@
       "target": "lime",
       "weight": 6,
       "id": "minecraft:reeds:0"
+    },
+	  {
+      "target": "light_blue",
+      "weight": 14,
+      "id": "randomthings:glowingmushroom"
     },
     {
       "target": "red",
