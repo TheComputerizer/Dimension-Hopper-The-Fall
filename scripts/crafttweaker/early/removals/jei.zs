@@ -119,6 +119,7 @@ static arrayRemovals as IItemStack[][] = [
 static itemRemovals as IItemStack[] = [
     //actuallyadditions
     <actuallyadditions:block_misc:5>,
+    <actuallyadditions:item_mining_lens>,
 
     //aether
     <aether:holystone_furnace>,

@@ -14,8 +14,8 @@ addToken(4, [<actuallyadditions:block_leaf_generator>]);
 
 //prestige tokens chapter 3
 addToken(5, [<minecraft:emerald>]);
-addToken(6, [<actuallyadditions:item_crystal_empowered:4>]);
-addToken(7, [<contenttweaker:crazy_zombie_essence>, <contenttweaker:crazy_spider_essence>, <contenttweaker:crazy_skeleton_essence>, <contenttweaker:crazy_creeper_essence>]);
+addToken(6, [<contenttweaker:crazy_zombie_essence>, <contenttweaker:crazy_spider_essence>, <contenttweaker:crazy_skeleton_essence>, <contenttweaker:crazy_creeper_essence>]);
+addToken(7, [<actuallyadditions:item_crystal_empowered:4>]);
 
 //prestige tokens chapter 4
 addToken(8, [<thermalfoundation:storage:3>]);

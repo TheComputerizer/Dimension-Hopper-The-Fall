@@ -38,6 +38,8 @@ static recipeHolder as int[][IItemStack[]] = {
         [5000,100], //void crystal
     [<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <industrialforegoing:artificial_dye:13>, <actuallyadditions:item_misc:12>, <botania:manaresource:4>, <extrautils2:unstableingots>]:
         [20000,100], //emeradic crystal
+    [<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <industrialforegoing:artificial_dye:13>, <actuallyadditions:item_misc:12>, <botania:manaresource:4>, <extrautils2:unstableingots:2>]:
+        [20000,100], //emeradic crystal (stable-unstable alt)
     [<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <industrialforegoing:artificial_dye>, <minecraft:snowball>, <minecraft:stone_button>, <overloaded:compressed_cobblestone>]:
         [10000,100], //enori crystal
     [<moreplates:empowered_restonia_plate>, <moreplates:restonia_plate>, <industrialforegoing:artificial_dye:14>, <tconstruct:materials:1>, <calculator:redstoneingot>, <minecraft:netherbrick>]:
@@ -50,6 +52,8 @@ static recipeHolder as int[][IItemStack[]] = {
         [10000,100], //void plate
     [<moreplates:empowered_emeradic_plate>, <moreplates:emeradic_plate>, <industrialforegoing:artificial_dye:13>, <actuallyadditions:item_misc:12>, <botania:manaresource:4>, <extrautils2:unstableingots>]:
         [40000,100], //emeradic plate
+    [<moreplates:empowered_emeradic_plate>, <moreplates:emeradic_plate>, <industrialforegoing:artificial_dye:13>, <actuallyadditions:item_misc:12>, <botania:manaresource:4>, <extrautils2:unstableingots:2>]:
+        [40000,100], //emeradic plate (stable-unstable alt)
     [<moreplates:empowered_enori_plate>, <moreplates:enori_plate>, <industrialforegoing:artificial_dye>, <minecraft:snowball>, <minecraft:stone_button>, <overloaded:compressed_cobblestone>]:
         [20000,100], //enori plate
     [<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <industrialforegoing:artificial_dye:14>, <tconstruct:deco_ground>, <calculator:material:9>, <minecraft:nether_brick>]:
@@ -62,6 +66,8 @@ static recipeHolder as int[][IItemStack[]] = {
         [50000,100], //void block
     [<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <industrialforegoing:artificial_dye:13>, <tconstruct:ingots:3>, <moreplates:terrasteel_gear>, <extrautils2:unstableingots>]:
         [200000,100], //emeradic block
+    [<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <industrialforegoing:artificial_dye:13>, <tconstruct:ingots:3>, <moreplates:terrasteel_gear>, <extrautils2:unstableingots:2>]:
+        [200000,100], //emeradic block (stable-unstable alt)
     [<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <industrialforegoing:artificial_dye>, <minecraft:snow>, <opencomputers:material:14>, <overloaded:compressed_cobblestone:1>]:
         [100000,100], //enori block
     [<qualitytools:reforging_station>, <enderio:block_alloy:6>, <overloaded:compressed_obsidian:2>, <minecraft:stone_slab>, <tp:stone_hammer>, <overloaded:compressed_obsidian:2>]:
