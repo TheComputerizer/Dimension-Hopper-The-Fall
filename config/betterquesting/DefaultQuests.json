@@ -27272,7 +27272,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Not a bad start, but we are going to need a bigger rocket than this. However, we seem to be lacking in materials from the current realms that we have access to, so it is time for you to become an astronaut in order to gather more. \n\n     Be careful, you never know what strange entities you might encounter in the vastness of space.\n\n§3§lNOTE: The gui for the rocket crafting cannot fit all the of the required ingredients. Once you have built your rocket (you can visualize the structure in more detail via its controller) drop in a matter condenser to start the recipe.",
+          "desc:8": "     Not a bad start, but we are going to need a bigger rocket than this. However, we seem to be lacking in materials from the current realms that we have access to, so it is time for you to become an astronaut in order to gather more. \n\n     Be careful, you never know what strange entities you might encounter in the vastness of space.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "galacticraftcore:rocket_t1"

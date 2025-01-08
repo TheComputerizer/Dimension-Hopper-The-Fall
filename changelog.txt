@@ -1,3 +1,15 @@
+Released V1.5.7.1[SOFTLOCK CRASH]
+
+*Pizza time!*
+
+Updated Mods
+- Misty World Unveiled
+- RLMixins
+- TTweaker
+
+General Changes
+- Brewing stands no longer crash the game
+
 Released V1.5.7[SOFTLOCKS & CATCHING UP]
 
 *V1.6 when*
