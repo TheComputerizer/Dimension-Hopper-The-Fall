@@ -27,6 +27,111 @@ RecipeMap.register(lightningRPO);
 val lightningRPI = RecipeMap("infinity_infuser_recipes") as RecipeMap;
 RecipeMap.register(lightningRPI);
 
+lightningRPT.start()
+	.duration(1)
+	.inputLE(10)
+	.inputItems(<environmentaltech:erodium_crystal>)
+	.outputItems(<environmentaltech:litherite_crystal>*2)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1)
+	.inputLE(20)
+	.inputItems(<environmentaltech:kyronite_crystal>)
+	.outputItems(<environmentaltech:erodium_crystal>*2)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1)
+	.inputLE(30)
+	.inputItems(<environmentaltech:pladium_crystal>)
+	.outputItems(<environmentaltech:kyronite_crystal>*2)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1)
+	.inputLE(40)
+	.inputItems(<environmentaltech:ionite_crystal>)
+	.outputItems(<environmentaltech:pladium_crystal>*2)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1)
+	.inputLE(50)
+	.inputItems(<environmentaltech:aethium_crystal>)
+	.outputItems(<environmentaltech:ionite_crystal>*2)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1)
+	.inputLE(160)
+	.inputItems(<environmentaltech:erodium_crystal>*8)
+	.outputItems(<environmentaltech:litherite_crystal>*16)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1)
+	.inputLE(320)
+	.inputItems(<environmentaltech:kyronite_crystal>*8)
+	.outputItems(<environmentaltech:erodium_crystal>*16)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1)
+	.inputLE(480)
+	.inputItems(<environmentaltech:pladium_crystal>*8)
+	.outputItems(<environmentaltech:kyronite_crystal>*16)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1)
+	.inputLE(640)
+	.inputItems(<environmentaltech:ionite_crystal>*8)
+	.outputItems(<environmentaltech:pladium_crystal>*16)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1)
+	.inputLE(800)
+	.inputItems(<environmentaltech:aethium_crystal>*8)
+	.outputItems(<environmentaltech:ionite_crystal>*16)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1)
+	.inputLE(2560)
+	.inputItems(<environmentaltech:erodium_crystal>*64)
+	.outputItems(<environmentaltech:litherite_crystal>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1)
+	.inputLE(5120)
+	.inputItems(<environmentaltech:kyronite_crystal>*64)
+	.outputItems(<environmentaltech:erodium_crystal>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1)
+	.inputLE(7680)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<environmentaltech:kyronite_crystal>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1)
+	.inputLE(10240)
+	.inputItems(<environmentaltech:ionite_crystal>*64)
+	.outputItems(<environmentaltech:pladium_crystal>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1)
+	.inputLE(12800)
+	.inputItems(<environmentaltech:aethium_crystal>*64)
+	.outputItems(<environmentaltech:ionite_crystal>*128)
+	.buildAndRegister();
+
 lightningRPF.start()
 	.duration(600)
 	.inputLE(10)
