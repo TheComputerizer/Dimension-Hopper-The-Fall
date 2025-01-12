@@ -96,6 +96,11 @@
       "id": "OD:oreAluminum"
     },
     {
+      "target": "silver",
+      "weight": 422,
+      "id": "thebetweenlands:life_crystal_stalactite:1"
+    },
+    {
       "target": "light_blue",
       "weight": 187,
       "id": "OD:oreCertusQuartz"
@@ -139,6 +144,11 @@
       "target": "light_blue",
       "weight": 200,
       "id": "OD:oreApatite"
+    },
+    {
+      "target": "black",
+      "weight": 190,
+      "id": "aoa3:ancient_rock"
     },
     {
       "target": "black",
@@ -246,6 +256,16 @@
       "id": "OD:oreDesh"
     },
     {
+      "target": "black",
+      "weight": 200,
+      "id": "extraplanets:mercury:10"
+    },
+    {
+      "target": "white",
+      "weight": 200,
+      "id": "extraplanets:mercury:6"
+    },
+    {
       "target": "blue",
       "weight": 150,
       "id": "OD:oreIlmenite"
@@ -279,6 +299,26 @@
       "target": "light_blue",
       "weight": 10,
       "id": "OD:oreShyregem"
+    },
+    {
+      "target": "green",
+      "weight": 200,
+      "id": "aoa3:mystite_ore"
+    },
+    {
+      "target": "purple",
+      "weight": 200,
+      "id": "aoa3:ghoulish_ore"
+    },
+    {
+      "target": "light_blue",
+      "weight": 200,
+      "id": "aoa3:shyrestone_ore"
+    },
+    {
+      "target": "yellow",
+      "weight": 200,
+      "id": "aoa3:lyon_ore"
     },
     {
       "target": "white",
@@ -331,9 +371,19 @@
       "id": "theaurorian:geodeore"
     },
     {
+      "target": "red",
+      "weight": 150,
+      "id": "blue_skies:ventium_ore"
+    },
+    {
       "target": "blue",
       "weight": 50,
       "id": "galacticraftcore:basic_block_moon:6"
+    },
+    {
+      "target": "blue",
+      "weight": 50,
+      "id": "extraplanets:neptune:10"
     }
   ]
 }

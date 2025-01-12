@@ -6,6 +6,11 @@
       "id": "minecraft:stone:0"
     },
     {
+      "target": "blue",
+      "weight": 32,
+      "id": "extraplanets:neptune:2"
+    },
+    {
       "target": "pink",
       "weight": 30,
       "id": "minecraft:stone:1"
