@@ -261,6 +261,11 @@
       "id": "mist:r_tree_block"
     },
 	{
+      "target": "pink",
+      "weight": 16,
+      "id": "naturesaura:ancient_log"
+    },
+	{
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:0"
