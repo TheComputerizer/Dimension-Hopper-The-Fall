@@ -386,6 +386,11 @@
       "id": "galacticraftcore:basic_block_moon:6"
     },
     {
+      "target": "blue",
+      "weight": 50,
+      "id": "extraplanets:neptune:10"
+    },
+    {
       "target": "gray",
       "weight": 150,
       "id": "extraplanets:pluto:6"
