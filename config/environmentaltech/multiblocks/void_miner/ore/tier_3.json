@@ -86,6 +86,11 @@
       "id": "OD:oreAluminum"
     },
     {
+      "target": "silver",
+      "weight": 422,
+      "id": "thebetweenlands:life_crystal_stalactite:1"
+    },
+    {
       "target": "light_blue",
       "weight": 187,
       "id": "OD:oreCertusQuartz"
@@ -129,6 +134,11 @@
       "target": "light_blue",
       "weight": 200,
       "id": "OD:oreApatite"
+    },
+    {
+      "target": "black",
+      "weight": 190,
+      "id": "aoa3:ancient_rock"
     },
     {
       "target": "black",

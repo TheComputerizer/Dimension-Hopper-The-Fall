@@ -5,92 +5,92 @@
       "weight": 32,
       "id": "minecraft:log:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log:1"
     },
-	{
+    {
       "target": "white",
       "weight": 32,
       "id": "minecraft:log:2"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log:3"
     },
-	{
+    {
       "target": "orange",
       "weight": 32,
       "id": "minecraft:log2:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log2:1"
-	},
-	{
+    },
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:0"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:1"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:2"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:3"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:4"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:5"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:0"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:1"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:2"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:3"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves2:0"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves2:1"
     },
-	{
+    {
       "target": "yellow",
       "weight": 8,
       "id": "minecraft:yellow_flower:0"
