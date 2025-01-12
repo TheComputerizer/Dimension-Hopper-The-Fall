@@ -138,6 +138,11 @@
     {
       "target": "black",
       "weight": 190,
+      "id": "aoa3:ancient_rock"
+    },
+    {
+      "target": "black",
+      "weight": 190,
       "id": "bigreactors:dustgraphite"
     },
     {
