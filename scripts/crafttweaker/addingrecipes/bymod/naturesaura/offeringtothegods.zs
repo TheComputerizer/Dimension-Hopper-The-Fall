@@ -18,3 +18,6 @@ Offering.addRecipe("talisman", <naturesaura:moss_generator>, 3, <contenttweaker:
 
 //gold leaves
 Offering.addRecipe("goldleafautomation", <naturesaura:gold_fiber>, 2, <ore:treeLeaves>, <naturesaura:gold_leaf>);
+
+//creative storage upgrade
+Offering.addRecipe("creativestorageupgrade", <storagedrawers:upgrade_storage:4>, 1, <aeadditions:storage.component:3>, <storagedrawers:upgrade_creative>);
