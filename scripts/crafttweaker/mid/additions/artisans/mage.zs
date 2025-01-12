@@ -3,6 +3,7 @@
 import crafttweaker.data.IData;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.util.Math;
 import mods.artisanworktables.builder.RecipeBuilder;
 import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
 import scripts.crafttweaker.early.util.Tables as Util;
@@ -171,9 +172,28 @@ static shapedHolders as Holder[] = [
     <psi:material:5>,
     <naturesaura:calling_spirit>,
     <botania:dye:6>,
-    <botania:manatablet>.withTag({mana: 500000})])
+    <botania:manatablet>.transform(function(item,player) {
+      val tag = item.tag as IData;
+      val isCreative = tag.creative as bool;
+      if(isCreative) {
+        return item;
+      }
+      val mana = tag.mana as int;
+      val count = Math.clamp(mana/50000,1,10);
+      val newMana = Math.max(0,mana-(count*50000));
+      return item.withTag({mana: newMana});
+    })]).setMarkIndex(7)
+    .addFunction(function(output, map, info) {
+      val tag =  map.mark.tag as IData;
+      val mana = tag.mana as int;
+      var count = Math.clamp(mana/50000,1,10) as int;
+      if(tag.creative) {
+        count*=2;
+      }
+      return output*count;
+    } as IRecipeFunction)
     .addTools({<ore:artisansGrimoire>:123,<ore:artisansAthame>:123,<ore:artisansBeaker>:123})
-    .addFluids([<liquid:binnie.spirit.neutral>*4000])
+    .addFluids([<liquid:binnie.spirit.neutral>*2000])
     .addExtras([<botania:manatablet>.withTag({mana: 450000})]), //automatable gaia spirits
 
   //mysticalagriculture
