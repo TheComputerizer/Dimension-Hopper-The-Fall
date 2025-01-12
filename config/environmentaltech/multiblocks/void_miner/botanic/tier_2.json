@@ -5,457 +5,457 @@
       "weight": 32,
       "id": "minecraft:log:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log:1"
     },
-	{
+    {
       "target": "white",
       "weight": 32,
       "id": "minecraft:log:2"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log:3"
     },
-	{
+    {
       "target": "orange",
       "weight": 32,
       "id": "minecraft:log2:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 32,
       "id": "minecraft:log2:1"
-	},
-	{
+    },
+    {
       "target": "yellow",
       "weight": 16,
       "id": "extrautils2:ironwood_log:0"
     },
-	{
+    {
       "target": "silver",
       "weight": 16,
       "id": "extrautils2:ironwood_log:1"
     },
-	{
+    {
       "target": "blue",
       "weight": 16,
       "id": "integrateddynamics:menril_log:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 4,
       "id": "twilightforest:twilight_log:0"
     },
-	{
+    {
       "target": "brown",
       "weight": 4,
       "id": "twilightforest:twilight_log:1"
     },
-	{
+    {
       "target": "silver",
       "weight": 4,
       "id": "twilightforest:twilight_log:2"
     },
-	{
+    {
       "target": "black",
       "weight": 4,
       "id": "twilightforest:twilight_log:3"
     },
-	{
+    {
       "target": "pink",
       "weight": 1,
       "id": "blue_skies:cherry_log"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "blue_skies:bluebright_log"
     },
-	{
+    {
       "target": "silver",
       "weight": 8,
       "id": "blue_skies:starlit_log"
     },
-	{
+    {
       "target": "black",
       "weight": 8,
       "id": "blue_skies:frostbright_log"
     },
-	{
+    {
       "target": "purple",
       "weight": 8,
       "id": "blue_skies:lunar_log"
     },
-	{
+    {
       "target": "purple",
       "weight": 8,
       "id": "blue_skies:dusk_log"
     },
-	{
+    {
       "target": "brown",
       "weight": 8,
       "id": "blue_skies:maple_log"
     },
-	{
+    {
       "target": "orange",
       "weight": 1,
       "id": "atum:palm_log"
     },
-	{
+    {
       "target": "gray",
       "weight": 8,
       "id": "atum:deadwood_log"
     },
-	{
+    {
       "target": "gray",
       "weight": 8,
       "id": "aether:skyroot_log"
     },
-	{
+    {
       "target": "white",
       "weight": 8,
       "id": "aether:light_skyroot_log"
     },
-	{
+    {
       "target": "black",
       "weight": 8,
       "id": "aether:dark_skyroot_log"
     },
-	{
+    {
       "target": "red",
       "weight": 8,
       "id": "mist:acacia_block"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:aspen_block"
     },
-	{
+    {
       "target": "brown",
       "weight": 8,
       "id": "mist:a_tree_block"
     },
-	{
+    {
       "target": "black",
       "weight": 8,
       "id": "mist:birch_block"
     },
-	{
+    {
       "target": "brown",
       "weight": 8,
       "id": "mist:oak_block"
     },
-	{
+    {
       "target": "brown",
       "weight": 8,
       "id": "mist:pine_block"
     },
-	{
+    {
       "target": "gray",
       "weight": 8,
       "id": "mist:poplar_block"
     },
-	{
+    {
       "target": "white",
       "weight": 8,
       "id": "mist:snow_block"
     },
-	{
+    {
       "target": "brown",
       "weight": 8,
       "id": "mist:spruce_block"
     },
-	{
+    {
       "target": "gray",
       "weight": 8,
       "id": "mist:s_tree_block"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "mist:t_tree_block"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:willow_block"
     },
-	{
+    {
       "target": "orange",
       "weight": 1,
       "id": "mist:r_tree_block"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:0"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:1"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:2"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:3"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:4"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "minecraft:sapling:5"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "integrateddynamics:menril_sapling"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "forestry:sapling"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:0"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:1"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:2"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves:3"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves2:0"
     },
-	{
+    {
       "target": "green",
       "weight": 32,
       "id": "minecraft:leaves2:1"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "extrautils2:ironwood_leaves:0"
     },
-	{
+    {
       "target": "black",
       "weight": 8,
       "id": "extrautils2:ironwood_leaves:1"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "tconstruct:slime_leaves:0"
     },
-	{
+    {
       "target": "purple",
       "weight": 8,
       "id": "tconstruct:slime_leaves:1"
     },
-	{
+    {
       "target": "orange",
       "weight": 8,
       "id": "tconstruct:slime_leaves:2"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "integrateddynamics:menril_leaves:0"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "quark:variant_leaves:0"
     },
-	{
+    {
       "target": "pink",
       "weight": 8,
       "id": "quark:variant_leaves:1"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "aether:green_skyroot_leaves"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "aether:blue_skyroot_leaves"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "aether:dark_blue_skyroot_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "aether:green_light_skyroot_leaves"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "aether:blue_light_skyroot_leaves"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "aether:dark_blue_light_skyroot_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "aether:green_dark_skyroot_leaves"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "aether:blue_dark_skyroot_leaves"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "aether:dark_blue_dark_skyroot_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "atum:palm_leaves"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "blue_skies:bluebright_leaves"
     },
-	{
+    {
       "target": "blue",
       "weight": 8,
       "id": "blue_skies:starlit_leaves"
     },
-	{
+    {
       "target": "white",
       "weight": 8,
       "id": "blue_skies:frostbright_leaves"
     },
-	{
+    {
       "target": "purple",
       "weight": 8,
       "id": "blue_skies:lunar_leaves"
     },
-	{
+    {
       "target": "pink",
       "weight": 8,
       "id": "blue_skies:dusk_leaves"
     },
-	{
+    {
       "target": "red",
       "weight": 8,
       "id": "blue_skies:maple_leaves"
     },
-	{
+    {
       "target": "pink",
       "weight": 8,
       "id": "blue_skies:cherry_leaves"
     },
-	{
+    {
       "target": "purple",
       "weight": 8,
       "id": "blue_skies:nectarine_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:acacia_leaves"
     },
-	{
+    {
       "target": "yellow",
       "weight": 8,
       "id": "mist:aspen_leaves"
     },
-	{
+    {
       "target": "yellow",
       "weight": 8,
       "id": "mist:a_tree_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:birch_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:oak_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:poplar_leaves"
     },
-	{
+    {
       "target": "red",
       "weight": 8,
       "id": "mist:snow_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:s_tree_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:t_tree_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:willow_leaves"
     },
-	{
+    {
       "target": "green",
       "weight": 8,
       "id": "mist:r_tree_leaves"
     },
-	{
+    {
       "target": "light_blue",
       "weight": 8,
       "id": "theaurorian:silentwoodleaves"
     },
-	{
+    {
       "target": "silver",
       "weight": 8,
       "id": "theaurorian:weepingwillowleaves"
     },
-	{
+    {
       "target": "yellow",
       "weight": 8,
       "id": "minecraft:yellow_flower:0"
@@ -575,7 +575,7 @@
       "weight": 6,
       "id": "minecraft:reeds:0"
     },
-	  {
+    {
       "target": "light_blue",
       "weight": 14,
       "id": "randomthings:glowingmushroom"
@@ -630,7 +630,7 @@
       "weight": 3,
       "id": "minecraft:waterlily:0"
     },
-	{
+    {
       "target": "lime",
       "weight": 6,
       "id": "tp:compressed_sugar_cane"
