@@ -172,18 +172,21 @@ static shapedHolders as Holder[] = [
     <psi:material:5>,
     <naturesaura:calling_spirit>,
     <botania:dye:6>,
-    <botania:manatablet>.transform(function(item,player) {
+    <botania:manatablet>.transformNew(function(item) {
       val tag = item.tag as IData;
-      val isCreative = tag.creative as bool;
-      if(isCreative) {
+      if(tag.creative) {
         return item;
       }
       val mana = tag.mana as int;
-      val count = Math.clamp(mana/50000,1,10);
-      val newMana = Math.max(0,mana-(count*50000));
+      var count = Math.clamp(mana/50000,1,10) as double;
+      val newMana = Math.max(0,mana-Math.max(50000,(50000*count as double)/2) as int);
       return item.withTag({mana: newMana});
-    })]).setMarkIndex(7)
+
+    }).reuse()]).setMarkIndex(22)
     .addFunction(function(output, map, info) {
+      if(!map.mark.hasTag) {
+        return output;
+      }
       val tag =  map.mark.tag as IData;
       val mana = tag.mana as int;
       var count = Math.clamp(mana/50000,1,10) as int;
@@ -193,8 +196,7 @@ static shapedHolders as Holder[] = [
       return output*count;
     } as IRecipeFunction)
     .addTools({<ore:artisansGrimoire>:123,<ore:artisansAthame>:123,<ore:artisansBeaker>:123})
-    .addFluids([<liquid:binnie.spirit.neutral>*2000])
-    .addExtras([<botania:manatablet>.withTag({mana: 450000})]), //automatable gaia spirits
+    .addFluids([<liquid:binnie.spirit.neutral>*2000]), //automatable gaia spirits
 
   //mysticalagriculture
   Util.bigShaped(<mysticalagriculture:master_infusion_crystal>, "crystal", [
