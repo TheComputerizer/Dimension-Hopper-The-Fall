@@ -1,6 +1,7 @@
 #reloadable
 
 import crafttweaker.data.IData;
+import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IRecipeAction;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.util.Math;
@@ -172,29 +173,39 @@ static shapedHolders as Holder[] = [
     <psi:material:5>,
     <naturesaura:calling_spirit>,
     <botania:dye:6>,
-    <botania:manatablet>.transformNew(function(item) {
-      val tag = item.tag as IData;
-      if(tag.creative) {
-        return item;
-      }
-      val mana = tag.mana as int;
-      var count = Math.clamp(mana/50000,1,10) as double;
-      val newMana = Math.max(0,mana-Math.max(50000,(50000*count as double)/2) as int);
-      return item.withTag({mana: newMana});
-
-    }).reuse()]).setMarkIndex(22)
+    <botania:manatablet>.only(function(stack as IItemStack) as bool {
+        if(stack.hasTag) {
+          val tag =  stack.tag as IData;
+          if(isNull(tag)) {
+            return false;
+          }
+          if(tag.creative) {
+              return true;
+          }
+          if(isNull(tag.mana)) {
+            return false;
+          }
+          val mana = tag.mana as int;
+          return mana>=50000;
+        }
+        return false;
+      }).transformNew(function(stack as IItemStack) {
+        val tag = stack.tag as IData;
+        if(tag.creative) {
+          return stack;
+        }
+        val mana = tag.mana as int;
+        var count = Math.clamp(mana/50000,1,10) as double;
+        return stack.withTag({mana: Math.max(0,mana-Math.max(50000,(50000*count as double)/2) as int)});
+      }).reuse()]).setMarkIndex(22)
     .addFunction(function(output, map, info) {
-      if(!map.mark.hasTag) {
-        return output;
-      }
-      val tag =  map.mark.tag as IData;
-      val mana = tag.mana as int;
-      var count = Math.clamp(mana/50000,1,10) as int;
-      if(tag.creative) {
-        count*=2;
-      }
-      return output*count;
-    } as IRecipeFunction)
+        val tag = map.mark.tag as IData;
+        if(tag.creative) {
+          return output*20;
+        }
+        val mana = tag.mana as int;
+        return output*(Math.clamp(mana/50000,1,10) as int);
+      } as IRecipeFunction)
     .addTools({<ore:artisansGrimoire>:123,<ore:artisansAthame>:123,<ore:artisansBeaker>:123})
     .addFluids([<liquid:binnie.spirit.neutral>*2000]), //automatable gaia spirits
 
