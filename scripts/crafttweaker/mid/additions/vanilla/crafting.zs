@@ -371,7 +371,7 @@ static shapelessBuilders as Holder[] = [
 
     //eplus-----------------------------------------------------------------------------------------------------------------
     Util.shapeless(<eplus:advanced_table>, [<artisanworktables:workshop:7>, 
-        <aoa3:mega_rune_stone>]), //Advanced Enchantment Table
+        <aoa3:mega_rune_stone>.transformDamage()]), //Advanced Enchantment Table
 
     //galacticraftplanets---------------------------------------------------------------------------------------------------
     Util.shapeless(<galacticraftplanets:schematic>, 

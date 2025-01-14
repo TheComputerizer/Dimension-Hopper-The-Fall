@@ -37,6 +37,8 @@ static arrayRemovals as IItemStack[][] = [
 
     //environmentaltech
     Stack.incrementals("environmentaltech:lightning_cont_", [1,2,3,4,5,6]),
+	Stack.incrementals("environmentaltech:nano_cont_personal_", [1,2,3,4,5,6]),
+	Stack.incrementals("environmentaltech:nano_cont_ranged_", [1,2,3,4,5,6]),
     Stack.append("environmentaltech:solar_cell_", ["aethium", "erodium", "ionite", "kyronite", "litherite", "pladium"]),
     Stack.incrementals("environmentaltech:solar_cont_", [1,2,3,4,5,6]),
 

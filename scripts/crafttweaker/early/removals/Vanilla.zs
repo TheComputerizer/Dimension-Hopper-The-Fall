@@ -89,7 +89,6 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.append("enderstorage:ender_", ["storage", "pouch"], 32767),
 
 	//environmentaltech-----------------------------------------------------------------------------------------------------
-	Stack.incrementals("environmentaltech:nano_cont_ranged_", [1,2,3,4,5,6]),
 	Stack.incrementals("environmentaltech:void_botanic_miner_cont_", [1,2,3,4,5,6]),
 	Stack.incrementals("environmentaltech:void_ore_miner_cont_", [1,2,3,4,5,6]),
 	Stack.incrementals("environmentaltech:void_res_miner_cont_", [1,2,3,4,5,6]),
