@@ -2663,7 +2663,7 @@ lightningRPI.start()
 	.inputLE(40000)
 	.inputItems(degradeChance(insaniumBonus,<environmentaltech:kyronite_crystal>),insaniumBonus)
 	.inputItems(<environmentaltech:kyronite_crystal>*256)
-	.outputItems(<mysticalagradditions:storage>*64)
+	.outputItems(<mysticalagradditions:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2671,7 +2671,7 @@ lightningRPI.start()
 	.inputLE(50000)
 	.inputItems(degradeChance(insaniumBonus,<environmentaltech:pladium_crystal>),insaniumBonus)
 	.inputItems(<environmentaltech:pladium_crystal>*128)
-	.outputItems(<mysticalagradditions:storage>*64)
+	.outputItems(<mysticalagradditions:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2687,7 +2687,7 @@ lightningRPI.start()
 	.inputLE(100000)
 	.inputItems(degradeChance(insaniumBonus,<environmentaltech:aethium_crystal>),insaniumBonus)
 	.inputItems(<environmentaltech:aethium_crystal>*64)
-	.outputItems(<mysticalagradditions:storage>*64)
+	.outputItems(<mysticalagradditions:storage>*256)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2695,7 +2695,7 @@ lightningRPI.start()
 	.inputLE(150000)
 	.inputItems(degradeChance(insaniumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),insaniumBonus)
 	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*48)
-	.outputItems(<mysticalagradditions:storage>*64)
+	.outputItems(<mysticalagradditions:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPI.start()
