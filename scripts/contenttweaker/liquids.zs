@@ -27,3 +27,11 @@ geneticFluid.density = 10;
 geneticFluid.viscosity = 10;
 geneticFluid.material = <blockmaterial:lava>;
 geneticFluid.register();
+
+var moltenInsanium = VanillaFactory.createFluid("insanium", Color.fromHex("970CF3"));
+moltenInsanium.rarity = "EPIC";
+moltenInsanium.luminosity = 0;
+moltenInsanium.density = 10;
+moltenInsanium.viscosity = 10;
+moltenInsanium.material = <blockmaterial:lava>;
+moltenInsanium.register();

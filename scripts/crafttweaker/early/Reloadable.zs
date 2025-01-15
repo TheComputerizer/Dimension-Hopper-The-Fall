@@ -10,4 +10,5 @@ early.removals.ExtendedCrafting.run();
 early.removals.JEI.run();
 early.removals.Oredict.run();
 early.removals.Thermal.run();
+early.removals.TinkersConstruct.run();
 early.removals.Vanilla.run();

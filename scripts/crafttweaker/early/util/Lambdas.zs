@@ -11,6 +11,8 @@ import mods.botania.OrechidIgnem;
 import mods.dimhoppertweaks.IItemConsumer;
 import mods.dimhoppertweaks.IStringConsumer;
 import mods.extendedcrafting.TableCrafting;
+import mods.industrialforegoing.FluidSievingMachine;
+import mods.tconstruct.Casting;
 import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.Factorizer;
@@ -31,9 +33,16 @@ static itemsRemovalCalls as IItemConsumer[int][string] = {
     "extendedcrafting": {
         0: function(item as IItemStack) { TableCrafting.remove(item); }
     },
+    "industrialforegoing": {
+        0: function(item as IItemStack) { FluidSievingMachine.remove(item); }
+    },
     "jei": {
         0: function(item as IItemStack) { JEI.removeAndHide(item); },
         1: function(item as IItemStack) { JEI.hide(item); }
+    },
+    "tconstruct": {
+        0: function(item as IItemStack) { Casting.removeTableRecipe(item); },
+        1: function(item as IItemStack) { Casting.removeBasinRecipe(item); }
     },
     "thermal": {
         0: function(item as IItemStack) { Centrifuge.removeRecipe(item); },

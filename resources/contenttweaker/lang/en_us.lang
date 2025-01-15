@@ -1,14 +1,7 @@
-item.contenttweaker.twilight_key.name=Twilight Dimensional Key
-item.contenttweaker.twilight_key_winter.name=Twilight Winter Key
-item.contenttweaker.twilight_key_swamp.name=Twilight Swamp Key
-item.contenttweaker.twilight_key_forest.name=Twilight Forest Key
-
-item.contenttweaker.crazy_creeper_essence.name=Crazy Creeper Essence
-item.contenttweaker.crazy_zombie_essence.name=Crazy Zombie Essence
-item.contenttweaker.crazy_skeleton_essence.name=Crazy Skeleton Essence
-item.contenttweaker.crazy_spider_essence.name=Crazy Spider Essence
-
-item.contenttweaker.swamp_key.name=Swamp Key
+fluid.aurorian_alloy=Aurorian Alloy
+fluid.genetic_chaos_fluid=Genetic Chaos Fluid
+fluid.genetic_waste_fluid=Genetic Waste Fluid
+fluid.insanium=Molten Insanium
 
 item.contenttweaker.armor_core_1.name=Basic Armor Core
 item.contenttweaker.armor_core_2.name=Ordinary Armor Core
@@ -19,7 +12,63 @@ item.contenttweaker.armor_core_6.name=Excellent Armor Core
 item.contenttweaker.armor_core_7.name=Amazing Armor Core
 item.contenttweaker.armor_core_8.name=Extraordinary Armor Core
 item.contenttweaker.armor_core_9.name=Perfect Armor Core
+item.contenttweaker.bee.name=Quest Sound
+item.contenttweaker.conglomerate_crystal.name=Conglomerate Crystal
+item.contenttweaker.crazy_creeper_essence.name=Crazy Creeper Essence
+item.contenttweaker.crazy_zombie_essence.name=Crazy Zombie Essence
+item.contenttweaker.crazy_skeleton_essence.name=Crazy Skeleton Essence
+item.contenttweaker.crazy_spider_essence.name=Crazy Spider Essence
+item.contenttweaker.dimensional_singularity.name=Dimensional Singularity
+item.contenttweaker.dimensionalshift.name=Quest Sound
+item.contenttweaker.dimensionalshiftalt.name=Quest Sound
+item.contenttweaker.divine_will.name=Divine Will
+item.contenttweaker.empowered_essence.name=Empowered Essence
+item.contenttweaker.final_singularity.name=Final Singularity
+item.contenttweaker.genetically_unstable_chaos_crystal.name=Genetically Unstable Chaos Crystal
+item.contenttweaker.impressive_ingot.name=Impressive Ingot
+item.contenttweaker.machine_parts.name=Machine Parts
+item.contenttweaker.neptunic_key.name=Neptunic Key
+item.contenttweaker.questcommon.name=Quest Sound
+item.contenttweaker.questdramatic.name=Quest Sound
+item.contenttweaker.questepic.name=Quest Sound
+item.contenttweaker.swamp_key.name=Swamp Key
+item.contenttweaker.twilight_key.name=Twilight Dimensional Key
+item.contenttweaker.twilight_key_winter.name=Twilight Winter Key
+item.contenttweaker.twilight_key_swamp.name=Twilight Swamp Key
+item.contenttweaker.twilight_key_forest.name=Twilight Forest Key
+item.record.bee.desc=Bee Quest
+item.record.dimensionalshift.desc=Major Story Quest 1
+item.record.dimensionalshiftalt.desc=Major Story Quest 2
+item.record.questcommon.desc=Common Quest
+item.record.questdramatic.desc=Major Quest
+item.record.questepic.desc=Game Changing Quest
 
+machine.crafttweaker:heat_furnace=Heat Furnace
+machine.crafttweaker:black_heart_replicator=Black Heart Replicator
+
+tile.contenttweaker.affixed_machine_parts.name=Affixed Machine Parts
+tile.contenttweaker.bloq.name=Bloq
+tile.contenttweaker.booster_block_1.name=Tier 1 Booster
+tile.contenttweaker.booster_block_2.name=Tier 2 Booster
+tile.contenttweaker.booster_block_3.name=Tier 3 Booster
+tile.contenttweaker.booster_block_4.name=Tier 4 Booster
+tile.contenttweaker.booster_block_5.name=Tier 5 Booster
+tile.contenttweaker.divine_large_circuit.name=Divine Large Circuit
+tile.contenttweaker.divine_mek_wall.name=Divine MekWall
+tile.contenttweaker.factory_core_one.name=Factory Core Mk 1
+tile.contenttweaker.factory_core_two.name=Factory Core Mk 2
+tile.contenttweaker.factory_core_three.name=Factory Core Mk 3
+tile.contenttweaker.heart_of_the_machine_god.name=Heart of the Machine God
+tile.contenttweaker.industrial_ventilation.name=Industrial Ventilation
+tile.contenttweaker.large_circuit.name=Large Circuit
+tile.contenttweaker.mek_wall.name=MekWall
+tile.contenttweaker.neptune_dimensional_stone.name=Neptune Dimensional Stone
+tile.contenttweaker.oil_core_one.name=Oil Core Mk 1
+tile.contenttweaker.oil_core_two.name=Oil Core Mk 2
+tile.contenttweaker.oil_core_three.name=Oil Core Mk 3
+tile.contenttweaker.psionic_core_one.name=Psionic Core Mk 1
+tile.contenttweaker.psionic_core_two.name=Psionic Core Mk 2
+tile.contenttweaker.psionic_core_three.name=Psionic Core Mk 3
 tile.contenttweaker.rocket_block_1.name=Heavy-Duty Block
 tile.contenttweaker.rocket_block_2.name=Heavy-Duty Block
 tile.contenttweaker.rocket_block_3.name=Heavy-Duty Block
@@ -30,63 +79,3 @@ tile.contenttweaker.rocket_block_7.name=Heavy-Duty Block
 tile.contenttweaker.rocket_block_8.name=Heavy-Duty Block
 tile.contenttweaker.rocket_block_9.name=Heavy-Duty Block
 tile.contenttweaker.rocket_block_10.name=Heavy-Duty Block
-tile.contenttweaker.booster_block_1.name=Tier 1 Booster
-tile.contenttweaker.booster_block_2.name=Tier 2 Booster
-tile.contenttweaker.booster_block_3.name=Tier 3 Booster
-tile.contenttweaker.booster_block_4.name=Tier 4 Booster
-tile.contenttweaker.booster_block_5.name=Tier 5 Booster
-
-item.contenttweaker.neptunic_key.name=Neptunic Key
-tile.contenttweaker.neptune_dimensional_stone.name=Neptune Dimensional Stone
-
-item.contenttweaker.dimensional_singularity.name=Dimensional Singularity
-item.contenttweaker.final_singularity.name=Final Singularity
-
-tile.contenttweaker.oil_core_one.name=Oil Core Mk 1
-tile.contenttweaker.oil_core_two.name=Oil Core Mk 2
-tile.contenttweaker.oil_core_three.name=Oil Core Mk 3
-
-tile.contenttweaker.factory_core_one.name=Factory Core Mk 1
-tile.contenttweaker.factory_core_two.name=Factory Core Mk 2
-tile.contenttweaker.factory_core_three.name=Factory Core Mk 3
-
-tile.contenttweaker.psionic_core_one.name=Psionic Core Mk 1
-tile.contenttweaker.psionic_core_two.name=Psionic Core Mk 2
-tile.contenttweaker.psionic_core_three.name=Psionic Core Mk 3
-
-item.contenttweaker.genetically_unstable_chaos_crystal.name=Genetically Unstable Chaos Crystal
-item.contenttweaker.empowered_essence.name=Empowered Essence
-item.contenttweaker.conglomerate_crystal.name=Conglomerate Crystal
-
-fluid.aurorian_alloy=Aurorian Alloy
-fluid.genetic_chaos_fluid=Genetic Chaos Fluid
-fluid.genetic_waste_fluid=Genetic Waste Fluid
-
-machine.crafttweaker:heat_furnace=Heat Furnace
-machine.crafttweaker:black_heart_replicator=Black Heart Replicator
-
-tile.contenttweaker.bloq.name=Bloq
-
-item.contenttweaker.divine_will.name=Divine Will
-item.contenttweaker.impressive_ingot.name=Impressive Ingot
-item.contenttweaker.machine_parts.name=Machine Parts
-tile.contenttweaker.mek_wall.name=MekWall
-tile.contenttweaker.divine_mek_wall.name=Divine MekWall
-tile.contenttweaker.large_circuit.name=Large Circuit
-tile.contenttweaker.divine_large_circuit.name=Divine Large Circuit
-tile.contenttweaker.industrial_ventilation.name=Industrial Ventilation
-tile.contenttweaker.affixed_machine_parts.name=Affixed Machine Parts
-tile.contenttweaker.heart_of_the_machine_god.name=Heart of the Machine God
-
-item.contenttweaker.questcommon.name=Quest Sound
-item.record.questcommon.desc=Common Quest
-item.contenttweaker.questdramatic.name=Quest Sound
-item.record.questdramatic.desc=Major Quest
-item.contenttweaker.questepic.name=Quest Sound
-item.record.questepic.desc=Game Changing Quest
-item.contenttweaker.dimensionalshift.name=Quest Sound
-item.record.dimensionalshift.desc=Major Story Quest 1
-item.contenttweaker.dimensionalshiftalt.name=Quest Sound
-item.record.dimensionalshiftalt.desc=Major Story Quest 2
-item.contenttweaker.bee.name=Quest Sound
-item.record.bee.desc=Bee Quest

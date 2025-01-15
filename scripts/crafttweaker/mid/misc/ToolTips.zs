@@ -1,3 +1,5 @@
+#reloadable
+
 <actuallyadditions:block_empowerer>.addTooltip("\u00A7o\u00A74But where's the sunstone?");
 <appliedenergistics2:controller>.addTooltip("\u00A7o\u00A74Good luck getting enough storage cells to make this worthwhile");
 <appliedenergistics2:material:48>.addTooltip("\u00A7o\u00A74Craft to reset NBT data");
