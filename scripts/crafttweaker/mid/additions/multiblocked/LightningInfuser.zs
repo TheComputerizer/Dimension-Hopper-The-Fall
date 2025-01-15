@@ -1,5 +1,6 @@
 #loader multiblocked
 
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
@@ -7,10 +8,11 @@ import crafttweaker.item.IIngredient;
 import mods.multiblocked.MBDRegistry;
 import mods.multiblocked.definition.ControllerDefinition;
 import mods.multiblocked.definition.ComponentDefinition;
-import mods.multiblocked.recipe.RecipeMap;
 import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.RecipeLogic;
 import mods.multiblocked.recipe.Recipe;
+import mods.multiblocked.recipe.RecipeBuilder;
+import mods.multiblocked.recipe.RecipeLogic;
+import mods.multiblocked.recipe.RecipeMap;
 
 val lightningRPF = RecipeMap("lightning_infuser_mk_1_recipes") as RecipeMap;
 RecipeMap.register(lightningRPF);
@@ -26,6 +28,13 @@ RecipeMap.register(lightningRPO);
 
 val lightningRPI = RecipeMap("infinity_infuser_recipes") as RecipeMap;
 RecipeMap.register(lightningRPI);
+
+val inferiumBonus as IItemStack = <mysticalagriculture:crafting:29>.withTag({sievedWith: "inferium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 25}, "item.environmentaltech.lonsdaleite_crystal": {degradationChance: 0}, "item.environmentaltech.ionite_crystal": {degradationChance: 100}, "item.environmentaltech.erodium_crystal": {degradationChance: 10}, "item.environmentaltech.litherite_crystal": {degradationChance: 1}, "item.environmentaltech.pladium_crystal": {degradationChance: 50}}});
+val prudentiumBonus as IItemStack = <jaopca:dust.evil_metal>.withTag({sievedWith: "prudentium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 10}, "item.environmentaltech.aethium_crystal": {degradationChance: 100}, "item.environmentaltech.lonsdaleite_crystal": {degradationChance: 50}, "item.environmentaltech.ionite_crystal": {degradationChance: 50}, "item.environmentaltech.erodium_crystal": {degradationChance: 1}, "item.environmentaltech.litherite_crystal": {degradationChance: 0}, "item.environmentaltech.pladium_crystal": {degradationChance: 25}}});
+val intermediumBonus as IItemStack = <bigreactors:dustludicrite>.withTag({sievedWith: "intermedium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 1}, "item.environmentaltech.aethium_crystal": {degradationChance: 50}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 100}, "item.environmentaltech.lonsdaleite_crystal": {degradationChance: 100}, "item.environmentaltech.ionite_crystal": {degradationChance: 25}, "item.environmentaltech.erodium_crystal": {degradationChance: 0}, "item.environmentaltech.litherite_crystal": {degradationChance: 50}, "item.environmentaltech.pladium_crystal": {degradationChance: 10}}});
+val superiumBonus as IItemStack = <jaopca:dust.ultimate>.withTag({sievedWith: "superium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 0}, "item.environmentaltech.aethium_crystal": {degradationChance: 25}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 50}, "item.contenttweaker.conglomerate_crystal": {degradationChance: 100}, "item.environmentaltech.ionite_crystal": {degradationChance: 10}, "item.environmentaltech.erodium_crystal": {degradationChance: 50}, "item.environmentaltech.litherite_crystal": {degradationChance: 100}, "item.environmentaltech.pladium_crystal": {degradationChance: 1}}});
+val supremiumBonus as IItemStack = <projecte:item.pe_covalence_dust:2>.withTag({sievedWith: "supremium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 50}, "item.environmentaltech.aethium_crystal": {degradationChance: 10}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 25}, "item.contenttweaker.conglomerate_crystal": {degradationChance: 50}, "item.environmentaltech.ionite_crystal": {degradationChance: 1}, "item.avaritia:endest_pearl": {degradationChance: 100}, "item.environmentaltech.erodium_crystal": {degradationChance: 100}, "item.environmentaltech.pladium_crystal": {degradationChance: 0}}});
+val insaniumBonus as IItemStack = <jaopca:dust.infinity>.withTag({sievedWith: "insanium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 100}, "item.resource.infinity_catalyst": {degradationChance: 100}, "item.environmentaltech.aethium_crystal": {degradationChance: 1}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 10}, "item.contenttweaker.conglomerate_crystal": {degradationChance: 25}, "item.environmentaltech.ionite_crystal": {degradationChance: 0}, "item.avaritia:endest_pearl": {degradationChance: 50}, "item.environmentaltech.pladium_crystal": {degradationChance: 50}}});
 
 lightningRPF.start()
 	.duration(600)
@@ -319,6 +328,110 @@ lightningRPF.start()
 	.inputLE(10000)
 	.inputItems(<dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 15}),<contenttweaker:divine_large_circuit>)
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 10, skill: "research"}))
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(500)
+	.inputLE(1000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:lonsdaleite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(600)
+	.inputLE(2000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:litherite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(700)
+	.inputLE(4000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:erodium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(800)
+	.inputLE(8000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:kyronite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*24)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(900)
+	.inputLE(16000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:pladium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*16)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(1000)
+	.inputLE(24000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:ionite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*8)
+	.outputItems(<mysticalagriculture:storage>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(500)
+	.inputLE(1000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:lonsdaleite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(600)
+	.inputLE(2000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:litherite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(700)
+	.inputLE(4000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:erodium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(800)
+	.inputLE(8000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:kyronite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(900)
+	.inputLE(16000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:pladium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(1000)
+	.inputLE(24000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:ionite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:1>*64)
+	.buildAndRegister();
+
+lightningRPF.start()
+	.duration(1100)
+	.inputLE(32000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*8)
+	.outputItems(<mysticalagriculture:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPS.start()
@@ -620,6 +733,174 @@ lightningRPS.start()
 	.inputLE(20000)
 	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
 	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(400)
+	.inputLE(2000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:lonsdaleite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(500)
+	.inputLE(4000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:litherite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(600)
+	.inputLE(8000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:erodium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(700)
+	.inputLE(16000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:kyronite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(800)
+	.inputLE(24000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:pladium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*24)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(900)
+	.inputLE(8000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:ionite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*16)
+	.outputItems(<mysticalagriculture:storage>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(400)
+	.inputLE(2000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:lonsdaleite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(500)
+	.inputLE(4000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:litherite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(600)
+	.inputLE(8000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:erodium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(700)
+	.inputLE(16000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:kyronite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(800)
+	.inputLE(24000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:pladium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(900)
+	.inputLE(32000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:ionite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(1000)
+	.inputLE(40000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:1>*128)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(500)
+	.inputLE(2000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:lonsdaleite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(600)
+	.inputLE(4000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:litherite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(700)
+	.inputLE(8000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:erodium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(800)
+	.inputLE(16000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:kyronite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(900)
+	.inputLE(24000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:pladium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(1000)
+	.inputLE(32000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:ionite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(1100)
+	.inputLE(40000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:aethium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:2>*64)
+	.buildAndRegister();
+
+lightningRPS.start()
+	.duration(1200)
+	.inputLE(50000)
+	.inputItems(degradeChance(intermediumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),intermediumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*8)
+	.outputItems(<mysticalagriculture:storage:2>*64)
 	.buildAndRegister();
 
 lightningRPT.start()
@@ -928,6 +1209,238 @@ lightningRPT.start()
 	.inputLE(30000)
 	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
 	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(300)
+	.inputLE(4000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:lonsdaleite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(400)
+	.inputLE(8000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:litherite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(500)
+	.inputLE(16000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:erodium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(600)
+	.inputLE(24000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:kyronite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(700)
+	.inputLE(32000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:pladium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(800)
+	.inputLE(40000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:ionite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*24)
+	.outputItems(<mysticalagriculture:storage>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(300)
+	.inputLE(4000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:lonsdaleite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(400)
+	.inputLE(8000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:litherite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(500)
+	.inputLE(16000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:erodium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(600)
+	.inputLE(24000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:kyronite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(700)
+	.inputLE(32000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:pladium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(800)
+	.inputLE(40000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:ionite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(900)
+	.inputLE(50000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:1>*256)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(400)
+	.inputLE(4000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:lonsdaleite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(500)
+	.inputLE(8000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:litherite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(600)
+	.inputLE(16000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:erodium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(700)
+	.inputLE(24000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:kyronite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(800)
+	.inputLE(32000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:pladium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(900)
+	.inputLE(40000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:ionite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1000)
+	.inputLE(50000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:aethium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1100)
+	.inputLE(75000)
+	.inputItems(degradeChance(intermediumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),intermediumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:2>*128)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(400)
+	.inputLE(8000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:litherite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(500)
+	.inputLE(16000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:erodium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(600)
+	.inputLE(24000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:kyronite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(700)
+	.inputLE(32000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:pladium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(800)
+	.inputLE(40000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:ionite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(900)
+	.inputLE(50000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:aethium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1000)
+	.inputLE(75000)
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:3>*64)
+	.buildAndRegister();
+
+lightningRPT.start()
+	.duration(1100)
+	.inputLE(100000) //TODO Too high
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:conglomerate_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*8)
+	.outputItems(<mysticalagriculture:storage:3>*128)
 	.buildAndRegister();
 
 lightningRPO.start()
@@ -1245,6 +1758,302 @@ lightningRPO.start()
 	.outputItems(<draconicevolution:grinder>)
 	.buildAndRegister();
 
+lightningRPO.start()
+	.duration(200)
+	.inputLE(8000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:lonsdaleite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(300)
+	.inputLE(16000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:litherite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(400)
+	.inputLE(24000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:erodium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(500)
+	.inputLE(32000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:kyronite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(600)
+	.inputLE(40000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:pladium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(700)
+	.inputLE(50000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:ionite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*32)
+	.outputItems(<mysticalagriculture:storage>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(200)
+	.inputLE(8000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:lonsdaleite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(300)
+	.inputLE(16000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:litherite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(400)
+	.inputLE(24000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:erodium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(500)
+	.inputLE(32000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:kyronite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(600)
+	.inputLE(40000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:pladium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(700)
+	.inputLE(50000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:ionite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(800)
+	.inputLE(75000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:1>*512)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(300)
+	.inputLE(8000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:lonsdaleite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(400)
+	.inputLE(16000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:litherite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(500)
+	.inputLE(24000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:erodium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(600)
+	.inputLE(32000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:kyronite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(700)
+	.inputLE(40000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:pladium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(800)
+	.inputLE(50000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:ionite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(900)
+	.inputLE(75000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:aethium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1000)
+	.inputLE(100000) //TODO Too high
+	.inputItems(degradeChance(intermediumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),intermediumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:2>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(400)
+	.inputLE(16000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:litherite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(500)
+	.inputLE(24000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:erodium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(600)
+	.inputLE(32000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:kyronite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(700)
+	.inputLE(40000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:pladium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(800)
+	.inputLE(50000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:ionite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(900)
+	.inputLE(75000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:aethium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1000)
+	.inputLE(100000) //TODO Too high
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:3>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1100)
+	.inputLE(150000) //TODO Too high
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:conglomerate_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(400)
+	.inputLE(24000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:erodium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(500)
+	.inputLE(32000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:kyronite_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(600)
+	.inputLE(40000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:pladium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(700)
+	.inputLE(50000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:ionite_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(800)
+	.inputLE(75000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:aethium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(900)
+	.inputLE(100000) //TODO Too high
+	.inputItems(degradeChance(supremiumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),supremiumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:4>*64)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1000)
+	.inputLE(150000) //TODO Too high
+	.inputItems(degradeChance(supremiumBonus,<contenttweaker:conglomerate_crystal>),supremiumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*16)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPO.start()
+	.duration(1100)
+	.inputLE(200000) //TODO Too high
+	.inputItems(degradeChance(supremiumBonus,<avaritia:endest_pearl>),supremiumBonus)
+	.inputItems(<avaritia:endest_pearl>*8)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
 lightningRPI.start()
 	.duration(5)
 	.inputLE(250)
@@ -1553,6 +2362,366 @@ lightningRPI.start()
 	.outputItems(<draconicevolution:grinder>)
 	.buildAndRegister();
 
+lightningRPI.start()
+	.duration(100)
+	.inputLE(16000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:lonsdaleite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(200)
+	.inputLE(24000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:litherite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*256)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(32000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:erodium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*128)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(40000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:kyronite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*96)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(50000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:pladium_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*64)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(75000)
+	.inputItems(degradeChance(inferiumBonus,<environmentaltech:ionite_crystal>),inferiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*48)
+	.outputItems(<mysticalagriculture:storage>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(100)
+	.inputLE(16000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:lonsdaleite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*1024)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(200)
+	.inputLE(24000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:litherite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(32000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:erodium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(40000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:kyronite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(50000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:pladium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(75000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:ionite_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(700)
+	.inputLE(100000)
+	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:1>*1024)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(16000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:lonsdaleite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:lonsdaleite_crystal>*1024)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(24000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:litherite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(32000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:erodium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(40000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:kyronite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(700)
+	.inputLE(50000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:pladium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(800)
+	.inputLE(75000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:ionite_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(900)
+	.inputLE(100000)
+	.inputItems(degradeChance(intermediumBonus,<environmentaltech:aethium_crystal>),intermediumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1000)
+	.inputLE(150000)
+	.inputItems(degradeChance(intermediumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),intermediumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:2>*512)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(24000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:litherite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:litherite_crystal>*512)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(32000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:erodium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(40000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:kyronite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(50000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:pladium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(700)
+	.inputLE(75000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:ionite_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(800)
+	.inputLE(100000)
+	.inputItems(degradeChance(superiumBonus,<environmentaltech:aethium_crystal>),superiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(900)
+	.inputLE(150000)
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:3>*256)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1000)
+	.inputLE(200000)
+	.inputItems(degradeChance(superiumBonus,<contenttweaker:conglomerate_crystal>),superiumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:3>*384)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(32000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:erodium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:erodium_crystal>*256)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(40000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:kyronite_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*128)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(50000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:pladium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*96)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(75000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:ionite_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*64)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(700)
+	.inputLE(100000)
+	.inputItems(degradeChance(supremiumBonus,<environmentaltech:aethium_crystal>),supremiumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*48)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(800)
+	.inputLE(150000)
+	.inputItems(degradeChance(supremiumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),supremiumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*32)
+	.outputItems(<mysticalagriculture:storage:4>*128)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(900)
+	.inputLE(200000)
+	.inputItems(degradeChance(supremiumBonus,<contenttweaker:conglomerate_crystal>),supremiumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*24)
+	.outputItems(<mysticalagriculture:storage:4>*192)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1000)
+	.inputLE(300000)
+	.inputItems(degradeChance(supremiumBonus,<avaritia:endest_pearl>),supremiumBonus)
+	.inputItems(<avaritia:endest_pearl>*16)
+	.outputItems(<mysticalagriculture:storage:4>*192)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(300)
+	.inputLE(40000)
+	.inputItems(degradeChance(insaniumBonus,<environmentaltech:kyronite_crystal>),insaniumBonus)
+	.inputItems(<environmentaltech:kyronite_crystal>*256)
+	.outputItems(<mysticalagradditions:storage>*64)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(400)
+	.inputLE(50000)
+	.inputItems(degradeChance(insaniumBonus,<environmentaltech:pladium_crystal>),insaniumBonus)
+	.inputItems(<environmentaltech:pladium_crystal>*128)
+	.outputItems(<mysticalagradditions:storage>*64)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(500)
+	.inputLE(75000)
+	.inputItems(degradeChance(insaniumBonus,<environmentaltech:ionite_crystal>),insaniumBonus)
+	.inputItems(<environmentaltech:ionite_crystal>*96)
+	.outputItems(<mysticalagradditions:storage>*64)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(600)
+	.inputLE(100000)
+	.inputItems(degradeChance(insaniumBonus,<environmentaltech:aethium_crystal>),insaniumBonus)
+	.inputItems(<environmentaltech:aethium_crystal>*64)
+	.outputItems(<mysticalagradditions:storage>*64)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(700)
+	.inputLE(150000)
+	.inputItems(degradeChance(insaniumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),insaniumBonus)
+	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*48)
+	.outputItems(<mysticalagradditions:storage>*64)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(800)
+	.inputLE(200000)
+	.inputItems(degradeChance(insaniumBonus,<contenttweaker:conglomerate_crystal>),insaniumBonus)
+	.inputItems(<contenttweaker:conglomerate_crystal>*24)
+	.outputItems(<mysticalagradditions:storage>*96)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(900)
+	.inputLE(300000)
+	.inputItems(degradeChance(insaniumBonus,<avaritia:endest_pearl>),insaniumBonus)
+	.inputItems(<avaritia:endest_pearl>*16)
+	.outputItems(<mysticalagradditions:storage>*96)
+	.buildAndRegister();
+
+lightningRPI.start()
+	.duration(1000)
+	.inputLE(400000)
+	.inputItems(degradeChance(insaniumBonus,<avaritia:resource:5>),insaniumBonus)
+	.inputItems(<avaritia:resource:5>)
+	.outputItems(<mysticalagradditions:storage:1>*1024)
+	.buildAndRegister();
+
 var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_1");
 var lightning_one = definitionF as ControllerDefinition;
 lightning_one.recipeMap = lightningRPF;
@@ -1572,3 +2741,16 @@ lightning_four.recipeMap = lightningRPO;
 var definitionI as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:infinity_infuser");
 var lightning_five = definitionI as ControllerDefinition;
 lightning_five.recipeMap = lightningRPI;
+
+function degradeChance(bonus as IItemStack, crystal as IItemStack) as float {
+	val data as IData = bonus.tag;
+	val degradationData as IData = data.degradationData;
+	if(isNull(degradationData)) {
+		return 1 as float;
+	}
+	val itemDegredation as IData = degradationData.memberGet(crystal.name);
+	if(isNull(itemDegredation)) {
+		return 1 as float;
+	}
+	return (itemDegredation.degradationChance.asFloat()/(100 as float)) as float;
+}

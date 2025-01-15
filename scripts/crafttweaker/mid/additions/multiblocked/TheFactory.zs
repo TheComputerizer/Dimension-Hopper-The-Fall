@@ -221,7 +221,13 @@ var blockMap as IItemStack[IItemStack] = {
     <minecraft:dirt>*9:                                 <overloaded:compressed_dirt>,
     <minecraft:gravel>*9:                               <overloaded:compressed_gravel>,
     <minecraft:stone>*9:                                <overloaded:compressed_stone>,
-    <minecraft:netherrack>*9:                           <overloaded:compressed_netherrack>
+    <minecraft:netherrack>*9:                           <overloaded:compressed_netherrack>,
+    <mysticalagriculture:crafting>*9:                   <mysticalagriculture:storage>,
+    <mysticalagriculture:crafting:1>*9:                 <mysticalagriculture:storage:1>,
+    <mysticalagriculture:crafting:2>*9:                 <mysticalagriculture:storage:2>,
+    <mysticalagriculture:crafting:3>*9:                 <mysticalagriculture:storage:3>,
+    <mysticalagriculture:crafting:4>*9:                 <mysticalagriculture:storage:4>,
+    <mysticalagradditions:insanium>*9:                  <mysticalagradditions:storage>
 };
 
 compressed(blockMap, <overloaded:compressed_obsidian>.definition);

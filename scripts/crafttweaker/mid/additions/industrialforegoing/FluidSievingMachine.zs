@@ -94,7 +94,7 @@ function buildTag(fluid as ILiquidStack, degradationMap as int[IItemStack]) as I
     for item, chance in degradationMap {
         val percent = chance as int;
         val chanceData = {degradationChance: percent} as IData;
-        data+=({itemName: chanceData} as IData);
+        data+=({item.name: chanceData} as IData);
     }
     return {sievedWith: fluid.name,degradationData: data} as IData;
 }

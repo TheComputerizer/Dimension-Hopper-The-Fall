@@ -132,6 +132,9 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.append("minecraft:flint", ["", "_and_steel"]),
 	Stack.append("minecraft:nether_", ["brick", "star"]),
 
+	//mysticalagriculture---------------------------------------------------------------------------------------------------
+	Stack.metas(<mysticalagriculture:storage>,[0,1,2,3,4]),
+
 	//overloaded------------------------------------------------------------------------------------------------------------
 	Stack.append("overloaded:compressed_", ["cobblestone", "dirt", "gravel", "obsidian", "netherrack", "sand", "stone"], 
 		32767),

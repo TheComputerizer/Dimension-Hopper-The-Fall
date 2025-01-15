@@ -5,6 +5,7 @@
 *.curseclient
 *.dat
 *.dll
+*.gz
 *.ini
 *.jar
 *.jpg
