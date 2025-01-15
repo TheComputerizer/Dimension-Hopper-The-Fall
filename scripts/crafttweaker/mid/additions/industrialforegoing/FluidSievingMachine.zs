@@ -14,7 +14,7 @@ static ultimateSieving as int[IItemStack][IItemStack[ILiquidStack]] = {
         <environmentaltech:pladium_crystal>: 50,
         <environmentaltech:ionite_crystal>: 100
     } as int[IItemStack],
-    {<liquid:prudentium>: <jaopca:dust.evil_metal>}: {
+    {<liquid:prudentium>: <bigreactors:dustludicrite>}: {
         <environmentaltech:lonsdaleite_crystal>: 50,
         <environmentaltech:litherite_crystal>: 0,
         <environmentaltech:erodium_crystal>: 1,
@@ -23,7 +23,7 @@ static ultimateSieving as int[IItemStack][IItemStack[ILiquidStack]] = {
         <environmentaltech:ionite_crystal>: 50,
         <environmentaltech:aethium_crystal>: 100
     } as int[IItemStack],
-    {<liquid:intermedium>: <bigreactors:dustludicrite>}: {
+    {<liquid:intermedium>: <jaopca:dust.evil_metal>}: {
         <environmentaltech:lonsdaleite_crystal>: 100,
         <environmentaltech:litherite_crystal>: 50,
         <environmentaltech:erodium_crystal>: 0,
