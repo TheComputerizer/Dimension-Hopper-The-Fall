@@ -2703,7 +2703,7 @@ lightningRPI.start()
 	.inputLE(200000)
 	.inputItems(degradeChance(insaniumBonus,<contenttweaker:conglomerate_crystal>),insaniumBonus)
 	.inputItems(<contenttweaker:conglomerate_crystal>*24)
-	.outputItems(<mysticalagradditions:storage>*96)
+	.outputItems(<mysticalagradditions:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2711,7 +2711,7 @@ lightningRPI.start()
 	.inputLE(300000)
 	.inputItems(degradeChance(insaniumBonus,<avaritia:endest_pearl>),insaniumBonus)
 	.inputItems(<avaritia:endest_pearl>*16)
-	.outputItems(<mysticalagradditions:storage>*96)
+	.outputItems(<mysticalagradditions:storage:1>*64)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2719,7 +2719,7 @@ lightningRPI.start()
 	.inputLE(400000)
 	.inputItems(degradeChance(insaniumBonus,<avaritia:resource:5>),insaniumBonus)
 	.inputItems(<avaritia:resource:5>)
-	.outputItems(<mysticalagradditions:storage:1>*1024)
+	.outputItems(<extendedcrafting:storage:4>*256)
 	.buildAndRegister();
 
 var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_1");
