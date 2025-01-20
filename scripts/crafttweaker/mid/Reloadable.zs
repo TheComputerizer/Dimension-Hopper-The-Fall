@@ -19,6 +19,7 @@ mid.additions.extendedcrafting.Basic.run();
 mid.additions.extendedcrafting.CombinationCrafting.run();
 mid.additions.extendedcrafting.Elite.run();
 mid.additions.extendedcrafting.Ultimate.run();
+mid.additions.multiblocked.BuildingBlocks.run();
 mid.additions.tconstruct.Alloying.run();
 mid.additions.tconstruct.Casting.run();
 mid.additions.tconstruct.Melting.run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "dimensionhopper:infinity_infuser",
+  "location": "dimensionhopper:lightning_infuser_mk_5",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -91,7 +91,7 @@
     ],
     "predicates": {
       "controller": {
-        "location": "dimensionhopper:infinity_infuser",
+        "location": "dimensionhopper:lightning_infuser_mk_5",
         "type": "component"
       },
       "B": {

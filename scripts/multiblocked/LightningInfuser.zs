@@ -2,32 +2,26 @@
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
-import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.Recipe;
 import mods.multiblocked.recipe.RecipeBuilder;
-import mods.multiblocked.recipe.RecipeLogic;
 import mods.multiblocked.recipe.RecipeMap;
+import scripts.multiblocked.MBDHelper as MBD;
 
-val lightningRPF = RecipeMap("lightning_infuser_mk_1_recipes") as RecipeMap;
-RecipeMap.register(lightningRPF);
+static maps as RecipeMap[] = [
+	MBD.initRecipeMap("lightning_infuser_mk_1"),
+	MBD.initRecipeMap("lightning_infuser_mk_2"),
+	MBD.initRecipeMap("lightning_infuser_mk_3"),
+	MBD.initRecipeMap("lightning_infuser_mk_4"),
+	MBD.initRecipeMap("lightning_infuser_mk_5")
+];
 
-val lightningRPS = RecipeMap("lightning_infuser_mk_2_recipes") as RecipeMap;
-RecipeMap.register(lightningRPS);
+//This is stupid but until all of the recipes are converted from the old format it needs to be here
 
-val lightningRPT = RecipeMap("lightning_infuser_mk_3_recipes") as RecipeMap;
-RecipeMap.register(lightningRPT);
-
-val lightningRPO = RecipeMap("lightning_infuser_mk_4_recipes") as RecipeMap;
-RecipeMap.register(lightningRPO);
-
-val lightningRPI = RecipeMap("infinity_infuser_recipes") as RecipeMap;
-RecipeMap.register(lightningRPI);
+val lightningRPF as RecipeMap = maps[0];
+val lightningRPS as RecipeMap = maps[1];
+val lightningRPT as RecipeMap = maps[2];
+val lightningRPO as RecipeMap = maps[3];
+val lightningRPI as RecipeMap = maps[4];
 
 val inferiumBonus as IItemStack = <mysticalagriculture:crafting:29>.withTag({sievedWith: "inferium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 25}, "item.environmentaltech.lonsdaleite_crystal": {degradationChance: 0}, "item.environmentaltech.ionite_crystal": {degradationChance: 100}, "item.environmentaltech.erodium_crystal": {degradationChance: 10}, "item.environmentaltech.litherite_crystal": {degradationChance: 1}, "item.environmentaltech.pladium_crystal": {degradationChance: 50}}});
 val prudentiumBonus as IItemStack = <bigreactors:dustludicrite>.withTag({sievedWith: "prudentium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 10}, "item.environmentaltech.aethium_crystal": {degradationChance: 100}, "item.environmentaltech.lonsdaleite_crystal": {degradationChance: 50}, "item.environmentaltech.ionite_crystal": {degradationChance: 50}, "item.environmentaltech.erodium_crystal": {degradationChance: 1}, "item.environmentaltech.litherite_crystal": {degradationChance: 0}, "item.environmentaltech.pladium_crystal": {degradationChance: 25}}});
@@ -36,26 +30,46 @@ val superiumBonus as IItemStack = <jaopca:dust.ultimate>.withTag({sievedWith: "s
 val supremiumBonus as IItemStack = <projecte:item.pe_covalence_dust:2>.withTag({sievedWith: "supremium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 50}, "item.environmentaltech.aethium_crystal": {degradationChance: 10}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 25}, "item.contenttweaker.conglomerate_crystal": {degradationChance: 50}, "item.environmentaltech.ionite_crystal": {degradationChance: 1}, "item.avaritia:endest_pearl": {degradationChance: 100}, "item.environmentaltech.erodium_crystal": {degradationChance: 100}, "item.environmentaltech.pladium_crystal": {degradationChance: 0}}});
 val insaniumBonus as IItemStack = <jaopca:dust.infinity>.withTag({sievedWith: "insanium", degradationData: {"item.environmentaltech.kyronite_crystal": {degradationChance: 100}, "item.resource.infinity_catalyst": {degradationChance: 100}, "item.environmentaltech.aethium_crystal": {degradationChance: 1}, "item.contenttweaker.genetically_unstable_chaos_crystal": {degradationChance: 10}, "item.contenttweaker.conglomerate_crystal": {degradationChance: 25}, "item.environmentaltech.ionite_crystal": {degradationChance: 0}, "item.avaritia:endest_pearl": {degradationChance: 50}, "item.environmentaltech.pladium_crystal": {degradationChance: 50}}});
 
-lightningRPF.start()
-	.duration(600)
-	.inputLE(10)
-	.inputItems(<ore:sand>,<lightningcraft:material:12>)
-	.outputItems(<lightningcraft:under_sand>)
-	.buildAndRegister();
+static orderedDegredations as IItemStack[] = [
+    <environmentaltech:lonsdaleite_crystal>,
+    <environmentaltech:litherite_crystal>,
+    <environmentaltech:erodium_crystal>,
+    <environmentaltech:kyronite_crystal>,
+    <environmentaltech:pladium_crystal>,
+    <environmentaltech:ionite_crystal>,
+    <environmentaltech:aethium_crystal>,
+    <contenttweaker:genetically_unstable_chaos_crystal>,
+    <contenttweaker:conglomerate_crystal>,
+    <avaritia:endest_pearl>,
+    <avaritia:resource:5>
+];
 
-lightningRPF.start()
-	.duration(600)
-	.inputLE(10)
-	.inputItems(<ore:sand>,<ore:treeSapling>)
-	.outputItems(<minecraft:deadbush>)
-	.buildAndRegister();
+static sieveScale as int[] = [ 
+	1000,   2000,   4000,
+	8000,   16000,  24000,
+	32000,  40000,  50000,
+	75000,  100000, 150000,
+	200000, 300000, 400000
+];
 
-lightningRPF.start()
-	.duration(600)
-	.inputLE(15)
-	.inputItems(<ore:blockGravel>,<ore:sand>,<ore:dirt>,<ore:cofh:potion>)
-	.outputItems(<minecraft:clay>*3)
-	.buildAndRegister();
+//						  inputs[]   [output]  [time] [LE]
+static standardRecipes as IIngredient[][IItemStack][int][int] = {
+	10: { 
+		600: { 
+			<lightningcraft:under_sand>: [ <ore:sand>, <lightningcraft:material:12> ], //undersand
+			<minecraft:deadbush>: [ <ore:sand>, <ore:treeSapling> ] //dead bush
+		} 
+	},
+	15: {
+		600: {
+			<minecraft:clay>*3: [ <ore:blockGravel>, <ore:sand>, <ore:dirt>, <ore:cofh:potion> ] //clay (block)
+		}
+	}
+};
+
+//																^
+//TODO convert all the old format recipes | into the new format |
+//										  v
 
 lightningRPF.start()
 	.duration(600)
@@ -432,27 +446,6 @@ lightningRPF.start()
 	.inputItems(degradeChance(prudentiumBonus,<environmentaltech:aethium_crystal>),prudentiumBonus)
 	.inputItems(<environmentaltech:aethium_crystal>*8)
 	.outputItems(<mysticalagriculture:storage:1>*64)
-	.buildAndRegister();
-
-lightningRPS.start()
-	.duration(300)
-	.inputLE(20)
-	.inputItems(<ore:sand>,<lightningcraft:material:12>)
-	.outputItems(<lightningcraft:under_sand>)
-	.buildAndRegister();
-
-lightningRPS.start()
-	.duration(300)
-	.inputLE(20)
-	.inputItems(<ore:sand>,<ore:treeSapling>)
-	.outputItems(<minecraft:deadbush>)
-	.buildAndRegister();
-
-lightningRPS.start()
-	.duration(300)
-	.inputLE(30)
-	.inputItems(<ore:blockGravel>,<ore:sand>,<ore:dirt>,<ore:cofh:potion>)
-	.outputItems(<minecraft:clay>*3)
 	.buildAndRegister();
 
 lightningRPS.start()
@@ -901,27 +894,6 @@ lightningRPS.start()
 	.inputItems(degradeChance(intermediumBonus,<contenttweaker:genetically_unstable_chaos_crystal>),intermediumBonus)
 	.inputItems(<contenttweaker:genetically_unstable_chaos_crystal>*8)
 	.outputItems(<mysticalagriculture:storage:2>*64)
-	.buildAndRegister();
-
-lightningRPT.start()
-	.duration(200)
-	.inputLE(30)
-	.inputItems(<ore:sand>,<lightningcraft:material:12>)
-	.outputItems(<lightningcraft:under_sand>)
-	.buildAndRegister();
-
-lightningRPT.start()
-	.duration(200)
-	.inputLE(30)
-	.inputItems(<ore:sand>,<ore:treeSapling>)
-	.outputItems(<minecraft:deadbush>)
-	.buildAndRegister();
-
-lightningRPT.start()
-	.duration(200)
-	.inputLE(45)
-	.inputItems(<ore:blockGravel>,<ore:sand>,<ore:dirt>,<ore:cofh:potion>)
-	.outputItems(<minecraft:clay>*3)
 	.buildAndRegister();
 
 lightningRPT.start()
@@ -1441,27 +1413,6 @@ lightningRPT.start()
 	.inputItems(degradeChance(superiumBonus,<contenttweaker:conglomerate_crystal>),superiumBonus)
 	.inputItems(<contenttweaker:conglomerate_crystal>*8)
 	.outputItems(<mysticalagriculture:storage:3>*128)
-	.buildAndRegister();
-
-lightningRPO.start()
-	.duration(50)
-	.inputLE(50)
-	.inputItems(<ore:sand>,<lightningcraft:material:12>)
-	.outputItems(<lightningcraft:under_sand>)
-	.buildAndRegister();
-
-lightningRPO.start()
-	.duration(50)
-	.inputLE(50)
-	.inputItems(<ore:sand>,<ore:treeSapling>)
-	.outputItems(<minecraft:deadbush>)
-	.buildAndRegister();
-
-lightningRPO.start()
-	.duration(50)
-	.inputLE(75)
-	.inputItems(<ore:blockGravel>,<ore:sand>,<ore:dirt>,<ore:cofh:potion>)
-	.outputItems(<minecraft:clay>*3)
 	.buildAndRegister();
 
 lightningRPO.start()
@@ -2052,27 +2003,6 @@ lightningRPO.start()
 	.inputItems(degradeChance(supremiumBonus,<avaritia:endest_pearl>),supremiumBonus)
 	.inputItems(<avaritia:endest_pearl>*8)
 	.outputItems(<mysticalagriculture:storage:4>*128)
-	.buildAndRegister();
-
-lightningRPI.start()
-	.duration(5)
-	.inputLE(250)
-	.inputItems(<ore:sand>,<lightningcraft:material:12>)
-	.outputItems(<lightningcraft:under_sand>)
-	.buildAndRegister();
-
-lightningRPI.start()
-	.duration(5)
-	.inputLE(250)
-	.inputItems(<ore:sand>,<ore:treeSapling>)
-	.outputItems(<minecraft:deadbush>)
-	.buildAndRegister();
-
-lightningRPI.start()
-	.duration(5)
-	.inputLE(375)
-	.inputItems(<ore:blockGravel>,<ore:sand>,<ore:dirt>,<ore:cofh:potion>)
-	.outputItems(<minecraft:clay>*3)
 	.buildAndRegister();
 
 lightningRPI.start()
@@ -2722,25 +2652,13 @@ lightningRPI.start()
 	.outputItems(<extendedcrafting:storage:4>*256)
 	.buildAndRegister();
 
-var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_1");
-var lightning_one = definitionF as ControllerDefinition;
-lightning_one.recipeMap = lightningRPF;
-
-var definitionS as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_2");
-var lightning_two = definitionS as ControllerDefinition;
-lightning_two.recipeMap = lightningRPS;
-
-var definitionT as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_3");
-var lightning_three = definitionT as ControllerDefinition;
-lightning_three.recipeMap = lightningRPT;
-
-var definitionO as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:lightning_infuser_mk_4");
-var lightning_four = definitionO as ControllerDefinition;
-lightning_four.recipeMap = lightningRPO;
-
-var definitionI as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:infinity_infuser");
-var lightning_five = definitionI as ControllerDefinition;
-lightning_five.recipeMap = lightningRPI;
+function basicPow(base as int, exp as int) as int {
+    var res = 1;
+    for i in 0 .. exp {
+      res*=base;
+    }
+    return res;
+}
 
 function degradeChance(bonus as IItemStack, crystal as IItemStack) as float {
 	val data as IData = bonus.tag;
@@ -2753,4 +2671,73 @@ function degradeChance(bonus as IItemStack, crystal as IItemStack) as float {
 		return 1 as float;
 	}
 	return (itemDegredation.degradationChance.asFloat()/(100 as float)) as float;
+}
+
+function registerStandard() {
+	for le, timeMap in standardRecipes { //le = total LE cost of recipe (in Mk 1)
+		for time, items in timeMap { //time = total number of ticks for the recipe (in Mk 1)
+			for output, inputs in items { //output = IItemStack output | inputs = IIngredient[] inputs
+				standard(time,le,inputs,output);
+			}
+		}
+	}
+}
+
+function run() {
+	registerStandard();
+	setRecipeMaps();
+}
+
+function setRecipeMaps() {
+	for i in 0 .. 5 {
+		MBD.setRecipeMap(maps[i],"lightning_infuser_mk_"+(i+1));
+	}
+}
+
+function sieved(bonus as IItemStack, output as IItemStack, outputCount as int, firstTier as int, firstIndex as int, firstTime as int, powerIndex as int, lastIndex as int = firstIndex+7) {
+	for tier in 0 .. 6 {
+		val powerFactor = tier-(1);
+		val timeFactor = 100*powerFactor;
+		val count = outputCount*basicPow(2,tier-firstTier);
+		for j in firstIndex .. lastIndex+1 {
+			val progress = j-firstIndex;
+			val time = firstTime-timeFactor+(100*progress);
+			val power = sieveScale[powerIndex+powerFactor+progress];
+			val crystal as IItemStack = orderedDegredations[j];
+			val chance as float = degradeChance(bonus,crystal);
+			var actualCount = count as double;
+			if((crystal in <contenttweaker:conglomerate_crystal>) || (crystal in <avaritia:endest_pearl>)) {
+				actualCount*=(1.5 as double);
+			} else if(crystal in <avaritia:resource:5>) {
+				actualCount*=(4 as double);
+			}
+			MBD.wrap(maps[tier],function(builder as RecipeBuilder) as RecipeBuilder {
+				return builder.duration(time).inputLE(power).inputItems(chance,bonus).inputItems(crystal).outputItems(output*(actualCount as int));
+			});
+		}
+	}
+}
+
+function standard(baseDuration as int, basePower as int, inputs as IIngredient[], output as IItemStack) {
+	var duration = baseDuration as double;
+	var power = basePower as double;
+	for i in 1 .. 6 { //The scaling isn't direct so I guess if/else chaining it is
+		if(i==1) {
+			duration = baseDuration;
+			power = basePower;
+		} else if(i==2) {
+			duration = baseDuration/2 as double;
+			power = basePower*2 as double;
+		} else if(i==3) {
+			duration = baseDuration/3 as double;
+			power = basePower*3 as double;
+		} else if(i==4) {
+			duration = baseDuration/5 as double;
+			power = basePower*5 as double;
+		} else {
+			duration = baseDuration/50 as double;
+			power = basePower*25 as double;
+		}
+		MBD.lightningInfusion(maps[(i)-(1)],duration as int,power as int,inputs,output);
+	}
 }

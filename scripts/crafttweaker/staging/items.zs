@@ -224,7 +224,7 @@ static itemStages as IIngredient[][string] = {
 		<dimensionhopper:lightning_infuser_mk_4>
 	],
 	"lightningfive": [
-		<dimensionhopper:infinity_infuser>
+		<dimensionhopper:lightning_infuser_mk_5>
 	],
 	"limbonicgenerator": [
 		<dimensionhopper:limbonic_generator>

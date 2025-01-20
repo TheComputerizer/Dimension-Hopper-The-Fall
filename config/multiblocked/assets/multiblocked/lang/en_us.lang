@@ -16,7 +16,7 @@ multiblocked.recipe_map.lightning_infuser_mk_1_recipes=Lightning Infuser Mk 1
 multiblocked.recipe_map.lightning_infuser_mk_2_recipes=Lightning Infuser Mk 2
 multiblocked.recipe_map.lightning_infuser_mk_3_recipes=Lightning Infuser Mk 3
 multiblocked.recipe_map.lightning_infuser_mk_4_recipes=Lightning Infuser Mk 4
-multiblocked.recipe_map.infinity_infuser_recipes=Infinity Infuser
+multiblocked.recipe_map.lightning_infuser_mk_5_recipes=Infinity Infuser
 
 //controllers
 assembler.name=Assembler
@@ -39,7 +39,7 @@ lightning_infuser_mk_1.name=Lightning Infuser Mk 1
 lightning_infuser_mk_2.name=Lightning Infuser Mk 2
 lightning_infuser_mk_3.name=Lightning Infuser Mk 3
 lightning_infuser_mk_4.name=Lightning Infuser Mk 4
-infinity_infuser.name=Infinity Infuser
+lightning_infuser_mk_5.name=Infinity Infuser
 
 
 //controller blocks
@@ -63,7 +63,7 @@ tile.dimensionhopper.lightning_infuser_mk_1.name=Lightning Infuser Mk 1 Controll
 tile.dimensionhopper.lightning_infuser_mk_2.name=Lightning Infuser Mk 2 Controller
 tile.dimensionhopper.lightning_infuser_mk_3.name=Lightning Infuser Mk 3 Controller
 tile.dimensionhopper.lightning_infuser_mk_4.name=Lightning Infuser Mk 4 Controller
-tile.dimensionhopper.infinity_infuser.name=Infinity Infuser Controller
+tile.dimensionhopper.lightning_infuser_mk_5.name=Infinity Infuser Controller
 
 //parts
 tile.dimensionhopper.limbonic_fluid_hatch.name=Limbonic Fluid Hatch

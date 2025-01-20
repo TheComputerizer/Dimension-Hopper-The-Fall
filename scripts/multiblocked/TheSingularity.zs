@@ -2,15 +2,12 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
 import mods.multiblocked.recipe.RecipeMap;
+import scripts.multiblocked.MBDHelper as MBD;
 
-val singularityRP = RecipeMap("singularity_recipes") as RecipeMap;
-RecipeMap.register(singularityRP);
+val singularityRP as RecipeMap = MBD.initRecipeMap("singularity");
 
-val singlarityMap as IIngredient[IItemStack] = {
+static singularityMap as IIngredient[IItemStack] = {
 	<avaritia:singularity:12>:               <thermaldynamics:duct_0:5>*64,
 	<extendedcrafting:singularity>:          <minecraft:coal_block>*16,
 	<extendedcrafting:singularity:1>:        <minecraft:iron_block>*16,
@@ -50,17 +47,8 @@ val singlarityMap as IIngredient[IItemStack] = {
 };
 
 //singularities
-for singlarity, block in singlarityMap {
-	singularityRP.start()
-		.name("singularity"+singlarity.definition.id+singlarity.metadata)
-		.duration(200)
-		.perTick(true)
-		.inputFE(50000000)
-		.perTick(false)
-		.inputItems(block, <moreplanets:black_hole_fragments>)
-		.inputFluids(<liquid:dark_water>*32000)
-		.outputItems(singlarity)
-		.buildAndRegister();
+for singularity, block in singularityMap {
+	MBD.singularity(singularityRP,""+singularity.metadata,200,50000000,[block, <moreplanets:black_hole_fragments>],<liquid:dark_water>*32000,singularity);
 }
 
 //fluxed singularity
@@ -156,6 +144,4 @@ singularityRP.start()
 	.outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 100, skill: "research"}))
 	.buildAndRegister();
 
-val definition as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:the_singularity");
-val the_singularity = definition as ControllerDefinition;
-the_singularity.recipeMap = singularityRP;
+MBD.setRecipeMap(singularityRP,"the_singularity");

@@ -104,7 +104,6 @@ static shapelessHolders as Holder[] = [
 
 function run() {
     for holder in shapedHolders {
-		print(holder.getOutput().name);
 		TableCrafting.addShaped(1, holder.getOutput(), holder.getShaped());
 	}
     for holder in shapelessHolders {

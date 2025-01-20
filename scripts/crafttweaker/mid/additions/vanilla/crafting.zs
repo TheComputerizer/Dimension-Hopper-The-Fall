@@ -221,8 +221,17 @@ static shapedBuilders as Holder[] = [
     ]), //Stargate Controller
 
     //solarflux-------------------------------------------------------------------------------------------------------------
-    Util.dynamicShaped(<solarflux:mirror>, { <ore:blockGlassColorless>:[0,1,2], <thermalfoundation:material:160>:[4] }, 
-        3, 2), //Mirror
+    Util.dynamicShaped(<solarflux:mirror>, { 
+        <ore:blockGlassColorless>:[0,1,2], 
+        <ore:ingotSteel>:[4] 
+    }, 3, 2), //Mirror
+
+    Util.dynamicShaped(<solarflux:solar_panel_1>, { 
+        <solarflux:mirror>:[0,1,2], 
+        <ore:plankWood>:[3,5,7],
+        <ore:ingotRedstoneAlloy>:[4],
+        <ore:logWood>:[6,8]
+    }), //Solar Panel I
 
     //tconstruct------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<tconstruct:seared_furnace_controller>, { <tconstruct:seared_slab:3>:[0,1,2,6,7,8],
