@@ -135,7 +135,7 @@
         "type": "states"
       },
       "controller": {
-        "location": "dimensionhopper:lightning_reactor",
+        "location": "dimensionhopper:lightning_reactor_mk_1",
         "type": "component"
       },
       "C": {

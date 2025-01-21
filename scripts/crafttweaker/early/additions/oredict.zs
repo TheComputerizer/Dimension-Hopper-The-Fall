@@ -82,6 +82,13 @@ oreDict.grassPlant.addItems([
     <traverse:cold_grass>
 ]);
 
+oreDict.lightningStorage.addItems([
+    <lightningcraft:lightning_cell>,
+    <lightningcraft:lightning_cell:1>,
+    <lightningcraft:lightning_cell:2>,
+    <lightningcraft:lightning_cell:3>
+]);
+
 oreDict.vaguelyGrass.addItems([
     <aether:tall_aether_grass:*>,
     <aoa3:blue_candy_grass>,

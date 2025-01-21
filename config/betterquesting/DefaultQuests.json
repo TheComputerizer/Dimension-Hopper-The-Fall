@@ -3660,7 +3660,7 @@
     },
     "77:10": {
       "preRequisites:11": [
-        6
+        7
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4400,11 +4400,11 @@
     },
     "92:10": {
       "preRequisites:11": [
-        91
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     This are some useful tools you are going to want for crafting",
+          "desc:8": "     These are some useful tools you will need for crafting with artisan stations",
           "icon:10": {
             "Count:3": 1,
             "id:8": "artisanworktables:artisans_hammer_stone"
@@ -4504,7 +4504,7 @@
     },
     "93:10": {
       "preRequisites:11": [
-        91
+        77
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4539,20 +4539,31 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "id:8": "immersiveengineering:tool"
-            },
-            "1:10": {
-              "Count:3": 27,
               "id:8": "immersiveengineering:stone_decoration"
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 27,
+              "id:8": "immersiveengineering:stone_decoration"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:tool"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
     "94:10": {
       "preRequisites:11": [
-        91
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4634,12 +4645,23 @@
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 27,
+              "Count:3": 1,
               "Damage:2": 1,
               "id:8": "immersiveengineering:stone_decoration"
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 27,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:stone_decoration"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -4904,11 +4926,21 @@
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 64,
+              "Count:3": 1,
               "id:8": "tconstruct:materials"
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 64,
+              "id:8": "tconstruct:materials"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -4960,36 +4992,41 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "tconstruct:smeltery_controller"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 10,
+              "Damage:2": 3,
+              "id:8": "tconstruct:seared"
             },
             "1:10": {
               "Count:3": 1,
               "id:8": "tconstruct:smeltery_io"
             },
             "2:10": {
-              "Count:3": 10,
-              "Damage:2": 3,
-              "id:8": "tconstruct:seared"
-            },
-            "3:10": {
               "Count:3": 1,
               "id:8": "tconstruct:faucet"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 1,
-              "Damage:2": 32767,
               "id:8": "tconstruct:seared_tank"
             },
-            "5:10": {
+            "4:10": {
               "Count:3": 1,
               "id:8": "tconstruct:casting"
             },
-            "6:10": {
+            "5:10": {
               "Count:3": 1,
               "Damage:2": 1,
               "id:8": "tconstruct:casting"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -17452,7 +17489,8 @@
     },
     "410:10": {
       "preRequisites:11": [
-        103
+        103,
+        240
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17471,36 +17509,51 @@
       "tasks:9": {
         "0:10": {
           "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 3,
-              "id:8": "immersiveengineering:metal_decoration0"
-            },
-            "1:10": {
-              "Count:3": 1,
-              "Damage:2": 5,
-              "id:8": "immersiveengineering:metal_decoration0"
-            },
-            "2:10": {
-              "Count:3": 1,
-              "id:8": "minecraft:piston"
-            },
-            "3:10": {
+              "id:8": "immersiveengineering:tool"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "2:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 2,
               "Damage:2": 1,
-              "OreDict:8": "scaffoldingSteel",
               "id:8": "immersiveengineering:metal_decoration1"
             },
-            "4:10": {
+            "1:10": {
               "Count:3": 2,
               "id:8": "immersiveengineering:conveyor",
               "tag:10": {
                 "conveyorType:8": "immersiveengineering:conveyor"
               }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 5,
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "id:8": "minecraft:piston"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -17551,7 +17604,7 @@
     },
     "412:10": {
       "preRequisites:11": [
-        410
+        310
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17571,6 +17624,21 @@
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:metal_device1"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "id:8": "immersiveengineering:stone_decoration"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 2,
               "id:8": "immersiveengineering:metal_device1"
             },
@@ -17580,7 +17648,7 @@
               "id:8": "immersiveengineering:stone_decoration"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -17606,19 +17674,18 @@
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 9,
-              "id:8": "minecraft:hopper"
+              "Count:3": 10,
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:metal_decoration1"
             },
             "1:10": {
               "Count:3": 10,
-              "Damage:2": 1,
-              "OreDict:8": "scaffoldingSteel",
-              "id:8": "immersiveengineering:metal_decoration1"
-            },
-            "2:10": {
-              "Count:3": 10,
               "Damage:2": 4,
               "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "2:10": {
+              "Count:3": 9,
+              "id:8": "minecraft:hopper"
             },
             "3:10": {
               "Count:3": 8,
@@ -17630,13 +17697,28 @@
               "id:8": "immersiveengineering:metal_decoration0"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:tool"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "2:10": {
+          "index:3": 2,
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
     "414:10": {
       "preRequisites:11": [
-        410
+        103,
+        240
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17682,8 +17764,7 @@
             },
             "5:10": {
               "Count:3": 5,
-              "Damage:2": 1,
-              "OreDict:8": "scaffoldingSteel",
+              "Damage:2": 2,
               "id:8": "immersiveengineering:metal_decoration1"
             },
             "6:10": {
@@ -17693,15 +17774,30 @@
             },
             "7:10": {
               "Count:3": 1,
-              "id:8": "minecraft:cauldron"
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:metal_decoration0"
             },
             "8:10": {
               "Count:3": 1,
-              "Damage:2": 3,
-              "id:8": "immersiveengineering:metal_decoration0"
+              "id:8": "minecraft:cauldron"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "immersiveengineering:tool"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "2:10": {
+          "index:3": 2,
+          "taskID:8": "bq_standard:checkbox"
         }
       }
     },
@@ -24055,37 +24151,43 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:assembler"
-            },
-            "1:10": {
-              "Count:3": 8,
-              "id:8": "opencomputers:assembler"
-            },
-            "2:10": {
-              "Count:3": 4,
-              "id:8": "enderio:block_dark_iron_bars"
-            },
-            "3:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 25,
               "id:8": "contenttweaker:mek_wall"
             },
-            "4:10": {
-              "Count:3": 8,
-              "id:8": "contenttweaker:large_circuit"
-            },
-            "5:10": {
-              "Count:3": 12,
-              "id:8": "compactmachines3:wallbreakable"
-            },
-            "6:10": {
+            "1:10": {
               "Count:3": 16,
               "id:8": "enderio:block_fused_quartz"
             },
-            "7:10": {
+            "2:10": {
+              "Count:3": 12,
+              "id:8": "compactmachines3:wallbreakable"
+            },
+            "3:10": {
+              "Count:3": 8,
+              "id:8": "contenttweaker:large_circuit"
+            },
+            "4:10": {
+              "Count:3": 8,
+              "id:8": "opencomputers:assembler"
+            },
+            "5:10": {
+              "Count:3": 4,
+              "id:8": "enderio:block_dark_iron_bars"
+            },
+            "6:10": {
               "Count:3": 1,
               "id:8": "calculator:reassemblychamber"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -56369,35 +56471,41 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:the_singularity"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 48,
               "id:8": "contenttweaker:heart_of_the_machine_god"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 45,
               "id:8": "mekanismgenerators:reactorglass"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 16,
               "Damage:2": 5,
               "id:8": "extendedcrafting:trimmed"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 3,
               "Damage:2": 4,
               "id:8": "extendedcrafting:storage"
             },
-            "5:10": {
+            "4:10": {
               "Count:3": 1,
               "id:8": "draconicevolution:item_dislocation_inhibitor"
             },
-            "6:10": {
+            "5:10": {
               "Count:3": 1,
               "id:8": "moreplanets:black_hole_storage"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68373,25 +68481,31 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:the_factory_mk_1"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 12,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 9,
               "id:8": "contenttweaker:large_circuit"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 2,
               "id:8": "contenttweaker:industrial_ventilation"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:factory_core_one"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68424,14 +68538,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:oil_cracker_mk_1"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:metal_device1"
             },
             "3:10": {
               "Count:3": 2,
@@ -68440,14 +68565,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:oil_core_one"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "immersiveengineering:metal_device1"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68480,14 +68600,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:psionic_generator_mk_1"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "botania:pylon"
             },
             "3:10": {
               "Count:3": 2,
@@ -68496,14 +68627,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:psionic_core_one"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "botania:pylon"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68536,25 +68662,31 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:the_factory_mk_2"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 12,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 9,
               "id:8": "contenttweaker:divine_large_circuit"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 2,
               "id:8": "contenttweaker:industrial_ventilation"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:factory_core_two"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68587,14 +68719,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:oil_cracker_mk_2"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:metal_device1"
             },
             "3:10": {
               "Count:3": 2,
@@ -68603,14 +68746,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:oil_core_two"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "immersiveengineering:metal_device1"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68643,14 +68781,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:psionic_generator_mk_2"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "botania:pylon"
             },
             "3:10": {
               "Count:3": 2,
@@ -68659,14 +68808,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:psionic_core_two"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "botania:pylon"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68697,25 +68841,31 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:the_factory_mk_3"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 12,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 9,
               "id:8": "contenttweaker:divine_large_circuit"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 2,
               "id:8": "contenttweaker:industrial_ventilation"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:factory_core_three"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68746,14 +68896,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:oil_cracker_mk_3"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 2,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "immersiveengineering:metal_device1"
             },
             "3:10": {
               "Count:3": 2,
@@ -68762,14 +68923,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:oil_core_three"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "immersiveengineering:metal_device1"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68800,14 +68956,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:psionic_generator_mk_3"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_mek_wall"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "id:8": "contenttweaker:divine_large_circuit"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 1,
+              "id:8": "botania:pylon"
             },
             "3:10": {
               "Count:3": 2,
@@ -68816,14 +68983,9 @@
             "4:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:psionic_core_three"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 1,
-              "id:8": "botania:pylon"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68882,38 +69044,44 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:rocket_t1"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 50,
               "id:8": "contenttweaker:rocket_block_1"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 8,
               "Damage:2": 1,
               "id:8": "immersiveengineering:metal_decoration1_slab"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "id:8": "immersiveengineering:metal_decoration1"
             },
             "3:10": {
               "Count:3": 4,
               "id:8": "contenttweaker:booster_block_1"
             },
             "4:10": {
-              "Count:3": 4,
-              "id:8": "immersiveengineering:metal_decoration1"
-            },
-            "5:10": {
               "Count:3": 3,
               "id:8": "contenttweaker:large_circuit"
             },
-            "6:10": {
+            "5:10": {
               "Count:3": 3,
               "id:8": "openblocks:tank"
             },
-            "7:10": {
+            "6:10": {
               "Count:3": 1,
               "id:8": "randomthings:advancedredstonetorch_on"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -68943,45 +69111,51 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:rocket_t7"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 75,
               "id:8": "contenttweaker:rocket_block_7"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 13,
               "id:8": "contenttweaker:booster_block_2"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 6,
               "id:8": "bigreactors:reactorfuelrod"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 6,
               "id:8": "immersiveengineering:metal_decoration1"
             },
-            "5:10": {
+            "4:10": {
               "Count:3": 4,
               "id:8": "galacticraftcore:spin_thruster"
             },
-            "6:10": {
+            "5:10": {
               "Count:3": 4,
               "id:8": "solarflux:solar_panel_7"
             },
-            "7:10": {
+            "6:10": {
               "Count:3": 2,
               "id:8": "contenttweaker:divine_large_circuit"
             },
-            "8:10": {
+            "7:10": {
               "Count:3": 1,
               "id:8": "contenttweaker:heart_of_the_machine_god"
             },
-            "9:10": {
+            "8:10": {
               "Count:3": 1,
               "id:8": "appliedenergistics2:controller"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69012,34 +69186,40 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:rocket_t10"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 115,
               "id:8": "contenttweaker:rocket_block_10"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 34,
               "id:8": "extendedcrafting:storage"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 9,
               "id:8": "fluxnetworks:gargantuanfluxstorage"
             },
-            "4:10": {
+            "3:10": {
               "Count:3": 9,
               "id:8": "contenttweaker:booster_block_2"
             },
-            "5:10": {
+            "4:10": {
               "Count:3": 4,
               "id:8": "solarflux:solar_panel_wyvern"
             },
-            "6:10": {
+            "5:10": {
               "Count:3": 1,
               "Damage:2": 14,
               "id:8": "mekanism:basicblock"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69068,17 +69248,23 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:lightning_infuser_mk_1"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 23,
               "id:8": "lightningcraft:stone_block"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 1,
               "id:8": "lightningcraft:metal_block"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69107,23 +69293,29 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:lightning_infuser_mk_2"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 11,
               "id:8": "lightningcraft:stone_block"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 12,
               "Damage:2": 3,
               "id:8": "lightningcraft:stone_block"
             },
-            "3:10": {
+            "2:10": {
               "Count:3": 1,
               "Damage:2": 1,
               "id:8": "lightningcraft:metal_block"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69152,19 +69344,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:lightning_infuser_mk_3"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 23,
               "Damage:2": 3,
               "id:8": "lightningcraft:stone_block"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 1,
               "Damage:2": 2,
               "id:8": "lightningcraft:metal_block"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69198,19 +69396,25 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:lightning_infuser_mk_4"
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 23,
               "Damage:2": 2,
               "id:8": "lightningcraft:metal_block"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 1,
               "Damage:2": 4,
               "id:8": "extendedcrafting:storage"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69225,7 +69429,7 @@
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "dimensionhopper:infinity_infuser"
+            "id:8": "dimensionhopper:lightning_infuser_mk_5"
           },
           "ismain:1": 1,
           "name:8": "Infinity Infuser",
@@ -69241,20 +69445,26 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "id:8": "dimensionhopper:infinity_infuser"
-            },
-            "1:10": {
+              "id:8": "dimensionhopper:lightning_infuser_mk_5"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 23,
               "Damage:2": 4,
               "id:8": "extendedcrafting:storage"
             },
-            "2:10": {
+            "1:10": {
               "Count:3": 1,
               "Damage:2": 1,
               "id:8": "avaritia:block_resource"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -69285,53 +69495,73 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "dimensionhopper:limbonic_generator"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 328,
+              "id:8": "minecraft:redstone_block"
             },
             "1:10": {
-              "Count:3": 296,
-              "Damage:2": 14,
-              "id:8": "rpsideas:dark_plate"
+              "Count:3": 210,
+              "id:8": "draconicevolution:draconium_block"
             },
             "2:10": {
-              "Count:3": 288,
-              "id:8": "contenttweaker:affixed_machine_parts"
-            },
-            "3:10": {
-              "Count:3": 216,
-              "id:8": "zollerngalaxy:caligrostonebricks"
-            },
-            "4:10": {
-              "Count:3": 208,
-              "id:8": "contenttweaker:heart_of_the_machine_god"
-            },
-            "5:10": {
-              "Count:3": 112,
-              "id:8": "psicosts:material_glassy"
-            },
-            "6:10": {
-              "Count:3": 68,
-              "Damage:2": 7,
-              "id:8": "psi:psi_decorative"
-            },
-            "7:10": {
-              "Count:3": 56,
-              "Damage:2": 5,
-              "id:8": "extendedcrafting:trimmed"
-            },
-            "8:10": {
               "Count:3": 36,
               "Damage:2": 2,
               "id:8": "draconicevolution:particle_generator"
             },
-            "9:10": {
-              "Count:3": 10,
-              "id:8": "dimensionhopper:limbonic_fluid_hatch"
-            },
-            "10:10": {
+            "3:10": {
               "Count:3": 1,
               "id:8": "draconicevolution:energy_storage_core"
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "2:10": {
+          "index:3": 2,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 296,
+              "Damage:2": 14,
+              "id:8": "rpsideas:dark_plate"
+            },
+            "1:10": {
+              "Count:3": 288,
+              "id:8": "contenttweaker:affixed_machine_parts"
+            },
+            "2:10": {
+              "Count:3": 216,
+              "id:8": "zollerngalaxy:caligrostonebricks"
+            },
+            "3:10": {
+              "Count:3": 208,
+              "id:8": "contenttweaker:heart_of_the_machine_god"
+            },
+            "4:10": {
+              "Count:3": 112,
+              "id:8": "psicosts:material_glassy"
+            },
+            "5:10": {
+              "Count:3": 68,
+              "Damage:2": 7,
+              "id:8": "psi:psi_decorative"
+            },
+            "6:10": {
+              "Count:3": 56,
+              "Damage:2": 5,
+              "id:8": "extendedcrafting:trimmed"
+            },
+            "7:10": {
+              "Count:3": 10,
+              "id:8": "dimensionhopper:limbonic_fluid_hatch"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -71297,6 +71527,132 @@
         "0:10": {
           "index:3": 0,
           "taskID:8": "bq_standard:checkbox"
+        }
+      }
+    },
+    "1533:10": {
+      "preRequisites:11": [
+        1499
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "     Demands for lightning energy are beginning to grow expontentially! You are going to need a powerful reactor in order to get the most out of each lightning strike.\n\n§3§oNote: The resistive heater will need to be set to about 25000 EU/t or 100000 RF/t in order to constantly run the reactor",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "dimensionhopper:lightning_infuser_mk_4"
+          },
+          "name:8": "Lightning Reactor",
+          "snd_complete:8": "contenttweaker:questcommon",
+          "snd_update:8": "contenttweaker:questcommon"
+        }
+      },
+      "questID:3": 1516419382,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "dimensionhopper:lightning_reactor_mk_1"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 16,
+              "id:8": "environmentaltech:structure_frame_6"
+            },
+            "1:10": {
+              "Count:3": 16,
+              "id:8": "calculator:conductormast"
+            },
+            "2:10": {
+              "Count:3": 15,
+              "id:8": "zollerngalaxy:chargiumblock"
+            },
+            "3:10": {
+              "Count:3": 4,
+              "id:8": "environmentaltech:modifier_luck"
+            },
+            "4:10": {
+              "Count:3": 4,
+              "Damage:2": 2,
+              "id:8": "lightningcraft:metal_block"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 4,
+              "id:8": "mekanism:machineblock3"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "2:10": {
+          "entryLogic:8": "OR",
+          "index:3": 2,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 10,
+              "id:8": "lightningcraft:air_terminal"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 11,
+              "id:8": "lightningcraft:air_terminal"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 12,
+              "id:8": "lightningcraft:air_terminal"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 13,
+              "id:8": "lightningcraft:air_terminal"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "3:10": {
+          "entryLogic:8": "OR",
+          "index:3": 3,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "botania:pool"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "id:8": "botania:pool"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "id:8": "botania:pool"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "botania:pool"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "4:10": {
+          "index:3": 4,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 5,
+              "id:8": "lightningcraft:lightning_cell"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     }
@@ -74569,7 +74925,7 @@
           "id:3": 77,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -144,
+          "x:3": -108,
           "y:3": -72
         },
         "1:10": {
@@ -74583,7 +74939,7 @@
           "id:3": 92,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -108,
+          "x:3": -144,
           "y:3": -72
         },
         "3:10": {
@@ -74661,7 +75017,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
-          "y:3": -144
+          "y:3": -108
         },
         "14:10": {
           "id:3": 105,
@@ -74688,8 +75044,8 @@
           "id:3": 310,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -108
+          "x:3": -72,
+          "y:3": -144
         },
         "18:10": {
           "id:3": 409,
@@ -74702,7 +75058,7 @@
           "id:3": 410,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
+          "x:3": 0,
           "y:3": -180
         },
         "20:10": {
@@ -74717,14 +75073,14 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
-          "y:3": -180
+          "y:3": -144
         },
         "22:10": {
           "id:3": 414,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -36,
-          "y:3": -216
+          "y:3": -180
         },
         "23:10": {
           "id:3": 457,
@@ -74807,7 +75163,7 @@
           "id:3": 712,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 0,
+          "x:3": -36,
           "y:3": -108
         },
         "35:10": {
@@ -75080,8 +75436,8 @@
           "id:3": 1519,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -72,
-          "y:3": -144
+          "x:3": 36,
+          "y:3": -108
         }
       }
     },
@@ -76172,6 +76528,13 @@
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -144
+        },
+        "43:10": {
+          "id:3": 1516419382,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
+          "y:3": -180
         }
       }
     },
