@@ -2,27 +2,15 @@
 
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
 import mods.multiblocked.recipe.RecipeMap;
-import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.RecipeLogic;
-import mods.multiblocked.recipe.Recipe;
+import scripts.multiblocked.MBDClasses.Factory as Recipe;
+import scripts.multiblocked.MBDHelper as MBD;
 
-import crafttweaker.text.ITextComponent;
+static maps as RecipeMap[] = MBD.initRecipeMaps("the_factory",3);
 
-val factoryRPF = RecipeMap("the_factory_mk_1_recipes") as RecipeMap;
-RecipeMap.register(factoryRPF);
-
-val factoryRPS = RecipeMap("the_factory_mk_2_recipes") as RecipeMap;
-RecipeMap.register(factoryRPS);
-
-val factoryRPT = RecipeMap("the_factory_mk_3_recipes") as RecipeMap;
-RecipeMap.register(factoryRPT);
+val factoryRPF as RecipeMap = maps[0];
+val factoryRPS as RecipeMap = maps[1];
+val factoryRPT as RecipeMap = maps[2];
 
 var blockMap as IItemStack[IItemStack] = {
     <draconicevolution:draconium_ingot>*9:              <draconicevolution:draconium_block>,
@@ -320,14 +308,6 @@ factoryRPT.start()
     .outputItems(<contenttweaker:affixed_machine_parts>)
     .buildAndRegister();
 
-var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:the_factory_mk_1");
-var factory_one = definitionF as ControllerDefinition;
-factory_one.recipeMap = factoryRPF;
-
-var definitionS as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:the_factory_mk_2");
-var factory_two = definitionS as ControllerDefinition;
-factory_two.recipeMap = factoryRPS;
-
-var definitionT as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:the_factory_mk_3");
-var factory_three = definitionT as ControllerDefinition;
-factory_three.recipeMap = factoryRPT;
+function run() {
+	MBD.setRecipeMaps(maps,"the_factory");
+}

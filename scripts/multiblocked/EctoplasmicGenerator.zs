@@ -1,52 +1,22 @@
 #loader multiblocked
 
-import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
 import mods.multiblocked.recipe.RecipeMap;
-import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.RecipeLogic;
-import mods.multiblocked.recipe.Recipe;
+import scripts.multiblocked.MBDClasses.EctoplasmicGenerator as Recipe;
+import scripts.multiblocked.MBDHelper as MBD;
 
-import crafttweaker.text.ITextComponent;
+static map as RecipeMap = MBD.initRecipeMap("ectoplasmic_generator");
 
-val ectoplasmicRP = RecipeMap("ectoplasmic_generator_recipes") as RecipeMap;
-RecipeMap.register(ectoplasmicRP);
+static recipes as Recipe[] = [
+	Recipe(10000, <randomthings:ingredient:2>, <randomthings:runedust>),                                                      // 10000 FE/t power gen
+	Recipe(50000000, [ <draconicevolution:chaos_shard> ], <liquid:liquiddna>*1000,                                               //Chaos shard duping
+		[ <draconicevolution:chaos_shard>, <draconicevolution:chaos_shard:3> ] ),                                                
+	Recipe(50000000, [ <mysticalagradditions:stuff:69>, <extrautils2:simpledecorative:2>*4 ], <liquid:genetic_chaos_fluid>*500,     //Insanium duping
+		[ <mysticalagradditions:storage:1>*4 ] ),                                                                                   
+] as Recipe[];
 
-ectoplasmicRP.start()
-	.duration(20)
-	.perTick(true)
-	.outputFE(10000)
-	.perTick(false)
-	.inputItems(<randomthings:ingredient:2>)
-	.outputItems(<randomthings:runedust>)
-	.buildAndRegister();
-
-ectoplasmicRP.start()
-	.duration(2)
-	.perTick(true)
-	.inputFE(50000000)
-	.perTick(false)
-	.inputItems(<draconicevolution:chaos_shard>)
-	.inputFluids(<liquid:liquiddna>*1000)
-	.outputItems(<draconicevolution:chaos_shard>, <draconicevolution:chaos_shard:3>)
-	.buildAndRegister();
-
-ectoplasmicRP.start()
-	.duration(2)
-	.perTick(true)
-	.inputFE(50000000)
-	.perTick(false)
-	.inputItems(<mysticalagradditions:stuff:69>, <extrautils2:simpledecorative:2>*4)
-	.inputFluids(<liquid:genetic_chaos_fluid>*500)
-	.outputItems(<mysticalagradditions:storage:1>*4)
-	.buildAndRegister();
-
-
-var definition as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:ectoplasmic_generator");
-var ectoplasmic = definition as ControllerDefinition;
-ectoplasmic.recipeMap = ectoplasmicRP;
+function run() {
+	for recipe in recipes {
+		recipe.make(map);
+	}
+	MBD.setRecipeMap(map,"ectoplasmic_generator");
+}

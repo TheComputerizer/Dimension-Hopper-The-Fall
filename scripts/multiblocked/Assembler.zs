@@ -1,99 +1,42 @@
 #loader multiblocked
 
-import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
 import mods.multiblocked.recipe.RecipeMap;
-import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.RecipeLogic;
-import mods.multiblocked.recipe.Recipe;
+import scripts.multiblocked.MBDClasses.Assembler as Recipe;
+import scripts.multiblocked.MBDHelper as MBD;
 
-import crafttweaker.text.ITextComponent;
+static map as RecipeMap = MBD.initRecipeMap("assembler");
 
-var definition as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:assembler");
+static recipes as Recipe[] = [
+	Recipe(600, 150, <industrialforegoing:tree_fluid_extractor>, [ 											//Tree Fluid Extractor
+		<teslacorelib:machine_case>, <overloaded:compressed_stone:2>*4, <thermalfoundation:material:32>*4, 
+		<thermalfoundation:material:24>*2, <randomthings:plate_extraction>, <thermaldynamics:servo> ]),
+	Recipe(600, 150, <industrialforegoing:tree_fluid_extractor>, [ 											//Latex Processing Unit
+		<teslacorelib:machine_case>, <moreplates:redstone_alloy_plate>*2, <thermalfoundation:material:32>*4,
+		<thermalfoundation:material:24>*2, <openblocks:tank>, <thermaldynamics:duct_16> ], 
+		<liquid:latex>*1000),
+	Recipe(600, 150, <industrialforegoing:water_resources_collector>, [ 									//Resource Fisher
+		<teslacorelib:machine_case>, <industrialforegoing:plastic>*4, <thermalfoundation:material:32>*4,
+		<thermalfoundation:material:24>*2, <xreliquary:rod_of_lyssa>, <adhooks:pudge_hook> ], 
+		<liquid:latex>*1000),
+	Recipe(600, 150, <industrialforegoing:spores_recreator>, [ 												//Spores Recreator
+		<teslacorelib:machine_case>, <industrialforegoing:plastic>, <thermalfoundation:material:32>,
+		<thermalfoundation:material:24>, <minecraft:mycelium>, <biomesoplenty:grass:8>, <midnight:midnight_mycelium> ], 
+		<liquid:latex>*1000),
+	Recipe(600, 150, <industrialforegoing:animal_resource_harvester>, [ 									//Animal Rancher
+		<teslacorelib:machine_case>, <industrialforegoing:plastic>, <thermalfoundation:material:32>,
+		<thermalfoundation:material:24>, <minecraft:bucket>, <aether:arkenium_shears> ], 
+		<liquid:latex>*1000),
+	Recipe(600, 150, <industrialforegoing:animal_stock_increaser>, [ 										//Animal Feeder
+		<teslacorelib:machine_case>, <industrialforegoing:plastic>, <thermalfoundation:material:32>,
+		<thermalfoundation:material:24>, <minecraft:wheat>, <minecraft:carrot>, <minecraft:beef> ], 
+		<liquid:latex>*1000),
+	Recipe(600, 150, <industrialforegoing:animal_independence_selector>, [ 									//Animal Baby Separator
+		<teslacorelib:machine_case>, <industrialforegoing:plastic>, <thermalfoundation:material:32>,
+		<thermalfoundation:material:24>, <opencomputers:upgrade:20>, <minecraft:slime_ball> ], 
+		<liquid:latex>*1000),
+] as Recipe[];
 
-val assemblerRP = RecipeMap("assembler_recipes") as RecipeMap;
-RecipeMap.register(assemblerRP);
-
-//tree fluid extractor
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<overloaded:compressed_stone:2>*4,<thermalfoundation:material:32>*4,<thermalfoundation:material:24>*2,<randomthings:plate_extraction>,<thermaldynamics:servo>)
-    .outputItems(<industrialforegoing:tree_fluid_extractor>)
-    .buildAndRegister();
-
-//latex processing unit
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<moreplates:redstone_alloy_plate>*2,<thermalfoundation:material:32>*4,<thermalfoundation:material:24>*2,<openblocks:tank>,<thermaldynamics:duct_16>)
-	.inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:latex_processing_unit>)
-    .buildAndRegister();
-
-//resource fisher
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>*4,<thermalfoundation:material:32>*4,<thermalfoundation:material:24>*2,<xreliquary:rod_of_lyssa>,<adhooks:pudge_hook>)
-	.inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:water_resources_collector>)
-    .buildAndRegister();
-
-//spores recreator
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<minecraft:mycelium>,<biomesoplenty:grass:8>,<midnight:midnight_mycelium>)
-    .inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:spores_recreator>)
-    .buildAndRegister();
-
-//animal rancher
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<minecraft:bucket>,<aether:arkenium_shears>)
-    .inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:animal_resource_harvester>)
-    .buildAndRegister();
-
-//animal feeder
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<minecraft:wheat>,<minecraft:carrot>,<minecraft:beef>)
-    .inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:animal_stock_increaser>)
-    .buildAndRegister();
-
-//animal baby separator
-assemblerRP.start()
-	.duration(600)
-	.perTick(true)
-	.inputFE(150)
-	.perTick(false)
-    .inputItems(<teslacorelib:machine_case>,<industrialforegoing:plastic>,<thermalfoundation:material:32>,<thermalfoundation:material:24>,<opencomputers:upgrade:20>,<minecraft:slime_ball>)
-    .inputFluids(<liquid:latex>*1000)
-    .outputItems(<industrialforegoing:animal_independence_selector>)
-    .buildAndRegister();
+val assemblerRP as RecipeMap = map;
 
 //animal grower
 assemblerRP.start()
@@ -664,5 +607,9 @@ assemblerRP.start()
     .outputItems(<dimhoppertweaks:skill_credit>.withTag({amount: 5, skill: "research"}))
     .buildAndRegister();
 
-var assembler = definition as ControllerDefinition;
-assembler.recipeMap = assemblerRP;
+function run() {
+	for recipe in recipes {
+		recipe.make(map);
+	}
+	MBD.setRecipeMap(map,"assembler");
+}
