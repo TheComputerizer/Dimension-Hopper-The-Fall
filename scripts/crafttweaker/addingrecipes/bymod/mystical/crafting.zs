@@ -258,3 +258,13 @@ recipes.addShaped("essencecreativema", <mysticalagradditions:stuff:69>, [
 [<contenttweaker:empowered_essence>, <mysticalagriculture:crafting:4>, <contenttweaker:empowered_essence>],
 [<extendedcrafting:material:12>, <contenttweaker:empowered_essence>, <extendedcrafting:material:12>]
 ]);
+
+//dragon egg
+recipes.addShapeless("dragoneggfromchunk", <minecraft:dragon_egg>, [<mysticalagradditions:stuff:2>, <mysticalagradditions:stuff:2>, <mysticalagradditions:stuff:2>]);
+
+//nether star
+recipes.addShaped("netherstarfromnuggets", <minecraft:nether_star>, [
+[<lightningcraft:material>, <lightningcraft:material>, <lightningcraft:material>],
+[<lightningcraft:material>, <lightningcraft:material>, <lightningcraft:material>],
+[<lightningcraft:material>, <lightningcraft:material>, <lightningcraft:material>]
+]);
