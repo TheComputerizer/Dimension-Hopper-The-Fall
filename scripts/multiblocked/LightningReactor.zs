@@ -7,7 +7,7 @@ import scripts.multiblocked.MBDHelper as MBD;
 static map as RecipeMap = MBD.initRecipeMap("lightning_reactor_mk_1"); //TODO Higher tiers?
 
 static recipes as Recipe[] = [
-	Recipe("dimensionInterDimensional", 10, 1000000, 1000, <calculator:electricdiamond>, <liquid:electricium>*16, 100, 1000) //Probably needs testing
+	Recipe("dimensionInterDimensional", 10, 150, 1000, <calculator:electricdiamond>, <liquid:electricium>*16, 100, 1000) //Probably needs testing
 ] as Recipe[];
 
 function run() {
