@@ -62,3 +62,10 @@ Crucible.addRecipe(<liquid:insanium>*144, <mysticalagradditions:insanium:2>, 600
 Crucible.addRecipe(<liquid:insanium>*144, <moreplates:insanium_plate>, 60000);
 Crucible.addRecipe(<liquid:insanium>*576, <moreplates:insanium_gear>, 200000);
 Crucible.addRecipe(<liquid:insanium>*1296, <mysticalagradditions:storage:1>, 300000);
+//molten electricium
+Crucible.addRecipe(<liquid:electricium>*16, <lightningcraft:nugget>, 1000);
+Crucible.addRecipe(<liquid:electricium>*72, <moreplates:insanium_gear>, 2222);
+Crucible.addRecipe(<liquid:electricium>*144, <lightningcraft:dust>, 6666);
+Crucible.addRecipe(<liquid:electricium>*144, <lightningcraft:ingot>, 10000);
+Crucible.addRecipe(<liquid:electricium>*144, <lightningcraft:plate:7>, 10000);
+Crucible.addRecipe(<liquid:electricium>*1296, <lightningcraft:metal_block>, 85000);

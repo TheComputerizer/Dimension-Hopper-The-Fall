@@ -121,6 +121,9 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.append("immersiveengineering:wooden_", ["decoration", "device1"]),
 	Stack.metas(<immersiveengineering:wooden_device0>, [0,2]),
 
+	//lightningcraft--------------------------------------------------------------------------------------------------------
+	Stack.metas(<lightningcraft:air_terminal>, [0,1,2,3,4,5,6,7,8,9]),
+
 	//lockyzextradimensionsmod----------------------------------------------------------------------------------------------
 	Stack.append("lockyzextradimensionsmod:alternate", ["block", "gem"]),
 	Stack.append("lockyzextradimensionsmod:interdimensional", ["block", "ingot"]),

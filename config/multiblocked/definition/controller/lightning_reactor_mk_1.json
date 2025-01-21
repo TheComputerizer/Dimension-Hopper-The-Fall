@@ -1,0 +1,289 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:lightning_reactor_mk_1",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "zollerngalaxy:chargiumblock",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "AABAA",
+        "CCDCC",
+        "EE@EE",
+        "EEDEE",
+        "EEFEE",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "A   A",
+        "C   C",
+        "E   E",
+        "E   E",
+        "EADAE",
+        " CGC ",
+        " E E ",
+        " E E ",
+        " E E ",
+        "     "
+      ],
+      [
+        "B   B",
+        "D   D",
+        "D   D",
+        "D   D",
+        "FDHDF",
+        " IHJ ",
+        "  H  ",
+        "  H  ",
+        "  M  ",
+        "  K  "
+      ],
+      [
+        "A   A",
+        "C   C",
+        "E   E",
+        "E   E",
+        "EADAE",
+        " CLC ",
+        " E E ",
+        " E E ",
+        " E E ",
+        "     "
+      ],
+      [
+        "AABAA",
+        "CCDCC",
+        "EEDEE",
+        "EEDEE",
+        "EEFEE",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "environmentaltech:structure_frame_6",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "dimensionhopper:lightning_reactor",
+        "type": "component"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "calculator:conductormast",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "lightning_in": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "zollerngalaxy:chargiumblock",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "calculator:conductormastblock",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "lightning_out": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "lightningcraft:metal_block",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "H": {
+        "states": [
+          {
+            "id": "environmentaltech:modifier_luck",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "terminal": {
+        "states": [
+          {
+            "id": "lightningcraft:air_terminal",
+            "meta": 10
+          },
+          {
+            "id": "lightningcraft:air_terminal",
+            "meta": 11
+          },
+          {
+            "id": "lightningcraft:air_terminal",
+            "meta": 12
+          },
+          {
+            "id": "lightningcraft:air_terminal",
+            "meta": 13
+          }
+        ],
+        "type": "states"
+      },
+      "fluid_in": {
+        "capability": "fluid",
+        "type": "capability",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      },
+      "item_in": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "mana_in": {
+        "capability": "bot_mana",
+        "type": "capability",
+        "io": "IN"
+      },
+      "heat_in": {
+        "capability": "mek_heat",
+        "type": "capability",
+        "io": "IN"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "lightning_out"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "item_in"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "heat_in"
+      ],
+      "J": [
+        "fluid_in"
+      ],
+      "K": [
+        "terminal"
+      ],
+      "L": [
+        "mana_in"
+      ],
+      "M": [
+        "lightning_in"
+      ]
+    }
+  }
+}

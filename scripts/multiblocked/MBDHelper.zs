@@ -43,8 +43,24 @@ function perTickFE(builder as RecipeBuilder, power as int, input as bool = true)
     return (input ? builder.perTick(true).inputFE(power) : builder.perTick(true).outputFE(power)).perTick(false);
 }
 
+function perTickFluid(builder as RecipeBuilder, liquid as ILiquidStack, input as bool = true) as RecipeBuilder {
+    return (input ? builder.perTick(true).inputFluids(liquid) : builder.perTick(true).outputFluids(liquid)).perTick(false);
+}
+
+function perTickHeat(builder as RecipeBuilder, heat as int, input as bool = true) as RecipeBuilder {
+    return (input ? builder.perTick(true).inputHeat(heat) : builder.perTick(true).outputHeat(heat)).perTick(false);
+}
+
+function perTickItem(builder as RecipeBuilder, stack as IItemStack, input as bool = true) as RecipeBuilder {
+    return (input ? builder.perTick(true).inputItems(stack) : builder.perTick(true).outputItems(stack)).perTick(false);
+}
+
 function perTickLE(builder as RecipeBuilder, power as int, input as bool = true) as RecipeBuilder {
     return (input ? builder.perTick(true).inputLE(power) : builder.perTick(true).outputLE(power)).perTick(false);
+}
+
+function perTickMana(builder as RecipeBuilder, mana as int, input as bool = true) as RecipeBuilder {
+    return (input ? builder.perTick(true).inputMana(mana) : builder.perTick(true).outputMana(mana)).perTick(false);
 }
 
 function setRecipeMap(map as RecipeMap, name as string) {

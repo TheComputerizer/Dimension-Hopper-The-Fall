@@ -151,5 +151,5 @@ recipes.addShaped("mekeliteheat", <mekanism:transmitter:6>.withTag({tier: 2}), [
 ]);
 
 recipes.addShaped("mekultimateheat", <mekanism:transmitter:6>.withTag({tier: 3}), [
-[<mekanism:atomicalloy>, <mekanism:transmitter:6>.withTag({tier: 3}), <mekanism:atomicalloy>]
+[<mekanism:atomicalloy>, <mekanism:transmitter:6>.withTag({tier: 2}), <mekanism:atomicalloy>]
 ]);

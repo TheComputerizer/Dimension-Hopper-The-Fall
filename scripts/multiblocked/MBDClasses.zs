@@ -132,6 +132,37 @@ zenClass LightningInfusion {
 	    }
     }
 }
+zenClass LightningReactor {
+    val dimension as string;
+    val duration as int;
+    val inputFE as int;
+    val inputHeat as int;
+    val inputItem as IIngredient;
+    val inputLE as int;
+    val inputLiquid as ILiquidStack;
+    val outputLE as int;
+    zenConstructor(dimension as string, duration as int, power as int, heat as int, item as IIngredient, liquid as ILiquidStack, input as int, output as int) {
+        this.dimension = dimension;
+        this.duration = duration;
+        this.inputFE = power;
+        this.inputHeat = heat;
+        this.inputItem = item;
+        this.inputLE = input;
+        this.inputLiquid = liquid;
+        this.outputLE = output;
+    }
+    function make(maps as RecipeMap[]) {
+        for i, map in maps {
+            val adjustedLE as int = (i+1)*this.outputLE;
+            MBD.wrap(map,function(builder as RecipeBuilder) as RecipeBuilder {
+                var rb as RecipeBuilder = builder.duration(this.duration).dimension(this.dimension).inputItems(this.inputItem);
+                rb = MBD.perTickHeat(MBD.perTickFE(rb, this.inputFE), this.inputHeat);
+                rb = MBD.perTickLE(MBD.perTickFluid(rb, this.inputLiquid), this.inputLE);
+                return MBD.perTickLE(rb, adjustedLE, false);
+            });
+        }
+    }
+}
 zenClass LimbonicGenerator {
     val catalyst as IIngredient;
     val inputLiquids as ILiquidStack[];

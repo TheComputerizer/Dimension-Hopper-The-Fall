@@ -436,6 +436,13 @@ lightningRPT.start()
 	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
 	.outputItems(<draconicevolution:grinder>)
 	.buildAndRegister();
+	
+lightningRPT.start()
+	.duration(300)
+	.inputLE(40000)
+	.inputItems(<zollerngalaxy:chargiumblock>, <lightningcraft:air_terminal:10>, <lightningcraft:battery:2>.withTag({StoredEnergy: 150.0}))
+	.outputItems(<dimensionhopper:lightning_reactor_mk_1>)
+	.buildAndRegister();
 
 lightningRPT.start()
 	.duration(300)
@@ -688,6 +695,13 @@ lightningRPO.start()
 	.inputLE(50000)
 	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
 	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
+	
+lightningRPO.start()
+	.duration(150)
+	.inputLE(80000)
+	.inputItems(<zollerngalaxy:chargiumblock>, <lightningcraft:air_terminal:10>, <lightningcraft:battery:2>)
+	.outputItems(<dimensionhopper:lightning_reactor_mk_1>)
 	.buildAndRegister();
 
 lightningRPO.start()
@@ -999,6 +1013,13 @@ lightningRPI.start()
 	.inputLE(250000)
 	.inputItems(<industrialforegoing:mob_slaughter_factory>, <draconicevolution:draconic_core>*2, <calculator:endforgedsword>, <calculator:reinforcedfurnace>)
 	.outputItems(<draconicevolution:grinder>)
+	.buildAndRegister();
+	
+lightningRPI.start()
+	.duration(50)
+	.inputLE(400000)
+	.inputItems(<zollerngalaxy:chargiumblock>, <lightningcraft:air_terminal:*>)
+	.outputItems(<dimensionhopper:lightning_reactor_mk_1>)
 	.buildAndRegister();
 
 lightningRPI.start()
