@@ -1,125 +1,20 @@
 #loader multiblocked
 
-import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.item.IIngredient;
-import mods.multiblocked.MBDRegistry;
-import mods.multiblocked.definition.ControllerDefinition;
-import mods.multiblocked.definition.ComponentDefinition;
 import mods.multiblocked.recipe.RecipeMap;
-import mods.multiblocked.functions.ISetupRecipe;
-import mods.multiblocked.recipe.RecipeLogic;
-import mods.multiblocked.recipe.Recipe;
+import scripts.multiblocked.MBDClasses.OilCracker as Recipe;
+import scripts.multiblocked.MBDHelper as MBD;
 
-import crafttweaker.text.ITextComponent;
+static maps as RecipeMap[] = MBD.initRecipeMaps("oil_cracker",3);
 
-val oilRPF = RecipeMap("oil_cracker_mk_1_recipes") as RecipeMap;
-RecipeMap.register(oilRPF);
+static recipes as Recipe[] = [
+	Recipe(200,  1000, 100,  <thermalfoundation:material:833>, <minecraft:coal>),		//Coal       -> Oil
+	Recipe(2000, 2000, 1000, <thermalfoundation:material:833>, <minecraft:coal_block>),	//Coal Block -> Oil
+	Recipe(100,  500,  50,   <thermalfoundation:material:833>)							//Tar        -> Oil
+] as Recipe[];
 
-val oilRPS = RecipeMap("oil_cracker_mk_2_recipes") as RecipeMap;
-RecipeMap.register(oilRPS);
-
-val oilRPT = RecipeMap("oil_cracker_mk_3_recipes") as RecipeMap;
-RecipeMap.register(oilRPT);
-
-
-oilRPF.start()
-	.duration(200)
-	.perTick(true)
-	.inputFE(1000)
-	.perTick(false)
-	.inputItems(<minecraft:coal>)
-	.outputFluids(<liquid:oil>*100)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPF.start()
-	.duration(2000)
-	.perTick(true)
-	.inputFE(2000)
-	.perTick(false)
-	.inputItems(<minecraft:coal_block>)
-	.outputFluids(<liquid:oil>*1000)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPF.start()
-	.duration(100)
-	.perTick(true)
-	.inputFE(500)
-	.perTick(false)
-	.inputItems(<thermalfoundation:material:833>)
-	.outputFluids(<liquid:oil>*50)
-	.buildAndRegister();
-
-oilRPS.start()
-	.duration(100)
-	.perTick(true)
-	.inputFE(20000)
-	.perTick(false)
-	.inputItems(<minecraft:coal>)
-	.outputFluids(<liquid:oil>*100)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPS.start()
-	.duration(1000)
-	.perTick(true)
-	.inputFE(40000)
-	.perTick(false)
-	.inputItems(<minecraft:coal_block>)
-	.outputFluids(<liquid:oil>*1000)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPS.start()
-	.duration(50)
-	.perTick(true)
-	.inputFE(10000)
-	.perTick(false)
-	.inputItems(<thermalfoundation:material:833>)
-	.outputFluids(<liquid:oil>*50)
-	.buildAndRegister();
-
-oilRPT.start()
-	.duration(20)
-	.perTick(true)
-	.inputFE(1000000)
-	.perTick(false)
-	.inputItems(<minecraft:coal>)
-	.outputFluids(<liquid:oil>*100)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPT.start()
-	.duration(200)
-	.perTick(true)
-	.inputFE(2000000)
-	.perTick(false)
-	.inputItems(<minecraft:coal_block>)
-	.outputFluids(<liquid:oil>*1000)
-	.outputItems(<thermalfoundation:material:833>)
-	.buildAndRegister();
-
-oilRPT.start()
-	.duration(10)
-	.perTick(true)
-	.inputFE(500000)
-	.perTick(false)
-	.inputItems(<thermalfoundation:material:833>)
-	.outputFluids(<liquid:oil>*50)
-	.buildAndRegister();
-
-
-var definitionF as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:oil_cracker_mk_1");
-var oil_one = definitionF as ControllerDefinition;
-oil_one.recipeMap = oilRPF;
-
-var definitionS as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:oil_cracker_mk_2");
-var oil_two = definitionS as ControllerDefinition;
-oil_two.recipeMap = oilRPS;
-
-var definitionT as ComponentDefinition = MBDRegistry.getDefinition("dimensionhopper:oil_cracker_mk_3");
-var oil_three = definitionT as ControllerDefinition;
-oil_three.recipeMap = oilRPT;
+function run() {
+	for recipe in recipes {
+		recipe.make(maps);
+	}
+	MBD.setRecipeMaps(maps,"oil_cracker");
+}
