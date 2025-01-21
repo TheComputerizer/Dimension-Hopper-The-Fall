@@ -4,26 +4,21 @@ import mods.extendedcrafting.CombinationCrafting;
 val seeds = [
 	<mysticalagradditions:dragon_egg_seeds>,
 	<mysticalagradditions:nether_star_seeds>,
-	<mysticalagradditions:awakened_draconium_seeds>
+	<mysticalagradditions:awakened_draconium_seeds>,
+	<mysticalagradditions:neutronium_seeds>
 ] as IItemStack[];
 
 val blocks = [
 	<minecraft:dragon_egg>,
 	<overloaded:nether_star_block>,
-	<draconicevolution:draconic_block>
+	<draconicevolution:draconic_block>,
+	<avaritia:block_resource>
 ] as IItemStack[];
 
 for i, seed in seeds {
 	CombinationCrafting.addRecipe(seeds[i], 1000000000, 50000000, <mysticalagradditions:insanium:1>, [blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], 
 	blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], blocks[i], <extendedcrafting:storage:4>]);
 }
-
-//neutronium
-CombinationCrafting.addRecipe(<mysticalagradditions:neutronium_seeds>, 10000000000, 500000000, <mysticalagradditions:insanium:1>, [<avaritia:block_resource>, <avaritia:block_resource>,
-	<avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, 
-	<avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, 
-	<avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, 
-	<avaritia:block_resource>, <avaritia:block_resource:1>]);
 
 val essences = [
 	<mysticalagradditions:dragon_egg_essence>,
