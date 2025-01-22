@@ -363,7 +363,6 @@ static shapelessBuilders as Holder[] = [
         <psi:material>]), //Twilight Dimensional Key
 
     //dimensionhopper-------------------------------------------------------------------------------------------------------
-
     Util.shapeless(<dimensionhopper:lightning_relocator_mk_1>, [<lightningcraft:lightning_cell>, 
         <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 1 Controller
 

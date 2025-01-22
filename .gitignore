@@ -55,6 +55,7 @@ config/jei/worldSettings.cfg
 config/SGCraft/general.yml
 config/spark/activity.json
 config/splash.properties
+config/teamreborn/configData.nbt
 CustomRecipes.cfg
 knownkeys.txt
 manifest.json
