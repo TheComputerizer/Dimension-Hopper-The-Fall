@@ -10,6 +10,14 @@ import mods.multiblocked.definition.ControllerDefinition;
 import mods.multiblocked.recipe.RecipeBuilder;
 import mods.multiblocked.recipe.RecipeMap;
 
+function basicPow(base as int, exp as int) as int {
+    var res = 1;
+    for i in 0 .. exp {
+      res*=base;
+    }
+    return res;
+}
+
 function buildName(prefix as string, stack as IItemStack, suffix as string = "") {
     var name = prefix+"."+stack.definition.id;
     if(suffix=="") {

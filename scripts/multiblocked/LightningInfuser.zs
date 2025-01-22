@@ -1382,14 +1382,6 @@ lightningRPI.start()
 	.outputItems(<extendedcrafting:storage:4>*256)
 	.buildAndRegister();
 
-function basicPow(base as int, exp as int) as int {
-    var res = 1;
-    for i in 0 .. exp {
-      res*=base;
-    }
-    return res;
-}
-
 function degradeChance(bonus as IItemStack, crystal as IItemStack) as float {
 	val data as IData = bonus.tag;
 	val degradationData as IData = data.degradationData;
@@ -1422,7 +1414,7 @@ function sieved(bonus as IItemStack, output as IItemStack, outputCount as int, f
 	for tier in 0 .. 6 {
 		val powerFactor = tier-(1);
 		val timeFactor = 100*powerFactor;
-		val count = outputCount*basicPow(2,tier-firstTier);
+		val count = outputCount*MBD.basicPow(2,tier-firstTier);
 		for j in firstIndex .. lastIndex+1 {
 			val progress = j-firstIndex;
 			val time = firstTime-timeFactor+(100*progress);

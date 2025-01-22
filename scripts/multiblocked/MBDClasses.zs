@@ -173,7 +173,7 @@ zenClass LightningRelocator {
     function make(maps as RecipeMap[]) {
         for i, map in maps {
             val efficiency as float = this.baseEfficiency+(0.15*(i as float));
-            val outputLE as int = ((this.inputLE as float)*efficiency) as int;
+            val outputLE as int = (((this.inputLE*MBD.basicPow(5,i)) as float)*efficiency) as int;
             MBD.wrap(map,function(builder as RecipeBuilder) as RecipeBuilder {
                 return builder.duration(1).inputLE(this.inputLE).outputLE(outputLE);
             });
