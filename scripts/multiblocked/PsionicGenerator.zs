@@ -15,7 +15,8 @@ static recipes as Recipe[] = [
 ] as Recipe[];
 
 function run() {
-	for i, map in maps {
-		MBD.setRecipeMap(map,"psionic_generator_mk_"+(i+1));
+	for recipe in recipes {
+		recipe.make(maps);
 	}
+	MBD.setRecipeMaps(maps,"psionic_generator");
 }

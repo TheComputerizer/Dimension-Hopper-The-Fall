@@ -146,6 +146,5 @@ function run() {
 	for singularity, block in singularityMap {
 		MBD.singularity(singularityRPS,""+singularity.metadata,200,50000000,[block, <moreplanets:black_hole_fragments>],<liquid:dark_water>*32000,singularity);
 	}
-
 	MBD.setRecipeMap(singularityRPS,"the_singularity");
 }
