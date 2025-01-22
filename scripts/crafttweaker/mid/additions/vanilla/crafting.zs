@@ -362,6 +362,20 @@ static shapelessBuilders as Holder[] = [
         <contenttweaker:twilight_key_swamp>, <contenttweaker:twilight_key_forest>, 
         <psi:material>]), //Twilight Dimensional Key
 
+    //dimensionhopper-------------------------------------------------------------------------------------------------------
+
+    Util.shapeless(<dimensionhopper:lightning_relocator_mk_1>, [<lightningcraft:lightning_cell>, 
+        <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 1 Controller
+
+    Util.shapeless(<dimensionhopper:lightning_relocator_mk_2>, [<lightningcraft:lightning_cell:1>, 
+        <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 2 Controller
+
+    Util.shapeless(<dimensionhopper:lightning_relocator_mk_3>, [<lightningcraft:lightning_cell:2>, 
+        <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 3 Controller
+
+    Util.shapeless(<dimensionhopper:lightning_relocator_mk_4>, [<lightningcraft:lightning_cell:3>, 
+        <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 4 Controller
+
     //enderio---------------------------------------------------------------------------------------------------------------
     Util.shapeless(<enderio:item_soul_vial:1>, [<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})])
         .setMarkIndex(0)

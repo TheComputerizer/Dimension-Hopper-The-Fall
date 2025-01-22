@@ -18,6 +18,10 @@ multiblocked.recipe_map.lightning_infuser_mk_3_recipes=Lightning Infuser Mk 3
 multiblocked.recipe_map.lightning_infuser_mk_4_recipes=Lightning Infuser Mk 4
 multiblocked.recipe_map.lightning_infuser_mk_5_recipes=Infinity Infuser
 multiblocked.recipe_map.lightning_reactor_mk_1_recipes=Lightning Reactor
+multiblocked.recipe_map.lightning_relocator_mk_1_recipes=Lightning Relocator Mk 1
+multiblocked.recipe_map.lightning_relocator_mk_2_recipes=Lightning Relocator Mk 2
+multiblocked.recipe_map.lightning_relocator_mk_3_recipes=Lightning Relocator Mk 3
+multiblocked.recipe_map.lightning_relocator_mk_4_recipes=Lightning Relocator Mk 4
 
 //controllers
 assembler.name=Assembler
@@ -42,6 +46,10 @@ lightning_infuser_mk_3.name=Lightning Infuser Mk 3
 lightning_infuser_mk_4.name=Lightning Infuser Mk 4
 lightning_infuser_mk_5.name=Infinity Infuser
 lightning_reactor_mk_1.name=Lightning Reactor
+lightning_relocator_mk_1.name=Lightning Relocator Mk 1
+lightning_relocator_mk_2.name=Lightning Relocator Mk 2
+lightning_relocator_mk_3.name=Lightning Relocator Mk 3
+lightning_relocator_mk_4.name=Lightning Relocator Mk 4
 
 //controller descriptions
 dimensionhopper.assembler.description=A strange assortment of technology and divinity bundled together in order to make high tier machinery that would otherwise be impossible to craft
@@ -52,6 +60,10 @@ dimensionhopper.lightning_infuser_mk_3.description=Uses massive amounts of light
 dimensionhopper.lightning_infuser_mk_4.description=Uses way too much lightning energy to combine materials quickly
 dimensionhopper.lightning_infuser_mk_5.description=Aptly named
 dimensionhopper.lightning_reactor_mk_1.description=A specialized reactor that utilizes enhanced diamonds, mana, electricium, and massive amounts of heat to effectively multiply lightning energy
+dimensionhopper.lightning_relocator_mk_1.description=A specialized cell able to very quickly extract 55% of the lightning energy from the cell above it and transfer it to the cell below
+dimensionhopper.lightning_relocator_mk_2.description=A specialized cell able to very quickly extract 70% of the lightning energy from the cell above it and transfer it to the cell below
+dimensionhopper.lightning_relocator_mk_3.description=A specialized cell able to very quickly extract 85% of the lightning energy from the cell above it and transfer it to the cell below
+dimensionhopper.lightning_relocator_mk_4.description=A specialized cell able to very quickly extract all of the lightning energy from the cell above it and transfer it to the cell below
 dimensionhopper.limbonic_generator.description=A massive structure that can generate massive amounts of power
 dimensionhopper.psionic_generator_mk_1.description=A magical structure that can automatically create magical materials
 dimensionhopper.psionic_generator_mk_2.description=A magical structure that can quickly and automatically create magical materials
@@ -90,6 +102,10 @@ tile.dimensionhopper.lightning_infuser_mk_3.name=Lightning Infuser Mk 3 Controll
 tile.dimensionhopper.lightning_infuser_mk_4.name=Lightning Infuser Mk 4 Controller
 tile.dimensionhopper.lightning_infuser_mk_5.name=Infinity Infuser Controller
 tile.dimensionhopper.lightning_reactor_mk_1.name=Lightning Reactor Controller
+tile.dimensionhopper.lightning_relocator_mk_1.name=Lightning Relocator Mk 1 Controller
+tile.dimensionhopper.lightning_relocator_mk_2.name=Lightning Relocator Mk 2 Controller
+tile.dimensionhopper.lightning_relocator_mk_3.name=Lightning Relocator Mk 3 Controller
+tile.dimensionhopper.lightning_relocator_mk_4.name=Lightning Relocator Mk 4 Controller
 
 //parts
 tile.dimensionhopper.limbonic_fluid_hatch.name=Limbonic Fluid Hatch

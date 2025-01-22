@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "location": "dimensionhopper:lightning_relocator_mk_1",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "lightningcraft:lightning_cell",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "A",
+        "@",
+        "B"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "dimensionhopper:lightning_relocator_mk_1",
+        "type": "component"
+      },
+      "le_in": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "IN"
+      },
+      "le_out": {
+        "capability": "lightningcraft_le",
+        "type": "capability",
+        "io": "OUT"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "le_out"
+      ],
+      "B": [
+        "le_in"
+      ]
+    }
+  }
+}
