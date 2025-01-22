@@ -2,6 +2,10 @@
 
 import mods.botania.ManaInfusion;
 
+//mana dust
+ManaInfusion.addInfusion(<thermalfoundation:material:1028>, <thermalfoundation:material:72>, 1000);
+ManaInfusion.addInfusion(<jaopca:block.mana>, <thermalfoundation:storage:8>, 9000);
+
 //manasteel
 ManaInfusion.removeRecipe(<botania:manaresource>);
 ManaInfusion.addInfusion(<botania:manaresource>, <naturesaura:infused_iron>, 5000);
