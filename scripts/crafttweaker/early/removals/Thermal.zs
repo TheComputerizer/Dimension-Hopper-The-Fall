@@ -31,14 +31,18 @@ static queuedRemovals as IItemStack[][int] = {
         <zollerngalaxy:zincingot>*9, // zinc ingots
         <minecraft:obsidian>*9, //obsidian
 		<minecraft:sand>*4, //sandstone
-		<twilightforest:steeleaf_ingot>*9 //sandstone
+		<twilightforest:steeleaf_ingot>*9, //sandstone
+		<bigreactors:ingotblutonium>*9, //blutonium
+		<bigreactors:ingotludicrite>*9 //ludicrite
 	] as IItemStack[],
     2: [ //factorizer split
         <avaritia:resource:4>, //avaritia resources
-        <zollerngalaxy:zincblock> //zinc block
+        <zollerngalaxy:zincblock>, //zinc block
+        <bigreactors:blockblutonium>, //blutonium block
+        <bigreactors:blockludicrite> //ludicrite block
 	] as IItemStack[],
-    2: [ //compactor gear
-		<enderio:item_alloy_ingot:8> //idk
+    3: [ //compactor gear
+		<enderio:item_alloy_ingot:8> //end steel
 	] as IItemStack[]
 };
 

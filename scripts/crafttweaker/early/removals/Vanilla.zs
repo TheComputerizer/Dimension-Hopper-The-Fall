@@ -237,7 +237,11 @@ static itemRemovals as IItemStack[] = [
 	<bedrockcraft:bedrock_breaker>,
 
 	//bigreactors-----------------------------------------------------------------------------------------------------------
+	<bigreactors:blockblutonium>,
+	<bigreactors:blockludicrite>,
 	<bigreactors:blocksteel>,
+	<bigreactors:ingotblutonium>,
+	<bigreactors:ingotludicrite>,
 
 	//biomesoplenty---------------------------------------------------------------------------------------------------------
 	<biomesoplenty:terrarium>,
