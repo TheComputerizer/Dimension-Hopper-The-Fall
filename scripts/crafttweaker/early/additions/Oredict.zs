@@ -2,6 +2,7 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 import scripts.crafttweaker.early.util.GlobalHelper as Helper;
 import scripts.crafttweaker.early.util.Globals as Global;
 
@@ -184,7 +185,7 @@ addEnchantItems("shovel",Global.shovels);
 addEnchantItems("sword",Global.swords,extraSwords);
 
 function addEnchantItems(name as string, items as IItemStack[], extraItems as IItemStack[] = []) {
-    entry as IOreDictEntry = Global.enchant[name]; 
+    val entry as IOreDictEntry = Global.enchant[name]; 
     entry.addItems(Helper.getEnchantItems(name,items));
     entry.addItems(extraItems);
 }
