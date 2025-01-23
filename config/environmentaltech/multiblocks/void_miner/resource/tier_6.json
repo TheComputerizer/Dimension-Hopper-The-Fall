@@ -481,6 +481,11 @@
       "id": "overloaded:compressed_obsidian:10"
     },
     {
+      "target": "pink",
+      "weight": 10,
+      "id": "gaiadimension:gaia_cobblestone"
+    },
+    {
       "target": "cyan",
       "weight": 10,
       "id": "lightningcraft:under_sand"

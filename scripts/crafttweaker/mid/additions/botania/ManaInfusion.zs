@@ -50,4 +50,7 @@ ManaInfusion.addAlchemy(<minecraft:deadbush>, <ore:fernPlant>, 1000);
 
 //oredict bush
 ManaInfusion.addAlchemy(<minecraft:tallgrass:1>, <ore:bushPlant>, 1000); 
-ManaInfusion.addInfusion(<botania:grassseeds:1>, <ore:bushPlant>, 5000); 
+ManaInfusion.addInfusion(<botania:grassseeds:1>, <ore:bushPlant>, 5000);
+
+//precious emerald
+ManaInfusion.addInfusion(<randomthings:ingredient:9>, <actuallyadditions:item_crystal_empowered:4>, 10000);

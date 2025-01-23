@@ -84,3 +84,93 @@ Agglomeration.addRecipe(<rftools:invchecker_block>, [
     <randomthings:inventoryrerouter>, <actuallyadditions:block_crystal_empowered>, <appliedenergistics2:fluix_slab>,
     <minecraft:stone>, <minecraft:redstone_block>, <appliedenergistics2:quartz_slab>
 );
+
+//hematite ore
+Agglomeration.addRecipe(<gaiadimension:hematite_ore>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:1>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//red opal ore
+Agglomeration.addRecipe(<gaiadimension:opal_ore_red>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:59>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//blue opal ore
+Agglomeration.addRecipe(<gaiadimension:opal_ore_blue>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:24>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//green opal ore
+Agglomeration.addRecipe(<gaiadimension:opal_ore_green>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:28>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//white opal ore
+Agglomeration.addRecipe(<gaiadimension:opal_ore_white>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:77>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//labradorite ore
+Agglomeration.addRecipe(<gaiadimension:labradorite_ore>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:11>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//cinnabar ore
+Agglomeration.addRecipe(<gaiadimension:cinnabar_ore>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:3>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//moonstone ore
+Agglomeration.addRecipe(<gaiadimension:moonstone_ore>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:10>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);
+
+//pyrite ore
+Agglomeration.addRecipe(<gaiadimension:pyrite_ore>*64, [
+        <botania:manaresource:14>,
+        <xreliquary:destruction_catalyst>,
+        <botany:ceramic:63>*8
+    ], 2000000, 0xFFFFFF, 0x000000,
+    <botania:conjurationcatalyst>, <gaiadimension:pink_sludge_block>, <gaiadimension:precious_rock>,
+    <botania:livingrock>, <gaiadimension:impure_sludge>, <gaiadimension:gaia_cobblestone>
+);

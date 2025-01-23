@@ -19,6 +19,7 @@ static recipeMap as double[IIngredient][IItemStack] = {
     <ceramics:porcelain>:{<ceramics:clay_soft>:0.1}, //white porcelain
     <ceramics:unfired_clay:5>:{<ceramics:unfired_clay:4>:0.1}, //porcelain brick
 	<erebus:erebus_food:16>:{<erebus:materials:62>:0.1}, //cooked titan stew
+    <gaiadimension:gaia_stone>:{<gaiadimension:gaia_cobblestone>:0.1}, //gaia stone
 	<midnight:cook_hunter_wing>:{<midnight:hunter_wing>:0.1}, //hunter wing
 	<midnight:cook_stag_flank>:{<midnight:raw_stag_flank>:0.1}, //stag flank
 	<midnight:cook_stinger_egg>:{<midnight:stinger_egg>:0.1}, //stinger egg
@@ -100,6 +101,7 @@ static recipeMap as double[IIngredient][IItemStack] = {
     <mist:sand>:{<mist:sand:1>:1.0}, //dry sand
     <appliedenergistics2:material:5>:{<galacticraftcore:basic_block_core:8>:2.0}, //silicon
     <cavern:cave_item:1>:{<cavern:cave_block:2>:2.0}, //magnite ingot
+	<gaiadimension:impure_sludge>:{<thebetweenlands:sludge_jello>:2.0}, //sludge jello
     <blue_skies:ventium_ingot>:{<blue_skies:ventium_ore>:2.2}, //ventium ingot
     <appliedenergistics2:material:5>:{<galacticraftplanets:venus:10>:2.5}, //silicon
     <midnight:nagrilite_ingot>:{<midnight:nagrilite_ore>:2.5}, //nagrilite ingot
