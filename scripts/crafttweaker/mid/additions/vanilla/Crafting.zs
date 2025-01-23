@@ -3,7 +3,61 @@
 import crafttweaker.data.IData;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 import scripts.crafttweaker.early.util.Tables as Util;
+
+static shapedBuilderArrays as Holder[][] = [
+    //darkutils-------------------------------------------------------------------------------------------------------------
+    Util.makeRings(<sonarcore:stablestoneblackrimmed_plain>, Stack.getMetaValuesMap(<darkutils:trap_tile>.definition, [
+        <minecraft:spider_eye>,
+        <minecraft:fermented_spider_eye>,
+        <minecraft:potion>.withTag({Potion: "minecraft:strong_harming"}),
+        <minecraft:potion>.withTag({Potion: "minecraft:long_slowness"}),
+        <minecraft:flint_and_steel>,
+        <minecraft:skull:1>,
+        <scalinghealth:heartcontainer>,
+        <actuallyadditions:item_player_probe>
+    ])) //traps
+];
+
+static shapelessBuilderArrays as Holder[][] = [
+    //dimhoppertweaks-------------------------------------------------------------------------------------------------------
+    Util.prestigeToken(1, <minecraft:nether_star>),                      //Prestige Token 2  (chapter 1)
+    Util.prestigeToken(2, <labyrinth:daedalus>),                         //Prestige Token 3  (chapter 2)
+    Util.prestigeToken(3, <blue_skies:ventium_ingot>),                   //Prestige Token 4  (chapter 2)
+    Util.prestigeToken(4, <actuallyadditions:block_leaf_generator>),     //Prestige Token 5  (chapter 2)
+    Util.prestigeToken(5, <minecraft:emerald>),                          //Prestige Token 6  (chapter 3)
+    Util.prestigeTokens(6,[ 
+        <contenttweaker:crazy_zombie_essence>, 
+        <contenttweaker:crazy_spider_essence>, 
+        <contenttweaker:crazy_skeleton_essence>, 
+        <contenttweaker:crazy_creeper_essence>
+    ]),                                                             //Prestige Token 7  (chapter 3)
+    Util.prestigeToken(7, <actuallyadditions:item_crystal_empowered:4>), //Prestige Token 8  (chapter 4)
+    Util.prestigeToken(8, <thermalfoundation:storage:3>),                //Prestige Token 9  (chapter 4)
+    Util.prestigeToken(9, <jaopca:dust.life_crystal>),                   //Prestige Token 10 (chapter 4)
+    Util.prestigeToken(10,<thebetweenlands:mummy_bait>),                 //Prestige Token 11 (chapter 4)
+    Util.prestigeToken(11,<contenttweaker:rocket_block_1>),              //Prestige Token 12 (chapter 5)
+    Util.prestigeToken(12,<galacticraftcore:item_basic_moon:2>),         //Prestige Token 13 (chapter 5)
+    Util.prestigeToken(13,<contenttweaker:rocket_block_2>),              //Prestige Token 14 (chapter 5)
+    Util.prestigeToken(14,<contenttweaker:rocket_block_3>),              //Prestige Token 15 (chapter 5)
+    Util.prestigeToken(15,<aoa3:blank_realmstone>),                      //Prestige Token 16 (chapter 6)
+    Util.prestigeToken(16,<aoa3:darkly_powder>),                         //Prestige Token 17 (chapter 6)
+    Util.prestigeToken(17,<aoa3:lyon_ingot>),                            //Prestige Token 18 (chapter 6)
+    Util.prestigeToken(18,<aoa3:shyregem>),                              //Prestige Token 19 (chapter 6)
+    Util.prestigeToken(19,<aoa3:progress_coin4>),                        //Prestige Token 20 (chapter 6)
+    Util.prestigeToken(20,<contenttweaker:rocket_block_4>),              //Prestige Token 21 (chapter 7)
+    Util.prestigeToken(21,<contenttweaker:rocket_block_5>),              //Prestige Token 22 (chapter 7)
+    Util.prestigeToken(22,<contenttweaker:rocket_block_6>),              //Prestige Token 23 (chapter 7)
+    Util.prestigeToken(23,<contenttweaker:rocket_block_7>),              //Prestige Token 24 (chapter 7)
+    Util.prestigeToken(24,<lightningcraft:metal_block:2>),               //Prestige Token 25 (chapter 8)
+    Util.prestigeToken(25,<draconicevolution:draconium_block>),          //Prestige Token 26 (chapter 8)
+    Util.prestigeToken(26,<draconicevolution:awakened_core>),            //Prestige Token 27 (chapter 8)
+    Util.prestigeToken(27,<contenttweaker:rocket_block_10>),             //Prestige Token 28 (chapter 9)
+    Util.prestigeToken(28,<projecte:item.pe_klein_star:5>),              //Prestige Token 29 (chapter 9)
+    Util.prestigeToken(29,<projectex:matter:11>),                        //Prestige Token 30 (chapter 9)
+    Util.prestigeToken(30,<minecraft:bedrock>)                           //Prestige Token 31 (chapter 9)
+];
 
 static shapedBuilders as Holder[] = [
     //actuallyadditions-----------------------------------------------------------------------------------------------------
@@ -101,6 +155,13 @@ static shapedBuilders as Holder[] = [
         <tconstruct:clear_stained_glass:15>,
         <thermalfoundation:material:32>
     ]), //Oven
+
+    //darkutils-------------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<darkutils:update_detector>, { 
+        <overloaded:compressed_stone>:[0,2,6,8], 
+        <darkutils:timer>:[1,3,5,7], 
+        <minecraft:observer>:[4]
+    }), //Block Update Detector
 
     //dimdoors--------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<dimdoors:fabric:15>, { <dimdoors:unravelled_fabric>:[0,1,2,3] }, 2, 2), //Fabric of Reality
@@ -362,6 +423,10 @@ static shapelessBuilders as Holder[] = [
         <contenttweaker:twilight_key_swamp>, <contenttweaker:twilight_key_forest>, 
         <psi:material>]), //Twilight Dimensional Key
 
+    //dimhoppertweaks-------------------------------------------------------------------------------------------------------
+    Util.shapelessNamed("prestige token 1", <dimhoppertweaks:prestige_token>.withTag({prestigeLevel: 1}), 
+        [ <minecraft:paper>, <thermalfoundation:storage> ]), //Prestige Token 1
+
     //dimensionhopper-------------------------------------------------------------------------------------------------------
     Util.shapeless(<dimensionhopper:lightning_relocator_mk_1>, [<lightningcraft:lightning_cell>, 
         <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 1 Controller
@@ -447,13 +512,31 @@ static shapelessBuilders as Holder[] = [
     //----------------------------------------------------------------------------------------------------------------------
 ] as Holder[];
 
+function addShaped(holder as Holder) {
+    recipes.addShaped(holder.getName("crafting."), holder.getOutput(), holder.getShaped(),
+        holder.getFunction(), holder.getAction());
+}
+
+function addShapeless(holder as Holder) {
+    recipes.addShapeless(holder.getName("crafting."), holder.getOutput(), holder.getShapeless(),
+        holder.getFunction(), holder.getAction());
+}
+
 function run() {
     for holder in shapedBuilders {
-        recipes.addShaped(holder.getName("crafting."), holder.getOutput(),
-            holder.getShaped(), holder.getFunction(), holder.getAction());
+        addShaped(holder);
+    }
+    for holders in shapedBuilderArrays {
+        for holder in holders {
+            addShaped(holder);
+        }
     }
     for holder in shapelessBuilders {
-        recipes.addShapeless(holder.getName("crafting."), holder.getOutput(),
-            holder.getShapeless(), holder.getFunction(), holder.getAction());
+        addShapeless(holder);
+    }
+    for holders in shapelessBuilderArrays {
+        for holder in holders {
+            addShapeless(holder);
+        }
     }
 }

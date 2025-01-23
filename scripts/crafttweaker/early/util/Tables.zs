@@ -48,33 +48,6 @@ function aoarune(output as IItemStack, top as IIngredient) as Holder {
     return simpleShaped(output,"u",[<aoa3:ancient_rock>,top,<aoa3:unpowered_rune>]);
 }
 
-function table(output as IItemStack, inputs as IIngredient[], hammerDur as int) as Holder {
-    var realInputs as IIngredient[] = [<artisanworktables:worktable:5>];
-    for input in inputs {
-        realInputs+=input;
-    }
-    realInputs+=null;
-    return simpleShaped(output,"table",realInputs).addTools({<ore:artisansHammer>:hammerDur});
-}
-
-function upgrade(output as IItemStack, inputs as IIngredient[]) as Holder {
-    var realInputs as IIngredient[] = [<moreplates:dark_steel_plate>];
-    for input in inputs {
-        realInputs+=input;
-    }
-    return bigShaped(output,"ringplus",realInputs)
-        .addTools({<ore:artisansHammer>:250,<ore:artisansGrimoire>:250,<ore:artisansSolderer>:250})
-        .addFluids([<liquid:latex>*16000]);
-}
-
-function getArmorCore(tier as int) as IIngredient {
-    var actualTier as int = tier;
-    if(actualTier>4){
-        actualTier-=1;
-    }
-    return itemUtils.getItem("contenttweaker:armor_core_"+actualTier);
-}
-
 function armor(output as IItemStack, type as string, material as IIngredient, coreTier as int) as Holder {
     var ret as Holder;
     if(coreTier<6) {
@@ -85,32 +58,12 @@ function armor(output as IItemStack, type as string, material as IIngredient, co
     }
 }
 
-function tieredArmorSet(regBase as string, material as IIngredient, coreTier as int, names as string[] = ["helmet", "chestplate", "leggings", "boots"], meta as int = 0, extra as string = "") as Holder[] {
-    val pieces as IItemStack[] = Stack.append(regBase,names,meta,extra);
-    return [
-        armor(pieces[0],"helmet",material,coreTier),
-        armor(pieces[1],"chestplate",material,coreTier),
-        armor(pieces[2],"leggings",material,coreTier),
-        armor(pieces[3],"boots",material,coreTier),
-    ] as Holder[];
+function bigMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
+    return mappedShaped(output,Shaper.simple5x5(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
 }
 
-function dust(ore as IIngredient, meta as int, durability as int) as Holder {
-    return singleton(ore,<thermalfoundation:material>.definition.makeStack(meta),<ore:artisansHammer>,durability);
-}
-
-function plate(material as IIngredient, plate as IItemStack, durability as int) as Holder {
-    return shapeless(plate,[material,material,material]).addTools({<ore:artisansHammer>:durability});
-}
-
-function singleton(input as IIngredient, output as IItemStack, tool as IIngredient, durability as int) as Holder {
-    return shapeless(output,[input]).addTools({tool as IIngredient:durability});
-}
-
-function schematicDuper(schematic as IItemStack, fluid as ILiquidStack, tier as int) as Holder {
-    return simpleShaped(schematic, "line", [schematic as IIngredient, <multiblocked:multiblock_builder>])
-        .addTools({<ore:artisansPencil>:111*tier,<ore:artisansCutters>:111*tier,<ore:artisansFramingHammer>:111*tier})
-        .addFluids([fluid*720]);
+function bigShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
+    return mappedShaped(output,Shaper.simple5x5(type,inputs));
 }
 
 function compress(uncompressed as IItemStack, compressed as IItemStack, lavamb as int, hammerDur as int) as Holder {
@@ -127,25 +80,98 @@ function compressed(uncompressed as IItemStack, compressed as IItemStack, baseLa
     return holders;
 }
 
+function customShaped(output as IItemStack, inputs as IIngredient[], inputMap as int[][]) as Holder {
+    return mappedShaped(output,Shaper.mapGrid(inputs,inputMap));
+}
+
 function device(meta as int, top as IIngredient, side as IIngredient, bottom as IIngredient) as Holder {
     val output as IItemStack = <thermalexpansion:device>.definition.makeStack(meta);
     return simpleShaped(output, "spatial", [<thermalexpansion:frame:64>, top, side, side, bottom, <ore:blockConstructionAlloy>]);
 }
 
-function bigShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
-    return mappedShaped(output,Shaper.simple5x5(type,inputs));
+function dust(ore as IIngredient, meta as int, durability as int) as Holder {
+    return singleton(ore,<thermalfoundation:material>.definition.makeStack(meta),<ore:artisansHammer>,durability);
 }
 
-function bigMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
-    return mappedShaped(output,Shaper.simple5x5(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
+function dynamicShaped(output as IItemStack, inputs as int[][IIngredient], width as int = 3, height as int = 3) as Holder {
+    return mappedShaped(output,Shaper.mapDynamicGrid(inputs,width,height));
+}
+
+function getArmorCore(tier as int) as IIngredient {
+    var actualTier as int = tier;
+    if(actualTier>4){
+        actualTier-=1;
+    }
+    return itemUtils.getItem("contenttweaker:armor_core_"+actualTier);
+}
+
+function makeRecipeName(type as string, output as IItemStack) as string {
+    return type+"."+output.definition.id.replaceAll(":",".")+"."+output.metadata;
+}
+
+//Different ingredients in the center surrounded by the same ingredient
+function makeRings(outer as IIngredient, map as IItemStack[IIngredient]) as Holder[] {
+    var holders as Holder[] = [] as Holder[];
+    for input, output in map {
+        holders+=dynamicShaped(output, { (input as IIngredient):[4], (outer as IIngredient):[0,1,2,3,5,6,7,8] });
+    }
+    return holders;
+}
+
+function mappedShaped(output as IItemStack, inputs as IIngredient[][]) as Holder {
+    return Holder(makeRecipeName("shaped",output),output).addShaped(inputs);
+}
+
+function namedShapeless(name as string, output as IItemStack, inputs as IIngredient[]) as Holder {
+    return Holder(makeRecipeName("shapeless."+name,output),output).addShapeless(inputs);
+}
+
+function plate(material as IIngredient, plate as IItemStack, durability as int) as Holder {
+    return shapeless(plate,[material,material,material]).addTools({<ore:artisansHammer>:durability});
+}
+
+function prestigeToken(level as int, input as IIngredient) as Holder[] {
+    return prestigeTokens(level,[input]);
+}
+
+function prestigeTokens(level as int, inputs as IIngredient[]) as Holder[] {
+    val token as IItemStack = <dimhoppertweaks:prestige_token>;
+    var holders as Holder[] = [] as Holder[];
+    for i, input in inputs {
+        val name as string = "prestige token"+(i==0 ? " "+(level+1) : " "+(level+1)+"_"+i);
+        holders+=shapelessNamed(name, token.withTag({prestigeLevel: level+1}), [ token.withTag({prestigeLevel: level}), input ]);
+    }
+    return holders;
+}
+
+function rotatedShaped(output as IItemStack, type as string, rotations as int, inputs as IIngredient[]) as Holder {
+    return mappedShaped(output,Shaper.rotated3x3(type,rotations,inputs));
+}
+
+function schematicDuper(schematic as IItemStack, fluid as ILiquidStack, tier as int) as Holder {
+    return simpleShaped(schematic, "line", [schematic as IIngredient, <multiblocked:multiblock_builder>])
+        .addTools({<ore:artisansPencil>:111*tier,<ore:artisansCutters>:111*tier,<ore:artisansFramingHammer>:111*tier})
+        .addFluids([fluid*720]);
+}
+
+function shapeless(output as IItemStack, inputs as IIngredient[]) as Holder {
+    return shapelessNamed(makeRecipeName("shapeless",output),output,inputs);
+}
+
+function shapelessNamed(name as string, output as IItemStack, inputs as IIngredient[]) as Holder {
+    return Holder(name,output).addShapeless(inputs);
+}
+
+function simpleMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
+    return mappedShaped(output,Shaper.simple3x3(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
 }
 
 function simpleShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.simple3x3(type,inputs));
 }
 
-function simpleMetaShaped(output as IItemStack, type as string, itemMetas as int[][IItemStack], extras as IIngredient[] = [] as IIngredient[]) as Holder {
-    return mappedShaped(output,Shaper.simple3x3(type,Stack.withExtras(Stack.mappedMetas(itemMetas),extras)));
+function singleton(input as IIngredient, output as IItemStack, tool as IIngredient, durability as int) as Holder {
+    return shapeless(output,[input]).addTools({tool as IIngredient:durability});
 }
 
 function smallShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
@@ -156,30 +182,31 @@ function stick(output as IItemStack, input as IIngredient) as Holder {
     return Holder(makeRecipeName("stick",output),output).addShaped([[input],[input]]);
 }
 
-function rotatedShaped(output as IItemStack, type as string, rotations as int, inputs as IIngredient[]) as Holder {
-    return mappedShaped(output,Shaper.rotated3x3(type,rotations,inputs));
+function table(output as IItemStack, inputs as IIngredient[], hammerDur as int) as Holder {
+    var realInputs as IIngredient[] = [<artisanworktables:worktable:5>];
+    for input in inputs {
+        realInputs+=input;
+    }
+    realInputs+=null;
+    return simpleShaped(output,"table",realInputs).addTools({<ore:artisansHammer>:hammerDur});
 }
 
-function customShaped(output as IItemStack, inputs as IIngredient[], inputMap as int[][]) as Holder {
-    return mappedShaped(output,Shaper.mapGrid(inputs,inputMap));
+function tieredArmorSet(regBase as string, material as IIngredient, coreTier as int, names as string[] = ["helmet", "chestplate", "leggings", "boots"], meta as int = 0, extra as string = "") as Holder[] {
+    val pieces as IItemStack[] = Stack.append(regBase,names,meta,extra);
+    return [
+        armor(pieces[0],"helmet",material,coreTier),
+        armor(pieces[1],"chestplate",material,coreTier),
+        armor(pieces[2],"leggings",material,coreTier),
+        armor(pieces[3],"boots",material,coreTier),
+    ] as Holder[];
 }
 
-function dynamicShaped(output as IItemStack, inputs as int[][IIngredient], width as int = 3, height as int = 3) as Holder {
-    return mappedShaped(output,Shaper.mapDynamicGrid(inputs,width,height));
-}
-
-function mappedShaped(output as IItemStack, inputs as IIngredient[][]) as Holder {
-    return Holder(makeRecipeName("shaped",output),output).addShaped(inputs);
-}
-
-function shapeless(output as IItemStack, inputs as IIngredient[]) as Holder {
-    return Holder(makeRecipeName("shapeless",output),output).addShapeless(inputs);
-}
-
-function namedShapeless(name as string, output as IItemStack, inputs as IIngredient[]) as Holder {
-    return Holder(makeRecipeName("shapeless."+name,output),output).addShapeless(inputs);
-}
-
-function makeRecipeName(type as string, output as IItemStack) as string {
-    return type+"."+output.definition.id.replaceAll(":",".")+"."+output.metadata;
+function upgrade(output as IItemStack, inputs as IIngredient[]) as Holder {
+    var realInputs as IIngredient[] = [<moreplates:dark_steel_plate>];
+    for input in inputs {
+        realInputs+=input;
+    }
+    return bigShaped(output,"ringplus",realInputs)
+        .addTools({<ore:artisansHammer>:250,<ore:artisansGrimoire>:250,<ore:artisansSolderer>:250})
+        .addFluids([<liquid:latex>*16000]);
 }
