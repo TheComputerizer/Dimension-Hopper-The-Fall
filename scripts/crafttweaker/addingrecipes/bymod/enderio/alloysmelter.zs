@@ -72,7 +72,7 @@ AlloySmelter.addRecipe(<enderio:item_alloy_ingot>, [<thermalfoundation:material:
 AlloySmelter.addRecipe(<thermalfoundation:material:161>, [<enderio:item_alloy_ingot>, <goodnightsleep:positite_gem>], 10000, 5.0);
 
 //speckled rock
-AlloySmelter.addRecipe(<gaiadimension:speckled_rock>, [<gaiadimension:gaia_stone>, <randomthings:spectreanchor>], 5000, 1.0);
+AlloySmelter.addRecipe(<gaiadimension:speckled_rock>, [<gaiadimension:gaia_stone>, <randomthings:spectreanchor>, <extrabees:misc:3>], 5000, 1.0);
 
 //coarse rock
 AlloySmelter.addRecipe(<gaiadimension:coarse_rock>, [<gaiadimension:speckled_rock>, <thebetweenlands:coarse_swamp_dirt>, <mist:rocks>], 7500, 2.5);
