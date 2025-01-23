@@ -5,6 +5,31 @@ import crafttweaker.item.IItemStack;
 import scripts.crafttweaker.early.util.GlobalHelper as Helper;
 import scripts.crafttweaker.early.util.Globals as Global;
 
+static extraAxes as IItemStack[] = [
+    <enderio:item_capacitor_totemic>
+];
+
+static extraChestplates as IItemStack[] = [
+    <botania:terrasteelchest>
+];
+
+static extraHelmets as IItemStack[] = [
+    <actuallyadditions:item_helm_crystal_blue>,
+    <actuallyadditions:item_helm_crystal_red>,
+    <actuallyadditions:item_helm_crystal_white>,
+    <botania:terrasteelhelm>,
+    <botania:terrasteelhelmreveal>,
+    <draconicevolution:draconic_helm>
+];
+
+static extraLegs as IItemStack[] = [
+    <extraplanets:tier1_space_suit_legings:*>
+];
+
+static extraSwords as IItemStack[] = [
+    <xreliquary:magicbane>
+];
+
 //generic
 oreDict.aoaAll.addItems(Global.aoaAll);
 
@@ -146,18 +171,20 @@ oreDict.waterPlant.addItems([
 ]);
 
 //enchantables
-addEnchantItems("axe",Global.axes);
+addEnchantItems("axe",Global.axes,extraAxes);
 addEnchantItems("boots",Global.boots);
 addEnchantItems("bow",Global.bows);
-addEnchantItems("chest",Global.chestplates);
+addEnchantItems("chest",Global.chestplates,extraChestplates);
 addEnchantItems("fishing",Global.fishingrods);
-addEnchantItems("helm",Global.helmets);
+addEnchantItems("helm",Global.helmets,extraHelmets);
 addEnchantItems("hoe",Global.hoes);
-addEnchantItems("legs",Global.leggings);
+addEnchantItems("legs",Global.leggings,extraLegs);
 addEnchantItems("shears",Global.shears);
 addEnchantItems("shovel",Global.shovels);
-addEnchantItems("sword",Global.swords);
+addEnchantItems("sword",Global.swords,extraSwords);
 
-function addEnchantItems(name as string, items as IItemStack[]) {
-    Global.enchant[name].addItems(Helper.getEnchantItems(name,items));
+function addEnchantItems(name as string, items as IItemStack[], extraItems as IItemStack[] = []) {
+    entry as IOreDictEntry = Global.enchant[name]; 
+    entry.addItems(Helper.getEnchantItems(name,items));
+    entry.addItems(extraItems);
 }

@@ -21,7 +21,7 @@
       }
     ],
     "blacklist": [
-    
+      {"item": "xreliquary:magicbane"}
     ],
     "qualities": [
       {
