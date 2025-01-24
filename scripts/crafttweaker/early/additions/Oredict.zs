@@ -115,6 +115,11 @@ oreDict.lightningStorage.addItems([
     <lightningcraft:lightning_cell:3>
 ]);
 
+oreDict.mistyStone.addItems([
+    <mist:stone>,
+    <mist:stone_porous>
+]);
+
 oreDict.vaguelyGrass.addItems([
     <aether:tall_aether_grass:*>,
     <aoa3:blue_candy_grass>,

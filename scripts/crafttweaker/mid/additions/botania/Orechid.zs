@@ -6,7 +6,8 @@ import mods.botania.OrechidIgnem;
 
 static normalAdditions as int[IOreDictEntry] = {
     <ore:stone>: 100,
-    <ore:overgrownStone>: 100
+    <ore:overgrownStone>: 100,
+    <ore:mistyStone>: 10
 } as int[IOreDictEntry];
 
 static ignemAdditions as int[IOreDictEntry] = {
