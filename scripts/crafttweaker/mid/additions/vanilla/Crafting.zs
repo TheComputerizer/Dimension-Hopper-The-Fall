@@ -18,6 +18,8 @@ static shapedBuilderArrays as Holder[][] = [
         <scalinghealth:heartcontainer>,
         <actuallyadditions:item_player_probe>
     ])) //traps
+
+    //----------------------------------------------------------------------------------------------------------------------
 ];
 
 static shapelessBuilderArrays as Holder[][] = [
@@ -27,36 +29,38 @@ static shapelessBuilderArrays as Holder[][] = [
     Util.prestigeToken(3, <blue_skies:ventium_ingot>),                   //Prestige Token 4  (chapter 2)
     Util.prestigeToken(4, <actuallyadditions:block_leaf_generator>),     //Prestige Token 5  (chapter 2)
     Util.prestigeToken(5, <minecraft:emerald>),                          //Prestige Token 6  (chapter 3)
-    Util.prestigeTokens(6,[ 
+    Util.prestigeTokens(6, [ 
         <contenttweaker:crazy_zombie_essence>, 
         <contenttweaker:crazy_spider_essence>, 
         <contenttweaker:crazy_skeleton_essence>, 
         <contenttweaker:crazy_creeper_essence>
-    ]),                                                             //Prestige Token 7  (chapter 3)
+    ]),                                                                  //Prestige Token 7  (chapter 3)
     Util.prestigeToken(7, <actuallyadditions:item_crystal_empowered:4>), //Prestige Token 8  (chapter 4)
     Util.prestigeToken(8, <thermalfoundation:storage:3>),                //Prestige Token 9  (chapter 4)
     Util.prestigeToken(9, <jaopca:dust.life_crystal>),                   //Prestige Token 10 (chapter 4)
-    Util.prestigeToken(10,<thebetweenlands:mummy_bait>),                 //Prestige Token 11 (chapter 4)
-    Util.prestigeToken(11,<contenttweaker:rocket_block_1>),              //Prestige Token 12 (chapter 5)
-    Util.prestigeToken(12,<galacticraftcore:item_basic_moon:2>),         //Prestige Token 13 (chapter 5)
-    Util.prestigeToken(13,<contenttweaker:rocket_block_2>),              //Prestige Token 14 (chapter 5)
-    Util.prestigeToken(14,<contenttweaker:rocket_block_3>),              //Prestige Token 15 (chapter 5)
-    Util.prestigeToken(15,<aoa3:blank_realmstone>),                      //Prestige Token 16 (chapter 6)
-    Util.prestigeToken(16,<aoa3:darkly_powder>),                         //Prestige Token 17 (chapter 6)
-    Util.prestigeToken(17,<aoa3:lyon_ingot>),                            //Prestige Token 18 (chapter 6)
-    Util.prestigeToken(18,<aoa3:shyregem>),                              //Prestige Token 19 (chapter 6)
-    Util.prestigeToken(19,<aoa3:progress_coin4>),                        //Prestige Token 20 (chapter 6)
-    Util.prestigeToken(20,<contenttweaker:rocket_block_4>),              //Prestige Token 21 (chapter 7)
-    Util.prestigeToken(21,<contenttweaker:rocket_block_5>),              //Prestige Token 22 (chapter 7)
-    Util.prestigeToken(22,<contenttweaker:rocket_block_6>),              //Prestige Token 23 (chapter 7)
-    Util.prestigeToken(23,<contenttweaker:rocket_block_7>),              //Prestige Token 24 (chapter 7)
-    Util.prestigeToken(24,<lightningcraft:metal_block:2>),               //Prestige Token 25 (chapter 8)
-    Util.prestigeToken(25,<draconicevolution:draconium_block>),          //Prestige Token 26 (chapter 8)
-    Util.prestigeToken(26,<draconicevolution:awakened_core>),            //Prestige Token 27 (chapter 8)
-    Util.prestigeToken(27,<contenttweaker:rocket_block_10>),             //Prestige Token 28 (chapter 9)
-    Util.prestigeToken(28,<projecte:item.pe_klein_star:5>),              //Prestige Token 29 (chapter 9)
-    Util.prestigeToken(29,<projectex:matter:11>),                        //Prestige Token 30 (chapter 9)
-    Util.prestigeToken(30,<minecraft:bedrock>)                           //Prestige Token 31 (chapter 9)
+    Util.prestigeToken(10, <thebetweenlands:mummy_bait>),                //Prestige Token 11 (chapter 4)
+    Util.prestigeToken(11, <contenttweaker:rocket_block_1>),             //Prestige Token 12 (chapter 5)
+    Util.prestigeToken(12, <galacticraftcore:item_basic_moon:2>),        //Prestige Token 13 (chapter 5)
+    Util.prestigeToken(13, <contenttweaker:rocket_block_2>),             //Prestige Token 14 (chapter 5)
+    Util.prestigeToken(14, <contenttweaker:rocket_block_3>),             //Prestige Token 15 (chapter 5)
+    Util.prestigeToken(15, <aoa3:blank_realmstone>),                     //Prestige Token 16 (chapter 6)
+    Util.prestigeToken(16, <aoa3:darkly_powder>),                        //Prestige Token 17 (chapter 6)
+    Util.prestigeToken(17, <aoa3:lyon_ingot>),                           //Prestige Token 18 (chapter 6)
+    Util.prestigeToken(18, <aoa3:shyregem>),                             //Prestige Token 19 (chapter 6)
+    Util.prestigeToken(19, <aoa3:progress_coin4>),                       //Prestige Token 20 (chapter 6)
+    Util.prestigeToken(20, <contenttweaker:rocket_block_4>),             //Prestige Token 21 (chapter 7)
+    Util.prestigeToken(21, <contenttweaker:rocket_block_5>),             //Prestige Token 22 (chapter 7)
+    Util.prestigeToken(22, <contenttweaker:rocket_block_6>),             //Prestige Token 23 (chapter 7)
+    Util.prestigeToken(23, <contenttweaker:rocket_block_7>),             //Prestige Token 24 (chapter 7)
+    Util.prestigeToken(24, <lightningcraft:metal_block:2>),              //Prestige Token 25 (chapter 8)
+    Util.prestigeToken(25, <draconicevolution:draconium_block>),         //Prestige Token 26 (chapter 8)
+    Util.prestigeToken(26, <draconicevolution:awakened_core>),           //Prestige Token 27 (chapter 8)
+    Util.prestigeToken(27, <contenttweaker:rocket_block_10>),            //Prestige Token 28 (chapter 9)
+    Util.prestigeToken(28, <projecte:item.pe_klein_star:5>),             //Prestige Token 29 (chapter 9)
+    Util.prestigeToken(29, <projectex:matter:11>),                       //Prestige Token 30 (chapter 9)
+    Util.prestigeToken(30, <minecraft:bedrock>)                          //Prestige Token 31 (chapter 9)
+
+    //----------------------------------------------------------------------------------------------------------------------
 ];
 
 static shapedBuilders as Holder[] = [
@@ -172,6 +176,89 @@ static shapedBuilders as Holder[] = [
     Util.dynamicShaped(<dimdoors:rift_signature>, { <minecraft:iron_ingot>:[0,2,6,8], 
         <dimdoors:stable_fabric>:[4] }), //Rift Signature
 
+    //enderio--------------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<enderio:item_material:73>, {
+        <enderio:item_alloy_nugget:6>:[0,2,6,8],
+        <enderio:item_alloy_ingot:6>:[1,3,5,7],
+        <enderio:item_material:13>:[4]
+    }), //Dark Bimetal Gear
+
+    Util.dynamicShaped(<enderio:item_material:66>, {
+        <moreplates:end_steel_plate>:[0,2,6,8],
+        <enderio:block_end_iron_bars>:[1,3,5,7],
+        <enderio:block_infinity>:[4]
+    }), //End Steel Chasis
+
+    Util.dynamicShaped(<enderio:item_material:12>, {
+        <enderio:item_alloy_nugget:1>:[0,2,6,8],
+        <enderio:item_alloy_ingot:1>:[1,3,5,7],
+        <enderio:item_material:11>:[4]
+    }), //Energetic Bimetal Gear
+
+    Util.dynamicShaped(<enderio:item_material:11>, {
+        <minecraft:iron_nugget>:[0,2,6,8],
+        <thermalfoundation:material:160>:[1,3,5,7],
+        <enderio:item_material:20>:[4]
+    }), //Infinity Bimetal Gear
+
+    Util.dynamicShaped(<enderio:block_tank:1>, {
+        <moreplates:dark_steel_plate>:[0,2,6,8],
+        <enderio:block_dark_iron_bars>:[1,3,5,7],
+        <enderio:block_tank>:[4]
+    }), //Pressurized Tank
+
+    Util.dynamicShaped(<enderio:block_simple_alloy_smelter>, {
+        <overloaded:compressed_stone>:[0,2],
+        <minecraft:fire_charge>:[1],
+        <enderio:block_simple_furnace>:[3,5],
+        <enderio:item_material>:[4],
+        <enderio:item_material:11>:[6,8],
+        <minecraft:bucket>:[7]
+    }), //Simple Alloy Smelter
+
+    Util.dynamicShaped(<enderio:item_material>, {
+        <moreplates:enori_plate>:[0,2,6,8],
+        <thermalfoundation:material:160>:[1,3,5,7],
+        <enderio:item_material:20>:[4]
+    }), //Simple Machine Chasis
+
+    Util.dynamicShaped(<enderio:block_simple_furnace>, {
+        <ore:plateIron>:[0,2],
+        <minecraft:fire_charge>:[1],
+        <overloaded:compressed_cobblestone>:[3,5],
+        <enderio:item_material>:[4],
+        <ore:gearStone>:[6,8],
+        <minecraft:bucket>:[7]
+    }), //Simple Powered Furnace
+
+    Util.dynamicShaped(<enderio:block_simple_sag_mill>, {
+        <minecraft:flint>:[0,1,2],
+        <enderio:item_alloy_ingot:1>:[3,5],
+        <enderio:item_material>:[4],
+        <ore:gearStone>:[6,8],
+        <minecraft:piston>:[7]
+    }), //Simple Sag Mill
+
+    Util.dynamicShaped(<enderio:item_material:13>, {
+        <enderio:item_alloy_nugget:2>:[0,2,6,8],
+        <enderio:item_alloy_ingot:2>:[1,3,5,7],
+        <enderio:item_material:12>:[4]
+    }), //Vibrant Bimetal Gear
+
+    Util.dynamicShaped(<enderio:block_tank>, {
+        <thermalfoundation:material:32>:[0,2,6,8],
+        <minecraft:iron_bars>:[1,3,5,7],
+        <ore:blockGlassHardened>:[4]
+    }), //Tank
+
+    //exchangers------------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<exchangers:eio_endergy_exchanger_core_tier2>, {
+        <enderio:block_holier_fog>:[0,2,6,8],
+        <enderio:item_alloy_endergy_ingot:6>:[1,7],
+        <forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000}):[3,5],
+        <exchangers:eio_endergy_exchanger_core_tier1>:[4]
+    }), //Exchanger Core Tier 2
+
     //extendedcrafting------------------------------------------------------------------------------------------------------
     Util.smallShaped(<extendedcrafting:material:14>, "component", [
         <extendedcrafting:material:2>,
@@ -224,6 +311,13 @@ static shapedBuilders as Holder[] = [
         <moreplates:pulsating_iron_gear>,
         <avaritia:compressed_crafting_table>
     ]), //Machine Reader
+
+    //moreplates------------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<moreplates:end_steel_gear>, {
+        <enderio:item_alloy_nugget:8>:[0,2,6,8],
+        <enderio:item_alloy_ingot:8>:[1,3,5,7],
+        <enderio:item_material:73>:[4]
+    }), //End Steel Gear
 
     //naturesaura-----------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<naturesaura:gold_fiber>, {

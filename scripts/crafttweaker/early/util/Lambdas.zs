@@ -8,8 +8,9 @@ import mods.avaritia.ExtremeCrafting;
 import mods.botania.ManaInfusion;
 import mods.botania.Orechid;
 import mods.botania.OrechidIgnem;
-import mods.dimhoppertweaks.IItemConsumer;
+import mods.dimhoppertweaks.IItemStackConsumer;
 import mods.dimhoppertweaks.IStringConsumer;
+import mods.enderio.SagMill;
 import mods.extendedcrafting.TableCrafting;
 import mods.industrialforegoing.FluidSievingMachine;
 import mods.tconstruct.Casting;
@@ -19,7 +20,7 @@ import mods.thermalexpansion.Factorizer;
 import mods.thermalexpansion.InductionSmelter;
 import mods.jei.JEI;
 
-static itemsRemovalCalls as IItemConsumer[int][string] = {
+static itemsRemovalCalls as IItemStackConsumer[int][string] = {
     "actuallyadditions": {
         0: function(item as IItemStack) { AtomicReconstructor.removeRecipe(item); },
         1: function(item as IItemStack) { Empowerer.removeRecipe(item); }
@@ -29,6 +30,9 @@ static itemsRemovalCalls as IItemConsumer[int][string] = {
     },
     "botania": {
         0: function(item as IItemStack) { ManaInfusion.removeRecipe(item); }
+    },
+    "enderio": {
+        0: function(item as IItemStack) { SagMill.removeRecipe(item); }
     },
     "extendedcrafting": {
         0: function(item as IItemStack) { TableCrafting.remove(item); }
@@ -71,7 +75,7 @@ static stringRemovalCalls as IStringConsumer[int][string] = {
     }
 };
 
-function callInner(consumer as IItemConsumer, items as IItemStack[]) {
+function callInner(consumer as IItemStackConsumer, items as IItemStack[]) {
     for item in items {
         consumer.accept(item);
     }
@@ -82,7 +86,7 @@ function call(mod as string, items as IItemStack[], funcID as int = 0) {
 }
 
 function callArray(mod as string, itemArrays as IItemStack[][], funcID as int = 0) {
-    val consumer as IItemConsumer = itemsRemovalCalls[mod][funcID];
+    val consumer as IItemStackConsumer = itemsRemovalCalls[mod][funcID];
     for items in itemArrays {
         callInner(consumer,items);
     }

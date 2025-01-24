@@ -39,7 +39,7 @@ JEI.addDescription([<forestry:adventurer_bag>, <forestry:adventurer_bag_t2>], [
     "Extra inventory that automatically picks up specialized items.",
     "Currently, the items that can be picked up are as follows:", CTPassthrough.getAdventuringBackpackItems()]);
 
-JEI.addDescription(<forestry:wood_pile>, "To build a Charcoal Pile, first place 1 or more adjacent Wood Pile.",
+JEI.addDescription(<forestry:wood_pile>, "To build a Charcoal Pile, first place 1 or more adjacent Wood Piles.",
     "2x2x2 is generally a good starting size, but even a single Wood Pile will work.", 
     "Next, make sure all sides of all wood piles are covered by either another wood pile or a valid Charcoal Pile block.",
     "See the Charcoal Pile recipes for the valid blocks and how they affect charcoal rates.",
