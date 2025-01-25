@@ -25,6 +25,7 @@ mid.additions.multiblocked.BuildingBlocks.run();
 mid.additions.tconstruct.Alloying.run();
 mid.additions.tconstruct.Casting.run();
 mid.additions.tconstruct.Melting.run();
+mid.additions.thermal.Transposer.run();
 mid.additions.vanilla.Crafting.run();
 mid.additions.vanilla.Furnace.run();
 mid.enchanting.EnchantmentRecipes.run();

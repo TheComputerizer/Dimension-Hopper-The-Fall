@@ -184,18 +184,20 @@ zenClass LightningRelocator {
 zenClass LimbonicGenerator {
     val catalyst as IIngredient;
     val inputLiquids as ILiquidStack[];
+    val outputItems as IItemStack[];
     val outputLiquid as ILiquidStack;
     val outputFE as int;
-    zenConstructor(power as int, input as IIngredient, liquids as ILiquidStack[], waste as ILiquidStack) {
+    zenConstructor(power as int, input as IIngredient, liquids as ILiquidStack[], waste as ILiquidStack, outputs as IItemStack[]) {
         this.catalyst = input;
         this.inputLiquids = liquids;
+        this.outputItems = outputs;
         this.outputLiquid = waste;
         this.outputFE = power;
     }
     function make(map as RecipeMap) {
         MBD.wrap(map,function(builder as RecipeBuilder) as RecipeBuilder {
                 return builder.duration(1).dimension("limbo").inputItems(this.catalyst).inputFluids(this.inputLiquids)
-                    .outputFE(this.outputFE).outputFluids(this.outputLiquid);
+                    .outputFE(this.outputFE).outputFluids(this.outputLiquid).outputItems(this.outputItems);
             });
     }
 }

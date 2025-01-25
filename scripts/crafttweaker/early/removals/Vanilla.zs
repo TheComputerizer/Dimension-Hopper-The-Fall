@@ -348,6 +348,7 @@ static itemRemovals as IItemStack[] = [
 	<gaiadimension:keystone_block>,
 	<gaiadimension:mega_storage_crate>,
 	<gaiadimension:restructurer_idle>,
+	<gaiadimension:scaynyx_bucket>,
 
 	//galacticraftcore------------------------------------------------------------------------------------------------------
 	<galacticraftcore:basic_block_core:10>,

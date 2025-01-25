@@ -29,3 +29,5 @@ InductionSmelter.addRecipe(<mysticalagriculture:crafting:33>, <aoa3:mystite_ingo
 InductionSmelter.addRecipe(<mysticalagriculture:crafting:34>, <extraplanets:tier6_items:5>, <mysticalagriculture:crafting:1>, 40000);
 //prudentium alt
 InductionSmelter.addRecipe(<mysticalagriculture:crafting:34>, <extraplanets:tier6_items:5>, <mysticalagriculture:crafting:1>, 100000);
+//Scaynyx Bucket
+InductionSmelter.addRecipe(<gaiadimension:scaynyx_bucket>, <blue_skies:ventium_bucket>, <gaiadimension:pink_goo>*6, 100000);

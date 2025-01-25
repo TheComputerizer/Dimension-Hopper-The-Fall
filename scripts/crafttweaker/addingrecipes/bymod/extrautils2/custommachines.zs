@@ -8,7 +8,11 @@ val blackHeartReplicator as IMachine = IMachineRegistry.getMachine("black_heart_
 
 //heat glass
 heatFurnace.addRecipe({"input_item": <natura:nether_heat_sand>} as IIngredient[string], 
-	{"output_item": <natura:nether_glass:1>} as IIngredient[string], 2000000000, 100);
+	{"output_item": <natura:nether_glass:1>} as IIngredient[string], 2000000000, 50);
+
+//superhot magma
+heatFurnace.addRecipe({"input_item": <gaiadimension:scaynyx_bucket>.withTag({Fluid: {FluidName: "pyrotheum", Amount: 1000}})} as IIngredient[string], 
+	{"output_item": <gaiadimension:scaynyx_bucket>.withTag({Fluid: {FluidName: "superhot_magma", Amount: 1000}})} as IIngredient[string], 2000000000, 100);
 
 //minature black hole
 blackHeartReplicator.addRecipe({"input_item_blackhole": <moreplanets:black_hole_fragments>,"input_dark_matter_fluid": <liquid:genetic_chaos_fluid>*250} as IIngredient[string], 
@@ -16,4 +20,4 @@ blackHeartReplicator.addRecipe({"input_item_blackhole": <moreplanets:black_hole_
 
 //dragonheart
 blackHeartReplicator.addRecipe({"input_item_blackhole": <draconicevolution:dragon_heart>,"input_dark_matter_fluid": <liquid:genetic_chaos_fluid>*250} as IIngredient[string], 
-	{"output_item_blackhole": <draconicevolution:dragon_heart>*2} as IIngredient[string], 2000000000, 100);
+	{"output_item_blackhole": <draconicevolution:dragon_heart>*2} as IIngredient[string], 2000000000, 50);

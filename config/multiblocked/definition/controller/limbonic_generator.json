@@ -729,7 +729,7 @@
       "item_in": {
         "capability": "item",
         "type": "capability",
-        "io": "IN"
+        "io": "BOTH"
       }
     },
     "symbolMap": {
