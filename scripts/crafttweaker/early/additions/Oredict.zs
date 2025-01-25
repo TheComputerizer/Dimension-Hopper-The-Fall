@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import scripts.crafttweaker.early.util.GlobalHelper as Helper;
 import scripts.crafttweaker.early.util.Globals as Global;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 
 static extraAxes as IItemStack[] = [
     <enderio:item_capacitor_totemic>
@@ -108,17 +109,19 @@ oreDict.grassPlant.addItems([
     <traverse:cold_grass>
 ]);
 
-oreDict.lightningStorage.addItems([
-    <lightningcraft:lightning_cell>,
-    <lightningcraft:lightning_cell:1>,
-    <lightningcraft:lightning_cell:2>,
-    <lightningcraft:lightning_cell:3>
-]);
+
+oreDict.lightningStorage.addItems(
+    Stack.metaRange(<lightningcraft:lightning_cell>.definition, [0,3])
+);
 
 oreDict.mistyStone.addItems([
     <mist:stone>,
     <mist:stone_porous>
 ]);
+
+oreDict.plankNetherWood.addItems(
+    Stack.metaRange(<natura:nether_planks>.definition, [0,3])
+);
 
 oreDict.vaguelyGrass.addItems([
     <aether:tall_aether_grass:*>,

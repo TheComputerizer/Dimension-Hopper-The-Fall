@@ -4,6 +4,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import scripts.crafttweaker.early.util.Globals as Global;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 
 static oredictRemovals as IItemStack[][IOreDictEntry] = {
     oreDict.blockAquamarine: [
@@ -172,7 +173,8 @@ static oredictRemovals as IItemStack[][IOreDictEntry] = {
     ],
     oreDict.paneGlassYellow: [
         <moreplanets:yellow_tinted_glass_pane>
-    ]
+    ],
+    oreDict.plankWood: Stack.metaRange(<natura:nether_planks>.definition, [0,3])
 };
 
 function run() {

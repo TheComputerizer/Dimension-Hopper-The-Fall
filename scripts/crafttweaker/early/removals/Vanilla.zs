@@ -138,6 +138,9 @@ static arrayRemovals as IItemStack[][] = [
 	//mysticalagriculture---------------------------------------------------------------------------------------------------
 	Stack.metas(<mysticalagriculture:storage>,[0,1,2,3,4]),
 
+	//natura----------------------------------------------------------------------------------------------------------------
+	Stack.metaRange(<natura:empty_bowls>.definition,[0,3]), //Empy Bowls
+
 	//overloaded------------------------------------------------------------------------------------------------------------
 	Stack.append("overloaded:compressed_", ["cobblestone", "dirt", "gravel", "obsidian", "netherrack", "sand", "stone"], 
 		32767),

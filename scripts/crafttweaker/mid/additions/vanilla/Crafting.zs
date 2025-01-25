@@ -319,6 +319,12 @@ static shapedBuilders as Holder[] = [
         <enderio:item_material:73>:[4]
     }), //End Steel Gear
 
+    //natura----------------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<natura:empty_bowls>, { <natura:nether_planks>:[0,2,4] }, 3, 2), //Empty Ghostwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:1>, { <natura:nether_planks:1>:[0,2,4] }, 3, 2), //Empty Bloodwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:2>, { <natura:nether_planks:2>:[0,2,4] }, 3, 2), //Empty Darkwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:3>, { <natura:nether_planks:3>:[0,2,4] }, 3, 2), //Empty Fusewood Bowl
+
     //naturesaura-----------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<naturesaura:gold_fiber>, {
         <ore:grassPlant>:[4],
