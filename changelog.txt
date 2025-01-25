@@ -1,3 +1,63 @@
+Released V1.5.8
+
+*New changelog format??*
+
+Updated Mods
+- CraftTweaker
+- Dimension Hopper Tweaks
+- Fixeroo
+- Forestry
+- Greenery
+- JourneyMap
+- MixinBooter
+- OpenComputers
+- Red Core
+- RLMixins
+- Universal Tweaks
+- Zen Utils
+
+General Changes
+- [Botanic Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/96>) by Johanniklas
+- [Factory Multiblock Fix](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/97>) by Johanniklas
+- [Fix factory mk2 not combining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/98>) by Johanniklas
+- [Recipe for the Creative Storage Upgrade](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/100>) by Johanniklas
+- [Void Miner Additions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/102>) ([#81](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/81>), [#82](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/82>), & [#7](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/7>)) by Johanniklas
+- [Reduce LE costs in The Factory](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/103>) by Johanniklas
+- [Tier 6 Seeds](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/105>) ([#34](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/34>) & [#38](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/38>)) by Johanniklas
+- [Recipe for the Creative Mill](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/106>) by by Johanniklas
+- [Removed the Lens of the Miner](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/1>)
+- [Removed diamond gear scrapping from The Aurorian scrapper](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/3>)
+- [Added alternate empowered emeradic recipes for Stable-Unstable ingots](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/26>)
+- [Fixed the Prestige Token 7 & 8 recipes being switched](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/56>)
+- [Fixed Creative Mana Tablets turning into normal Mana Tablets when crafting Gaia Spirits](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/85>)
+- [Fixed the Gaia Spirit recipe & made the output dependent on the amount of mana in the tablet](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/99>)
+- [Fixed the Advanced Enchantment Table recipe consuming the Mega Rune Stone](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/94>)
+- Hid and/or removed some unused items
+- Doubled the durability of the basic Infusion Crystal
+- Replaced the insanium ingot in the crystaltine ingot recipe ([#21](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/21>) & [#22](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/22>))
+- Slightly modified the combination core recipe to compensate for the crystaltine nerf
+- Added processing chains for turning molten inferium/prudentium/interdium/superium/supremium/insanium into a large amount of each respective dust ([#21](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/21>), [#22](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/22>), & [#90](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/90>))
+- Readded the misplaced crafting recipe for Solar Panel I
+- Fixed Ultimate Thermodynamic Conductors not being craftable
+- Added missing multiblock description translations
+- Fixed a lot of early Material Processing quests being skippable
+- Non controller blocks are now optional for all multiblock quests
+- [Added a Lightning Reactor multiblock for multiplying LE](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/87>)
+- Rebalanced air terminals and added 4 extra tiers
+- The cooldown for lightning cells accepting LE from lightning strikes is now dependent on the tier of cell and how full the cell is rather than a constant 20 ticks
+- Added recipes for separating mana infused metal into mana dust & rich slag
+- Added recipes for separating rich slag into slag & cinnabar
+- Enchanting tables are now allowed to drop themselves once the correct stage is acquired
+- [Cleaned up the list of enchantable items](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/49>)
+- Draconic Helms and Wyvern/Draconic/Creative Flux Capacitors can no longer have qualities
+- [Doubled the max RF of the Enchanting Chamber](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/104>)
+- Added recipes for automating gaia ores & precious rocks
+- Redid the processing chain for Blutonium & Ludicrite
+- Fixed multipart entities [such as the Naga](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/67>) not rendering properly
+- Added Foggy Stone & Porous Foggy Stone to the orechid
+- Moved the oredict entry of Ghostwood, Bloodwood, Darkwood, & Fusewood planks from plankWood to plankNetherWood
+- The Limbonic Generator can now be used to automate some of the ores required for infinity ingots
+
 Released V1.5.7.1[SOFTLOCK CRASH]
 
 *Pizza time!*
