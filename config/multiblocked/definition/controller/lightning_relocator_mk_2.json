@@ -1,7 +1,19 @@
 {
   "version": 2,
   "location": "dimensionhopper:lightning_relocator_mk_2",
-  "traits": {},
+  "traits": {
+    "forge_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 14,
+      "y": 9,
+      "width": 150,
+      "height": 25,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 500000,
+      "maxReceive": 250000
+    }
+  },
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,

@@ -178,6 +178,12 @@ zenClass LightningRelocator {
             MBD.wrap(map,function(builder as RecipeBuilder) as RecipeBuilder {
                 return builder.duration(1).inputLE(scaledInput).outputLE(scaledOutput);
             });
+            if(efficiency<1) {
+                val rf as int = (((scaledInput)-(scaledOutput)) as float)*(5000.0*(1+((i as float)*1.5)));
+                MBD.wrap(map,function(builder as RecipeBuilder) as RecipeBuilder {
+                    return builder.duration(1).inputLE(scaledInput).inputFE(rf).outputLE(scaledInput);
+                });
+            }
         }
     }
 }
