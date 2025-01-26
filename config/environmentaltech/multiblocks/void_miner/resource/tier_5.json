@@ -11,6 +11,26 @@
       "id": "extraplanets:neptune:2"
     },
     {
+      "target": "magenta",
+      "weight": 32,
+      "id": "zollerngalaxy:edenrock"
+    },
+    {
+      "target": "yellow",
+      "weight": 32,
+      "id": "extraplanets:io"
+    },
+    {
+      "target": "orange",
+      "weight": 32,
+      "id": "extraplanets:jupiter:2"
+    },
+    {
+      "target": "brown",
+      "weight": 32,
+      "id": "galacticraft:mars:9"
+    },
+    {
       "target": "pink",
       "weight": 30,
       "id": "minecraft:stone:1"
