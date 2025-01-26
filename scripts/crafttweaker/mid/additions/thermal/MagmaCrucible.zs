@@ -20,6 +20,11 @@ Crucible.addRecipe(<liquid:mana> * 250, <thermalfoundation:material:1028>, 10000
 Crucible.addRecipe(<liquid:genetic_waste_fluid>*250, <gendustry:waste>, 13333);
 //genetic chaos fluid
 Crucible.addRecipe(<liquid:genetic_chaos_fluid>*500, <contenttweaker:genetically_unstable_chaos_crystal>, 133337);
+//molten base essence
+Crucible.addRecipe(<liquid:base_essence>*16, <mysticalagriculture:crafting:39>, 500);
+Crucible.addRecipe(<liquid:base_essence>*144, <jaopca:dust.base_essence>, 4444);
+Crucible.addRecipe(<liquid:base_essence>*144, <mysticalagriculture:crafting:32>, 5000);
+Crucible.addRecipe(<liquid:base_essence>*1296, <mysticalagriculture:ingot_storage>, 44444);
 //molten inferium
 Crucible.addRecipe(<liquid:inferium>*16, <mysticalagriculture:crafting:40>, 1000);
 Crucible.addRecipe(<liquid:inferium>*144, <jaopca:dust.inferium>, 6666);
