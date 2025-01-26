@@ -46,6 +46,33 @@ function getToolEnchants() as IOreDictEntry[] {
     return [enchant["axe"], enchant["shovel"]] as IOreDictEntry[];
 }
 
+static records as IItemStack[] = Helper.getMatchingItemsExtras([".*record_.*", ".*_disc.*"], [
+    <aether:recording_892>,
+    <blue_skies:calm_waters>,
+    <blue_skies:devine>,
+    <blue_skies:neon>,
+    <blue_skies:soul>,
+    <blue_skies:voyage>,
+    <blue_skies:welcome_to_the_sky>,
+    <botania:recordgaia1>,
+    <botania:recordgaia2>,
+    <dimdoors:record_creepy>,
+    <moreplanets:vein_floater_disc>,
+    <thebetweenlands:ancient>,
+    <thebetweenlands:astatos>,
+    <thebetweenlands:beneath_a_green_sky>,
+    <thebetweenlands:between_you_and_me>,
+    <thebetweenlands:christmas_on_the_marsh>,
+    <thebetweenlands:hag_dance>,
+    <thebetweenlands:lonely_fire>,
+    <thebetweenlands:mysterious_record>,
+    <thebetweenlands:onwards>,
+    <thebetweenlands:stuck_in_the_mud>,
+    <thebetweenlands:the_explorer>,
+    <thebetweenlands:wandering_wisps>,
+    <thebetweenlands:waterlogged>
+]);
+
 static tinkermaterials as string[] = [
     "steeleaf",
     "electrical_steel",

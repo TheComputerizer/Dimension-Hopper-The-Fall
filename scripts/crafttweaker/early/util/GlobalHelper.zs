@@ -1009,6 +1009,14 @@ function getMatchingItems(regexList as string[]) as IItemStack[] {
     return ret;
 }
 
+function getMatchingItemsExtras(regexList as string[], extras as IItemStack[]) as IItemStack[] {
+    var items as IItemStack[] = getMatchingItems(regexList);
+    for item in extras {
+        items+=item;
+    }
+    return items;
+}
+
 function getRemovalItems(blacklistName as string, items as IItemStack[]) as IItemStack[] {
     var ret as IItemStack[] = [] as IItemStack[];
     for item in items {

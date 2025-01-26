@@ -123,6 +123,8 @@ oreDict.plankNetherWood.addItems(
     Stack.metaRange(<natura:nether_planks>.definition, [0,3])
 );
 
+oreDict.record.addItems(Global.records);
+
 oreDict.vaguelyGrass.addItems([
     <aether:tall_aether_grass:*>,
     <aoa3:blue_candy_grass>,

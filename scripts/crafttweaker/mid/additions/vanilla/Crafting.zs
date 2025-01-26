@@ -319,11 +319,27 @@ static shapedBuilders as Holder[] = [
         <enderio:item_material:73>:[4]
     }), //End Steel Gear
 
+    //musictriggers---------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<musictriggers:blank_record>, {
+        <calculator:weakeneddiamond>:[0,2,6,8],
+        <enderio:item_material:77>:[1,7],
+        <integrateddynamics:part_audio_reader_item>:[3],
+        <ore:record>:[4],
+        <thermalfoundation:diagram_redprint>:[5]
+    }), //Blank Music Disc
+
+    Util.dynamicShaped(<musictriggers:music_recorder>, {
+        <minecraft:jukebox>:[0],
+        <integrateddynamics:part_audio_writer_item>:[1],
+        <randomthings:soundrecorder>:[2],
+        <randomthings:runedust>:[3]
+    }, 2, 2), //Music Recorder
+
     //natura----------------------------------------------------------------------------------------------------------------
-    Util.dynamicShaped(<natura:empty_bowls>, { <natura:nether_planks>:[0,2,4] }, 3, 2), //Empty Ghostwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:1>, { <natura:nether_planks:1>:[0,2,4] }, 3, 2), //Empty Bloodwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:2>, { <natura:nether_planks:2>:[0,2,4] }, 3, 2), //Empty Darkwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:3>, { <natura:nether_planks:3>:[0,2,4] }, 3, 2), //Empty Fusewood Bowl
+    Util.dynamicShaped(<natura:empty_bowls>*2, { <natura:nether_planks>:[0,2,4] }, 3, 2), //Empty Ghostwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:1>*2, { <natura:nether_planks:1>:[0,2,4] }, 3, 2), //Empty Bloodwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:2>*2, { <natura:nether_planks:2>:[0,2,4] }, 3, 2), //Empty Darkwood Bowl
+    Util.dynamicShaped(<natura:empty_bowls:3>*2, { <natura:nether_planks:3>:[0,2,4] }, 3, 2), //Empty Fusewood Bowl
 
     //naturesaura-----------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<naturesaura:gold_fiber>, {
