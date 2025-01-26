@@ -492,6 +492,9 @@ static itemRemovals as IItemStack[] = [
 
 	//theaurorian-----------------------------------------------------------------------------------------------------------
 	<theaurorian:aurorianstone>, //Aurorian Stone
+	<theaurorian:scrapaurorianite>, //Aurorianite Scrap
+	<theaurorian:scrapcrystalline>, //Crystalline Scrap
+	<theaurorian:scrapumbra>, //Umbra Scrap
 	<theaurorian:scrapper>, //Scrapper
 
 	//thermaldynamics-------------------------------------------------------------------------------------------------------
