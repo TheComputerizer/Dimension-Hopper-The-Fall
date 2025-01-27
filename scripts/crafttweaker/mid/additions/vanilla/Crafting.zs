@@ -176,7 +176,7 @@ static shapedBuilders as Holder[] = [
     Util.dynamicShaped(<dimdoors:rift_signature>, { <minecraft:iron_ingot>:[0,2,6,8], 
         <dimdoors:stable_fabric>:[4] }), //Rift Signature
 
-    //enderio--------------------------------------------------------------------------------------------------------------
+    //enderio---------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<enderio:item_material:73>, {
         <enderio:item_alloy_nugget:6>:[0,2,6,8],
         <enderio:item_alloy_ingot:6>:[1,3,5,7],

@@ -9,6 +9,16 @@ static shapedHolders as Holder[] = [
 		.addExtras([<contenttweaker:neptunic_key>])
 		.addNumbers([75, 100, 500]), //neptune dimensional stone
 
+    //dimhoppertweaks-------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<dimhoppertweaks:auto_infusion_table>, {
+		<contenttweaker:neptune_dimensional_stone>:[0,2,6,8],
+		<rftools:crafter3>:[1,7],
+		<rftools:infused_diamond>:[3],
+		<extrautils2:simpledecorative:2>:[4],
+		<rftools:infused_enderpearl>:[5]
+	}).addExtras([<aoa3:infusion_table>])
+	.addNumbers([125,500,1000]), //Infusion Crafter
+
 	//mekanism
 	Util.customShaped(<mekanism:machineblock:4>, [
 			<galacticraftplanets:orion_drive>,

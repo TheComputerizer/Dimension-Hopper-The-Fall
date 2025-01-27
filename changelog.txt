@@ -1,4 +1,4 @@
-Released V1.5.8
+Released V1.5.8[BALANCE & ANTI GRIND]
 
 *New changelog format??*
 
@@ -10,7 +10,6 @@ Updated Mods
 - Greenery
 - JourneyMap
 - MixinBooter
-- OpenComputers
 - Red Core
 - RLMixins
 - Universal Tweaks
@@ -57,6 +56,10 @@ General Changes
 - Added Foggy Stone & Porous Foggy Stone to the orechid
 - Moved the oredict entry of Ghostwood, Bloodwood, Darkwood, & Fusewood planks from plankWood to plankNetherWood
 - The Limbonic Generator can now be used to automate some of the ores required for infinity ingots
+- Fixed the Blank Music Disc & Music Recorder recipes
+- Added a recipe for copying Enhanced Music Discs
+- Auririan Alloy is now possible to automate in the late game
+- [Added an Infusion Crafter that can be used to automate Infusion recipes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/82>)
 
 Released V1.5.7.1[SOFTLOCK CRASH]
 
