@@ -297,7 +297,7 @@ static shapedBuilders as Holder[] = [
 
     //hunting dimension-----------------------------------------------------------------------------------------------------
     Util.simpleShaped(<huntingdim:frame>, "plus", [<ore:arrow>, <ore:logWood>, <thermalfoundation:material:128>])
-        .setMarkIndex(0)
+        .setMarkIndex(1)
         .addFunction(
             function(output, map, info) {
                 return output.withTag({BaseBlock: {id: map.mark.definition.id as string, Count: 1 as byte, 

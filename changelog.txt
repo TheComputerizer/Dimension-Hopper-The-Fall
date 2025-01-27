@@ -1,3 +1,12 @@
+Released V1.5.8.1[HOTFIX]
+
+*Tradition!*
+
+General Changes
+- Fixed the Alloy Smelter and Sag Mill recipe scripts not being called
+- Fixed hunting dimension portal frames inheriting the wrong texture
+
+
 Released V1.5.8[BALANCE & ANTI GRIND]
 
 *New changelog format??*
@@ -61,6 +70,7 @@ General Changes
 - Auririan Alloy is now possible to automate in the late game
 - [Added an Infusion Crafter that can be used to automate Infusion recipes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/82>)
 
+
 Released V1.5.7.1[SOFTLOCK CRASH]
 
 *Pizza time!*
@@ -72,6 +82,7 @@ Updated Mods
 
 General Changes
 - Brewing stands no longer crash the game
+
 
 Released V1.5.7[SOFTLOCKS & CATCHING UP]
 
@@ -151,6 +162,7 @@ Enchanting Changes
 - Removed the hammer from tier 2 enchanting recipes making them craftable in a Mage Workstation
 - The Advanced Enchantment Table is now craftable during chapter 6
 - The vanilla Enchanting Table is now craftable during chapter 8
+
 
 Released V1.5.6[PERFORMANCE & STUFF]
 
@@ -248,6 +260,7 @@ Skill Changes
 - Added a Really Thick Skin defense trait for blocking/reducing certain (mostly environmental) damage types
 - Added an Arbitrary Upgrade mining trait which despite what it says is not a troll
 
+
 Released V1.5.5[PERFORMANCE & SOFTLOCKS]
 
 *Back at it?*
@@ -307,6 +320,7 @@ General Changes
 - Questlines below the storyline are now listed alphabetically
 - Fixed the Ganymede Stargate Addresser
 - Fixed the Ender Crate requiring a vanilla Ender Chest
+
 
 Released V1.5.4[CLEANUP & BUGFIXES]
 

@@ -16,6 +16,8 @@ mid.additions.avaritia.Extreme.run();
 mid.additions.botania.Orechid.run();
 mid.additions.calculator.AlgorithmSeparator.run();
 mid.additions.calculator.AtomicCalculator.run();
+mid.additions.enderio.AlloySmelter.run();
+mid.additions.enderio.SagMill.run();
 mid.additions.extendedcrafting.Advanced.run();
 mid.additions.extendedcrafting.Basic.run();
 mid.additions.extendedcrafting.CombinationCrafting.run();
