@@ -9,5 +9,3 @@ MetalPress.addRecipe(<extendedcrafting:material:2>, <extendedcrafting:material>,
 MetalPress.addRecipe(<immersiveengineering:graphite_electrode>, <immersiveengineering:material:18>, <immersiveengineering:mold:2>, 5000, 8);
 
 MetalPress.addRecipe(<extendedcrafting:material:3>*2, <extendedcrafting:material>, <immersiveengineering:mold:2>, 2000, 1);
-
-MetalPress.addRecipe(<lightningcraft:rod:4>*2, <ore:ingotAluminum>, <immersiveengineering:mold:2>, 2000, 1);
