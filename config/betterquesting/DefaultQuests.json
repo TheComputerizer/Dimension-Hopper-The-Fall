@@ -3732,14 +3732,23 @@
           "rewardID:8": "bq_standard:command"
         },
         "2:10": {
-          "index:3": 2,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 10,
+              "Count:3": 8,
+              "Damage:2": 2,
+              "id:8": "twilightforest:block_storage"
+            },
+            "1:10": {
+              "Count:3": 16,
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 32,
+              "id:8": "minecraft:coal_block"
             }
-          }
+          },
+          "index:3": 3,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -9772,6 +9781,10 @@
               "Count:3": 50,
               "Damage:2": 1,
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 5,
+              "id:8": "xreliquary:witherless_rose"
             }
           },
           "index:3": 0,
@@ -10235,7 +10248,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Blue ore found in the §9§oEverbright§r realm.",
+          "desc:8": "     Blue ore found in the §9§oEverbright§r realm.\n\n§cNote: Falsite can only generate in Pale Swamplands biomes",
           "icon:10": {
             "Count:3": 1,
             "id:8": "blue_skies:falsite_ore"
@@ -10265,7 +10278,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Green gem ore found in the §9§oEverbright§r and §3§oEverdawn§r realms.",
+          "desc:8": "     Green gem ore found in the §9§oEverbright§r and §3§oEverdawn§r realms.\n\n§cNote: Diopside cannot generate in Frostbitten Forest biomes",
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
@@ -10368,7 +10381,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "§9§r     Red ore found in the §9§oEverbright§r realm. ",
+          "desc:8": "§9§r     Red ore found in the §9§oEverbright§r realm. \n\n§cNote: Ventium cannot generate in Brightlands biomes",
           "icon:10": {
             "Count:3": 1,
             "id:8": "blue_skies:ventium_ore"
@@ -10501,7 +10514,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     A red gem ore found in the §7§oGaia§r realm.\n\n§cNote: The colored opals are all found in particular biomes",
+          "desc:8": "     A red gem ore found in the §7§oGaia§r realm.\n\n§cNote: Red Opal only generates in Pink Agate Forest \u0026 Mutant Agate Wildwood biomes",
           "icon:10": {
             "Count:3": 1,
             "id:8": "gaiadimension:red_opal"
@@ -10534,7 +10547,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     A blue gem ore found in the §7§oGaia§r realm.\n\n§cNote: The colored opals are all found in particular biomes",
+          "desc:8": "     A blue gem ore found in the §7§oGaia§r realm.\n\n§cNote: Blue Opal only generates in Blue Agate Taiga \u0026 Mutated Agate Wildwood biomes",
           "icon:10": {
             "Count:3": 1,
             "id:8": "gaiadimension:blue_opal"
@@ -10564,7 +10577,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     A green gem ore found in the §7§oGaia§r realm.\n\n§cNote: The colored opals are all found in particular biomes",
+          "desc:8": "     A green gem ore found in the §7§oGaia§r realm.\n\n§cNote: Green Opal only generates in Green Agate Jungle \u0026 Mutant Agate Wildwood biomes",
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
@@ -10865,7 +10878,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     A white gem ore found in the §7§oGaia§r realm.\n\n§cNote: The colored opals are all found in particular biomes",
+          "desc:8": "     A white gem ore found in the §7§oGaia§r realm.\n\n§cNote: White Opal is the only Opal color whose generation is not specific to a biome",
           "icon:10": {
             "Count:3": 1,
             "id:8": "gaiadimension:white_opal"
@@ -26903,6 +26916,10 @@
               "Count:3": 500,
               "Damage:2": 1,
               "id:8": "scalinghealth:difficultychanger"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "id:8": "overloaded:nether_star_block"
             }
           },
           "index:3": 1,
