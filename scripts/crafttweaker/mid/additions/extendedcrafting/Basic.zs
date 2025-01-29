@@ -56,7 +56,7 @@ static shapedHolders as Holder[] = [
 	Util.simpleShaped(<mekanism:basicblock2:5>, "plus", [<mekanism:basicblock:8>, <immersiveengineering:metal_device1:1>, 
 		<ore:xuRedstoneCoil>]), //superheating element
 
-	Util.simpleShaped(<mekanism:basicblock2:14>, "plus", [<draconicevolution:reactor_core>, <rftools:infused_diamond>, <ore:plateDarkSteel>]), //laser amplifier
+	Util.simpleShaped(<mekanism:machineblock2:14>, "plus", [<draconicevolution:reactor_core>, <rftools:infused_diamond>, <ore:plateDarkSteel>]), //laser amplifier
 
 	//minecraft
 	Util.simpleShaped(<minecraft:lapis_block>, "block", [<tp:lapis_ingot>]), //lapis block

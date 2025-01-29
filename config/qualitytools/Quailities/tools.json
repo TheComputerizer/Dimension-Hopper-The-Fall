@@ -21,7 +21,8 @@
       }
     ],
     "blacklist": [
-      {"item": "xreliquary:magicbane"}
+      {"item": "xreliquary:magicbane"},
+      {"item": "bedrockcraft:bedrock_shovel"}
     ],
     "qualities": [
       {

@@ -43,6 +43,19 @@ static modStages as IIngredient[][string][string] = {
 	},
 	"advent": {
 		"extraplanets": [
+			<extraplanets:compressed_mercury>,
+			<extraplanets:deimos:*>,
+			<extraplanets:deimos_gravel>,
+			<extraplanets:geiger_counter>,
+			<extraplanets:ingot_mercury>,
+			<extraplanets:mercury:*>,
+			<extraplanets:mercury_battery>,
+			<extraplanets:mercury_stairs_stone>,
+			<extraplanets:mercury_stairs_stone_bricks>,
+			<extraplanets:mercury_stairs_surface>,
+			<extraplanets:mercury_stairs_sub_surface>,
+			<extraplanets:phobos:*>,
+			<extraplanets:phobos_gravel>,
 			<extraplanets:tier1_pressure_layer>,
 			<extraplanets:tier1_armor_layer>,
 			<extraplanets:tier1_un_prepared_space_suit_helmet>,
@@ -69,8 +82,11 @@ static modStages as IIngredient[][string][string] = {
 			<moreplanets:space_warper_core>
 		],
 		"zollerngalaxy": [
+			<zollerngalaxy:cobaltdust>,
 			<zollerngalaxy:diamonddust>,
-			<zollerngalaxy:radium>
+			<zollerngalaxy:radium>,
+			<zollerngalaxy:tlalocfluixore>,
+			<zollerngalaxy:tlaloccertusquartzore>
 		]
 	},
 	"deepdown": {
@@ -91,7 +107,7 @@ static modStages as IIngredient[][string][string] = {
 		"lockyzextradimensionsmod": [<lockyzextradimensionsmod:interdimensionalsword>]
 	},
 	"bedrockfinal": {
-		"bedrockcraft": [<minecraft:dirt>]
+		"bedrockcraft": [<bedrockcraft:bedrock_shovel>]
 	}
 };
 

@@ -66,7 +66,10 @@ static itemStages as IIngredient[][string] = {
 		<chisel:blocknickel:*>,
 		<thermalfoundation:storage:1>,
 		<thermalfoundation:storage:2>,
-		<thermalfoundation:storage:5>
+		<thermalfoundation:storage:5>,
+		<zollerngalaxy:cobaltdust>,
+		<zollerngalaxy:tlaloccertusquartzore>,
+		<zollerngalaxy:tlalocfluixore>
 	],
 	"bees": [
 		<forestry:bee_house>,
@@ -128,6 +131,19 @@ static itemStages as IIngredient[][string] = {
 		<chisel:blockaluminum:*>
 	],
 	"planets": [
+		<extraplanets:compressed_mercury>,
+		<extraplanets:deimos:*>,
+		<extraplanets:deimos_gravel>,
+		<extraplanets:geiger_counter>,
+		<extraplanets:ingot_mercury>,
+		<extraplanets:mercury:*>,
+		<extraplanets:mercury_battery>,
+		<extraplanets:mercury_stairs_stone>,
+		<extraplanets:mercury_stairs_stone_bricks>,
+		<extraplanets:mercury_stairs_surface>,
+		<extraplanets:mercury_stairs_sub_surface>,
+		<extraplanets:phobos:*>,
+		<extraplanets:phobos_gravel>,
 		<mysticalagriculture:crafting>,
 		<thermalfoundation:ore:6>,
 		<thermalfoundation:material:70>,
@@ -154,6 +170,7 @@ static itemStages as IIngredient[][string] = {
 	],
 	"advent": [
 		<aoa3:extraction_device>,
+		<bedrockcraft:bedrock_shovel>,
 		<draconicevolution:draconium_ore:*>,
         <draconicevolution:draconium_dust>,
         <draconicevolution:draconium_ingot>,
