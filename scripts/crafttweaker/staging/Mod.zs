@@ -56,6 +56,7 @@ static modStages as IIngredient[][string][string] = {
 			<extraplanets:mercury_stairs_sub_surface>,
 			<extraplanets:phobos:*>,
 			<extraplanets:phobos_gravel>,
+			<extraplanets:schematic_tier4>,
 			<extraplanets:tier1_pressure_layer>,
 			<extraplanets:tier1_armor_layer>,
 			<extraplanets:tier1_un_prepared_space_suit_helmet>,

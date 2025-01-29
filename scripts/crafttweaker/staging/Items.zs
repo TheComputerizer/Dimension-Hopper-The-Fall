@@ -144,6 +144,7 @@ static itemStages as IIngredient[][string] = {
 		<extraplanets:mercury_stairs_sub_surface>,
 		<extraplanets:phobos:*>,
 		<extraplanets:phobos_gravel>,
+		<extraplanets:schematic_tier4>,
 		<mysticalagriculture:crafting>,
 		<thermalfoundation:ore:6>,
 		<thermalfoundation:material:70>,
