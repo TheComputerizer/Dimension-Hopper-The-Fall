@@ -576,9 +576,16 @@ static shapelessBuilders as Holder[] = [
     Util.shapeless(<eplus:advanced_table>, [<artisanworktables:workshop:7>, 
         <aoa3:mega_rune_stone>.transformDamage()]), //Advanced Enchantment Table
 
+    //extraplanets----------------------------------------------------------------------------------------------------------
+    Util.shapeless(<extraplanets:schematic_tier5>, 
+        [<moreplanets:black_hole_storage_schematic>]), //Tier 5 Rocket Schematic (Black Hole)
+
     //galacticraftplanets---------------------------------------------------------------------------------------------------
     Util.shapeless(<galacticraftplanets:schematic>, 
         [<galacticraftplanets:schematic:1>]), //Tier 3 Rocket Schematic (Cargo Rocket)
+
+    Util.shapeless(<galacticraftplanets:schematic:1>, 
+        [<galacticraftplanets:schematic>]), //Cargo Rocket Schematic (Tier 3 Rocket)
 
     //minecraft-------------------------------------------------------------------------------------------------------------
     Util.shapeless(<minecraft:dye:2>, [<botania:pestleandmortar>, <minecraft:cactus>, <biomesoplenty:blue_dye>, 
@@ -586,6 +593,13 @@ static shapelessBuilders as Holder[] = [
 
     Util.shapeless(<minecraft:enchanting_table>, [<eplus:advanced_table>, 
         <draconicevolution:draconic_core>]), //Enchanting Table
+
+    //moreplanets-----------------------------------------------------------------------------------------------------------
+    Util.shapeless(<moreplanets:black_hole_storage_schematic>, 
+        [<moreplanets:ion_cannon_schematic>]), //Black Hole Storage Schematic (Ion Cannon)
+
+    Util.shapeless(<moreplanets:ion_cannon_schematic>, 
+        [<extraplanets:schematic_tier5>]), //Ion Cannon Schematic (Tier 5 Rocket)
 
     //randomthings----------------------------------------------------------------------------------------------------------
     Util.shapeless(<randomthings:timeinabottle>, [<randomthings:timeinabottle>, <environmentaltech:lonsdaleite_crystal>])
