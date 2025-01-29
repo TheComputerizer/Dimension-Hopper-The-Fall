@@ -1,3 +1,20 @@
+Released V1.5.8.2[HOTFIX]
+
+*That wasn't supposed to happen?*
+
+Updated Mods
+- OpenComputers
+
+General Changes
+- [Black Iron Rod](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/110>) by Johanniklas
+- [Fixed the Laser Amplifier recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/29>)
+- [Fixed some items having the wrong stage](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/24>)
+- [Added recipes for converting between the Tier 5 Rocket, Black Hole Storage, & Ion Canon Schematics](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/41>)
+- Added a recipe for converting Tier 3 Rocket Schematics into Cargo Rocket Schematics
+- [Added alternate end of chapter rewards for the prologue, chapter 1, & chapter 4](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/50>)
+- Added the specific biomes where Blue Opal, Green Opal, Red Opal, Diopside, Falsite, & Ventium can generate in to their respective quests
+
+
 Released V1.5.8.1[HOTFIX]
 
 *Tradition!*
