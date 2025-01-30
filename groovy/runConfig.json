@@ -1,0 +1,18 @@
+{
+  "packName": "Dimension Hopper: The Fall",
+  "packId": "dimensionhopper",
+  "version": "1.5.9",
+  "debug": true,
+  "classes": {
+    "preInit": []
+  },
+  "loaders": {
+    "preInit": [
+      "preInit/"
+    ],
+    "postInit": [
+      "postInit/",
+      "postInit/render/Shader.groovy"
+    ]
+  }
+}
