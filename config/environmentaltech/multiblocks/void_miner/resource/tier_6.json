@@ -247,11 +247,6 @@
     },
     {
       "target": "green",
-      "weight": 5,
-      "id": "thebetweenlands:generic_stone"
-    },
-    {
-      "target": "green",
       "weight": 15,
       "id": "thebetweenlands:pitstone"
     },
