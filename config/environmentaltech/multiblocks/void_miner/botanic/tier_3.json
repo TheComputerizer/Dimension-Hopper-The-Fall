@@ -308,11 +308,6 @@
     {
       "target": "green",
       "weight": 32,
-      "id": "minecraft:leaves:0"
-    },
-    {
-      "target": "green",
-      "weight": 32,
       "id": "minecraft:leaves:1"
     },
     {
