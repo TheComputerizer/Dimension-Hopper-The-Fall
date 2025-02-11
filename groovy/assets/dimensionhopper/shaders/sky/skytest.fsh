@@ -89,7 +89,7 @@ float fbm(vec2 seed) {
     float amplitude = 1.0;
     float lacunarity = 2.0;
     float gain = 0.5;
-    int octaves = 7;
+    int octaves = 3;
     for(int i=0; i<octaves; i++) {
         total+=noise(seed*frequency)*amplitude;
         frequency*=(lacunarity-(0.2*i));

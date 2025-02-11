@@ -2,17 +2,33 @@
   "packName": "Dimension Hopper: The Fall",
   "packId": "dimensionhopper",
   "version": "1.5.9",
-  "debug": true,
+  "debug": false,
   "classes": {
-    "preInit": []
+    "all": [
+      "preInit/Ref.groovy",
+      "render/RenderShortcuts.groovy",
+      "render/SkyShaderRender.groovy",
+      "biomes/PlaygroundBiome.groovy",
+      "biomes/BiomeRegistry.groovy",
+      "dimensions/PlaygroundType.groovy",
+      "world/PlaygroundGenerator.groovy",
+      "world/PlaygroundProvider.groovy",
+      "dimensions/DimensionRegistry.groovy",
+      "world/WorldRegistry.groovy"
+    ],
+    "postInit": [
+      "render/uniforms/Uniform.groovy",
+      "render/uniforms/UniformFloat.groovy",
+      "render/uniforms/UniformInt.groovy",
+      "render/uniforms/UniformMatrix.groovy",
+      "render/Shader.groovy",
+      "render/SkyShader.groovy",
+      "render/ShaderManager.groovy"
+    ]
   },
   "loaders": {
     "preInit": [
-      "preInit/"
-    ],
-    "postInit": [
-      "postInit/",
-      "postInit/render/Shader.groovy"
+      "preInit/Register.groovy"
     ]
   }
 }
