@@ -982,6 +982,7 @@
             "id:8": "minecraft:cobblestone"
           },
           "name:8": "Cobblestone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1036,6 +1037,7 @@
             "id:8": "minecraft:stone"
           },
           "name:8": "Stone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1084,12 +1086,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of wood",
+          "desc:8": "Dimension made of wood\n\n§rThe portal frame needs to be made of §3Wood Planks§r of any vanilla type",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:log"
           },
           "name:8": "Wood Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1144,6 +1147,7 @@
             "id:8": "minecraft:stonebrick"
           },
           "name:8": "Stone Brick Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1198,6 +1202,7 @@
             "id:8": "minecraft:sandstone"
           },
           "name:8": "Sandstone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1251,6 +1256,7 @@
             "id:8": "minecraft:red_sandstone"
           },
           "name:8": "Red Sandstone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1304,6 +1310,7 @@
             "id:8": "minecraft:clay"
           },
           "name:8": "Clay Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1357,6 +1364,7 @@
             "id:8": "minecraft:snow"
           },
           "name:8": "Snow Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1410,6 +1418,7 @@
             "id:8": "minecraft:stained_hardened_clay"
           },
           "name:8": "Terracotta Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1458,12 +1467,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of grass \u0026 a few decorations",
+          "desc:8": "Dimension made of grass \u0026 a few decorations\n\n§4§lTurn down your render distance before entering!\n\n§rThe portal frame needs to be made of §3Dirt",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:grass"
           },
           "name:8": "Greenery Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1512,12 +1522,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of cobblestone walls",
+          "desc:8": "Dimension made of cobblestone walls\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:cobblestone_wall"
           },
           "name:8": "Cobblestone Wall Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1571,6 +1582,7 @@
             "id:8": "minecraft:wool"
           },
           "name:8": "Wool Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1624,6 +1636,7 @@
             "id:8": "minecraft:hay_block"
           },
           "name:8": "Hay Bale Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1671,12 +1684,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of fences",
+          "desc:8": "Dimension made of fences\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:fence"
           },
           "name:8": "Fence Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1731,6 +1745,7 @@
             "id:8": "minecraft:glass"
           },
           "name:8": "Glass Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1779,12 +1794,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of glass panes",
+          "desc:8": "Dimension made of glass panes\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:glass_pane"
           },
           "name:8": "Glass Pane Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1833,12 +1849,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of ice",
+          "desc:8": "Dimension made of ice\n\n§rThe portal frame needs to be made of §3Packed Ice",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:ice"
           },
           "name:8": "Ice Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1892,6 +1909,7 @@
             "id:8": "minecraft:magma"
           },
           "name:8": "Magma Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -1945,6 +1963,7 @@
             "id:8": "tp:flint_block"
           },
           "name:8": "Flint Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -2000,6 +2019,7 @@
             "id:8": "minecraft:crafting_table"
           },
           "name:8": "Crafting Table Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28580,6 +28600,7 @@
             "id:8": "minecraft:brick_block"
           },
           "name:8": "Brick Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28639,6 +28660,7 @@
             "id:8": "minecraft:quartz_block"
           },
           "name:8": "Quartz Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28698,6 +28720,7 @@
             "id:8": "minecraft:coal_block"
           },
           "name:8": "Coal Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28756,7 +28779,8 @@
             "Count:3": 1,
             "id:8": "minecraft:concrete"
           },
-          "name:8": "Concrete Table Dimension",
+          "name:8": "Concrete Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28816,6 +28840,7 @@
             "id:8": "minecraft:pumpkin"
           },
           "name:8": "Pumpkin Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28874,6 +28899,7 @@
             "id:8": "minecraft:melon_block"
           },
           "name:8": "Melon Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28933,6 +28959,7 @@
             "id:8": "minecraft:lit_pumpkin"
           },
           "name:8": "Jack o\u0027Lantern Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -28991,6 +29018,7 @@
             "id:8": "minecraft:nether_wart_block"
           },
           "name:8": "Nether Wart Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29050,6 +29078,7 @@
             "id:8": "minecraft:nether_brick"
           },
           "name:8": "Nether Brick Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29108,6 +29137,7 @@
             "id:8": "minecraft:red_nether_brick"
           },
           "name:8": "Red Nether Brick Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29166,6 +29196,7 @@
             "id:8": "minecraft:white_glazed_terracotta"
           },
           "name:8": "Glazed Terracotta Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29225,6 +29256,7 @@
             "id:8": "minecraft:iron_bars"
           },
           "name:8": "Iron Bars Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29283,6 +29315,7 @@
             "id:8": "minecraft:glowstone"
           },
           "name:8": "Glowstone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29342,6 +29375,7 @@
             "id:8": "minecraft:soul_sand"
           },
           "name:8": "Soul Sand Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29440,12 +29474,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of slime",
+          "desc:8": "Dimension made of slime\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:slime"
           },
           "name:8": "Slime Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29505,6 +29540,7 @@
             "id:8": "lockyzextradimensionsmod:alternategrass"
           },
           "name:8": "Alternate Reality",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29600,6 +29636,7 @@
             "id:8": "minecraft:iron_block"
           },
           "name:8": "Iron Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29663,6 +29700,7 @@
             "id:8": "minecraft:redstone_block"
           },
           "name:8": "Redstone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29726,6 +29764,7 @@
             "id:8": "minecraft:sea_lantern"
           },
           "name:8": "Sea Lantern Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29789,6 +29828,7 @@
             "id:8": "minecraft:redstone_lamp"
           },
           "name:8": "Redstone Lamp Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29851,6 +29891,7 @@
             "id:8": "minecraft:tnt"
           },
           "name:8": "Tnt Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29913,6 +29954,7 @@
             "id:8": "minecraft:dispenser"
           },
           "name:8": "Dispenser Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -29975,6 +30017,7 @@
             "id:8": "minecraft:prismarine"
           },
           "name:8": "Prismarine Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30038,6 +30081,7 @@
             "id:8": "minecraft:end_bricks"
           },
           "name:8": "End Stone Brick Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30101,6 +30145,7 @@
             "id:8": "minecraft:piston"
           },
           "name:8": "Piston Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30163,6 +30208,7 @@
             "id:8": "minecraft:sticky_piston"
           },
           "name:8": "Sticky Piston Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30219,12 +30265,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of hoppers",
+          "desc:8": "Dimension made of hoppers\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:hopper"
           },
           "name:8": "Hopper Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30288,6 +30335,7 @@
             "id:8": "minecraft:dropper"
           },
           "name:8": "Dropper Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30350,6 +30398,7 @@
             "id:8": "minecraft:lapis_block"
           },
           "name:8": "Lapis Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30413,6 +30462,7 @@
             "id:8": "minecraft:end_stone"
           },
           "name:8": "End Stone Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30477,6 +30527,7 @@
             "id:8": "minecraft:purpur_block"
           },
           "name:8": "Purpur Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30534,12 +30585,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of cauldrons",
+          "desc:8": "Dimension made of... couldrons?",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:cauldron"
           },
           "name:8": "Cauldron Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30603,6 +30655,7 @@
             "id:8": "minecraft:sponge"
           },
           "name:8": "Sponge Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30670,6 +30723,7 @@
             "id:8": "minecraft:noteblock"
           },
           "name:8": "Note Block Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30736,6 +30790,7 @@
             "id:8": "minecraft:jukebox"
           },
           "name:8": "Jukebox Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30803,6 +30858,7 @@
             "id:8": "minecraft:gold_block"
           },
           "name:8": "Gold Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30864,12 +30920,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of brewing stands",
+          "desc:8": "Dimension made of brewing stands\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:brewing_stand"
           },
           "name:8": "Brewing Stand Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -30936,6 +30993,7 @@
             "id:8": "minecraft:observer"
           },
           "name:8": "Observer Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31002,6 +31060,7 @@
             "id:8": "minecraft:bookshelf"
           },
           "name:8": "Bookshelf Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31063,12 +31122,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of shulker boxes",
+          "desc:8": "Dimension made of shulker boxes\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:white_shulker_box"
           },
           "name:8": "Shulker Box Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31136,6 +31196,7 @@
             "id:8": "minecraft:diamond_block"
           },
           "name:8": "Diamond Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31207,6 +31268,7 @@
             "id:8": "minecraft:emerald_block"
           },
           "name:8": "Emerald Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31272,12 +31334,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of obsidian",
+          "desc:8": "Dimension made of obsidian. Normal obsidian.\n\n§2§oSeems quite expensive for only obsidian...",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:obsidian"
           },
           "name:8": "Obsidian Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31342,12 +31405,13 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Dimension made of beacons?!",
+          "desc:8": "Dimension made of beacons?!\n\n§4§lTurn down your render distance before entering!",
           "icon:10": {
             "Count:3": 1,
             "id:8": "minecraft:beacon"
           },
           "name:8": "Beacon Dimension",
+		  "repeattime:3": 10,
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -31412,14 +31476,14 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "A crossroads dimension and the only place to find §4§odimensional shards§r.",
+          "desc:8": "A crossroads dimension and the only place to find §4§odimensional shards§r.\n\n§c§oYou will need a portal frame made of §2§oInter-Dimensional §c§oBlocks and an §2§oInter-Dimensional §c§oIgniter plus the Command Reward from this quest to enter the dimension.",
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
             "id:8": "environmentaltech:lonsdaleite_crystal"
           },
           "ismain:1": 1,
-          "name:8": "Interdimensional Dimension",
+          "name:8": "Inter-Dimensional Dimension",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
