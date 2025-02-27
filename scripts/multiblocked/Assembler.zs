@@ -10,7 +10,7 @@ static recipes as Recipe[] = [
 	Recipe(600, 150, <industrialforegoing:tree_fluid_extractor>, [ 											//Tree Fluid Extractor
 		<teslacorelib:machine_case>, <overloaded:compressed_stone:2>*4, <thermalfoundation:material:32>*4, 
 		<thermalfoundation:material:24>*2, <randomthings:plate_extraction>, <thermaldynamics:servo> ]),
-	Recipe(600, 150, <industrialforegoing:tree_fluid_extractor>, [ 											//Latex Processing Unit
+	Recipe(600, 150, <industrialforegoing:latex_processing_unit>, [ 											//Latex Processing Unit
 		<teslacorelib:machine_case>, <moreplates:redstone_alloy_plate>*2, <thermalfoundation:material:32>*4,
 		<thermalfoundation:material:24>*2, <openblocks:tank>, <thermaldynamics:duct_16> ], 
 		<liquid:latex>*1000),
