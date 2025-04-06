@@ -26990,6 +26990,7 @@
       "questID:3": 650,
       "tasks:9": {
         "0:10": {
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
