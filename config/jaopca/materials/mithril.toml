@@ -1,4 +1,3 @@
-
 #Configurations for material Mithril.
 [general]
 	#The alternative names of this material.
@@ -15,8 +14,6 @@
 	modelType = "metallic"
 	#The color of this material.
 	color = 5932442
-
 [molten]
 	#The temperature of this molten fluid.
 	temperature = 1000
-

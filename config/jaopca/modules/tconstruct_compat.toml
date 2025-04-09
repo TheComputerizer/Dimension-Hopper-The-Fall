@@ -1,8 +1,6 @@
-
 [general]
 	#The material blacklist of this module.
 	materialBlacklist = []
-
 [recipes]
 	#Should the module only add recipes for materials with JAOPCA molten fluids.
 	jaopcaOnly = true
@@ -32,4 +30,3 @@
 	materialCastMaterialBlacklist = []
 	#The materials that should not have nugget cast recipes added.
 	nuggetCastMaterialBlacklist = []
-

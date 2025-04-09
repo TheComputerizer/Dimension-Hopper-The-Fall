@@ -1,4 +1,3 @@
-
 #Configurations for material EnderBiotite.
 [general]
 	#The alternative names of this material.
@@ -15,12 +14,9 @@
 	modelType = "crystal"
 	#The color of this material.
 	color = 16777215
-
 [molten]
 	#The temperature of this molten fluid.
 	temperature = 1000
-
 [mekanism]
 	#The default base to use in Mekanism's Combiner to recreate ores.
 	oreBase = "minecraft:cobblestone"
-

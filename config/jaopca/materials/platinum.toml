@@ -1,4 +1,3 @@
-
 #Configurations for material Platinum.
 [general]
 	#The alternative names of this material.
@@ -15,4 +14,3 @@
 	modelType = "metallic"
 	#The color of this material.
 	color = 8370123
-

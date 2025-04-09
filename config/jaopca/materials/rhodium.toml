@@ -1,4 +1,3 @@
-
 #Configurations for material Rhodium.
 [general]
 	#The alternative names of this material.
@@ -13,4 +12,3 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "metallic"
-

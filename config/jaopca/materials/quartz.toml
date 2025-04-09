@@ -1,4 +1,3 @@
-
 #Configurations for material Quartz.
 [general]
 	#The alternative names of this material.
@@ -15,8 +14,6 @@
 	modelType = "crystal"
 	#The color of this material.
 	color = 12300454
-
 [molten]
 	#The temperature of this molten fluid.
 	temperature = 1000
-

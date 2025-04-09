@@ -1,4 +1,3 @@
-
 #Configurations for material Salt.
 [general]
 	#The alternative names of this material.
@@ -13,12 +12,9 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "dust"
-
 [enderio]
 	#The default byproduct material to output in Ender IO's sagmill.
 	byproduct = "minecraft:cobblestone"
-
 [mekanism]
 	#The default base to use in Mekanism's Combiner to recreate ores.
 	oreBase = "minecraft:cobblestone"
-

@@ -1,3 +1,51 @@
+Released V1.5.9[CATCHING UP]
+
+*Another new changelog format??*
+
+Removed Mods
+- [NetherPortalFix](<https://www.curseforge.com/minecraft/mc-mods/netherportalfix>) (Superseded by Universal Tweaks)
+
+Updated Mods
+- [AE2 Unofficial Extended Life](<https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life/files/6302098>)
+- [Alfheim Lighting Engine](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6295028>)
+- [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6355119>)
+- [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6261464>)
+- [CraftTweaker](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>)
+- [DimensionDoors](<https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors/files/6386037>)
+- [FermiumASM](<https://www.curseforge.com/minecraft/mc-mods/fermiumasm/files/6389447>)
+- [FermiumBooter](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>)
+- [Fixeroo](<https://www.curseforge.com/minecraft/mc-mods/xp-orb-clump/files/6197064>)
+- [FluidLogged API](<https://modrinth.com/mod/fluidlogged-api/version/3.0.6>)
+- [Forgelin-Continuous](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6359253>)
+- [Galacticraft Legacy](<https://www.curseforge.com/minecraft/mc-mods/galacticraft-legacy/files/6364107>)
+- [Greenery](<https://www.curseforge.com/minecraft/mc-mods/greenery/files/6266731>)
+- [GroovyScript](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6377628>)
+- [Had Enough Items](<https://www.curseforge.com/minecraft/mc-mods/had-enough-items/files/6187146>)
+- [HammerLib](<https://www.curseforge.com/minecraft/mc-mods/hammer-lib/files/6348753>)
+- [Inventory Bogo Sorter](<https://www.curseforge.com/minecraft/mc-mods/inventory-bogosorter/files/6170805>)
+- [JAOPCA](<https://www.curseforge.com/minecraft/mc-mods/jaopca/files/6393128>)
+- [Mist World Unveiled](<https://www.curseforge.com/minecraft/mc-mods/misty-world-unveiled/files/6232515>)
+- [MixinBooter](<https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files/6344449>)
+- [ModularUI](<https://www.curseforge.com/minecraft/mc-mods/modularui/files/6206809>)
+- [Multiblocked](<https://www.curseforge.com/minecraft/mc-mods/multiblocked/files/6153909>)
+- [OpenComputers](<https://www.curseforge.com/minecraft/mc-mods/opencomputers/files/6390867>)
+- [PackagedAuto](<https://www.curseforge.com/minecraft/mc-mods/packagedauto/files/6312996>)
+- [PackagedAvaritia](<https://www.curseforge.com/minecraft/mc-mods/packagedavaritia/files/6303034>)
+- [PackagedExCrafting](<https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting/files/6293114>)
+- [Patchouli ROFL Edition](<https://www.curseforge.com/minecraft/mc-mods/patchouli-rofl-edition/files/6178311>)
+- [Pillar Patched](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6275950>)
+- [Red Core](<https://www.curseforge.com/minecraft/mc-mods/red-core/files/6147102>)
+- [Roughly Enough IDs](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6292779>)
+- [The Twilight Forest - Deforestation Edition](<https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest-deforestation-edition/files/6218560>)
+- [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
+- [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6388731>)
+- [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
+- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6380100>)
+
+General Changes
+- [Void Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/112>) by Johanniklas
+
+
 Released V1.5.8.2[HOTFIX]
 
 *That wasn't supposed to happen?*

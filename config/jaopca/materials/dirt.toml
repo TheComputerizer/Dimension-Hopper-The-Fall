@@ -1,4 +1,3 @@
-
 #Configurations for material Dirt.
 [general]
 	#The alternative names of this material.
@@ -15,4 +14,3 @@
 	modelType = "dust"
 	#The color of this material.
 	color = 9004105
-
