@@ -49,6 +49,7 @@ General Changes
 - [Fix Genetic Waste recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/125>) by Johanniklas
 - [Fix ME Conduit recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/127>) by Johanniklas
 - [Fix Energy Conduits](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/131>) by Johanniklas
+- [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
 
 
 Released V1.5.8.2[HOTFIX]
