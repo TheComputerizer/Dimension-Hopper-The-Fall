@@ -1,6 +1,6 @@
 {
-    "url": "https://cdn.modrinth.com/data/vVXPbodS/versions/y52dPt4Z/Fluidlogged-API-v2.2.7-mc1.12.2.jar",
-    "fileName": "Fluidlogged-API-v2.2.7-mc1.12.2.jar",
+    "url": "https://cdn.modrinth.com/data/vVXPbodS/versions/ArR5epY9/Fluidlogged-API-v3.0.6-mc1.12.2.jar",
+    "fileName": "Fluidlogged-API-v3.0.6-mc1.12.2.jar",
     "options": {
         "launchwrapperTweakerForceNext": true
     },
@@ -8,6 +8,7 @@
        "continueOnFailedDownload": false,
        "selectedByDefault": true,
        "name": "Fluidlogged API",
-       "description": "Required mod! File will be downloaded from Modrinth"
+       "description": "Required mod! File will be downloaded from Modrinth",
+       "supersede": "Fluidlogged-API-v2.2.7-mc1.12.2.jar"
     }
 }
