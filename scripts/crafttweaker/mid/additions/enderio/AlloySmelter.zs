@@ -7,7 +7,7 @@ import scripts.crafttweaker.mid.additions.enderio.RecipeClasses.AlloySmelterReci
 static recipes as Recipe[] = [
     Recipe([<enderio:item_material:4>*4, <enderio:item_material:75>*4, <moreplates:pulsating_iron_plate>*4],
         <enderio:item_item_conduit>*4, 4000, 3.0),                                                  //item conduit
-    Recipe([<enderio:item_item_conduit:4>*4, <appliedenergistics2:part:56>, <enderio:item_liquid_conduit:2>*4],
+    Recipe([<enderio:item_item_conduit>*4, <appliedenergistics2:part:56>, <enderio:item_liquid_conduit:2>*4],
         <enderio:item_me_conduit>*4, 5000, 10.0),                                                   //me conduit
     Recipe([<enderio:item_material:4>*4, <enderio:item_material:75>*4, <moreplates:redstone_alloy_plate>*4],
         <enderio:item_redstone_conduit>*4, 4000, 3.0),                                              //redstone conduit
