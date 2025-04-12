@@ -4,6 +4,7 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.crafttweaker.early.util.Classes.RecipeHolder as Holder;
+import scripts.crafttweaker.early.util.Stacks as Stack;
 import scripts.crafttweaker.early.util.Tables as Util;
 import scripts.crafttweaker.mid.additions.artisans.Universal as Artisans;
 
@@ -30,17 +31,10 @@ static shapedHolders as Holder[] = [
 
 static shapelessHolders as Holder[] = [
   //musictriggers-----------------------------------------------------------------------------------------------------------
-  Util.shapeless(<musictriggers:music_triggers_record>, [
-    <musictriggers:music_triggers_record>.only(function(stack as IItemStack) as bool {
-        if(stack.hasTag) {
-          val tag =  stack.tag as IData;
-          if(isNull(tag)) {
-            return false;
-          }
-          return !isNull(tag.trackID);
-        }
-        return false;
-      }).reuse(), <musictriggers:blank_record>, <integrateddynamics:part_audio_writer_item>, <vc:modules/item_module_type:15>]).setMarkIndex(0)
+  Util.shapeless(Stack.blankDisc(), [
+      Stack.recordedDisc().reuse(), 
+      Stack.exclusiveBlankDisc(),
+      <integrateddynamics:part_audio_writer_item>, <vc:modules/item_module_type:15>]).setMarkIndex(0)
     .addFunction(function(output, map, info) {
         val tag as IData = map.mark.tag;
         val outputTag as IData = {trackID: tag.trackID,triggerID: tag.triggerID,channelFrom: tag.channelFrom};

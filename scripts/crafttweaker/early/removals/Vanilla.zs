@@ -427,7 +427,7 @@ static itemRemovals as IItemStack[] = [
 	<multiblocked:multiblock_builder>,
 
 	//musictriggers---------------------------------------------------------------------------------------------------------
-	<musictriggers:blank_record>,
+	Stack.blankDisc(),
 
 	//natura----------------------------------------------------------------------------------------------------------------
 	<natura:respawn_obelisk>, //Inactive Respawn Obelisk

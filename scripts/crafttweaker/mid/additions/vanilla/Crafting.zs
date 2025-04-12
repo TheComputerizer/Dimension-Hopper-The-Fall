@@ -320,7 +320,7 @@ static shapedBuilders as Holder[] = [
     }), //End Steel Gear
 
     //musictriggers---------------------------------------------------------------------------------------------------------
-    Util.dynamicShaped(<musictriggers:blank_record>, {
+    Util.dynamicShaped(Stack.blankDisc(), {
         <calculator:weakeneddiamond>:[0,2,6,8],
         <enderio:item_material:77>:[1,7],
         <integrateddynamics:part_audio_reader_item>:[3],

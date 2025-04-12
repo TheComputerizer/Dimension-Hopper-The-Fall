@@ -1,6 +1,7 @@
 #priority 1250
 #reloadable
 
+import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
@@ -23,14 +24,8 @@ function append(base as string, extras as string[], meta as int = 0, extra as st
     return ret;
 }
 
-function getMetaValuesMap(def as IItemDefinition, keys as IIngredient[], initialMeta as int = 0) as IItemStack[IIngredient] {
-    var meta as int = initialMeta;
-    var map as IItemStack[IIngredient] = {} as IItemStack[IIngredient];
-    for key in keys {
-        map[key] = def.makeStack(meta);
-        meta+=1;
-    }
-    return map;
+function blankDisc() as IItemStack {
+    return <musictriggers:record>.withEmptyTag();
 }
 
 function commonMetas(type as string, modMetas as int[][string], modReplacers as string[string] = {}) as IItemStack[] {
@@ -51,6 +46,20 @@ function commonMetas(type as string, modMetas as int[][string], modReplacers as 
         }
     }
     return ret;
+}
+
+function exclusiveBlankDisc() as IItemStack {
+    return <musictriggers:record>.onlyWithTag({} as IData);
+}
+
+function getMetaValuesMap(def as IItemDefinition, keys as IIngredient[], initialMeta as int = 0) as IItemStack[IIngredient] {
+    var meta as int = initialMeta;
+    var map as IItemStack[IIngredient] = {} as IItemStack[IIngredient];
+    for key in keys {
+        map[key] = def.makeStack(meta);
+        meta+=1;
+    }
+    return map;
 }
 
 function incrementals(base as string, vals as int[], meta as int = 0, extra as string = "") as IItemStack[] {
@@ -137,6 +146,19 @@ function metas(item as IItemStack, vals as int[]) as IItemStack[] {
         ret+=item.definition.makeStack(meta);
     }
     return ret;
+}
+
+function recordedDisc() as IItemStack {
+    return <musictriggers:record>.only(function(stack as IItemStack) as bool {
+        if(stack.hasTag) {
+          val tag =  stack.tag as IData;
+          if(isNull(tag)) {
+            return false;
+          }
+          return !isNull(tag.trackID);
+        }
+        return false;
+      })
 }
 
 function withExtras(base as IItemStack[], extras as IIngredient[] = [] as IIngredient) as IIngredient[] {
