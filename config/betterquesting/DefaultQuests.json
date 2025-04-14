@@ -142,7 +142,6 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "autoclaim:1": 1,
           "desc:8": "     This can\u0027t be... was there an error in my calculations? This may look like your §o§3§b§oOverworld§f§o§o§r§f, but it is one of many mirror realms. In any case, it seems we have a much bigger problem than I thought. §c§oSomething§r§f must have somehow scrambled the realms.\n\n     Hey, you know what? I did you a pretty big favor getting you out of §8§oLimbo§r§f, so now it\u0027s your turn to repay the favor. Investigate the cause of the apparent §4§6§o§m§m§l§m§r§o§l§6§o§lDimensional Shift§r§f for me. To that end, you probably have a long journey ahead of you, so I guess I can guide you along the way.\n\n     Your first task is to explore this realm. There must be a clue around here somewhere. Punching trees is always a good place to start.",
           "icon:10": {
             "Count:3": 1,
@@ -3012,14 +3011,15 @@
     },
     "54:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
           "desc:8": "Why is there moonstone if the moon never shines here?",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "blue_skies:everbright_cherry_grass"
+            "id:8": "blue_skies:everbright_portal"
           },
           "name:8": "Everbright",
           "snd_complete:8": "contenttweaker:questcommon",
@@ -3038,7 +3038,8 @@
     },
     "55:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3064,7 +3065,8 @@
     },
     "56:10": {
       "preRequisites:11": [
-        52
+        52,
+        242
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3074,6 +3076,7 @@
             "id:8": "atum:portal"
           },
           "name:8": "Atum",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -3090,7 +3093,8 @@
     },
     "57:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3116,7 +3120,8 @@
     },
     "58:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3142,7 +3147,8 @@
     },
     "59:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3168,7 +3174,8 @@
     },
     "60:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6347,8 +6354,7 @@
     },
     "133:10": {
       "preRequisites:11": [
-        126,
-        127
+        126
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8790,6 +8796,10 @@
             },
             "1:10": {
               "Count:3": 1,
+              "id:8": "minecraft:gold_block"
+            },
+            "2:10": {
+              "Count:3": 1,
               "id:8": "mist:portal_base"
             }
           },
@@ -9857,14 +9867,14 @@
     },
     "235:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        242
+        56
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, sceptors, and necklaces when mined.",
+          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, sceptors, and necklaces when mined.\n\nTry throwing these into water.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:coin_dirty"
@@ -9898,10 +9908,10 @@
     },
     "236:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9931,7 +9941,7 @@
     },
     "237:10": {
       "preRequisites:11": [
-        234
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9962,8 +9972,11 @@
       }
     },
     "238:10": {
+      "preRequisiteTypes:7": [
+        2
+      ],
       "preRequisites:11": [
-        234
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10031,7 +10044,7 @@
     },
     "240:10": {
       "preRequisites:11": [
-        234
+        57
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10096,7 +10109,8 @@
     },
     "242:10": {
       "preRequisites:11": [
-        234
+        234,
+        52
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10126,10 +10140,10 @@
     },
     "243:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        57
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10159,10 +10173,10 @@
     },
     "244:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10192,10 +10206,10 @@
     },
     "245:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10225,10 +10239,10 @@
     },
     "246:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10261,10 +10275,10 @@
     },
     "247:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        54
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10293,8 +10307,13 @@
       }
     },
     "248:10": {
+      "preRequisiteTypes:7": [
+        2,
+        2
+      ],
       "preRequisites:11": [
-        234
+        54,
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10326,11 +10345,9 @@
       }
     },
     "249:10": {
-      "preRequisiteTypes:7": [
-        1
-      ],
       "preRequisites:11": [
-        234
+        54,
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10360,8 +10377,13 @@
       }
     },
     "250:10": {
+      "preRequisiteTypes:7": [
+        2,
+        2
+      ],
       "preRequisites:11": [
-        234
+        54,
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10394,10 +10416,10 @@
     },
     "251:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        54
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10427,10 +10449,12 @@
     },
     "252:10": {
       "preRequisiteTypes:7": [
-        1
+        2,
+        2
       ],
       "preRequisites:11": [
-        234
+        54,
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10461,10 +10485,10 @@
     },
     "253:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10494,10 +10518,10 @@
     },
     "254:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10527,10 +10551,10 @@
     },
     "255:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10560,10 +10584,10 @@
     },
     "256:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10592,8 +10616,11 @@
       }
     },
     "257:10": {
+      "preRequisiteTypes:7": [
+        2
+      ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10625,10 +10652,10 @@
     },
     "258:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10657,11 +10684,8 @@
       }
     },
     "259:10": {
-      "preRequisiteTypes:7": [
-        1
-      ],
       "preRequisites:11": [
-        234
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10690,11 +10714,8 @@
       }
     },
     "260:10": {
-      "preRequisiteTypes:7": [
-        1
-      ],
       "preRequisites:11": [
-        234
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10703,7 +10724,7 @@
             "Count:3": 1,
             "id:8": "glacidus:crysium"
           },
-          "name:8": "Crystium",
+          "name:8": "Crysium",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -10723,8 +10744,11 @@
       }
     },
     "261:10": {
+      "preRequisiteTypes:7": [
+        2
+      ],
       "preRequisites:11": [
-        234
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10756,10 +10780,10 @@
     },
     "262:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10768,7 +10792,7 @@
             "Count:3": 1,
             "id:8": "glacidus:eukeite"
           },
-          "name:8": "Eukite",
+          "name:8": "Eukeite",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -10789,10 +10813,10 @@
     },
     "263:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10822,7 +10846,7 @@
     },
     "264:10": {
       "preRequisites:11": [
-        242
+        56
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10890,11 +10914,8 @@
       }
     },
     "266:10": {
-      "preRequisiteTypes:7": [
-        1
-      ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10924,10 +10945,10 @@
     },
     "267:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10957,14 +10978,14 @@
     },
     "268:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     An orange ore found in the §7§oGaia§r realm.",
+          "desc:8": "     An orange ore found in the §7§oGaia§r realm.\n\nPyrite and its Restructurer products offer the longest burn time for §eGlittering§r, §dShining§r, and if you want to purify corrupted items, §0Nulling§r.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "gaiadimension:pyrite"
@@ -10990,10 +11011,10 @@
     },
     "269:10": {
       "preRequisiteTypes:7": [
-        1
+        2
       ],
       "preRequisites:11": [
-        234
+        270
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11023,7 +11044,8 @@
     },
     "270:10": {
       "preRequisites:11": [
-        52
+        52,
+        234
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11048,17 +11070,23 @@
       }
     },
     "271:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        238
+        238,
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "§o    §r Allows you to open any §oAurorian§r dungeon without the use of a key.",
+          "desc:8": "    The Runestone Key can be found in chests throughout the §oAurorian§r. If you don\u0027t get lucky, you can craft the Lockpicks instead. They may take multiple tries to pick the lock.\n\nBoth only work for the Runestone Dungeon.",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "theaurorian:lockpicks"
+            "id:8": "theaurorian:runestonegatekeyhole"
           },
-          "name:8": "Lockpicks",
+          "name:8": "Runestone Key",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -11066,9 +11094,14 @@
       "questID:3": 271,
       "tasks:9": {
         "0:10": {
+          "entryLogic:8": "OR",
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:runestonekey"
+            },
+            "1:10": {
               "Count:3": 1,
               "id:8": "theaurorian:lockpicks"
             }
@@ -11083,7 +11116,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Proof that you have conquered the Runestone Dungeon.",
+          "desc:8": "     Proof that you have conquered the Runestone Dungeon.\n\nThere are two more dungeons that you can conquer. The amulet allows you to craft the Key to continue.",
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
@@ -11106,6 +11139,17 @@
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:keeperamulet"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
         }
       }
     },
@@ -11241,7 +11285,9 @@
                 "tempshields:3": 0
               }
             },
-            "ForgeData:10": {},
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
             "HandDropChances:9": {
               "0:5": 0.085,
               "1:5": 0.085
@@ -11316,10 +11362,14 @@
     },
     "274:10": {
       "preRequisiteTypes:7": [
-        1
+        2,
+        2,
+        0
       ],
       "preRequisites:11": [
-        234
+        54,
+        58,
+        252
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11329,6 +11379,7 @@
             "id:8": "blue_skies:dungeon_key"
           },
           "name:8": "Dungeon Keys",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -11544,8 +11595,13 @@
       }
     },
     "276:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        274
+        274,
+        54
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11576,8 +11632,13 @@
       }
     },
     "277:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        274
+        274,
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11607,7 +11668,7 @@
     },
     "278:10": {
       "preRequisites:11": [
-        54
+        58
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13420,7 +13481,9 @@
                 "tempshields:3": 0
               }
             },
-            "ForgeData:10": {},
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
             "HandDropChances:9": {
               "0:5": 0.085,
               "1:5": 0.085
@@ -13499,6 +13562,13 @@
         }
       },
       "questID:3": 304,
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 20,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:xp"
+        }
+      },
       "tasks:9": {
         "0:10": {
           "index:3": 0,
@@ -36218,10 +36288,12 @@
     },
     "877:10": {
       "preRequisiteTypes:7": [
-        1
+        2,
+        0
       ],
       "preRequisites:11": [
-        234
+        270,
+        257
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -36231,6 +36303,7 @@
             "id:8": "gaiadimension:pink_essence"
           },
           "name:8": "Gaia Essence",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -36250,18 +36323,23 @@
       }
     },
     "878:10": {
+      "preRequisiteTypes:7": [
+        2,
+        0
+      ],
       "preRequisites:11": [
         270,
         877
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     That §d§oPink Essence§r you obtained can be used to fuel this mystical machine which is capable of breaking down various colors of §5§oopal§r from the realm into purer material forms.",
+          "desc:8": "     This mystical machine is capable of breaking down various ores from the realm into purer material forms.\n\nThe two upper slots are for §eGlittering§r items like §eGold Ingots§r and §dShining§r items like §dPink Essence§r.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "gaiadimension:restructurer_idle"
           },
           "name:8": "Restructurer",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -38178,7 +38256,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Place this stone in the ancient portal to gain access to the realm of Runandor",
+          "desc:8": "     Place this stone in the ancient portal to gain access to the realm of Runandor\n\n§3§lNote: You can only get the realmstone after entering Runandor.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "aoa3:runandor_realmstone"
@@ -50930,7 +51008,8 @@
     },
     "1105:10": {
       "preRequisites:11": [
-        936
+        936,
+        133
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -50940,6 +51019,7 @@
             "id:8": "aoa3:mega_rune_stone"
           },
           "name:8": "Mega Rune Stone",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -71615,6 +71695,737 @@
     },
     "1533:10": {
       "preRequisites:11": [
+        1013197977
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    Using Linen Thread, you can make a helmet that allows you to see more clearly in §e§oAtum§r.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "atum:wanderer_helmet"
+          },
+          "name:8": "Wanderer Helmet"
+        }
+      },
+      "questID:3": 83665955,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "atum:wanderer_helmet"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1534:10": {
+      "preRequisiteTypes:7": [
+        2,
+        0
+      ],
+      "preRequisites:11": [
+        259,
+        238
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    The Dungeon Locator can be used to find what direction the closest selected dungeon is in. It only works for dungeons in the §oAurorian§r realm.\n\n§3§lNote: Archaic Ore for the casting recipe for Moonglass can occasionally be found in the Trenchstone deposits on the surface of the Midnight realm.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "theaurorian:locator",
+            "tag:10": {}
+          },
+          "name:8": "Dungeon Locator"
+        }
+      },
+      "questID:3": 167142913,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:locator",
+              "tag:10": {}
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1535:10": {
+      "preRequisites:11": [
+        1428433352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    The Boss at the end of the Moon Temple and the final Boss of the §oAurorian§r realm. Her Trophy can be used to create some fun items.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "theaurorian:trophymoonqueen"
+          },
+          "name:8": "Moon Queen"
+        }
+      },
+      "questID:3": 297079895,
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 50,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:xp"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "target:8": "theaurorian:moonqueen",
+          "targetNBT:10": {
+            "AABB:9": {
+              "0:6": -0.27000001072883606,
+              "1:6": 0.0,
+              "2:6": -0.27000001072883606,
+              "3:6": 0.27000001072883606,
+              "4:6": 1.7549999952316284,
+              "5:6": 0.27000001072883606
+            },
+            "AbsorptionAmount:5": 0.0,
+            "Air:2": 300,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "ArmorItems:9": {
+              "0:10": {
+                "Count:3": 1,
+                "Damage:2": 0,
+                "id:8": "theaurorian:knightboots"
+              },
+              "1:10": {
+                "Count:3": 1,
+                "Damage:2": 0,
+                "id:8": "theaurorian:knightleggings"
+              },
+              "2:10": {
+                "Count:3": 1,
+                "Damage:2": 0,
+                "id:8": "theaurorian:knightchestplate"
+              },
+              "3:10": {}
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.projectileDamage"
+              },
+              "1:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.magicDamage"
+              },
+              "2:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.jumpHeight"
+              },
+              "3:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.damageResistance"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "potioncore.magicShielding"
+              },
+              "5:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.slash"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.pierce"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.impact"
+              },
+              "8:10": {
+                "Base:6": 200.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "9:10": {
+                "Base:6": 0.85,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "10:10": {
+                "Base:6": 0.2,
+                "Name:8": "generic.movementSpeed"
+              },
+              "11:10": {
+                "Base:6": 8.0,
+                "Name:8": "generic.armor"
+              },
+              "12:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "13:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "14:10": {
+                "Base:6": 40.0,
+                "Name:8": "generic.followRange"
+              },
+              "15:10": {
+                "Base:6": 4.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "CanPickUpLoot:1": 0,
+            "DeathTime:2": 0,
+            "Dimension:3": -23,
+            "FallDistance:5": 0.0,
+            "FallFlying:1": 0,
+            "Fire:2": -1,
+            "ForgeCaps:10": {
+              "aether:entityinfo:10": {
+                "hasSpawnArea:1": 0
+              },
+              "aether:statuseffects:10": {
+                "statusEffects:9": {}
+              },
+              "cavern:portal_cache:10": {
+                "LastDim:9": {},
+                "LastPos:9": {}
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "dsurround:entityfx:10": {},
+              "dsurround:speech:10": {},
+              "thebetweenlands:custom_step_sound:10": {},
+              "thebetweenlands:entity_gems:10": {
+                "gems:9": {}
+              },
+              "thebetweenlands:equipment:10": {
+                "amuletSlots:3": 1
+              },
+              "thebetweenlands:puppet:10": {
+                "guard:1": 0,
+                "recruitmentCost:3": 0,
+                "stay:1": 0,
+                "ticks:3": 0
+              },
+              "tinkertoolleveling:entityxp:9": {},
+              "twilightforest:cap_boss:10": {
+                "homePos:10": {
+                  "X:3": 0,
+                  "Y:3": 0,
+                  "Z:3": 0
+                },
+                "variant:3": -1
+              },
+              "twilightforest:cap_shield:10": {
+                "permshields:3": 0,
+                "tempshields:3": 0
+              }
+            },
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "HandItems:9": {
+              "0:10": {
+                "Count:3": 1,
+                "Damage:2": 0,
+                "id:8": "theaurorian:moonstonesword"
+              },
+              "1:10": {}
+            },
+            "Health:5": 200.0,
+            "HurtByTimestamp:3": 0,
+            "HurtTime:2": 0,
+            "Invulnerable:1": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "OnGround:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Rotation:9": {
+              "0:5": 0.97624063,
+              "1:5": 0.0
+            },
+            "UUIDLeast:4": -8001753399520303815,
+            "UUIDMost:4": 5778798939657749287,
+            "UpdateBlocked:1": 0,
+            "gravityFactor:6": 1.0,
+            "id:8": "theaurorian:moonqueen"
+          },
+          "taskID:8": "bq_standard:hunt"
+        }
+      }
+    },
+    "1536:10": {
+      "preRequisites:11": [
+        234,
+        52,
+        769601805
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    If you just cannot find that one specific biome you need, this compass can help. It allows you to choose a biome and, if you are in the correct dimension, will show you how far away and in what direction the biome is located.\n\nIt requires materials from all the Realms connected to the Labyrinth.\n\n§3§lNote: Everything you need can be obtained during Chapter 2. You will need to progress Botania and Immersive Engineering.\n\n§2§lPlaceholder for when the Nature\u0027s Compass gets added.§r",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "randomthings:emeraldcompass"
+          },
+          "name:8": "Nature\u0027s Compass"
+        }
+      },
+      "questID:3": 769601805,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "randomthings:emeraldcompass"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1537:10": {
+      "preRequisiteTypes:7": [
+        2
+      ],
+      "preRequisites:11": [
+        56
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    The Spinning Wheel allows you to get more String from your String, in the shape of Linen Thread. You can get Cloth Wraps from Mummies that spawn at night.\n\nTo spin something, right-click the top with the input item. It will take multiple clicks per item (the middle number while looking at a recipe is the number of rotations), and multiple input items per output item (left number). Right-click the front to get the finished item.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "atum:spinning_wheel"
+          },
+          "name:8": "Spinning Wheel"
+        }
+      },
+      "questID:3": 1013197977,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "atum:spinning_wheel"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1538:10": {
+      "preRequisiteTypes:7": [
+        2,
+        0
+      ],
+      "preRequisites:11": [
+        60,
+        258
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    This Forge only works in the §b§oOverworld§r during Night or in the §oAurorian§r realm. It can be used to upgrade tools and weapons, both with Ingots made from Scraps and with Trophies dropped from bosses.\n\n§3§lNote: The Moon Temple is the third and final dungeon of the Aurorian. Moon Gems can be found on the islands surrounding that dungeon and don\u0027t require entering it.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "theaurorian:moonlightforge"
+          },
+          "name:8": "Moonlight Forge",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 1030965859,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:moonlightforge"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1539:10": {
+      "preRequisites:11": [
+        240
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    It seems that §ePositite§r, together with §7Electrical Steel§r, can be used to create §eElectrum§r without the need for Silver. However, this process requires more energy and yields less Ingots.",
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 1,
+            "id:8": "thermalfoundation:storage_alloy"
+          },
+          "name:8": "Electrum?"
+        }
+      },
+      "questID:3": 1223527586,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 161,
+              "id:8": "thermalfoundation:material"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1540:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2,
+        2
+      ],
+      "preRequisites:11": [
+        274,
+        58,
+        54
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    They can be found in a hidden room in the dungeon in both the §9§oEverbright§r and §3§oEverdawn§r realms.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "blue_skies:cherry_sapling"
+          },
+          "name:8": "Cherry Sapling",
+          "questlogic:8": "OR"
+        }
+      },
+      "questID:3": 1345373956,
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "blue_skies:cherry_sapling"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1541:10": {
+      "preRequisites:11": [
+        314
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    This handy tool can be used to find more of previously found blocks. Very useful for rare ores, or structures like the basements in druid houses. To recharge it, you need to craft it with a battery.\n\nThe scanner does not work with all blocks. If you are for example looking for wither skeleton skulls for some §0§lmasochistic§r reason, try scanning for chests instead.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "scanner:scanner"
+          },
+          "name:8": "Scanner"
+        }
+      },
+      "questID:3": 1354344238,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "scanner:scanner"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "scanner:battery"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "1542:10": {
+      "preRequisites:11": [
+        273
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    Found in the Depths of the Darkstone Dungeon. Defeating her drops the Amulet for the next dungeon and removes the barrier blocking the loot chests.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "theaurorian:trophyspider"
+          },
+          "name:8": "Spider Mother"
+        }
+      },
+      "questID:3": 1428433352,
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 25,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:xp"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "target:8": "theaurorian:spider",
+          "targetNBT:10": {
+            "AABB:9": {
+              "0:6": -1.399999976158142,
+              "1:6": 0.0,
+              "2:6": -1.399999976158142,
+              "3:6": 1.399999976158142,
+              "4:6": 1.7999999523162842,
+              "5:6": 1.399999976158142
+            },
+            "AbsorptionAmount:5": 0.0,
+            "Air:2": 300,
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.projectileDamage"
+              },
+              "1:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.magicDamage"
+              },
+              "2:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.jumpHeight"
+              },
+              "3:10": {
+                "Base:6": 1.0,
+                "Name:8": "potioncore.damageResistance"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "potioncore.magicShielding"
+              },
+              "5:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.slash"
+              },
+              "6:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.pierce"
+              },
+              "7:10": {
+                "Base:6": 0.0,
+                "Name:8": "attribute.name.aether.impact"
+              },
+              "8:10": {
+                "Base:6": 160.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "9:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "10:10": {
+                "Base:6": 0.3,
+                "Name:8": "generic.movementSpeed"
+              },
+              "11:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.armor"
+              },
+              "12:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "13:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "14:10": {
+                "Base:6": 50.0,
+                "Name:8": "generic.followRange"
+              },
+              "15:10": {
+                "Base:6": 3.0,
+                "Name:8": "generic.attackDamage"
+              }
+            },
+            "CanPickUpLoot:1": 0,
+            "DeathTime:2": 0,
+            "Dimension:3": -23,
+            "FallDistance:5": 0.0,
+            "FallFlying:1": 0,
+            "Fire:2": -1,
+            "ForgeCaps:10": {
+              "aether:entityinfo:10": {
+                "hasSpawnArea:1": 0
+              },
+              "aether:statuseffects:10": {
+                "statusEffects:9": {}
+              },
+              "cavern:portal_cache:10": {
+                "LastDim:9": {},
+                "LastPos:9": {}
+              },
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "dsurround:entityfx:10": {},
+              "dsurround:speech:10": {},
+              "thebetweenlands:custom_step_sound:10": {},
+              "thebetweenlands:entity_gems:10": {
+                "gems:9": {}
+              },
+              "thebetweenlands:equipment:10": {
+                "amuletSlots:3": 1
+              },
+              "thebetweenlands:puppet:10": {
+                "guard:1": 0,
+                "recruitmentCost:3": 0,
+                "stay:1": 0,
+                "ticks:3": 0
+              },
+              "tinkertoolleveling:entityxp:9": {},
+              "twilightforest:cap_boss:10": {
+                "homePos:10": {
+                  "X:3": 0,
+                  "Y:3": 0,
+                  "Z:3": 0
+                },
+                "variant:3": -1
+              },
+              "twilightforest:cap_shield:10": {
+                "permshields:3": 0,
+                "tempshields:3": 0
+              }
+            },
+            "ForgeData:10": {
+              "isFakeEntityForMoBends:1": 1
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "Health:5": 160.0,
+            "HurtByTimestamp:3": 0,
+            "HurtTime:2": 0,
+            "Invulnerable:1": 0,
+            "Leashed:1": 0,
+            "LeftHanded:1": 0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "OnGround:1": 0,
+            "PersistenceRequired:1": 0,
+            "PortalCooldown:3": 0,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Rotation:9": {
+              "0:5": 0.27660343,
+              "1:5": 0.0
+            },
+            "UUIDLeast:4": -5295560654226400630,
+            "UUIDMost:4": -2042757250203103356,
+            "UpdateBlocked:1": 0,
+            "gravityFactor:6": 1.0,
+            "id:8": "theaurorian:spider"
+          },
+          "taskID:8": "bq_standard:hunt"
+        }
+      }
+    },
+    "1543:10": {
+      "preRequisites:11": [
+        238
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "desc:8": "    This allows you to destroy weapons, tools, and armor, most notably those obtained after defeating a boss, for a few pieces of scrap. The scrap can be combined into Ingots that you can use in the Moonlight Forge or for Aurorianite Ingots.\n\nRequires §dCrystals§r to run.",
+          "icon:10": {
+            "Count:3": 1,
+            "id:8": "theaurorian:scrapper"
+          },
+          "name:8": "Scrapper"
+        }
+      },
+      "questID:3": 1506915266,
+      "tasks:9": {
+        "0:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:scrapper"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1544:10": {
+      "preRequisites:11": [
         1499,
         1495
       ],
@@ -71877,6 +72688,13 @@
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -96
+        },
+        "17:10": {
+          "id:3": 1354344238,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -48,
+          "y:3": -168
         }
       }
     },
@@ -73572,14 +74390,14 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
-          "y:3": -60
+          "y:3": -24
         },
         "17:10": {
           "id:3": 275,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -12,
-          "y:3": -24
+          "y:3": -60
         },
         "18:10": {
           "id:3": 278,
@@ -73972,6 +74790,20 @@
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": -96
+        },
+        "74:10": {
+          "id:3": 297079895,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 12
+        },
+        "75:10": {
+          "id:3": 1428433352,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -12,
+          "y:3": 12
         }
       }
     },
@@ -77972,305 +78804,396 @@
       },
       "quests:9": {
         "0:10": {
+          "id:3": 54,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -60,
+          "y:3": -12
+        },
+        "1:10": {
+          "id:3": 55,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": -60
+        },
+        "2:10": {
+          "id:3": 56,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": -84
+        },
+        "3:10": {
+          "id:3": 57,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -48,
+          "y:3": 48
+        },
+        "4:10": {
+          "id:3": 58,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -60,
+          "y:3": 12
+        },
+        "5:10": {
+          "id:3": 59,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": 48
+        },
+        "6:10": {
+          "id:3": 60,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -48,
+          "y:3": -48
+        },
+        "7:10": {
           "id:3": 234,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 0
         },
-        "1:10": {
+        "8:10": {
           "id:3": 235,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
-          "y:3": -72
+          "x:3": 144,
+          "y:3": -108
         },
-        "2:10": {
+        "9:10": {
           "id:3": 236,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": 0
+          "x:3": 180,
+          "y:3": 24
         },
-        "3:10": {
+        "10:10": {
           "id:3": 237,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 36,
-          "y:3": 36
+          "x:3": 84,
+          "y:3": 84
         },
-        "4:10": {
+        "11:10": {
           "id:3": 238,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -36
+          "x:3": -84,
+          "y:3": -108
         },
-        "5:10": {
-          "id:3": 239,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": 0
-        },
-        "6:10": {
+        "12:10": {
           "id:3": 240,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": 36
-        },
-        "7:10": {
-          "id:3": 241,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 0,
-          "y:3": -48
-        },
-        "8:10": {
-          "id:3": 242,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 36,
-          "y:3": -36
-        },
-        "9:10": {
-          "id:3": 243,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -12,
-          "y:3": 60
-        },
-        "10:10": {
-          "id:3": 244,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": 60
-        },
-        "11:10": {
-          "id:3": 245,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 48,
-          "y:3": 60
-        },
-        "12:10": {
-          "id:3": 246,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 36,
+          "x:3": -84,
           "y:3": 84
         },
         "13:10": {
+          "id:3": 242,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 48,
+          "y:3": -48
+        },
+        "14:10": {
+          "id:3": 243,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -72,
+          "y:3": 108
+        },
+        "15:10": {
+          "id:3": 244,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 72,
+          "y:3": 108
+        },
+        "16:10": {
+          "id:3": 245,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": 108
+        },
+        "17:10": {
+          "id:3": 246,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 84,
+          "y:3": 132
+        },
+        "18:10": {
           "id:3": 247,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -72,
+          "x:3": -108,
           "y:3": 24
         },
-        "14:10": {
+        "19:10": {
           "id:3": 248,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -72,
-          "y:3": -24
+          "x:3": -132,
+          "y:3": 24
         },
-        "15:10": {
+        "20:10": {
           "id:3": 249,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -96,
-          "y:3": 24
+          "x:3": -108,
+          "y:3": 0
         },
-        "16:10": {
+        "21:10": {
           "id:3": 250,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -96,
-          "y:3": -24
-        },
-        "17:10": {
-          "id:3": 251,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -120,
-          "y:3": 24
-        },
-        "18:10": {
-          "id:3": 252,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -120,
-          "y:3": -24
-        },
-        "19:10": {
-          "id:3": 253,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": -24
-        },
-        "20:10": {
-          "id:3": 254,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": 24
-        },
-        "21:10": {
-          "id:3": 255,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 96,
+          "x:3": -132,
           "y:3": -24
         },
         "22:10": {
+          "id:3": 251,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -108,
+          "y:3": -24
+        },
+        "23:10": {
+          "id:3": 252,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -132,
+          "y:3": 0
+        },
+        "24:10": {
+          "id:3": 253,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": -24
+        },
+        "25:10": {
+          "id:3": 254,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": 24
+        },
+        "26:10": {
+          "id:3": 255,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 156,
+          "y:3": -24
+        },
+        "27:10": {
           "id:3": 256,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
+          "x:3": 156,
           "y:3": 24
         },
-        "23:10": {
+        "28:10": {
           "id:3": 257,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": -24
+          "x:3": 228,
+          "y:3": 0
         },
-        "24:10": {
+        "29:10": {
           "id:3": 258,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -60
-        },
-        "25:10": {
-          "id:3": 259,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -60,
-          "y:3": -60
-        },
-        "26:10": {
-          "id:3": 260,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 0,
-          "y:3": -72
-        },
-        "27:10": {
-          "id:3": 261,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 0,
-          "y:3": -96
-        },
-        "28:10": {
-          "id:3": 262,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -24,
-          "y:3": -96
-        },
-        "29:10": {
-          "id:3": 263,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 24,
-          "y:3": -96
+          "x:3": -108,
+          "y:3": -84
         },
         "30:10": {
-          "id:3": 264,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 60,
-          "y:3": -72
-        },
-        "31:10": {
-          "id:3": 266,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 24
-        },
-        "32:10": {
-          "id:3": 267,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 144,
-          "y:3": -24
-        },
-        "33:10": {
-          "id:3": 268,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 144,
-          "y:3": 24
-        },
-        "34:10": {
-          "id:3": 269,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": 24
-        },
-        "35:10": {
-          "id:3": 271,
+          "id:3": 259,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -84
         },
-        "36:10": {
-          "id:3": 272,
+        "31:10": {
+          "id:3": 260,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -84,
+          "x:3": 0,
+          "y:3": -108
+        },
+        "32:10": {
+          "id:3": 261,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": -132
+        },
+        "33:10": {
+          "id:3": 262,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -24,
           "y:3": -120
         },
-        "37:10": {
-          "id:3": 274,
+        "34:10": {
+          "id:3": 263,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -156,
+          "x:3": 24,
+          "y:3": -120
+        },
+        "35:10": {
+          "id:3": 264,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 120,
+          "y:3": -120
+        },
+        "36:10": {
+          "id:3": 266,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
           "y:3": 0
         },
-        "38:10": {
-          "id:3": 276,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -180,
-          "y:3": -24
-        },
-        "39:10": {
-          "id:3": 277,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -180,
-          "y:3": 24
-        },
-        "40:10": {
-          "id:3": 279,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": -24
-        },
-        "41:10": {
-          "id:3": 877,
+        "37:10": {
+          "id:3": 267,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
+          "y:3": -24
+        },
+        "38:10": {
+          "id:3": 268,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
+          "y:3": 24
+        },
+        "39:10": {
+          "id:3": 269,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 180,
+          "y:3": -24
+        },
+        "40:10": {
+          "id:3": 270,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 60,
           "y:3": 0
         },
+        "41:10": {
+          "id:3": 271,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": -144
+        },
         "42:10": {
+          "id:3": 272,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": -180
+        },
+        "43:10": {
+          "id:3": 274,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -168,
+          "y:3": 0
+        },
+        "44:10": {
+          "id:3": 276,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -192,
+          "y:3": -24
+        },
+        "45:10": {
+          "id:3": 277,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -192,
+          "y:3": 24
+        },
+        "46:10": {
+          "id:3": 877,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 264,
+          "y:3": 0
+        },
+        "47:10": {
           "id:3": 878,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
+          "x:3": 300,
           "y:3": 0
+        },
+        "48:10": {
+          "id:3": 83665955,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -180
+        },
+        "49:10": {
+          "id:3": 167142913,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -84,
+          "y:3": -144
+        },
+        "50:10": {
+          "id:3": 769601805,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 0,
+          "y:3": 60
+        },
+        "51:10": {
+          "id:3": 1013197977,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -144
+        },
+        "52:10": {
+          "id:3": 1030965859,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -156,
+          "y:3": -84
+        },
+        "53:10": {
+          "id:3": 1223527586,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": 120
+        },
+        "54:10": {
+          "id:3": 1345373956,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -216,
+          "y:3": 0
+        },
+        "55:10": {
+          "id:3": 1506915266,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -156,
+          "y:3": -108
         }
       }
     },

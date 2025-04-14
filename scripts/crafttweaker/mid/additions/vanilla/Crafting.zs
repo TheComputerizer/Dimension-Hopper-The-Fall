@@ -387,6 +387,24 @@ static shapedBuilders as Holder[] = [
         <twilightforest:carminite>:[1],
     },1), //Battery
 
+    Util.simpleShapedNamed("emptyScanner",<scanner:scanner>, "table", [
+        null,
+        null,
+        <minecraft:iron_ingot>,
+        <minecraft:iron_ingot>,
+        <minecraft:redstone_torch>,
+        <minecraft:iron_ingot>
+    ]), //Scanner (empty)
+	
+    Util.simpleShapedNamed("filledScanner",<scanner:scanner>.withTag({energy: 10000}), "table", [
+        <scanner:battery>,
+        null,
+        <minecraft:iron_ingot>,
+        <minecraft:iron_ingot>,
+        <minecraft:redstone_torch>,
+        <minecraft:iron_ingot>
+    ]), //Scanner (filled)
+
     //sgcraft---------------------------------------------------------------------------------------------------------------
     Util.simpleShaped(<sgcraft:stargatecontroller>, "table", [
         <portalgun:item_miniature_black_hole>,
@@ -417,6 +435,9 @@ static shapedBuilders as Holder[] = [
     //theaurorian-----------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<theaurorian:scrapper>, { <theaurorian:ceruleaningot>:[0,1,2,3,5], 
         <enderio:block_simple_furnace>:[4], <theaurorian:aurorianstonebrick>:[6,7,8] }), //Scrapper
+    Util.dynamicShaped(<theaurorian:moonlightforge>, { <theaurorian:moongem>:[1],
+        <enderio:block_simple_furnace>:[7], <theaurorian:auroriancobblestone>:[3,5,6,8],
+	<theaurorian:silentwoodcraftingtable>:[4] }), //Moonlight Forge
 
     //thebetweenlands-------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<thebetweenlands:rubber_boots>, { <thebetweenlands:items_misc:23>:[0,2,3,5] }, 3, 2), //Rubber Boots
@@ -608,6 +629,10 @@ static shapelessBuilders as Holder[] = [
             val outputTag as IData = {timeData: {storedTime: map.mark.tag.timeData.storedTime+1200}};
             return output.withTag(outputTag);
         }), //Time in a Bottle
+
+    //scanner---------------------------------------------------------------------------------------------------------------
+    Util.shapeless(<scanner:scanner>.withTag({energy:10000}), [<scanner:scanner>, 
+        <scanner:battery>]), //Scanner (recharge)
 
     //sgcraft---------------------------------------------------------------------------------------------------------------
     Util.shapeless(<sgcraft:sgcorecrystal>, [<galacticraftcore:item_basic_moon:2>, 
