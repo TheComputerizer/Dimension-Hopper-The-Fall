@@ -6,6 +6,9 @@ function run() {
     Casting.addTableRecipe(<theaurorian:aurorianiteingot>, <theaurorian:crystal>, <liquid:aurorian_alloy>, 500, true);
     Casting.addTableRecipe(<silentgems:food:3>, <minecraft:bowl>, <liquid:protein>, 1000, true);
 
+    //ch2 moon glass
+	Casting.addBasinRecipe(<theaurorian:moonglass>, <midnight:archaic_glass>, <liquid:tamoonwater>, 16000);
+
     //zinc
     Casting.addTableRecipe(<extraplanets:tier8_items:5>, <tconstruct:cast_custom>, <liquid:zinc>, 144, false);
     Casting.addBasinRecipe(<extraplanets:neptune:7>, null, <liquid:zinc>, 1296);
