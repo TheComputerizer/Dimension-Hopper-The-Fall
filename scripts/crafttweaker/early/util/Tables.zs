@@ -122,6 +122,10 @@ function mappedShaped(output as IItemStack, inputs as IIngredient[][]) as Holder
     return Holder(makeRecipeName("shaped",output),output).addShaped(inputs);
 }
 
+function mappedShapedNamed(name as string, output as IItemStack, inputs as IIngredient[][]) as Holder {
+    return Holder(makeRecipeName("shaped."+name,output),output).addShaped(inputs);
+}
+
 function namedShapeless(name as string, output as IItemStack, inputs as IIngredient[]) as Holder {
     return Holder(makeRecipeName("shapeless."+name,output),output).addShapeless(inputs);
 }
@@ -168,6 +172,10 @@ function simpleMetaShaped(output as IItemStack, type as string, itemMetas as int
 
 function simpleShaped(output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
     return mappedShaped(output,Shaper.simple3x3(type,inputs));
+}
+
+function simpleShapedNamed(name as string, output as IItemStack, type as string, inputs as IIngredient[]) as Holder {
+    return mappedShapedNamed(name, output,Shaper.simple3x3(type,inputs));
 }
 
 function singleton(input as IIngredient, output as IItemStack, tool as IIngredient, durability as int) as Holder {
