@@ -387,6 +387,24 @@ static shapedBuilders as Holder[] = [
         <twilightforest:carminite>:[1],
     },1), //Battery
 
+    Util.simpleShaped(<scanner:scanner>, "table", [
+        null,
+        null,
+        <minecraft:iron_ingot>,
+        <minecraft:iron_ingot>,
+        <minecraft:redstone_torch>,
+        <minecraft:iron_ingot>
+    ]), //Scanner (empty)
+	
+    Util.simpleShaped(<scanner:scanner>.withTag({energy: 10000}), "table", [
+        <scanner:battery>,
+        null,
+        <minecraft:iron_ingot>,
+        <minecraft:iron_ingot>,
+        <minecraft:redstone_torch>,
+        <minecraft:iron_ingot>
+    ]), //Scanner (filled)
+
     //sgcraft---------------------------------------------------------------------------------------------------------------
     Util.simpleShaped(<sgcraft:stargatecontroller>, "table", [
         <portalgun:item_miniature_black_hole>,
