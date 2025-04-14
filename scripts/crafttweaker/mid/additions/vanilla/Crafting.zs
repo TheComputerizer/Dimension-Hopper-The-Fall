@@ -387,7 +387,7 @@ static shapedBuilders as Holder[] = [
         <twilightforest:carminite>:[1],
     },1), //Battery
 
-    Util.simpleShaped(<scanner:scanner>, "table", [
+    Util.simpleShapedNamed("emptyScanner",<scanner:scanner>, "table", [
         null,
         null,
         <minecraft:iron_ingot>,
@@ -396,7 +396,7 @@ static shapedBuilders as Holder[] = [
         <minecraft:iron_ingot>
     ]), //Scanner (empty)
 	
-    Util.simpleShaped(<scanner:scanner>.withTag({energy: 10000}), "table", [
+    Util.simpleShapedNamed("filledScanner",<scanner:scanner>.withTag({energy: 10000}), "table", [
         <scanner:battery>,
         null,
         <minecraft:iron_ingot>,
