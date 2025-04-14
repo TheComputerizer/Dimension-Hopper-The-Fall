@@ -475,6 +475,9 @@ static itemRemovals as IItemStack[] = [
 	//randomthings----------------------------------------------------------------------------------------------------------
 	<randomthings:timeinabottle>, //Time in a bottle
 
+	//scanner---------------------------------------------------------------------------------------------------------------
+	<scanner:scanner>, //Scanner
+
 	//silentgems------------------------------------------------------------------------------------------------------------
 	<silentgems:chaospylon:1>, //Burner Chaos Pylon
 	<silentgems:glowrosefertilizer>, //Glow Rose Fertilizer
