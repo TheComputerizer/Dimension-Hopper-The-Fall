@@ -499,6 +499,7 @@ static itemRemovals as IItemStack[] = [
 	<theaurorian:scrapcrystalline>, //Crystalline Scrap
 	<theaurorian:scrapumbra>, //Umbra Scrap
 	<theaurorian:scrapper>, //Scrapper
+	<theaurorian:moonlightforge>, //Moonlight Forge
 
 	//thermaldynamics-------------------------------------------------------------------------------------------------------
 	<thermaldynamics:duct_0:*>, //Fluxducts
