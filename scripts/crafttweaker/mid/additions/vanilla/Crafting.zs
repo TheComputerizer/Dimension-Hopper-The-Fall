@@ -627,6 +627,10 @@ static shapelessBuilders as Holder[] = [
             return output.withTag(outputTag);
         }), //Time in a Bottle
 
+    //scanner---------------------------------------------------------------------------------------------------------------
+    Util.shapeless(<scanner:scanner>.withTag({energy:10000}), [<scanner:scanner>, 
+        <scanner:battery>]), //Scanner (recharge)
+
     //sgcraft---------------------------------------------------------------------------------------------------------------
     Util.shapeless(<sgcraft:sgcorecrystal>, [<galacticraftcore:item_basic_moon:2>, 
         <sgcraft:naquadahingot>]), //Stargate Core Crystal
