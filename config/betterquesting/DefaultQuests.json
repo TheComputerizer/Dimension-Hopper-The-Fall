@@ -3125,7 +3125,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Why is there moonstone if the moon never shines here?",
+          "desc:8": "A realm trapped between the final shimmer of moonlight and the first rays of sunshine.\n\nWho turned off doDaylightCycle?",
           "icon:10": {
             "Count:3": 1,
             "id:8": "blue_skies:everdawn_portal"
@@ -9874,7 +9874,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, sceptors, and necklaces when mined.\n\nTry throwing these into water.",
+          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, scepters, and necklaces when mined.\n\nTry throwing these into water.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:coin_dirty"
@@ -11116,7 +11116,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     Proof that you have conquered the Runestone Dungeon.\n\nThere are two more dungeons that you can conquer. The amulet allows you to craft the Key to continue.",
+          "desc:8": "     Proof that you have conquered the Runestone Dungeon.\n\nThere are two more dungeons that you can conquer. The Amulet allows you to craft the Key to continue.",
           "frame:8": "GATE",
           "icon:10": {
             "Count:3": 1,
@@ -71699,7 +71699,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    Using Linen Thread, you can make a helmet that allows you to see more clearly in §e§oAtum§r.",
+          "desc:8": "    Using Cloth made from Linen, you can make a helmet that allows you to see more clearly in §e§oAtum§r.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:wanderer_helmet"
@@ -72022,7 +72022,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    The Spinning Wheel allows you to get more String from your String, in the shape of Linen Thread. You can get Cloth Wraps from Mummies that spawn at night.\n\nTo spin something, right-click the top with the input item. It will take multiple clicks per item (the middle number while looking at a recipe is the number of rotations), and multiple input items per output item (left number). Right-click the front to get the finished item.",
+          "desc:8": "    The Spinning Wheel allows you to get a new type of String, in the shape of Linen Thread. You can get Cloth Wraps from Mummies that spawn at night.\n\nTo spin something, right-click the top with the input item. It will take multiple clicks per item (the middle number while looking at a recipe is the number of rotations), and multiple input items per recipe (left number). Right-click the front to get the finished item.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:spinning_wheel"
@@ -72401,7 +72401,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    This allows you to destroy weapons, tools, and armor, most notably those obtained after defeating a boss, for a few pieces of scrap. The scrap can be combined into Ingots that you can use in the Moonlight Forge or for Aurorianite Ingots.\n\nRequires §dCrystals§r to run.",
+          "desc:8": "    This allows you to destroy weapons, tools, and armor, most notably those obtained after defeating a boss, for a few pieces of scrap. The scrap can be combined into Ingots that you can use in the Moonlight Forge or for Aurorian Steel.\n\nRequires §dCrystals§r to run.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "theaurorian:scrapper"
