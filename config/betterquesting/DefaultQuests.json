@@ -72401,7 +72401,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    This allows you to destroy weapons, tools, and armor, most notably those obtained after defeating a boss, for a few pieces of scrap. The scrap can be combined into Ingots that you can use in the Moonlight Forge or for Aurorianite Ingots.\n\nRequires §dCrystals§r to run.",
+          "desc:8": "    This allows you to destroy weapons, tools, and armor, most notably those obtained after defeating a boss, for a few pieces of scrap. The scrap can be combined into Ingots that you can use in the Moonlight Forge or for Aurorian Steel.\n\nRequires §dCrystals§r to run.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "theaurorian:scrapper"
