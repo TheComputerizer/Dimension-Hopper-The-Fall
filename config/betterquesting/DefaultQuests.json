@@ -9874,7 +9874,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, sceptors, and necklaces when mined.\n\nTry throwing these into water.",
+          "desc:8": "     An ore from the sands of §e§oAtum§r that can give dirty coins, scepters, and necklaces when mined.\n\nTry throwing these into water.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:coin_dirty"
