@@ -72022,7 +72022,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    The Spinning Wheel allows you to get a new type of String, in the shape of Linen Thread. You can get Cloth Wraps from Mummies that spawn at night.\n\nTo spin something, right-click the top with the input item. It will take multiple clicks per item (the middle number while looking at a recipe is the number of rotations), and multiple input items per output item (left number). Right-click the front to get the finished item.",
+          "desc:8": "    The Spinning Wheel allows you to get a new type of String, in the shape of Linen Thread. You can get Cloth Wraps from Mummies that spawn at night.\n\nTo spin something, right-click the top with the input item. It will take multiple clicks per item (the middle number while looking at a recipe is the number of rotations), and multiple input items per recipe (left number). Right-click the front to get the finished item.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:spinning_wheel"
