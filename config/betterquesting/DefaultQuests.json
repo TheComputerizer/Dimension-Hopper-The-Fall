@@ -71699,7 +71699,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "    Using Linen Thread, you can make a helmet that allows you to see more clearly in §e§oAtum§r.",
+          "desc:8": "    Using Cloth made from Linen, you can make a helmet that allows you to see more clearly in §e§oAtum§r.",
           "icon:10": {
             "Count:3": 1,
             "id:8": "atum:wanderer_helmet"
