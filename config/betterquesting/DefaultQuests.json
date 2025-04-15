@@ -3125,7 +3125,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "desc:8": "Why is there moonstone if the moon never shines here?",
+          "desc:8": "A realm trapped between the final shimmer of moonlight and the first rays of sunshine.\n\nWho turned off doDaylightCycle?",
           "icon:10": {
             "Count:3": 1,
             "id:8": "blue_skies:everdawn_portal"
