@@ -2,6 +2,12 @@ Released V1.5.9[CATCHING UP]
 
 *Another new changelog format??*
 
+Added Mods
+- [Cleanroom Relauncher](<https://www.curseforge.com/minecraft/mc-mods/cleanroom-relauncher>)
+- [Fugue](<https://www.curseforge.com/minecraft/mc-mods/fugue>)
+- [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
+- [Scalar Legacy](<https://www.curseforge.com/minecraft/mc-mods/scalar-legacy>)
+
 Removed Mods
 - [NetherPortalFix](<https://www.curseforge.com/minecraft/mc-mods/netherportalfix>) (Superseded by Universal Tweaks)
 
@@ -14,13 +20,15 @@ Updated Mods
 - [DimensionDoors](<https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors/files/6386037>)
 - [FermiumASM](<https://www.curseforge.com/minecraft/mc-mods/fermiumasm/files/6389447>)
 - [FermiumBooter](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>)
-- [Fixeroo](<https://www.curseforge.com/minecraft/mc-mods/xp-orb-clump/files/6197064>)
+- [File Director](<https://www.curseforge.com/minecraft/mc-mods/filedirector/files/6436962>)
+- [Fixeroo](<https://www.curseforge.com/minecraft/mc-mods/xp-orb-clump/files/6453491>)
+- [Forestry](<https://www.curseforge.com/minecraft/mc-mods/forestry/files/6450115>)
 - [FluidLogged API](<https://modrinth.com/mod/fluidlogged-api/version/3.0.6>)
 - [Forgelin-Continuous](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6359253>)
 - [Galacticraft Legacy](<https://www.curseforge.com/minecraft/mc-mods/galacticraft-legacy/files/6364107>)
 - [Greenery](<https://www.curseforge.com/minecraft/mc-mods/greenery/files/6266731>)
 - [GroovyScript](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6377628>)
-- [Had Enough Items](<https://www.curseforge.com/minecraft/mc-mods/had-enough-items/files/6187146>)
+- [Had Enough Items](<https://www.curseforge.com/minecraft/mc-mods/had-enough-items/files/6463525>)
 - [HammerLib](<https://www.curseforge.com/minecraft/mc-mods/hammer-lib/files/6348753>)
 - [Inventory Bogo Sorter](<https://www.curseforge.com/minecraft/mc-mods/inventory-bogosorter/files/6170805>)
 - [JAOPCA](<https://www.curseforge.com/minecraft/mc-mods/jaopca/files/6393128>)
@@ -28,20 +36,20 @@ Updated Mods
 - [MixinBooter](<https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files/6344449>)
 - [ModularUI](<https://www.curseforge.com/minecraft/mc-mods/modularui/files/6206809>)
 - [Multiblocked](<https://www.curseforge.com/minecraft/mc-mods/multiblocked/files/6153909>)
-- [Music Triggers](<https://www.curseforge.com/minecraft/mc-mods/music-triggers/files/6379052>)
+- [Music Triggers](<https://www.curseforge.com/minecraft/mc-mods/music-triggers/files/6430250>)
 - [OpenComputers](<https://www.curseforge.com/minecraft/mc-mods/opencomputers/files/6390867>)
 - [PackagedAuto](<https://www.curseforge.com/minecraft/mc-mods/packagedauto/files/6312996>)
 - [PackagedAvaritia](<https://www.curseforge.com/minecraft/mc-mods/packagedavaritia/files/6303034>)
-- [PackagedExCrafting](<https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting/files/6293114>)
+- [PackagedExCrafting](<https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting/files/6425299>)
 - [Patchouli ROFL Edition](<https://www.curseforge.com/minecraft/mc-mods/patchouli-rofl-edition/files/6178311>)
 - [Pillar Patched](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6275950>)
 - [Red Core](<https://www.curseforge.com/minecraft/mc-mods/red-core/files/6147102>)
 - [Roughly Enough IDs](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6292779>)
 - [Specified Spawning](<https://www.curseforge.com/minecraft/mc-mods/specified-spawning/files/6404673>)
-- [The Impossible Library](<https://www.curseforge.com/minecraft/mc-mods/the-impossible-library/files/6401432>)
+- [The Impossible Library](<https://www.curseforge.com/minecraft/mc-mods/the-impossible-library/files/6430611>)
 - [The Twilight Forest - Deforestation Edition](<https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest-deforestation-edition/files/6218560>)
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
-- [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6388731>)
+- [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>)
 - [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
 - [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6380100>)
 
@@ -52,7 +60,11 @@ General Changes
 - [Fix Genetic Waste recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/125>) by Johanniklas
 - [Fix ME Conduit recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/127>) by Johanniklas
 - [Fix Energy Conduits](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/131>) by Johanniklas
+- [Quests (mostly chapter 2) plus quest related stuff ](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/134>) by Johanniklas
+- [Ch2 quest descriptions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/136>) by Johanniklas
+- [Add items to boss quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/142>) by Johanniklas
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
+- "A Rough Start" is now more difficult to accidentally skip
 
 
 Released V1.5.8.2[HOTFIX]
