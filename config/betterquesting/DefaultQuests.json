@@ -12227,7 +12227,8 @@
           },
           "name:8": "Moonstone Ore",
           "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon"
+          "snd_update:8": "contenttweaker:questcommon",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 259,
