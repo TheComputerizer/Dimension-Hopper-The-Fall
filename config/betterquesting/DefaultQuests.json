@@ -11578,7 +11578,8 @@
           },
           "name:8": "Cerulean Ore",
           "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon"
+          "snd_update:8": "contenttweaker:questcommon",
+          "tasklogic:8": "OR"
         }
       },
       "questID:3": 238,
@@ -11589,6 +11590,16 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "theaurorian:ceruleanore"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:ceruleaningot"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -12227,6 +12238,16 @@
             "0:10": {
               "Count:3": 1,
               "id:8": "theaurorian:moonstoneore"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "id:8": "theaurorian:moonstoneingot"
             }
           },
           "taskID:8": "bq_standard:retrieval"
