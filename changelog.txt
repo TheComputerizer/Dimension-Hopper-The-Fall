@@ -3,10 +3,7 @@ Released V1.5.9[CATCHING UP]
 *Another new changelog format??*
 
 Added Mods
-- [Cleanroom Relauncher](<https://www.curseforge.com/minecraft/mc-mods/cleanroom-relauncher>)
-- [Fugue](<https://www.curseforge.com/minecraft/mc-mods/fugue>)
 - [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
-- [Scalar Legacy](<https://www.curseforge.com/minecraft/mc-mods/scalar-legacy>)
 
 Removed Mods
 - [NetherPortalFix](<https://www.curseforge.com/minecraft/mc-mods/netherportalfix>) (Superseded by Universal Tweaks)
@@ -51,7 +48,7 @@ Updated Mods
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
 - [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>)
 - [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
-- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6380100>)
+- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6482213>)
 
 General Changes
 - [Void Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/112>) by Johanniklas
@@ -63,6 +60,7 @@ General Changes
 - [Quests (mostly chapter 2) plus quest related stuff ](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/134>) by Johanniklas
 - [Ch2 quest descriptions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/136>) by Johanniklas
 - [Add items to boss quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/142>) by Johanniklas
+- [remove unused quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/146>) by Johanniklas
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
 - "A Rough Start" is now more difficult to accidentally skip
 
