@@ -485,7 +485,7 @@ static shapedBuilders as Holder[] = [
         3, 2), //Stone Helmet
 
     Util.dynamicShaped(<tp:stone_leggings>, { <overloaded:compressed_cobblestone>:[0,2], 
-        <minecraft:cobblestone>:[3,5,7,8] }), //Stone Leggings
+        <minecraft:cobblestone>:[1,3,5,6,8] }), //Stone Leggings
 
     //translocators---------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<translocators:translocator_part:1>*2, { <enderio:item_alloy_ingot:3>:[0,2,6,8], 
