@@ -4,6 +4,7 @@ Released V1.5.9[CATCHING UP]
 
 Added Mods
 - [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
+- [StellarCore](<https://www.curseforge.com/minecraft/mc-mods/stellarcore>)
 
 Removed Mods
 - [NetherPortalFix](<https://www.curseforge.com/minecraft/mc-mods/netherportalfix>) (Superseded by Universal Tweaks)
@@ -12,8 +13,9 @@ Updated Mods
 - [AE2 Unofficial Extended Life](<https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life/files/6302098>)
 - [Alfheim Lighting Engine](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6295028>)
 - [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6355119>)
-- [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6261464>)
+- [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6505775>)
 - [CraftTweaker](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>)
+- [Dimension Hopper Tweaks]
 - [DimensionDoors](<https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors/files/6386037>)
 - [FermiumASM](<https://www.curseforge.com/minecraft/mc-mods/fermiumasm/files/6389447>)
 - [FermiumBooter](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>)
@@ -33,7 +35,7 @@ Updated Mods
 - [MixinBooter](<https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files/6344449>)
 - [ModularUI](<https://www.curseforge.com/minecraft/mc-mods/modularui/files/6206809>)
 - [Multiblocked](<https://www.curseforge.com/minecraft/mc-mods/multiblocked/files/6153909>)
-- [Music Triggers](<https://www.curseforge.com/minecraft/mc-mods/music-triggers/files/6430250>)
+- [Music Triggers](<https://www.curseforge.com/minecraft/mc-mods/music-triggers/files/6497407>)
 - [OpenComputers](<https://www.curseforge.com/minecraft/mc-mods/opencomputers/files/6390867>)
 - [PackagedAuto](<https://www.curseforge.com/minecraft/mc-mods/packagedauto/files/6312996>)
 - [PackagedAvaritia](<https://www.curseforge.com/minecraft/mc-mods/packagedavaritia/files/6303034>)
@@ -42,13 +44,13 @@ Updated Mods
 - [Pillar Patched](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6275950>)
 - [Red Core](<https://www.curseforge.com/minecraft/mc-mods/red-core/files/6147102>)
 - [Roughly Enough IDs](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6292779>)
-- [Specified Spawning](<https://www.curseforge.com/minecraft/mc-mods/specified-spawning/files/6404673>)
+- [Specified Spawning](<https://www.curseforge.com/minecraft/mc-mods/specified-spawning/files/6503605>)
 - [The Impossible Library](<https://www.curseforge.com/minecraft/mc-mods/the-impossible-library/files/6430611>)
 - [The Twilight Forest - Deforestation Edition](<https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest-deforestation-edition/files/6218560>)
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
 - [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>)
 - [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
-- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6482213>)
+- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6508637>)
 
 General Changes
 - [Void Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/112>) by Johanniklas
@@ -61,7 +63,11 @@ General Changes
 - [Ch2 quest descriptions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/136>) by Johanniklas
 - [Add items to boss quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/142>) by Johanniklas
 - [remove unused quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/146>) by Johanniklas
+- [Fix Device Frame recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/151>) by Johanniklas
+- [Fix Cobblestone Leggings recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/153>) by Johanniklas
+- [Change the way Last Stand works, from having a cooldown to increasing the XP cost exponentially](<https://github.com/TheComputerizer/Dimension-Hopper-Tweaks/pull/5>) by MagicJinn
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
+- [Fixed the digital miner not using inherited game stages when mining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/135>)
 - "A Rough Start" is now more difficult to accidentally skip
 
 

@@ -158,7 +158,7 @@ function recordedDisc() as IItemStack {
           return !isNull(tag.trackID);
         }
         return false;
-      })
+      });
 }
 
 function withExtras(base as IItemStack[], extras as IIngredient[] = [] as IIngredient) as IIngredient[] {
