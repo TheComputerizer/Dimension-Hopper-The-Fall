@@ -20,7 +20,7 @@ static recipeHolder as int[][IItemStack[]] = {
         [160000,800], //melodic capacitor
     [<enderio:item_capacitor_stellar>, <overloaded:nether_star_block>, <enderio:item_alloy_endergy_ingot:3>, <enderio:item_alloy_endergy_ingot:3>, <enderio:item_capacitor_melodic>, <enderio:item_capacitor_melodic>]:
         [640000,1000], //stellar capacitor
-    [<thermalexpansion:frame:64>, <thermalexpansion:frame>, <thermalfoundation:material:257>, <silentgems:craftingmaterial:3>, <thermalfoundation:material:257>, <silentgems:craftingmaterial:3>]:
+    [<thermalexpansion:frame:64>, <thermalexpansion:frame>, <thermalfoundation:material:257>, <thermalfoundation:material:257>, <silentgems:craftingmaterial:3>, <silentgems:craftingmaterial:3>]:
         [25000,500], //device frame
     [<tp:reinforced_obsidian_ingot>, <overloaded:compressed_obsidian>, <enderio:block_dark_iron_bars>, <enderio:block_dark_iron_bars>, <enderio:block_dark_iron_bars>, <enderio:block_dark_iron_bars>]:
         [10000,1000], //reinforced obsidian
