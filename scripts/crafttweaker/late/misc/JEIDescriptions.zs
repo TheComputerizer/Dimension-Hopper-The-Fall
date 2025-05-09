@@ -26,10 +26,8 @@ JEI.addDescription(<botany:pigment:*>,
     "Some colors may only be obtained by cross-breeding hybrid flowers"]);
 
 JEI.addDescription(<botany:pollen>,
-	["Can be obtained by crafting a Germling with a Pollen Collection Kit.",
-	"The NBT data of the Germling gets transferred to the Pollen.",
-	"JEI will always show Corrupted Flowers. This is due to some calculations",
-	"that need to happen during crafting."]);
+    ["Can be obtained by crafting a Germling with a Pollen Collection Kit. The NBT data of the Germling gets transferred to the Pollen.",
+    "JEI will always show Corrupted Flowers. This is due to some calculations that need to happen during crafting."]);
 
 //dimhoppertweaks-----------------------------------------------------------------------------------------------------------
 JEI.addDescription(<dimhoppertweaks:recipe_function>, 
