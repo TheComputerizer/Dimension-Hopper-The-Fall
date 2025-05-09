@@ -25,6 +25,10 @@ JEI.addDescription(<botany:pigment:*>,
     "Due to how the color data processing for the flowers are handled these will not show up as recipes.",
     "Some colors may only be obtained by cross-breeding hybrid flowers"]);
 
+JEI.addDescription(<botany:pollen>,
+    ["Can be obtained by crafting a Germling with a Pollen Collection Kit. The NBT data of the Germling gets transferred to the Pollen.",
+    "JEI will always show Corrupted Flowers. This is due to some calculations that need to happen during crafting."]);
+
 //dimhoppertweaks-----------------------------------------------------------------------------------------------------------
 JEI.addDescription(<dimhoppertweaks:recipe_function>, 
     "This is an indicator that the output item may not be displayed correctly due to some calculations that need to happen during crafting.",
