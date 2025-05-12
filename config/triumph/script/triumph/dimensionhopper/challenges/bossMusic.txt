@@ -1,4 +1,4 @@
-setIcon(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
+setIcon(<musictriggers:record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
 
 setTitle("Easily Disctractable")
 
@@ -17,6 +17,6 @@ drawDirectLines(false)
 setPos(0,-329)
 
 criteria = addCriteria("hasDisc", "minecraft:inventory_changed")
-criteria.addItem(<musictriggers:music_triggers_record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
+criteria.addItem(<musictriggers:record, meta:0, count:1, nbt:{trackID:"cosmicgarou",triggerID:"mob",channelFrom:"music"}>)
 
 hiddenUnless("triumph:dimensionhopper/challenges/root")

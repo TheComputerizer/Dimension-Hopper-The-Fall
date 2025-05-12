@@ -3,6 +3,7 @@ Released V1.5.9[CATCHING UP]
 *Another new changelog format??*
 
 Added Mods
+- [AE2 Craft Tree - Legacy](<https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree-legacy>)
 - [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
 - [StellarCore](<https://www.curseforge.com/minecraft/mc-mods/stellarcore>)
 
@@ -26,7 +27,7 @@ Updated Mods
 - [Forgelin-Continuous](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6359253>)
 - [Galacticraft Legacy](<https://www.curseforge.com/minecraft/mc-mods/galacticraft-legacy/files/6364107>)
 - [Greenery](<https://www.curseforge.com/minecraft/mc-mods/greenery/files/6266731>)
-- [GroovyScript](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6377628>)
+- [GroovyScript](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6520434>)
 - [Had Enough Items](<https://www.curseforge.com/minecraft/mc-mods/had-enough-items/files/6463525>)
 - [HammerLib](<https://www.curseforge.com/minecraft/mc-mods/hammer-lib/files/6348753>)
 - [Inventory Bogo Sorter](<https://www.curseforge.com/minecraft/mc-mods/inventory-bogosorter/files/6170805>)
@@ -44,7 +45,7 @@ Updated Mods
 - [Pillar Patched](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6275950>)
 - [Red Core](<https://www.curseforge.com/minecraft/mc-mods/red-core/files/6147102>)
 - [Roughly Enough IDs](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6292779>)
-- [Specified Spawning](<https://www.curseforge.com/minecraft/mc-mods/specified-spawning/files/6503605>)
+- [Specified Spawning](<https://www.curseforge.com/minecraft/mc-mods/specified-spawning/files/6513245>)
 - [The Impossible Library](<https://www.curseforge.com/minecraft/mc-mods/the-impossible-library/files/6430611>)
 - [The Twilight Forest - Deforestation Edition](<https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest-deforestation-edition/files/6218560>)
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
@@ -65,10 +66,15 @@ General Changes
 - [remove unused quests](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/146>) by Johanniklas
 - [Fix Device Frame recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/151>) by Johanniklas
 - [Fix Cobblestone Leggings recipe](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/153>) by Johanniklas
+- [Make Binnie's Botany Pollen obtainable](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/157>) by Johanniklas
+- [Questbook Localization](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/158>) by Johanniklas
 - [Change the way Last Stand works, from having a cooldown to increasing the XP cost exponentially](<https://github.com/TheComputerizer/Dimension-Hopper-Tweaks/pull/5>) by MagicJinn
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
 - [Fixed the digital miner not using inherited game stages when mining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/135>)
 - "A Rough Start" is now more difficult to accidentally skip
+- Disabled the Extra Utilities 2 Snow Globe due to significant performance issues around water
+- Fixed coke ovens, blast furnaces, & some other stuff still being obtainable during the prologue
+- Moved the music disc fragment recipe from the pulverizer to the basic workshop so the NBT data can be properly checked
 
 
 Released V1.5.8.2[HOTFIX]

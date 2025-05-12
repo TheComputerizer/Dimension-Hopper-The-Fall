@@ -42,8 +42,8 @@ rules.add(Dropt.rule()
 rules.add(Dropt.rule()
     .matchHarvester(Dropt.harvester().gameStages("BLACKLIST", "ALL", ["overworld"]))
     .matchDrops([
-        <minecraft:glass>,
-        <minecraft:stained_glass>,
+        <minecraft:glass:*>,
+        <minecraft:stained_glass:*>,
         <xreliquary:mob_ingredient:7>,
         <minecraft:blaze_rod>,
         <minecraft:blaze_powder>,
