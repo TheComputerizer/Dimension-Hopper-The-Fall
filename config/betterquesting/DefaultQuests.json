@@ -2651,7 +2651,8 @@
     },
     "38:10": {
       "preRequisites:11": [
-        48
+        48,
+        190
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2662,6 +2663,7 @@
             "id:8": "dimdoors:fabric"
           },
           "name:8": "quests.dimhopper.default.dimensions.38.name",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
@@ -4337,8 +4339,15 @@
       }
     },
     "47:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1,
+        1
+      ],
       "preRequisites:11": [
-        48
+        48,
+        49,
+        38
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4348,6 +4357,7 @@
             "id:8": "dimdoors:unravelled_fabric"
           },
           "name:8": "quests.dimhopper.default.dimensions.47.name",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon",
           "visibility:8": "COMPLETED"
@@ -4391,7 +4401,7 @@
         "0:10": {
           "dimension:3": 687,
           "index:3": 0,
-          "name:8": "Dungeon Pocket Dimension",
+          "name:8": "Dungeon Pocket Dimension (687)",
           "taskID:8": "bq_standard:location"
         }
       }
@@ -4399,7 +4409,8 @@
     "49:10": {
       "preRequisites:11": [
         8,
-        48
+        48,
+        190
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4411,6 +4422,7 @@
           },
           "ismain:1": 1,
           "name:8": "quests.dimhopper.default.dimensions.49.name",
+          "questlogic:8": "OR",
           "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon",
           "visibility:8": "CHAIN"
@@ -72629,7 +72641,7 @@
             "id:8": "atum:wanderer_helmet"
           },
           "name:8": "quests.dimhopper.default.chapter2.83665955.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -72666,7 +72678,7 @@
             "tag:10": {}
           },
           "name:8": "quests.dimhopper.default.chapter2.167142913.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -72907,7 +72919,7 @@
             "id:8": "theaurorian:trophymoonqueen"
           },
           "name:8": "quests.dimhopper.default.bosses.297079895.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon",
           "tasklogic:8": "OR"
         }
@@ -73777,7 +73789,7 @@
             "id:8": "randomthings:emeraldcompass"
           },
           "name:8": "quests.dimhopper.default.chapter2.769601805.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -74019,7 +74031,7 @@
             "id:8": "atum:spinning_wheel"
           },
           "name:8": "quests.dimhopper.default.chapter2.1013197977.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -74055,9 +74067,9 @@
             "id:8": "theaurorian:moonlightforge"
           },
           "name:8": "quests.dimhopper.default.chapter2.1030965859.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon",
-          "questlogic:8": "OR"
+          "questlogic:8": "OR",
+          "snd_complete:8": "contenttweaker:questcommon",
+          "snd_update:8": "contenttweaker:questcommon"
         }
       },
       "questID:3": 1030965859,
@@ -74290,7 +74302,7 @@
             "id:8": "thermalfoundation:storage_alloy"
           },
           "name:8": "quests.dimhopper.default.chapter2.1223527586.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -74532,9 +74544,9 @@
             "id:8": "blue_skies:cherry_sapling"
           },
           "name:8": "quests.dimhopper.default.chapter2.1345373956.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon",
-          "questlogic:8": "OR"
+          "questlogic:8": "OR",
+          "snd_complete:8": "contenttweaker:questcommon",
+          "snd_update:8": "contenttweaker:questcommon"
         }
       },
       "questID:3": 1345373956,
@@ -74563,7 +74575,7 @@
             "id:8": "scanner:scanner"
           },
           "name:8": "quests.dimhopper.default.prologue.1354344238.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
@@ -74605,7 +74617,7 @@
             "id:8": "theaurorian:trophyspider"
           },
           "name:8": "quests.dimhopper.default.bosses.1428433352.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon",
           "tasklogic:8": "OR"
         }
@@ -74830,7 +74842,7 @@
             "id:8": "theaurorian:scrapper"
           },
           "name:8": "quests.dimhopper.default.chapter2.1506915266.name",
-		  "snd_complete:8": "contenttweaker:questcommon",
+          "snd_complete:8": "contenttweaker:questcommon",
           "snd_update:8": "contenttweaker:questcommon"
         }
       },
