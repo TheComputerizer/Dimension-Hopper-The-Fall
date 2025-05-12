@@ -4,8 +4,12 @@ Released V1.5.9[CATCHING UP]
 
 Added Mods
 - [AE2 Craft Tree - Legacy](<https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree-legacy>)
+- [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>)
 - [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
+- [JEI Area Fixer](<https://www.curseforge.com/minecraft/mc-mods/jei-area-fixer>)
+- [Mini Effects - Legacy Extended Life](<https://www.curseforge.com/minecraft/mc-mods/minieffects-legacy-extended-life>)
 - [StellarCore](<https://www.curseforge.com/minecraft/mc-mods/stellarcore>)
+- [XU2-Patcher](<https://www.curseforge.com/minecraft/mc-mods/xu2-patcher>)
 
 Removed Mods
 - [NetherPortalFix](<https://www.curseforge.com/minecraft/mc-mods/netherportalfix>) (Superseded by Universal Tweaks)
