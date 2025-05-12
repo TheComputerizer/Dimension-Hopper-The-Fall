@@ -553,6 +553,12 @@ static shapelessBuilders as Holder[] = [
 
     Util.shapeless(<botania:grassseeds:3>, [<botania:grassseeds>, <ore:bushPlant>]), //Dry Pasture Seeds
 
+    //botany------------------------------------------------------------------------------------------------------
+    Util.shapeless(<botany:pollen>, [<botany:seed>.marked("seed"), <gendustry:pollen_kit>]).addFunction(
+	function(out, ins, info) {
+	    return out.withTag(ins.seed.tag);
+        } as IRecipeFunction), //Pollen	
+
     //contenttweaker--------------------------------------------------------------------------------------------------------
     Util.shapeless(<contenttweaker:bloq>, [<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"})]), //Bloq
 
