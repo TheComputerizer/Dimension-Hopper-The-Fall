@@ -55,7 +55,7 @@ Updated Mods
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
 - [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>)
 - [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
-- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6508637>)
+- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6528140>)
 
 General Changes
 - [Void Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/112>) by Johanniklas
@@ -75,6 +75,7 @@ General Changes
 - [Change the way Last Stand works, from having a cooldown to increasing the XP cost exponentially](<https://github.com/TheComputerizer/Dimension-Hopper-Tweaks/pull/5>) by MagicJinn
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
 - [Fixed the digital miner not using inherited game stages when mining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/135>)
+- [Fixed the RFTools crafter not being able to craft staged items](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/62>)
 - "A Rough Start" is now more difficult to accidentally skip
 - Disabled the Extra Utilities 2 Snow Globe due to significant performance issues around water
 - Fixed coke ovens, blast furnaces, & some other stuff still being obtainable during the prologue
