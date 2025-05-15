@@ -109,7 +109,7 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.metas(<galacticraftcore:machine2>, [0,4]),
 	Stack.metas(<galacticraftcore:oxygen_compressor>, [0,1,2,3,4]),
 	Stack.metas(<galacticraftcore:solar>, [0,4]),
-	Stack.metas(<galacticraftcore:machine_tiered>, [4,12]),
+	Stack.metas(<galacticraftcore:machine>, [0,4]),
 
 	//genetics--------------------------------------------------------------------------------------------------------------
 	Stack.metas(<genetics:misc>, [0,4,8,9]),
@@ -314,6 +314,7 @@ static itemRemovals as IItemStack[] = [
 	<extendedcrafting:storage:*>,
 
 	//extraplanets----------------------------------------------------------------------------------------------------------
+	<extraplanets:anti_radiation>,
 	<extraplanets:jupiter:13>,
 	<extraplanets:kepler22b:14>,
 	<extraplanets:neptune:7>,
@@ -356,7 +357,7 @@ static itemRemovals as IItemStack[] = [
 	<galacticraftcore:basic_block_core:12>,
 	<galacticraftcore:collector>,
 	<galacticraftcore:fuel_loader>,
-	<galacticraftcore:machine>,
+	<galacticraftcore:machine_tiered:4>,
 	<galacticraftcore:magnetic_table>,
 	<galacticraftcore:refinery>,
 

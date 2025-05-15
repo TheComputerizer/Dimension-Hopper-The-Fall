@@ -21,6 +21,7 @@ static queuedRemovals as IItemStack[][int] = {
 	] as IItemStack[],
     1: [ //basin casting
         <silentgems:gemblock:8>, //aquamarine block
+        <tconstruct:seared_furnace_controller>, //seared furnace controller
         <zollerngalaxy:zincblock> //zinc block
     ] as IItemStack[]
 };

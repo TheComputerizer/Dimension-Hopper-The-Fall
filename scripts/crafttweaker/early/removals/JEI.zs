@@ -180,7 +180,13 @@ static itemRemovals as IItemStack[] = [
     <extendedcrafting:storage:2>,
 
     //extraplanets
+    <extraplanets:basic_chemical_injector>,
+    <extraplanets:basic_crystallizer>,
     <extraplanets:basic_decontamination_unit_fake_block>,
+    <extraplanets:basic_decrystallizer>,
+    <extraplanets:basic_purifier>,
+    <extraplanets:basic_solar_evaporation_chamber>,
+    <extraplanets:basic_smasher>,
     <extraplanets:ingot_lead>,
     <extraplanets:tier5_items:7>,
     <extraplanets:tier11_items:5>,
@@ -206,6 +212,7 @@ static itemRemovals as IItemStack[] = [
     <galacticraftcore:engine:1>,
     <galacticraftcore:machine2:12>,
     <galacticraftcore:machine:12>,
+    <galacticraftcore:machine_tiered:12>,
     <galacticraftcore:rocket_workbench>,
 
     //galacticraftplanets

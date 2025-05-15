@@ -76,10 +76,12 @@ General Changes
 - [Fixed NBT issues with the Boots of the Marsh Runner quest](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/115>)
 - [Fixed the digital miner not using inherited game stages when mining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/135>)
 - [Fixed the RFTools crafter not being able to craft staged items](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/62>)
+- [Fixed a bunch of disabled gamestage related recipe issues](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/15>)
 - "A Rough Start" is now more difficult to accidentally skip
 - Disabled the Extra Utilities 2 Snow Globe due to significant performance issues around water
 - Fixed coke ovens, blast furnaces, & some other stuff still being obtainable during the prologue
 - Moved the music disc fragment recipe from the pulverizer to the basic workshop so the NBT data can be properly checked
+- Redid the processing line for Anti-Rad
 
 
 Released V1.5.8.2[HOTFIX]
