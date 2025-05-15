@@ -49,3 +49,14 @@
 		min_group_size = 2
 		max_group_size = 5
 		weight = 100
+
+[[spawn]]
+	dimension = [ "-1", "-9" ]
+	group = "progression_mobs"
+	return_immediately = true
+	[spawn.entity]
+		matcher = "demon_soldier"
+		ignoreSpawnConditions = true
+		weight = 100
+	[spawn.gamestage]
+		gamestage = "deepdown"

@@ -9,3 +9,15 @@
 [[remove]]
 	group = "all"
 	dimension = -11325
+
+[[remove]]
+	[remove.entity]
+		matcher = "demon_soldier"
+
+[[remove]]
+	group = "all"
+	[remove.entity]
+		mod = "aoa3"
+	[remove.gamestage]
+		gamestage = "advent"
+		is_whitelist = false
