@@ -139,6 +139,9 @@ static itemRemovals as IItemStack[] = [
     <avaritia:neutron_collector>,
     <avaritia:neutronium_compressor>,
 
+    //bedrockcraft
+    <bedrockcraft:bedrock_anvil>,
+
     //blue_skies
     <blue_skies:horizonite_pickaxe>,
 
@@ -241,6 +244,7 @@ static itemRemovals as IItemStack[] = [
     <lightningcraft:lightning_crusher>,
 
     //lockyzextradimensionsmod
+    <lockyzextradimensionsmod:dimensionfurnace_trigger>,
     <lockyzextradimensionsmod:flintblock>,
 
     //mekanism

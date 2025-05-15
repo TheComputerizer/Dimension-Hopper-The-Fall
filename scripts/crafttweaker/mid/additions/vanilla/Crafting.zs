@@ -163,18 +163,30 @@ static shapedBuilders as Holder[] = [
     //darkutils-------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<darkutils:update_detector>, { 
         <overloaded:compressed_stone>:[0,2,6,8], 
-        <darkutils:timer>:[1,3,5,7], 
+        <darkutils:timer>:[1,3,5,7],
         <minecraft:observer>:[4]
     }), //Block Update Detector
 
     //dimdoors--------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<dimdoors:fabric:15>, { <dimdoors:unravelled_fabric>:[0,1,2,3] }, 2, 2), //Fabric of Reality
 
-    Util.dynamicShaped(<dimdoors:rift_remover>, { <minecraft:gold_ingot>:[0,2,6,8], 
-        <dimdoors:stable_fabric>:[4] }), //Rift Remover
+    Util.dynamicShaped(<dimdoors:rift_remover>, { 
+        <minecraft:gold_ingot>:[0,2,6,8], 
+        <dimdoors:stable_fabric>:[4] 
+        }), //Rift Remover
 
-    Util.dynamicShaped(<dimdoors:rift_signature>, { <minecraft:iron_ingot>:[0,2,6,8], 
-        <dimdoors:stable_fabric>:[4] }), //Rift Signature
+    Util.dynamicShaped(<dimdoors:rift_signature>, { 
+        <minecraft:iron_ingot>:[0,2,6,8], 
+        <dimdoors:stable_fabric>:[4] 
+        }), //Rift Signature
+
+    //draconicevolution-----------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<draconicevolution:tool_upgrade:8>, { 
+        <minecraft:dye:4>:[0,2,6,8], 
+        <draconicevolution:draconic_core>:[1,7], 
+        <draconicevolution:draconium_ingot>:[3,5], 
+        <actuallyadditions:item_chest_crystal_light_blue>:[4] 
+    }), //Upgrade Key (Shield Capacity)
 
     //enderio---------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<enderio:item_material:73>, {
@@ -250,6 +262,18 @@ static shapedBuilders as Holder[] = [
         <minecraft:iron_bars>:[1,3,5,7],
         <ore:blockGlassHardened>:[4]
     }), //Tank
+
+    //environmentaltech-----------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<environmentaltech:modifier_jump_boost>, { 
+        <actuallyadditions:item_boots_crystal_light_blue>:[0],
+        <environmentaltech:litherite_crystal>:[1], 
+        <enderio:item_dark_steel_upgrade:1>:[2], 
+        <environmentaltech:mica>:[3,5],
+        <environmentaltech:modifier_null>:[4], 
+        <xreliquary:magazine:1>:[6], 
+        <environmentaltech:lonsdaleite_crystal>:[7],
+        <xlfoodmod:super_energy_drink>:[8]
+    }), //Jump Boost Modifier
 
     //exchangers------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<exchangers:eio_endergy_exchanger_core_tier2>, {
@@ -342,6 +366,14 @@ static shapedBuilders as Holder[] = [
     Util.dynamicShaped(<natura:empty_bowls:3>*2, { <natura:nether_planks:3>:[0,2,4] }, 3, 2), //Empty Fusewood Bowl
 
     //naturesaura-----------------------------------------------------------------------------------------------------------
+    Util.dynamicShaped(<naturesaura:shockwave_creator>, { 
+        <naturesaura:token_rage>:[1], 
+        <naturesaura:infused_stone>:[3,5],
+        <vc:item_bomb:2>:[4], 
+        <moreplates:restonia_plate>:[6,8], 
+        <actuallyadditions:block_shock_suppressor>:[7]
+    }), //Amulet of Wrath
+
     Util.dynamicShaped(<naturesaura:gold_fiber>, {
         <ore:grassPlant>:[4],
         <ore:treeLeaves>:[0,2,6,8],
@@ -535,8 +567,17 @@ static shapedBuilders as Holder[] = [
 ] as Holder[];
 
 static shapelessBuilders as Holder[] = [
+    //apotheosis------------------------------------------------------------------------------------------------------------
+    Util.shapeless(<apotheosis:scrap_tome>, [<akashictome:tome>, <theaurorian:scrapaurorianite>, <atum:cloth_scrap>,
+        <xreliquary:potion_essence>.withTag({effects: [{duration: 2250, potency: 1, name: "minecraft:absorption"}]})]),
+        //Tome of Scrapping
+
     //appliedenergistics2---------------------------------------------------------------------------------------------------
     Util.shapeless(<appliedenergistics2:material:48>, [<appliedenergistics2:material:48>]), //Quantum Entangled Singularity
+
+    //atum------------------------------------------------------------------------------------------------------------------
+    Util.shapeless(<atum:desert_legs_diamond>, [<atum:wanderer_legs>, <actuallyadditions:item_pants_crystal_light_blue>]),
+        //Desert Leggings (Diamond)
 
     //avaritia--------------------------------------------------------------------------------------------------------------
     Util.shapeless(<avaritia:extreme_crafting_table>, [<extendedcrafting:table_ultimate>, 
@@ -584,6 +625,12 @@ static shapelessBuilders as Holder[] = [
         <lightningcraft:ench_reallocator>]), //Lightning Relocator Mk 4 Controller
 
     //enderio---------------------------------------------------------------------------------------------------------------
+    Util.shapeless(<enderio:block_decoration2>, [<enderio:block_decoration1:1>, <enderio:block_simple_furnace>, 
+        <enderio:block_simple_furnace>]), //Alloy Smelter (decoration block)
+
+    Util.shapeless(<enderio:block_decoration3:1>, [<enderio:block_decoration1:1>, 
+        <enderio:block_simple_furnace>]), //Simple Alloy Smelter (decoration block)
+
     Util.shapeless(<enderio:item_soul_vial:1>, [<enderio:item_soul_vial:1>.withTag({entityId: "botania:pixie"})])
         .setMarkIndex(0)
         .addFunction(function(output, map, info) {

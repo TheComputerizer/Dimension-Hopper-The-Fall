@@ -109,7 +109,6 @@ static arrayRemovals as IItemStack[][] = [
 	Stack.metas(<galacticraftcore:machine2>, [0,4]),
 	Stack.metas(<galacticraftcore:oxygen_compressor>, [0,1,2,3,4]),
 	Stack.metas(<galacticraftcore:solar>, [0,4]),
-	Stack.metas(<galacticraftcore:machine>, [0,4]),
 
 	//genetics--------------------------------------------------------------------------------------------------------------
 	Stack.metas(<genetics:misc>, [0,4,8,9]),
@@ -211,6 +210,9 @@ static itemRemovals as IItemStack[] = [
 	//aoa3------------------------------------------------------------------------------------------------------------------
 	<aoa3:carved_rune_power>,
 
+	//apotheosis------------------------------------------------------------------------------------------------------------
+	<apotheosis:scrap_tome>,
+
 	//appliedenergistics2---------------------------------------------------------------------------------------------------
 	<appliedenergistics2:chest>,
 	<appliedenergistics2:condenser>,
@@ -225,6 +227,7 @@ static itemRemovals as IItemStack[] = [
 	<aroma1997sdimension:miningmultitool>,
 
 	//atum------------------------------------------------------------------------------------------------------------------
+	<atum:desert_legs_diamond>,
 	<atum:scarab>,
 
 	//avaritia--------------------------------------------------------------------------------------------------------------
@@ -290,14 +293,18 @@ static itemRemovals as IItemStack[] = [
 	<draconicevolution:fusion_crafting_core>,
 	<draconicevolution:generator>,
 	<draconicevolution:grinder>,
+	<draconicevolution:tool_upgrade:8>,
 
 	//enderio---------------------------------------------------------------------------------------------------------------
 	<enderio:block_dark_steel_anvil>,
+	<enderio:block_decoration2>,
+	<enderio:block_decoration3:1>,
 	<enderio:item_material:77>,
 	<enderio:item_stellar_alloy_pickaxe>,
 
 	//environmentaltech-----------------------------------------------------------------------------------------------------
 	<environmentaltech:litherite_crystal>,
+	<environmentaltech:modifier_jump_boost>,
 
 	//eplus-----------------------------------------------------------------------------------------------------------------
 	<eplus:advanced_table>,
@@ -357,6 +364,8 @@ static itemRemovals as IItemStack[] = [
 	<galacticraftcore:basic_block_core:12>,
 	<galacticraftcore:collector>,
 	<galacticraftcore:fuel_loader>,
+	<galacticraftcore:machine>,
+	<galacticraftcore:machine4>,
 	<galacticraftcore:machine_tiered:4>,
 	<galacticraftcore:magnetic_table>,
 	<galacticraftcore:refinery>,
@@ -434,6 +443,7 @@ static itemRemovals as IItemStack[] = [
 	<natura:respawn_obelisk>, //Inactive Respawn Obelisk
 
 	//naturesaura-----------------------------------------------------------------------------------------------------------
+	<naturesaura:shockwave_creator>, //Amulet of Wrath
 	<naturesaura:ender_crate>, //Ender Crate
 	<naturesaura:gold_fiber>, //Brilliant Fiber
 	<naturesaura:gold_powder>, //Gold Powder
