@@ -38,7 +38,7 @@ Updated Mods
 - [JAOPCA](<https://www.curseforge.com/minecraft/mc-mods/jaopca/files/6393128>)
 - [Mist World Unveiled](<https://www.curseforge.com/minecraft/mc-mods/misty-world-unveiled/files/6232515>)
 - [MixinBooter](<https://www.curseforge.com/minecraft/mc-mods/mixin-booter/files/6344449>)
-- [ModularUI](<https://www.curseforge.com/minecraft/mc-mods/modularui/files/6206809>)
+- [ModularUI](<https://www.curseforge.com/minecraft/mc-mods/modularui/files/6535584>)
 - [Multiblocked](<https://www.curseforge.com/minecraft/mc-mods/multiblocked/files/6153909>)
 - [Music Triggers](<https://www.curseforge.com/minecraft/mc-mods/music-triggers/files/6497407>)
 - [OpenComputers](<https://www.curseforge.com/minecraft/mc-mods/opencomputers/files/6390867>)
@@ -77,6 +77,7 @@ General Changes
 - [Fixed the digital miner not using inherited game stages when mining](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/135>)
 - [Fixed the RFTools crafter not being able to craft staged items](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/62>)
 - [Fixed a bunch of disabled gamestage related recipe issues](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/15>)
+- [Fixed some issues with AoA mob spawning](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/69>)
 - "A Rough Start" is now more difficult to accidentally skip
 - Disabled the Extra Utilities 2 Snow Globe due to significant performance issues around water
 - Fixed coke ovens, blast furnaces, & some other stuff still being obtainable during the prologue

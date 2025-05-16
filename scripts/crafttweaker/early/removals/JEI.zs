@@ -131,6 +131,7 @@ static itemRemovals as IItemStack[] = [
     <aroma1997sdimension:dimensionchanger>,
 
     //atum
+    <atum:desert_legs_diamond>,
     <atum:kiln>,
     <atum:kiln_fake>,
     <atum:limestone_furnace>,
@@ -175,6 +176,7 @@ static itemRemovals as IItemStack[] = [
     //environmentaltech
     <environmentaltech:modifier_creative_flight>,
     <environmentaltech:modifier_flight_speed>,
+    <environmentaltech:modifier_jump_boost>,
 
     //erebuc
     <erebus:umber_furnace>,

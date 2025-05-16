@@ -263,18 +263,6 @@ static shapedBuilders as Holder[] = [
         <ore:blockGlassHardened>:[4]
     }), //Tank
 
-    //environmentaltech-----------------------------------------------------------------------------------------------------
-    Util.dynamicShaped(<environmentaltech:modifier_jump_boost>, { 
-        <actuallyadditions:item_boots_crystal_light_blue>:[0],
-        <environmentaltech:litherite_crystal>:[1], 
-        <enderio:item_dark_steel_upgrade:1>:[2], 
-        <environmentaltech:mica>:[3,5],
-        <environmentaltech:modifier_null>:[4], 
-        <xreliquary:magazine:1>:[6], 
-        <environmentaltech:lonsdaleite_crystal>:[7],
-        <xlfoodmod:super_energy_drink>:[8]
-    }), //Jump Boost Modifier
-
     //exchangers------------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<exchangers:eio_endergy_exchanger_core_tier2>, {
         <enderio:block_holier_fog>:[0,2,6,8],
@@ -574,10 +562,6 @@ static shapelessBuilders as Holder[] = [
 
     //appliedenergistics2---------------------------------------------------------------------------------------------------
     Util.shapeless(<appliedenergistics2:material:48>, [<appliedenergistics2:material:48>]), //Quantum Entangled Singularity
-
-    //atum------------------------------------------------------------------------------------------------------------------
-    Util.shapeless(<atum:desert_legs_diamond>, [<atum:wanderer_legs>, <actuallyadditions:item_pants_crystal_light_blue>]),
-        //Desert Leggings (Diamond)
 
     //avaritia--------------------------------------------------------------------------------------------------------------
     Util.shapeless(<avaritia:extreme_crafting_table>, [<extendedcrafting:table_ultimate>, 
