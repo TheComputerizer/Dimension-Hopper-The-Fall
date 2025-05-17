@@ -86,6 +86,15 @@ static shapedBuilders as Holder[] = [
         <actuallyadditions:item_misc:8>, 
         <thermalfoundation:glass:3>]), //Lens
 
+    Util.dynamicShaped(<actuallyadditions:block_player_interface>, {
+        <actuallyadditions:block_misc:8>:[0,2,6,8],
+        <randomthings:stableenderpearl>:[1],
+        <minecraft:nether_star>:[3],
+        <actuallyadditions:item_player_probe>:[4],
+        <actuallyadditions:block_crystal_empowered:2>:[5],
+        <enderstorage:ender_storage:*>:[7]
+    }), //Player Interface
+
     //aeadditions-----------------------------------------------------------------------------------------------------------
     Util.simpleShaped(<aeadditions:vibrantchamberfluid>, "hat", [
         <aeadditions:certustank>,
@@ -348,10 +357,27 @@ static shapedBuilders as Holder[] = [
     }, 2, 2), //Music Recorder
 
     //natura----------------------------------------------------------------------------------------------------------------
-    Util.dynamicShaped(<natura:empty_bowls>*2, { <natura:nether_planks>:[0,2,4] }, 3, 2), //Empty Ghostwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:1>*2, { <natura:nether_planks:1>:[0,2,4] }, 3, 2), //Empty Bloodwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:2>*2, { <natura:nether_planks:2>:[0,2,4] }, 3, 2), //Empty Darkwood Bowl
-    Util.dynamicShaped(<natura:empty_bowls:3>*2, { <natura:nether_planks:3>:[0,2,4] }, 3, 2), //Empty Fusewood Bowl
+    Util.dynamicShaped(<natura:empty_bowls>*2, { 
+        <natura:nether_planks>:[0,2,4] 
+    }, 3, 2), //Empty Ghostwood Bowl
+    
+    Util.dynamicShaped(<natura:empty_bowls:1>*2, { 
+        <natura:nether_planks:1>:[0,2,4]
+    }, 3, 2), //Empty Bloodwood Bowl
+
+    Util.dynamicShaped(<natura:empty_bowls:2>*2, { 
+        <natura:nether_planks:2>:[0,2,4] 
+    }, 3, 2), //Empty Darkwood Bowl
+
+    Util.dynamicShaped(<natura:empty_bowls:3>*2, { 
+        <natura:nether_planks:3>:[0,2,4] 
+    }, 3, 2), //Empty Fusewood Bowl
+
+    Util.dynamicShaped(<naturesaura:ender_access>, {
+        <minecraft:ender_eye>:[1],
+        <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end"}):[3,5,7],
+        <enderstorage:ender_storage:*>:[4]
+    }), //Ender Ocular
 
     //naturesaura-----------------------------------------------------------------------------------------------------------
     Util.dynamicShaped(<naturesaura:shockwave_creator>, { 

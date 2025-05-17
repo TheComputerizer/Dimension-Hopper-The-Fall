@@ -197,6 +197,7 @@ static itemRemovals as IItemStack[] = [
 
 	//actuallyadditions-----------------------------------------------------------------------------------------------------
 	<actuallyadditions:block_crystal_empowered:*>,
+	<actuallyadditions:block_player_interface>,
 	<actuallyadditions:item_drill:3>,
 	<actuallyadditions:item_food:10>,
 
@@ -257,6 +258,7 @@ static itemRemovals as IItemStack[] = [
 
 	//botania---------------------------------------------------------------------------------------------------------------
 	<botania:divacharm>,
+	<botania:enderhand>,
 	<botania:fertilizer>,
 	<botania:grasshorn>,
 	<botania:grassseeds:3>,
@@ -335,8 +337,8 @@ static itemRemovals as IItemStack[] = [
 	<extrautils2:flattransfernode:*>,
 	<extrautils2:indexer>,
 	<extrautils2:indexerremote>,
-	<extrautils2:machine>,
 	<extrautils2:ingredients:2>,
+	<extrautils2:machine>,
 	<extrautils2:pipe>,
 	<extrautils2:resonator>,
 	<extrautils2:teleporter:1>,
@@ -443,6 +445,7 @@ static itemRemovals as IItemStack[] = [
 
 	//naturesaura-----------------------------------------------------------------------------------------------------------
 	<naturesaura:shockwave_creator>, //Amulet of Wrath
+	<naturesaura:ender_access>, //Ender Ocular
 	<naturesaura:ender_crate>, //Ender Crate
 	<naturesaura:gold_fiber>, //Brilliant Fiber
 	<naturesaura:gold_powder>, //Gold Powder

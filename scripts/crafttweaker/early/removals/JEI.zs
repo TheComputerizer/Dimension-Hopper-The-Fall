@@ -199,9 +199,10 @@ static itemRemovals as IItemStack[] = [
     //extrautils2
     <extrautils2:chickenring:1>,
     <extrautils2:crafter>,
-    <extrautils2:terraformer:*>,
     <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}),
     <extrautils2:machine>.withTag({Type: "extrautils2:generator"}),
+    <extrautils2:playerchest>,
+    <extrautils2:terraformer:*>,
 
     //forestry
     <forestry:centrifuge>,
@@ -282,6 +283,9 @@ static itemRemovals as IItemStack[] = [
     <natura:flint_and_blaze>,
     <natura:netherrack_furnace>,
 
+    //overloaded
+    <overloaded:player_interface>,
+
     //portalgun
     <portalgun:item_dust_ender_pearl>,
 
@@ -297,6 +301,7 @@ static itemRemovals as IItemStack[] = [
 
     //randomthings
     <randomthings:blazeandsteel>,
+    <randomthings:playerinterface>,
 	<randomthings:potionvaporizer>,
 
     //rftools

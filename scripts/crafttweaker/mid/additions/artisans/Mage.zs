@@ -41,6 +41,14 @@ static shapedHolders as Holder[] = [
     .addTools({<ore:artisansGrimoire>:77,<ore:artisansAthame>:77})
     .addFluids([<liquid:terrasteel>*72]), //gaia ingot
 
+  Util.dynamicShaped(<botania:enderhand>, {
+      <botania:manaresource:1>:[0],
+      <minecraft:leather>:[1,3,5,7],
+      <darkutils:sneaky_obsidian>:[2,6],
+      <enderstorage:ender_storage:*>:[4]
+    }).addTools({<ore:artisansAthame>:33})
+    .addFluids([<liquid:ender>*250]), //Hand of Ender
+
   Util.smallShaped(<botania:manaresource:22>, "block", [<botania:manaresource:16>])
     .addTools({<ore:artisansNeedle>:7}), //manaweave cloth
 
