@@ -32,7 +32,7 @@ static arrayRemovals as IItemStack[][] = [
 
 	//materials-------------------------------------------------------------------------------------------------------------
 	Stack.commonMetas("material", {
-			"appliedenergistics2":[32,33,34,35,36,37,388,54,55,56,57],
+			"appliedenergistics2":[32,33,34,35,36,37,38,54,55,56,57],
 			"calculator":[9],
 			"enderio":[0,1,11,12,13,22,55,66,73],
 			"extendedcrafting":[32767],

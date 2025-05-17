@@ -206,7 +206,7 @@ static shapedHolders as Holder[] = [
     
   Util.simpleShaped(<appliedenergistics2:material:38>, "me", [
     <appliedenergistics2:material:22>,
-    <aoa3:rainbow_druse>,
+    <jaopca:block.lunar_sapphire>,
     <appliedenergistics2:material:37>,
     <mekanism:controlcircuit:1>])
     .addTools({<ore:artisansDriver>:13,<ore:artisansSolderer>:13})
