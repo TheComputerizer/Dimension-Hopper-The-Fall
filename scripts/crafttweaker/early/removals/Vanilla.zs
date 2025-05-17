@@ -448,6 +448,9 @@ static itemRemovals as IItemStack[] = [
 	<naturesaura:gold_powder>, //Gold Powder
 	<naturesaura:infused_iron_block>, //Infused Iron Block
 
+	//naturescompass--------------------------------------------------------------------------------------------------------
+	<naturescompass:naturescompass>, //Nature's Compass
+
 	//netherex--------------------------------------------------------------------------------------------------------------
 	<netherex:dull_mirror>, //Dull Mirror
 

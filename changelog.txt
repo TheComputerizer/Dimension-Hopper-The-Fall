@@ -8,6 +8,7 @@ Added Mods
 - [Gnetum](<https://www.curseforge.com/minecraft/mc-mods/gnetum>)
 - [JEI Area Fixer](<https://www.curseforge.com/minecraft/mc-mods/jei-area-fixer>)
 - [Mini Effects - Legacy Extended Life](<https://www.curseforge.com/minecraft/mc-mods/minieffects-legacy-extended-life>)
+- [Nature's Compass](<https://www.curseforge.com/minecraft/mc-mods/natures-compass>)
 - [StellarCore](<https://www.curseforge.com/minecraft/mc-mods/stellarcore>)
 - [XU2-Patcher](<https://www.curseforge.com/minecraft/mc-mods/xu2-patcher>)
 

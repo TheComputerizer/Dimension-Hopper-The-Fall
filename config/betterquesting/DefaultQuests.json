@@ -73786,7 +73786,8 @@
           "desc:8": "quests.dimhopper.default.chapter2.769601805.desc",
           "icon:10": {
             "Count:3": 1,
-            "id:8": "randomthings:emeraldcompass"
+            "id:8": "naturescompass:naturescompass",
+            "tag:10": {}
           },
           "name:8": "quests.dimhopper.default.chapter2.769601805.name",
           "snd_complete:8": "contenttweaker:questcommon",
@@ -73800,7 +73801,8 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "id:8": "randomthings:emeraldcompass"
+              "id:8": "naturescompass:naturescompass",
+              "tag:10": {}
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -74291,38 +74293,6 @@
     },
     "1541:10": {
       "preRequisites:11": [
-        240
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "desc:8": "quests.dimhopper.default.chapter2.1223527586.desc",
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 1,
-            "id:8": "thermalfoundation:storage_alloy"
-          },
-          "name:8": "quests.dimhopper.default.chapter2.1223527586.name",
-          "snd_complete:8": "contenttweaker:questcommon",
-          "snd_update:8": "contenttweaker:questcommon"
-        }
-      },
-      "questID:3": 1223527586,
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 161,
-              "id:8": "thermalfoundation:material"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      }
-    },
-    "1542:10": {
-      "preRequisites:11": [
         1086,
         482665851
       ],
@@ -74525,7 +74495,7 @@
         }
       }
     },
-    "1543:10": {
+    "1542:10": {
       "preRequisiteTypes:7": [
         0,
         2,
@@ -74563,7 +74533,7 @@
         }
       }
     },
-    "1544:10": {
+    "1543:10": {
       "preRequisites:11": [
         314
       ],
@@ -74605,7 +74575,7 @@
         }
       }
     },
-    "1545:10": {
+    "1544:10": {
       "preRequisites:11": [
         273
       ],
@@ -74827,7 +74797,7 @@
         }
       }
     },
-    "1546:10": {
+    "1545:10": {
       "preRequisiteTypes:7": [
         2
       ],
@@ -74861,7 +74831,7 @@
         }
       }
     },
-    "1547:10": {
+    "1546:10": {
       "preRequisites:11": [
         1499,
         1495
@@ -74989,7 +74959,7 @@
         }
       }
     },
-    "1548:10": {
+    "1547:10": {
       "preRequisites:11": [
         1114,
         1115
@@ -75193,7 +75163,7 @@
         }
       }
     },
-    "1549:10": {
+    "1548:10": {
       "preRequisites:11": [
         567514731,
         1086
@@ -82047,60 +82017,60 @@
           "y:3": 24
         },
         "46:10": {
+          "id:3": 712,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -120,
+          "y:3": 120
+        },
+        "47:10": {
           "id:3": 877,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 264,
           "y:3": 0
         },
-        "47:10": {
+        "48:10": {
           "id:3": 878,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 300,
           "y:3": 0
         },
-        "48:10": {
+        "49:10": {
           "id:3": 83665955,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": -180
         },
-        "49:10": {
+        "50:10": {
           "id:3": 167142913,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -144
         },
-        "50:10": {
+        "51:10": {
           "id:3": 769601805,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 60
         },
-        "51:10": {
+        "52:10": {
           "id:3": 1013197977,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": -144
         },
-        "52:10": {
+        "53:10": {
           "id:3": 1030965859,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -144,
           "y:3": -108
-        },
-        "53:10": {
-          "id:3": 1223527586,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -120,
-          "y:3": 120
         },
         "54:10": {
           "id:3": 1345373956,
