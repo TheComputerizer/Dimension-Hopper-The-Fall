@@ -19,7 +19,7 @@ Removed Mods
 Updated Mods
 - [AE2 Unofficial Extended Life](<https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life/files/6302098>)
 - [Alfheim Lighting Engine](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6295028>)
-- [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6355119>)
+- [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6539774>)
 - [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6505775>)
 - [CraftTweaker](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>)
 - [Dimension Hopper Tweaks]
