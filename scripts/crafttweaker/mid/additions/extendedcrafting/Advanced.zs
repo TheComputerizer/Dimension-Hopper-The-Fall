@@ -630,13 +630,13 @@ TableCrafting.addShaped(2, <mekanism:machineblock2:13>, [
 	[<ore:alloyUltimate>, <rftools:infused_diamond>, <rftools:infused_diamond>, <rftools:infused_diamond>, <ore:alloyUltimate>], 
 	[<ore:plateOsmium>, <ore:plateDarkSteel>, <ore:circuitUltimate>, <ore:plateDarkSteel>, <ore:plateOsmium>]
 ]);
-
+//Nature's Compass
 TableCrafting.addShaped(2, <naturescompass:naturescompass>, [
 	[<labyrinth:daedalus>, <xreliquary:kraken_shell>, <glacidus:opesium_ore>, <botania:floatingspecialflower>.withTag({type: "tigerseye"}), <labyrinth:daedalus>], 
 	[<blue_skies:cherry_leaves>, <actuallyadditions:item_chest_crystal_blue>, <openblocks:empty_map>.withTag({Scale: 3 as byte}), <goodnightsleep:luxurious_soup>, <atum:palm_leaves>], 
-	[<blue_skies:falsite_ore>, <atum:loot_gold_necklace>, <exchangers:ie_exchanger_core_tier3>, <atum:loot_gold_scepter>, <blue_skies:horizonite_ore>], 
+	[<blue_skies:falsite_ore>, <atum:loot_gold_necklace>, <exchangers:ie_exchanger_core_tier2>, <atum:loot_gold_scepter>, <blue_skies:horizonite_ore>], 
 	[<atum:palm_leaves>, <goodnightsleep:wretched_soup>, <integrateddynamics:part_world_reader_item>, <gaiadimension:leucite_chestplate>, <blue_skies:cherry_leaves>], 
-	[<labyrinth:daedalus>, <naturesaura:eye_improved>, <gaiadimension:tektite_block>, <apotheosis:lucky_foot>, <labyrinth:daedalus>]
+	[<labyrinth:daedalus>, <naturesaura:aura_detector>, <gaiadimension:tektite_block>, <apotheosis:lucky_foot>, <labyrinth:daedalus>]
 ]);
 
 function run() {

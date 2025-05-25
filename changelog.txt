@@ -57,7 +57,7 @@ Updated Mods
 - [TTweaker](<https://www.curseforge.com/minecraft/mc-mods/ttweaker/files/6204805>)
 - [Universal Tweaks](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>)
 - [VintageFix](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6300725>)
-- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6528140>)
+- [Zen Utils](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6561326>)
 
 General Changes
 - [Void Miner Changes](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/112>) by Johanniklas
