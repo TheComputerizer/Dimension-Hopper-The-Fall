@@ -29,7 +29,7 @@
 # Nether Ghast Queens
 [[spawn]]
 	return_immediately = true
-	dimension = -1
+	dimension = "-1"
 	group = "boss_spawns"
 	[spawn.entity]
 		entity = "netherex:ghast_queen"
@@ -42,7 +42,7 @@
 # Deep Dark Crazy mobs
 [[spawn]]
 	return_immediately = true
-	dimension = -11325
+	dimension = "-11325"
 	group = "crazy_deepdark"
 	[spawn.entity]
 		matcher = "cavern:crazy"
