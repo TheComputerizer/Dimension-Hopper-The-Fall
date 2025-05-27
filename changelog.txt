@@ -19,7 +19,7 @@ Removed Mods
 Updated Mods
 - [AE2 Unofficial Extended Life](<https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life/files/6302098>)
 - [Alfheim Lighting Engine](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6295028>)
-- [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6539774>)
+- [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6505775>)
 - [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6505775>)
 - [CraftTweaker](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>)
 - [Dimension Hopper Tweaks](<https://www.curseforge.com/minecraft/mc-mods/dimension-hopper-tweaks/files/6584928>)
@@ -81,12 +81,14 @@ General Changes
 - [Fixed a bunch of disabled gamestage related recipe issues](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/15>)
 - [Fixed some issues with AoA mob spawning](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/69>)
 - [Added a funny chapter 2 recipe for a Nature's Compass](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/88>)
+- [Fixed stable ender pearls & dull mirrors ignoring gamestages](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/164>)
+- [Made 64K ME Storage Components craftable during chapter 5 and fixed the crafting recipe not being removed](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/59>)
+- Crafting recipes will no longer accept staged ingredients
 - "A Rough Start" is now more difficult to accidentally skip
 - Disabled the Extra Utilities 2 Snow Globe due to significant performance issues around water
 - Fixed coke ovens, blast furnaces, & some other stuff still being obtainable during the prologue
 - Moved the music disc fragment recipe from the pulverizer to the basic workshop so the NBT data can be properly checked
 - Redid the processing line for Anti-Rad
-- Made 64K ME Storage Components craftable during chapter 5 and fixed the crafting recipe not being removed
 - Temporarily stopped swamp water from flowing due to a Fluidlogged API/Galacticraft/Betweenlands crash
 
 
