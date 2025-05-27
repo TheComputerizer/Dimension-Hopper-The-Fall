@@ -339,86 +339,107 @@
 	[[triggers.dimension]]
 		identifier = "overworld"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "0" ]
 	[[triggers.dimension]]
 		identifier = "creativeWhitelist"
 		priority = 50
+		resource_matcher = "exact"
 		resource_name = [ "-60", "-59", "-58", "-57", "-56", "-55", "-54", "-50", "-9", "-8", "-1", "0", "1", "800", "801", "802", "803", "804", "805", "806", "807", "809", "810", "811", "812", "813", "814", "815", "816", "817", "818", "819", "820", "821", "1024", "28885" ]
 	[[triggers.dimension]]
 		identifier = "deepdark"
 		priority = 2000
+		resource_matcher = "exact"
 		resource_name = [ "-11325" ]
 	[[triggers.dimension]]
 		identifier = "skyland"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-60" ]
 	[[triggers.dimension]]
 		identifier = "crown_cliffs"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-59" ]
 	[[triggers.dimension]]
 		identifier = "dark_forest"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-58" ]
 	[[triggers.dimension]]
 		identifier = "the_void"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-57" ]
 	[[triggers.dimension]]
 		identifier = "wide_desert"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-56" ]
 	[[triggers.dimension]]
 		identifier = "frost_mountains"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-55" ]
 	[[triggers.dimension]]
 		identifier = "cavenia"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-54" ]
 	[[triggers.dimension]]
 		identifier = "caveland"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-53" ]
 	[[triggers.dimension]]
 		identifier = "aqua_cavern"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-52" ]
 	[[triggers.dimension]]
 		identifier = "huge_cavern"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-51" ]
 	[[triggers.dimension]]
 		identifier = "cavern"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-50" ]
 	[[triggers.dimension]]
 		identifier = "underworld"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-9" ]
 	[[triggers.dimension]]
 		identifier = "mining_dimension"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-6" ]
 	[[triggers.dimension]]
 		identifier = "nether"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "-1" ]
 	[[triggers.dimension]]
 		identifier = "end"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "1" ]
 	[[triggers.dimension]]
 		identifier = "aoa"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "800", "801", "802", "803", "804", "805", "806", "807", "809", "810", "811", "812", "813", "814", "815", "816", "817", "818", "819", "820", "821" ]
 	[[triggers.dimension]]
 		identifier = "labyrinth"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "1024" ]
 	[[triggers.dimension]]
 		identifier = "hunting_dimension"
 		priority = 100
+		resource_matcher = "exact"
 		resource_name = [ "28885" ]
 	[triggers.harvestmoon]
 		priority = 550
