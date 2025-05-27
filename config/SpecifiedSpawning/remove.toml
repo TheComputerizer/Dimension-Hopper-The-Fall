@@ -7,9 +7,8 @@
 		gamestage = "cavern"
 
 [[remove]]
+	group = "all"
 	dimension = "-11325"
-	[remove.gamestage]
-		gamestage = "cavern"
 
 [[remove]]
 	[remove.entity]

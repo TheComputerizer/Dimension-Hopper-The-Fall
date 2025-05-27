@@ -22,7 +22,7 @@ Updated Mods
 - [Bubbles](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6539774>)
 - [Corail Tombstone](<https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/6505775>)
 - [CraftTweaker](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>)
-- [Dimension Hopper Tweaks]
+- [Dimension Hopper Tweaks](<https://www.curseforge.com/minecraft/mc-mods/dimension-hopper-tweaks/files/6584928>)
 - [DimensionDoors](<https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors/files/6386037>)
 - [FermiumASM](<https://www.curseforge.com/minecraft/mc-mods/fermiumasm/files/6389447>)
 - [FermiumBooter](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>)
@@ -87,6 +87,7 @@ General Changes
 - Moved the music disc fragment recipe from the pulverizer to the basic workshop so the NBT data can be properly checked
 - Redid the processing line for Anti-Rad
 - Made 64K ME Storage Components craftable during chapter 5 and fixed the crafting recipe not being removed
+- Temporarily stopped swamp water from flowing due to a Fluidlogged API/Galacticraft/Betweenlands crash
 
 
 Released V1.5.8.2[HOTFIX]
