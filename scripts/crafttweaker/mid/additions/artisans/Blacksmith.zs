@@ -14,6 +14,7 @@ static armorSets as Holder[][] = [
 	Util.tieredArmorSet("minecraft:iron_", <thermalfoundation:material:32>, 1), //iron armor
 	Util.tieredArmorSet("tp:quartz_", <moreplates:nether_quartz_plate>, 1), //quartz armor
 	Util.tieredArmorSet("actuallyadditions:item_", <moreplates:enori_plate>, 1, ["helm", "chest", "pants", "boots"], 0, "_crystal_white"), //enori armor
+	Util.tieredArmorSet("atum:wanderer_", <atum:linen_cloth>, 1, ["helmet", "chest", "legs", "boots"]), //Wanderer armor
 
 	//tier 2
 	Util.tieredArmorSet("tp:redstone_", <moreplates:redstone_plate>, 2), //redstone armor
