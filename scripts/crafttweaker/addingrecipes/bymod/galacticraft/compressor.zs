@@ -63,3 +63,8 @@ GalacticraftTweaker.addCompressorShapelessRecipe(<galacticraftcore:machine4>, <e
     <galacticraftcore:machine2>, <environmentaltech:erodium_crystal>, <galacticraftcore:basic_item:9>, 
     <galacticraftcore:item_basic_moon:1>, <galacticraftcore:basic_item:9>, <galacticraftcore:aluminum_wire:1>, 
     <contenttweaker:divine_large_circuit>, <galacticraftcore:aluminum_wire:1>);
+
+//Compressed Platinum
+GalacticraftTweaker.removeCompressorRecipe(<extraplanets:tier11_items:6>);
+GalacticraftTweaker.addCompressorShapelessRecipe(<extraplanets:tier11_items:6>, <thermalfoundation:material:134>, 
+    <thermalfoundation:material:134>, <thermalfoundation:material:134>, <thermalfoundation:material:134>, <thermalfoundation:material:134>, <thermalfoundation:material:134>);	
