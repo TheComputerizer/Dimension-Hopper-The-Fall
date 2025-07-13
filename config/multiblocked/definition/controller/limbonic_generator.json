@@ -254,7 +254,7 @@
       [
         "C            HHH            C",
         "@           HHHHH           E",
-        " C         HHHHHHH         C ",
+        "OC         HHHHHHH         C ",
         " F        HHHHHHHHH        F ",
         " C H     HHHHHHHHHHH     H C ",
         "  CI     HHHHHLHHHHH     IC  ",
@@ -729,7 +729,12 @@
       "item_in": {
         "capability": "item",
         "type": "capability",
-        "io": "BOTH"
+        "io": "IN"
+      },
+	  "item_out": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
       }
     },
     "symbolMap": {
@@ -783,6 +788,9 @@
       "N": [
         "K",
         "fluid_out"
+      ],
+      "O": [
+        "item_out"
       ]
     }
   }
