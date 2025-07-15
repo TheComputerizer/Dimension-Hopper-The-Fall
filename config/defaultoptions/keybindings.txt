@@ -285,3 +285,7 @@ key_enderio.keybind.fovplus:0:NONE
 key_enderio.keybind.fovminus:0:NONE
 key_enderio.keybind.fovplusfast:0:NONE
 key_enderio.keybind.fovminusfast:0:NONE
+key_key.performancemonitoringenhanc.toggleHud:NONE
+key_key.performancemonitoringenhanc.openDragScreen:NONE
+key_key.performancemonitoringenhanc.openSettings:NONE
+key_key.performancemonitoringenhanc.toggleVerboseOverlay:NONE
