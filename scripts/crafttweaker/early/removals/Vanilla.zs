@@ -329,6 +329,7 @@ static itemRemovals as IItemStack[] = [
 	<extraplanets:oxygen_tank_extremely_heavy_full:*>,
 	<extraplanets:thermal_cloth:*>,
 	<extraplanets:tier8_items:5>,
+	<extraplanets:advanced_launch_pad:3>,
 
 	//extratrees------------------------------------------------------------------------------------------------------------
 	<extratrees:machine:4>,

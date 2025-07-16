@@ -71,3 +71,8 @@ recipes.addShaped("extremelyheavyoxygen",<extraplanets:oxygen_tank_extremely_hea
 [<extraplanets:oxygen_tank_very_heavy_full>, <extraplanets:oxygen_tank_very_heavy_full>, <extraplanets:oxygen_tank_very_heavy_full>],
 [<extraplanets:tier6_items:4>, <extraplanets:tier6_items:4>, <extraplanets:tier6_items:4>]
 ]);
+
+recipes.addShaped("poweredlaunchpad",<extraplanets:advanced_launch_pad:3>, [
+[<extraplanets:tier11_items:6>, <extraplanets:tier11_items:6>, <extraplanets:tier11_items:6>],
+[<thermalfoundation:material:134>, <thermalfoundation:material:134>, <thermalfoundation:material:134>]
+]);
