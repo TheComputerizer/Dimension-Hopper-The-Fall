@@ -239,6 +239,10 @@ static shapedHolders as Holder[] = [
 ] as Holder[];
 
 static shapelessHolders as Holder[] = [
+  //botania
+  Util.shapeless(<botania:manaresource:12>, [<botania:manaresource:16>, <botania:manaresource:15>, <botania:manaresource:8>, <calculator:material:9>, <botania:felpumpkin>])
+  .addTools({<ore:artisansNeedle>:25}), //Red String
+
   //enderio
   Util.shapeless(<enderio:block_powered_spawner>, [<enderio:block_powered_spawner>, <enderio:item_broken_spawner>]).setMarkIndex(1)
     .addFunction(function(output, map, info) {
