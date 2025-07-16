@@ -20,3 +20,6 @@ Crusher.removeRecipesForInput(<immersiveengineering:material:6>);
 Crusher.removeRecipesForInput(<immersiveengineering:stone_decoration:3>);
 Crusher.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>, 5000);
 Crusher.addRecipe(<immersiveengineering:material:17>*9, <thermalfoundation:storage_resource:1>, 50000);
+
+//Naquadah
+Crusher.addRecipe(<sgcraft:naquadah>*2, <sgcraft:naquadahore>, 5000, <jaopca:dust.naquadah_alloy>, 0.1);
