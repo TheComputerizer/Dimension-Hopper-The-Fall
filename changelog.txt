@@ -3,21 +3,25 @@ Released V1.5.10[SERVER FILES & CATCHING UP AGAIN]
 *ANOTHER new changelog format???*
 
 Added Mods
-- [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) [1.9.12](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6766285>)
+- [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>) [1.1](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting/files/6496584>) (For real this time)
+- [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) [1.9.13](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6773818>)
 - [Fantastic Lib](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib>) [1.12.2.069](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib/files/6699913>) (Required by Omniscience Debugger)
 - [NoiseThreader](<https://www.curseforge.com/minecraft/mc-mods/noisethreader>) [1.1.0](<https://www.curseforge.com/minecraft/mc-mods/noisethreader/files/6759511>)
 - [Omniscience Debugger](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger>) [1.12.2.005](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger/files/6537874>)
 - [Performance Monitoring Enhancer](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer>) [1.1.1](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer/files/6722840>)
+- [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>)
 
 Removed Mods
 - [Multithreaded Noise](<https://www.curseforge.com/minecraft/mc-mods/multithreaded-noise>) (Superseded by NoiseThreader)
-- [Spark Unforged](<https://www.curseforge.com/minecraft/mc-mods/spark-unforged>) (Superseded by Omniscience Debugger)
+- [Spark Unforged](<https://www.curseforge.com/minecraft/mc-mods/spark-unforged>) (Superseded by Omniscience Debugger & Performance Monitoring Enhancer)
+- [Tinkers Construct](<https://www.curseforge.com/minecraft/mc-mods/tinkers-construct>) (Superseded by Tinkers' Antique)
 
 Updated Mods
 - Alfheim Lighting Engine [1.6 Dev 2](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6295028>) => [1.6](<https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine/files/6687458>)
 - Bubbles [2.4.5](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6505775>) => [2.4.8](<https://www.curseforge.com/minecraft/mc-mods/bubbles-a-baubles-fork/files/6772105>)
 - CraftTweaker [4.1.20.703](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>) => [4.1.20.704](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6669824>)
 - Custom Loading Screen [1.5.8](<https://www.curseforge.com/minecraft/mc-mods/better-loading-screen/files/5825891>) => [1.5.9](<https://www.curseforge.com/minecraft/mc-mods/better-loading-screen/files/6771073>)
+- Dimension Hopper Tweaks [3.0.0](<https://www.curseforge.com/minecraft/mc-mods/dimension-hopper-tweaks/files/6584928>) => [3.0.1](<>)
 - FermiumBooter [1.2.0](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>) => [1.3.0](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6741950>)
 - Forgelin-Continuous [2.1.20.0](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6359253>) => [2.2.0.0](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6760510>)
 - Gnetum [1.2.4](<https://www.curseforge.com/minecraft/mc-mods/gnetum/files/6538696>) => [1.2.6](<https://www.curseforge.com/minecraft/mc-mods/gnetum/files/6766521>)
@@ -39,7 +43,16 @@ Updated Mods
 - Zen Utils [1.22.2](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6561326>) => [1.24.0](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6762641>)
 
 General Changes
--
+- [Fix wrong word in Crushroom Quest Description](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/165>) by Johanniklas
+- [Fix Wyvern Armor (and update Draconic Armor) description](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/168>) by Johanniklas
+- [Recipe for Wanderer Helmet](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/172>) by Johanniklas
+- [Change dimensional singularity quest reward from @p to @s](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/173>) by Johanniklas
+- [Recipe for Red String](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/176>) by Johanniklas
+- [Update Limbonic Generator description](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/180>) by Johanniklas
+- [Naquadah Alloy Automation](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/184>) by Johanniklas
+- [Platinum](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/188>) by Johanniklas
+- [Fix Limbonic Generator](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/189>) by Johanniklas
+
 
 Released V1.5.9[CATCHING UP]
 
