@@ -47,11 +47,11 @@ tombstone:plague_bringer
 tombstone:blessing
 tombstone:curse_of_bones
 tombstone:spectral_conjurer
+enderio:witherarrow
+enderio:witherweapon
 enderio:shimmer
 enderio:soulbound
-enderio:witherarrow
 enderio:repellent
-enderio:witherweapon
 aoa3:brace
 aoa3:intervention
 aoa3:archmage

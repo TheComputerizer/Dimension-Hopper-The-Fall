@@ -4,6 +4,7 @@ Released V1.5.10[SERVER FILES & CATCHING UP AGAIN]
 
 Added Mods
 - [AE2 Fluid Crafting Rework](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework>) [2.6.6-r](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework/files/5751930>) (AE2 QoL)
+- [AE2 Stuff Unofficial](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial>) [0.1.0](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial/files/6706171>) (AE2 Stuff fork)
 - [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>) [1.1](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting/files/6496584>) (For real this time)
 - [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) [1.9.13](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6773818>)
 - [Fantastic Lib](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib>) [1.12.2.069](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib/files/6699913>) (Required by Omniscience Debugger)
@@ -16,6 +17,7 @@ Added Mods
 - [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>) (Maintained Tinkers Construct fork)
 
 Removed Mods
+- [AE2 Stuff](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff>) (Superseded by AE2 Stuff Unofficial)
 - [Multithreaded Noise](<https://www.curseforge.com/minecraft/mc-mods/multithreaded-noise>) (Superseded by NoiseThreader)
 - [Spark Unforged](<https://www.curseforge.com/minecraft/mc-mods/spark-unforged>) (Mostly superseded by Omniscience Debugger & Performance Monitoring Enhancer)
 - [Tinkers Construct](<https://www.curseforge.com/minecraft/mc-mods/tinkers-construct>) (Superseded by Tinkers' Antique)
