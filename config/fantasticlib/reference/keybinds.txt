@@ -59,6 +59,9 @@ key.togglePerspective
 key.ae2fc.category
 key.ae2fc.open_wireless_fluid_pattern_terminal.desc
 
+AE2Stuff
+ae2stuff.keybinding.adv_wireless_second
+
 key.categories.advent
 key.adventGui
 key.cstats

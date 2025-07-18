@@ -3,18 +3,18 @@ Released V1.5.10[SERVER FILES & CATCHING UP AGAIN]
 *ANOTHER new changelog format???*
 
 Added Mods
-- [AE2 Fluid Crafting Rework](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework>) [2.6.6-r](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework/files/5751930>) (AE2 QoL)
-- [AE2 Stuff Unofficial](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial>) [0.1.0](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial/files/6706171>) (AE2 Stuff fork)
-- [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>) [1.1](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting/files/6496584>) (For real this time)
-- [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) [1.9.13](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6773818>)
-- [Fantastic Lib](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib>) [1.12.2.069](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib/files/6699913>) (Required by Omniscience Debugger)
-- [FermiumMixins](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins>) [1.0.3](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins/files/6782678>) (Split from RLMixins)
-- [NoiseThreader](<https://www.curseforge.com/minecraft/mc-mods/noisethreader>) [1.1.0](<https://www.curseforge.com/minecraft/mc-mods/noisethreader/files/6759511>) (Faster world gen multithreading)
-- [Not Enough Energistics](<>) [2.0.9](<https://www.curseforge.com/minecraft/mc-mods/not-enough-energistics/files/6325382>) (AE2 QoL)
-- [Omniscience Debugger](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger>) [1.12.2.005](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger/files/6537874>)
-- [Performance Monitoring Enhancer](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer>) [1.1.1](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer/files/6722840>)
-- [Random Complement](<https://www.curseforge.com/minecraft/mc-mods/random-complement>) [1.5.3](<https://www.curseforge.com/minecraft/mc-mods/random-complement/files/6771090>) (AE2 QoL)
-- [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>) (Maintained Tinkers Construct fork)
+- [AE2 Fluid Crafting Rework](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework>) => [2.6.6-r](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework/files/5751930>) (AE2 QoL)
+- [AE2 Stuff Unofficial](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial>) => [0.1.0](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff-unofficial/files/6706171>) (AE2 Stuff fork)
+- [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>) => [1.1](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting/files/6496584>) (For real this time)
+- [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) => [1.9.13](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6773818>)
+- [Fantastic Lib](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib>) => [1.12.2.069](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib/files/6699913>) (Required by Omniscience Debugger)
+- [FermiumMixins](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins>) => [1.0.3](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins/files/6782678>) (Split from RLMixins)
+- [NoiseThreader](<https://www.curseforge.com/minecraft/mc-mods/noisethreader>) => [1.1.0](<https://www.curseforge.com/minecraft/mc-mods/noisethreader/files/6759511>) (Faster world gen multithreading)
+- [Not Enough Energistics](<https://www.curseforge.com/minecraft/mc-mods/not-enough-energistics>) => [2.0.9](<https://www.curseforge.com/minecraft/mc-mods/not-enough-energistics/files/6325382>) (AE2 QoL)
+- [Omniscience Debugger](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger>) => [1.12.2.005](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger/files/6537874>)
+- [Performance Monitoring Enhancer](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer>) => [1.1.1](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer/files/6722840>)
+- [Random Complement](<https://www.curseforge.com/minecraft/mc-mods/random-complement>) => [1.5.3](<https://www.curseforge.com/minecraft/mc-mods/random-complement/files/6771090>) (AE2 QoL)
+- [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) => [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>) (Maintained Tinkers Construct fork)
 
 Removed Mods
 - [AE2 Stuff](<https://www.curseforge.com/minecraft/mc-mods/ae2-stuff>) (Superseded by AE2 Stuff Unofficial)
@@ -60,7 +60,7 @@ General Changes
 - [Fix Limbonic Generator](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/189>) by Johanniklas
 - [Disabled "Give Booklet on First Craft" for Actually Additions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/177>)
 - Boss mobs & infernal mobs can no longer enter boats or minecarts
-
+- Enabled some additional tweaks & patches from FermiumMixins, RLMixins, & Universal Tweaks
 
 Released V1.5.9[CATCHING UP]
 

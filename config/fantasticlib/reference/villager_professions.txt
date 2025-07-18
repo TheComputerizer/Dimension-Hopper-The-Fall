@@ -12,8 +12,8 @@ blue_skies:nightwatcher
 blue_skies:wrangler
 blue_skies:shoveler
 actuallyadditions:jamguy
-forestry:arborist
 forestry:apiarist
+forestry:arborist
 immersiveengineering:engineer
 extrautils2:alchemist
 extrautils2:red_mechanic
