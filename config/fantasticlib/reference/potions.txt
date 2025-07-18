@@ -141,6 +141,7 @@ potioncore:archery
 xreliquary:flight_potion
 xreliquary:pacification_potion
 xreliquary:cure_potion
+rlmixins:delayed_launch
 midnight:stunned
 midnight:pollinated
 midnight:dragon_guard

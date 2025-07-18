@@ -3,17 +3,21 @@ Released V1.5.10[SERVER FILES & CATCHING UP AGAIN]
 *ANOTHER new changelog format???*
 
 Added Mods
+- [AE2 Fluid Crafting Rework](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework>) [2.6.6-r](<https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework/files/5751930>) (AE2 QoL)
 - [Better Pet Teleporting](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting>) [1.1](<https://www.curseforge.com/minecraft/mc-mods/better-pet-teleporting/files/6496584>) (For real this time)
 - [Crash Assistant](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant>) [1.9.13](<https://www.curseforge.com/minecraft/mc-mods/crash-assistant/files/6773818>)
 - [Fantastic Lib](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib>) [1.12.2.069](<https://www.curseforge.com/minecraft/mc-mods/fantastic-lib/files/6699913>) (Required by Omniscience Debugger)
-- [NoiseThreader](<https://www.curseforge.com/minecraft/mc-mods/noisethreader>) [1.1.0](<https://www.curseforge.com/minecraft/mc-mods/noisethreader/files/6759511>)
+- [FermiumMixins](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins>) [1.0.3](<https://www.curseforge.com/minecraft/mc-mods/fermiummixins/files/6782678>) (Split from RLMixins)
+- [NoiseThreader](<https://www.curseforge.com/minecraft/mc-mods/noisethreader>) [1.1.0](<https://www.curseforge.com/minecraft/mc-mods/noisethreader/files/6759511>) (Faster world gen multithreading)
+- [Not Enough Energistics](<>) [2.0.9](<https://www.curseforge.com/minecraft/mc-mods/not-enough-energistics/files/6325382>) (AE2 QoL)
 - [Omniscience Debugger](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger>) [1.12.2.005](<https://www.curseforge.com/minecraft/mc-mods/omniscience-debugger/files/6537874>)
 - [Performance Monitoring Enhancer](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer>) [1.1.1](<https://www.curseforge.com/minecraft/mc-mods/performance-monitoring-enhancer/files/6722840>)
-- [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>)
+- [Random Complement](<https://www.curseforge.com/minecraft/mc-mods/random-complement>) [1.5.3](<https://www.curseforge.com/minecraft/mc-mods/random-complement/files/6771090>) (AE2 QoL)
+- [Tinkers' Antique](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique>) [2.13.0.202](<https://www.curseforge.com/minecraft/mc-mods/tinkers-antique/files/6752868>) (Maintained Tinkers Construct fork)
 
 Removed Mods
 - [Multithreaded Noise](<https://www.curseforge.com/minecraft/mc-mods/multithreaded-noise>) (Superseded by NoiseThreader)
-- [Spark Unforged](<https://www.curseforge.com/minecraft/mc-mods/spark-unforged>) (Superseded by Omniscience Debugger & Performance Monitoring Enhancer)
+- [Spark Unforged](<https://www.curseforge.com/minecraft/mc-mods/spark-unforged>) (Mostly superseded by Omniscience Debugger & Performance Monitoring Enhancer)
 - [Tinkers Construct](<https://www.curseforge.com/minecraft/mc-mods/tinkers-construct>) (Superseded by Tinkers' Antique)
 
 Updated Mods
@@ -22,7 +26,7 @@ Updated Mods
 - CraftTweaker [4.1.20.703](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6186559>) => [4.1.20.704](<https://www.curseforge.com/minecraft/mc-mods/crafttweaker/files/6669824>)
 - Custom Loading Screen [1.5.8](<https://www.curseforge.com/minecraft/mc-mods/better-loading-screen/files/5825891>) => [1.5.9](<https://www.curseforge.com/minecraft/mc-mods/better-loading-screen/files/6771073>)
 - Dimension Hopper Tweaks [3.0.0](<https://www.curseforge.com/minecraft/mc-mods/dimension-hopper-tweaks/files/6584928>) => [3.0.1](<>)
-- FermiumBooter [1.2.0](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>) => [1.3.0](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6741950>)
+- FermiumBooter [1.2.0](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6386622>) => [1.3.1](<https://www.curseforge.com/minecraft/mc-mods/fermiumbooter/files/6775948>)
 - Forgelin-Continuous [2.1.20.0](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6359253>) => [2.2.0.0](<https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous/files/6760510>)
 - Gnetum [1.2.4](<https://www.curseforge.com/minecraft/mc-mods/gnetum/files/6538696>) => [1.2.6](<https://www.curseforge.com/minecraft/mc-mods/gnetum/files/6766521>)
 - GroovyScript [1.2.4](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6520434>) => [1.2.5](<https://www.curseforge.com/minecraft/mc-mods/groovyscript/files/6695118>)
@@ -34,13 +38,13 @@ Updated Mods
 - PackagedAvaritia [1.0.2.22](<https://www.curseforge.com/minecraft/mc-mods/packagedavaritia/files/6303034>) => [1.0.2.23](<https://www.curseforge.com/minecraft/mc-mods/packagedavaritia/files/6728475>)
 - PackagedExCrafting [1.0.2.28](<https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting/files/6425299>) => [1.0.2.30](<https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting/files/6757785>)
 - Pillar Patched [1.3.1](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6275950>) => [1.3.2](<https://www.curseforge.com/minecraft/mc-mods/pillar-patched/files/6728540>)
-- RLMixins [1.3.18](<https://www.curseforge.com/minecraft/mc-mods/rlmixins/files/6112317>) => [1.4.1](<https://www.curseforge.com/minecraft/mc-mods/rlmixins/files/6754288>)
+- RLMixins [1.3.18](<https://www.curseforge.com/minecraft/mc-mods/rlmixins/files/6112317>) => [1.4.2](<https://www.curseforge.com/minecraft/mc-mods/rlmixins/files/6782679>)
 - Roughly Enough IDs [2.2.2](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6292779>) => [2.2.3](<https://www.curseforge.com/minecraft/mc-mods/reid/files/6761278>)
 - The Impossible Library [0.4.4](<https://www.curseforge.com/minecraft/mc-mods/the-impossible-library/files/6430611>) => [0.4.5](<>)
 - Universal Tweaks [1.15.1](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6463940>) => [1.15.2](<https://www.curseforge.com/minecraft/mc-mods/universal-tweaks/files/6675988>)
 - VintageFix [0.5.6](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6412986>) => [0.6.2](<https://www.curseforge.com/minecraft/mc-mods/vintagefix/files/6609247>)
 - XU2-Patcher [1.0.1](<https://www.curseforge.com/minecraft/mc-mods/xu2-patcher/files/6259473>) => [1.0.2](<https://www.curseforge.com/minecraft/mc-mods/xu2-patcher/files/6596160>)
-- Zen Utils [1.22.2](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6561326>) => [1.24.0](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6762641>)
+- Zen Utils [1.22.2](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6561326>) => [1.25.1](<https://www.curseforge.com/minecraft/mc-mods/zenutil/files/6777726>)
 
 General Changes
 - [Fix wrong word in Crushroom Quest Description](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/165>) by Johanniklas
@@ -52,6 +56,8 @@ General Changes
 - [Naquadah Alloy Automation](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/184>) by Johanniklas
 - [Platinum](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/188>) by Johanniklas
 - [Fix Limbonic Generator](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/pull/189>) by Johanniklas
+- [Disabled "Give Booklet on First Craft" for Actually Additions](<https://github.com/TheComputerizer/Dimension-Hopper-The-Fall/issues/177>)
+- Boss mobs & infernal mobs can no longer enter boats or minecarts
 
 
 Released V1.5.9[CATCHING UP]

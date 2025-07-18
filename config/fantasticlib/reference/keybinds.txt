@@ -56,6 +56,9 @@ key.fullscreen
 neat.keybind.toggle
 key.togglePerspective
 
+key.ae2fc.category
+key.ae2fc.open_wireless_fluid_pattern_terminal.desc
+
 key.categories.advent
 key.adventGui
 key.cstats
@@ -239,6 +242,12 @@ key.moreoverlays.lightoverlay.desc
 key.categories.musictriggers
 key.musictriggers.gui
 
+neenergistics.category
+key.neenergistics.stack.count.change
+key.neenergistics.crafting.helper.noPreview
+key.neenergistics.crafting.helper.noPreview
+key.neenergistics.ingredient.switch
+
 openblocks.keybind.category
 openblocks.keybind.vario_switch
 openblocks.keybind.vario_vol_down
@@ -320,6 +329,10 @@ rpsideas.kb.switchslot09
 rpsideas.kb.switchslot10
 rpsideas.kb.switchslot11
 rpsideas.kb.switchslot12
+
+RandomComplement(JEI)
+key.start_craft.desc
+key.retrieve_item.desc
 
 key.categories.randomtweaks
 key.reloadSoundSystem

@@ -1167,6 +1167,28 @@
   },
   {
     "coreMaterialStats": {
+      "durability": 21.0,
+      "defense": 15.75,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 10.08,
+      "modifier": 23.294117,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 10.08,
+      "materialType": "trim"
+    },
+    "identifier": "alubrass",
+    "color": -994201,
+    "type": "METAL",
+    "castable": true,
+    "craftable": false
+  },
+  {
+    "coreMaterialStats": {
       "durability": 11.0,
       "defense": 12.6,
       "materialType": "core"
@@ -3433,6 +3455,28 @@
   },
   {
     "coreMaterialStats": {
+      "durability": 84.0,
+      "defense": 8.1,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 27.216,
+      "modifier": 50.0,
+      "toughness": -0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 27.216,
+      "materialType": "trim"
+    },
+    "identifier": "pink_slime",
+    "color": -31571,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
       "durability": 48.0,
       "defense": 27.0,
       "materialType": "core"
@@ -3763,6 +3807,28 @@
   },
   {
     "coreMaterialStats": {
+      "durability": 32.0,
+      "defense": 24.75,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 11.2,
+      "modifier": 26.470587,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 11.2,
+      "materialType": "trim"
+    },
+    "identifier": "alumite",
+    "color": -22551,
+    "type": "METAL",
+    "castable": true,
+    "craftable": false
+  },
+  {
+    "coreMaterialStats": {
       "durability": 37.0,
       "defense": 31.5,
       "materialType": "core"
@@ -3801,6 +3867,28 @@
     },
     "identifier": "silentgems:jasper_super",
     "color": -6060032,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 9.0,
+      "defense": 11.25,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 7.28,
+      "modifier": 23.294117,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 7.28,
+      "materialType": "trim"
+    },
+    "identifier": "bloodbone",
+    "color": -3735552,
     "type": "METAL",
     "castable": false,
     "craftable": true

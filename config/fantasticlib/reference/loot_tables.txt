@@ -632,6 +632,7 @@ aoa3:entities/mobs/nether/skeletal_cowman
 thebetweenlands:loot/cave_pot
 aoa3:entities/minions/shadow_stalker
 aoa3:items/treasure_box
+tconstruct:entities/purpleslime
 aoa3:entities/npcs/ambient/zal_citizen
 enderio:direslime_2
 enderio:direslime_1

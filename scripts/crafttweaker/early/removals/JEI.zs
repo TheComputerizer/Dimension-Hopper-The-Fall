@@ -392,9 +392,6 @@ static itemHiders as IItemStack[] = [
     <moreavaritia:infinitympick>,
     <moreavaritia:infinitymsword>,
 
-    //tconstruct
-    <tconstruct:clay_cast>,
-
 	//twilightforest
 	<patchouli:guide_book>.withTag({"patchouli:book": "twilightforest:guide"})
 ] as IItemStack[];
